@@ -208,11 +208,22 @@ NOTE: You can use sprockets require syntax, however per [compass-rails][] it is 
 
 8. And that's pretty much it. Don't forget to reference in your application layout. The HTML section below covers how I organize my layouts and shared files.
 
+This is a great resource:
+
+[Getting Compass to Work With Rails 3.1 (and 3.2)][Getting Compass to Work]
+
+Here are some other resources that I have found useful:
+
+[How I Use Compass With Rails 3.1][How I Use Compass]
+[Sass, Compass, and the Rails 3.1 Asset Pipeline][Asset Pipeline]
 
 ---------------------------------------
-[compass-rails]:        https://github.com/Compass/compass-rails
-[FireSass]:             https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
-[CSS base]:             https://github.com/maxxiimo/css-base
+[compass-rails]:           https://github.com/Compass/compass-rails
+[FireSass]:                https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
+[CSS base]:                https://github.com/maxxiimo/css-base
+[Getting Compass to Work]: http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+[How I Use Compass]:       http://austintech.com/blog/2011/08/19/how-i-use-compass-with-rails-3-1/
+[Asset Pipeline]:          http://www.engineyard.com/blog/2011/sass-compass-and-the-rails-3-1-asset-pipeline/
 
 
 CSS Organization
