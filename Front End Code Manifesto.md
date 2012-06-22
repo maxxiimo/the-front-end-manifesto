@@ -38,6 +38,8 @@ Table of Contents
 - HTML Organization
   - Where to Put Things
 - Image Organization
+  - Choosing an Image Format
+  - Spriting
 - Optimization
 - Refactoring
 - Tools
@@ -537,16 +539,16 @@ HTML Organization
 Where to Put Things
 -------------------
 
-Separate sections of your layout/application.html.haml into partials like:
+Separate your layout/application.html.haml into partials like:
 
-_head.html.haml
-_script.html.haml
+1. _head.html.haml
+2. _script.html.haml
+    
+3. _logo.html.haml
+4. _navigation.html.haml
+5. _footer.html.haml
 
-_logo.html.haml
-_navigation.html.haml
-_footer.html.haml
-
-For the first two locate these in the same layout folder, and not in the shared folder since they are essentially integral to the layout/application.html.haml file. Use helper methods to pull them in.
+For the first two partials locate these in the same layout folder as application.html.haml -- NOT in the shared folder --- because they are essentially integral to the layout/application.html.haml file. Use helper methods to pull them in:
 
     def head
       render :partial => 'layouts/head'
@@ -571,7 +573,7 @@ Do all this, and your application.html.haml file might look something like this:
       = render :partial => 'shared/footer'
     = scripts
 
-Concise and simple. Also note the use of ARIA roles. It's good practice to do so for users that require assistive technology to browse your application. You can find a list of roles here: http://www.w3.org/TR/wai-aria/roles#landmark_roles
+Concise and simple. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology to browse your application.
 
 
 Image Organization
@@ -579,22 +581,73 @@ Image Organization
 
 Start off by creating some basic folders to hold things as you develop such as:
 
-constructs
-buttons
-icons
-logos
+* Regarding the name "constructs", I used to call this "assets" before the asset pipeline, but constructs will do until I think of a better name. It holds things like shims, navigation-pipes, horizontal dividers, basically things that are used to construct an application/page.
 
-Regarding the name "constructs", I used to call this "assets" before the asset pipeline, but constructs will do. It holds things like shims, navigation-pipes, horizontal dividers, basically things that are used to construct an application/page.
+Usually my root level folder "images" contains sprites, and the sprite components remain in their appropriate folders like icons.
 
-Usually my root level folder, images, contains sprites and sprite components remain in their appropriate folders.
+So now my images might look like this:
 
-Note: when saving images I always save a .gif version in addition to a .png, just in case.
+- assets
 
+  - images
+    - buttons
+    - constructs*
+    - icons
+      icon1.gif
+      icon1.png
+      icon2.gif
+      icon2.png
+      icon3.gif
+      icon3.png
+    - logos
+    icon-sprite.png
+    icon-sprite.gif
+
+  - javascripts
+  - stylesheets
+
+Everything has a place to go, and easily find later. as sites grow your image folders can get out of hand so start with an organization plan in mind.
+
+Choosing an Image Format
+------------------------
+
+When saving images I always save a .gif version in addition to a .png, just in case. Ideally images will be displayed as .PNG's, but because of issues with older browsers and other edge cases in which PNG fixes won't suffice I have found having them on hand is a great thing. Creating them is rather easy for your designer. I'll go even so far as to serve them up for IE6 as a default.
 
 [Notes on Using PNGS][PNGS]
 
+.jpg's are really reserved for photos and not efficient for things like sprites, structural imagery, plus they do not preserve alpha transparencies which become an issue if backgrounds change in the future (kind of following in a roundabout way the old adage; "measure twice, cut once."). This article gives a good explanation of which to use and when: [Gif Png Jpg Which One To Use][Image Choice]
+
+Spriting
+--------
+
+I let Compass do all the sprite creation work. Ryan Bates provides an excellent tutorial on [Compass & CSS Sprites][Sprites]. If you or a designer are creating them in most cases it actually is better on the implementation side to have icon sprites line up horizontally (as opposed to vertically). Line up the top edge of each icon on an equidistant grid line whose coordinate is a multiple of 5 pixels, and not picas. For example, the horizontal grid line coordinates for 4 icons that are 16px x 16px might be:
+
+0 (first image)
+20px
+40px
+60px
+
+Using these coordinates make it easier for front end people to map them, so the coresponding code in my stylesheet would use the following XY values for positioning:
+
+0, 0
+0, -20px
+0, -40px
+0, -60px
+
+???? The reason for horizontal alignment is that side-by-side requires a specifically sized element to display the icon in, whereas one single horizontal line of icons can use a specific element to display, or background positioning in the greater containing element such as an anchor tag or a list item. This in turn minimizes the amount of code served and provides for better organization and element manipulation on the coding side. It also marginally future proofs any design changes.
+
+Since yours are:
+
+"Icons for Impact area are ."
+
+Experience has shown me that having extra pixels of blankness between icons can be beneficial. For example, if icons are 28px x 28px, 35px or even 40px gridlines would be good, but not 30px. 
+
 ---------------------------------------
+[ARIA roles]            http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [PNGS]:                 http://html5boilerplate.com/docs/Using-PNG/
+[Sprites]:              http://railscasts.com/episodes/334-compass-css-sprites
+                        "Learn how to make CSS sprites with Compass."
+[Image Choice]          http://blogs.sitepoint.com/gif-png-jpg-which-one-to-use/
 
 
 Optimization
@@ -942,50 +995,6 @@ Finally when architecting remember that less is more and KISS (Keep It Simple St
 
 *******************************************************************************************
 *******************************************************************************************
-
-
-Would you mind saving these as .gif's and .png's? Ideally these would be displayed as .PNG's, but because of issues with IE 6 and other older browsers I serve one or the other depending on the browser.
-
-.jpg's are really reserved for photos and not efficient for things like this, plus they do not preserve alpha transparencies which become an issue if backgrounds change in the future (kind of following in a roundabout way the old adage; "measure twice, cut once."). This article gives a good explanation of which to use and when:
-
-http://blogs.sitepoint.com/gif-png-jpg-which-one-to-use/
-
-Thanks also for putting the icons in a sprite, but I do have one request. It actually is better on the implementation side to have icon sprites line up horizontally with the top edge of each icon on an equidistant multiple of five pixel grid line, not picas. For example, the grid line pattern for an icon that was 16px x 16px might be:
-
-0
-20px
-40px
-60px
-
-I in turn in my code would use the following XY values in my positioning styles:
-
-0, 0
-0, -20px
-0, -40px
-0, -60px
-
-The reason for horizontal alignment is that side-by-side requires a specifically sized element to display the icon in, whereas one single horizontal line of icons can use a specific element to display, or background positioning in the greater containing element such as an anchor tag or a list item. This in turn minimizes the amount of code served and provides for better organization and element manipulation on the coding side. It also marginally future proofs any design changes.
-
-Chris
-
-
-Chris Maxwell Tue, 22 Mar at 4:48pm
-
-Since yours are:
-
-"Icons for Impact area are 28pixels x 28pixels."
-
-35 or even 40px gridlines would be good, but not 30px. Experience has shown me that having extra pixels of blankness between icons can be beneficial.
-
-Ryan Bates provides an excellent tutorial on [Compass & CSS Sprites][].
-
-
-*******************************************************************************************
-*******************************************************************************************
-
-
-[Sprites]:              http://railscasts.com/episodes/334-compass-css-sprites
-                        "Learn how to make CSS sprites with Compass."
 
 [Modernizr]:            https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills 
                         "A list of all shims, fallbacks, and polyfills in order to implant html5 functionality in browsers that don't natively support them."
