@@ -3,8 +3,8 @@ Front End Code Manifesto
 
 by Chris Maxwell
 
-*High-performing, efficient,*
-*Un-bloated,*
+*High-performing, efficient,*  
+*Un-bloated,*  
 *Modularized and Organized*
 
 **Front End Code**
@@ -18,14 +18,12 @@ Personal views and direction on front end coding, from a Ruby on Rails perspecti
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
 
 
-*******************************************************************************************
-
 Table of Contents
 -----------------
 
 - The Manifesto
 - Use a Preprocessor
-  - Compress
+  - Compressing
 - CSS Organization
   - Rails Manifest vs. Sass Partials
   - Use Labeling System
@@ -68,8 +66,6 @@ Table of Contents
   - Context Awareness Patterns
 
 
-*******************************************************************************************
-
 The Manifesto
 -------------
 
@@ -111,8 +107,6 @@ The Manifesto
 I will not use third-party plug-ins that do not allow me to easily style an application and/or change the underlying HTML like Formtastic or jQuery UI. I'm just sayin' - Besides, this is a manifesto!
 
 
-*******************************************************************************************
-
 Use a Preprocessor
 ------------------
 
@@ -134,7 +128,7 @@ In terms of other preprocessors, [Less][] is the runner-up.
 
 [Twitter Bootstrap, Less, and Sass: Understanding Your Options for Rails 3.1][Options]
 
-### Compress
+### Compressing
 
 Why compress? Byte savings, increase load times.
 
@@ -151,7 +145,7 @@ Compass also provides this ability. But these days with the asset pipeline, all 
 > The asset pipeline has three goals:
 > precompile, concatenate and minify assets into one central path.
 >
-> [Asset Pipeline for Dummies][Asset Pipeline]
+> - [Asset Pipeline for Dummies][Asset Pipeline]
 
 
 [Sass]:                 http://sass-lang.com/
