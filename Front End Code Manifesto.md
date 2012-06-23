@@ -154,7 +154,7 @@ Compass also provides this ability. But these days with the asset pipeline, all 
 >
 > [Asset Pipeline for Dummies][Asset Pipeline]
 
----------------------------------------
+
 [Sass]:                 http://sass-lang.com/
 [Haml]:                 http://haml-lang.com/
 [Sass vs. SCSS]:        http://thesassway.com/articles/sass-vs-scss-which-syntax-is-better
@@ -222,7 +222,7 @@ Here are some other resources that I have found useful:
 [How I Use Compass With Rails 3.1][How I Use Compass]
 [Sass, Compass, and the Rails 3.1 Asset Pipeline][Asset Pipeline]
 
----------------------------------------
+
 [compass-rails]:           https://github.com/Compass/compass-rails
 [FireSass]:                https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
 [CSS base]:                https://github.com/maxxiimo/css-base
@@ -531,7 +531,6 @@ Personally, I prefer to use user agents to serve up the correct styles and HTML.
 "Because the assets all concatenate into one file, there are no seperate files to be included on a view-by-view basis." [Asset Pipeline for Dummies][Asset Pipeline]
 
 
----------------------------------------
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
 [Mobile Devices]:       http://railscasts.com/episodes/199-mobile-devices
 
@@ -674,21 +673,21 @@ When it comes to CSS, [A List Apart][ALA] is a maverick and authority in the fie
 
 When it comes to responsive web design and progressive enhancements, Filament Group wrote the books (actually two of their books are titles exactly that). [Responsive Images: Experimenting with Context-Aware Image Sizing][Filament] describes a technique using a combination of JavaScript and .htaccess. I'm not recommending this technique, but if you're interested it's worth taking a look.
 
----------------------------------------
-[ARIA roles]            http://www.w3.org/TR/wai-aria/roles#landmark_roles
+
+[ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [PNGS]:                 http://html5boilerplate.com/docs/Using-PNG/
 [Sprites]:              http://railscasts.com/episodes/334-compass-css-sprites
                         "Learn how to make CSS sprites with Compass."
-[Image Choice]          http://blogs.sitepoint.com/gif-png-jpg-which-one-to-use/
-[Picturefill]           https://github.com/scottjehl/picturefill/
-[24 Ways]               http://24ways.org/
-[24 Ways 1]             http://24ways.org/2011/adaptive-images-for-responsive-designs
-[24 Ways 2]             http://24ways.org/2011/adaptive-images-for-responsive-designs-again
-[Background Images]     http://elliotjaystocks.com/blog/better-background-images-for-responsive-web-design/
-[jQuery Anystretch]     https://github.com/danmillar/jquery-anystretch
-[ALA]                   http://www.alistapart.com/
-[Fluid Images]          http://www.alistapart.com/articles/fluid-images/
-[Filament]              http://filamentgroup.com/lab/responsive_images_experimenting_with_context_aware_image_sizing/
+[Image Choice]:         http://blogs.sitepoint.com/gif-png-jpg-which-one-to-use/
+[Picturefill]:          https://github.com/scottjehl/picturefill/
+[24 Ways]:              http://24ways.org/
+[24 Ways 1]:            http://24ways.org/2011/adaptive-images-for-responsive-designs
+[24 Ways 2]:            http://24ways.org/2011/adaptive-images-for-responsive-designs-again
+[Background Images]:    http://elliotjaystocks.com/blog/better-background-images-for-responsive-web-design/
+[jQuery Anystretch]:    https://github.com/danmillar/jquery-anystretch
+[ALA]:                  http://www.alistapart.com/
+[Fluid Images]:         http://www.alistapart.com/articles/fluid-images/
+[Filament]:             http://filamentgroup.com/lab/responsive_images_experimenting_with_context_aware_image_sizing/
 
 
 Optimization
@@ -752,7 +751,7 @@ For an explanation on what this stuff is/does check out these two sources:
 
 [Modernizr HTML5-Cross-browser-Polyfills][]
 
----------------------------------------
+
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [Unofficial Guide]:     http://railsapps.github.com/rails-html5-boilerplate.html
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
@@ -805,7 +804,7 @@ Use ARIA Roles
 
 [ARIA][]
 
----------------------------------------
+
 [Visualizing Links]:    http://www.useit.com/alertbox/20040510.html
 [ARIA]:                 http://www.w3.org/TR/wai-aria/roles#landmark_roles
 
@@ -815,7 +814,7 @@ Email Coding
 
 "[Optimizing your email for mobile devices with the @media query][Optimizing for Email]"
 
----------------------------------------
+
 [Optimizing for Email]: http://www.campaignmonitor.com/blog/post/3163/optimizing-your-emails-for-mobile-devices-with-media/
 
 
@@ -896,7 +895,7 @@ Some additional useful ideas:
 [Ignore files][]
 [A Collection of Useful .gitignore Templates][.gitignore]
 
----------------------------------------
+
 [H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
 [RoR Tutorial]:         http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
                         "An augmented .gitignore file"
@@ -937,7 +936,7 @@ Optimization
 
 [Making the Web Fast(er)][]
 
----------------------------------------
+
 [Fast(er)]:             http://www.igvita.com/slides/2012/railsconf-making-the-web-faster/#1
                         "RailsConf 2012"
 
@@ -947,7 +946,7 @@ Search Engine Optimization
 
 [Google SEO Starter Guide][Google SEO]
 
----------------------------------------
+
 [Google SEO]:           http://googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html
 
 
@@ -956,7 +955,7 @@ Style Guides
 
 [Front-end Style Guides][Style Guides]
 
----------------------------------------
+
 [Style Guides]:         http://24ways.org/2011/front-end-style-guides
 
 
@@ -965,7 +964,7 @@ Good Advice
 
 [Subliminal User Experience][User Experience]
 
----------------------------------------
+
 [User Experience]:      http://24ways.org/2011/subliminal-user-experience
 
 
@@ -974,12 +973,11 @@ JavaScript Libraries
 
 [Zepto][]
 
----------------------------------------
+
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+nettuts+%28Nettuts%2B%29
 
 
 
-*******************************************************************************************
 *******************************************************************************************
 
 
@@ -1035,7 +1033,7 @@ Finally when architecting remember that less is more and KISS (Keep It Simple St
 
 
 *******************************************************************************************
-*******************************************************************************************
+
 
 [Modernizr]:            https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills 
                         "A list of all shims, fallbacks, and polyfills in order to implant html5 functionality in browsers that don't natively support them."
