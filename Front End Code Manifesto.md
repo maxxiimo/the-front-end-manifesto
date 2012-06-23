@@ -3,11 +3,11 @@ Front End Code Manifesto
 
 by Chris Maxwell
 
-High-performing, efficient,
-Un-bloated,
-Modularized and Organized
+*High-performing, efficient,*
+*Un-bloated,*
+*Modularized and Organized*
 
-Front End Code
+**Front End Code**
 
 
 Personal views and direction on front end coding, from a Ruby on Rails perspective.
@@ -21,7 +21,7 @@ Personal views and direction on front end coding, from a Ruby on Rails perspecti
 *******************************************************************************************
 
 Table of Contents
-=================
+-----------------
 
 - The Manifesto
 - Use a Preprocessor
@@ -71,7 +71,7 @@ Table of Contents
 *******************************************************************************************
 
 The Manifesto
-=============
+-------------
 
 **When I code I will:**
 
@@ -114,7 +114,7 @@ I will not use third-party plug-ins that do not allow me to easily style an appl
 *******************************************************************************************
 
 Use a Preprocessor
-==================
+------------------
 
 I use [Sass][]. Long before using a CSS preprocessor I was hooked on Sass's brother [Haml][] and naturally made the progression. More importantly, for you, it is now the default preprocessor in Rails 3.X. Besides being awesome, you are more than likely going to predominantly see Sass used in projects you work on, or by other front-end developers you work with.
 
@@ -134,8 +134,7 @@ In terms of other preprocessors, [Less][] is the runner-up.
 
 [Twitter Bootstrap, Less, and Sass: Understanding Your Options for Rails 3.1][Options]
 
-Compress
---------
+### Compress
 
 Why compress? Byte savings, increase load times.
 
@@ -169,7 +168,7 @@ Compass also provides this ability. But these days with the asset pipeline, all 
                         "The Rails asset pipeline from the ground up."
 
 Using Compass
-=============
+-------------
 
 Setting up your application:
 
@@ -232,12 +231,11 @@ Here are some other resources that I have found useful:
 
 
 CSS Organization
-================
+----------------
 
 I can't stress how important it is to start a project with some kind of organizational structure in place. Even if you don't know what shape the application is going to take, it will serve you well to have a basic structure and styles in place like the one I'm going to share with you here. As you move along you will fill in all the placeholders and partials, and the styles are common to almost any project.
 
-Rails Manifest vs. Sass Partials
---------------------------------
+### Rails Manifest vs. Sass Partials
 
 There is nothing wrong with using Rails manifest capabilities, however, since we're using sass my preferred method of organizing is to use application.scss as a partials manifest file, almost like a table of contents. I use the following structure for most of my projects:
 
@@ -323,17 +321,16 @@ Why the "=" underlines? It helps me find things when I browse CSS output.
 
 I can't stress enough the importance of modularizing your styles. Use partials. Doing so will keep things organized. The degree of separation/modularization depends on your personal and/or teams preferences and project needs.
 
-1. Group related partials together by either prefixing related partials with a common subject:
+1.  Group related partials together by either prefixing related partials with a common subject:
 
-    _subject1.
+        _subject1.
+        
+        _subject1_
 
-    _subject1_
+2.  Group related snippets of code together in larger themed partials:
 
 
-2. Group related snippets of code together in larger themed partials:
-
-
-3. Group things in folders:
+3.  Group things in folders:
 
 
 See the section on "Resets" for an overview on which resets are available to you. I include four major reset styles in my application file, uncomment the one I plan to use for a particular project.
@@ -363,8 +360,7 @@ The "developers" section is exactly what it says, a staging area for code. It's 
 "last" is  a reminder that those styles need to appear last.
 
 
-Use Labeling System
--------------------
+### Use Labeling System
 
 Within stylesheets use a system of labeling in order to modularize and better organize/manage related styles. It's good to precede the title name with "/* ". This way you can easily search for specific things like "/* Form" and not pick up every form item in your styles. 
 
@@ -430,7 +426,7 @@ I like the above sequence, but some other examples include:
 
     /* further subdivision or comment */
 
-### Subtitle Examples
+#### Subtitle Examples
 
 By far the most used labeling level in your stylesheets will be "subtitles". Try to group like things or elements and label them with an eye on searching for the title in the future. Here are some examples for form elements:
 
@@ -470,12 +466,11 @@ By far the most used labeling level in your stylesheets will be "subtitles". Try
     /* misc
     ----------- */
 
-Naming Conventions
-------------------
+### Naming Conventions
 
 I have my way of naming styles, and I've seen things all over the board.  Here's My Recommendation, keep it semantic, short, and use underscores between words. Of course with everything there's always caveats.
 
-### Semantic
+#### Semantic
 
 I've never been too crazy for style names that really have no meaning like :class => 'H2603A'...Okay maybe I'm exaggerating, but I think you get the point. Try to use something that has meaning and can be recognized for what it is like :class => 'header', but by the same token try not to get super specific about the contents. Like it's probably not good to use something like, :class => 'johns_comments', because what happens if John gets fired in the comments becomes Frank's?
 
@@ -485,18 +480,18 @@ I found these articles to be really eye-opening or interesting regarding the sub
 
 
 
-### Short
+#### Short
 
 Try to keep it under 10 characters! I've seen some pretty long class names out there in the wild, and I'm not too crazy about them. They take up too much room. On the flip side use caution when choosing something super super short.  For example I sometimes use :id => 'ft' to ID the footer. I feel fine doing this since the tag is called <footer>.
 
-### CamelCase, Underscores, Hyphens, Concatenated?
+#### CamelCase, Underscores, Hyphens, Concatenated?
 
 Use underscores, but whatever you use stick with it. Be consistent.
 
-:id => 'pageHeader'
-:id => 'page_header'
-:id => 'page-header'
-:id => 'pageheader'
+    :id => 'pageHeader'
+    :id => 'page_header'
+    :id => 'page-header'
+    :id => 'pageheader'
 
 Why use underscores? Well, CamelCase really belongs to Controllers, and hyphens really belong to images, and concatenation can sometimes be hard to distinguish... so that leaves underscores. Not very scientific, and really it's just a matter of preference.
 
@@ -504,14 +499,13 @@ Personally, I like to keep it simple and fine one-worders, then concatenate, but
 
 
 Mobile First
-============
+------------
 
 Once upon a time ago when I worked for Fidelity Investments' FEB Design unit, we took an existing application and turned it into a mobile app (pre-smartphones). The result was a precise definition of the applications basic information architecture, no more no less. As an Information Architect with this experience, and knowing that today more than likely most of my users have or will have a smart phone soon, I like to architect with the mobile user in mind first, or in the very least simultaneously. Doing so allows me to architect with less fluff and develop mobile styles right from the get-go.
 
 It's not easy doing it this way, especially after years in years where mobile was an afterthought, or not even considered at all.
 
-Where Do Styles Go?
--------------------
+### Where Do Styles Go?
 
 Some argue that including mobile and print* styles in the same partials will help you remember that they are there. I personally won't forget about mobile styles, and neither will you. I think mobile styles should be a separate beast altogether, and here is why: 
 
@@ -519,8 +513,7 @@ Some argue that including mobile and print* styles in the same partials will hel
 - As applications grow and user needs change, it might become necessary to add someone to your team who specializes in mobile. No need to clutter up their work.
 - Mobile and desktop are different beasts, and these divergent paths require significantly different view approaches.
 
-User Agents or Media Queries
-----------------------------
+### User Agents or Media Queries
 
 Personally, I prefer to use user agents to serve up the correct styles and HTML. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" does a great job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. To get you started, if you're not sure where to begin, take a look at Ryan Bates screencast "[Mobile Devices] []".
 
@@ -536,10 +529,9 @@ Personally, I prefer to use user agents to serve up the correct styles and HTML.
 
 
 HTML Organization
-=================
+-----------------
 
-Where to Put Things
--------------------
+### Where to Put Things
 
 Separate your layout/application.html.haml into partials like:
 
@@ -579,10 +571,9 @@ Concise and simple. Also note the use of [ARIA roles][]. It's good practice to a
 
 
 Images
-======
+------
 
-Organization
-------------
+### Organization
 
 Start off by creating some basic folders to hold things as you develop such as:
 
@@ -592,29 +583,28 @@ Usually my root level folder "images" contains sprites, and the sprite component
 
 So now my images might look like this:
 
-- assets
-
-  - images
-    - buttons
-    - constructs*
-    - icons
-      icon1.gif
-      icon1.png
-      icon2.gif
-      icon2.png
-      icon3.gif
-      icon3.png
-    - logos
-    icon-sprite.png
-    icon-sprite.gif
-
-  - javascripts
-  - stylesheets
+    - assets
+    
+      - images
+        - buttons
+        - constructs*
+        - icons
+          icon1.gif
+          icon1.png
+          icon2.gif
+          icon2.png
+          icon3.gif
+          icon3.png
+        - logos
+        icon-sprite.png
+        icon-sprite.gif
+    
+      - javascripts
+      - stylesheets
 
 Everything has a place to go, and easily find later. as sites grow your image folders can get out of hand so start with an organization plan in mind.
 
-Choosing an Image Format
-------------------------
+### Choosing an Image Format
 
 When saving images I always save a .gif version in addition to a .png, just in case. Ideally images will be displayed as .PNG's, but because of issues with older browsers and other edge cases in which PNG fixes won't suffice I have found having them on hand is a great thing. Creating them is rather easy for your designer. I'll go even so far as to serve them up for IE6 as a default.
 
@@ -622,8 +612,7 @@ When saving images I always save a .gif version in addition to a .png, just in c
 
 .jpg's are really reserved for photos and not efficient for things like sprites, structural imagery, plus they do not preserve alpha transparencies which become an issue if backgrounds change in the future (kind of following in a roundabout way the old adage; "measure twice, cut once."). This article gives a good explanation of which to use and when: [Gif Png Jpg Which One To Use][Image Choice]
 
-Spriting
---------
+### Spriting
 
 I let Compass do all the sprite creation work. Ryan Bates provides an excellent tutorial on [Compass & CSS Sprites][Sprites]. If you or a designer are creating them in most cases it actually is better on the implementation side to have icon sprites line up horizontally (as opposed to vertically). Line up the top edge of each icon on an equidistant grid line whose coordinate is a multiple of 5 pixels, and not picas. For example, the horizontal grid line coordinates for 4 icons that are 16px x 16px might be:
 
@@ -647,8 +636,7 @@ Since yours are:
 
 Experience has shown me that having extra pixels of blankness between icons can be beneficial. For example, if icons are 28px x 28px, 35px or even 40px gridlines would be good, but not 30px. 
 
-Responsive Resizing
--------------------
+### Responsive Resizing
 
 Rather than tell you how to do it, I'm going to give you some of the best options an explanations out there.
 
@@ -691,7 +679,7 @@ When it comes to responsive web design and progressive enhancements, Filament Gr
 
 
 Optimization
-============
+------------
 
 Optimize browser rendering
 https://developers.google.com/speed/docs/best-practices/rendering
@@ -701,7 +689,7 @@ https://developer.mozilla.org/en/Writing_Efficient_CSS
 
 
 Refactoring
-===========
+-----------
 
 Refactoring >14,000 lines of CSS into Sass (4/16/12)
 http://wildbit.com/blog/2012/04/16/refactoring-14000-lines-of-css-into-sass/
@@ -714,16 +702,15 @@ Develop a marker that you can use via search/grep, a bundle package, or IDE capa
 
 
 Tools
-=====
+-----
 
 I use Firebug, and if you do too I highly recommend installing FireSass [https://github.com/nex3/firesass]. This will allow you to locate what Sass partial a particular style is generated from.
 
 
 Getting Started
-===============
+---------------
 
-HTML5
------
+### HTML5
 
 The best place to get started with your underlying HTML5 is:
 
@@ -735,7 +722,7 @@ Here's my implementation, and all in Haml:
 
 [ADD LINK HERE]
 
-### What to Put in <head>
+#### What to Put in <head>
 
 There are a lot of things that you could put in your <head> tags, but don't. Obviously just put in What you need. I provide the bare minimum, but everything else as well only commented out:
 
@@ -757,50 +744,48 @@ For an explanation on what this stuff is/does check out these two sources:
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
 
 
-CSS
----
+### CSS
 
 There are 4 base styles I highly recommend using:
 
-1) Compass [http://compass-style.org/]
+1)  Compass [http://compass-style.org/]
 
-The following resources will prove to be extremely helpful to you…
+    The following resources will prove to be extremely helpful to you…
 
-compass-rails
-https://github.com/Compass/compass-rails/blob/master/README.md
+    - [compass-rails][]
+    - [Getting Compass to Work With Rails 3.1 (and 3.2)][Working]
+    - [35 Great Resources for Compass and Sass][35 Great Resources]
 
-Getting Compass to Work With Rails 3.1 (and 3.2)
-http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
-
-35 Great Resources for Compass and Sass
-http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
-
-2) Blueprint [http://www.blueprintcss.org/]
+2)  [Blueprint][]
 
 3) 
 
 4)
 
 
-Accessibility
-=============
+[Compass]:                     http://compass-style.org/
+[compass-rails]:               https://github.com/Compass/compass-rails/blob/master/README.md
+[Working]:                     http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+[35 Great Resources]:          http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
+[Blueprint]:                   http://www.blueprintcss.org/
 
-Standardize Your Links
-----------------------
+Accessibility
+-------------
+
+### Standardize Your Links
 
 I find on some projects I work on links are not clearly defined or standardized. It's not obvious to me and probably the end-user that links are links, or links may not be consistent across the application or even the same page. For example; some links are blue, some are green, some links are underlined, some links are not underlined.
 
 It's important to define your links early on in your project – like before you write any code! The [Guidelines for Visualizing Links][Visualizing Links] will give you a great overview on the best direction for you to take in clearly defining and standardizing your links, but generally:
 
-1. Use one consistent color throughout your application.
-2. If possible choose a color that is generally recognized as a link, i.e. shades of blue, but this is not absolutely necessary.
-3. Use a second color to indicate that a link has been visited, e.g. purple.
-4. Provide visual cues such as underlines or titles.
-5. When making a title a link, provide an alternative link like "more" or "details", or in the least underline on hover.
-5. Borrow from the best.
+1.  Use one consistent color throughout your application.
+2.  If possible choose a color that is generally recognized as a link, i.e. shades of blue, but this is not absolutely necessary.
+3.  Use a second color to indicate that a link has been visited, e.g. purple.
+4.  Provide visual cues such as underlines or titles.
+5.  When making a title a link, provide an alternative link like "more" or "details", or in the least underline on hover.
+5.  Borrow from the best.
 
-Use ARIA Roles
---------------
+### Use ARIA Roles
 
 [ARIA][]
 
@@ -810,7 +795,7 @@ Use ARIA Roles
 
 
 Email Coding
-============
+------------
 
 "[Optimizing your email for mobile devices with the @media query][Optimizing for Email]"
 
@@ -819,12 +804,12 @@ Email Coding
 
 
 .gemfile
-========
+--------
 
 
 
 .gitignore
-==========
+----------
 
 Here's what I use, mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore] and Michael Hartl's [Ruby and Rails Tutorial][RoR Tutorial]:
 
@@ -904,7 +889,7 @@ Some additional useful ideas:
 
 
 Resets
-======
+------
 
 The granddaddy of all resets is Eric Meyer's "Reset CSS". [http://meyerweb.com/eric/tools/css/reset/index.html]
 
@@ -927,12 +912,12 @@ HTML5 Reset Stylesheet [http://html5doctor.com/html-5-reset-stylesheet/]
 
 
 Getting the Fonts Right
-=======================
+-----------------------
 
 
 
 Optimization
-============
+------------
 
 [Making the Web Fast(er)][]
 
@@ -942,7 +927,7 @@ Optimization
 
 
 Search Engine Optimization
-==========================
+--------------------------
 
 [Google SEO Starter Guide][Google SEO]
 
@@ -951,7 +936,7 @@ Search Engine Optimization
 
 
 Style Guides
-============
+------------
 
 [Front-end Style Guides][Style Guides]
 
@@ -960,7 +945,7 @@ Style Guides
 
 
 Good Advice
-===========
+-----------
 
 [Subliminal User Experience][User Experience]
 
@@ -969,7 +954,7 @@ Good Advice
 
 
 JavaScript Libraries
-====================
+--------------------
 
 [Zepto][]
 
