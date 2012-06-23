@@ -179,12 +179,12 @@ Setting up your application:
 
 3.  Add the following commented out code to your config/compass.rb file generated in step one:
 
-      # To allow compass to import partials from subdirectories per:
-      # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
-      # additional_import_paths = ["app/assets/stylesheets/<name>", "app/assets/stylesheets/<name>"]
-      #
-      # To compile in the necessary debugging information for FireSass.
-      # sass_options = {:debug_info => true}
+        # To allow compass to import partials from subdirectories per:
+        # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+        # additional_import_paths = ["app/assets/stylesheets/<name>", "app/assets/stylesheets/<name>"]
+        #
+        # To compile in the necessary debugging information for FireSass.
+        # sass_options = {:debug_info => true}
 
     ...You may need these things, and definitely check out [FireSass][].
 
@@ -193,11 +193,11 @@ Setting up your application:
     NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
 
 5.  Use @import to organize styles rather than Sprockets, and add the following reminder at the top of application.scss:
-
-      /*
-       * Important! Do *not* use Sprockets "require" syntax.
-       * Use @import to include other stylesheets and Compass mixins.
-       */
+        
+        /*
+         * Important! Do *not* use Sprockets "require" syntax.
+         * Use @import to include other stylesheets and Compass mixins.
+         */
 
     I use the structure found in the CSS Organization section below.
 
@@ -207,9 +207,9 @@ Setting up your application:
 
 7.  If you have a problem with the underscores and precompiling, add the following code to your config/application.rb file:
 
-      # Precompile *all* assets, except those that start with underscore per:
-      # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
-      config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+        # Precompile *all* assets, except those that start with underscore per:
+        # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+        config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
 8.  And that's pretty much it. Don't forget to reference in your application layout. The HTML section below covers how I organize my layouts and shared files.
 
