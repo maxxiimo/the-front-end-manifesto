@@ -18,14 +18,12 @@ Personal views and direction on front end coding, from a Ruby on Rails perspecti
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
 
 
-Attribution-NonCommercial-ShareAlike 
-CC BY-NC-SA 3.0
-
 *******************************************************************************************
 
 Table of Contents
 =================
 
+- The Manifesto
 - Use a Preprocessor
   - Compress
 - CSS Organization
@@ -72,7 +70,10 @@ Table of Contents
 
 *******************************************************************************************
 
-When I code I will:
+The Manifesto
+=============
+
+**When I code I will:**
 
 1. Seek perfection/excellence.
 
