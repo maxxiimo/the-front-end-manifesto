@@ -37,9 +37,11 @@ Table of Contents
   - User Agents or Media Queries
 - HTML Organization
   - Where to Put Things
-- Image Organization
+- Images
+  - Organization
   - Choosing an Image Format
   - Spriting
+  - Responsive Resizing
 - Optimization
 - Refactoring
 - Tools
@@ -576,8 +578,11 @@ Do all this, and your application.html.haml file might look something like this:
 Concise and simple. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology to browse your application.
 
 
-Image Organization
-==================
+Images
+======
+
+Organization
+------------
 
 Start off by creating some basic folders to hold things as you develop such as:
 
@@ -642,12 +647,47 @@ Since yours are:
 
 Experience has shown me that having extra pixels of blankness between icons can be beneficial. For example, if icons are 28px x 28px, 35px or even 40px gridlines would be good, but not 30px. 
 
+Responsive Resizing
+-------------------
+
+Rather than tell you how to do it, I'm going to give you some of the best options an explanations out there.
+
+...But I will say that of all the options here, I'm thinking I like [Picturefill][] the best:
+
+> A Responsive Images approach that you can use today, that mimics the proposed picture element using divs, for safety sake.
+
+[24 Ways][] has two good articles on the subject:
+
+[Adaptive Images for Responsive Designs][24 Ways 1]
+[Adaptive Images for Responsive Designs… Again][24 Ways 2]
+
+[Better background images for responsive web design][Background Images] does a great job explaining the problem with placing images and knowing where their center is as images are resized, and in a nutshell:
+
+> So what we need is a way for the image to fill both its width and its height at all times, while retaining proportion...
+
+The author then goes on to recommend [jQuery Anystretch][]:
+
+> Anystretch is a jQuery plugin that allows you to add a dynamically-resized background image to any page or block level element. The image will stretch to fit the page/element, and will automatically resize as the window size changes.
+
+When it comes to CSS, [A List Apart][ALA] is a maverick and authority in the field. [Fluid Images][] is a great article/tutorial on the subject of responsive images.
+
+When it comes to responsive web design and progressive enhancements, Filament Group wrote the books (actually two of their books are titles exactly that). [Responsive Images: Experimenting with Context-Aware Image Sizing][Filament] describes a technique using a combination of JavaScript and .htaccess. I'm not recommending this technique, but if you're interested it's worth taking a look.
+
 ---------------------------------------
 [ARIA roles]            http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [PNGS]:                 http://html5boilerplate.com/docs/Using-PNG/
 [Sprites]:              http://railscasts.com/episodes/334-compass-css-sprites
                         "Learn how to make CSS sprites with Compass."
 [Image Choice]          http://blogs.sitepoint.com/gif-png-jpg-which-one-to-use/
+[Picturefill]           https://github.com/scottjehl/picturefill/
+[24 Ways]               http://24ways.org/
+[24 Ways 1]             http://24ways.org/2011/adaptive-images-for-responsive-designs
+[24 Ways 2]             http://24ways.org/2011/adaptive-images-for-responsive-designs-again
+[Background Images]     http://elliotjaystocks.com/blog/better-background-images-for-responsive-web-design/
+[jQuery Anystretch]     https://github.com/danmillar/jquery-anystretch
+[ALA]                   http://www.alistapart.com/
+[Fluid Images]          http://www.alistapart.com/articles/fluid-images/
+[Filament]              http://filamentgroup.com/lab/responsive_images_experimenting_with_context_aware_image_sizing/
 
 
 Optimization
