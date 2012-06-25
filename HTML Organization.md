@@ -50,7 +50,7 @@ These days most people like to just forget about IE 6, it's old, "We're not supp
         %a{:href => "http://browsehappy.com/"} Upgrade to a different browser or
         %a{:href => "http://www.google.com/chromeframe/?redirect=true"} install Google Chrome Frame to experience this site.
 
-Here is the corresponding helper:
+Here is the corresponding helper method:
 
     def chromeframe
       render :partial => 'layouts/chromeframe'
@@ -77,6 +77,14 @@ There is so much you can put in your %head that it can get pretty confusing. I b
 https://github.com/maxxiimo/base-files/blob/master/_head.html.haml
 
 Everything is nice and neat in haml and with only the ones I think you should use (plus all the other options commented out).
+
+### The Title
+
+    %title= content_for?(:title) ? yield(:title) : "XXX"
+
+### JavaScript
+
+Generally it is best to put JavaScript at the very bottom of the page. Doing so will allow the page to render before scripts are loaded, but some scripts such as modernizr need to load before your HTML so naturally I include them in _head.html.haml. To accommodate all other JavaScript files I use a _scripts.html.haml partial located in the layout folder.
 
 
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/

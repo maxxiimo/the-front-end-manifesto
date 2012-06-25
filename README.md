@@ -35,6 +35,8 @@ Table of Contents
   - Where to Put Things
   - IE 6
   - %head and Boilerplate
+  - The Title
+  - JavaScript
 - Images
   - Organization
   - Choosing an Image Format
