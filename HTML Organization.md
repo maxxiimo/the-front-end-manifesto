@@ -70,5 +70,15 @@ So now your application layout file will look like this:
       = render :partial => 'shared/footer'
     = scripts
 
+### %head and Boilerplate
+
+There is so much you can put in your %head that it can get pretty confusing. I base all of my projects off of parts of [HTML5 Boilerplate][]. To learn more check out [HTML head options][], all of the research on best practices and why has been done for you. Just pick and choose what works for you. You can use my haml template to start:
+
+https://github.com/maxxiimo/base-files/blob/master/_head.html.haml
+
+Everything is nice and neat in haml and with only the ones I think you should use (plus all the other options commented out).
+
 
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
+[HTML5 Boilerplate]:    http://html5boilerplate.com/
+[HTML head options]:    http://html5boilerplate.com/docs/html-head/

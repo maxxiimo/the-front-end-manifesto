@@ -34,6 +34,7 @@ Table of Contents
 - HTML Organization
   - Where to Put Things
   - IE 6
+  - %head and Boilerplate
 - Images
   - Organization
   - Choosing an Image Format
