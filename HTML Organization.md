@@ -38,3 +38,37 @@ Do all this, and your application.html.haml file might look something like this:
     = scripts
 
 Concise and simple. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology to browse your application.
+
+### IE 6
+
+These days most people like to just forget about IE 6, it's old, "We're not supporting it, those users need to update!" ...But here's the problem, those users are still out there, even if they don't want to be. Have you ever been in your local library and checked out the super old machines people have to use there? So what I propose is a compromise. Don't waste your time developing for IE 6 but give those users notice and ability via [Chrome Frame][]. Add the following partial to your layouts folder:
+
+    /[if lt IE 7 ]
+      %p.chromeframe
+        Your browser is
+        %em ancient!
+        %a{:href => "http://browsehappy.com/"} Upgrade to a different browser or
+        %a{:href => "http://www.google.com/chromeframe/?redirect=true"} install Google Chrome Frame to experience this site.
+
+Here is the corresponding helper:
+
+    def chromeframe
+      render :partial => 'layouts/chromeframe'
+    end
+
+So now your application layout file will look like this:
+
+    !!!
+    = head
+    %body
+      = chromeframe
+      %header{:id => 'hd', :role => "banner"}
+        = render :partial => 'shared/logo'
+        = render :partial => 'shared/navigation'
+      #main{:role => "main"}
+        = yield
+      = render :partial => 'shared/footer'
+    = scripts
+
+
+[Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/

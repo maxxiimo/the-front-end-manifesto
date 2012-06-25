@@ -33,6 +33,7 @@ Table of Contents
   - User Agents or Media Queries
 - HTML Organization
   - Where to Put Things
+  - IE 6
 - Images
   - Organization
   - Choosing an Image Format
@@ -41,9 +42,6 @@ Table of Contents
 - Optimization
 - Refactoring
 - Tools
-- Getting Started
-  - HTML5
-  - CSS
 - Accessibility
   - Standardize Your Links
   - Use ARIA Roles
