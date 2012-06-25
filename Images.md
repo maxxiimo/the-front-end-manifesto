@@ -5,17 +5,26 @@ Images
 
 Start off by creating some basic folders to hold things as you develop such as:
 
-* Regarding the name "constructs", I used to call this "assets" before the asset pipeline, but constructs will do until I think of a better name. It holds things like shims, navigation-pipes, horizontal dividers, basically things that are used to construct an application/page.
+    - assets
+    
+      - images
+        - buttons
+        - fixtures*
+        - icons
+        - logos
+    
+      - javascripts
+      - stylesheets
 
-Usually my root level folder "images" contains sprites, and the sprite components remain in their appropriate folders like icons.
+* Regarding the name "fixtures", I used to call this "assets" before the asset pipeline, but fixtures will do until I think of a better name. It holds things like shims, navigation-pipes, horizontal dividers, basically things that are used to construct an application/page.
 
-So now my images might look like this:
+Usually my root level folder "images" contains sprites. The corresponding sprite components remain in their appropriate folders like icons, and I use Compass to create my sprites per the Spriting section below. So with an icons sprite my folders might look like this:
 
     - assets
     
       - images
         - buttons
-        - constructs*
+        - fixtures*
         - icons
           icon1.gif
           icon1.png
@@ -30,7 +39,7 @@ So now my images might look like this:
       - javascripts
       - stylesheets
 
-Everything has a place to go, and easily find later. as sites grow your image folders can get out of hand so start with an organization plan in mind.
+Everything has a place to go, and easily find later. As sites grow your image folders can get out of hand so start with an organization plan in mind. In fact I would just add these folders right off the bat.
 
 ### Choosing an Image Format
 

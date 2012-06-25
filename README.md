@@ -37,6 +37,7 @@ Table of Contents
   - %head and Boilerplate
   - The Title
   - JavaScript
+- Slicing and Dicing Mockups
 - Images
   - Organization
   - Choosing an Image Format
