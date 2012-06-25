@@ -34,4 +34,8 @@ The truth of a matter as slicing mockups is pretty easy and straightforward beca
 
 ### Backgrounds
 
-Backgrounds are generally single colors like eggshell white, a repeating pattern, or a color with a horizontal gradient. Rarely are they a giant image because these take up a lot of bandwidth. Set the background-color property either to a specific color or a repeating image. If the gradient is involved you can use CSS 3 or an image. Whatever images you do use for the background, make them as small as possible that will allow you the same time to create the affect when repeated.
+Backgrounds are generally single colors like eggshell white, a repeating pattern, or a color with a horizontal gradient. Rarely are they a giant image because these take up a lot of bandwidth. Set the background-color property either to a specific color, or background to a repeating image. If a gradient is involved you can use CSS 3 or an image. Whatever images you do use for the background, make it as small as possible without losing the affect you want when repeated.
+
+Remember, when using Compass use image-url("") instead of url():
+
+    background: image-url("fixtures/bg-texture.gif")
