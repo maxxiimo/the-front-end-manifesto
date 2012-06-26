@@ -32,7 +32,7 @@ Do all this, and your application.html.haml file might look something like this:
       %header{:id => 'hd', :role => "banner"}
         = render :partial => 'shared/logo'
         = render :partial => 'shared/navigation'
-      #main{:role => "main"}
+      %section{:id => 'main', :role => "main"}
         = yield
       = render :partial => 'shared/footer'
     = scripts
@@ -65,7 +65,7 @@ So now your application layout file will look like this:
       %header{:id => 'hd', :role => "banner"}
         = render :partial => 'shared/logo'
         = render :partial => 'shared/navigation'
-      #main{:role => "main"}
+      %section{:id => 'main', :role => "main"}
         = yield
       = render :partial => 'shared/footer'
     = scripts
@@ -77,6 +77,8 @@ There is so much you can put in your %head that it can get pretty confusing. I b
 https://github.com/maxxiimo/base-files/blob/master/_head.html.haml
 
 Everything is nice and neat in haml and with only the ones I think you should use (plus all the other options commented out).
+
+[<head> Examples][]
 
 ### The Title
 
@@ -90,3 +92,4 @@ Generally it is best to put JavaScript at the very bottom of the page. Doing so 
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [HTML head options]:    http://html5boilerplate.com/docs/html-head/
+[<head> Examples]       https://gist.github.com/581868
