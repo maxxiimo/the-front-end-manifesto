@@ -253,13 +253,23 @@ Try to keep it under 10 characters! I've seen some pretty long class names out t
 
 #### CamelCase, Underscores, Hyphens, Concatenated?
 
-Use underscores, but whatever you use stick with it. Be consistent.
+...whatever you use stick with it. Be consistent.
 
     :id => 'pageHeader'
     :id => 'page_header'
     :id => 'page-header'
     :id => 'pageheader'
 
-Why use underscores? Well, CamelCase really belongs to Controllers, and hyphens really belong to images, and concatenation can sometimes be hard to distinguish... so that leaves underscores. Not very scientific, and really it's just a matter of preference.
 
-Personally, I like to keep it simple and fine one-worders, then concatenate, but two words tops and only when the words are small enough and distinguishable. Then if I must I use underlines. Not consistent enough for you? You're probably right, but I feel like I have mastered the art of class naming well enough that it feels and looks consistent (and pretty).
+Personally, I like to keep it simple and find one-worders that fit, then concatenate, but two words tops! ...and only when the words are small enough and distinguishable. Then if I must, I use one of the other methods above and only one throughout my styles and only if absolutely necessary, i.e. I don't have an opinion on which is better. My method isn't consistent enough for you? You're probably right, but I feel like I have mastered the art of class naming well enough that it feels and looks consistent (and pretty).
+
+Here's some more opinions on the matter:
+
+[CSS: camelCase vs under_score][aB vs. a_b]
+[Hyphens or underscores in CSS and HTML identifiers?][Identifiers]
+[CSS: CamelCase Seriously Sucks!][Sucks]
+
+
+[aB vs. a_b]:           http://stackoverflow.com/questions/1437527/css-camelcase-vs-under-score
+[Identifiers]:          http://stackoverflow.com/questions/1686337/hyphens-or-underscores-in-css-and-html-identifiers
+[Sucks]:                http://csswizardry.com/2010/12/css-camel-case-seriously-sucks/
