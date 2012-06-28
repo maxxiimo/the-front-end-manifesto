@@ -49,7 +49,7 @@ Remember, when using Compass use image-url("") instead of url():
 
     background: image-url("fixtures/bg-texture.gif") 0 0 repeat-x
 
-### Step 2 -  Set Widths
+### Step 2 - Set Widths
 
 Pretty straightforward, but doing so early on will lead into step 3.
 
@@ -58,7 +58,18 @@ Note: You can use <body> or <div> as a containing element:
 [Why should I use a container div in HTML?][Containing DIV]
 [Using the <body> element as a wrapper][Containing BODY]
 
-### Step 3 - Sectioning Content (layout/application.html.haml)
+### Step 3 - Fonts
+
+Start sampling fonts to determine font-family, font-size, and color. You want to organize what you find in your _define.sass file. The names you use to define these colors can be very specific, but as you move along you'll begin to notice groupings and can reorganize and rename things as you work.
+
+The overall font-family is probably the most important thing you'll do fine right now. I use [CSS Font Stack][] to help me define the font-family. Some additional resources for you include:
+
+[Better CSS Font Stacks][Better Stacks]
+[Revised Font Stack][Revised Stack]
+[Web Fonts Can Be Nice (Honest)][Nice Fonts]
+[Complete Guide to Pre-Installed Fonts in Linux, Mac, and Windows][Complete Font Guide]
+
+### Step 4 - Sectioning Content (layout/application.html.haml)
 
 Here's where we really begin to code the basic high-level questions above. Think in terms of your base layout in layout/application.html.haml. I typically start a project using the base template described in the HTML Organization section of this manifesto, I adjust it and incorporate new elements when required. Here are a few resources that will help you choose semantically correct elements for your base layout:
 
@@ -69,9 +80,11 @@ Here's where we really begin to code the basic high-level questions above. Think
 
 When sectioning content to visualize your code output it helps to use border outlines or Compass' [grid-background mixin][grid-background].
 
-### Step 3 - Start with %header and %footer
+### Step 5 - Start with %header and %footer
 
 Once your application layout is in place, begin coding your pages header and footer. I find these 2 sections the be the most straightforward. Headers typically contain a logo, maybe a tagline or slogan, a navigational element, and sometimes a utility element. Footers usually have a pretty standard set of links like: about, contact, terms, and then a copyright notice and some social networking icons. I don't mean to say that sites should be this way, many are not, but the fact of the matter is that most are. Because of this I just like to get these sections out of the way, they are low hanging fruit as an easy to do, they will frame most of the pages in your application, and when you first see that header section all shiny and new you know you're getting somewhere.
+
+NOTE: Leave a placeholder for your navigation, we will work on this in step 4.
 
 So start with the header, and don't forget to use your magnifying tool to really see what's going on.
 
@@ -87,9 +100,7 @@ So start with the header, and don't forget to use your magnifying tool to really
 
 4.  In your CSS file set the header height. The Image/Canvas Size... tool will also give you an accurate measurement of the images height, which in turn is your headers height.
 
-5.  Start sampling header font colors and organizing the results in your _define.sass file. The names he used to define these colors can be very specific, but as you move along you'll begin to notice groupings and can grep and rename things as you work.
-
-6.  Now that you have all the pieces, you can start implementing them.
+5.  Now that you have all the pieces, you can start implementing them.
 
     My logo code looks something like this:
 
@@ -111,23 +122,36 @@ So start with the header, and don't forget to use your magnifying tool to really
 
 And so on...
 
-As your coding there should be three things you should keep in mind; 1) candidates for Sprite-hood, 2) font sizes and colors and how ultimately can most efficiently organize them, and 3) using CSS to accomplish some of the image effects. For the later I like to start with images that I always have available to me as a default, then begin to use CSS3. In some cases just go with the CSS3 and don't bother with chopping images; like rounded corners because what is the default? A square corner, not a bad degradation.
+As your coding there should be three things you should keep in mind: 1) candidates for Sprite-hood, 2) font sizes and colors and how you can most efficiently organize them, and 3) using CSS to accomplish some of the image effects. For the later I like to start with images that I always have available to me as a fallback, then begin to replace these with more modern and bandwidth efficient CSS3 properties. In some cases just go with the CSS3 and don't bother with chopping images; like rounded corners because what is the default? A square corner, not a bad degradation. 
 
-Here's what the project is looking like so far:
+But why the defaults at all? The reason is because some browsers may not be able to use the latest and greatest CSS3 techniques. For these browsers we can serve up the fallback styles we created initially with the help of a tool like [Modernizr][]. I discuss this feature detection tool in greater detail in the JavaScript Library section of this manifesto.
+
+So here's what the project is looking like so far:
 
 !!! NEED AN IMAGE !!!
 
-### Step 4 -  Navigation
+### Step 6 - Navigation
+
+Now that the header and footer are complete it's time to code the navigation. Against, since this manifesto is not a tutorial on HTML and CSS coding I will point you to submit sources:
+
+These days many sites use Tab navigation. Chris Coyier, a prolific writer for [CSS Tricks][], has written extensively on the subject. Go to his blog and search for "Tab" or "Navigation" and you will find a wealth of information and How To's.
+
+But Tab navigation is not the only type of navigation, so I will recommend [A List Apart][] as another source of information for navigation and How To's.
+
+Since we are using the Rails stack and jQuery, might as well check those sources out to. I'm not a huge fan of [jQuery UI][] but it is tried and true.
 
 
-### Step  - Grouping Content
+### Step 7 - Grouping Content
 
-Now we get down to the nitty-gritty and for this I'm just going to give you some references that might help you hone your skills:
+Now we get down to the nitty-gritty and for this here are some references that might help you hone your skills:
 
 [Grouping content][]
 [Content models][]
 
-### Step  - Sprites
+So how do I do it?
+
+
+### Step 8 - Sprites and CSS3
 
 
 
@@ -135,10 +159,19 @@ Now we get down to the nitty-gritty and for this I'm just going to give you some
 [grid-background]:      http://compass-style.org/reference/compass/layout/grid_background/
 [Containing DIV]:       http://stackoverflow.com/questions/354739/why-should-i-use-a-container-div-in-html
 [Containing BODY]:      http://csswizardry.com/2011/01/using-the-body-element-as-a-wrapper/
+[CSS Font Stack]:       http://cssfontstack.com/
+[Better Stacks]:        http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
+[Revised Stack]:        http://www.awayback.com/revised-font-stack/
+[Nice Fonts]:           http://aversionfour.petercolesdc.com/web-fonts-nice-honest/
+[Complete Font Guide]:  http://www.apaddedcell.com/web-fonts
 [Flowchart]:            http://html5doctor.com/downloads/h5d-sectioning-flowchart.png
 [Structural Tags]:      http://orderedlist.com/resources/html-css/structural-tags-in-html5/
 [Not Obvious]:          http://www.anthonycalzadilla.com/2010/08/html5-section-aside-header-nav-footer-elements-not-as-obvious-as-they-sound/           
 [Beautiful HTML]:       http://css-tricks.com/what-beautiful-html-code-looks-like/
+[Modernizr]:            http://modernizr.com/
+[CSS Tricks]:           http://css-tricks.com/
+[A List Apart]:         http://www.alistapart.com/
+[jQuery UI]:            http://jqueryui.com/
 
 [Grouping content]:     http://developers.whatwg.org/grouping-content.html
 [Content models]:       http://developers.whatwg.org/content-models.html

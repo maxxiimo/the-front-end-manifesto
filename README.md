@@ -38,6 +38,14 @@ Table of Contents
   - The Title
   - JavaScript
 - Slicing and Dicing Mockups
+  - Step 1 - Backgrounds
+  - Step 2 - Set Widths
+  - Step 3 - Fonts
+  - Step 4 - Sectioning Content (layout/application.html.haml)
+  - Step 5 - Start with %header and %footer
+  - Step 6 - Navigation
+  - Step 7 - Grouping Content
+  - Step 8 - Sprites and CSS3
 - Images
   - Organization
   - Choosing an Image Format
@@ -54,6 +62,7 @@ Table of Contents
 - .gitignore
 - Resets
 - Getting the Fonts Right
+  - font-family
 - Optimization
 - Search Engine Optimization
 - Style Guides
