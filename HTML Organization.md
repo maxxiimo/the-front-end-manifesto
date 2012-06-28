@@ -32,7 +32,7 @@ Do all this, and your application.html.haml file might look something like this:
       %header{:id => 'hd', :role => "banner"}
         = render :partial => 'shared/logo'
         = render :partial => 'shared/navigation'
-      %section{:id => 'main', :role => "main"}
+      #main{:role => "main"}
         = yield
       = render :partial => 'shared/footer'
     = scripts
@@ -65,7 +65,7 @@ So now your application layout file will look like this:
       %header{:id => 'hd', :role => "banner"}
         = render :partial => 'shared/logo'
         = render :partial => 'shared/navigation'
-      %section{:id => 'main', :role => "main"}
+      #main{:role => "main"}
         = yield
       = render :partial => 'shared/footer'
     = scripts

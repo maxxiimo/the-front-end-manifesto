@@ -33,6 +33,16 @@ As the underlying structure comes together in your mind and even on your editor,
 
 The truth of a matter as slicing mockups is pretty easy and straightforward because there are only so many ways to organize a page layout, and all of the components within a page layout are pretty standard, I mean you have paragraphs and headers and links, a way to get around through navigation, and so forth. But on the other hand a designer's artistic expression and the look and feel of the site are very subjective mockup to mockup. Making a mockup come to life, consistently across devices and browsers, requires a certain amount of art based on experience. There is no formula for doing it, just basic guidelines.
 
+NOTE: As you're moving along there'll be times that you will need to add a note for yourself so that you can revisit something. When adding notes in your code I like to use something like this:
+
+    // FIXME ccm: the note goes in here.
+    
+    or
+    
+    // TODO ccm: the note goes in here.
+
+This way I can grep for "FIXME ccm" where ccm are my initials, and find my notes.
+
 ### Step 1 - Backgrounds
 
 Start with the background. This manifesto is not a course on CSSso I won't get to into the details, but backgrounds are typically:
@@ -77,8 +87,29 @@ Here's where we really begin to code the basic high-level questions above. Think
 [Structural Tags in HTML5][Structural Tags]
 [HTML5 section, aside, header, nav, footer elements – not as obvious as they sound][Not Obvious]
 [What Beautiful HTML Code Looks like][Beautiful HTML]
+[HTML 5 Outliner][]
 
-When sectioning content to visualize your code output it helps to use border outlines or Compass' [grid-background mixin][grid-background].
+To visualize your code output it helps to use border outlines on major sections or Compass' [grid-background mixin][grid-background].
+
+Here is what my application layout looks like:
+
+!!!
+= head
+%body
+  = chromeframe
+  %header{:id => 'hd', :role => "banner"}
+    #container
+      = render :partial => 'shared/logo'
+      = render :partial => 'shared/utility'
+  #container
+    = render :partial => 'shared/tabs'
+    #main{:role => "main"}
+      = render :partial => 'shared/breadcrumbs'
+      = yield
+    = render :partial => 'shared/footer'
+= scripts
+
+A slight variation of this manifestoes base layout found in  the HTML Organization section.
 
 ### Step 5 - Start with %header and %footer
 
@@ -141,14 +172,38 @@ But Tab navigation is not the only type of navigation, so I will recommend [A Li
 Since we are using the Rails stack and jQuery, might as well check those sources out to. I'm not a huge fan of [jQuery UI][] but it is tried and true.
 
 
-### Step 7 - Grouping Content
+### Step 7 - HTML foryour Main Content
 
 Now we get down to the nitty-gritty and for this here are some references that might help you hone your skills:
 
 [Grouping content][]
 [Content models][]
 
-So how do I do it?
+So how do I do it? I start with a blank canvas, i.e. in my text editor a view file.
+
+1.  Look for all %h1, %h2, %h3 candidates.
+
+2.  If your mockup were a newspaper layout, what would the sections be? How is it organized? Keep this in mind.
+
+3.  Start with the main section, one word/image at a time beginning with the header and start building! I mean literally header by header, list by lists, paragraph by paragraph, start taking the words in your mockup and putting them into appropriate elements in your view file. You might need to readjust your application layout file, that's okay. In addition to the resources in step 4, [HTML5 Doctor][] has some great HTML5 semantic specific articles that will help you get organized. If you are new to this all, or rusty, I recommend reviewing the following element articles: [%article][], [%section][], [the difference][], [%div][], [%aside][], [%header][], [%footer][], and [%nav][]. 
+
+Coding everything semantically correct is a practice in trial and error.
+
+Here's part of what I have now once everything, i.e. your HTML, is in place:
+
+!!! NEED AN IMAGE !!!
+
+### Step 8 - Adding Styles
+
+Like in the previous step we'll take it section by section, image by image, font by font, etc. First I like to get the layout positioning out-of-the-way. With everything in its correct position this is what I have up till now:
+
+!!! NEED AN IMAGE !!!
+
+Now I go from section to section.
+
+
+
+
 
 
 ### Step 8 - Sprites and CSS3
@@ -168,10 +223,20 @@ So how do I do it?
 [Structural Tags]:      http://orderedlist.com/resources/html-css/structural-tags-in-html5/
 [Not Obvious]:          http://www.anthonycalzadilla.com/2010/08/html5-section-aside-header-nav-footer-elements-not-as-obvious-as-they-sound/           
 [Beautiful HTML]:       http://css-tricks.com/what-beautiful-html-code-looks-like/
+[HTML 5 Outliner]:      http://gsnedders.html5.org/outliner/
 [Modernizr]:            http://modernizr.com/
 [CSS Tricks]:           http://css-tricks.com/
 [A List Apart]:         http://www.alistapart.com/
 [jQuery UI]:            http://jqueryui.com/
+[HTML5 Doctor]:         http://html5doctor.com/article-archive/
+[%article]:             http://html5doctor.com/the-article-element/
+[%section]:             http://html5doctor.com/the-section-element/
+[the difference]:       http://www.brucelawson.co.uk/2010/html5-articles-and-sections-whats-the-difference/
+[%div]:                 http://html5doctor.com/you-can-still-use-div/
+[%aside]:               http://html5doctor.com/aside-revisited/
+[%header]:              http://html5doctor.com/the-header-element/
+[%footer]:              http://html5doctor.com/the-footer-element-update/
+[%nav]:                 http://html5doctor.com/nav-element/
 
 [Grouping content]:     http://developers.whatwg.org/grouping-content.html
 [Content models]:       http://developers.whatwg.org/content-models.html
