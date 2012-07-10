@@ -172,7 +172,7 @@ But Tab navigation is not the only type of navigation, so I will recommend [A Li
 Since we are using the Rails stack and jQuery, might as well check those sources out to. I'm not a huge fan of [jQuery UI][] but it is tried and true.
 
 
-### Step 7 - HTML foryour Main Content
+### Step 7 - HTML for the Main Content
 
 Now we get down to the nitty-gritty and for this here are some references that might help you hone your skills:
 
@@ -185,28 +185,34 @@ So how do I do it? I start with a blank canvas, i.e. in my text editor a view fi
 
 2.  If your mockup were a newspaper layout, what would the sections be? How is it organized? Keep this in mind.
 
-3.  Start with the main section, one word/image at a time beginning with the header and start building! I mean literally header by header, list by lists, paragraph by paragraph, start taking the words in your mockup and putting them into appropriate elements in your view file. You might need to readjust your application layout file, that's okay. In addition to the resources in step 4, [HTML5 Doctor][] has some great HTML5 semantic specific articles that will help you get organized. If you are new to this all, or rusty, I recommend reviewing the following element articles: [%article][], [%section][], [the difference][], [%div][], [%aside][], [%header][], [%footer][], and [%nav][]. 
+3.  Start with the main section, one word/image at a time beginning with the header and start building!
 
-Coding everything semantically correct is a practice in trial and error.
+    I mean literally header by header, list by lists, paragraph by paragraph, start taking the words in your mockup and putting them into appropriate elements in your view file. You might need to readjust your application layout file as you move along, that's okay, this is the time to do that. You may also initially placed something in your _layout.sass styles, only to realize later that really belongs in _pages.sass. That happens to me all of the time, half the time with anticipation. In those cases I usually add a little // FIXME ccm: note.
 
-Here's part of what I have now once everything, i.e. your HTML, is in place:
+    As you start moving through sections of your mockup, start grabbing any remaining icons or images that you have not grabbed from your mockup already and place them in their appropriate folders per the HTML Organization chapter of this manifesto. Some things will simply be placeholders, like profile pictures. This image belongs in: images/pics/image-name.png. You can delete your placeholders out later.
+
+Coding everything semantically correct is a practice in trial and error. In addition to the resources in step 4, [HTML5 Doctor][] has some great HTML5 semantic specific articles that will help you get organized. If you are new to this all, or rusty, I recommend reviewing the following "element" articles: [%article][], [%section][], [the difference][], [%div][], [%aside][], [%header][], [%footer][], and [%nav][]. 
+
+Here's what I have up until now:
 
 !!! NEED AN IMAGE !!!
 
 ### Step 8 - Adding Styles
 
-Like in the previous step we'll take it section by section, image by image, font by font, etc. First I like to get the layout positioning out-of-the-way. With everything in its correct position this is what I have up till now:
+Like in the previous step we'll take it section by section, image by image, font by font, etc. First, I like to get the layout positioning out-of-the-way. Here we're mostly dealing with widths, margin and padding, and borders. With everything in its correct position this is what I have:
 
 !!! NEED AN IMAGE !!!
 
-Now I go from section to section.
+Now I go from section to section. As I move along, and since all my font colors are defined in _define.sass, I begin to see patterns emerging and can consolidate and reorganize fonts into logical groups.
 
 
 
 
 
 
-### Step 8 - Sprites and CSS3
+### Step 9 - Sprites and CSS3
+
+[Railscasts][]
 
 
 
@@ -241,3 +247,19 @@ Now I go from section to section.
 [Grouping content]:     http://developers.whatwg.org/grouping-content.html
 [Content models]:       http://developers.whatwg.org/content-models.html
 
+[Railscasts]:           http://railscasts.com/episodes/334-compass-css-sprites
+
+
+
+Measure twice, cut once.
+
+
+Trial and error.
+
+
+Varying specificity.
+
+
+Getting things in place.
+
+First try to use padding and margins, try to convert inline elements to inline-blocks, consider using floats, then try absolute positioning.

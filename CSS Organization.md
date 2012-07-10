@@ -35,8 +35,8 @@ There is nothing wrong with using Rails manifest capabilities, however, since we
     
     /* BASIC STRUCTURE
       ============================================================================ */
-    // @import "layout";
-    // @import "yui-grid";
+    @import "layout";
+    // @import "grid";
     
     
     /* TYPOGRAPHY

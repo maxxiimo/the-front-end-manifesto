@@ -44,7 +44,7 @@ Table of Contents
   - Step 4 - Sectioning Content (layout/application.html.haml)
   - Step 5 - Start with %header and %footer
   - Step 6 - Navigation
-  - Step 7 - Grouping Content
+  - Step 7 - HTML for the Main Content
   - Step 8 - Sprites and CSS3
 - Images
   - Organization
