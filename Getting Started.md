@@ -37,25 +37,4 @@ For an explanation on what this stuff is/does check out these two sources:
 
 ### CSS
 
-There are 4 base styles I highly recommend using:
 
-1)  Compass [http://compass-style.org/]
-
-    The following resources will prove to be extremely helpful to you…
-
-    - [compass-rails][]
-    - [Getting Compass to Work With Rails 3.1 (and 3.2)][Working]
-    - [35 Great Resources for Compass and Sass][35 Great Resources]
-
-2)  [Blueprint][]
-
-3) 
-
-4)
-
-
-[Compass]:                     http://compass-style.org/
-[compass-rails]:               https://github.com/Compass/compass-rails/blob/master/README.md
-[Working]:                     http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
-[35 Great Resources]:          http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
-[Blueprint]:                   http://www.blueprintcss.org/
