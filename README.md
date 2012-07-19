@@ -50,6 +50,7 @@ Table of Contents
   - Step 6 - Navigation
   - Step 7 - HTML for the Main Content
   - Step 8 - Sprites and CSS3
+- Navigation
 - Images
   - Organization
   - Choosing an Image Format
@@ -142,3 +143,8 @@ Include the most basic mixin and expand from there:
 
 [Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/
 [Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
+
+
+
+
+*Designers should use pixels.*

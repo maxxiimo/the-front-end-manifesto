@@ -163,14 +163,11 @@ So here's what the project is looking like so far:
 
 ### Step 6 - Navigation
 
-Now that the header and footer are complete it's time to code the navigation. Against, since this manifesto is not a tutorial on HTML and CSS coding I will point you to submit sources:
+Now that the header and footer are complete it's time to code the navigation. Definitely check out the Navigation chapter, and here are some useful resources:
 
-These days many sites use Tab navigation. Chris Coyier, a prolific writer for [CSS Tricks][], has written extensively on the subject. Go to his blog and search for "Tab" or "Navigation" and you will find a wealth of information and How To's.
+Chris Coyier, a prolific writer for [CSS Tricks][], has written extensively on the subject of tabs. Go to his blog and search for "Tab" or "Navigation" and you will find a wealth of information and CSS How To's. [A List Apart][] is another great source of information for navigation and How To's.
 
-But Tab navigation is not the only type of navigation, so I will recommend [A List Apart][] as another source of information for navigation and How To's.
-
-Since we are using the Rails stack and jQuery, might as well check those sources out to. I'm not a huge fan of [jQuery UI][] but it is tried and true.
-
+Since we are using the Rails stack and jQuery, might as well check those sources out too. I'm not a huge fan of [jQuery UI][] but it is tried and true.
 
 ### Step 7 - HTML for the Main Content
 

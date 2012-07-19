@@ -49,6 +49,11 @@ When saving images I always save a .gif version in addition to a .png, just in c
 
 .jpg's are really reserved for photos and not efficient for things like sprites, structural imagery, plus they do not preserve alpha transparencies which become an issue if backgrounds change in the future (kind of following in a roundabout way the old adage; "measure twice, cut once."). This article gives a good explanation of which to use and when: [Gif Png Jpg Which One To Use][Image Choice]
 
+### optimizing
+
+[ImageOptim][]
+[Trimage][]
+
 ### Spriting
 
 I let Compass do all the sprite creation work. Ryan Bates provides an excellent tutorial on [Compass & CSS Sprites][Sprites]. If you or a designer are creating them in most cases it actually is better on the implementation side to have icon sprites line up horizontally (as opposed to vertically). Line up the top edge of each icon on an equidistant grid line whose coordinate is a multiple of 5 pixels, and not picas. For example, the horizontal grid line coordinates for 4 icons that are 16px x 16px might be:
@@ -101,6 +106,8 @@ When it comes to responsive web design and progressive enhancements, Filament Gr
 
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [PNGS]:                 http://html5boilerplate.com/docs/Using-PNG/
+[ImageOptim]:           http://imageoptim.com/
+[Trimage]:              http://trimage.org/
 [Sprites]:              http://railscasts.com/episodes/334-compass-css-sprites
                         "Learn how to make CSS sprites with Compass."
 [Image Choice]:         http://blogs.sitepoint.com/gif-png-jpg-which-one-to-use/
