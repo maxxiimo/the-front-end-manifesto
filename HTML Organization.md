@@ -1,9 +1,29 @@
 HTML Organization
 -----------------
 
+### Naming Conventions
+
+When naming HTML files try to stay within REST conventions, i.e. index.html.haml, show.html.haml, etc.. When naming outside of REST be short and concise, use names that indicate what the files function or purpose is. Keep in mind that file names tend to trickle down to classes.
+
+When naming HTML files separate words with underscores: a_great_file_name.html.haml
+
+For partials, if there are several related to an individual file, group them by using the parent files name or abbreviation. If there is no parent file per se, use a common function or purpose to group the partials, for example:
+
+    _tabs.html.haml
+    _tabs_sub_nav.html.haml
+
 ### Where to Put Things
 
-Separate your layout/application.html.haml into partials like:
+Partials are great to use to:
+
+1.  Increase readability of your code
+2.  Keep things organized
+3.  Reuse code, i.e. keep things DRY
+4.  Encapsulate logic, although helper methods are preferred
+
+The key is not to go knots and partial everything. If you do that, finding things becomes a wild goose chase.
+
+So starting from the top, separate your layout/application.html.haml into partials like:
 
 1. _head.html.haml
 2. _script.html.haml

@@ -59,6 +59,12 @@ Just remember to precompile before you deploy to production:
 
     bundle exec rake assets:precompile
 
+For more details on asset pipeline compression follow these links:
+
+[CSS compression ][]
+[JavaScript Compression][JS Compression]
+[Using Your Own Compressor][Generic Compressor]
+
 [Sass]:                 http://sass-lang.com/
 [Less]:                 http://lesscss.org/
 [Haml]:                 http://haml-lang.com/
@@ -77,3 +83,6 @@ Just remember to precompile before you deploy to production:
 [YUI Compressor]:       http://www.refresh-sf.com/yui/
 [Asset Pipeline]:       http://coderberry.me/blog/2012/04/24/asset-pipeline-for-dummies/
                         "The Rails asset pipeline from the ground up."
+[CSS Compression]:      http://edgeguides.rubyonrails.org/asset_pipeline.html#css-compression
+[JS Compression]:       http://edgeguides.rubyonrails.org/asset_pipeline.html#javascript-compression
+[Generic Compressor]:   http://edgeguides.rubyonrails.org/asset_pipeline.html#using-your-own-compressor

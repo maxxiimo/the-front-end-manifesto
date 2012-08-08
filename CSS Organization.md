@@ -269,6 +269,59 @@ Here's some more opinions on the matter:
 [Hyphens or underscores in CSS and HTML identifiers?][Identifiers]
 [CSS: CamelCase Seriously Sucks!][Sucks]
 
+### Keep it DRY!
+
+Try not, no, Don't Repeat Yourself! In CSS this means consolidating where possible, using variables, includes, and mixins.
+
+#### Consolidating
+
+Suppose for example in this no duh! contrived example I have two major sections to my layout. One holds my main content, and the other is an aside (I'm using Twitter Bootstrap thus the .row and .span's):
+
+  .container
+    .row
+      .span9
+        #main{:role => "main"}
+          = yield
+      .span3
+        %aside
+          <Some content here.>
+
+The corresponding styles:
+
+    #main
+      padding: 0 19px
+      background-color: $white
+      border: 1px solid $border
+      @include border-radius(8px)
+    
+    .span3 aside
+      padding: 0 19px
+      background-color: $white
+      border: 1px solid $border
+      @include border-radius(8px)
+
+So to keep it DRY:
+
+    #main,
+    .span3 aside
+      padding: 0 19px
+      background-color: $white
+      border: 1px solid $border
+      @include border-radius(8px)
+
+...and we cut the number of lines of code in half! Do that wherever it makes sense. In this example both styles live in the same place in my stylesheet and are related to one another so combining them makes absolute sense.
+
+#### Variables
+
+While variables do not explicitly DRY up your code, they kind of do and here's how; in the code above I specify a variable for the background-color of $white. At first glance you might think why not just use #FFF or "white", as if in this case "6 in one hand, half a dozen in the other" holds true, but what if later in the applications lifecycle I want to use a different shade of white? For example #FCFCFC. I would have to find every single instance of either #FFF or "white" and swap it out with the new value. By using variables, which I always locate in my _define.sass style partial, I can make the change in one instance and affect styles everywhere the variable is used. Not quite DRY, but kinda.
+
+#### Includes
+
+
+
+#### Mixins
+
+
 
 [aB vs. a_b]:           http://stackoverflow.com/questions/1437527/css-camelcase-vs-under-score
 [Identifiers]:          http://stackoverflow.com/questions/1686337/hyphens-or-underscores-in-css-and-html-identifiers

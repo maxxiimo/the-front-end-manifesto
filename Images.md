@@ -43,7 +43,7 @@ Everything has a place to go, and easily find later. As sites grow your image fo
 
 ### Choosing an Image Format
 
-When saving images I always save a .gif version in addition to a .png, just in case. Ideally images will be displayed as .PNG's, but because of issues with older browsers and other edge cases in which PNG fixes won't suffice I have found having them on hand is a great thing. Creating them is rather easy for your designer. I'll go even so far as to serve them up for IE6 as a default.
+When saving images I always save a .gif version in addition to a .png, just in case. Ideally images will be displayed as .PNG's, but because of issues with older browsers and other edge cases in which PNG fixes won't suffice I have found having them on hand is a great thing, and creating them at the same time you create your PNG's is easy for yyou or your designer. If you have to support IE6, I prefer to serve these up rather than use a PNG fix.
 
 [Notes on Using PNGS][PNGS]
 
@@ -51,8 +51,7 @@ When saving images I always save a .gif version in addition to a .png, just in c
 
 ### optimizing
 
-[ImageOptim][]
-[Trimage][]
+See Optimization chapter.
 
 ### Spriting
 
@@ -106,8 +105,6 @@ When it comes to responsive web design and progressive enhancements, Filament Gr
 
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [PNGS]:                 http://html5boilerplate.com/docs/Using-PNG/
-[ImageOptim]:           http://imageoptim.com/
-[Trimage]:              http://trimage.org/
 [Sprites]:              http://railscasts.com/episodes/334-compass-css-sprites
                         "Learn how to make CSS sprites with Compass."
 [Image Choice]:         http://blogs.sitepoint.com/gif-png-jpg-which-one-to-use/

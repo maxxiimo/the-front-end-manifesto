@@ -202,15 +202,36 @@ Like in the previous step we'll take it section by section, image by image, font
 
 Now I go from section to section. As I move along, and since all my font colors are defined in _define.sass, I begin to see patterns emerging and can consolidate and reorganize fonts into logical groups.
 
+For example, my font colors are looking like this:
 
+    // fonts...
+    
+    $white:             #fff
+    $font-tab:          #0089ce
+    $font-util-name:    #fff
+    $font-util-login:   #b2ecff
+    $font-footer:       #666
+    $font-number-icon:  #fff
+    $font-h1:           #252525
+    $font-h2:           #0089ce
+    $font-h3:           #333
+    $font-gray:         #999
+    $font-gray-2:       #a0a0a0
+    $font-gray-3:       #666
+    $font-red:          #bc1117
+    $font-li:           #666
 
+Notice the repetition?
 
+### Step 9 - Sprites and CSS3 for Images
 
+Save your sprites and CSS3 for images – like replacing image gradients – for the tail end of slicing and dicing mockups. Doing so will give you enough material to work with in terms of images that can be grouped together in a sprite, and will not greatly affect other team members who may already be using your work.
 
-### Step 9 - Sprites and CSS3
+The only caveat to this is icons, recommend using Compass' automated sprite utility from the get-go. Here is a great screen cast to get you started on that:
 
 [Railscasts][]
 
+Why do this from the get-go? Well, you know you will have icons, you already have a folder for them, so as you come upon new icons simply create them and drop them into that folder; Compass will generate/update a sprite and give you all the classes you will need.
 
 
 [grid system]:          http://www.subtraction.com/pics/0703/grids_are_good.pdf

@@ -32,10 +32,12 @@ Table of Contents
   - Rails Manifest vs. Sass Partials
   - Use Labeling System
   - Naming Conventions
+  - Keep it DRY!
 - Mobile First
   - Where Do Styles Go?
   - User Agents or Media Queries
 - HTML Organization
+  - Naming Conventions
   - Where to Put Things
   - IE 6
   - %head and Boilerplate
@@ -49,8 +51,9 @@ Table of Contents
   - Step 5 - Start with %header and %footer
   - Step 6 - Navigation
   - Step 7 - HTML for the Main Content
-  - Step 8 - Sprites and CSS3
+  - Step 8 - Sprites and CSS3 for Images
 - Navigation
+- Gradients
 - Images
   - Organization
   - Choosing an Image Format
@@ -148,3 +151,19 @@ Include the most basic mixin and expand from there:
 
 
 *Designers should use pixels.*
+
+
+
+
+*don't nest to deep*
+
+#hd
+  height: 58px
+  background: image-url("fixtures/bg-header.png") 0 0 repeat-x
+  background-color: $bg-header
+
+#logo
+  float: left
+  margin: 16px 0  0
+  &:hover
+    text-decoration: none
