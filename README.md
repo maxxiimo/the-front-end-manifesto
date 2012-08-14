@@ -47,11 +47,12 @@ Table of Contents
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
   - Step 3 - Fonts
-  - Step 4 - Sectioning Content (layout/application.html.haml)
-  - Step 5 - Start with %header and %footer
-  - Step 6 - Navigation
-  - Step 7 - HTML for the Main Content
-  - Step 8 - Sprites and CSS3 for Images
+  - Step 4 - Images
+  - Step 5 - Sectioning Content (layout/application.html.haml)
+  - Step 6 - Start with %header and %footer
+  - Step 8 - Navigation
+  - Step 9 - HTML for the Main Content
+  - Step 10 - Sprites and CSS3 for Images
 - Navigation
 - Gradients
 - Images
