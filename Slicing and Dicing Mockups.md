@@ -200,7 +200,16 @@ Start with a blank canvas, i.e. in my text editor, and literally start placing c
 
 As you start moving through sections of your mockup, start grabbing any remaining icons or images that you have not grabbed from your mockup already and place them in their appropriate folders per the HTML Organization chapter of this manifesto. Some things will simply be placeholders, like profile pictures. You can delete your placeholders out later.
 
-Coding everything semantically correct is a practice in trial and error. In addition to the resources in step 4, [HTML5 Doctor][] has some great HTML5 semantic specific articles that will help you get organized. If you are new to this all, or rusty, I recommend reviewing the following "element" articles: [%article][], [%section][], [the difference][], [%div][], [%aside][], [%header][], [%footer][], and [%nav][]. 
+Coding everything semantically correct is a practice in trial and error. In addition to the resources in step 4, [HTML5 Doctor][] has some great HTML5 semantic specific articles that will help you get organized. If you are new to this all, or rusty, I recommend reviewing the following "element" articles:
+
+- [%article][]
+- [%section][]
+- [HTML5 articles and sections: what’s the difference? ][The Difference]
+- [%div][]
+- [%aside][]
+- [%header][]
+- [%footer][]
+- [%nav][]
 
 Here's what I have up until now:
 
@@ -269,7 +278,7 @@ Why do this from the get-go? Well you know you will have icons and you already h
 [HTML5 Doctor]:         http://html5doctor.com/article-archive/
 [%article]:             http://html5doctor.com/the-article-element/
 [%section]:             http://html5doctor.com/the-section-element/
-[the difference]:       http://www.brucelawson.co.uk/2010/html5-articles-and-sections-whats-the-difference/
+[The Difference]:       http://www.brucelawson.co.uk/2010/html5-articles-and-sections-whats-the-difference/
 [%div]:                 http://html5doctor.com/you-can-still-use-div/
 [%aside]:               http://html5doctor.com/aside-revisited/
 [%header]:              http://html5doctor.com/the-header-element/
