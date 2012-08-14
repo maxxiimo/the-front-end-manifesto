@@ -60,10 +60,10 @@ Start sampling fonts to determine font-family, font-size, and color. Organize wh
 
 The overall font-family is probably the most important thing you'll define right now. I use [CSS Font Stack][] to help me define the font-family. Some additional resources for you include:
 
-[Better CSS Font Stacks][Better Stacks]
-[Revised Font Stack][Revised Stack]
-[Web Fonts Can Be Nice (Honest)][Nice Fonts]
-[Complete Guide to Pre-Installed Fonts in Linux, Mac, and Windows][Complete Font Guide]
+- [Better CSS Font Stacks][Better Stacks]
+- [Revised Font Stack][Revised Stack]
+- [Web Fonts Can Be Nice (Honest)][Nice Fonts]
+- [Complete Guide to Pre-Installed Fonts in Linux, Mac, and Windows][Complete Font Guide]
 
 NOTE: As you're moving along there'll be times that you will need to add a note for yourself so that you can revisit something. When adding notes in your code I like to use something like this:
 
@@ -84,11 +84,11 @@ Here's where we really begin to code the basic high-level questions above. At th
  
 Here are a few resources that will help you choose semantically correct elements for your base layout:
 
-[HTML5 Element Flowchart][Flowchart]
-[Structural Tags in HTML5][Structural Tags]
-[HTML5 section, aside, header, nav, footer elements – not as obvious as they sound][Not Obvious]
-[What Beautiful HTML Code Looks like][Beautiful HTML]
-[HTML 5 Outliner][]
+- [HTML5 Element Flowchart][Flowchart]
+- [Structural Tags in HTML5][Structural Tags]
+- [HTML5 section, aside, header, nav, footer elements – not as obvious as they sound][Not Obvious]
+- [What Beautiful HTML Code Looks like][Beautiful HTML]
+- [HTML 5 Outliner][]
 
 To visualize your code output it helps to use border outlines on major sections or Compass' [grid-background mixin][grid-background].
 
@@ -193,8 +193,8 @@ Now that the header and footer are complete it's time to code the navigation. De
 
 Now we get down to the nitty-gritty, tactical vs strategic work. If your mockup were a newspaper layout, what would the sections be? How is it organized? Keep this in mind. Here are some references that might help you hone your skills in this:
 
-[Grouping content][]
-[Content models][]
+- [Grouping content][]
+- [Content models][]
 
 Start with a blank canvas, i.e. in my text editor, and literally start placing content in appropriate tags. I mean literally; image by image, header by header, list by list, paragraph by paragraph, start taking the words and mages in your mockup and putting them into appropriate elements in your view file.
 
@@ -243,7 +243,7 @@ Save your sprite and CSS3 for images work – like replacing image gradients – for
 
 I recommend using Compass' automated sprite utility for icons from the get-go. Here is a great screen cast to get you started on that:
 
-[Railscasts][]
+[Railscast #334: Compass CSS Sprites][Railscasts]
 
 Why do this from the get-go? Well you know you will have icons and you already have a folder for them, so as you come upon new icons simply create them and drop them into that folder; Compass will generate/update a sprite and give you all the classes you will need.
 
