@@ -1,11 +1,7 @@
 Slicing and Dicing Mockups
 --------------------------
 
-Use Adobe Photoshop to work with mockups.
-
-Take a look at the mockup for a few minutes, kind of like a sculptor looking at a marble rock getting ready to chisel. Just absorb it, understand it.
-
-Look at the major layout elements, i.e. the framework of the site, and begin to ask yourself some basic high-level questions like:
+To begin, use Adobe Photoshop to work with mockups. You will need it. Start off by taking a look at the mockup for a few minutes, kind of like a sculptor looking at a marble rock getting ready to chisel. Just absorb it, understand it. Look at the major layout elements, i.e. the framework of the site, and begin to ask yourself some basic high-level questions like:
 
 1.  How wide should it be? 960px, 980px, 1040px?
 
