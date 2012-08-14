@@ -31,7 +31,7 @@ The truth of a matter is that slicing mockups is pretty straightforward. There a
 
 ### Step 1 - Backgrounds
 
-Start with the lowest hanging fruit, the background. This manifesto is not a course on CSS so I won't get to into the details, but backgrounds are typically:
+Start with the lowest hanging fruit, the background. This manifesto is not a course on CSS so I won't get too into the details, but backgrounds are typically:
 
 - Single colors like eggshell white
 - A repeating pattern
@@ -39,7 +39,7 @@ Start with the lowest hanging fruit, the background. This manifesto is not a cou
 
 Backgrounds are rarely a single large image because of bandwidth costs.
 
-To implement your background set your body background-color property either to a specific color, or to a repeating image. If a gradient is involved you can use CSS3, or an image to achieve the effect. Whatever images you do use for the background, make it as small and optimized as possible without losing the look you or after. If you're using my CSS organization structure put your styles in _layout.sass file. 
+To implement your background, set your body background-color property either to a specific color, or to a repeating image. If a gradient is involved you can use CSS3, or an image to achieve the effect. Whatever images you do use for the background, make it as small and optimized as possible without losing the look you are after. If you're using my CSS organization structure put your styles in _layout.sass file. 
 
 NOTE: When using Compass use image-url("") instead of url():
 
@@ -80,7 +80,7 @@ This way I can grep for "FIXME ccm", where ccm are my initials, and find my note
 
 ### Step 5 - Sectioning Content (layout/application.html.haml)
 
-Here's where we really begin to code the basic high-level questions above. At the highest level sectioning content is the same as building your base layout template in a Rails project (layout/application.html.haml). I typically start a project using the base template described in the HTML Organization section of this manifesto. From this starting point you can add or remove things from _head.html.hamls and _scripts.html.haml because they include everything plus the kitchen sink. Adjust the HTML, class names, and incorporate new elements as the project requires.
+Here's where we really begin to code the basic high-level questions above. At the highest level, sectioning content is the same as building your base layout template in a Rails project (layout/application.html.haml). I typically start a project using the base template described in the HTML Organization section of this manifesto. From this starting point you can add or remove things from _head.html.haml and _scripts.html.haml because they include everything plus the kitchen sink. Adjust the HTML, class names, and incorporate new elements as the project requires.
  
 Here are a few resources that will help you choose semantically correct elements for your base layout:
 
@@ -113,7 +113,7 @@ For the demo project here is what my application layout looks like:
         = render :partial => 'shared/footer'
     = scripts
 
-A slight variation of this manifestoes base layout found in the HTML Organization section.
+A slight variation of this manifestos base layout found in the HTML Organization section.
 
 ### Step 6 - Start with %header and %footer
 
@@ -121,7 +121,7 @@ Once your application layout is in place, begin coding the header and footer. I 
 
 NOTE: Leave a placeholder for your navigation, we will work on this in the next step.
 
-So starting with the header, and don't forget to use your magnifying tool to really see what's going on.
+So starting with the header (don't forget to use your magnifying tool to really see what's going on):
 
 1.  Grab the logo. Trim any excess transparent space around the logo. In Photoshop use "Image/Trim..." and save it in your assets/images/logo directory as logo.gif and logo.png. In Photoshop use "File/Save for Web and Devices...".
 
@@ -129,7 +129,7 @@ So starting with the header, and don't forget to use your magnifying tool to rea
     
     !!! NEED AN IMAGE !!!
 
-2.  Set a background color for your header. Use Photoshopd eyedropper tool to discover the color. If you use an image for your header this color will serve as a fallback.
+2.  Set a background color for your header. Use Photoshop's eyedropper tool to discover the color. If you use an image for your header this color will serve as a fallback.
 
     Note: Try to keep all of your colors in the _define.sass partial. As your application grows you'll be thankful for this. Use a naming convention that makes sense and keeps things grouped and organized. See the examples in the CSS Organization chapter.
 
@@ -171,7 +171,7 @@ For the later I like to start with images because doing so gives me images I can
 
 NOTE: In some cases just go with the CSS3 and don't bother with chopping images; like rounded corners because what is the default? A square corner, not a bad degradation. 
 
-But why image defaults at all? The reason is because some browsers may not be able to use the latest and greatest CSS3 techniques. Maybe pollyfills are out of the question because JavaScript is not available on the device? What ever the case, for those situations we can serve up the fallback styles we created initially. 
+But why image defaults at all? The reason is because some browsers may not be able to use the latest and greatest CSS3 techniques. Maybe pollyfills are out of the question because JavaScript is not available on the device? Whatever the case, for those situations we can serve up the fallback styles we created initially. 
 
 Regarding pollyfills and fallbacks, a super helpful tool you should familiarize yourself with as a front end coder is [Modernizr][]. I discuss this feature detection tool in greater detail in the JavaScript Library section of this manifesto.
 
@@ -200,7 +200,7 @@ Start with a blank canvas, i.e. in my text editor, and literally start placing c
 
 As you start moving through sections of your mockup, start grabbing any remaining icons or images that you have not grabbed from your mockup already and place them in their appropriate folders per the HTML Organization chapter of this manifesto. Some things will simply be placeholders, like profile pictures. You can delete your placeholders out later.
 
-Coding everything semantically correct is a practice in trial and error. In addition to the resources in step 4, [HTML5 Doctor][] has some great HTML5 semantic specific articles that will help you get organized. If you are new to this all, or rusty, I recommend reviewing the following "element" articles:
+Coding everything semantically correct is a practice in trial and error. In addition to the resources in step 4, [HTML5 Doctor][] has some great HTML5 semantic specific articles that will help you get organized. If you are new to all this, or rusty, I recommend reviewing the following "element" articles:
 
 - [%article][]
 - [%section][]
@@ -248,7 +248,7 @@ Notice the repetition?
 
 ### Step 10 - Sprites and CSS3 for Images
 
-Save your sprite and CSS3 for images work – like replacing image gradients – for the tail end of slicing and dicing mockups. Doing so will give you enough material to work with in terms of images that can be grouped together in a sprite, and will not greatly affect other team members who may already be using your work.
+Save your sprite and CSS3 for image work – like replacing image gradients – for the tail end of slicing and dicing mockups. Doing so will give you enough material to work with in terms of images that can be grouped together in a sprite, and will not greatly affect other team members who may already be using your work.
 
 I recommend using Compass' automated sprite utility for icons from the get-go. Here is a great screen cast to get you started on that:
 
@@ -292,14 +292,13 @@ Why do this from the get-go? Well you know you will have icons and you already h
 
 
 
-Measure twice, cut once.
+## TODO / write:
 
+Measure twice, cut once.
 
 Trial and error.
 
-
 Varying specificity.
-
 
 Getting things in place.
 
