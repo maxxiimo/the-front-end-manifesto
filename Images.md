@@ -102,6 +102,11 @@ When it comes to CSS, [A List Apart][ALA] is a maverick and authority in the fie
 
 When it comes to responsive web design and progressive enhancements, Filament Group wrote the books (actually two of their books are titles exactly that). [Responsive Images: Experimenting with Context-Aware Image Sizing][Filament] describes a technique using a combination of JavaScript and .htaccess. I'm not recommending this technique, but if you're interested it's worth taking a look.
 
+### Retina Displays
+
+[Clear Eyes][]
+
+> This makes is super easy to handle Retina images in your Rails 3.1+ apps. It adds r_image_tag that can be used in place of the existing image_tag and it'll automatically serve up Retina images to devices that can handle the resolution and normal images otherwise.
 
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [PNGS]:                 http://html5boilerplate.com/docs/Using-PNG/
@@ -117,3 +122,4 @@ When it comes to responsive web design and progressive enhancements, Filament Gr
 [ALA]:                  http://www.alistapart.com/
 [Fluid Images]:         http://www.alistapart.com/articles/fluid-images/
 [Filament]:             http://filamentgroup.com/lab/responsive_images_experimenting_with_context_aware_image_sizing/
+[Clear Eyes]:           https://github.com/superacidjax/clear_eyes?utm_source=rubyweekly&utm_medium=email

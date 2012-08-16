@@ -23,11 +23,16 @@ To begin, use Adobe Photoshop to work with mockups. You will need it. Start off 
 
 10. Anything interesting going on with the background?
 
-These are just a few questions to get you to start to think about how you will implement, and at the highest or strategic level; what will hold these elements and what will the base layout look like. Constructing the base HTML layout is the most important step in the process. Take your time, think about: semantics; how sections will interrelate and in some cases interact, how will the base layout be affected by future changes; try to imagine how you will compartmentalize things in such a way that your code is efficient, organized, and less likely to require repetition (as in DRY).
+These are just a few questions to get you to start to think about how you will implement, and at the highest or strategic level - what will hold these elements and what will the base layout look like. Constructing the base HTML layout is the most important step in the process. Take your time, think about:
+
+- Semantics.
+- How sections will interrelate and in some cases interact.
+- How will the base layout be affected by future changes.
+- Try to imagine how you will compartmentalize things in such a way that your code is efficient, organized, and less likely to require repetition (as in DRY).
 
 As the underlying structure comes together in your mind and even on your editor, you can start to look at content within the body, the overall look and feel, images, colors and fonts, and you can begin to start to think about whether you will use CSS or JavaScript to create various effects.
 
-The truth of a matter is that slicing mockups is pretty straightforward. There are only so many ways you can organize a page layout, and most components within a page layout are pretty standard; I mean you have paragraphs, and headers, and links, a way to get around through navigation, and so forth. On the other hand though a designer's artistic expression and the look and feel of the site are very subjective, mockup to mockup. Making a mockup come to life per the designers vision, consistently across devices and browsers, requires a certain amount of HTML/CSS art (based on trial and error and experience). There is no formula for doing it, just basic guidelines which I will layout here as steps and use a demo project to illustrate.
+The truth of a matter is that slicing mockups is pretty straightforward. There are only so many ways you can organize a page layout, and most components within a page layout are pretty standard: I mean you have paragraphs, and headers, and links, a way to get around through navigation, and so forth. On the other hand though a designer's artistic expression and the look and feel of the site are very subjective, mockup to mockup. Making a mockup come to life per the designers vision, consistently across devices and browsers, requires a certain amount of HTML/CSS art (based on trial and error and experience). There is no formula for doing it, just basic guidelines which I will layout here as steps and use a demo project to illustrate.
 
 ### Step 1 - Backgrounds
 

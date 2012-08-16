@@ -60,6 +60,7 @@ Table of Contents
   - Choosing an Image Format
   - Spriting
   - Responsive Resizing
+  - Retina Displays
 - Optimization
 - Refactoring
 - Tools
