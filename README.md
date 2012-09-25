@@ -21,29 +21,32 @@ Personal views and direction on front end coding, from a Ruby on Rails perspecti
 Table of Contents
 -----------------
 
-- The Manifesto
-- Preprocessors and Frameworks
+- [The Manifesto][]
+- [Preprocessors and Frameworks][]
   - Sass and Less
   - Twitter Bootstrap
   - Compass
   - Blueprint
   - Compressing and the Asset Pipeline
-- CSS Organization
+- [CSS Organization][]
   - Rails Manifest vs. Sass Partials
   - Use Labeling System
   - Naming Conventions
   - Keep it DRY!
-- Mobile First
+- [Mobile First][]
   - Where Do Styles Go?
   - User Agents or Media Queries
-- HTML Organization
+- [HTML Organization][]
   - Naming Conventions
   - Where to Put Things
   - IE 6
   - %head and Boilerplate
   - The Title
   - JavaScript
-- Slicing and Dicing Mockups
+- [Getting Started][]
+  - HTML
+  - CSS
+- [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
   - Step 3 - Fonts
@@ -53,41 +56,69 @@ Table of Contents
   - Step 8 - Navigation
   - Step 9 - HTML for the Main Content
   - Step 10 - Sprites and CSS3 for Images
-- Navigation
-- Gradients
-- Images
+- [Navigation][]
+- [Gradients][]
+- [Images][]
   - Organization
   - Choosing an Image Format
   - Spriting
   - Responsive Resizing
   - Retina Displays
-- Forms
+- [Forms][]
   - Basic Form Structure
   - Ordered List or Paragraphs?
   - Fieldsets and Legends
   - Extras
   - FormHelpers
-- Optimization
-- Refactoring
-- Tools
-- Accessibility
+- [Using Compass][]
+- [Optimization][]
+- [Refactoring][]
+- [Tools][]
+  -.gemfile
+  -.gitignore
+- [Accessibility][]
   - Standardize Your Links
   - Use ARIA Roles
-- Email Coding
-- .gemfile
-- .gitignore
-- Resets
-- Getting the Fonts Right
+- [Email Coding][]
+- [Resets][]
+- [Getting the Fonts Right][]
   - font-family
-- Search Engine Optimization
-- Style Guides
-- Good Advice
-- JavaScript Libraries
-- Layout
+- [Search Engine Optimization][]
+- [Style Guides][]
+- [Good Advice][]
+- [JavaScript Libraries][]
+- [Layout][]
   - Organization
   - content_for and :yield
-- Navigation
+- [Navigation][]
   - Types
   - CSS
   - Context Awareness Patterns
-- Storytelling
+- [Storytelling][]
+
+[The Manifesto]:                     https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/The%20Manifesto.md
+[Preprocessors and Frameworks]:      https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Preprocessors%20and%20Frameworks.md
+[CSS Organization]:                  https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/CSS%20Organization.md
+[Mobile First]:                      https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Mobile%20First.md
+[HTML Organization]:                 https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/HTML%20Organization.md
+[Getting Started]:                   https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Getting%20Started.md
+[Slicing and Dicing Mockups]:        https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Slicing%20and%20Dicing%20Mockups.md
+[Navigation]:                        https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Navigation.md
+[Gradients]:                         https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Gradients.md
+[Images]:                            https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Images.md
+[Forms]:                             https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Forms.md
+[Using Compass]:                     https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Using%20Compass.md
+[Optimization]:                      https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Optimization.md
+[Refactoring]:                       https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Refactoring.md
+[Tools]:                             https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Tools.md
+[Accessibility]:                     https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Accessibility.md
+[Email Coding]:                      https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Email%20Coding.md
+[Resets]:                            https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Resets.md
+[Getting the Fonts Right]:           https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Getting%20the%20Fonts%20Right.md
+[Search Engine Optimization]:        https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Search%20Engine%20Optimization.md
+[Style Guides]:                      https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Style%20Guides.md
+[Good Advice]:                       https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Good%20Advice.md
+[JavaScript Libraries]:              https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/JavaScript%20Libraries.md
+[Layout]:                            https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Layout.md
+[Navigation]:                        https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Navigation.md
+[Storytelling]:                      https://github.com/maxxiimo/Front-End-Code-Manifesto/blob/master/Storytelling.md
