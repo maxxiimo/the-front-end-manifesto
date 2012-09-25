@@ -61,6 +61,7 @@ Table of Contents
   - Spriting
   - Responsive Resizing
   - Retina Displays
+- Forms
 - Optimization
 - Refactoring
 - Tools
