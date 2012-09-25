@@ -73,7 +73,6 @@ Table of Contents
 - Resets
 - Getting the Fonts Right
   - font-family
-- Optimization
 - Search Engine Optimization
 - Style Guides
 - Good Advice

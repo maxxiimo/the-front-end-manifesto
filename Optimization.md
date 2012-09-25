@@ -5,7 +5,7 @@ Optimization
 
 [Writing efficient CSS][Efficient CSS]
 
-[Making the Web Fast(er)][]
+[Making the Web Fast(er)][Fast(er)]
 
 [ImageOptim][]
 [Trimage][]
@@ -18,3 +18,4 @@ Optimization
                         "RailsConf 2012"
 [ImageOptim]:           http://imageoptim.com/
 [Trimage]:              http://trimage.org/
+
