@@ -62,6 +62,11 @@ Table of Contents
   - Responsive Resizing
   - Retina Displays
 - Forms
+  - Basic Form Structure
+  - Ordered List or Paragraphs?
+  - Fieldsets and Legends
+  - Extras
+  - FormHelpers
 - Optimization
 - Refactoring
 - Tools
