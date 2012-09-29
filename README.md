@@ -44,6 +44,7 @@ Table of Contents
   - The Title
   - JavaScript
 - [Getting Started][]
+  - Groundwork
   - HTML
   - CSS
 - [Slicing and Dicing Mockups][]
