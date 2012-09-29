@@ -95,7 +95,7 @@ There of certain things that I know I will work with, and borrowing from the bes
       gem 'pg',           '0.12.2'
     end
 
-Since I typically use compass, I added the gem here. You may not want to.
+Since I typically use compass, I added the compass-rails gem here. You may not want to. If you do, a smart choice, check out the [Using Compass][] chapter of this book.
 
 #### .gitignore
 
@@ -210,6 +210,7 @@ For an explanation on what this stuff is/does check out these two sources:
                         "An augmented .gitignore file"
 [Ignore files]:         http://help.github.com/ignore-files/
 [.gitignore]:           https://github.com/github/gitignore
+[Using Compass]:        https://github.com/maxxiimo/railsviews/blob/master/Using%20Compass.md
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [Unofficial Guide]:     http://railsapps.github.com/rails-html5-boilerplate.html
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
