@@ -5,7 +5,7 @@ This chapter is really a cut-and-paste chapter. Here you get the steps necessary
 
 ### Groundwork
 
-Assuming you just created a brand spanking new rails application, I would set up the following right off the bat:
+Assuming you just created a brand spanking new rails application, I would set up .gemfile and .gitignore as follows right off the bat:
 
 #### .gemfile
 
@@ -50,7 +50,7 @@ Your .gemfile will change radically throughout the lifespan of your project. Wit
     # To use debugger
     # gem 'debugger'
 
-I like to get rid of all the scruff which leaves me with:
+I get rid of all the scruff, comments, which leaves me with:
 
 source 'https://rubygems.org'
 
@@ -66,7 +66,7 @@ source 'https://rubygems.org'
     
     gem 'jquery-rails'
 
-There of certain things that I know I will work with, and borrowing from the best I use Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" .gemfile example to organize my base .gemfile as follows:
+There of certain things that I know I will work with, and borrowing from the best I use Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" .gemfile example with a few additions to organize my base .gemfile as follows:
 
     source 'https://rubygems.org'
     
@@ -102,15 +102,15 @@ There of certain things that I know I will work with, and borrowing from the bes
 
 Since I typically use compass, I added the compass-rails and oily_png gems here. You may not want to. If you do, a smart choice, check out the [Using Compass][] chapter of this book to learn how to add compass to your application.
 
-Michael Hartl recommends using the following flag on your first bundle:
+NOTE: Michael Hartl recommends using the following flag on your first bundle:
 
-bundle install --without production
+    bundle install --without production
 
 Doing so installs your .gemfile gems, but prevents the installation of the production gems. You only have to do this once.
 
 #### .gitignore
 
-Here's what I use, mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore] and Michael Hartl's [Ruby and Rails Tutorial][RoR Tutorial]:
+For my .gitignore file here is what I use; mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore] and Michael Hartl's [Ruby and Rails Tutorial][RoR Tutorial]:
 
     # Ignore bundler config
     /.bundle
