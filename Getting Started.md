@@ -1,6 +1,8 @@
 Getting Started
 ---------------
 
+This chapter is really a cut-and-paste chapter. Here you get the steps necessary to start your rails application right, from a front end view coders perspective.
+
 ### Groundwork
 
 Assuming you just created a brand spanking new rails application, I would set up the following right off the bat:
@@ -98,7 +100,7 @@ There of certain things that I know I will work with, and borrowing from the bes
       gem 'pg',           '0.12.2'
     end
 
-Since I typically use compass, I added the compass-rails and oily_png gems here. You may not want to. If you do, a smart choice, check out the [Using Compass][] chapter of this book.
+Since I typically use compass, I added the compass-rails and oily_png gems here. You may not want to. If you do, a smart choice, check out the [Using Compass][] chapter of this book to learn how to add compass to your application.
 
 Michael Hartl recommends using the following flag on your first bundle:
 
