@@ -79,9 +79,12 @@ There of certain things that I know I will work with, and borrowing from the bes
     # in production environments by default.
     group :assets do
       gem 'sass-rails',   '3.2.5'
-      gem 'compass-rails'
       gem 'coffee-rails', '3.2.2'
       gem 'uglifier',     '1.2.3'
+    
+      # Compass specific gems.
+      gem 'compass-rails'
+      gem 'oily_png'
     end
     
     gem 'jquery-rails',   '2.0.2'
@@ -95,7 +98,13 @@ There of certain things that I know I will work with, and borrowing from the bes
       gem 'pg',           '0.12.2'
     end
 
-Since I typically use compass, I added the compass-rails gem here. You may not want to. If you do, a smart choice, check out the [Using Compass][] chapter of this book.
+Since I typically use compass, I added the compass-rails and oily_png gems here. You may not want to. If you do, a smart choice, check out the [Using Compass][] chapter of this book.
+
+Michael Hartl recommends using the following flag on your first bundle:
+
+bundle install --without production
+
+Doing so installs your .gemfile gems, but prevents the installation of the production gems. You only have to do this once.
 
 #### .gitignore
 
