@@ -37,7 +37,9 @@ Setting up your application:
         # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
         config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
-That's pretty much it! The [CSS Organization][] chapter of this book describes how I organize my styles within application.scss and more. The [HTML Organization][] chapter covers how I organize my layouts and shared files.
+That's pretty much it!
+
+The [CSS Organization][] chapter of this book describes how I organize my styles within application.scss and more. The [HTML Organization][] chapter covers how I organize my layouts and shared files.
 
 I highly recommend using the [CSS base][] styles associated with this book.
 

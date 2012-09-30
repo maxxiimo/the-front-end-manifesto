@@ -1,7 +1,7 @@
 Getting Started
 ---------------
 
-This chapter is really a cut-and-paste chapter. Here you get the steps necessary to start your rails application right, from a front end view coders perspective.
+This chapter is really a cut-and-paste chapter. Here you get the steps necessary to start your rails application right, from the front end view coders perspective.
 
 ### Groundwork
 
