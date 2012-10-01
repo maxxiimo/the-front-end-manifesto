@@ -1,6 +1,27 @@
 HTML Organization
 -----------------
 
+
+
+
+
+#### What to Put in <head>
+
+There are a lot of things that you could put in your <head> tags, but don't. Obviously just put in What you need. I provide the bare minimum, but everything else as well only commented out:
+
+[ADD GITHUB LINK HERE]
+
+For an explanation on what this stuff is/does check out these two sources:
+
+<https://gist.github.com/1981339>
+<http://html5boilerplate.com/docs/html-head/>
+
+
+
+
+[Modernizr HTML5-Cross-browser-Polyfills][]
+
+
 ### Naming Conventions
 
 When naming HTML files try to stay within REST conventions, i.e. index.html.haml, show.html.haml, etc.. When naming outside of REST be short and concise, use names that indicate what the files function or purpose is. Keep in mind that file names tend to trickle down to classes.

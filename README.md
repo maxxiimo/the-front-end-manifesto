@@ -22,20 +22,11 @@ Table of Contents
 -----------------
 
 - [Front End Coders Manifesto][The Manifesto]
-- [Preprocessors and Frameworks][]
-  - Sass and Less
-  - Twitter Bootstrap
-  - Compass
-  - Blueprint
-  - Compressing and the Asset Pipeline
-- [CSS Organization][]
-  - Rails Manifest vs. Sass Partials
-  - Use Labeling System
-  - Naming Conventions
-  - Keep it DRY!
-- [Mobile First][]
-  - Where Do Styles Go?
-  - User Agents or Media Queries
+- [Getting Started][]
+  - Groundwork
+  - Layout
+  - Styles
+- [Using Compass][]
 - [HTML Organization][]
   - Naming Conventions
   - Where to Put Things
@@ -43,10 +34,20 @@ Table of Contents
   - %head and Boilerplate
   - The Title
   - JavaScript
-- [Getting Started][]
-  - Groundwork
-  - HTML
-  - CSS
+- [CSS Organization][]
+  - Rails Manifest vs. Sass Partials
+  - Use Labeling System
+  - Naming Conventions
+  - Keep it DRY!
+- [Preprocessors and Frameworks][]
+  - Sass and Less
+  - Twitter Bootstrap
+  - Compass
+  - Blueprint
+  - Compressing and the Asset Pipeline
+- [Mobile First][]
+  - Where Do Styles Go?
+  - User Agents or Media Queries
 - [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
@@ -71,7 +72,6 @@ Table of Contents
   - Fieldsets and Legends
   - Extras
   - FormHelpers
-- [Using Compass][]
 - [Optimization][]
 - [Refactoring][]
 - [Tools][]

@@ -1,11 +1,11 @@
 Getting Started
 ---------------
 
-This chapter is really a cut-and-paste chapter. Here you get the steps necessary to start your rails application right, from the front end view coders perspective.
+This chapter could be called a cut-and-paste chapter in that I will provide tried-and-true code that you can cut and paste into your application. Here you get the steps necessary to start your rails application right, from the front end view coders perspective. The Layout and Styles sections of this chapter in addition to providing code dive into understanding the organization of those areas of your web application. Let's get started.
 
 ### Groundwork
 
-Assuming you just created a brand spanking new rails application, I would set up .gemfile and .gitignore as follows right off the bat:
+Assuming you just created a brand spanking new rails application, I would set up your .gemfile and .gitignore files right off the bat as follows:
 
 #### .gemfile
 
@@ -110,7 +110,7 @@ Doing so installs your .gemfile gems, but prevents the installation of the produ
 
 #### .gitignore
 
-For my .gitignore file here is what I use; mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore] and Michael Hartl's [Ruby and Rails Tutorial][RoR Tutorial]:
+For my .gitignore file here is what I use; mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore] and Michael Hartl's [Ruby and Rails Tutorial][Tutorial .gitignore]:
 
     # Ignore bundler config
     /.bundle
@@ -179,49 +179,99 @@ Some additional useful ideas:
 [Ignore files][]
 [A Collection of Useful .gitignore Templates][.gitignore]
 
-### HTML5
+### Layout
 
-The best place to get started with your underlying HTML5 is:
+As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's cconsumption. In this role when speaking about "layout" I might say something like, "Wow! That's a great layout" or, "I don't like the layout of this site, it's too confusing."
 
-[HTML5 Boilerplate][]
+When I switch hats, as a front end coder I look at layout as the view framework in which all of my front-end code lives and interacts with the outside world, i.e. via different browsers and devices. It's what a desktop or mobile browser takes and turns into something visual that an end user can understand and interact with, i.e. consume. As much as Rails is a framework, within this greater framework lives a tinier front end framework that we front end coders work with. Until Rails 3.0, where this framework lived and the conventions for using it were very much no man's land, sometimes a dumping ground, and oftentimes the wild wild West of coding. Since Rails 3.0 things are becoming more civilized, and front end coding recognized as a discipline in its own right.
+
+So what is this tiny view framework within a framework you speak of? Well, it is predominantly HTML with style and interactivity added to it via CSS and JavaScript (and Flash, less unless though). In Rails the heart of this view framework lives in what we refer to as the layout template which is typically broken up into different related files called partials that are all being called together into the whole. View code from other parts of the application pass through sso to speak and become framed by the layout template(s) before being rendered to the end-user.
+
+#### Where Does It Live?
+
+The front end structure I'm describing primarily lives in two folders within your Rails application: the helpers and the views folders. The views folder can be further subdivided into the Layout and Shared folders, which are home to the majority of your base front end code. Here's what it looks like and where you'll find these folders in any Rails 3.0 or greater project:
+
+Project
+  - assets
+  - controllers
+  - helpers
+  - mailers
+  - models
+  - app
+    - views
+      - layout
+      - shared
+
+#### Give Me the Code!
+
+Our goal is to writes and organize these components of our layout in such a way that different browsers and devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug-in to it with ease. To help you along this path you can grab my starter code from here:
+
+https://github.com/maxxiimo/base-haml
+
+This is an implementation of [HTML5 Boilerplate][] code in haml.
+
+#### HTML5 Boilerplate
+
+In coding copy and learn from the best, improve, then give back. I find that the best place to reference when building front end view templates is [HTML5 Boilerplate][]. This resource is an ongoing collaboration between expert front-end developers and the community.
+
+To better understand it (and my implementation), the following sites are also worth a visit:
+
 [An Unofficial Guide to the HTML5 Boilerplate][Unofficial Guide]
 [Guide to HTML5 Boilerplate for Rails Developers][Boilerplate for Rails]
 
-Here's my implementation, and all in Haml:
+#### Where Do Things Go?
 
-[ADD LINK HERE]
+Code wise you have access to everything I would use when starting a new application, my [base files][]. Structurally, they fall into place as follows:
 
-#### What to Put in <head>
+Project
+  - assets
+  - controllers
+  - helpers
+    application_helper.rb
+  - mailers
+  - models
+  - app
+    - views
+      - layout
+        _chromeframe.html.haml
+        _head.html.haml
+        _scripts.html.haml
+        application.html.haml
+      - shared
+        _footer.html.haml
+        _logo.html.haml
+        _navigation.html.haml
 
-There are a lot of things that you could put in your <head> tags, but don't. Obviously just put in What you need. I provide the bare minimum, but everything else as well only commented out:
+If you grab every single one of my base files and organize them into a brand-new Rails application exactly like I describe above, your Rails application will work just fine minus styles and the logo image referenced in those files, once you perform the steps below. At least it should! I'm testing it right now in a brand-new Rails 3.2 application and it's working just fine.
 
-[ADD GITHUB LINK HERE]
+*Step 1* - Delete the default index.html file in your Public folder, and the rails.png image in your Assets/Images folder, as well as the application.html.erb file you are replacing with application.html.haml.
 
-For an explanation on what this stuff is/does check out these two sources:
+*Step 2* - If you do not have a page for your routes to go to, which I'm assuming you don't if this is a brand-new application, create one now. I'm going to generate a Pages controller now to match my footer links:
 
-<https://gist.github.com/1981339>
-<http://html5boilerplate.com/docs/html-head/>
+    rails generate controller Pages home about site_map terms privacy contact --no-test-framework
 
+Make sure to delete the pages.css.scss file generated by Rails, we won't be using it.
 
+NOTE: If you're not sure what I just did there you should really consider getting Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
 
+*Step 3* - Finally, in your default route to:
 
-[Modernizr HTML5-Cross-browser-Polyfills][]
+    # You can have the root of your site routed with "root"
+    # just remember to delete public/index.html.
+    root :to => 'pages#home' 
 
+#### What Did We Just Do?
 
+I'm going to defer answering this question to the [HTML Organization][] chapter to this book. Suffice it to say that you have a working base application, but as you probably can see it doesn't look good. Let's fix that with CSS.
 
-
-### CSS
-
-
-
+### Styles
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
+[Using Compass]:        https://github.com/maxxiimo/railsviews/blob/master/Using%20Compass.md
 [H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
-[RoR Tutorial]:         http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
+[Tutorial .gitignore]:  http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
                         "An augmented .gitignore file"
 [Ignore files]:         http://help.github.com/ignore-files/
 [.gitignore]:           https://github.com/github/gitignore
-[Using Compass]:        https://github.com/maxxiimo/railsviews/blob/master/Using%20Compass.md
-[HTML5 Boilerplate]:    http://html5boilerplate.com/
-[Unofficial Guide]:     http://railsapps.github.com/rails-html5-boilerplate.html
-[H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
+[base files]:           https://github.com/maxxiimo/base-haml
+[HTML Organization]:    https://github.com/maxxiimo/railsviews/blob/master/HTML%20Organization.md
