@@ -262,7 +262,7 @@ NOTE: If you're not sure what I just did there you should really consider gettin
 
 #### What Did We Just Do?
 
-I'm going to defer answering this question to the [HTML Organization][] chapter to this book. Suffice it to say that you have a working base application, but as you probably can see it doesn't look good. Let's fix that with CSS.
+I'm going to defer answering this question to the [Organization][] chapter to this book. Suffice it to say that you have a working base application, but as you probably can see it doesn't look good. Let's fix that with CSS.
 
 ### Styles
 
@@ -274,4 +274,4 @@ I'm going to defer answering this question to the [HTML Organization][] chapter 
 [Ignore files]:         http://help.github.com/ignore-files/
 [.gitignore]:           https://github.com/github/gitignore
 [base files]:           https://github.com/maxxiimo/base-haml
-[HTML Organization]:    https://github.com/maxxiimo/railsviews/blob/master/HTML%20Organization.md
+[Organization]:         https://github.com/maxxiimo/railsviews/blob/master/Organization.md
