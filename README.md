@@ -23,22 +23,30 @@ Table of Contents
 
 - [Front End Coders Manifesto][The Manifesto]
 - [Getting Started][]
-  - Groundwork
-  - Layout
-  - Styles
+  -  Groundwork
+    -  .gemfile
+    -  .gitignore
+  -  Layout
+    -  Where Does It Live?
+    -  Give Me the Code!
+    -  HTML5 Boilerplate
+    -  Where Do Things Go?
+    -  What Did We Just Do?
+  -  Styles
+- [HTML and CSS Organization][]
+  - HTML Organization
+    - Naming Conventions
+    - Where to Put Things
+    - IE 6
+    - %head and Boilerplate
+    - The Title
+    - JavaScript
+  - CSS Organization
+    - Rails Manifest vs. Sass Partials
+    - Use Labeling System
+    - Naming Conventions
+    - Keep it DRY!
 - [Using Compass][]
-- [HTML Organization][]
-  - Naming Conventions
-  - Where to Put Things
-  - IE 6
-  - %head and Boilerplate
-  - The Title
-  - JavaScript
-- [CSS Organization][]
-  - Rails Manifest vs. Sass Partials
-  - Use Labeling System
-  - Naming Conventions
-  - Keep it DRY!
 - [Preprocessors and Frameworks][]
   - Sass and Less
   - Twitter Bootstrap
@@ -98,17 +106,16 @@ Table of Contents
 - [Storytelling][]
 
 [The Manifesto]:                     https://github.com/maxxiimo/railsviews/blob/master/The%20Manifesto.md
-[Preprocessors and Frameworks]:      https://github.com/maxxiimo/railsviews/blob/master/Preprocessors%20and%20Frameworks.md
-[CSS Organization]:                  https://github.com/maxxiimo/railsviews/blob/master/CSS%20Organization.md
-[Mobile First]:                      https://github.com/maxxiimo/railsviews/blob/master/Mobile%20First.md
-[HTML Organization]:                 https://github.com/maxxiimo/railsviews/blob/master/HTML%20Organization.md
 [Getting Started]:                   https://github.com/maxxiimo/railsviews/blob/master/Getting%20Started.md
+[HTML and CSS Organization]:         https://github.com/maxxiimo/railsviews/blob/master/HTML%20and%20CSS%20Organization.md
+[Using Compass]:                     https://github.com/maxxiimo/railsviews/blob/master/Using%20Compass.md
+[Preprocessors and Frameworks]:      https://github.com/maxxiimo/railsviews/blob/master/Preprocessors%20and%20Frameworks.md
+[Mobile First]:                      https://github.com/maxxiimo/railsviews/blob/master/Mobile%20First.md
 [Slicing and Dicing Mockups]:        https://github.com/maxxiimo/railsviews/blob/master/Slicing%20and%20Dicing%20Mockups.md
 [Navigation]:                        https://github.com/maxxiimo/railsviews/blob/master/Navigation.md
 [Gradients]:                         https://github.com/maxxiimo/railsviews/blob/master/Gradients.md
 [Images]:                            https://github.com/maxxiimo/railsviews/blob/master/Images.md
 [Forms]:                             https://github.com/maxxiimo/railsviews/blob/master/Forms.md
-[Using Compass]:                     https://github.com/maxxiimo/railsviews/blob/master/Using%20Compass.md
 [Optimization]:                      https://github.com/maxxiimo/railsviews/blob/master/Optimization.md
 [Refactoring]:                       https://github.com/maxxiimo/railsviews/blob/master/Refactoring.md
 [Tools]:                             https://github.com/maxxiimo/railsviews/blob/master/Tools.md
