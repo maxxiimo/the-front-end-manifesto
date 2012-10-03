@@ -1,56 +1,15 @@
 Getting Started
 ---------------
 
-This chapter could be called a cut-and-paste chapter in that I will provide tried-and-true code that you can cut and paste into your application. Here you get the steps necessary to start your rails application right, from the front end view coders perspective. The Layout and Styles sections of this chapter in addition to providing code dive into understanding the organization of those areas of your web application. Let's get started.
+This chapter could be called a cut-and-paste chapter in that I will provide tried-and-true code that you can cut and paste into your application to build your foundation markup and styles. In the next chapter we will begin to learn about the organization of the code in this chapter, but for now these aret the steps necessary to start your rails application right, from the front end view coders perspective. Let's get started.
 
 ### Groundwork
 
-Assuming you just created a brand spanking new rails application, I would set up your .gemfile and .gitignore files right off the bat as follows:
+Assuming you just created a brand spanking new rails application, you should set up your .gemfile and .gitignore files right off the bat as follows:
 
 #### .gemfile
 
-Your .gemfile will change radically throughout the lifespan of your project. With a new application you typically get something like this:
-
-    source 'https://rubygems.org'
-    
-    gem 'rails', '3.2.8'
-    
-    # Bundle edge Rails instead:
-    # gem 'rails', :git => 'git://github.com/rails/rails.git'
-    
-    gem 'sqlite3'
-    
-    
-    # Gems used only for assets and not required
-    # in production environments by default.
-    group :assets do
-      gem 'sass-rails',   '~> 3.2.3'
-      gem 'coffee-rails', '~> 3.2.1'
-    
-      # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-      # gem 'therubyracer', :platforms => :ruby
-    
-      gem 'uglifier', '>= 1.0.3'
-    end
-    
-    gem 'jquery-rails'
-    
-    # To use ActiveModel has_secure_password
-    # gem 'bcrypt-ruby', '~> 3.0.0'
-    
-    # To use Jbuilder templates for JSON
-    # gem 'jbuilder'
-    
-    # Use unicorn as the app server
-    # gem 'unicorn'
-    
-    # Deploy with Capistrano
-    # gem 'capistrano'
-    
-    # To use debugger
-    # gem 'debugger'
-
-I get rid of all the scruff, comments, which leaves me with:
+Your .gemfile will change radically throughout the lifespan of your project. With a new application Rails generates one with a lot of comments and commented out lines. You don't need these right now, so let's get rid of them, they take up a lot of space and clutter things up. If you ever want to see them again in the future, review your git history or you can always create a new app. Without comments, here is what you're left with:
 
 source 'https://rubygems.org'
 
@@ -66,7 +25,7 @@ source 'https://rubygems.org'
     
     gem 'jquery-rails'
 
-There of certain things that I know I will work with, and borrowing from the best I use Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" .gemfile example with a few additions to organize my base .gemfile as follows:
+To this I'm going to add gems that I know for certain I will work with, and borrowing from the best I use Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" .gemfile example with a few additions:
 
     source 'https://rubygems.org'
     
@@ -100,7 +59,7 @@ There of certain things that I know I will work with, and borrowing from the bes
       gem 'pg',           '0.12.2'
     end
 
-Since I typically use compass, I added the compass-rails and oily_png gems here. You may not want to. If you do, a smart choice, check out the [Using Compass][] chapter of this book to learn how to add compass to your application.
+Since I typically use compass, I added the compass-rails and oily_png gems here. You may not want to, but if you do, smart choice.
 
 NOTE: Michael Hartl recommends using the following flag on your first bundle:
 
@@ -167,46 +126,49 @@ For my .gitignore file here is what I use; mostly borrowed from [HTML 5 Boilerpl
     scratch.*
     public/source
 
-The last section contains files or folders I like to use to save things within the application, but only on my local machine.
+The last section "Local" contains files or folders I like to use to save things within the application, but only on my local machine.
 
 - I use scratch.* as a code graveyard: snippets of code I am no longer using but not yet ready to completely get rid of.
 
-- The public/source folder is an area I put original files or source code from 3rd parties that I have integrated
-  into my application, Photoshop files, original images, etc.. Basically the original copies of where things came from.
+- The public/source folder is an area I put original third-party files or source code that I have integrated into my application, Photoshop files, original images, etc.. Basically the original copies of where things came from.
 
-Some additional useful ideas:
+Some additional useful .gitignore ideas:
 
 [Ignore files][]
 [A Collection of Useful .gitignore Templates][.gitignore]
 
-### Layout
+### Foundation Markup: The Application Layout
 
-As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's cconsumption. In this role when speaking about "layout" I might say something like, "Wow! That's a great layout" or, "I don't like the layout of this site, it's too confusing."
+As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption. In this role when speaking about "layout" I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing."
 
-When I switch hats, as a front end coder I look at layout as the view framework in which all of my front-end code lives and interacts with the outside world, i.e. via different browsers and devices. It's what a desktop or mobile browser takes and turns into something visual that an end user can understand and interact with, i.e. consume. As much as Rails is a framework, within this greater framework lives a tinier front end framework that we front end coders work with. Until Rails 3.0, where this framework lived and the conventions for using it were very much no man's land, sometimes a dumping ground, and oftentimes the wild wild West of coding. Since Rails 3.0 things are becoming more civilized, and front end coding recognized as a discipline in its own right.
+When I switch hats, as a front end coder I look at layout as the view framework in which all of my front-end code lives and interacts with the outside world via different browsers and devices. In other words it's what a desktop or mobile browser takes and turns into something visual that an end user can understand and interact with, i.e. consume.
 
-So what is this tiny view framework within a framework you speak of? Well, it is predominantly HTML with style and interactivity added to it via CSS and JavaScript (and Flash, less unless though). In Rails the heart of this view framework lives in what we refer to as the layout template which is typically broken up into different related files called partials that are all being called together into the whole. View code from other parts of the application pass through sso to speak and become framed by the layout template(s) before being rendered to the end-user.
+As a Rails front-end developer, you will wear both hats, plus take on a third role in which you provide the handshake between the backend and the front-end. To be successful you must understand how the code you produce will be used by your colleagues, and you need to be able to reach into your models and controllers via instance variables, helper methods, erb, but before you do these things you need to layout a solid foundation.
 
-#### Where Does It Live?
+As much as Rails is a framework, within this framework lives a tinier front end framework; your foundation markup. Until Rails 3.0, where this foundation "lived" and the conventions for using it were very much a no man's land. It was a disorganized dumping ground for HTML, CSS, JavaScript, and Ruby: the wild wild West of coding. Since Rails 3.0 things have become "civilized" and within these new conventions we will begin to build our layout. By the Way, I first heard the view layer referred to as a "no man's land" and the "West" in John Athayde and Bruce Williams' preface to [The Rails View: Create a Beautiful and Maintainable User Experience][The Rails View]. These guys are masters in this subject and  I highly recommend reading their book.
 
-The front end structure I'm describing primarily lives in two folders within your Rails application: the helpers and the views folders. The views folder can be further subdivided into the Layout and Shared folders, which are home to the majority of your base front end code. Here's what it looks like and where you'll find these folders in any Rails 3.0 or greater project:
+#### So Where Does It Live?
+
+So what is this tiny view framework within a framework? Well, it is predominantly HTML organized in specific folders of your application with styles and interactivity added via CSS and JavaScript (and Flash, but less and less these days). In Rails the heart of this view framework and all the code related to it lives in what we refer to as the layout template, which is typically broken up into different related files called partials which are all being pulled together into the whole. View code from other parts of the application for the most part pass through this layout and become framed by the layout template (with styles and JavaScript pulled in) before being rendered to the end-user.
+
+The front end structure I'm describing primarily lives in two high-level folders within your Rails application: the helpers and the views folders. The views folder is where the real action takes place and can be further subdivided into the Layout and Shared folders, which are home to the majority of your foundation front end code. Here's what it looks like and where you'll find these folders in any Rails 3.0 or greater project:
 
 Project
   - assets
   - controllers
-  - helpers
+  - *helpers*
   - mailers
   - models
   - app
-    - views
-      - layout
-      - shared
+    - *views*
+      - *layout*
+      - *shared*
 
-#### Give Me the Code!
+#### The Code
 
-Our goal is to writes and organize these components of our layout in such a way that different browsers and devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug-in to it with ease. To help you along this path you can grab my starter code from here:
+Our goal is to writes and organize the components of our layout in such a way that different browsers and devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug into it with ease. To help you along this path you can grab my starter code:
 
-https://github.com/maxxiimo/base-haml
+[https://github.com/maxxiimo/base-haml][Starter Code]
 
 This is an implementation of [HTML5 Boilerplate][] code in haml.
 
@@ -228,28 +190,34 @@ To better understand it (and my implementation), the following sites are also wo
 
 #### Where Do Things Go?
 
-Code wise you have access to everything I would use when starting a new application, my [base files][]. Structurally, they fall into place as follows:
+Code wise you have access to everything I would use when starting a new application, my [base files][Starter Code]. Structurally, these files fall into place as follows:
 
 Project
   - assets
+    - images
+      *- fixtures
+      - icons
+      - logos
+      - pics
+    - javascripts*
   - controllers
   - helpers
-    application_helper.rb
+    *application_helper.rb*
   - mailers
   - models
   - app
     - views
       - layout
-        _chromeframe.html.haml
+        *_chromeframe.html.haml
         _head.html.haml
         _scripts.html.haml
-        application.html.haml
+        application.html.haml*
       - shared
-        _footer.html.haml
+        *_footer.html.haml
         _logo.html.haml
-        _navigation.html.haml
+        _navigation.html.haml*
 
-If you grab every single one of my base files and organize them into a brand-new Rails application exactly like I describe above, your Rails application will work just fine minus styles and the logo image referenced in those files, once you perform the steps below. At least it should! I'm testing it right now in a brand-new Rails 3.2 application and it's working just fine.
+Once you download these files, perform the steps below.
 
 *Step 1* - Delete the default index.html file in your Public folder, and the rails.png image in your Assets/Images folder, as well as the application.html.erb file you are replacing with application.html.haml.
 
@@ -266,6 +234,10 @@ NOTE: If you're not sure what I just did there you should really consider gettin
     # You can have the root of your site routed with "root"
     # just remember to delete public/index.html.
     root :to => 'pages#home' 
+
+If you grab every single one of my base files and folders and organize them into a brand-new Rails application exactly like I describe above, your Rails application will work just fine minus styles. If you run your rails server things should look like this:
+
+![][Basic HTML]
 
 #### What Did We Just Do?
 
@@ -288,11 +260,17 @@ So what are in these styles? Well obviously these are the base CSS files I start
 
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
-[Using Compass]:        https://github.com/maxxiimo/railsviews/blob/master/Using%20Compass.md
 [H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
 [Tutorial .gitignore]:  http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
                         "An augmented .gitignore file"
 [Ignore files]:         http://help.github.com/ignore-files/
 [.gitignore]:           https://github.com/github/gitignore
-[base files]:           https://github.com/maxxiimo/base-haml
+[The Rails View]:       http://pragprog.com/book/warv/the-rails-view
+[Starter Code]:         https://github.com/maxxiimo/base-haml
+[HTML5 Boilerplate]:    http://html5boilerplate.com/
+[Unofficial Guide]:     http://designreviver.com/articles/an-unofficial-guide-to-the-html5-boilerplate/
+[Boilerplate for Rails]:http://railsapps.github.com/rails-html5-boilerplate.html
 [Organization]:         https://github.com/maxxiimo/railsviews/blob/master/Organization.md
+
+
+[Basic HTML]:           /assets/getting-started/base-html-no-styles.png

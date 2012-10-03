@@ -24,15 +24,16 @@ Table of Contents
 - [Front End Coder's Manifesto][The Manifesto]
 - [Getting Started][]
   -  Groundwork
-    -  .gemfile
-    -  .gitignore
-  -  Layout
-    -  Where Does It Live?
-    -  Give Me the Code!
-    -  HTML5 Boilerplate
-    -  Where Do Things Go?
-    -  What Did We Just Do?
+    - .gemfile
+    - .gitignore
+  -  Foundation Markup: The Application Layout
+    - So Where Does It Live?
+    - The Code
+    - HTML5 Boilerplate
+    - Where Do Things Go?
+    - What Did We Just Do?
   -  Styles
+    - Using Compass
 - [Organization][]
   - HTML Organization
     - Naming Conventions
@@ -46,7 +47,6 @@ Table of Contents
     - Use Labeling System
     - Naming Conventions
     - Keep it DRY!
-- [Using Compass][]
 - [Preprocessors and Frameworks][]
   - Sass and Less
   - Twitter Bootstrap
