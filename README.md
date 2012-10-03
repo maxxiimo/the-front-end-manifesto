@@ -21,7 +21,7 @@ Personal views and direction on front end coding, from a Ruby on Rails perspecti
 Table of Contents
 -----------------
 
-- [Front End Coders Manifesto][The Manifesto]
+- [Front End Coder's Manifesto][The Manifesto]
 - [Getting Started][]
   -  Groundwork
     -  .gemfile

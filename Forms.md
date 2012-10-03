@@ -39,7 +39,13 @@ I always use %fieldset to group fields even if there is only one group, and I ra
 
 ### Extras
 
-Something you do not see in the minimalist form above is a tabbing order or a relationship between labels and fields. You don't have to add this, but I think it's a good practice to do so. Why leave a user's tabbing experience to chance? Simply add XXXX.
+Something you do not see in the minimalist form above is a tabbing order or a relationship between labels and fields. You don't have to add this, but I think it's a good practice to do so. Why leave a user's tabbing experience to chance? Simply add:
+
+    , tabindex: <#>
+
+
+    , placeholder: <something>
+
 
 ### FormHelpers
 

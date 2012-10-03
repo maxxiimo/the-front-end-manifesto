@@ -1,5 +1,5 @@
-Front End Coders Manifesto
---------------------------
+Front End Coder's Manifesto
+---------------------------
 
 **When I code I will:**
 

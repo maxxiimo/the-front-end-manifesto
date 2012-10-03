@@ -266,6 +266,20 @@ I'm going to defer answering this question to the [Organization][] chapter to th
 
 ### Styles
 
+For styles if you grab everything in the following directory:
+
+https://github.com/maxxiimo/base-css
+
+...and paste these files and subfolder into your assets/styles directory, you will have added my recommended base stylesheets to your project. Simple as that, and since you included the sass-rails and compass-rails gems in your .gemfile, everything should just work.
+
+#### What's in There?
+
+So what are in these styles? Well obviously these are the base CSS files I start any application with and they contain some very basic styles and resets. What is more important here are not styles, because there are really not that many included, but the way in which styles are organized. As you move along your project, stylesheets can become behemoths, and that's why I advocate some kind of organization structure from the get-go. You can use mine, or can make up your own. To learn more about CSS Organization, check out the CSS Organization section of the [Organization][] chapter.
+
+### What have we done?
+
+
+
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [Using Compass]:        https://github.com/maxxiimo/railsviews/blob/master/Using%20Compass.md
 [H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
