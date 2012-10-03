@@ -210,6 +210,13 @@ https://github.com/maxxiimo/base-haml
 
 This is an implementation of [HTML5 Boilerplate][] code in haml.
 
+NOTE: I have included some necessary asset folders and files that coincide with the defaults I will provide in this chapter. Since I'm using modernizr, I add the require in application.js as follows:
+
+    //= require jquery
+    //= require jquery_ujs
+    //= require modernizr-2.5.3.min
+    //= require_tree .
+
 #### HTML5 Boilerplate
 
 In coding copy and learn from the best, improve, then give back. I find that the best place to reference when building front end view templates is [HTML5 Boilerplate][]. This resource is an ongoing collaboration between expert front-end developers and the community.
