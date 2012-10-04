@@ -215,7 +215,7 @@ Project
         - [**_chromeframe.html.haml**][_chromeframe]
         - [**_head.html.haml**][_head]
         - [**_scripts.html.haml**][_scripts]
-        - [**application.html.haml**][_application]
+        - [**application.html.haml**][application]
       - shared
         - [**_footer.html.haml**][_footer]
         - [**_logo.html.haml**][_logo]
@@ -304,7 +304,7 @@ If you use my [starter code][], or follow my advice, your application.html.haml 
 
 Concise and simple. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology.
 
-##### JavaScript Partial
+##### The Scripts Partial
 
 Generally it is best to put JavaScript at the very bottom of application.html.haml. Doing so will allow the page to render before scripts are loaded, but some scripts such as modernizr need to load before your HTML so naturally I include them in [_head.html.haml][_head]. To accommodate all other JavaScript files I use a [_scripts.html.haml][_scripts] partial located in the layouts folder.
 
@@ -361,7 +361,7 @@ Although not apparent yet, i.e. visually, we have created a top-notch markup fou
 
 ![][Basic HTML]
 
-Not very attractive! ...but don't worry we'll address that in the next chapter.
+Not very attractive! ...but don't worry we'll address that in the [next chapter][Styles].
 
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
@@ -387,7 +387,7 @@ Not very attractive! ...but don't worry we'll address that in the next chapter.
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
 [_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_chromeframe.html.haml
+[Styles]:               https://github.com/maxxiimo/railsviews/blob/master/Styles.md      
 
 
-[Basic HTML]:              http://chrismaxwell.com/rails-views/assets/getting-started/base-html-no-styles.png
-[Basic HTML with Styles]:  http://chrismaxwell.com/rails-views/assets/getting-started/base-html-files-with-styles.png
+[Basic HTML]:           http://chrismaxwell.com/rails-views/assets/getting-started/base-html-no-styles.png

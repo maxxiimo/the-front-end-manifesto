@@ -417,3 +417,6 @@ While variables do not explicitly DRY up your code, they kind of do and here's h
 [Getting Compass to Work]: http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
 [How I Use Compass]:       http://austintech.com/blog/2011/08/19/how-i-use-compass-with-rails-3-1/
 [Asset Pipeline]:          http://www.engineyard.com/blog/2011/sass-compass-and-the-rails-3-1-asset-pipeline/
+
+
+[Basic HTML No Styles]: http://chrismaxwell.com/rails-views/assets/getting-started/base-html-files-with-styles.png
