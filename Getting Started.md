@@ -238,7 +238,7 @@ NOTE: If you're not sure what I just did there you should really consider gettin
 If you grab every single one of my base files and folders and organize them into a brand-new Rails application exactly like I describe above, your Rails application will work just fine minus styles. If you run your rails server things should look like this:
 
 ![][Basic HTML]
-![](https://github.com/maxxiimo/railsviews/blob/master/assets/getting-started/base-html-no-styles.png)
+![](http://chrismaxwell.com/rails-views/assets/getting-started/base-html-no-styles.png)
 
 #### What Did We Just Do?
 
@@ -274,4 +274,4 @@ So what are in these styles? Well obviously these are the base CSS files I start
 [Organization]:         https://github.com/maxxiimo/railsviews/blob/master/Organization.md
 
 
-[Basic HTML]:           https://github.com/maxxiimo/railsviews/blob/master/assets/getting-started/base-html-no-styles.png
+[Basic HTML]:           http://chrismaxwell.com/rails-views/assets/getting-started/base-html-no-styles.png
