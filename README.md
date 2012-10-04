@@ -22,28 +22,35 @@ Table of Contents
 -----------------
 
 - [Front End Coder's Manifesto][The Manifesto]
-- [Getting Started][]
+- [Foundation Markup][]
   -  Groundwork
     - .gemfile
     - .gitignore
-  -  Foundation Markup: The Application Layout
+  -  The Application Layout
+    - A Framework within a Framework
     - Where Does It Live?
     - The Code
-    - HTML5 Boilerplate
     - Where Do Things Go?
+    - What to Put in <head>
+    - Partials
+    - The Title
+    - JavaScript
     - What Did We Just Do?
-  -  Styles
-    - Using Compass
-    - The Styles
-    - What Did We Just Do?
-- [Organization][]
-  - HTML Organization
+  - Moving Forward
     - Naming Conventions
-    - Where to Put Things
+    - Using Partials
     - IE 6
     - %head and Boilerplate
     - The Title
     - JavaScript
+- [Styles][]
+
+  -  Styles
+    - Using Compass
+    - The Styles
+    - What Did We Just Do?
+
+
   - CSS Organization
     - Rails Manifest vs. Sass Partials
     - Use Labeling System
@@ -108,9 +115,8 @@ Table of Contents
 - [Storytelling][]
 
 [The Manifesto]:                     https://github.com/maxxiimo/railsviews/blob/master/The%20Manifesto.md
-[Getting Started]:                   https://github.com/maxxiimo/railsviews/blob/master/Getting%20Started.md
-[Organization]:                      https://github.com/maxxiimo/railsviews/blob/master/Organization.md
-[Using Compass]:                     https://github.com/maxxiimo/railsviews/blob/master/Using%20Compass.md
+[Foundation Markup]:                 https://github.com/maxxiimo/railsviews/blob/master/Foundation%20Markup.md
+[Styles]:                            https://github.com/maxxiimo/railsviews/blob/master/Styles.md
 [Preprocessors and Frameworks]:      https://github.com/maxxiimo/railsviews/blob/master/Preprocessors%20and%20Frameworks.md
 [Mobile First]:                      https://github.com/maxxiimo/railsviews/blob/master/Mobile%20First.md
 [Slicing and Dicing Mockups]:        https://github.com/maxxiimo/railsviews/blob/master/Slicing%20and%20Dicing%20Mockups.md

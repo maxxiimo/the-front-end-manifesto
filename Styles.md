@@ -1,140 +1,86 @@
 Organization
 ------------
 
-### HTML Organization
-
-
-
-
-#### What to Put in <head>
-
-There are a lot of things that you could put in your <head> tags, but don't. Obviously just put in What you need. I provide the bare minimum, but everything else as well only commented out:
-
-[ADD GITHUB LINK HERE]
-
-For an explanation on what this stuff is/does check out these two sources:
-
-<https://gist.github.com/1981339>
-<http://html5boilerplate.com/docs/html-head/>
-
-
 
 
 [Modernizr HTML5-Cross-browser-Polyfills][]
 
 
-#### Naming Conventions
-
-When naming HTML files try to stay within REST conventions, i.e. index.html.haml, show.html.haml, etc.. When naming outside of REST be short and concise, use names that indicate what the files function or purpose is. Keep in mind that file names tend to trickle down to classes.
-
-When naming HTML files separate words with underscores: a_great_file_name.html.haml
-
-For partials, if there are several related to an individual file, group them by using the parent files name or abbreviation. If there is no parent file per se, use a common function or purpose to group the partials, for example:
-
-    _tabs.html.haml
-    _tabs_sub_nav.html.haml
-
-#### Where to Put Things
-
-Partials are great to use to:
-
-1.  Increase readability of your code
-2.  Keep things organized
-3.  Reuse code, i.e. keep things DRY
-4.  Encapsulate logic, although helper methods are preferred
-
-The key is not to go knots and partial everything. If you do that, finding things becomes a wild goose chase.
-
-So starting from the top, separate your layout/application.html.haml into partials like:
-
-1. _head.html.haml
-2. _script.html.haml
-    
-3. _logo.html.haml
-4. _navigation.html.haml
-5. _footer.html.haml
-
-For the first two partials locate these in the same layout folder as application.html.haml -- NOT in the shared folder --- because they are essentially integral to the layout/application.html.haml file. Use helper methods to pull them in:
-
-    def head
-      render :partial => 'layouts/head'
-    end
-    
-    def scripts
-      render :partial => 'layouts/scripts'
-    end
-
-For the second three locate these in the shared folder. I separate logo and navigation into their own partials rather than use something like _banner.html.haml or _header.html.haml to hold them because often times logos and navigation vary between clients or functional areas within an application. When you start  the project you don't necessarily see this coming, but needs do change so you might as well lay them out in such a way that you can easily get at them in the future.
-
-Do all this, and your application.html.haml file might look something like this:
-
-    !!!
-    = head
-    %body
-      %header{:id => 'hd', :role => "banner"}
-        = render :partial => 'shared/logo'
-        = render :partial => 'shared/navigation'
-      #main{:role => "main"}
-        = yield
-      = render :partial => 'shared/footer'
-    = scripts
-
-Concise and simple. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology to browse your application.
-
-#### IE 6
-
-These days most people like to just forget about IE 6, it's old, "We're not supporting it, those users need to update!" ...But here's the problem, those users are still out there, even if they don't want to be. Have you ever been in your local library and checked out the super old machines people have to use there? So what I propose is a compromise. Don't waste your time developing for IE 6 but give those users notice and ability via [Chrome Frame][]. Add the following partial to your layouts folder:
-
-    /[if lt IE 7 ]
-      %p.chromeframe
-        Your browser is
-        %em ancient!
-        %a{:href => "http://browsehappy.com/"} Upgrade to a different browser or
-        %a{:href => "http://www.google.com/chromeframe/?redirect=true"} install Google Chrome Frame to experience this site.
-
-Here is the corresponding helper method:
-
-    def chromeframe
-      render :partial => 'layouts/chromeframe'
-    end
-
-So now your application layout file will look like this:
-
-    !!!
-    = head
-    %body
-      = chromeframe
-      %header{:id => 'hd', :role => "banner"}
-        = render :partial => 'shared/logo'
-        = render :partial => 'shared/navigation'
-      #main{:role => "main"}
-        = yield
-      = render :partial => 'shared/footer'
-    = scripts
-
-#### %head and Boilerplate
-
-There is so much you can put in your %head that it can get pretty confusing. I base all of my projects off of parts of [HTML5 Boilerplate][]. To learn more check out [HTML head options][], all of the research on best practices and why has been done for you. Just pick and choose what works for you. You can use my haml template to start:
-
-https://github.com/maxxiimo/base-files/blob/master/_head.html.haml
-
-Everything is nice and neat in haml and with only the ones I think you should use (plus all the other options commented out).
-
-[<head> Examples][]
-
-#### The Title
-
-    %title= content_for?(:title) ? yield(:title) : "XXX"
-
-#### JavaScript
-
-Generally it is best to put JavaScript at the very bottom of the page. Doing so will allow the page to render before scripts are loaded, but some scripts such as modernizr need to load before your HTML so naturally I include them in _head.html.haml. To accommodate all other JavaScript files I use a _scripts.html.haml partial located in the layout folder.
 
 
-[Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
-[HTML5 Boilerplate]:    http://html5boilerplate.com/
-[HTML head options]:    http://html5boilerplate.com/docs/html-head/
-[<head> Examples]       https://gist.github.com/581868
+
+
+
+
+### Styles
+
+For your applications foundation styles we'll use my base CSS files, or you can make up your own, but before you add styles to your application, and if you're planning to use Compass, you need to set it up.
+
+#### Compass Set Up
+
+1.  Add 'compass-rails' to your gemfile. For more explicit directions from the gem source take a look at: [compass-rails][]
+
+2.  Run "bundle exec compass init" and then delete the 3 stylesheets generated by Compass. We're going to use our own.
+
+3.  Add the following commented out code to your config/compass.rb file generated in step one:
+
+        # To allow compass to import partials from subdirectories per:
+        # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+        # additional_import_paths = ["app/assets/stylesheets/<name>", "app/assets/stylesheets/<name>"]
+        #
+        # To compile in the necessary debugging information for FireSass.
+        # sass_options = {:debug_info => true}
+
+    I add these because chances are I may need them. You should definitely check out [FireSass][]. It allows you to see exactly which sass partial styles are coming from.
+
+4.  Delete your application.css file and replace with application.scss. 
+
+    NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
+
+5.  Use @import to organize styles rather than Sprockets. Add the following reminder at the top of application.scss:
+        
+        /*
+         * Important! Do *not* use Sprockets "require" syntax.
+         * Use @import to include other stylesheets and Compass mixins.
+         */
+
+    NOTE: You can use sprockets require syntax, however per the explanation found at of the [compass-rails][] gem source it is probably not a good idea.
+
+6.  If you find your system has a problem with sass partials and underscores when precompiling, add the following to your config/application.rb file:
+
+        # Precompile *all* assets, except those that start with underscore per:
+        # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+        config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+
+That's pretty much it!
+
+Some additional resources for working with Compass include:
+
+- [Getting Compass to Work With Rails 3.1 (and 3.2)][Getting Compass to Work]
+- [How I Use Compass With Rails 3.1][How I Use Compass]
+- [Sass, Compass, and the Rails 3.1 Asset Pipeline][Asset Pipeline]
+
+#### The Styles
+
+Now that Compass is set up, grab everything from here:
+
+- https://github.com/maxxiimo/base-css
+
+...and paste these files and subfolder into your assets/styles directory. Simple as that. Here is what your page will look like:
+
+![][Basic HTML with Styles]
+
+It's pretty basic, but much better than before.
+
+#### What Did We Just Do?
+
+We essentially added some very basic css and resets, but more important than this – there are really not that many styles included – is the way in which we organized our styles. As you move along any project, stylesheets can become behemoths, unmanageable, and downright confusing. To avoid this it's highly advisable to start a project with some kind of organizational structure in place from the get-go.
+
+To learn more about CSS Organization, check out the CSS Organization section of the [Organization][] chapter. This section describes why and how to organize styles within application.scss and more. The HTML Organization section covers why and how to organize your markup foundation. Although this book is designed for developers who already know their way around a Rails application, it's worth taking a look at.
+
+
+
+
 
 
 ### CSS Organization
@@ -464,3 +410,10 @@ While variables do not explicitly DRY up your code, they kind of do and here's h
 [aB vs. a_b]:           http://stackoverflow.com/questions/1437527/css-camelcase-vs-under-score
 [Identifiers]:          http://stackoverflow.com/questions/1686337/hyphens-or-underscores-in-css-and-html-identifiers
 [Sucks]:                http://csswizardry.com/2010/12/css-camel-case-seriously-sucks/
+
+[Organization]:            https://github.com/maxxiimo/railsviews/blob/master/Organization.md
+[compass-rails]:           https://github.com/Compass/compass-rails
+[FireSass]:                https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
+[Getting Compass to Work]: http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+[How I Use Compass]:       http://austintech.com/blog/2011/08/19/how-i-use-compass-with-rails-3-1/
+[Asset Pipeline]:          http://www.engineyard.com/blog/2011/sass-compass-and-the-rails-3-1-asset-pipeline/
