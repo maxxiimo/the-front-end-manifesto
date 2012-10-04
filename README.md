@@ -34,6 +34,8 @@ Table of Contents
     - What Did We Just Do?
   -  Styles
     - Using Compass
+    - The Styles
+    - What Did We Just Do?
 - [Organization][]
   - HTML Organization
     - Naming Conventions
