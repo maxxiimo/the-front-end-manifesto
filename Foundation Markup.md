@@ -25,7 +25,7 @@ Your .gemfile will change radically throughout the lifespan of your project. Wit
     
     gem 'jquery-rails'
 
-To this I'm going to add gems that I know for certain I will work with. Borrowing from the best – I use Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" .gemfile example – I start my projects with the following:
+To this I'm going to add gems that I know for certain I will work with. Borrowing from the best – I use Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" .gemfile example – I start my projects with the following .gemfile:
 
     source 'https://rubygems.org'
     
@@ -128,9 +128,9 @@ For my .gitignore file here is what I use; mostly borrowed from [HTML 5 Boilerpl
 
 The last section "Local" contains files or folders I use to save things within the application, but only on my local machine:
 
-- scratch.* - I use this as a code graveyard; snippets of code I am no longer using but not yet ready to completely get rid of.
+- __scratch.*__ - I use this as a code graveyard; snippets of code I am no longer using but not yet ready to completely get rid of.
 
-- public/source - A folder for original third-party files or source code integrated into my application; Photoshop files; original images; basically the original copies of where things came from.
+- __public/source__ - A folder for original third-party files or source code integrated into my application; Photoshop files; original images; basically the original copies of where things came from.
 
 Some additional useful .gitignore ideas:
 
@@ -147,7 +147,9 @@ As a Rails front end developer, you will wear both hats, plus take on a third ro
 
 #### A Framework within a Framework
 
-As much as Rails is a framework, within this framework lives a tinier front end framework; your foundation markup. Until Rails 3.0, where this foundation "lived" and the conventions for using it were very much a no man's land. It was a disorganized dumping ground for HTML, CSS, JavaScript, and Ruby: the wild wild West of coding. Since Rails 3.0 things have become "civilized" and within these new conventions is where we will begin to build our layout, the application layout. By the Way, I first heard the view layer referred to as a "no man's land" and the "West" in John Athayde and Bruce Williams' preface to "[The Rails View: Create a Beautiful and Maintainable User Experience][The Rails View]". These guys are masters in this subject and I highly recommend reading their book.
+As much as Rails is a framework, within this framework lives a tinier front end framework; your foundation markup. Until Rails 3.0, where this foundation "lived" and the conventions for using it were very much a no man's land. It was a disorganized dumping ground for HTML, CSS, JavaScript, and Ruby: the wild wild West of coding. Since Rails 3.0 things have become "civilized" and within these new conventions is where we will begin to build our layout, the application layout.
+
+NOTE: I first heard the view layer referred to as a "no man's land" and the "West" in John Athayde and Bruce Williams' preface to "[The Rails View: Create a Beautiful and Maintainable User Experience][The Rails View]". These guys are masters in this subject and I highly recommend reading their book.
 
 So what is this tiny view framework within a framework? Well, it is predominantly HTML organized in specific folders of your application with styles and interactivity added via CSS and JavaScript (and Flash, but less and less these days). In Rails the heart of this view framework and all the code related to it lives in what we refer to as the layout template, or application.html.haml, which is typically broken up into different related files called partials which are all being pulled together into the whole. View code from other parts of the application for the most part pass through this layout and become framed by the layout template (with styles and JavaScript pulled in) before being rendered to the end-user.
 
@@ -204,24 +206,24 @@ Project
     - **javascripts**
   - controllers
   - helpers
-    **application_helper.rb**
+    - [**application_helper.rb**][application_helper]
   - mailers
   - models
   - app
     - views
       - layout
-        - **_chromeframe.html.haml**
-        - **_head.html.haml**
-        - **_scripts.html.haml**
-        - **application.html.haml**
+        - [**_chromeframe.html.haml**][_chromeframe]
+        - [**_head.html.haml**][_head]
+        - [**_scripts.html.haml**][_scripts]
+        - [**application.html.haml**][_application]
       - shared
-        - **_footer.html.haml**
-        - **_logo.html.haml**
-        - **_navigation.html.haml**
-
-Once you download these files, perform the steps below.
+        - [**_footer.html.haml**][_footer]
+        - [**_logo.html.haml**][_logo]
+        - [**_navigation.html.haml**][_navigation]
 
 ##### Prep the App
+
+Once you have downloaded the [starter code][] and placed all the files where they belong, you need to prep your app by following of these steps:
 
 **Step 1** - Delete the default index.html file in your Public folder, and the rails.png image in your Assets/Images folder, as well as the application.html.erb file you are replacing with application.html.haml.
 
@@ -233,19 +235,19 @@ Make sure to delete the pages.css.scss file generated by Rails, we won't be usin
 
 NOTE: If you're not sure what I just did there you should really consider getting Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
 
-**Step 3** - Finally, in your default route to:
+**Step 3** - Finally, change your default route to whatever you want your application to default to. In the [starter code][] it's:
 
     # You can have the root of your site routed with "root"
     # just remember to delete public/index.html.
     root :to => 'pages#home' 
 
-#### What to Put in <head>
+#### What to Put in \<head>
 
 If you haven't already noticed, there is a lot of commented out code in [_head.html.haml][<head>]. The reason for this is that there is a lot of things that you could put there, but don't. Obviously just put in what you need. I provide the bare minimum, but everything else, commented out, just in case you need it.
 
 For an explanation on what this stuff is/does check out:
 
-- [Helpful things to keep in your <head>][Helpful Things]
+- [Helpful things to keep in your \<head>][Helpful Things]
 
 ##### The Title
 
@@ -287,7 +289,7 @@ I think it looks cleaner in application.html.haml versus using render partial th
 
 Locate partials 3 - 5 in the shared folder. I separate logo and navigation into their own partials rather than use something like _banner.html.haml or _header.html.haml to hold both because often times logos and navigation vary between clients or functional areas within an application. When you start  the project you don't necessarily see this coming, but needs do change so you might as well lay them out in such a way that you can easily get at them in the future.
 
-If you use my [starter code][], or follow my advice, your application.html.haml file will look something like this:
+If you use my [starter code][], or follow my advice, your application.html.haml file will look like:
 
     !!!
     = head
@@ -300,30 +302,15 @@ If you use my [starter code][], or follow my advice, your application.html.haml 
       = render :partial => 'shared/footer'
     = scripts
 
-Concise and simple. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology to browse your application.
+Concise and simple. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology.
 
 ##### JavaScript Partial
 
 Generally it is best to put JavaScript at the very bottom of application.html.haml. Doing so will allow the page to render before scripts are loaded, but some scripts such as modernizr need to load before your HTML so naturally I include them in [_head.html.haml][_head]. To accommodate all other JavaScript files I use a [_scripts.html.haml][_scripts] partial located in the layouts folder.
 
-### Moving forward
+### Moving Forward
 
-Now that you have everything in place, if you generate a homepage controller, your homepage should look something like this:
-
-![][Basic HTML]
-
-Not very attractive! ...but don't worry we'll address that in the next chapter. Before we move on to styles, there are a few things we need to consider when adding files and organizing code within our framework moving forward.
-
-#### Naming Conventions
-
-When naming HTML files try to stay within REST conventions, i.e. index.html.haml, show.html.haml, etc.. When naming outside of REST be short and concise, use names that indicate what the files function or purpose is.
-
-When naming HTML files separate words with underscores: a_great_file_name.html.haml
-
-For partials, if there are several related to an individual file, group them by using the parent files name or abbreviation. If there is no parent file per se, use a common function or purpose to group the partials, for example:
-
-    _tabs.html.haml
-    _tabs_sub_nav.html.haml
+Before we move on to styles, there are a few things we need to consider when adding files and organizing code within our framework moving forward.
 
 #### Using Partials
 
@@ -335,6 +322,19 @@ Partials help:
 4.  Encapsulate logic, although helper methods are preferred
 
 The key is not to go nuts and partial everything. If you do that, finding things can become a wild goose chase for backing coders trying to figure out where the markup they need lives.
+
+#### Naming Conventions
+
+When naming HTML files try to stay within REST conventions, i.e. index.html.haml, show.html.haml, etc.. When naming outside of REST be short and concise, use names that indicate what the files function or purpose are.
+
+When naming HTML files separate words with underscores:
+
+    a_great_file_name.html.haml
+
+For partials, if there are several related to an individual file, group them by using the parent files name or abbreviation. If there is no parent file per se, use a common function or purpose to group the partials, for example:
+
+    _tabs.html.haml
+    _tabs_sub_nav.html.haml
 
 #### IE 6
 
@@ -355,6 +355,15 @@ Here is the corresponding helper method:
       render :partial => 'layouts/chromeframe'
     end
 
+### What We've Done
+
+Although not apparent yet, i.e. visually, we have created a top-notch markup foundation for your application. With everything in place, and given that you generated some kind of homepage controller with an index action, your homepage should look something like this: 
+
+![][Basic HTML]
+
+Not very attractive! ...but don't worry we'll address that in the next chapter.
+
+
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
 [Tutorial .gitignore]:  http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
@@ -366,14 +375,15 @@ Here is the corresponding helper method:
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [Unofficial Guide]:     http://designreviver.com/articles/an-unofficial-guide-to-the-html5-boilerplate/
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
-[<head>]:               https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
-[Helpful Things]:       https://gist.github.com/1981339
 [application]:          https://github.com/maxxiimo/base-haml/blob/master/views/layouts/application.html.haml
+[application_helper]:   https://github.com/maxxiimo/base-haml/blob/master/helpers/application_helper.rb
 [_head]:                https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
 [_scripts]:             https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_scripts.html.haml
 [_logo]:                https://github.com/maxxiimo/base-haml/blob/master/views/shared/_logo.html.haml
 [_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/views/shared/_navigation.html.haml
 [_footer]:              https://github.com/maxxiimo/base-haml/blob/master/views/shared/_footer.html.haml
+[<head>]:               https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
+[Helpful Things]:       https://gist.github.com/1981339
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
 [_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_chromeframe.html.haml

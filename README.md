@@ -35,14 +35,11 @@ Table of Contents
     - Partials
     - The Title
     - JavaScript
-    - What Did We Just Do?
   - Moving Forward
     - Naming Conventions
     - Using Partials
     - IE 6
-    - %head and Boilerplate
-    - The Title
-    - JavaScript
+  - What We've Done
 - [Styles][]
 
   -  Styles
