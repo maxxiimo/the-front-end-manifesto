@@ -1,17 +1,17 @@
 Getting Started
 ---------------
 
-This chapter could be called a cut-and-paste chapter in that I will provide tried-and-true code that you can cut and paste into your application to build your foundation markup and styles. In the next chapter we will begin to learn about the organization of the code in this chapter, but for now these aret the steps necessary to start your rails application right, from the front end view coders perspective. Let's get started.
+This chapter could be called a cut-and-paste chapter in that I will provide tried-and-true code that you can cut and paste into your application to build your projects foundation markup and styles. In the next chapter we will begin to learn about the organization of the code in this chapter, but for now these are the steps necessary to start your Rails application out right, from the front end view coders perspective. Let's get started.
 
 ### Groundwork
 
-Assuming you just created a brand spanking new rails application, you should set up your .gemfile and .gitignore files right off the bat as follows:
+Assuming you just created a brand spanking new Rails application, you should set up your .gemfile and .gitignore files right off the bat as follows:
 
 #### .gemfile
 
 Your .gemfile will change radically throughout the lifespan of your project. With a new application Rails generates one with a lot of comments and commented out lines. You don't need these right now, so let's get rid of them, they take up a lot of space and clutter things up. If you ever want to see them again in the future, review your git history or you can always create a new app. Without comments, here is what you're left with:
 
-source 'https://rubygems.org'
+    source 'https://rubygems.org'
 
     gem 'rails', '3.2.8'
     
@@ -69,7 +69,7 @@ Doing so installs your .gemfile gems, but prevents the installation of the produ
 
 #### .gitignore
 
-For my .gitignore file here is what I use; mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore] and Michael Hartl's [Ruby and Rails Tutorial][Tutorial .gitignore]:
+For my .gitignore file here is what I use; mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore]:
 
     # Ignore bundler config
     /.bundle
@@ -126,16 +126,16 @@ For my .gitignore file here is what I use; mostly borrowed from [HTML 5 Boilerpl
     scratch.*
     public/source
 
-The last section "Local" contains files or folders I like to use to save things within the application, but only on my local machine.
+The last section "Local" contains files or folders I like to use to save things within the application, but only on my local machine:
 
-- I use scratch.* as a code graveyard: snippets of code I am no longer using but not yet ready to completely get rid of.
+- scratch.* - I use this as a code graveyard: snippets of code I am no longer using but not yet ready to completely get rid of.
 
-- The public/source folder is an area I put original third-party files or source code that I have integrated into my application, Photoshop files, original images, etc.. Basically the original copies of where things came from.
+- public/source - A folder for original third-party files or source code integrated into my application; Photoshop files; original images; basically the original copies of where things came from.
 
 Some additional useful .gitignore ideas:
 
-[Ignore files][]
-[A Collection of Useful .gitignore Templates][.gitignore]
+- [Ignore files][]
+- [A Collection of Useful .gitignore Templates][.gitignore]
 
 ### Foundation Markup: The Application Layout
 
@@ -147,7 +147,7 @@ As a Rails front-end developer, you will wear both hats, plus take on a third ro
 
 As much as Rails is a framework, within this framework lives a tinier front end framework; your foundation markup. Until Rails 3.0, where this foundation "lived" and the conventions for using it were very much a no man's land. It was a disorganized dumping ground for HTML, CSS, JavaScript, and Ruby: the wild wild West of coding. Since Rails 3.0 things have become "civilized" and within these new conventions we will begin to build our layout. By the Way, I first heard the view layer referred to as a "no man's land" and the "West" in John Athayde and Bruce Williams' preface to [The Rails View: Create a Beautiful and Maintainable User Experience][The Rails View]. These guys are masters in this subject and  I highly recommend reading their book.
 
-#### So Where Does It Live?
+#### Where Does It Live?
 
 So what is this tiny view framework within a framework? Well, it is predominantly HTML organized in specific folders of your application with styles and interactivity added via CSS and JavaScript (and Flash, but less and less these days). In Rails the heart of this view framework and all the code related to it lives in what we refer to as the layout template, which is typically broken up into different related files called partials which are all being pulled together into the whole. View code from other parts of the application for the most part pass through this layout and become framed by the layout template (with styles and JavaScript pulled in) before being rendered to the end-user.
 
@@ -168,7 +168,7 @@ Project
 
 Our goal is to writes and organize the components of our layout in such a way that different browsers and devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug into it with ease. To help you along this path you can grab my [Starter Code][]:
 
-https://github.com/maxxiimo/base-haml
+- https://github.com/maxxiimo/base-haml
 
 This is an implementation of [HTML5 Boilerplate][] code in haml.
 
@@ -185,8 +185,8 @@ In coding copy and learn from the best, improve, then give back. I find that the
 
 To better understand it (and my implementation), the following sites are also worth a visit:
 
-[An Unofficial Guide to the HTML5 Boilerplate][Unofficial Guide]
-[Guide to HTML5 Boilerplate for Rails Developers][Boilerplate for Rails]
+- [An Unofficial Guide to the HTML5 Boilerplate][Unofficial Guide]
+- [Guide to HTML5 Boilerplate for Rails Developers][Boilerplate for Rails]
 
 #### Where Do Things Go?
 
@@ -208,14 +208,14 @@ Project
   - app
     - views
       - layout
-        **_chromeframe.html.haml
-        _head.html.haml
-        _scripts.html.haml
-        application.html.haml**
+        - **_chromeframe.html.haml**
+        - **_head.html.haml**
+        - **_scripts.html.haml**
+        - **application.html.haml**
       - shared
-        **_footer.html.haml
-        _logo.html.haml
-        _navigation.html.haml**
+        - **_footer.html.haml**
+        - **_logo.html.haml**
+        - **_navigation.html.haml**
 
 Once you download these files, perform the steps below.
 
@@ -235,25 +235,19 @@ NOTE: If you're not sure what I just did there you should really consider gettin
     # just remember to delete public/index.html.
     root :to => 'pages#home' 
 
-If you grab every single one of my base files and folders and organize them into a brand-new Rails application exactly like I describe above, your Rails application will work just fine minus styles. As long as you have a homepage or something, if you run your rails server things should look like this:
+#### What Did We Just Do?
+
+I'm going to defer answering this question to the [Organization][] chapter to this book. Suffice it to say that you have a working foundation markup for your application. If you grabbed every single one of my base files and folders and organized them into a brand-new Rails application exactly like I describe above, your Rails application will work just fine minus styles. As long as you have a page ready to display, things should look something like this:
 
 ![][Basic HTML]
 
-#### What Did We Just Do?
-
-I'm going to defer answering this question to the [Organization][] chapter to this book. Suffice it to say that you have a working base application, but as you probably can see it doesn't look good. Let's fix that with CSS.
+Not very attractive! Let's fix that somewhat with CSS.
 
 ### Styles
 
-Finally we need some style! For this we'll use my base CSS files. Here you'll find some very basic css and resets, but what is more important here are not the styles per se – there are really not that many included – but the way in which the styles are organized. As you move along your project, stylesheets can become behemoths, unmanageable, and downright confusing. So to avoid this it's highly advisable to start your project with some kind of organizational structure in place from the get-go. You can use mine, or can make up your own.
+For your applications foundation styles we'll use my base CSS files, or you can make up your own, but before you add styles to your application, and if you're planning to use Compass, you need to set it up.
 
-NOTE: To learn more about CSS Organization, check out the CSS Organization section of the [Organization][] chapter.
-
-Before we begin though, we need to make sure that compass is all set up.
-
-#### Using Compass
-
-Setting up your application:
+#### Compass Set Up
 
 1.  Add 'compass-rails' to your gemfile. For more explicit directions from the gem source take a look at: [compass-rails][]
 
@@ -299,19 +293,21 @@ Some additional resources for working with Compass include:
 
 #### The Styles
 
-For styles if you grab everything in the following directory:
+Now that Compass is set up, grab everything from here:
 
-https://github.com/maxxiimo/base-css
+- https://github.com/maxxiimo/base-css
 
-...and paste these files and subfolder into your assets/styles directory, you will have added my recommended base stylesheets to your project. Simple as that, and since you included the sass-rails and compass-rails gems in your .gemfile, everything should just work. Here is what your page should look like now:
+...and paste these files and subfolder into your assets/styles directory. Simple as that. Here is what your page will look like:
 
 ![][Basic HTML with Styles]
 
+It's pretty basic, but much better than before.
+
 #### What Did We Just Do?
 
-Like in the previous section, I'm going to defer my answer to this question for the next chapter.
+We essentially added some very basic css and resets, but more important than this – there are really not that many styles included – is the way in which we organized our styles. As you move along any project, stylesheets can become behemoths, unmanageable, and downright confusing. To avoid this it's highly advisable to start a project with some kind of organizational structure in place from the get-go.
 
-The CSS Organization section of the next chapter describes how I organize my styles within application.scss and more, and as mentioned earlier the HTML Organization section covers how I organize the markup foundation. Although this book is designed for developers who already know their way around a rails application, it's worth taking a look at.
+To learn more about CSS Organization, check out the CSS Organization section of the [Organization][] chapter. This section describes why and how to organize styles within application.scss and more. The HTML Organization section covers why and how to organize your markup foundation. Although this book is designed for developers who already know their way around a Rails application, it's worth taking a look at.
 
 
 [RoR Tutorial]:            http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2

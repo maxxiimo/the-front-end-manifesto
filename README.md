@@ -27,7 +27,7 @@ Table of Contents
     - .gemfile
     - .gitignore
   -  Foundation Markup: The Application Layout
-    - So Where Does It Live?
+    - Where Does It Live?
     - The Code
     - HTML5 Boilerplate
     - Where Do Things Go?
