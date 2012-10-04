@@ -273,4 +273,4 @@ So what are in these styles? Well obviously these are the base CSS files I start
 [Organization]:         https://github.com/maxxiimo/railsviews/blob/master/Organization.md
 
 
-[Basic HTML]:           /assets/getting-started/base-html-no-styles.png
+[Basic HTML]:           https://github.com/maxxiimo/railsviews/blob/master/assets/getting-started/base-html-no-styles.png
