@@ -176,6 +176,8 @@ Our goal is to write and organize the components of our layout in such a way tha
 
 This is an implementation of [HTML5 Boilerplate][] code in haml and arranged for a Rails project.
 
+[TODO: update implementation to new version of boilerplate]
+
 NOTE: I have included some necessary asset folders and files that coincide with the defaults I will provide in this chapter. Since I'm using modernizr, I add the require in application.js as follows:
 
     //= require jquery
