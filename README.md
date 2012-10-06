@@ -53,8 +53,8 @@ Table of Contents
   - Keep it DRY!
     - Consolidate
     - Variables
-    - Includes
     - Mixins
+  - What We've Done
 - [Preprocessors and Frameworks][]
   - Sass and Less
   - Twitter Bootstrap

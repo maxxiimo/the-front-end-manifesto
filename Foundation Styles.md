@@ -61,7 +61,7 @@ Delete your application.css file if you have not done so already. It is being re
 
 NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
 
-Simple as that, and if you have been following along from the last chapter, [Foundation Markup][], here is what your page will now look with the new stylesheets in place:  
+Simple as that, and if you have been following along from the last chapter, [Foundation Markup][], here is what your page will now look with the new stylesheets in place:
 
 ![][Basic HTML No Styles]
 
@@ -69,13 +69,13 @@ It's pretty basic, but much better than before.
 
 ### CSS Organization
 
-As I mentioned before, the [sample stylesheets][starter CSS] I provide are pretty sparse, and that's fine. What's important are the conventions I use and organizational structure. All of things I do provide are very common to most projects, and perhaps the bare minimum necessary to do things right.
+The [sample stylesheets][starter CSS] I provide are pretty sparse, and that's fine. What's important are the conventions I use and organizational structure of them. The styles I do provide are very common to most projects, and perhaps the bare minimum necessary to do things right.
 
-I can't stress enough how important it is to start a project with some kind of organizational structure in place. Even if you don't know what shape the application is going to take, it will serve you well to have a basic structure. As you move along you will fill in all of the empty placeholders: titles, partials, and you will add a boatload of new styles. 
+I can't stress enough how important it is to start a project with some kind of organizational structure in place. Even if you don't know what shape the application is going to take, it will serve you well to have a basic structure. As you move along you will fill in all of the empty placeholders.
 
 #### Style TOC
 
-There is nothing wrong with using Sprockets, however, since we're using sass my preferred method of organizing is to use [application.scss][] as a partials include file, almost like a table of contents, except in this case my TOC layers in styles in terms of precedents. Whatever partial that is brought then will override anything in the previous partial with the same style class or ID name and specificity, and/or tag.
+Our [application.scss][] file is kind of like a table of contents for partials. In addition to indexing your partials, this TOC layers in styles based on precedents. Styles in the last partial entry, i.e. import, will override styles in partials listed above it so long as the styles preceding it have the same class or ID and specificity, and/or tag.
 
 The TOC for our [application.scss][] look something like this:
 
@@ -110,7 +110,7 @@ The TOC for our [application.scss][] look something like this:
 
 ##### What's in Each Section
 
-I use the above "TOC" for most of my projects. What follows is a description of each section as they appear in [application.scss][]:
+I use the above structure for most of my projects. What follows is a snippet of each section as they appear in [application.scss][] followed by a description:
 
     /*
     * Important! Do *not* use Sprockets "require" syntax.
@@ -122,13 +122,14 @@ I use the above "TOC" for most of my projects. What follows is a description of 
     ============================================================================ */
     @import "define";
 
-Use a "definitions" section to set global variables such as $base-font, $base-font-size, etc.
+Use a "definitions" section to set global variables such as $base-font, $base-font-size, etc..
 
     /* MIXINS
     ============================================================================ */
     @import "compass";
-    
-    
+
+If you do not plan to use Compass, remove this import.
+
     /* RESETS
     ============================================================================ */
     @import "resets/normalize_h5bp";
@@ -136,16 +137,16 @@ Use a "definitions" section to set global variables such as $base-font, $base-fo
     // @import "compass/reset";
     // @import "resets/reset_meyer";
 
-See the section on "Resets" for an overview on which resets are available to you. I include four major reset styles in my application file, uncomment the one I plan to use for a particular project.
+I include four major reset styles in my application file and uncomment the one I plan to use for a particular project.
 
     /* BASIC STRUCTURE
     ============================================================================ */
     @import "layout";
     // @import "grids";
 
-Use a "layout" section to style major elements and component areas such as html and body tags, or header and footer areas. This section is also good place for grid styles. As you might have noticed, the partial grid is called in this example. This partial in some of my projects ports a sass version of YUI grids, and also Compasses Grid Backgrounds which in a nutshell:
+Use a "layout" section to style major elements and component areas such as html and body tags, or header and footer areas. This section is also a good place for grid styles, in major layout component. As you might have noticed, the partial grids is called in this example. This partial in some of my projects ports a sass version of a grid system. I also locate Compass' Grid Backgrounds which in a nutshell:
 
-"The grid-background mixins allow you to generate fixed, fluid and elastic grid-images on-the-fly using css3 gradients. These can be used for testing both horizontal and vertical grids."
+> The grid-background mixins allow you to generate fixed, fluid and elastic grid-images on-the-fly using css3 gradients. These can be used for testing both horizontal and vertical grids.
 
     /* TYPOGRAPHY
     ============================================================================ */
@@ -158,43 +159,45 @@ Use the "typography" section to style major typographical elements such as parag
     @import "misc";
     @import "sprites";
 
-"miscellaneous" is a catchall for things you would like to appear earlier on in the stylesheet. I include two write off the bat. The first has an assortment of general styles I use while I'm building a front end. The second is for sprites, whether I'm using compasses built in Sprite engine, or building them on my own.
+"Miscellaneous" is a catchall for miscellaneous partials and styles that should appear earlier on in the stylesheet. I include two right off the bat; the first has an assortment of general styles I use for building a front end; and, the second is for sprites, whether I'm using Compass' built in sprite engine, or building them on my own.
 
     /* NAVIGATION
     ============================================================================ */
     @import "navigation";
 
-"navigation" could be part of another section, or even contained within another partial, however, experiences has shown me that a lot of things can happen to it, styles can become quite large, and there can be more than one navigation or even type of medication depending on user, so it's best to give it its own section. The main navigations parent tag \<nav> or more appropriately %nav does belong in the layout partial since through it you might control layout factors such as position or width.
+"Navigation" could be part of another section, or even contained within another partial, however, experiences has taught me that a lot of things can happen in navigation. Styles can become quite large, and there can be more than one navigation design or type depending on user.
+
+The main navigations parent tag \<nav> or more appropriately %nav does belong in the layout partial though since through it you might control layout factors such as position or width and height.
 
     /* FORMS
     ============================================================================ */
     @import "forms";
 
-"forms" it is self-evident. One comment about forms, I really dislike any form generator that doesn't easily let you change its underlying HTML structure, or is not that obvious as to where the underlying structure lies. I have consulted for numerous companies who started with such plug-ins only to realize how boxed in they were later on. Just a word of caution. Anyway, forms oftentimes get pretty complicated so here are some labeling title ideas you can use within your forms partial:
+"Forms" is self-evident. One comment about forms, I really dislike any form generator that doesn't easily let you change its underlying HTML or where it's not that obvious where the underlying HTML lives. I have consulted for numerous companies who started with these kinds of plug-ins only to realize how boxed in they were later on. Just a word of caution.
 
     /* PAGES
     ============================================================================ */
     @import "pages";
 
-"pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, or separate them into their own partials and call them in the pages section, or a combination of this.
+"Pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, or perhaps separate them into their own partials depending on your needs, and then call them into the Pages partial, or a combination of this.
 
-    /* DEVELOPERS - staging area, new styles belong here !!!DO NOT INTEGRATE!!!
+    /* STAGING - new styles belong here !!!DO NOT INTEGRATE!!!
     ============================================================================ */
     @import "staging";
 
-The "staging" section is exactly what it says, a staging area for code. It's good to designating the area as a staging area so that one team or individual can be the gatekeeper to code entering stylesheets. This ensures that things remain organized, DRY, follow the stylesheet standards, and at a bare minimum provide a form of quality control.
+The "staging" section is exactly what it says, a staging area for code. It's good to have a staging area for developers so that one individual or team can be the gatekeeper to code entering stylesheets. This ensures that things remain organized, DRY, follow the stylesheet standards, and at a bare minimum provide a form of quality control.
 
     /* APPLICATION - ad hoc code under this line
     ============================================================================ */
 
-"application" could be a place for anything that did not fit in or really needs to trump all styles before it.
+"Application" could be a place for anything that did not fit in anywhere else and doesn't need to take precedence over preceding styles.
 
     /* LAST - second part of HTML 5 Boilerplate
     ============================================================================ */
     @import "resets/normalize_h5bp_p2";
     @import "resets/normalize_h5bp_p2_print";
 
-"last" is  a reminder that those styles need to appear last.
+"Last" is a reminder that those Normalize styles need to appear last.
 
 NOTE: Why the "=" underlines? It helps me find things, or see the organization, when I browse CSS output from a browser.
 
@@ -204,13 +207,13 @@ The granddaddy of all resets is Eric Meyer's "[Reset CSS][]".
 
 Sometimes I use compass' [reset utilities][] which are based on Eric Meyer's work, but lately my preference has been to use [Normalize.css][]. HTML 5 boilerplate uses normalize.css with slight variations and style additions. The author of Normalize.css describes what it does best:
 
-"Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards. We researched the differences between default browser styles in order to precisely target only the styles that need normalizing."
+> Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards. We researched the differences between default browser styles in order to precisely target only the styles that need normalizing.
 
-I converted Eric Meyer's, and both the original normalize.css and HTML 5 Boilerplate styles to .sass and .scss here:
+I converted Eric Meyer's, and both the original Normalize.css and HTML 5 Boilerplate's normalize styles to .sass and .scss here:
 
 - https://github.com/maxxiimo/base-resets
 
-In the case of [H5BP][], I have commented out some of the typographic styles to give myself the option to keep them or move them into more appropriate partials.
+In the case of [H5BP's normalize][], I have commented out some of the typographic styles to give myself the option to keep them or move them into more appropriate partials.
 
 The following article briefly outlines the changes in resets moving into HTML 5: 
 
@@ -218,13 +221,13 @@ The following article briefly outlines the changes in resets moving into HTML 5:
 
 ### Moving Forward
 
-Undoubtedly, you will add a lot more to the structure above. Here are some tips to keep things as organized as I have laid out above and in the [starter CSS][].
+You will add a lot more to the structure above. As you do so, here are some tips to keep things as organized as I have laid out above in the [starter CSS][].
 
 #### Modularize Styles
 
-Modularizing your styles is a great way to keep things organized. The degree of separation/modularization depends on your personal and/or teams preferences and project needs. In our [starter files][starter CSS] we use partials. As you add more partials consider the following:
+Modularizing your styles is a great way to keep things organized. The degree of separation/modularization depends on your personal and/or teams preferences and project needs. As you add more styles, and consequently partials, consider the following:
 
-1.  Group related partials together by using a common prefix:
+1.  Group related partials together with a common prefix:
 
         _homepage_form.sass
         
@@ -232,42 +235,53 @@ Modularizing your styles is a great way to keep things organized. The degree of 
 
     Or...
 
-2.  Group related snippets of code together in a larger themed partial:
+2.  Group related styles together within a larger themed partial [preferred]:
 
         _homepage.sass
 
     Or...
 
-3.  Group partials in folders. Take for example our [resets][] files. I provide several different flavors of resets, some of which are subdivided into separate files, but all of them fall under the folder "resets".
+3.  Group related partials in folders. Take for example our [resets][] files. I provide several different flavors of resets, some of which are subdivided into separate files, but all of them fall under the folder "resets".
 
 #### Use a Labeling System
 
 Within your stylesheets use a system of labeling in order to better organize/manage related styles.
 
-NOTE: It's good to precede the title name with "/* ". This way you can easily search for specific things like "/* Form" and not pick up every form item in your styles.
+NOTE: It's a good idea to precede the label name with "/* ". This way you can easily search for specific things like "/* Form" and not pick up every form item in your stylesheet.
 
 Here is an example of one I use:
 
-    /* MAJOR SECTION IN SASS
+    /* MAJOR SECTION
       ============================================================================
 
-    /* Heading in sass
+    /* Heading
       -----------------------
     
-    /* subdivision, description, comment in sass
+    /* subdivision, description, comment
 
-The same one using the .scss :
+The same one using the .scss syntax:
 
-    /* MAJOR SECTION IN SCSS
+    /* MAJOR SECTION
       ============================================================================ */
     
-    /* Heading in scss
+    /* Heading
       ----------------------- */
     
-    /* subdivision, description, comment in scss */
+    /* subdivision, description, comment */
 
 
 I like the above sequence, but some other examples include:
+
+    /* =============================================================================
+       Major Section
+       ========================================================================== */
+    
+    
+    /* =============================================================================
+     * Major Section (same as previous but for .sass)
+     * =============================================================================
+
+For descriptions:
 
     /* -----------------------------------------------------------------------
     
@@ -276,25 +290,14 @@ I like the above sequence, but some other examples include:
     ----------------------------------------------------------------------- */
     
     
-    /* =============================================================================
-       Major Section
-       ========================================================================== */
-    
-    
-    /* =============================================================================
-     * Major Section (famous previous but for .sass)
-     * =============================================================================
-    
-    
     /*
      * Comment in here, title, description, etc.
      */
     
     
     /* Comment in here, title, description, etc.
-     * More of the same.
+     * Yada yada yada.
      * And a 3rd line maybe. */
-    
     
 Once upon a time ago I used to always use this:
 
@@ -310,11 +313,11 @@ Once upon a time ago I used to always use this:
 
     /* further subdivision or comment */
 
-Whatever you decide to use is totally up to you, but when you do decide be consistent within a project.
+Whatever you decide to use is totally up to you, but be consistent within a project.
 
 ##### Subtitle Examples
 
-By far the most used labeling level in your stylesheets will be "subtitles". Use them to group like things or elements, and title them with an eye on searching for the title in the future. Here are some examples for form elements:
+By far the most used labeling level in your stylesheets will be "subtitles". Use them to group like things or elements, and label them with an eye on searching for the label in the future. Here are some examples for form elements:
 
     /* common
     ------------- */
@@ -340,7 +343,7 @@ By far the most used labeling level in your stylesheets will be "subtitles". Use
     -------------- */
     
     
-    /*  buttons
+    /* buttons
     -------------- */
     
     
@@ -353,30 +356,46 @@ By far the most used labeling level in your stylesheets will be "subtitles". Use
 
 #### Naming Conventions
 
-I have my way of naming styles, and I've seen things all over the board. Here's My Recommendation, keep it semantic, short, and use underscores between words. Of course with everything there's always caveats.
+I have my way of naming styles, i.e. classes and IDs, and I've seen things all over the board. Here's My Recommendation:
+
+- Keep it simple
+- Keep it semantic
+- Keep it short
+- Use underscores between words
 
 ##### Semantic
 
-I've never been too crazy for style names that really have no meaning like :class => 'H2603A'...Okay maybe I'm exaggerating, but I think you get the point. Try to use something that has meaning and can be recognized for what it is like :class => 'header', but by the same token try not to get super specific about the contents. Like it's probably not good to use something like, :class => 'johns_comments', because what happens if John gets fired in the comments becomes Frank's?
+I've never been too crazy for style names that really have no meaning like :class => 'H2603A'...Okay maybe I'm exaggerating, but I think you get the point. Try to use something that has meaning and can be recognized for what it is, like :class => 'header', but by the same token try not to get super specific about the contents. For example it would not be good to use something like, :class => 'johns_comments', because what happens if John gets replaced by Frank?
 
-There is no sure hit formula for naming classes, just keep these things in mind.
+There is no sure hit formula for naming classes and IDs, just keep these things in mind.
 
-I found these articles to be really eye-opening or interesting regarding the subject:
+When it comes to CSS, Chris Coyier is a maverick in the field. Here is an article on the subject:
+
+- [What Makes For a Semantic Class Name?][Semantic Class Names]
+
+The following articles may also give you some ideas:
+
+- [About HTML semantics and front-end architecture][About Semantics]
+- [Experimenting with component-based HTML/CSS naming and patterns][Experimenting]
 
 ##### Short
 
-Try to keep it under 10 characters! I've seen some pretty long class names out there in the wild, and I'm not too crazy about them. They take up too much room. On the flip side use caution when choosing something super super short.  For example I sometimes use :id => 'ft' to ID the footer. I feel fine doing this since the tag is called <footer>.
+Try to keep it under 10 characters! I've seen some pretty long class names out there in the wild, and I'm not too crazy about them. They take up too much room. On the flip side, use caution when choosing something super super short.  For example I sometimes use :id => 'ft' to ID the footer. I feel fine doing this since the tag is called \<footer>.
 
 ##### CamelCase, Underscores, Hyphens, Concatenated?
 
-...whatever you use stick with it. Be consistent.
+Here are your choices:
 
-    :id => 'pageHeader'
     :id => 'page_header'
     :id => 'page-header'
+    :id => 'pageHeader'
     :id => 'pageheader'
 
-Personally, I like to keep it simple and find one-worders that fit, then concatenate, but two words tops! ...and only when the words are small enough and distinguishable. Then if I must, I use one of the other methods above and only one throughout my styles and only if absolutely necessary, i.e. I don't have an opinion on which is better. My method isn't consistent enough for you? You're probably right, but I feel like I have mastered the art of class naming well enough that it feels and looks consistent (and pretty).
+Obviously, one worders are best, but when nothing fits I personally use hyphens to separate words, and in some cases I concatenate, but not too often. I concatenate only when the words are small and distinguishable from one another. For example, .nowrap.
+
+Some people like to use underscores because when you double-click on one of the words, all the words are selected.
+
+Whatever your style is it's fine. I don't think it's worth a holy war with other developers, but do be consistent, i.e. if you're going to use hyphens, don't use underscores elsewhere and vice versa. I think it's okay to sprinkle in some concatenation like I described above.
 
 Here's some more opinions on the matter:
 
@@ -386,20 +405,20 @@ Here's some more opinions on the matter:
 
 #### Keep it DRY!
 
-Try not, no, DON'T Repeat Yourself! In CSS this means consolidating where possible, using variables, includes, and mixins.
+Try not ... no ... DON'T Repeat Yourself! In CSS this means consolidating where possible. There are also some other techniques that do not DRY up your code in output per se, but they do DRY things up when writing your stylesheets, before they are processed: variables and mixins.
 
 ##### Consolidate
 
-Suppose for example in this no duh! contrived example I have two major sections to my layout. One holds my main content, and the other is an aside (I'm using Twitter Bootstrap thus the .row and .span's):
+Suppose for example in this no duh! contrived example I have two major sections to my layout. One holds my main content, and the other is an aside (I'm using Twitter Bootstrap in this example thus the .row and .span's):
 
-  .container
-    .row
-      .span9
-        #main{:role => "main"}
-          = yield
-      .span3
-        %aside
-          <Some content here.>
+    .container
+      .row
+        .span9
+          #main{:role => "main"}
+            = yield
+        .span3
+          %aside
+            <Some content here.>
 
 The corresponding styles:
 
@@ -415,7 +434,7 @@ The corresponding styles:
       border: 1px solid $border
       @include border-radius(8px)
 
-So to keep it DRY:
+So to keep it DRY we consolidate common code between the two:
 
     #main,
     .span3 aside
@@ -424,19 +443,33 @@ So to keep it DRY:
       border: 1px solid $border
       @include border-radius(8px)
 
-...and we cut the number of lines of code in half! Do that wherever it makes sense. In this example both styles live in the same place in my stylesheet and are related to one another so combining them makes absolute sense.
+...and in doing so we cut the number of lines of code in half! Do that wherever it makes sense. In this example both styles live in the same place in my stylesheet and are related to one another so combining them makes absolute sense.
 
 ##### Variables
 
-While variables do not explicitly DRY up your code, they kind of do and here's how; in the code above I specify a variable for the background-color of $white. At first glance you might think why not just use #FFF or "white", as if in this case "6 in one hand, half a dozen in the other" holds true, but what if later in the applications lifecycle I want to use a different shade of white? For example #FCFCFC. I would have to find every single instance of either #FFF or "white" and swap it out with the new value. By using variables, which I always locate in my _define.sass style partial, I can make the change in one instance and affect styles everywhere the variable is used. Not quite DRY, but kinda.
+While variables do not explicitly DRY up your code, they kind of do and here's how:
 
-##### Includes
+In the code above I specify a variable for the background-color of $white. At first glance you might think why not just use #FFF or "white", as if in this case "six in one hand, half a dozen in the other" holds true, but what if later in the applications lifecycle I want to use a different shade of white? For example #FCFCFC. I would have to find every single instance of either #FFF or "white" and swap it out with the new value.
 
-
+By using variables, which I always locate in my _define.sass style partial, I can make the change in one instance and affect styles everywhere the variable is used. Not quite DRY, but kinda'.
 
 ##### Mixins
 
+In a word, mixins are shortcuts.
 
+> They’re shortcuts that allow you to apply a lot of css to a selector from only one line of Sass.
+
+\- [Mixins in SASS][]
+
+In other words if you have a bunch of lines of CSS that keep on appearing throughout your stylesheet, rather than repeating it throughout your stylesheet you can write it once and bring it in via a single line of sass, a shortcut. Our [starter CSS][] gives you two areas to include mixins, as a partial brought in through the MIXINS section of [application.scss][] or a snippet of code within [_define.sass][].
+
+To best understand how to use variables and mixins check out the [Sass documentation][].
+
+#### What We've Done
+
+We started this chapter by setting up Compass and implementing the chapters [starter CSS][]. That in and by itself is all you need to start a project off right in terms of foundation styles.
+
+More important than simply cutting and pasting the stylesheets into your project though has been learning about CSS organization. In this chapter we learned about how our starter styles are organized, why, and how to keep it organized moving forward.
 
 [starter CSS]:          https://github.com/maxxiimo/base-css
 [Foundation Markup]:    https://github.com/maxxiimo/railsviews/blob/master/Foundation%20Markup.md
@@ -466,10 +499,15 @@ While variables do not explicitly DRY up your code, they kind of do and here's h
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
 [reset utilities]:      http://compass-style.org/reference/compass/reset/utilities/
 [Normalize.css]:        https://github.com/necolas/normalize.css/
-[H5BP]:                 https://github.com/maxxiimo/base-resets/blob/master/_normalize_h5bp.sass
+[H5BP's normalize]:     https://github.com/maxxiimo/base-resets/blob/master/_normalize_h5bp.sass
 [HTML5 Resets]:         http://html5doctor.com/html-5-reset-stylesheet/
 [aB vs. a_b]:           http://stackoverflow.com/questions/1437527/css-camelcase-vs-under-score
 [Identifiers]:          http://stackoverflow.com/questions/1686337/hyphens-or-underscores-in-css-and-html-identifiers
 [Sucks]:                http://csswizardry.com/2010/12/css-camel-case-seriously-sucks/
+[Semantic Class Names]: http://css-tricks.com/semantic-class-names/
+[About Semantics]:      http://nicolasgallagher.com/about-html-semantics-front-end-architecture/
+[Experimenting]:        https://gist.github.com/1309546
+[Mixins in SASS]:       http://thecodingdesigner.com/tutorials/mixins-sass
+[Sass documentation]:   http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 
 [Basic HTML No Styles]: http://chrismaxwell.com/rails-views/assets/getting-started/base-html-files-with-styles.png
