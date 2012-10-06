@@ -71,9 +71,40 @@ I can't stress enough how important it is to start a project with some kind of o
 
 #### Style TOC
 
-There is nothing wrong with using Sprockets, however, since we're using sass my preferred method of organizing is to use [application.scss][] as a partials include file, almost like a table of contents, except in this case my TOC is layering in styles in terms of precedents.  Whatever his last will override anything with the same tag or style name and specificity.
+There is nothing wrong with using Sprockets, however, since we're using sass my preferred method of organizing is to use [application.scss][] as a partials include file, almost like a table of contents, except in this case my TOC layers in styles in terms of precedents. Whatever partial that is brought then will override anything in the previous partial with the same style class or ID name and specificity, and/or tag.
 
-I use the following structure for most of my projects (description notes included here only):
+The TOC for our [application.scss][] look something like this:
+
+- DEFINITIONS
+  - [_define.sass][]
+- MIXINS
+- RESETS
+  - [normalize_h5bp.sass][]
+  - [normalize.sass][]
+  - [reset.sass][]
+  - [reset_meyer.sass][]
+- BASIC STRUCTURE
+  - [_layout.sass][]
+  - [_grids.sass][]
+- TYPOGRAPHY
+  - [_typography.sass][]
+- MISCELLANEOUS
+  - [_misc.sass][]
+  - [_sprites.sass][]
+- NAVIGATION
+  - [_navigation.sass][]
+- FORMS
+  - [_forms.sass][]
+- PAGES
+  - [_pages.sass][]
+- DEVELOPERS - staging area, new styles belong here !!!DO NOT INTEGRATE!!!
+  - [_staging.sass][]
+- APPLICATION - ad hoc code under this line
+- LAST - second part of HTML 5 Boilerplate
+  - [normalize_h5bp_p2.sass][]
+  - [normalize_h5bp_p2_print.sass][]
+
+I use the structure for most of my projects. What follows is a description of each section as they appear in [application.scss][]:
 
     /*
     * Important! Do *not* use Sprockets "require" syntax.
@@ -83,97 +114,87 @@ I use the following structure for most of my projects (description notes include
     
     /* DEFINITIONS
     ============================================================================ */
-    @import "[define][_define.sass]";
-    
-    Use a "definitions" section to set global variables such as $base-font, $base-font-size, etc.
-    
-    
+    @import "define";
+
+Use a "definitions" section to set global variables such as $base-font, $base-font-size, etc.
+
     /* MIXINS
     ============================================================================ */
     @import "compass";
     
     
-    /* [RESETS][resets]
+    /* RESETS
     ============================================================================ */
-    @import "[resets/normalize_h5bp"][normalize_h5bp.sass];
-    // @import "[resets/normalize][normalize.sass]";
-    // @import "[compass/reset][reset.sass]";
-    // @import "[resets/reset_meyer][reset_meyer.sass]";
-    
-    See the section on "Resets" for an overview on which resets are available to you. I include four major reset styles in my application file, uncomment the one I plan to use for a particular project.
-    
-    
+    @import "resets/normalize_h5bp";
+    // @import "resets/normalize";
+    // @import "compass/reset";
+    // @import "resets/reset_meyer";
+
+See the section on "Resets" for an overview on which resets are available to you. I include four major reset styles in my application file, uncomment the one I plan to use for a particular project.
+
     /* BASIC STRUCTURE
     ============================================================================ */
-    @import "[layout][_layout.sass]";
-    // @import "[grids][_grids.sass]";
-    
-    Use a "layout" section to style major elements and component areas such as html and body tags, or header and footer areas. This section is also good place for grid styles. As you might have noticed, the partial grid is called in this example. This partial in some of my projects ports a sass version of YUI grids, and also Compasses Grid Backgrounds which in a nutshell:
-    
-    "The grid-background mixins allow you to generate fixed, fluid and elastic grid-images on-the-fly using css3 gradients. These can be used for testing both horizontal and vertical grids."
-    
-    
+    @import "layout";
+    // @import "grids";
+
+Use a "layout" section to style major elements and component areas such as html and body tags, or header and footer areas. This section is also good place for grid styles. As you might have noticed, the partial grid is called in this example. This partial in some of my projects ports a sass version of YUI grids, and also Compasses Grid Backgrounds which in a nutshell:
+
+"The grid-background mixins allow you to generate fixed, fluid and elastic grid-images on-the-fly using css3 gradients. These can be used for testing both horizontal and vertical grids."
+
     /* TYPOGRAPHY
     ============================================================================ */
-    @import "[typography][_typography.sass]";
-    
-    Use the "typography" section to style major typographical elements such as paragraphs, fonts, links, etc. These typographical styles are standard across all pages unless redefined in subsequent partials.
-    
-    
+    @import "typography";
+
+Use the "typography" section to style major typographical elements such as paragraphs, fonts, links, etc. These typographical styles are standard across all pages unless redefined in subsequent partials.
+
     /* MISCELLANEOUS
     ============================================================================ */
-    @import "[misc][misc.sass]";
-    @import "[sprites][_sprites.sass]";
-    
-    "miscellaneous" is a catchall for things you would like to appear earlier on in the stylesheet. I include two write off the bat. The first has an assortment of general styles I use while I'm building a front end. The second is for sprites, whether I'm using compasses built in Sprite engine, or building them on my own.
-    
-    
+    @import "misc";
+    @import "sprites";
+
+"miscellaneous" is a catchall for things you would like to appear earlier on in the stylesheet. I include two write off the bat. The first has an assortment of general styles I use while I'm building a front end. The second is for sprites, whether I'm using compasses built in Sprite engine, or building them on my own.
+
     /* NAVIGATION
     ============================================================================ */
-    @import "[navigation][_navigation.sass]";
-    
-    "navigation" could be part of another section, or even contained within another partial, however, experiences has shown me that a lot of things can happen to it, styles can become quite large, and there can be more than one navigation or even type of medication depending on user, so it's best to give it its own section. The main navigations parent tag <nav> or more appropriately %nav does belong in the layout partial since through it you might control layout factors such as position or width.
-    
-    
+    @import "navigation";
+
+"navigation" could be part of another section, or even contained within another partial, however, experiences has shown me that a lot of things can happen to it, styles can become quite large, and there can be more than one navigation or even type of medication depending on user, so it's best to give it its own section. The main navigations parent tag <nav> or more appropriately %nav does belong in the layout partial since through it you might control layout factors such as position or width.
+
     /* FORMS
     ============================================================================ */
-    @import "[forms][_forms.sass]";
-    
-    "forms" it is self-evident. One comment about forms, I really dislike any form generator that doesn't easily let you change its underlying HTML structure, or is not that obvious as to where the underlying structure lies. I have consulted for numerous companies who started with such plug-ins only to realize how boxed in they were later on. Just a word of caution. Anyway, forms oftentimes get pretty complicated so here are some labeling title ideas you can use within your forms partial:
-    
-    
+    @import "forms";
+
+"forms" it is self-evident. One comment about forms, I really dislike any form generator that doesn't easily let you change its underlying HTML structure, or is not that obvious as to where the underlying structure lies. I have consulted for numerous companies who started with such plug-ins only to realize how boxed in they were later on. Just a word of caution. Anyway, forms oftentimes get pretty complicated so here are some labeling title ideas you can use within your forms partial:
+
     /* PAGES
     ============================================================================ */
-    @import "[pages][_pages.sass]";
-    
-    "pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, or separate them into their own partials and call them in the pages section, or a combination of this.
-    
-    
+    @import "pages";
+
+"pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, or separate them into their own partials and call them in the pages section, or a combination of this.
+
     /* DEVELOPERS - staging area, new styles belong here !!!DO NOT INTEGRATE!!!
     ============================================================================ */
-    @import "[staging][_staging.sass]";
-    
-    The "staging" section is exactly what it says, a staging area for code. It's good to designating the area as a staging area so that one team or individual can be the gatekeeper to code entering stylesheets. This ensures that things remain organized, DRY, follow the stylesheet standards, and at a bare minimum provide a form of quality control.
-    
-    
+    @import "staging";
+
+The "staging" section is exactly what it says, a staging area for code. It's good to designating the area as a staging area so that one team or individual can be the gatekeeper to code entering stylesheets. This ensures that things remain organized, DRY, follow the stylesheet standards, and at a bare minimum provide a form of quality control.
+
     /* APPLICATION - ad hoc code under this line
     ============================================================================ */
-    
-    "application" could be a place for anything that did not fit in or really needs to trump all styles before it.
-    
-    
+
+"application" could be a place for anything that did not fit in or really needs to trump all styles before it.
+
     /* LAST - second part of HTML 5 Boilerplate
     ============================================================================ */
-    @import "[resets/normalize_h5bp_p2][normalize_h5bp_p2.sass]";
-    @import "[resets/normalize_h5bp_p2_print][normalize_h5bp_p2_print.sass]";
-    
-    "last" is  a reminder that those styles need to appear last.
+    @import "resets/normalize_h5bp_p2";
+    @import "resets/normalize_h5bp_p2_print";
+
+"last" is  a reminder that those styles need to appear last.
 
 NOTE: Why the "=" underlines? It helps me find things, or see the organization, when I browse CSS output from a browser.
 
 ### Moving Forward
 
-Undoubtedly, you will add a lot more to the structure above. Here are some tips to keep things as organized as I have laid out above and in the [starter CSS ][].
+Undoubtedly, you will add a lot more to the structure above. Here are some tips to keep things as organized as I have laid out above and in the [starter CSS][].
 
 #### Modularize Styles
 
@@ -410,7 +431,6 @@ While variables do not explicitly DRY up your code, they kind of do and here's h
 [_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/_pages.sass
 [_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/_sprites.sass
 [_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/_staging.sass
-[_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/_sprites.sass
 [_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/_typography.sass
 [resets]:               https://github.com/maxxiimo/base-css/tree/master/resets
 [normalize_h5bp.sass]:  https://github.com/maxxiimo/base-css/tree/master/resets/normalize_h5bp.sass
