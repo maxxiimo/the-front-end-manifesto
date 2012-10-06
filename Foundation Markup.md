@@ -361,7 +361,7 @@ Although not apparent yet, i.e. visually, we have created a top-notch markup fou
 
 ![][Basic HTML]
 
-Not very attractive! ...but don't worry we'll address that in the [next chapter][Styles].
+Not very attractive! ...but don't worry we'll address that in the [next chapter][Foundation Styles].
 
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
@@ -387,7 +387,7 @@ Not very attractive! ...but don't worry we'll address that in the [next chapter]
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
 [_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_chromeframe.html.haml
-[Styles]:               https://github.com/maxxiimo/railsviews/blob/master/Styles.md      
+[Foundation Styles]:    https://github.com/maxxiimo/railsviews/blob/master/Foundation%20Styles.md      
 
 
 [Basic HTML]:           http://chrismaxwell.com/rails-views/assets/getting-started/base-html-no-styles.png

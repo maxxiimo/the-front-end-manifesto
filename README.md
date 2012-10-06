@@ -40,17 +40,14 @@ Table of Contents
     - Using Partials
     - IE 6
   - What We've Done
-- [Styles][]
-
-  -  Styles
-    - Using Compass
-    - The Styles
-    - What Did We Just Do?
-
-
+- [Foundation Styles][]
+  - Compass Set Up
+  - Stylesheet Set Up
   - CSS Organization
-    - Rails Manifest vs. Sass Partials
-    - Use Labeling System
+    - Style TOC
+  - Moving Forward
+    - Modularize Styles
+    - Use a Labeling System
     - Naming Conventions
     - Keep it DRY!
 - [Preprocessors and Frameworks][]
@@ -113,7 +110,7 @@ Table of Contents
 
 [The Manifesto]:                     https://github.com/maxxiimo/railsviews/blob/master/The%20Manifesto.md
 [Foundation Markup]:                 https://github.com/maxxiimo/railsviews/blob/master/Foundation%20Markup.md
-[Styles]:                            https://github.com/maxxiimo/railsviews/blob/master/Styles.md
+[Foundation Styles]:                 https://github.com/maxxiimo/railsviews/blob/master/Foundation%20Styles.md
 [Preprocessors and Frameworks]:      https://github.com/maxxiimo/railsviews/blob/master/Preprocessors%20and%20Frameworks.md
 [Mobile First]:                      https://github.com/maxxiimo/railsviews/blob/master/Mobile%20First.md
 [Slicing and Dicing Mockups]:        https://github.com/maxxiimo/railsviews/blob/master/Slicing%20and%20Dicing%20Mockups.md
