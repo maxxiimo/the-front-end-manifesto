@@ -104,7 +104,9 @@ The TOC for our [application.scss][] look something like this:
   - [normalize_h5bp_p2.sass][]
   - [normalize_h5bp_p2_print.sass][]
 
-I use the structure for most of my projects. What follows is a description of each section as they appear in [application.scss][]:
+##### What's in Each Section
+
+I use the above "TOC" for most of my projects. What follows is a description of each section as they appear in [application.scss][]:
 
     /*
     * Important! Do *not* use Sprockets "require" syntax.
@@ -158,7 +160,7 @@ Use the "typography" section to style major typographical elements such as parag
     ============================================================================ */
     @import "navigation";
 
-"navigation" could be part of another section, or even contained within another partial, however, experiences has shown me that a lot of things can happen to it, styles can become quite large, and there can be more than one navigation or even type of medication depending on user, so it's best to give it its own section. The main navigations parent tag <nav> or more appropriately %nav does belong in the layout partial since through it you might control layout factors such as position or width.
+"navigation" could be part of another section, or even contained within another partial, however, experiences has shown me that a lot of things can happen to it, styles can become quite large, and there can be more than one navigation or even type of medication depending on user, so it's best to give it its own section. The main navigations parent tag \<nav> or more appropriately %nav does belong in the layout partial since through it you might control layout factors such as position or width.
 
     /* FORMS
     ============================================================================ */
@@ -191,6 +193,24 @@ The "staging" section is exactly what it says, a staging area for code. It's goo
 "last" is  a reminder that those styles need to appear last.
 
 NOTE: Why the "=" underlines? It helps me find things, or see the organization, when I browse CSS output from a browser.
+
+#### Resets
+
+The granddaddy of all resets is Eric Meyer's "[Reset CSS][]".
+
+Sometimes I use compass' [reset utilities][] which are based on Eric Meyer's work, but lately my preference has been to use [Normalize.css][]. HTML 5 boilerplate uses normalize.css with slight variations and style additions. The author of Normalize.css describes what it does best:
+
+"Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards. We researched the differences between default browser styles in order to precisely target only the styles that need normalizing."
+
+I converted Eric Meyer's, and both the original normalize.css and HTML 5 Boilerplate styles to .sass and .scss here:
+
+- https://github.com/maxxiimo/base-resets
+
+In the case of [H5BP][], I have commented out some of the typographic styles to give myself the option to keep them or move them into more appropriate partials.
+
+The following article briefly outlines the changes in resets moving into HTML 5: 
+
+- [HTML5 Reset Stylesheet][HTML5 Resets]
 
 ### Moving Forward
 
@@ -360,11 +380,11 @@ Here's some more opinions on the matter:
 [Hyphens or underscores in CSS and HTML identifiers?][Identifiers]
 [CSS: CamelCase Seriously Sucks!][Sucks]
 
-##### Keep it DRY!
+#### Keep it DRY!
 
 Try not, no, DON'T Repeat Yourself! In CSS this means consolidating where possible, using variables, includes, and mixins.
 
-**Consolidating**
+#### Consolidate
 
 Suppose for example in this no duh! contrived example I have two major sections to my layout. One holds my main content, and the other is an aside (I'm using Twitter Bootstrap thus the .row and .span's):
 
@@ -402,15 +422,15 @@ So to keep it DRY:
 
 ...and we cut the number of lines of code in half! Do that wherever it makes sense. In this example both styles live in the same place in my stylesheet and are related to one another so combining them makes absolute sense.
 
-**Variables**
+#### Variables
 
 While variables do not explicitly DRY up your code, they kind of do and here's how; in the code above I specify a variable for the background-color of $white. At first glance you might think why not just use #FFF or "white", as if in this case "6 in one hand, half a dozen in the other" holds true, but what if later in the applications lifecycle I want to use a different shade of white? For example #FCFCFC. I would have to find every single instance of either #FFF or "white" and swap it out with the new value. By using variables, which I always locate in my _define.sass style partial, I can make the change in one instance and affect styles everywhere the variable is used. Not quite DRY, but kinda.
 
-**Includes**
+#### Includes
 
 
 
-**Mixins**
+#### Mixins
 
 
 
@@ -439,6 +459,11 @@ While variables do not explicitly DRY up your code, they kind of do and here's h
 [reset_meyer.sass]:     https://github.com/maxxiimo/base-css/tree/master/resets/reset_meyer.sass
 [normalize_h5bp_p2.sass]: https://github.com/maxxiimo/base-css/tree/master/resets/normalize_h5bp_p2.sass
 [normalize_h5bp_p2_print.sass]: https://github.com/maxxiimo/base-css/tree/master/resets/normalize_h5bp_p2_print.sass
+[Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
+[reset utilities]:      http://compass-style.org/reference/compass/reset/utilities/
+[Normalize.css]:        https://github.com/necolas/normalize.css/
+[H5BP]:                 https://github.com/maxxiimo/base-resets/blob/master/_normalize_h5bp.sass
+[HTML5 Resets]:         http://html5doctor.com/html-5-reset-stylesheet/
 [aB vs. a_b]:           http://stackoverflow.com/questions/1437527/css-camelcase-vs-under-score
 [Identifiers]:          http://stackoverflow.com/questions/1686337/hyphens-or-underscores-in-css-and-html-identifiers
 [Sucks]:                http://csswizardry.com/2010/12/css-camel-case-seriously-sucks/

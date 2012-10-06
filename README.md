@@ -45,20 +45,22 @@ Table of Contents
   - Stylesheet Set Up
   - CSS Organization
     - Style TOC
+    - Resets
   - Moving Forward
     - Modularize Styles
     - Use a Labeling System
     - Naming Conventions
-    - Keep it DRY!
+  - Keep it DRY!
+    - Consolidate
+    - Variables
+    - Includes
+    - Mixins
 - [Preprocessors and Frameworks][]
   - Sass and Less
   - Twitter Bootstrap
   - Compass
   - Blueprint
   - Compressing and the Asset Pipeline
-- [Mobile First][]
-  - Where Do Styles Go?
-  - User Agents or Media Queries
 - [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
@@ -69,6 +71,9 @@ Table of Contents
   - Step 8 - Navigation
   - Step 9 - HTML for the Main Content
   - Step 10 - Sprites and CSS3 for Images
+- [Mobile First][]
+  - Where Do Styles Go?
+  - User Agents or Media Queries
 - [Navigation][]
 - [Gradients][]
 - [Images][]
