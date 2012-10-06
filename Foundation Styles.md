@@ -57,7 +57,7 @@ Now that Compass is set up, let's set up our stylesheets. This task is pretty st
 
 - https://github.com/maxxiimo/base-css
 
-Simple as that. If you have been following along from the last chapter, [Foundation Markup][], here is what your page will now look like:
+Simple as that. If you have been following along from the last chapter, [Foundation Markup][], here is what your page will now look with the new stylesheets: 
 
 ![][Basic HTML No Styles]
 
