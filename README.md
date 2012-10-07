@@ -1,5 +1,5 @@
-Rails Views
-===========
+The Front End Manifesto
+=======================
 
 by Chris Maxwell
 
@@ -21,7 +21,7 @@ Personal views and direction on front end coding, from a Ruby on Rails perspecti
 Table of Contents
 -----------------
 
-- [Front End Coder's Manifesto][The Manifesto]
+- [The Manifesto][]
 - [Foundation Markup][]
   -  Groundwork
     - .gemfile
@@ -113,27 +113,27 @@ Table of Contents
   - Context Awareness Patterns
 - [Storytelling][]
 
-[The Manifesto]:                     https://github.com/maxxiimo/railsviews/blob/master/The%20Manifesto.md
-[Foundation Markup]:                 https://github.com/maxxiimo/railsviews/blob/master/Foundation%20Markup.md
-[Foundation Styles]:                 https://github.com/maxxiimo/railsviews/blob/master/Foundation%20Styles.md
-[Preprocessors and Frameworks]:      https://github.com/maxxiimo/railsviews/blob/master/Preprocessors%20and%20Frameworks.md
-[Mobile First]:                      https://github.com/maxxiimo/railsviews/blob/master/Mobile%20First.md
-[Slicing and Dicing Mockups]:        https://github.com/maxxiimo/railsviews/blob/master/Slicing%20and%20Dicing%20Mockups.md
-[Navigation]:                        https://github.com/maxxiimo/railsviews/blob/master/Navigation.md
-[Gradients]:                         https://github.com/maxxiimo/railsviews/blob/master/Gradients.md
-[Images]:                            https://github.com/maxxiimo/railsviews/blob/master/Images.md
-[Forms]:                             https://github.com/maxxiimo/railsviews/blob/master/Forms.md
-[Optimization]:                      https://github.com/maxxiimo/railsviews/blob/master/Optimization.md
-[Refactoring]:                       https://github.com/maxxiimo/railsviews/blob/master/Refactoring.md
-[Tools]:                             https://github.com/maxxiimo/railsviews/blob/master/Tools.md
-[Accessibility]:                     https://github.com/maxxiimo/railsviews/blob/master/Accessibility.md
-[Email Coding]:                      https://github.com/maxxiimo/railsviews/blob/master/Email%20Coding.md
-[Resets]:                            https://github.com/maxxiimo/railsviews/blob/master/Resets.md
-[Getting the Fonts Right]:           https://github.com/maxxiimo/railsviews/blob/master/Getting%20the%20Fonts%20Right.md
-[Search Engine Optimization]:        https://github.com/maxxiimo/railsviews/blob/master/Search%20Engine%20Optimization.md
-[Style Guides]:                      https://github.com/maxxiimo/railsviews/blob/master/Style%20Guides.md
-[Good Advice]:                       https://github.com/maxxiimo/railsviews/blob/master/Good%20Advice.md
-[JavaScript Libraries]:              https://github.com/maxxiimo/railsviews/blob/master/JavaScript%20Libraries.md
-[Layout]:                            https://github.com/maxxiimo/railsviews/blob/master/Layout.md
-[Navigation]:                        https://github.com/maxxiimo/railsviews/blob/master/Navigation.md
-[Storytelling]:                      https://github.com/maxxiimo/railsviews/blob/master/Storytelling.md
+[The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/The%20Manifesto.md
+[Foundation Markup]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Markup.md
+[Foundation Styles]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md
+[Preprocessors and Frameworks]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Preprocessors%20and%20Frameworks.md
+[Mobile First]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Mobile%20First.md
+[Slicing and Dicing Mockups]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Slicing%20and%20Dicing%20Mockups.md
+[Navigation]:                        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Navigation.md
+[Gradients]:                         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Gradients.md
+[Images]:                            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Images.md
+[Forms]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Forms.md
+[Optimization]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Optimization.md
+[Refactoring]:                       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Refactoring.md
+[Tools]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Tools.md
+[Accessibility]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Accessibility.md
+[Email Coding]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Email%20Coding.md
+[Resets]:                            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Resets.md
+[Getting the Fonts Right]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Getting%20the%20Fonts%20Right.md
+[Search Engine Optimization]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Search%20Engine%20Optimization.md
+[Style Guides]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Style%20Guides.md
+[Good Advice]:                       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Good%20Advice.md
+[JavaScript Libraries]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/JavaScript%20Libraries.md
+[Layout]:                            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Layout.md
+[Navigation]:                        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Navigation.md
+[Storytelling]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Storytelling.md
