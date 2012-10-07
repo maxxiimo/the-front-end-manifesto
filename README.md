@@ -54,13 +54,13 @@ Table of Contents
     - Consolidate
     - Variables
     - Mixins
+  - Preprocessors and Frameworks
+    - Sass and Less
+    - Twitter Bootstrap
+    - Compass
+    - Blueprint
+    - Compressing and the Asset Pipeline
   - What We've Done
-- [Preprocessors and Frameworks][]
-  - Sass and Less
-  - Twitter Bootstrap
-  - Compass
-  - Blueprint
-  - Compressing and the Asset Pipeline
 - [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
@@ -88,6 +88,7 @@ Table of Contents
   - Fieldsets and Legends
   - Extras
   - FormHelpers
+  - Fancy/Sassy Buttons
 - [Optimization][]
 - [Refactoring][]
 - [Tools][]
@@ -104,9 +105,6 @@ Table of Contents
 - [Style Guides][]
 - [Good Advice][]
 - [JavaScript Libraries][]
-- [Layout][]
-  - Organization
-  - content_for and :yield
 - [Navigation][]
   - Types
   - CSS
@@ -116,7 +114,6 @@ Table of Contents
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/The%20Manifesto.md
 [Foundation Markup]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Markup.md
 [Foundation Styles]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md
-[Preprocessors and Frameworks]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Preprocessors%20and%20Frameworks.md
 [Mobile First]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Mobile%20First.md
 [Slicing and Dicing Mockups]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Slicing%20and%20Dicing%20Mockups.md
 [Navigation]:                        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Navigation.md
@@ -134,6 +131,5 @@ Table of Contents
 [Style Guides]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Style%20Guides.md
 [Good Advice]:                       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Good%20Advice.md
 [JavaScript Libraries]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/JavaScript%20Libraries.md
-[Layout]:                            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Layout.md
 [Navigation]:                        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Navigation.md
 [Storytelling]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Storytelling.md
