@@ -1,5 +1,5 @@
-The Front End Manifesto
-=======================
+The<br>Front End<br>Manifesto
+=============================
 
 by Chris Maxwell
 
