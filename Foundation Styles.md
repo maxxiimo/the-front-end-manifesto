@@ -472,7 +472,7 @@ We started this chapter by setting up Compass and implementing the chapters [sta
 More important than simply cutting and pasting the stylesheets into your project though has been learning about CSS organization. In this chapter we learned about how our starter styles are organized, why, and how to keep it organized moving forward.
 
 [starter CSS]:          https://github.com/maxxiimo/base-css
-[Foundation Markup]:    https://github.com/maxxiimo/railsviews/blob/master/Foundation%20Markup.md
+[Foundation Markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Markup.md
 [compass-rails]:        https://github.com/Compass/compass-rails
 [FireSass]:             https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
 [Getting Compass to Work]: http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/

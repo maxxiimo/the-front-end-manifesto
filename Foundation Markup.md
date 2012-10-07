@@ -389,7 +389,7 @@ Not very attractive! ...but don't worry we'll address that in the [next chapter]
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
 [_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_chromeframe.html.haml
-[Foundation Styles]:    https://github.com/maxxiimo/railsviews/blob/master/Foundation%20Styles.md      
+[Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md      
 
 
 [Basic HTML]:           http://chrismaxwell.com/rails-views/assets/getting-started/base-html-no-styles.png
