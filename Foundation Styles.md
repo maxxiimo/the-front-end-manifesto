@@ -465,9 +465,9 @@ In other words if you have a bunch of lines of CSS that keep on appearing throug
 
 To best understand how to use variables and mixins check out the [Sass documentation][].
 
-### Preprocessors and Frameworks
+### Preprocessors
 
-Having arrived this far, our foundation styles would not be complete without discussing preprocessors and CSS frameworks. As you probably can already guess, I like and recommend Compass, but there's more out there so here's the 411...
+Having arrived this far, our foundation styles would not be complete without discussing preprocessors and CSS frameworks. As you probably can already guess, I like and recommend [Compass][] as a framework, but there's more out there so here's the 411... (starting with preprocessors.)
 
 #### Sass and Less
 
@@ -475,40 +475,43 @@ Probably the two most well-known dynamic stylesheet preprocessors out there are 
 
 [Sass][] is the sister of [Haml][], and my preprocessor of choice as well as the default preprocessor in Rails 3.X. Besides being awesome, you are more than likely going to predominantly see Sass used in projects you work on, so if you haven't dived in already, you should.
 
-When using sass you have a choice in syntax; .sass or .scss. I prefer .sass. The rank-and-file will more than likely go with .scss because it looks familiar (similar to CSS), and because that is what ships out-of-the-box in Rails, however, .sass is cleaner/terser (IMHO). To help you decide on syntax for you read this:
+When using sass you have a choice in syntax; .sass or .scss. I prefer .sass. A lot of newcomers will probably go with .scss because it looks familiar (similar to CSS), and because that is what ships out-of-the-box in Rails, however, .sass is cleaner/terser (IMHO). To help you decide on the best syntax for you read this:
 
-[Sass vs. SCSS: Which Syntax is Better?][Sass vs. SCSS]
+- [Sass vs. SCSS: Which Syntax is Better?][Sass vs. SCSS]
 
-Note: When using Sass or Haml these two resources are absolutely indispensable:
+NOTE: When using Sass or Haml these two resources are absolutely indispensable:
 
-[css2sass][]
+- [css2sass][]
+- [Html2Haml][]
 
-[Html2Haml][]
+In terms of other preprocessors, [Less][] is the runner-up. That's all I'm going to say about that (remember this is a manifesto).
 
-In terms of other preprocessors, [Less][] is the runner-up. That's all I'm going to say about that for now (see Twitter Bootstrap below).
+### CSS Frameworks
 
-#### Twitter Bootstrap
-
-[I like it][Twitter Bootstrap]. It's a great place to learn about best practices for any application or framework. It's well-documented, but here's the problem: it's built on [Less][], and use it and your site will look pretty much like everyone else's. Of course you can override styles, but I'm just sayin'.
-
-Getting it to work with Rails is not impossible, hardly, but does give you some choices to consider:
-
-[Twitter Bootstrap, Less, and Sass: Understanding Your Options for Rails 3.1][Options]
+Frameworks give you a whole boatload of styles instantly accessible through your HTML tags alone. Frameworks include base font sizes / rhythm, default formats for every kind of HTML tag, and use the frameworks class names and presto; you can drop in styles built to work, with no hitches, across all browsers and just look good. On top of that you get grid systems, prebuilt scripts for commonly used functions like pop-ups, modals and menu systems. The list goes on. Here are a few worth taking a look at for your project.
 
 #### Compass
 
-[I love it][Compass].
+I love [Compass][]. It's powerful, it's well-documented, it's widely used, there are a ton of plug-ins for it, what's not to like? 
 
-The following resources will help you set up compass in your rails project:
+I'm pretty biased on this one, and all the [starter CSS ][] files here incorporate it so there's not much else to say other than that it almost doesn't belong in this section. Most frameworks just give you the styles, and that's that. If you want to break free it takes some tinkering. Compass on the other hand let you pick and choose on styles, and the variety is limited by only the creativity of the developer community around the framework. Compass is more like a framework system.
 
-- [compass-rails][]
-- [Getting Compass to Work With Rails 3.1 (and 3.2)][Working]
+The following resource may be useful to you:
+
 - [35 Great Resources for Compass and Sass][35 Great Resources]
+
+#### Twitter Bootstrap
+
+I like [Twitter Bootstrap][]. It's a great place to learn about best practices for any application or framework, and you can get some amazing designs in absolutely no time. It's well-documented, but here's the problem: it's built on [Less][], and use it and your site will look pretty much like everyone else's. Of course you can override styles, but I'm just sayin'.
+
+Getting it to work with Rails is not impossible, hardly, but if you go this path it does give you some choices to consider:
+
+[Twitter Bootstrap, Less, and Sass: Understanding Your Options for Rails 3.1][Options]
 
 #### Blueprint
 
 
-#### Compressing and the Asset Pipeline
+### Compressing and the Asset Pipeline
 
 Why compress? Byte savings, decrease load times. In the old days I might have used something like these to compress and minify my code:
 
@@ -577,18 +580,16 @@ More important than simply cutting and pasting the stylesheets into your project
 [Experimenting]:        https://gist.github.com/1309546
 [Mixins in SASS]:       http://thecodingdesigner.com/tutorials/mixins-sass
 [Sass documentation]:   http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
+[Compass]:              http://compass-style.org/
 [Sass]:                 http://sass-lang.com/
 [Less]:                 http://lesscss.org/
 [Haml]:                 http://haml-lang.com/
 [Sass vs. SCSS]:        http://thesassway.com/articles/sass-vs-scss-which-syntax-is-better
 [css2sass]:             http://css2sass.heroku.com/
 [Html2Haml]:            http://html2haml.heroku.com/
+[35 Great Resources]:   http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
 [Twitter Bootstrap]:    http://twitter.github.com/bootstrap/
 [Options]:              http://rubysource.com/twitter-bootstrap-less-and-sass-understanding-your-options-for-rails-3-1/
-[Compass]:              http://compass-style.org/
-[compass-rails]:        https://github.com/Compass/compass-rails/blob/master/README.md
-[Working]:              http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
-[35 Great Resources]:   http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
 [Blueprint]:            http://www.blueprintcss.org/
 [CSS Compressor]:       http://www.minifycss.com/css-compressor/
 [Google Minify]:        https://code.google.com/p/minify/

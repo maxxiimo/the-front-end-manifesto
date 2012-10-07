@@ -54,12 +54,13 @@ Table of Contents
     - Consolidate
     - Variables
     - Mixins
-  - Preprocessors and Frameworks
+  - Preprocessors
     - Sass and Less
+  - CSS Frameworks
     - Twitter Bootstrap
     - Compass
     - Blueprint
-    - Compressing and the Asset Pipeline
+  - Compressing and the Asset Pipeline
   - What We've Done
 - [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
