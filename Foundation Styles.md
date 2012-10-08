@@ -512,42 +512,15 @@ Getting it to work with Rails is not impossible, hardly, but if you go this path
 
 [Blueprint][], in my opinion, is the granddaddy of frameworks. They're the first ones to make it big. I used to use Blueprint all the time, and Compass makes it almost a part of the base system. It's tried-and-true, and a good choice.
 
-### Compressing and the Asset Pipeline
-
-Now that we have some frameworks to choose from, let's take a look at compressing an asset pipeline. First, why do we need to compress? The answer is optimization: byte savings and decreased load times. In the old days I might have used something like one of the following to compress and minify my code:
-
-- [CSS Compressor & Minifier][CSS compressor]
-- [Google Minify][]
-- [Online JavaScript/CSS Compression Using YUI Compressor][YUI Compressor]
-
-These days the asset pipeline does it all for you.
-
-> The asset pipeline has three goals:
-> precompile, concatenate and minify assets into one central path.
-
-\- [Asset Pipeline for Dummies][Asset Pipeline]
-
-The only thing I'll add to this is just remember to precompile before you deploy to production:
-
-    bundle exec rake assets:precompile
-
-For more details on asset pipeline compression follow these links:
-
-- [CSS compression][]
-- [JavaScript Compression][JS Compression]
-- [Using Your Own Compressor][Generic Compressor]
-
 ### What We've Done
 
 - We started this chapter by setting up Compass and implementing the chapters [starter CSS][]. That in and by itself is all you need to start a project off right - in terms of foundation styles.
 
 - More important than simply cutting and pasting the stylesheets into your project though has been learning about CSS organization. In this chapter we learned about how our starter styles are organized, why, and how to keep it organized moving forward.
 
-- With our starter styles in place, we then took the look at preprocessors in general, and frameworks that significantly cut down on our front end development time.
+- Finally, with our starter styles in place, we took a look at preprocessors in general, and frameworks that significantly cut down on our front end development time.
 
-- Finally, we took a look at how Rails helps us optimize the styles we produce through compression and the asset pipeline.
-
-With all of this work we are more than ready to begin building an app. Our next chapters will focus on writing front end code based on mockups provided by designers, or just simply creating a look and feel from scratch, taking on the role of Information Architect.
+With all of this work you are more than ready to begin building an app; with your best foot forward. Our next chapters will focus on coding your front end based on mockups provided by designers, or just simply creating a look and feel from scratch by taking on the role of Information Architect.
 
 [starter CSS]:          https://github.com/maxxiimo/base-css
 [Foundation Markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Markup.md
@@ -598,13 +571,5 @@ With all of this work we are more than ready to begin building an app. Our next 
 [Twitter Bootstrap]:    http://twitter.github.com/bootstrap/
 [Options]:              http://rubysource.com/twitter-bootstrap-less-and-sass-understanding-your-options-for-rails-3-1/
 [Blueprint]:            http://www.blueprintcss.org/
-[CSS Compressor]:       http://www.minifycss.com/css-compressor/
-[Google Minify]:        https://code.google.com/p/minify/
-[YUI Compressor]:       http://www.refresh-sf.com/yui/
-[Asset Pipeline]:       http://coderberry.me/blog/2012/04/24/asset-pipeline-for-dummies/
-                        "The Rails asset pipeline from the ground up."
-[CSS Compression]:      http://edgeguides.rubyonrails.org/asset_pipeline.html#css-compression
-[JS Compression]:       http://edgeguides.rubyonrails.org/asset_pipeline.html#javascript-compression
-[Generic Compressor]:   http://edgeguides.rubyonrails.org/asset_pipeline.html#using-your-own-compressor
 
 [Basic HTML No Styles]: http://chrismaxwell.com/rails-views/assets/getting-started/base-html-files-with-styles.png

@@ -60,7 +60,6 @@ Table of Contents
     - Twitter Bootstrap
     - Compass
     - Blueprint
-  - Compressing and the Asset Pipeline
   - What We've Done
 - [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
@@ -91,6 +90,14 @@ Table of Contents
   - FormHelpers
   - Fancy/Sassy Buttons
 - [Optimization][]
+  - Gzipping
+  - Caching
+    - Client-Side
+    - Server-Side
+  - Image Optimization
+  - Compressing and the Asset Pipeline
+  - Spriting
+  - What We've Done
 - [Refactoring][]
 - [Tools][]
   -.gemfile
