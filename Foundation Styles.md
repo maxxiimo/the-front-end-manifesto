@@ -524,8 +524,8 @@ These days the asset pipeline does it all for you.
 
 > The asset pipeline has three goals:
 > precompile, concatenate and minify assets into one central path.
->
-> - [Asset Pipeline for Dummies][Asset Pipeline]
+
+\- [Asset Pipeline for Dummies][Asset Pipeline]
 
 The only thing I'll add to this is just remember to precompile before you deploy to production:
 
@@ -533,19 +533,19 @@ The only thing I'll add to this is just remember to precompile before you deploy
 
 For more details on asset pipeline compression follow these links:
 
-- [CSS compression ][]
+- [CSS compression][]
 - [JavaScript Compression][JS Compression]
 - [Using Your Own Compressor][Generic Compressor]
 
 ### What We've Done
 
-We started this chapter by setting up Compass and implementing the chapters [starter CSS][]. That in and by itself is all you need to start a project off right - in terms of foundation styles.
+- We started this chapter by setting up Compass and implementing the chapters [starter CSS][]. That in and by itself is all you need to start a project off right - in terms of foundation styles.
 
-More important than simply cutting and pasting the stylesheets into your project though has been learning about CSS organization. In this chapter we learned about how our starter styles are organized, why, and how to keep it organized moving forward.
+- More important than simply cutting and pasting the stylesheets into your project though has been learning about CSS organization. In this chapter we learned about how our starter styles are organized, why, and how to keep it organized moving forward.
 
-With our starter styles in place, we then took the look at preprocessors in general, and frameworks that significantly cut down on our front end development time.
+- With our starter styles in place, we then took the look at preprocessors in general, and frameworks that significantly cut down on our front end development time.
 
-Finally, we took a look at how Rails helps us optimize the styles we produce through compression and the asset pipeline.
+- Finally, we took a look at how Rails helps us optimize the styles we produce through compression and the asset pipeline.
 
 With all of this work we are more than ready to begin building an app. Our next chapters will focus on writing front end code based on mockups provided by designers, or just simply creating a look and feel from scratch, taking on the role of Information Architect.
 
