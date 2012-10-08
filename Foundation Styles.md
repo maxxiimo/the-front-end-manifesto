@@ -520,7 +520,7 @@ Getting it to work with Rails is not impossible, hardly, but if you go this path
 
 - Finally, with our starter styles in place, we took a look at preprocessors in general, and frameworks that significantly cut down on our front end development time.
 
-With all of this work you are more than ready to begin building an app; with your best foot forward. Our next chapters will focus on coding your front end based on mockups provided by designers, or just simply creating a look and feel from scratch by taking on the role of Information Architect.
+With all of this work you are more than ready to begin building an app; with your best foot forward. If you want to go the extra mile, and I suggest you do, our next chapter will focus on a solid foundation for small screens, i.e. mobile browsers.
 
 [starter CSS]:          https://github.com/maxxiimo/base-css
 [Foundation Markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Markup.md

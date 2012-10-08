@@ -61,6 +61,11 @@ Table of Contents
     - Compass
     - Blueprint
   - What We've Done
+- [Mobile Browsers][]
+  - Responsive Web Design
+  - Mobile First
+  - Where Do Styles Go?
+  - User Agents or Media Queries
 - [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
@@ -71,9 +76,6 @@ Table of Contents
   - Step 8 - Navigation
   - Step 9 - HTML for the Main Content
   - Step 10 - Sprites and CSS3 for Images
-- [Mobile First][]
-  - Where Do Styles Go?
-  - User Agents or Media Queries
 - [Navigation][]
 - [Gradients][]
 - [Images][]
@@ -122,7 +124,7 @@ Table of Contents
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/The%20Manifesto.md
 [Foundation Markup]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Markup.md
 [Foundation Styles]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md
-[Mobile First]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Mobile%20First.md
+[Mobile Browsers]:                   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Mobile%20Browsers.md
 [Slicing and Dicing Mockups]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Slicing%20and%20Dicing%20Mockups.md
 [Navigation]:                        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Navigation.md
 [Gradients]:                         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Gradients.md
