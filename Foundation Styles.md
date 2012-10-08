@@ -504,20 +504,21 @@ The following resource may be useful to you:
 
 I like [Twitter Bootstrap][]. It's a great place to learn about best practices for any application or framework, and you can get some amazing designs in absolutely no time. It's well-documented, but here's the problem: it's built on [Less][], and use it and your site will look pretty much like everyone else's. Of course you can override styles, but I'm just sayin'.
 
-Getting it to work with Rails is not impossible, hardly, but if you go this path it does give you some choices to consider:
+Getting it to work with Rails is not impossible, hardly, but if you go this path there some choices to consider:
 
-[Twitter Bootstrap, Less, and Sass: Understanding Your Options for Rails 3.1][Options]
+- [Twitter Bootstrap, Less, and Sass: Understanding Your Options for Rails 3.1][Options]
 
 #### Blueprint
 
+[Blueprint][], in my opinion, is the granddaddy of frameworks. They're the first ones to make it big. I used to use Blueprint all the time, and Compass makes it almost a part of the base system. It's tried-and-true, and a good choice.
 
 ### Compressing and the Asset Pipeline
 
-Why compress? Byte savings, decrease load times. In the old days I might have used something like these to compress and minify my code:
+Now that we have some frameworks to choose from, let's take a look at compressing an asset pipeline. First, why do we need to compress? The answer is optimization: byte savings and decreased load times. In the old days I might have used something like one of the following to compress and minify my code:
 
-[CSS Compressor & Minifier][CSS compressor]
-[Google Minify][]
-[Online JavaScript/CSS Compression Using YUI Compressor][YUI Compressor]
+- [CSS Compressor & Minifier][CSS compressor]
+- [Google Minify][]
+- [Online JavaScript/CSS Compression Using YUI Compressor][YUI Compressor]
 
 These days the asset pipeline does it all for you.
 
@@ -526,21 +527,27 @@ These days the asset pipeline does it all for you.
 >
 > - [Asset Pipeline for Dummies][Asset Pipeline]
 
-Just remember to precompile before you deploy to production:
+The only thing I'll add to this is just remember to precompile before you deploy to production:
 
     bundle exec rake assets:precompile
 
 For more details on asset pipeline compression follow these links:
 
-[CSS compression ][]
-[JavaScript Compression][JS Compression]
-[Using Your Own Compressor][Generic Compressor]
+- [CSS compression ][]
+- [JavaScript Compression][JS Compression]
+- [Using Your Own Compressor][Generic Compressor]
 
 ### What We've Done
 
-We started this chapter by setting up Compass and implementing the chapters [starter CSS][]. That in and by itself is all you need to start a project off right in terms of foundation styles.
+We started this chapter by setting up Compass and implementing the chapters [starter CSS][]. That in and by itself is all you need to start a project off right - in terms of foundation styles.
 
 More important than simply cutting and pasting the stylesheets into your project though has been learning about CSS organization. In this chapter we learned about how our starter styles are organized, why, and how to keep it organized moving forward.
+
+With our starter styles in place, we then took the look at preprocessors in general, and frameworks that significantly cut down on our front end development time.
+
+Finally, we took a look at how Rails helps us optimize the styles we produce through compression and the asset pipeline.
+
+With all of this work we are more than ready to begin building an app. Our next chapters will focus on writing front end code based on mockups provided by designers, or just simply creating a look and feel from scratch, taking on the role of Information Architect.
 
 [starter CSS]:          https://github.com/maxxiimo/base-css
 [Foundation Markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Markup.md
