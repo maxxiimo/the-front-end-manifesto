@@ -313,6 +313,10 @@ If you use my [starter code][], or follow my advice, your application.html.haml 
 
 Concise and simple. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology.
 
+#### JavaScript
+
+I don't think I read a more comprehensive overview on this than Daniel Kehoe's article: "[Unholy Rails: External Scripts, jQuery Plugins, and Page-Specific JavaScript][Unholy Rails]"
+
 ##### The Scripts Partial
 
 Generally it is best to put JavaScript at the very bottom of application.html.haml. Doing so will allow the page to render before scripts are loaded, but some scripts such as modernizr need to load before your HTML so naturally I include them in [_head.html.haml][_head]. To accommodate all other JavaScript files I use a [_scripts.html.haml][_scripts] partial located in the layouts folder.
@@ -387,6 +391,7 @@ Not very attractive! ...but don't worry we'll address that in the [next chapter]
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
 [application]:          https://github.com/maxxiimo/base-haml/blob/master/views/layouts/application.html.haml
 [application_helper]:   https://github.com/maxxiimo/base-haml/blob/master/helpers/application_helper.rb
+[_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_chromeframe.html.haml
 [_head]:                https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
 [_scripts]:             https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_scripts.html.haml
 [_logo]:                https://github.com/maxxiimo/base-haml/blob/master/views/shared/_logo.html.haml
@@ -396,7 +401,7 @@ Not very attractive! ...but don't worry we'll address that in the [next chapter]
 [Helpful Things]:       https://gist.github.com/1981339
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
-[_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_chromeframe.html.haml
+[Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html?utm_source=rubyweekly&utm_medium=email
 [Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md      
 
 
