@@ -516,6 +516,21 @@ Getting it to work with Rails is not impossible, hardly, but if you go this path
 
 [Blueprint][], in my opinion, is the granddaddy of frameworks. They're the first ones to make it big. I used to use Blueprint all the time, and Compass makes it almost a part of the base system. It's tried-and-true, and a good choice.
 
+##### YUI
+
+> YUI is a free, open source JavaScript and CSS library for building richly interactive web applications. 
+\- [YUI website][]
+
+##### Foundation 3
+
+> The most advanced responsive front-end framework in the world.
+\- [Zurb website][]
+
+##### Skeleton
+
+> A Beautiful Boilerplate for Responsive, Mobile-Friendly Development
+\- [Skeleton website][]
+
 ### What We've Done
 
 - We started this chapter by setting up Compass and implementing the chapters [starter CSS][]. That in and by itself is all you need to start a project off right - in terms of foundation styles.
@@ -578,5 +593,8 @@ With all of this work you are more than ready to begin building an app; with you
 [Twitter Bootstrap]:    http://twitter.github.com/bootstrap/
 [Options]:              http://rubysource.com/twitter-bootstrap-less-and-sass-understanding-your-options-for-rails-3-1/
 [Blueprint]:            http://www.blueprintcss.org/
+[YUI website]:          http://yuilibrary.com/
+[Zurb website]:         http://foundation.zurb.com/
+[Skeleton website]:     http://www.getskeleton.com/
 
 [Basic HTML No Styles]: http://chrismaxwell.com/rails-views/assets/getting-started/base-html-files-with-styles.png

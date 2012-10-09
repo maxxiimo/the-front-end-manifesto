@@ -67,6 +67,10 @@ NOTE: Michael Hartl recommends using the following flag on your first bundle:
 
 Doing so installs your .gemfile gems, but prevents the installation of the production gems. You only have to do this once.
 
+For faster asset precompiles check out:
+
+- [Turbo Sprockets for Rails 3.2.x][Turbo Sprockets]
+
 #### .gitignore
 
 For my .gitignore file here is what I use; mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore]:
@@ -367,6 +371,7 @@ Not very attractive! ...but don't worry we'll address that in the [next chapter]
 
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
+[Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3?utm_source=rubyweekly&utm_medium=email               
 [H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
 [Tutorial .gitignore]:  http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
                         "An augmented .gitignore file"

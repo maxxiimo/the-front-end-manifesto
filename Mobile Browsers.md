@@ -3,7 +3,7 @@ Mobile Browsers
 
 Chapter 1 and 2 are great, really great in my opinion ;-), but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. I mean on the fringe back then there was talk about desktop screen sizes, but it could be overlooked. 
 
-Nowadays you cannot overlook screen sizes. You better believe that people are going to look at your website on a mobile phone or some kind of tablet, especially the iPad. In fact I think this is pretty much common knowledge and accepted, so let's just deal with it. How? In a word... Responsive.
+Nowadays you cannot overlook screen sizes. You better believe that people are going to look at your website on a mobile phone or some kind of tablet, especially the iPad. In fact I think this is pretty much [common knowledge][], so let's just deal with it. How? In a word... Responsive.
 
 ### Responsive Web Design
 
@@ -35,6 +35,7 @@ Personally, I prefer to use user agents to serve up the correct styles and HTML.
 ????
 "Because the assets all concatenate into one file, there are no seperate files to be included on a view-by-view basis." [Asset Pipeline for Dummies][Asset Pipeline]
 
+[common knowledge]:     http://www.themobileplaybook.com/en-us/#/cover
 [Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
