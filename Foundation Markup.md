@@ -50,7 +50,10 @@ To this I'm going to add gems that I know for certain I will work with. Borrowin
     
     gem 'jquery-rails',   '2.0.2'
     gem 'haml-rails'
-    
+
+    # See https://github.com/ndbroadbent/turbo-sprockets-rails3
+    # gem 'turbo-sprockets-rails3'
+
     group :test do
       gem 'capybara',     '1.1.2'
     end
@@ -371,7 +374,7 @@ Not very attractive! ...but don't worry we'll address that in the [next chapter]
 
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
-[Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3?utm_source=rubyweekly&utm_medium=email               
+[Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3
 [H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
 [Tutorial .gitignore]:  http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
                         "An augmented .gitignore file"
