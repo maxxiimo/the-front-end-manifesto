@@ -486,6 +486,7 @@ NOTE: When using Sass or Haml these two resources are absolutely indispensable:
 
 - [css2sass][]
 - [Html2Haml][]
+- [html2haml Gem][]
 
 In terms of other preprocessors, [Less][] is the runner-up. That's all I'm going to say about that (remember this is a manifesto).
 
@@ -572,6 +573,7 @@ With all of this work you are more than ready to begin building an app; with you
 [Sass vs. SCSS]:        http://thesassway.com/articles/sass-vs-scss-which-syntax-is-better
 [css2sass]:             http://css2sass.heroku.com/
 [Html2Haml]:            http://html2haml.heroku.com/
+[html2haml Gem]:        https://github.com/haml/html2haml
 [35 Great Resources]:   http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
 [Twitter Bootstrap]:    http://twitter.github.com/bootstrap/
 [Options]:              http://rubysource.com/twitter-bootstrap-less-and-sass-understanding-your-options-for-rails-3-1/
