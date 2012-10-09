@@ -9,6 +9,7 @@ Nowadays you cannot overlook screen sizes. You better believe that people are go
 
 Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]". 
 
+[This Is Responsive][]
 
 ### Mobile First
 
@@ -35,5 +36,6 @@ Personally, I prefer to use user agents to serve up the correct styles and HTML.
 "Because the assets all concatenate into one file, there are no seperate files to be included on a view-by-view basis." [Asset Pipeline for Dummies][Asset Pipeline]
 
 [Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
+[This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
 [Mobile Devices]:       http://railscasts.com/episodes/199-mobile-devices

@@ -465,15 +465,18 @@ In other words if you have a bunch of lines of CSS that keep on appearing throug
 
 To best understand how to use variables and mixins check out the [Sass documentation][].
 
-### Preprocessors
+To see some great examples checkout:
 
-Having arrived this far, our foundation styles would not be complete without discussing preprocessors and CSS frameworks. As you probably can already guess, I like and recommend [Compass][] as a framework, but there's more out there so here's the 411... (starting with preprocessors.)
+- [Useful SASS Mixins][]
+- [Custom User @mixins][]
+
+### Preprocessors and Frameworks
+
+Having arrived this far, our foundation styles would not be complete without briefly discussing preprocessors. I say briefly because as you know by now I use Sass and and recommend [Compass][] as a framework, but there's more out there so here's the 411... (starting with preprocessors.)
 
 #### Sass and Less
 
-Probably the two most well-known dynamic stylesheet preprocessors out there are [Sass][] and [Less][].
-
-[Sass][] is the sister of [Haml][], and my preprocessor of choice as well as the default preprocessor in Rails 3.X. Besides being awesome, you are more than likely going to predominantly see Sass used in projects you work on, so if you haven't dived in already, you should.
+Probably the two most well-known dynamic stylesheet preprocessors out there are [Sass][] and [Less][]. [Sass][] is the sister of [Haml][], and my preprocessor of choice as well as the default preprocessor in Rails 3.X. Besides being awesome, you are more than likely going to predominantly see Sass used in projects you work on, so if you haven't dived in already, you should.
 
 When using sass you have a choice in syntax; .sass or .scss. I prefer .sass. A lot of newcomers will probably go with .scss because it looks familiar (similar to CSS), and because that is what ships out-of-the-box in Rails, however, .sass is cleaner/terser (IMHO). To help you decide on the best syntax for you read this:
 
@@ -486,11 +489,11 @@ NOTE: When using Sass or Haml these two resources are absolutely indispensable:
 
 In terms of other preprocessors, [Less][] is the runner-up. That's all I'm going to say about that (remember this is a manifesto).
 
-### CSS Frameworks
+#### CSS Frameworks
 
 Frameworks give you a whole boatload of styles instantly accessible through your HTML tags alone. Frameworks include base font sizes / rhythm, default formats for every kind of HTML tag, and use the frameworks class names and presto; you can drop in styles built to work, with no hitches, across all browsers and just look good. On top of that you get grid systems, prebuilt scripts for commonly used functions like pop-ups, modals and menu systems. The list goes on. Here are a few worth taking a look at for your project.
 
-#### Compass
+##### Compass
 
 I love [Compass][]. It's powerful, it's well-documented, it's widely used, there are a ton of plug-ins for it, what's not to like? 
 
@@ -500,7 +503,7 @@ The following resource may be useful to you:
 
 - [35 Great Resources for Compass and Sass][35 Great Resources]
 
-#### Twitter Bootstrap
+##### Twitter Bootstrap
 
 I like [Twitter Bootstrap][]. It's a great place to learn about best practices for any application or framework, and you can get some amazing designs in absolutely no time. It's well-documented, but here's the problem: it's built on [Less][], and use it and your site will look pretty much like everyone else's. Of course you can override styles, but I'm just sayin'.
 
@@ -508,7 +511,7 @@ Getting it to work with Rails is not impossible, hardly, but if you go this path
 
 - [Twitter Bootstrap, Less, and Sass: Understanding Your Options for Rails 3.1][Options]
 
-#### Blueprint
+##### Blueprint
 
 [Blueprint][], in my opinion, is the granddaddy of frameworks. They're the first ones to make it big. I used to use Blueprint all the time, and Compass makes it almost a part of the base system. It's tried-and-true, and a good choice.
 
@@ -560,6 +563,8 @@ With all of this work you are more than ready to begin building an app; with you
 [Experimenting]:        https://gist.github.com/1309546
 [Mixins in SASS]:       http://thecodingdesigner.com/tutorials/mixins-sass
 [Sass documentation]:   http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
+[Useful SASS Mixins]:   http://sachagreif.com/useful-sass-mixins/
+[Custom User @mixins]:  http://css-tricks.com/custom-user-mixins/                   
 [Compass]:              http://compass-style.org/
 [Sass]:                 http://sass-lang.com/
 [Less]:                 http://lesscss.org/

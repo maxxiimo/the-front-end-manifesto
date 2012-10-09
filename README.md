@@ -54,12 +54,9 @@ Table of Contents
     - Consolidate
     - Variables
     - Mixins
-  - Preprocessors
+  - Preprocessors and Frameworks
     - Sass and Less
-  - CSS Frameworks
-    - Twitter Bootstrap
-    - Compass
-    - Blueprint
+    - CSS Frameworks
   - What We've Done
 - [Mobile Browsers][]
   - Responsive Web Design
