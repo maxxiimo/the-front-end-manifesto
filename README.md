@@ -63,9 +63,12 @@ Table of Contents
     - Sass and Less
     - CSS Frameworks
   - What We've Done
-- [Mobile Browsers][]
-  - Responsive Web Design
+- [Mobile Foundation][]
   - Mobile First
+  - Plan of Attack
+  - User Agent Sniffing
+    - An Introduction
+  - Responsive Web Design
   - Where Do Styles Go?
   - User Agents or Media Queries
 - [Accessibility][]
@@ -124,7 +127,7 @@ Table of Contents
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/The%20Manifesto.md
 [Foundation Markup]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Markup.md
 [Foundation Styles]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md
-[Mobile Browsers]:                   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Mobile%20Browsers.md
+[Mobile Foundation]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Mobile%20Browsers.md
 [Accessibility]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Accessibility.md
 [Optimization]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Optimization.md
 [Slicing and Dicing Mockups]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Slicing%20and%20Dicing%20Mockups.md
