@@ -28,14 +28,17 @@ Table of Contents
     - .gitignore
     - Deployment
   -  The Application Layout
-  - A Framework within a Framework
+    - A Framework within a Framework
     - Where Does It Live?
-    - The Code
+  - The Code
     - Where Do Things Go?
-    - What to Put in \<head>
+    - Prep the App
+  - Our Foundation
+  - Organization
     - Partials
-    - The Title
     - JavaScript
+    - What to Put in \<head>
+    - The Title
   - Moving Forward
     - Naming Conventions
     - Using Partials
