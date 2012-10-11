@@ -175,7 +175,7 @@ When I switch hats, as a front end coder I look at layout as the Rails view fram
 
 As a Rails front end developer, you will wear both hats, plus take on a third role in which you facilitate the handshake between the backend and the front end of your application. To be successful you must understand how the code you produce will be used by your colleagues (backend engineers). You will need to be able to reach into your models and controllers via instance variables, helper methods, Ruby via erb, Rails helpers, and you will need to think in terms of usability and work in design tools such as Photoshop, not to mention be a master in your own realm: HTML5, CSS3, JavaScript/jQuery, but before you do these things you need to layout a solid foundation to work within.
 
-#### A Framework within a Framework
+### A Framework within a Framework
 
 As much as Rails is a framework, within this framework lives a tinier front end framework; your foundation markup. Until Rails 3.0, where this foundation "lived" and the conventions for using it were very much a no man's land. It was a disorganized dumping ground for HTML, CSS, JavaScript, and Ruby: the wild wild West of coding. Since Rails 3.0 things have become "civilized" and within these new conventions is where we will begin to build our layout, the application layout.
 
