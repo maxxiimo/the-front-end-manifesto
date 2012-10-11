@@ -5,11 +5,22 @@ This chapter could be called a cut-and-paste chapter in that I will provide trie
 
 ### Groundwork
 
-Assuming you just created a brand spanking new Rails application, you should set up your .gemfile and .gitignore files right off the bat as follows:
+Assuming you just created a brand spanking new Rails application, these are the steps I follow...
 
-#### .gemfile
+    $ rails new <name> --no-test-framework
+    Switch to new project folder.
+    $ git init
+    $ git add .
+    $ git commit -am "Initial commit."
+    $ git remote add origin git@github.com:<Github account>/.git
+    Create a new repo at Github.
+    $ git push -u origin master
 
-Your .gemfile will change radically throughout the lifespan of your project. With every new application Rails generates one with a lot of commented out lines. You don't need these right now so let's get rid of them, they take up a lot of space and clutter things up. If you ever want to see them again in the future, review your git history or you can always create a new app. Without comments, here is what you're left with:
+...you should set up your Gemfile and .gitignore files right off the bat as follows:
+
+#### Gemfile
+
+Your Gemfile will change radically throughout the lifespan of your project. With every new application Rails generates one with a lot of commented out lines. You don't need these, they take up a lot of space and clutter things up. Without comments, in the new Rails app here is what you're left with:
 
     source 'https://rubygems.org'
 
@@ -25,7 +36,7 @@ Your .gemfile will change radically throughout the lifespan of your project. Wit
     
     gem 'jquery-rails'
 
-To this I'm going to add gems that I know for certain I will work with. Borrowing from the best – I use Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" .gemfile example – I start my projects with the following .gemfile:
+To this I'm going to add gems that I know for certain I will work with. Borrowing from the best – I use Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" Gemfile example – I start my projects with the following [Gemfile][]:
 
     source 'https://rubygems.org'
     
@@ -66,9 +77,13 @@ Since I typically use compass, I added the compass-rails and oily_png gems here.
 
 NOTE: Michael Hartl recommends using the following flag on your first bundle:
 
-    bundle install --without production
+    $ bundle install --without production
 
-Doing so installs your .gemfile gems, but prevents the installation of the production gems. You only have to do this once.
+Doing so installs your Gemfile gems, but prevents the installation of the production gems. You only have to do this once.
+
+You also should set up rspec:
+
+    $ rails generate rspec:install
 
 For faster asset precompiles check out:
 
@@ -76,7 +91,7 @@ For faster asset precompiles check out:
 
 #### .gitignore
 
-For my .gitignore file here is what I use; mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore]:
+For my [.gitignore][] file here is what I use; mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore]:
 
     # Ignore bundler config
     /.bundle
@@ -143,6 +158,14 @@ Some additional useful .gitignore ideas:
 
 - [Ignore files][]
 - [A Collection of Useful .gitignore Templates][.gitignore]
+
+#### Deployment
+
+If you use Heroku like I do run the following commands:
+
+    $ heroku create --stack cedar
+    $ git push heroku master
+    $ heroku rename <new name>
 
 ### The Application Layout
 
@@ -378,6 +401,8 @@ Not very attractive! ...but don't worry we'll address that in the [next chapter]
 
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
+[Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
+[.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3
 [H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
 [Tutorial .gitignore]:  http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]

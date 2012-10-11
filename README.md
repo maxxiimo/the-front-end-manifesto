@@ -24,10 +24,11 @@ Table of Contents
 - [The Manifesto][]
 - [Foundation Markup][]
   -  Groundwork
-    - .gemfile
+    - Gemfile
     - .gitignore
+    - Deployment
   -  The Application Layout
-    - A Framework within a Framework
+  - A Framework within a Framework
     - Where Does It Live?
     - The Code
     - Where Do Things Go?
