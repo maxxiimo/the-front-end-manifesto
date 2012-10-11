@@ -47,7 +47,8 @@ Table of Contents
 - [Foundation Styles][]
   - Compass Set Up
   - Stylesheet Set Up
-  - CSS Organization
+  - Our Foundation
+  - Organization
     - Style TOC
     - Resets
   - Moving Forward

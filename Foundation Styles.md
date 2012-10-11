@@ -11,9 +11,19 @@ Before we move along any further, if you're planning to use Compass, you will ne
 
 1.  If you have not done so already, per the [Foundation Markup][] chapter, add "compass-rails" to your gemfile. For more explicit directions take a look at the [compass-rails][] gem source.
 
-2.  Run "bundle exec compass init". Compass will generate a configuration file and stylesheets. Delete the stylesheets. We're going to use our own.
+2.  Run...
 
-3.  Add the following commented out code to your config/compass.rb file generated in the previous step:
+        $ bundle exec compass init
+        
+    Compass will generate a configuration file and stylesheets. Delete the stylesheets. We're going to use our own.
+
+3.  Delete your application.css file and replace it with [application.scss][].
+
+    NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
+
+    IMPORTANT: Use @import to organize styles rather than Sprockets. You can use Sprockets' require syntax, however per the explanation found at of the [compass-rails][] gem source it is probably not a good idea.
+
+4.  Add the following commented out code to your config/compass.rb file generated in step 1:
 
         # To allow compass to import partials from subdirectories per:
         # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
@@ -23,19 +33,6 @@ Before we move along any further, if you're planning to use Compass, you will ne
         # sass_options = {:debug_info => true}
 
     If you have problems with subfolders within your assets/stylesheets folder, un-comment the first three lines. If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming from which is extremely helpful when debugging. Un-comment the last two lines if you plan to use FireSass.
-
-4.  Delete your application.css file and replace it with [application.scss][].
-
-    NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
-
-5.  Use @import to organize styles rather than Sprockets. Add the following reminder at the top of application.scss:
-        
-        /*
-         * Important! Do *not* use Sprockets "require" syntax.
-         * Use @import to include other stylesheets and Compass mixins.
-         */
-
-    NOTE: You can use Sprockets' require syntax, however per the explanation found at of the [compass-rails][] gem source it is probably not a good idea.
 
 That's it! You now have Compass and all that it brings available to you.
 
@@ -61,13 +58,15 @@ Delete your application.css file if you have not done so already. It is being re
 
 NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
 
+### Our Foundation
+
 Simple as that, and if you have been following along from the last chapter, [Foundation Markup][], here is what your page will now look with the new stylesheets in place:
 
 ![][Basic HTML No Styles]
 
 It's pretty basic, but much better than before.
 
-### CSS Organization
+### Organization
 
 The [sample stylesheets][starter CSS] I provide are pretty sparse, and that's fine. What's important are the conventions I use and organizational structure of them. The styles I do provide are very common to most projects, and perhaps the bare minimum necessary to do things right.
 
