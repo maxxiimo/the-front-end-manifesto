@@ -25,16 +25,21 @@ With Ruby on Rails there are three ways we can tackle mobile browsers:
 
 I'm undecided about which method I prefer insofar as 1 and 2 go. My gut tells me to separate concerns. Anyway, here are my thoughts on the subject:
 
-- Keep them separate and you can serve lighter, device specific stylesheets.
+- Keep them separate and you can serve lighter, device specific stylesheets. This translates to less complexity and better performance.
+- Did I mention complexity?
 - As applications grow and user needs change, it might become necessary to separate mobile out completely. If you start out separate this transition might be easier.
 - Keep styles together, and no one will be left out, i.e. you won't forget to work on one while working on the other.
+- Designing for a mobile device, a tablet device, and a desktop could be time-consuming, response styles can accommodate all three.
 
 Right now "responsive" based on media queries is the rage. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" does a great job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote there that the author uses that resonates with me:
 
 > Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
-- [Brian Fling][]
+\- [Brian Fling][]
 
 Whatever you decide, keep in mind that there are a spectrum of needs and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website most certainly won't need mobile specific geolocation capabilities, and all on all, the changes required between screens is minor. In this case why not use media queries and keep things together?
+
+> Only using responsive design for Basecamp mobile would have been like fitting a Prius body to a Hummer… under-the-hood it would have been all wrong.
+\[Behind the speed: Basecamp mobile][Basecamp Mobile]
 
 In this chapter we will explore both plans of attack.
 
@@ -74,6 +79,7 @@ Some argue that including mobile and print* styles in the same partials will hel
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
 [Brian Fling]:          http://shop.oreilly.com/product/9780596155452.do
+[Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile               
 [Mobile Devices]:       http://railscasts.com/episodes/199-mobile-devices
 
 [Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
