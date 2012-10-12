@@ -416,6 +416,7 @@ There really are a lot of factors that could prevent the user from upgrading:
 >- Large organizations and government departments. Those businesses may have 10-year IT plans. Desktops are locked-down and users can’t upgrade. Even when a company wants to move forward, migrating thousands of users is not quick, simple or inexpensive.
 >- Windows XP users. One in four people use XP and that figure is higher for business users. Upgrading beyond IE8 is not an option.
 >- You are not an average user. Most people do not understand IT. Many are terrified of it — or certainly worried they’ll break their PC. Migrating from something they know is a risk regardless of the benefits.
+
 \- "[Is Internet Explorer Development Really a Waste of Time?][Waste of Time]"
 
 ### What We've Done
