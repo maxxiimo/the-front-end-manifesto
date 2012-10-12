@@ -417,14 +417,18 @@ There really are a lot of factors that could prevent the user from upgrading:
 >- Windows XP users. One in four people use XP and that figure is higher for business users. Upgrading beyond IE8 is not an option.
 >- You are not an average user. Most people do not understand IT. Many are terrified of it — or certainly worried they’ll break their PC. Migrating from something they know is a risk regardless of the benefits.
 
-\- "[Is Internet Explorer Development Really a Waste of Time?][Waste of Time]"
+\- [Is Internet Explorer Development Really a Waste of Time?][Waste of Time]
+
+I should mention that the author of this article follows up with a solution in his follow-up article:
+
+- [How to Use Responsive Web Design to Support Old Browsers][RWD for IE]
 
 ### What We've Done
 
 - We started this chapter by laying out the groundwork for your foundation markup.
 - We then began to discuss what an application layout is, from the front end coder's viewpoint, and how it is organized in a Rails application.
 - We then grabbed all of the starter code for this chapter, our foundation markup, and integrated into a new Rails application.
-- Finally, we took a look at how this foundation markup is organized.
+- Finally, we took a look at how this foundation markup is organized and briefly reviewed legacy browsers.
 
 In the [next chapter][Foundation Styles], we will begin to set up our foundation styles.
 
@@ -458,6 +462,6 @@ In the [next chapter][Foundation Styles], we will begin to set up our foundation
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
 [Waste of Time]:        http://www.sitepoint.com/is-internet-explorer-development-really-a-waste-of-time/             
-
+[RWD for IE]:           http://www.sitepoint.com/support-old-browsers-responsive-web-design/
 
 [Basic HTML]:           http://chrismaxwell.com/rails-views/assets/getting-started/base-html-no-styles.png
