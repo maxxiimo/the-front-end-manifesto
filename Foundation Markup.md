@@ -394,7 +394,7 @@ For partials, if there are several related to an individual file, group them by 
 
 These days most people like to just forget about IE 6, it's old, "We're not supporting it, those users need to update!" ...But here's the problem, those users are still out there, even if they don't want to be. Have you ever been in your local public library and checked out the super old machines people have to use there? I sometimes go just to see what an application I'm working on will look like in older browsers.
 
-So what I propose is a compromise. Don't waste your time developing for IE 6, but give those users notice and ability via [Chrome Frame][]. If you're using my [starter code][] you'll notice that I added to the [following partial][_chromeframe] to your layouts folder:
+So what I propose is a compromise for those of you who don't want to waste your time developing for IE 6; give those users notice and ability via [Chrome Frame][]. If you're using my [starter code][] you'll notice that I added to the [following partial][_chromeframe] to your layouts folder:
 
     /[if lt IE 7 ]
       %p.chromeframe
@@ -408,6 +408,15 @@ Here is the corresponding helper method:
     def chromeframe
       render :partial => 'layouts/chromeframe'
     end
+
+There really are a lot of factors that could prevent the user from upgrading:
+
+> As a web developer, you’re working with IT every day. Upgrading doesn’t worry you; it’s easy and everyone should do it. But are you neglecting to consider:
+>
+>- Large organizations and government departments. Those businesses may have 10-year IT plans. Desktops are locked-down and users can’t upgrade. Even when a company wants to move forward, migrating thousands of users is not quick, simple or inexpensive.
+>- Windows XP users. One in four people use XP and that figure is higher for business users. Upgrading beyond IE8 is not an option.
+>- You are not an average user. Most people do not understand IT. Many are terrified of it — or certainly worried they’ll break their PC. Migrating from something they know is a risk regardless of the benefits.
+\- "[Is Internet Explorer Development Really a Waste of Time?][Waste of Time]"
 
 ### What We've Done
 
@@ -447,6 +456,7 @@ In the [next chapter][Foundation Styles], we will begin to set up our foundation
 [Helpful Things]:       https://gist.github.com/1981339
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
+[Waste of Time]:        http://www.sitepoint.com/is-internet-explorer-development-really-a-waste-of-time/             
 
 
 [Basic HTML]:           http://chrismaxwell.com/rails-views/assets/getting-started/base-html-no-styles.png

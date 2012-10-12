@@ -3,7 +3,7 @@ Mobile Foundation
 
 Chapter 1 and 2 are great, really great in my opinion ;-), but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. I mean on the fringe back then there was talk about desktop screen sizes, but it could be overlooked. 
 
-Nowadays you cannot overlook screen sizes. You better believe that people are going to look at your website on a mobile phone or some kind of tablet, especially the iPad. In fact I think this is pretty much [common knowledge][], so let's just deal with it. How? Let's explore in this chapter.
+Nowadays you cannot overlook screen sizes. You better believe that people are going to look at your website on a mobile phone or some kind of tablet, especially an iPad. In fact I think this is pretty much [common knowledge][], so let's just deal with it. How? Let's explore in this chapter.
 
 ### Mobile First
 
