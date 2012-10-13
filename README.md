@@ -71,6 +71,18 @@ Table of Contents
   - Responsive Web Design
   - Where Do Styles Go?
   - User Agents or Media Queries
+- [Storytelling][]
+- [Slicing and Dicing Mockups][]
+  - Step 1 - Backgrounds
+  - Step 2 - Set Widths
+  - Step 3 - Fonts
+  - Step 4 - Images
+  - Step 5 - Sectioning Content (layout/application.html.haml)
+  - Step 6 - Start with %header and %footer
+  - Step 8 - Navigation
+  - Step 9 - HTML for the Main Content
+  - Step 10 - Sprites and CSS3 for Images
+
 - [Accessibility][]
   - Standardize Your Links
   - Use ARIA Roles
@@ -83,17 +95,6 @@ Table of Contents
   - Compressing and the Asset Pipeline
   - Spriting
   - What We've Done
-- [Slicing and Dicing Mockups][]
-  - Step 1 - Backgrounds
-  - Step 2 - Set Widths
-  - Step 3 - Fonts
-  - Step 4 - Images
-  - Step 5 - Sectioning Content (layout/application.html.haml)
-  - Step 6 - Start with %header and %footer
-  - Step 8 - Navigation
-  - Step 9 - HTML for the Main Content
-  - Step 10 - Sprites and CSS3 for Images
-- [Storytelling][]
 - [Getting the Fonts Right][]
   - font-family
 - [Images][]

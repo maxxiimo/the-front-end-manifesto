@@ -26,10 +26,10 @@ With Ruby on Rails there are three ways we can tackle mobile browsers:
 I'm undecided about which method I prefer insofar as 1 and 2 go. My gut tells me to separate concerns. Anyway, here are my thoughts on the subject:
 
 - Keep them separate and you can serve lighter, device specific stylesheets. This translates to less complexity and better performance.
-- Did I mention complexity?
 - As applications grow and user needs change, it might become necessary to separate mobile out completely. If you start out separate this transition might be easier.
-- Keep styles together, and no one will be left out, i.e. you won't forget to work on one while working on the other.
+- Keep styles together, and no one will be left out, i.e. you won't forget to work on one while working on the other, that is if you're the forgetful sort.
 - Designing for a mobile device, a tablet device, and a desktop could be time-consuming, response styles can accommodate all three.
+- With responsive design, change the code once and it trickles down to all devices.
 
 Right now "responsive" based on media queries is the rage. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" does a great job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote there that the author uses that resonates with me:
 

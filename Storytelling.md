@@ -1,28 +1,94 @@
-STORY TELLING
-People understand and remember stories.
+Storytelling
+------------
 
-For me Information Architecture (IA) is the "where" and "how" blocks of related information are grouped and then placed to tell the *story* of the site:
+Now that we have reviewed the three pillars of foundation work: markup, styles, and mobile, it's time to delve into actually building an application; its navigation, content, layout, look and feel. As a front end developer there really are only two ways about this:
 
-  - in a logical way: makes absolute sense to the end user
-  - invites/entices/causes the end user to take the next step, i.e. turn the page in the story
+1. Start from scratch and design everything yourself.
+2. Implement a design mockup into your foundation work.
 
-Before you define blocks of information you have to have a story.
+In this chapter we're going to review option 1. Perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself. Whatever the case, the key to being successful in this endeavor can be summed up in one word:
+s
+Storytelling.
 
-For example, the story might be: "I'm a great Web site for finding a job...a job that is perfect for you, you should join me, if you do you will have access to tons of perfect jobs and your life will change for the better forever!"
+Back in 2008 at "An Event Apart: Boston" I remember listening to Jason Santo Maria, then the Creative Director of Happy Cog Studios, give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, and that the designer is the narrator.People understand and remember stories, and what follows is an explanation of how to build a story for your website and translate that into code, and a site look and feel (styles).
+
+### Blocks of Information
+
+As I mentioned previously in chapter 1:
+
+> As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption.
+
+How does this relate to storytelling?
+
+A layout is really a mosaic of information that tells (conveys) something: a particular type of story. The layout information was grouped together based on some criteria, and then placed on a page viewed by the end-user. This information needed to be organized in some logical way to make absolute sense to the end-user, and it should invite/entice/cause the end-user to take the next step or action, i.e. turn the page in the story.
 
 
-BLOCKS OF INFORMATION
+### The Storyline
 
-In this short story I see 3 blocks of information: 1) what is the site in 10 words or less, 2) how do I join - a sign-up section, 3) and an area that describes the benefits of the site - maybe user testimonials.
+The unifying message behind this mosaic of information is the storyline. Before content can be discovered, grouped, and placed in a layout, the writer, in this case you, has to have the stories general theme in mind. For example, the storyline might be:
 
-Aside from the main story, also consider the basic information blocks that most Web sites require:
+"I'm a great Web site for finding a job...a job that is perfect for you, you should join me, if you do you will have access to tons of perfect jobs and your life will change for the better forever!"
 
- - a logo
- - legalese (Copyright, ToS, Privacy)
- - non-legal footer type info (Feedback, About, Contact, Site Map).
+In this theme example – with my Information Architect (IA) hat on – I immediately see several major blocks of information:
+
+1) What is the site in 10 words or less - possibly a summary box.
+2) How do I join - a sign-up section.
+3) An area that describes the benefits of the site - maybe user testimonials.
+4) The obvious table stakes to this story, the side story:
+   - A logo
+   - Legalese (Copyright, ToS, Privacy)
+   - Non-legal footer type info (Feedback, About, Contact, Site Map)
+
+...and as the front end developer I'm already beginning to imagine how these blocks of information will be conveyed. 
+
+This is exactly what you will need to do. Think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed.
+
+### Building Block Gathering
+
+To help me along this process, one technique I like to use when building a new application, whether I know exactly the way I want it to look or not, is to use index cards to visually create an inventory of possible information blocks. Here's how:
+
+**Step 1:** Write down in a word or two on an index card (or a bunch of tiny pieces of paper, a digital equivalent like PowerPoint, or even a single sheet of paper as a list) what the card represents: content, function, a navigational element, an image, video, whatever. Think of as many components to the application aas you can – whether just a single page or all of it. Color coding is helpful.
+
+**Step 2:** Lay the index cards on a table and begin organizing them.
+
+Wow, simple right? Here's a practical example I'm doing this for right now. I need a new website for my practice "ViewThought". My story theme goes something like this:
+
+"We are a great website design, development and user experience shop. We have tons of experience, have worked with a bunch of different clients who are all happy with our work, and we really care about what we do. We specialize in Ruby on Rails, and we pay special attention to what your users will see. You should hire us! ...or give us a call and learn more."
 
 
-PLACEMENT
+Okay, I immediately can see a few index card entries in my storyline. I write out everything I can think of, but I don't stop there, and you shouldn't either. Beside your own genius, it's good practice to see what other people are doing, like the sites competitors or similar services or types of websites. I've picked a bunch of sites to review. As I review them I add more index card entries.
+
+
+
+### Inspiration
+
+[Awwwards][]
+
+> Awwwards are the awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.
+
+[Pattern Tap][]
+
+> ...It’s a living classroom, where designers learn what is working well on the Web and why.
+
+[UI Patterns][]
+
+> User Interface Design patterns are recurring solutions that solve common design problems. Design patterns are standard reference points for the experienced user interface designer.
+
+[siteInspire][]
+
+> siteInspire is showcase and CSS gallery featuring the best web design today.
+
+[Awwwards]:             http://www.awwwards.com/
+[Pattern Tap]:          http://patterntap.com/
+[UI Patterns]:          http://ui-patterns.com/
+[siteInspire]:          http://siteinspire.com/showcase
+
+#### Prototyping
+
+I'm a strong proponent of prototyping on [paper first][]. Doing so helps you visualize the storytelling process above.
+
+               
+### Placement
 
 This is obvious but worth spending time on. After I define blocks of information, I start to think about where they will be placed. I want to call attention to different parts of the story depending on its relevance and importance in the story.
 
@@ -45,18 +111,13 @@ http://www.conceptfeedback.com
 
 Iterating is key.
 
+[Rocket Surgery Made Easy by Steve Krug: Usability Demo][Rocket Surgery]
 
 Finally when architecting remember that less is more and KISS (Keep It Simple Stupid).
 
 
-*******************************************************************************************
-
-
-[Modernizr]:            https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills 
-                        "A list of all shims, fallbacks, and polyfills in order to implant html5 functionality in browsers that don't natively support them."
 
 
 
-http://api.rubyonrails.org/classes/ActionView/Helpers/AssetTagHelper/JavascriptTagHelpers.html#method-i-javascript_include_tag
-
-http://guides.rubyonrails.org/asset_pipeline.html
+[paper first]:          http://generatedpaper.com/en/wireframing
+[Rocket Surgery]:       http://www.youtube.com/watch?v=QckIzHC99Xc&feature=player_embedded
