@@ -7,14 +7,16 @@ Now that we have reviewed the three pillars of foundation work: markup, styles, 
 2. Implement a design mockup into your foundation work.
 
 In this chapter we're going to review option 1. Perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself. Whatever the case, the key to being successful in this endeavor can be summed up in one word:
-s
+
 Storytelling.
 
-Back in 2008 at "An Event Apart: Boston" I remember listening to Jason Santo Maria, then the Creative Director of Happy Cog Studios, give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, and that the designer is the narrator.People understand and remember stories, and what follows is an explanation of how to build a story for your website and translate that into code, and a site look and feel (styles).
+Back in 2008 at "An Event Apart: Boston" I remember listening to [Jason Santa Maria][], then the Creative Director of Happy Cog Studios, give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. When I worked for Fidelity Investments as an  Information Architect, I remember another presenter at the company auditorium sharing his thoughts on storytelling and its importance in design. Although I no longer remember his name, I do remember his talk thesis: people understand and remember stories.
+
+These talks have stuck with me over the years, and have become the manner in which I view site design. What follows is an explanation of how to build a story for your website and translate that into code; and a site look and feel (styles).
 
 ### Blocks of Information
 
-As I mentioned previously in chapter 1:
+As I mentioned in chapter 1:
 
 > As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption.
 
@@ -118,6 +120,6 @@ Finally when architecting remember that less is more and KISS (Keep It Simple St
 
 
 
-
+[Jason Santa Maria]:    http://jasonsantamaria.com/
 [paper first]:          http://generatedpaper.com/en/wireframing
 [Rocket Surgery]:       http://www.youtube.com/watch?v=QckIzHC99Xc&feature=player_embedded
