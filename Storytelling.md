@@ -88,27 +88,37 @@ Finally, when architecting remember that less is more and KISS (Keep It Simple S
 
 ### Look and Feel
 
+Use a framework. We listed several frameworks you can use and [chapter 2][].
 
+Reverse engineer pieces of things you already like.
+
+Find a plug-in.
+
+Hire a designer. With your layout set half of the designers work is done. Now he or she needs to pull it all together with a stellar look and feel. When hiring a designer, make sure you let them know that the layout you have in place is not set in stone. This way your designer can add their experience to the project. Here are some resources for finding designers:
+
+- 
+
+Buy a template. Templates are significantly less expensive than hiring a designer. As a front end coder implementing them into your layout should be a breeze. Here are some template resources:
+
+- 
+
+Read a tutorial.
 
 #### Inspiration
 
-In addition to reviewing competitor sites or similar services to help generate ideas, the following sites might also inspire you:
-
-[Awwwards][]
+In addition to reviewing competitor sites or similar services to help generate ideas, the following sites might also inspire or provide you with best practices/design patterns:
 
 > Awwwards are the awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.
-
-[Pattern Tap][]
+\- [Awwwards][]
 
 > ...It’s a living classroom, where designers learn what is working well on the Web and why.
-
-[UI Patterns][]
+\- [Pattern Tap][]
 
 > User Interface Design patterns are recurring solutions that solve common design problems. Design patterns are standard reference points for the experienced user interface designer.
-
-[siteInspire][]
+\- [UI Patterns][]
 
 > siteInspire is showcase and CSS gallery featuring the best web design today.
+\- [siteInspire][]
 
 ### Feedback
 
@@ -117,25 +127,25 @@ One very important thing to practice when designing interfaces is do nothing in 
 > Get Website Feedback and Increase Conversion Rates
 > Expert analysis, detailed recommendations and solutions you can implement today.
 
-/- [Concept Feedback][]
+\- [Concept Feedback][]
 
 > Get useful, actionable results, improve usability in no time, and
 create a site your users will love.
 
-/- [IntuitHQ][]
+\- [IntuitHQ][]
 
 > Loop11 is a remote usability testing tool that enables you to test the user-experience of any website and identify navigational and usability issues. Get the hard facts about your website quickly and cost effectively!
 
-/- [Loop11][]
+\- [Loop11][]
 
 >Guerrilla usability testing software for designers and developers
 
-/- [Silverback][]
+\- [Silverback][]
 
 > Usability Testing Has Never Been Easier
 > The fastest, cheapest way to find out why users leave your website
 
-/- [UserTesting.com][]
+\- [UserTesting.com][]
 
 Steve Krug your book on usability testing, and gives a basic demo of it on YouTube:
 
@@ -146,6 +156,7 @@ Steve Krug your book on usability testing, and gives a basic demo of it on YouTu
 
 
 [Jason Santa Maria]:    http://jasonsantamaria.com/
+[chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md
 [Awwwards]:             http://www.awwwards.com/
 [Pattern Tap]:          http://patterntap.com/
 [UI Patterns]:          http://ui-patterns.com/
