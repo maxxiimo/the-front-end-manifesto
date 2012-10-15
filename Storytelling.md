@@ -109,15 +109,19 @@ Read a tutorial.
 In addition to reviewing competitor sites or similar services to help generate ideas, the following sites might also inspire or provide you with best practices/design patterns:
 
 > Awwwards are the awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.
-\- [Awwwards][]<br>
+
+\- [Awwwards][]
 
 > ...It’s a living classroom, where designers learn what is working well on the Web and why.
-\- [Pattern Tap][]<br>
+
+\- [Pattern Tap][]
 
 > User Interface Design patterns are recurring solutions that solve common design problems. Design patterns are standard reference points for the experienced user interface designer.
-\- [UI Patterns][]<br>
+
+\- [UI Patterns][]
 
 > siteInspire is showcase and CSS gallery featuring the best web design today.
+
 \- [siteInspire][]
 
 ### Feedback
