@@ -10,9 +10,9 @@ In this chapter we're going to review option 1. Perhaps there isn't money in the
 
 Storytelling.
 
-Back in 2008 at "An Event Apart: Boston" I remember listening to [Jason Santa Maria][], then the Creative Director of Happy Cog Studios, give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. When I worked for Fidelity Investments as an  Information Architect, I remember another presenter at the company auditorium sharing his thoughts on storytelling and its importance in design. Although I no longer remember his name, I do remember his talk thesis: people understand and remember stories.
+Back in 2008 at "An Event Apart: Boston" I remember listening to [Jason Santa Maria][], then the Creative Director of Happy Cog Studios, give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. When I worked for Fidelity Investments as an  Information Architect, I remember another presenter that same year at the company auditorium sharing his thoughts on storytelling and its importance in design. Although I no longer remember his name, I do remember his talk thesis: people understand and remember stories.
 
-These talks have stuck with me over the years, and have become the manner in which I view site design. What follows is an explanation of how to build a story for your website and translate that into code; and a site look and feel (styles).
+These talks have stuck with me over the years, and have become the manner in which I view site design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code, and the sites look and feel (styles).
 
 ### Blocks of Information
 
@@ -20,10 +20,9 @@ As I mentioned in chapter 1:
 
 > As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption.
 
-How does this relate to storytelling?
+How does how does organizing information and function relate to storytelling?
 
-A layout is really a mosaic of information that tells (conveys) something: a particular type of story. The layout information was grouped together based on some criteria, and then placed on a page viewed by the end-user. This information needed to be organized in some logical way to make absolute sense to the end-user, and it should invite/entice/cause the end-user to take the next step or action, i.e. turn the page in the story.
-
+A layout is really a mosaic of information that tells (conveys) something: a particular type of story. This information was grouped together based on some criteria, and then placed on a website "page" that ultimately gets viewed by an end-user. This information needed to be organized in some logical way to make absolute sense to the end-user, and probably designed to invite/entice/cause the end-user to take the next step or action, i.e. turn the page in the story.
 
 ### The Storyline
 
@@ -45,24 +44,55 @@ In this theme example – with my Information Architect (IA) hat on – I immediatel
 
 This is exactly what you will need to do. Think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed.
 
-### Building Block Gathering
+### Gathering and Organizing Information
 
-To help me along this process, one technique I like to use when building a new application, whether I know exactly the way I want it to look or not, is to use index cards to visually create an inventory of possible information blocks. Here's how:
+To help me along this process, one technique I like to use, whether I know exactly what I'm after or not, is to use index cards to visually create an inventory of possible information blocks:
 
-**Step 1:** Write down in a word or two on an index card (or a bunch of tiny pieces of paper, a digital equivalent like PowerPoint, or even a single sheet of paper as a list) what the card represents: content, function, a navigational element, an image, video, whatever. Think of as many components to the application aas you can – whether just a single page or all of it. Color coding is helpful.
+**Step 1:** Write down in a word or two on an index card (or a bunch of tiny pieces of paper, a digital equivalent like PowerPoint, or even a single sheet of paper as a list of items) what the card represents: content, function, a navigational element, an image, video, whatever. Think of as many components to the page or application as you can – I prefer dealing with a single view at a time.
 
-**Step 2:** Lay the index cards on a table and begin organizing them.
+NOTE: Color coding is helpful.
 
-Wow, simple right? Here's a practical example I'm doing this for right now. I need a new website for my practice "ViewThought". My story theme goes something like this:
+**Step 2:** Lay the index cards on a table and begin organizing them into logical groupings like navigation. Not all cards need to be included.
+
+It's best to do this exercise with others, most especially stakeholders in the project. This way you can brainstorm, bring in new ideas, and team members, clients, customers can provide input and begin to see progress.
+
+Here's a practical example. I need a new website for my practice "ViewThought". My story theme goes something like this:
 
 "We are a great website design, development and user experience shop. We have tons of experience, have worked with a bunch of different clients who are all happy with our work, and we really care about what we do. We specialize in Ruby on Rails, and we pay special attention to what your users will see. You should hire us! ...or give us a call and learn more."
 
+I immediately can see a few index card entries in my storyline and write out everything I can think of, but I don't stop there. Beside your own genius, it's good practice to see what other people are doing, like the sites competitors or similar services or types of websites. I've bookmarked a bunch of sites to review. As I review them I add more index card entries. Here's what they look like laid out on a table:
 
-Okay, I immediately can see a few index card entries in my storyline. I write out everything I can think of, but I don't stop there, and you shouldn't either. Beside your own genius, it's good practice to see what other people are doing, like the sites competitors or similar services or types of websites. I've picked a bunch of sites to review. As I review them I add more index card entries.
+***ADD PHOTO HERE***
+
+I have XXX index cards laid out. After evaluating and reorganizing here is what I'm left with:
+
+***ADD PHOTO HERE***
+
+I started this section by saying "whether I know exactly what I'm after or not" because as a front-end coder it is so easy for me to just start coding and change things on the fly as I move along. In fact, I'd rather just do that. The manual process of labeling index cards and laying them out though forces me think outside of the box, and not work in isolation. There's just enough chance of a better outcome by doing the exercise that it's worth doing.
+
+### Prototyping
+
+As I define blocks of information, especially while laying the site out in index cards, I start to think about where information will be placed. I want to call attention to different parts of the story depending on its relevance and importance to the story.
+
+Basically I think like a newspaper layout editor. I also "borrow from the best" to get ideas about my layout by seeing what’s out there on the Web through inspiration sites like the ones listed above. I highly recommend the book "[Don't Make Me Think][]" by Steve Krug. It’s a good read and everything he says is so darn obvious, and all there in one great reference.
+
+I'm a strong proponent of prototyping on [paper][] after you have gathered and organized your blocks of information. Doing so helps you visualize the layout and gives you some more opportunities for input, reflection and brainstorming before you begin coding, plus it is exactly how you will transfer your index card thinking to code. It your blueprint and where you will really think about how the page is going to visually look and function. Paper is also highly portable, requires no electricity, can easily be shared with others, and its use is a skill that is shared by all stakeholders.
+
+Here's what my application looks like so far:
+
+***ADD PHOTO HERE***
+
+NOTE: There are a number of applications out there that can help in this process, but I prefer to go old-school with a pencil, eraser and [paper][]. For presentational purposes you can transfer this exercise to PowerPoint or some other application for prototyping, but don't get bogged down and waste time doing so. At this point start coding! Remember, you have laid out the groundwork in chapters 1 through 3 for your application and hopefully have deployed on Heroku. If clients need to review beyond these early exercises, there's nothing better than sending them to a URL with placeholders that they can click through to simulate the actual application.
+
+Finally, when architecting remember that less is more and KISS (Keep It Simple Stupid).
+
+### Look and Feel
 
 
 
-### Inspiration
+#### Inspiration
+
+In addition to reviewing competitor sites or similar services to help generate ideas, the following sites might also inspire you:
 
 [Awwwards][]
 
@@ -80,46 +110,51 @@ Okay, I immediately can see a few index card entries in my storyline. I write ou
 
 > siteInspire is showcase and CSS gallery featuring the best web design today.
 
-[Awwwards]:             http://www.awwwards.com/
-[Pattern Tap]:          http://patterntap.com/
-[UI Patterns]:          http://ui-patterns.com/
-[siteInspire]:          http://siteinspire.com/showcase
+### Feedback
 
-#### Prototyping
+One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try something like:
 
-I'm a strong proponent of prototyping on [paper first][]. Doing so helps you visualize the storytelling process above.
+> Get Website Feedback and Increase Conversion Rates
+> Expert analysis, detailed recommendations and solutions you can implement today.
 
-               
-### Placement
+/- [Concept Feedback][]
 
-This is obvious but worth spending time on. After I define blocks of information, I start to think about where they will be placed. I want to call attention to different parts of the story depending on its relevance and importance in the story.
+> Get useful, actionable results, improve usability in no time, and
+create a site your users will love.
 
-Basically I think like a newspaper layout editor. I also "borrow from the best" to get ideas about my layout by seeing what’s out there on the Web.
+/- [IntuitHQ][]
 
-I highly recommend the book:
+> Loop11 is a remote usability testing tool that enables you to test the user-experience of any website and identify navigational and usability issues. Get the hard facts about your website quickly and cost effectively!
 
-"Don't Make Me Think" by Steve Krug - http://www.sensible.com/index.html
+/- [Loop11][]
 
-It’s a good read and everything he says is so darn obvious, and all there in one great reference.
+>Guerrilla usability testing software for designers and developers
 
+/- [Silverback][]
 
-FEEDBACK
+> Usability Testing Has Never Been Easier
+> The fastest, cheapest way to find out why users leave your website
 
-One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise)
+/- [UserTesting.com][]
 
-You have to get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try something like:
+Steve Krug your book on usability testing, and gives a basic demo of it on YouTube:
 
-http://www.conceptfeedback.com
+- [Rocket Surgery Made Easy by Steve Krug: Usability Demo][Rocket Surgery]
 
-Iterating is key.
-
-[Rocket Surgery Made Easy by Steve Krug: Usability Demo][Rocket Surgery]
-
-Finally when architecting remember that less is more and KISS (Keep It Simple Stupid).
-
+### What We've Done
 
 
 
 [Jason Santa Maria]:    http://jasonsantamaria.com/
-[paper first]:          http://generatedpaper.com/en/wireframing
+[Awwwards]:             http://www.awwwards.com/
+[Pattern Tap]:          http://patterntap.com/
+[UI Patterns]:          http://ui-patterns.com/
+[siteInspire]:          http://siteinspire.com/showcase
+[paper]:                http://generatedpaper.com/en/wireframing
+[Don't Make Me Think]:  http://www.sensible.com/index.html
+[Concept Feedback]:     http://www.conceptfeedback.com/
+[IntuitHQ]:             http://www.intuitionhq.com/
+[Loop11]:               http://www.loop11.com/
+[Silverback]:           http://silverbackapp.com/
+[UserTesting.com]:      http://www.usertesting.com/
 [Rocket Surgery]:       http://www.youtube.com/watch?v=QckIzHC99Xc&feature=player_embedded

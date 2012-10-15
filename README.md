@@ -72,6 +72,14 @@ Table of Contents
   - Where Do Styles Go?
   - User Agents or Media Queries
 - [Storytelling][]
+  - Blocks of Information
+  - The Storyline
+  - Gathering and Organizing Information
+  - Prototyping
+  - Look and Feel
+    - Inspiration
+  - Feedback
+  - What We've Done
 - [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
@@ -82,7 +90,6 @@ Table of Contents
   - Step 8 - Navigation
   - Step 9 - HTML for the Main Content
   - Step 10 - Sprites and CSS3 for Images
-
 - [Accessibility][]
   - Standardize Your Links
   - Use ARIA Roles
