@@ -69,8 +69,8 @@ To get started, if you're not sure where to begin, take a look at this round up 
 
 5.  The [mobvious-rails][] gem allows you to:
 
-    > Access detected device type easily from controllers and views.
-    > Execute code for given device types only. Both in controllers and views.
+    > Access detected device type easily from controllers and views.<br>
+    > Execute code for given device types only. Both in controllers and views.<br>
     > Do the above stuff also in your CoffeeScript.
 
 6.  [Agent_orange][agent_orange] looks interesting. Although stable, it has its issues per the maintainers readme.
