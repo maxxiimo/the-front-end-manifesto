@@ -51,9 +51,44 @@ To accomplish ubiquity we developed a super dumbed down HTML 1.0 interface that 
 
 Fast-forward to today, with smart phones for the most part we now concentrate solely on screen size (and hooking into a device's native functionality as a non-native entity, but that's for another chapter). One huge difference between then and now is the mobile browser. With its maturity and ubiquity across these devices, as front end developers we can concentrate on real estate, and like my days at Fidelity, will use the user agent to determine what markup and styles to serve.
 
-#### An Introduction
+### Mobile Solutions Roundup
 
 To get started, if you're not sure where to begin, take a look at Ryan Bates screencast "[Mobile Devices][]".
+
+In tthe following tutorial the author shows you how to use the [mobylette][] and [jquery_mobile_rails][] gems in your application. The mobylette gem handles requests and allows your controller to respond with a :mobile format, while the jquery-mobile-rails gem adds [jQuery Mobile][] files to your asset pipeline which helps make everything look great and work like a native mobile app.
+
+- [How to Build a Mobile Rails 3.1 App][How to Build]
+
+Much like mobylette, [mobile-fu][] detects mobile requests and allows you to respond with a :mobile format. As of this writing there doesn't seem to be too much activity happening with this gem.
+
+- [Mobilize Your Rails Application with Mobile Fu][Mobilize Rails]
+
+There is a rack-based detection solution called [mobvious][]:
+
+> Mobvious detects whether your app / website is being accessed by a phone, or by a tablet, or by a personal computer. You can then use this information throughout your app. (E.g. fork your front-end code with regard to device type. There is a [plugin][mobvious-rails] for Ruby on Rails that helps you with this.)
+
+The [mobvious-rails][] gem allows you to "access detected device type easily from controllers and views."
+
+Here's an idea where mobile templates are placed in a separate directory, and when requests come in from a mobile subdomain like m.domain.com they are served these templates. If the templates are not available, they are served the regular view templates. This in effect frees you from the work of creating two templates for every action. In the solution the user can switch between the two templates, and if they hit the server from the regular domain but require mobile ready templates, they're automatically redirected through user agent detection. 
+
+[Agent_orange][agent_orange] looks interesting. Although stable, it has its issues per the maintainers account.
+
+
+- [Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]
+
+If you're looking to beef up your detection capabilities, here's a service you can try (includes free and paid plans):
+
+- [Handset Detection][]
+
+Here is a list of mobile strings you could incorporate into your project if you wanted to get granular:
+
+- [Mobile Browser ID (User-Agent) Strings][Mobile Strings]
+
+#### iPad
+
+[iOS Human Interface Guidelines][iOS Guidelines]
+
+[iOS Guidelines]: http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40006556-CH1-SW1
 
 
 ### Responsive Web Design
@@ -81,6 +116,18 @@ Some argue that including mobile and print* styles in the same partials will hel
 [Brian Fling]:          http://shop.oreilly.com/product/9780596155452.do
 [Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile               
 [Mobile Devices]:       http://railscasts.com/episodes/199-mobile-devices
+[mobylette]:            https://github.com/tscolari/mobylette
+[jquery_mobile_rails]:  https://github.com/tscolari/jquery-mobile-rails
+[mobile-fu]:            https://github.com/brendanlim/mobile-fu
+[Mobilize Rails]:       http://www.intridea.com/blog/2008/7/21/mobilize-your-rails-application-with-mobile-fu#
+[jQuery Mobile]:        http://jquerymobile.com/demos/1.2.0/
+[How to Build]:         https://dev.tscolari.me/2011/09/15/how-to-build-a-mobile-rails-3-dot-1-app/
+[mobvious]:             https://github.com/jistr/mobvious
+[mobvious-rails]:       https://github.com/jistr/mobvious-rails
+[agent_orange]:         https://github.com/kevinelliott/agent_orange
+[Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
+[Handset Detection]:    http://code.google.com/p/mobile-device-detection-ruby-on-rails/
+[Mobile Strings]:       http://www.zytrax.com/tech/web/mobile_ids.html
 
 [Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html

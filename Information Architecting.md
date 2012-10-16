@@ -1,5 +1,5 @@
-Storytelling
-------------
+Information Architecting
+------------------------
 
 Now that we have reviewed the three pillars of foundation work: markup, styles, and mobile, it's time to delve into actually building your websites/application. The best place to start is with the splash page or application console: its navigation, content, layout, look and feel. Your homepage and/or application console is of critical importance to your project. Most of the time it is the first thing that a user will see, and how the end-user will understand your [whatever your building] and how they will [whatever they will do], and it sets the tone and unifying theme for every subsequent page or functionality.
 
@@ -15,7 +15,7 @@ These talks have stuck with me over the years, and have become the manner in whi
 2. Work with a designer from the get-go and implement a design mockup into your foundation work.
 1. Start from scratch and architect yourself, then get help from a designer on the look and feel.
 
-In this chapter we're going to mostly focus on option 1 and 3. Hiring a designer from the get-go is not a bad idea since design and front end engineering are to complete different skill sets, but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself. Typically I have found that as a consultant, when I'm brought into a project design mockups have already been developed and it's now my job to implement them into the application. The next chapter, [Slicing and Dicing Mockups][] will dive into the mechanics of doing exactly that.
+In this chapter we're going to mostly focus on option 1 and 3. Hiring a designer from the get-go is not a bad idea since design and front end engineering are to complete different skill sets, but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself. Typically I have found that as a consultant, when I'm brought into a project design mockups have already been developed and it's now my job to implement them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
 
 ### Blocks of Information
 
@@ -79,7 +79,10 @@ As I define blocks of information, especially while laying the site out in index
 
 Basically I think like a newspaper layout editor. I also "borrow from the best" to get ideas about my layout by seeing what’s out there on the Web through inspiration sites like the ones listed above. I highly recommend the book "[Don't Make Me Think][]" by Steve Krug. It’s a good read and everything he says is so darn obvious, and all there in one great reference.
 
-I'm a strong proponent of prototyping on [paper][] after you have gathered and organized your blocks of information. Doing so helps you visualize the layout and gives you some more opportunities for input, reflection and brainstorming before you begin coding, plus it is exactly how you will transfer your index card thinking to code. It your blueprint and where you will really think about how the page is going to visually look and function. Paper is also highly portable, requires no electricity, can easily be shared with others, and its use is a skill that is shared by all stakeholders.
+I'm a strong proponent of prototyping on paper after you have gathered and organized your blocks of information. Doing so helps you visualize the layout and gives you some more opportunities for input, reflection and brainstorming before you begin coding, plus it is exactly how you will transfer your index card thinking to code. It your blueprint and where you will really think about how the page is going to visually look and function. Paper is also highly portable, requires no electricity, can easily be shared with others, and its use is a skill that is shared by all stakeholders. Here are some resources that will help you sketch:
+
+[Paper][]
+[Interface Sketch][]
 
 Here's what my application looks like so far:
 
@@ -100,6 +103,10 @@ Find a plug-in.
 Hire a designer. With your layout set half of the designers work is done. Now he or she needs to pull it all together with a stellar look and feel. When hiring a designer, make sure you let them know that the layout you have in place is not set in stone. This way your designer can add their experience to the project. Here are some resources for finding designers:
 
 - 
+
+Get a freebie.
+
+- [Premium Pixels][]
 
 Buy a template. Templates are significantly less expensive than hiring a designer. As a front end coder implementing them into your layout should be a breeze. Here are some template resources:
 
@@ -126,6 +133,18 @@ In addition to reviewing competitor sites or similar services to help generate i
 > siteInspire is showcase and CSS gallery featuring the best web design today.
 
 \- [siteInspire][]
+
+> Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.
+
+Here are a few examples:
+
+> Stop, Look, Click: Attention-Grabbing Elements in Web Design
+
+\- [Codrops][Codrops 1]
+
+> Make a Statement with Type
+
+\- [Codrops][Codrops 2]
 
 ### Feedback
 
@@ -163,12 +182,17 @@ Steve Krug your book on usability testing, and gives a basic demo of it on YouTu
 
 
 [Jason Santa Maria]:    http://jasonsantamaria.com/
+[Slicing and Dicing]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Slicing%20and%20Dicing%20Mockups.md
 [chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md
+[Premium Pixels]:       http://www.premiumpixels.com/
 [Awwwards]:             http://www.awwwards.com/
 [Pattern Tap]:          http://patterntap.com/
 [UI Patterns]:          http://ui-patterns.com/
 [siteInspire]:          http://siteinspire.com/showcase
-[paper]:                http://generatedpaper.com/en/wireframing
+[Codrops 1]:            http://tympanus.net/codrops/2012/09/28/stop-look-click-attention-grabbing-elements-in-web-design/
+[Codrops 2]:            http://tympanus.net/codrops/2012/09/26/make-a-statement-with-type/
+[Paper]:                http://generatedpaper.com/en/wireframing
+[Interface Sketch]:     http://interfacesketch.tumblr.com/
 [Don't Make Me Think]:  http://www.sensible.com/index.html
 [Concept Feedback]:     http://www.conceptfeedback.com/
 [IntuitHQ]:             http://www.intuitionhq.com/

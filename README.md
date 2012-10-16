@@ -67,11 +67,11 @@ Table of Contents
   - Mobile First
   - Plan of Attack
   - User Agent Sniffing
-    - An Introduction
+  - Mobile Solutions Roundup
   - Responsive Web Design
   - Where Do Styles Go?
   - User Agents or Media Queries
-- [Storytelling][]
+- [Information Architecting][]
   - Blocks of Information
   - The Storyline
   - Gathering and Organizing Information
@@ -139,7 +139,7 @@ Table of Contents
 [Accessibility]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Accessibility.md
 [Optimization]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Optimization.md
 [Slicing and Dicing Mockups]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Slicing%20and%20Dicing%20Mockups.md
-[Storytelling]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Storytelling.md
+[Information Architecting]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Information%20Architecting.md
 [Getting the Fonts Right]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Getting%20the%20Fonts%20Right.md
 [Images]:                            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Images.md
 [Forms]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Forms.md
