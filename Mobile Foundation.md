@@ -63,7 +63,7 @@ To get started, if you're not sure where to begin, take a look at this round up 
 
 3.  Much like mobylette, [mobile-fu][] detects mobile requests and allows you to respond with a :mobile format. As of this writing there doesn't seem to be too much activity happening with this gem.
 
-  - [Mobilize Your Rails Application with Mobile Fu][Mobilize Rails]
+    - [Mobilize Your Rails Application with Mobile Fu][Mobilize Rails]
 
 4.  There is a rack-based detection solution called [mobvious][]:
 
@@ -75,24 +75,19 @@ To get started, if you're not sure where to begin, take a look at this round up 
 
 7.  [UserAgent][] is a Ruby library that parses and compares HTTP User Agents.
 
-8.  Here's an idea where mobile templates are placed in a separate directory, and when requests come in from a mobile subdomain like m.domain.com they are served these templates. If the templates are not available, they are served the regular view templates. This in effect frees you from the work of creating two templates for every action. In the solution the user can switch between the two templates, and if they hit the server from the regular domain but require mobile ready templates, they're automatically redirected through user agent detection. 
+9.  [Browser][] is a gem that allows you to test for the browser being used including mobile browsers, and includes ActionController integration.
 
-  - [Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]
+10. Here's an idea where mobile templates are placed in a separate directory, and when requests come in from a mobile subdomain like m.domain.com they are served these templates. If the templates are not available, they are served the regular view templates. This in effect frees you from the work of creating two templates for every action. In the solution the user can switch between the two templates, and if they hit the server from the regular domain but require mobile ready templates, they're automatically redirected through user agent detection. 
 
-9.  If you're looking to beef up your detection capabilities, here's a service you can try (includes free and paid plans):
+    - [Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]
 
-  - [Handset Detection][]
+11. If you're looking to beef up your detection capabilities, here's a service you can try (includes free and paid plans):
 
-10. Here is a list of mobile strings you could incorporate into your project if you wanted to get granular:
+    - [Handset Detection][]
 
-  - [Mobile Browser ID (User-Agent) Strings][Mobile Strings]
+12. Here is a list of mobile strings you could incorporate into your project if you wanted to get granular:
 
-#### iPad
-
-[iOS Human Interface Guidelines][iOS Guidelines]
-
-[iOS Guidelines]: http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40006556-CH1-SW1
-
+    - [Mobile Browser ID (User-Agent) Strings][Mobile Strings]
 
 ### Responsive Web Design
 
@@ -100,18 +95,7 @@ Ethan Marcotte is widely credited for coining the term "Responsive Web Design" i
 
 [This Is Responsive][]
 
-### Where Do Styles Go?
 
-Some argue that including mobile and print* styles in the same partials will help you remember that they are there. 
-
-
-
-
-
-
-
-????
-"Because the assets all concatenate into one file, there are no seperate files to be included on a view-by-view basis." [Asset Pipeline for Dummies][Asset Pipeline]
 
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/cover
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
@@ -129,6 +113,7 @@ Some argue that including mobile and print* styles in the same partials will hel
 [mobvious-rails]:       https://github.com/jistr/mobvious-rails
 [agent_orange]:         https://github.com/kevinelliott/agent_orange
 [UserAgent]:            https://github.com/josh/useragent
+[Browser]:              https://github.com/fnando/browser
 [Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
 [Handset Detection]:    http://code.google.com/p/mobile-device-detection-ruby-on-rails/
 [Mobile Strings]:       http://www.zytrax.com/tech/web/mobile_ids.html
