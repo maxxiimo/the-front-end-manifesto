@@ -59,11 +59,11 @@ To get started, if you're not sure where to begin, take a look at this round up 
 
 2.  In the following tutorial the author shows you how to use the [mobylette][] and [jquery_mobile_rails][] gems in your application. The mobylette gem handles requests and allows your controller to respond with a :mobile format, while the jquery-mobile-rails gem adds [jQuery Mobile][] files to your asset pipeline which helps make everything look great and work like a native mobile app.
 
-  - [How to Build a Mobile Rails 3.1 App][How to Build]
+    \- [How to Build a Mobile Rails 3.1 App][How to Build]
 
 3.  Much like mobylette, [mobile-fu][] detects mobile requests and allows you to respond with a :mobile format. As of this writing there doesn't seem to be too much activity happening with this gem.
 
-    - [Mobilize Your Rails Application with Mobile Fu][Mobilize Rails]
+    \- [Mobilize Your Rails Application with Mobile Fu][Mobilize Rails]
 
 4.  There is a rack-based detection solution called [mobvious][]:
 
@@ -79,15 +79,15 @@ To get started, if you're not sure where to begin, take a look at this round up 
 
 10. Here's an idea where mobile templates are placed in a separate directory, and when requests come in from a mobile subdomain like m.domain.com they are served these templates. If the templates are not available, they are served the regular view templates. This in effect frees you from the work of creating two templates for every action. In the solution the user can switch between the two templates, and if they hit the server from the regular domain but require mobile ready templates, they're automatically redirected through user agent detection. 
 
-    - [Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]
+    \- [Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]
 
 11. If you're looking to beef up your detection capabilities, here's a service you can try (includes free and paid plans):
 
-    - [Handset Detection][]
+    \- [Handset Detection][]
 
 12. Here is a list of mobile strings you could incorporate into your project if you wanted to get granular:
 
-    - [Mobile Browser ID (User-Agent) Strings][Mobile Strings]
+    \- [Mobile Browser ID (User-Agent) Strings][Mobile Strings]
 
 ### Responsive Web Design
 
