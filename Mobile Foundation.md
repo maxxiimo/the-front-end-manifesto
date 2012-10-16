@@ -53,36 +53,39 @@ Fast-forward to today, with smart phones for the most part we now concentrate so
 
 ### Mobile Solutions Roundup
 
-To get started, if you're not sure where to begin, take a look at Ryan Bates screencast "[Mobile Devices][]".
+To get started, if you're not sure where to begin, take a look at this round up of mobile solutions:
 
-In tthe following tutorial the author shows you how to use the [mobylette][] and [jquery_mobile_rails][] gems in your application. The mobylette gem handles requests and allows your controller to respond with a :mobile format, while the jquery-mobile-rails gem adds [jQuery Mobile][] files to your asset pipeline which helps make everything look great and work like a native mobile app.
+1.  Ryan Bates screencast "[Mobile Devices][]".
 
-- [How to Build a Mobile Rails 3.1 App][How to Build]
+2.  In the following tutorial the author shows you how to use the [mobylette][] and [jquery_mobile_rails][] gems in your application. The mobylette gem handles requests and allows your controller to respond with a :mobile format, while the jquery-mobile-rails gem adds [jQuery Mobile][] files to your asset pipeline which helps make everything look great and work like a native mobile app.
 
-Much like mobylette, [mobile-fu][] detects mobile requests and allows you to respond with a :mobile format. As of this writing there doesn't seem to be too much activity happening with this gem.
+  - [How to Build a Mobile Rails 3.1 App][How to Build]
 
-- [Mobilize Your Rails Application with Mobile Fu][Mobilize Rails]
+3.  Much like mobylette, [mobile-fu][] detects mobile requests and allows you to respond with a :mobile format. As of this writing there doesn't seem to be too much activity happening with this gem.
 
-There is a rack-based detection solution called [mobvious][]:
+  - [Mobilize Your Rails Application with Mobile Fu][Mobilize Rails]
 
-> Mobvious detects whether your app / website is being accessed by a phone, or by a tablet, or by a personal computer. You can then use this information throughout your app. (E.g. fork your front-end code with regard to device type. There is a [plugin][mobvious-rails] for Ruby on Rails that helps you with this.)
+4.  There is a rack-based detection solution called [mobvious][]:
 
-The [mobvious-rails][] gem allows you to "access detected device type easily from controllers and views."
+    > Mobvious detects whether your app / website is being accessed by a phone, or by a tablet, or by a personal computer. You can then use this information throughout your app. (E.g. fork your front-end code with regard to device type. There is a [plugin][mobvious-rails] for Ruby on Rails that helps you with this.)
 
-Here's an idea where mobile templates are placed in a separate directory, and when requests come in from a mobile subdomain like m.domain.com they are served these templates. If the templates are not available, they are served the regular view templates. This in effect frees you from the work of creating two templates for every action. In the solution the user can switch between the two templates, and if they hit the server from the regular domain but require mobile ready templates, they're automatically redirected through user agent detection. 
+5.  The [mobvious-rails][] gem allows you to "access detected device type easily from controllers and views."
 
-[Agent_orange][agent_orange] looks interesting. Although stable, it has its issues per the maintainers account.
+6.  [Agent_orange][agent_orange] looks interesting. Although stable, it has its issues per the maintainers account.
 
+7.  [UserAgent][] is a Ruby library that parses and compares HTTP User Agents.
 
-- [Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]
+8.  Here's an idea where mobile templates are placed in a separate directory, and when requests come in from a mobile subdomain like m.domain.com they are served these templates. If the templates are not available, they are served the regular view templates. This in effect frees you from the work of creating two templates for every action. In the solution the user can switch between the two templates, and if they hit the server from the regular domain but require mobile ready templates, they're automatically redirected through user agent detection. 
 
-If you're looking to beef up your detection capabilities, here's a service you can try (includes free and paid plans):
+  - [Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]
 
-- [Handset Detection][]
+9.  If you're looking to beef up your detection capabilities, here's a service you can try (includes free and paid plans):
 
-Here is a list of mobile strings you could incorporate into your project if you wanted to get granular:
+  - [Handset Detection][]
 
-- [Mobile Browser ID (User-Agent) Strings][Mobile Strings]
+10. Here is a list of mobile strings you could incorporate into your project if you wanted to get granular:
+
+  - [Mobile Browser ID (User-Agent) Strings][Mobile Strings]
 
 #### iPad
 
@@ -125,6 +128,7 @@ Some argue that including mobile and print* styles in the same partials will hel
 [mobvious]:             https://github.com/jistr/mobvious
 [mobvious-rails]:       https://github.com/jistr/mobvious-rails
 [agent_orange]:         https://github.com/kevinelliott/agent_orange
+[UserAgent]:            https://github.com/josh/useragent
 [Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
 [Handset Detection]:    http://code.google.com/p/mobile-device-detection-ruby-on-rails/
 [Mobile Strings]:       http://www.zytrax.com/tech/web/mobile_ids.html
