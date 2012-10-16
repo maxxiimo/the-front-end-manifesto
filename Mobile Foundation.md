@@ -57,11 +57,11 @@ To get started, if you're not sure where to begin, take a look at this round up 
 
 1.  Ryan Bates screencast "[Mobile Devices][]".
 
-2.  In the  tutorial "[How to Build a Mobile Rails 3.1 App][How to Build]" the author shows you how to use the [mobylette][] and [jquery_mobile_rails][] gems in your application. The mobylette gem handles requests and allows your controller to respond with a :mobile format, while the jquery-mobile-rails gem adds [jQuery Mobile][] files to your asset pipeline which helps make everything look great and work like a native mobile app.
+2.  The tutorial "[How to Build a Mobile Rails 3.1 App][How to Build]" demonstrates how to use the [mobylette][] and [jquery_mobile_rails][] gems. The mobylette gem handles requests and allows your controller to respond with a :mobile format, while the jquery-mobile-rails gem adds [jQuery Mobile][] files to your asset pipeline: which helps make everything look great and work like a native mobile app.
 
-3.  Much like mobylette, [mobile-fu][] detects mobile requests and allows you to respond with a :mobile format. Here's some more information on this gem:
+3.  Much like mobylette, [mobile-fu][] detects mobile requests and allows your application to respond with a :mobile format. Here's a brief how to:
 
-    \- [Mobilize Your Rails Application with Mobile Fu][Mobilize Rails]
+    [Mobilize Your Rails Application with Mobile Fu][Mobilize Rails]
 
 4.  There is a rack-based detection solution called [mobvious][]:
 
@@ -69,9 +69,9 @@ To get started, if you're not sure where to begin, take a look at this round up 
 
 5.  The [mobvious-rails][] gem allows you to "access detected device type easily from controllers and views."
 
-6.  [Agent_orange][agent_orange] looks interesting. Although stable, it has its issues per the maintainers account.
+6.  [Agent_orange][agent_orange] looks interesting. Although stable, it has its issues per the maintainers readme.
 
-7.  [UserAgent][] is a Ruby library that parses and compares HTTP User Agents.
+7.  > [UserAgent][] is a Ruby library that parses and compares HTTP User Agents."
 
 9.  [Browser][] is a gem that allows you to test for the browser being used including mobile browsers, and includes ActionController integration.
 
