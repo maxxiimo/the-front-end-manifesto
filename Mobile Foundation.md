@@ -67,11 +67,15 @@ To get started, if you're not sure where to begin, take a look at this round up 
 
     > Mobvious detects whether your app / website is being accessed by a phone, or by a tablet, or by a personal computer. You can then use this information throughout your app. (E.g. fork your front-end code with regard to device type. There is a [plugin][mobvious-rails] for Ruby on Rails that helps you with this.)
 
-5.  The [mobvious-rails][] gem allows you to "access detected device type easily from controllers and views."
+5.  The [mobvious-rails][] gem allows you to:
+
+    > Access detected device type easily from controllers and views.
+    > Execute code for given device types only. Both in controllers and views.
+    > Do the above stuff also in your CoffeeScript.
 
 6.  [Agent_orange][agent_orange] looks interesting. Although stable, it has its issues per the maintainers readme.
 
-7.  > [UserAgent][] is a Ruby library that parses and compares HTTP User Agents."
+7.  > [UserAgent][] is a Ruby library that parses and compares HTTP User Agents.
 
 9.  [Browser][] is a gem that allows you to test for the browser being used including mobile browsers, and includes ActionController integration.
 
