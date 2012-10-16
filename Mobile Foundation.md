@@ -57,11 +57,9 @@ To get started, if you're not sure where to begin, take a look at this round up 
 
 1.  Ryan Bates screencast "[Mobile Devices][]".
 
-2.  In the following tutorial the author shows you how to use the [mobylette][] and [jquery_mobile_rails][] gems in your application. The mobylette gem handles requests and allows your controller to respond with a :mobile format, while the jquery-mobile-rails gem adds [jQuery Mobile][] files to your asset pipeline which helps make everything look great and work like a native mobile app.
+2.  In the  tutorial "[How to Build a Mobile Rails 3.1 App][How to Build]" the author shows you how to use the [mobylette][] and [jquery_mobile_rails][] gems in your application. The mobylette gem handles requests and allows your controller to respond with a :mobile format, while the jquery-mobile-rails gem adds [jQuery Mobile][] files to your asset pipeline which helps make everything look great and work like a native mobile app.
 
-    \- [How to Build a Mobile Rails 3.1 App][How to Build]
-
-3.  Much like mobylette, [mobile-fu][] detects mobile requests and allows you to respond with a :mobile format. As of this writing there doesn't seem to be too much activity happening with this gem.
+3.  Much like mobylette, [mobile-fu][] detects mobile requests and allows you to respond with a :mobile format. Here's some more information on this gem:
 
     \- [Mobilize Your Rails Application with Mobile Fu][Mobilize Rails]
 
@@ -77,17 +75,11 @@ To get started, if you're not sure where to begin, take a look at this round up 
 
 9.  [Browser][] is a gem that allows you to test for the browser being used including mobile browsers, and includes ActionController integration.
 
-10. Here's an idea where mobile templates are placed in a separate directory, and when requests come in from a mobile subdomain like m.domain.com they are served these templates. If the templates are not available, they are served the regular view templates. This in effect frees you from the work of creating two templates for every action. In the solution the user can switch between the two templates, and if they hit the server from the regular domain but require mobile ready templates, they're automatically redirected through user agent detection. 
+10. In the tutorial "[Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]" the author proposes placing mobile templates in a separate directory, then when requests come in from a mobile subdomain, like m.domain.com, these templates are served. If the templates are not available, the requester is served regular view templates; bring you up from having to create two templates for every action. Users can switch between the two templates, and user agent detection is employed.
 
-    \- [Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]
+11. If you're looking to beef up your detection capabilities, [Handset Detection][] is a service you can try (includes free and paid plans).
 
-11. If you're looking to beef up your detection capabilities, here's a service you can try (includes free and paid plans):
-
-    \- [Handset Detection][]
-
-12. Here is a list of mobile strings you could incorporate into your project if you wanted to get granular:
-
-    \- [Mobile Browser ID (User-Agent) Strings][Mobile Strings]
+12. Here is a list of "[Mobile Browser ID (User-Agent) Strings][Mobile Strings]" you could incorporate into your project if you wanted to get granular.
 
 ### Responsive Web Design
 
@@ -105,10 +97,10 @@ Ethan Marcotte is widely credited for coining the term "Responsive Web Design" i
 [Mobile Devices]:       http://railscasts.com/episodes/199-mobile-devices
 [mobylette]:            https://github.com/tscolari/mobylette
 [jquery_mobile_rails]:  https://github.com/tscolari/jquery-mobile-rails
+[How to Build]:         https://dev.tscolari.me/2011/09/15/how-to-build-a-mobile-rails-3-dot-1-app/
 [mobile-fu]:            https://github.com/brendanlim/mobile-fu
 [Mobilize Rails]:       http://www.intridea.com/blog/2008/7/21/mobilize-your-rails-application-with-mobile-fu#
 [jQuery Mobile]:        http://jquerymobile.com/demos/1.2.0/
-[How to Build]:         https://dev.tscolari.me/2011/09/15/how-to-build-a-mobile-rails-3-dot-1-app/
 [mobvious]:             https://github.com/jistr/mobvious
 [mobvious-rails]:       https://github.com/jistr/mobvious-rails
 [agent_orange]:         https://github.com/kevinelliott/agent_orange
