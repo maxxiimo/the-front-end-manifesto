@@ -1,17 +1,17 @@
 Mobile Foundation
 -----------------
 
-Chapter 1 and 2 are great, really great in my opinion ;-), but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. I mean on the fringe back then there was talk about desktop screen sizes, but it could be overlooked. 
+In chapter 1 we learned about foundation markup, and in chapter 2 foundation styles, but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. I mean on the fringe back then there was talk about desktop screen sizes, but it could be overlooked. Nowadays you cannot overlook screen size, i.e. mobile. You better believe that people are going to look at your website on a mobile phone or some kind of tablet. In fact I think this is pretty much [common knowledge][], so let's just deal with it. 
 
-Nowadays you cannot overlook screen sizes. You better believe that people are going to look at your website on a mobile phone or some kind of tablet, especially an iPad. In fact I think this is pretty much [common knowledge][], so let's just deal with it. How? Let's explore in this chapter.
+In this chapter  we are going to explore the different ways in which we can serve content to our end-users depending on the device they're using. In this process we will develop our applications own mobile foundation.
 
 ### Mobile First
 
-Once upon a time ago when I worked for Fidelity Investments' FEB Design unit, we took an existing application and turned it into a mobile app (pre-smartphones). The result was a precise definition of the applications basic information architecture, no more no less. As an Information Architect with this experience, the [Mobile First][] design paradigm makes sense. I don't think anyone can afford to consider mobile design as an afterthought anymore.
+Once upon a time ago when I worked for Fidelity Investments' FEB Design unit, we took an existing application and turned it into a mobile app (pre-smartphones). The result was a precise definition of the applications basic information architecture, no more no less. Several my colleagues pointed this out and used the mobile application to better architect the greater application.
 
-Yes, we did layout are foundation markup and styles with the desktop in mind, and that is fine and as it should be, but as we move into the next chapter we actually start thinking about how to build an application, and we do so tackle it from the mobile first perspective.
+As an Information Architect with this experience, the [Mobile First][] design paradigm makes sense to me, But given the staggering number of mobile users out there it is an approach you as a front end developer should consider using when building an application. In the very least do not consider mobile design as an afterthought.
 
-By the end of this chapter we will have completed our foundation work underrated tackle any browser, device, or screen size.
+In chapter 4 we will tackle this paradigm shift as we architect our application, and I recommend doing so in every application you build, so it makes sense to include in our foundation work a blueprint or plan of attack for dealing with mobile browsers and the wide range of screen sizes users will use when viewing your work.
 
 ### Plan of Attack
 
@@ -23,7 +23,7 @@ With Ruby on Rails there are three ways we can tackle mobile browsers:
 
 3.  A hybrid of 1 and 2.
 
-I'm undecided about which method I prefer insofar as 1 and 2 go. My gut tells me to separate concerns. Anyway, here are my thoughts on the subject:
+I'm undecided about which method I prefer insofar as 1 and 2 go. My gut tells me to separate concerns, but I like responsive styles and lots of minds are working towards improving them. Here are some thoughts on the matter:
 
 - Keep them separate and you can serve lighter, device specific stylesheets. This translates to less complexity and better performance.
 - As applications grow and user needs change, it might become necessary to separate mobile out completely. If you start out separate this transition might be easier.
@@ -31,17 +31,17 @@ I'm undecided about which method I prefer insofar as 1 and 2 go. My gut tells me
 - Designing for a mobile device, a tablet device, and a desktop could be time-consuming, response styles can accommodate all three.
 - With responsive design, change the code once and it trickles down to all devices.
 
-Right now "responsive" based on media queries is the rage. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" does a great job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote there that the author uses that resonates with me:
+Right now "responsive" based on media queries is hugely popular and developers are circling the wagons around the preferred method for dealing with mobile browsers. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" does a great job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote there that the author uses that resonates with me:
 
 > Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
 \- [Brian Fling][]
 
-Whatever you decide, keep in mind that there are a spectrum of needs and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website most certainly won't need mobile specific geolocation capabilities, and all on all, the changes required between screens is minor. In this case why not use media queries and keep things together?
+Whatever you decide, keep in mind that there are a spectrum of needs users and businesses may have, and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website most certainly won't need mobile specific geolocation capabilities, and the changes required between screens are minor. In this case why not use media queries and keep things together?
 
 > Only using responsive design for Basecamp mobile would have been like fitting a Prius body to a Hummer… under-the-hood it would have been all wrong.
 \[Behind the speed: Basecamp mobile][Basecamp Mobile]
 
-In this chapter we will explore both plans of attack.
+In this chapter we will explore the three plans of attack.
 
 ### User Agent Sniffing
 
