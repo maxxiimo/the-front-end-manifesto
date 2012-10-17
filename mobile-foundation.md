@@ -1,7 +1,7 @@
 Mobile Foundation
 -----------------
 
-In chapter 1 we learned about [foundation markup][], and in chapter 2, [foundation styles][], but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. On the fringe back then there was talk about desktop screen sizes, but it could be overlooked since the differences were not so great, and the "fix" came relatively quickly (and second nature) as monitors became less expensive and the industry settled on standard design widths and/or employed liquid layouts.
+In Chapter 1 we learned about [foundation markup][], and in Chapter 2, [foundation styles][], but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. On the fringe back then there was talk about desktop screen sizes, but it could be overlooked since the differences were not so great, and the "fix" came relatively quickly (and second nature) as monitors became less expensive and the industry settled on standard design widths and/or employed liquid layouts.
 
 Nowadays you cannot overlook screen size, i.e. mobile. Devices will continue to drop in price which means more divergent screen sizes, and the fix is a tad bit more difficult to say the least. With out a doubt people are going to look at your work on a smart phone or some kind of tablet. In fact I think this is pretty much [common knowledge][], so let's end that discussion and just deal with it proactively by laying down a mobile foundation.
 
@@ -13,7 +13,7 @@ Once upon a time ago when I worked for Fidelity Investments' FEB Design unit, we
 
 As an Information Architect with this experience, the [Mobile First][] design paradigm makes sense to me, but given the staggering number of mobile users out there, it is an approach that you as a front end developer should consider using when building an application. In the very least, DO NOT consider or leave mobile design as an afterthought.
 
-In chapter 4 we will tackle this paradigm shift head-on as we architect our application. As a general rule mobile is now a factor, so it makes sense to include preparing for it in our foundation work blueprint, or plan of attack for dealing with mobile browsers and the wide range of screen sizes users will view your work with.
+In [Chapter 4][] we will tackle this paradigm shift head-on as we architect our application. As a general rule mobile is now a factor, so it makes sense to include preparing for it in our foundation work blueprint, or plan of attack for dealing with mobile browsers and the wide range of screen sizes users will view your work with.
 
 ### Plan of Attack
 
@@ -99,6 +99,7 @@ Yada yada yada, coming soon... ;)
 [foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/cover
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
+[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
 [Brian Fling]:          http://shop.oreilly.com/product/9780596155452.do
 [Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile               
