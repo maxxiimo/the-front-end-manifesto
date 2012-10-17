@@ -71,23 +71,23 @@ To get started, if you're not sure where to begin or as a review, take a look at
 
     > Mobvious detects whether your app / website is being accessed by a phone, or by a tablet, or by a personal computer. You can then use this information throughout your app. (E.g. fork your front-end code with regard to device type. There is a [plugin][mobvious-rails] for Ruby on Rails that helps you with this.)
 
-5.  The [mobvious-rails][] gem allows you to:
+    The [mobvious-rails][] gem allows you to:
 
     > Access detected device type easily from controllers and views.<br>
     > Execute code for given device types only. Both in controllers and views.<br>
     > Do the above stuff also in your CoffeeScript.
 
-6.  [Agent_orange][agent_orange] looks interesting. Although stable, it has its issues per the maintainers readme.
+5.  [Agent_orange][agent_orange] looks interesting. Although stable, it has its issues per the maintainers readme.
 
-7.  > [UserAgent][] is a Ruby library that parses and compares HTTP User Agents.
+6.  > [UserAgent][] is a Ruby library that parses and compares HTTP User Agents.
 
-9.  [Browser][] is a gem that allows you to test for the browser being used including mobile browsers, and includes ActionController integration.
+7.  [Browser][] is a gem that allows you to test for the browser being used including mobile browsers, and includes ActionController integration.
 
-10. In the tutorial "[Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]" the author proposes placing mobile templates in a separate directory, then when requests come in from a mobile subdomain, like m.domain.com, these templates are served. If the templates are not available, the requester is served regular view templates; bring you up from having to create two templates for every action. Users can switch between the two templates, and user agent detection is employed.
+8.  In the tutorial "[Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]" the author proposes placing mobile templates in a separate directory, then when requests come in from a mobile subdomain, like m.domain.com, these templates are served. If the templates are not available, the requester is served regular view templates; freeing you up from having to create two templates for every action. Users can switch between the two templates, and user agent detection is employed.
 
-11. If you're looking to beef up your detection capabilities, [Handset Detection][] is a service you can try (includes free and paid plans).
+9.  If you're looking to beef up your detection capabilities, [Handset Detection][] is a service you can try (includes free and paid plans).
 
-12. Here is a list of "[Mobile Browser ID (User-Agent) Strings][Mobile Strings]" you could incorporate into your project if you wanted to get granular.
+10. Here is a list of "[Mobile Browser ID (User-Agent) Strings][Mobile Strings]" you could incorporate into your project if you wanted to get granular.
 
 ### Responsive Web Design
 
