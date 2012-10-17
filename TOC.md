@@ -1,6 +1,7 @@
 Table of Contents
 -----------------
 
+- [Cover][]
 - [The Manifesto][]
 - [Foundation Markup][]
   -  Groundwork
@@ -112,6 +113,7 @@ Table of Contents
 - [Good Advice][]
 - [JavaScript Libraries][]
 
+[Cover]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Cover
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/The%20Manifesto.md
 [Foundation Markup]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Markup.md
 [Foundation Styles]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md
