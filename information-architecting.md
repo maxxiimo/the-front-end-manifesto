@@ -1,13 +1,13 @@
 Information Architecting
 ------------------------
 
-Now that we have reviewed the three pillars of foundation work: [markup][], [styles][], and [mobile][], it's time to delve into actually building a websites/application. The best place to start is with the splash page or application console: its navigation, content, interaction, layout, and look and feel. The homepage is of critical importance to your project. Most of the time it is the first thing a user will see, and how they will understand your [whatever your building] and how they will [whatever they will do], and it sets the tone and unifying theme for every subsequent page or functionality.
+Now that we have reviewed the three pillars of foundation work: [markup][], [styles][], and [mobile][], it's time to delve into actually building a websites/application. The best place to start is with the splash page or application console: its navigation, content, interaction, layout, and look and feel. The homepage is of critical importance to your project. Most of the time it is the first thing a user will see, and how they will understand your [whatever your building] and how they will [whatever they will do]. It also sets the tone and unifying theme for every subsequent page or functionality.
 
 The key to being successful in building your application splash page and/or console can be summed up in one word:
 
-Storytelling.
+Storytelling
 
-Back in 2008 at "An Event Apart: Boston" I remember listening to [Jason Santa Maria][], then the Creative Director of Happy Cog Studios, give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. When I worked for Fidelity Investments as an  Information Architect, I remember another presenter that same year at the company auditorium sharing his thoughts on storytelling and its importance in design. Although I no longer remember his name, I do remember his talk thesis: people understand and remember stories.
+Back in 2008 at "An Event Apart: Boston" I listened to [Jason Santa Maria][], then the Creative Director of Happy Cog Studios, give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
 
 These talks have stuck with me over the years, and have become the manner in which I view site design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code, and the sites look and feel (styles). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three ways to go about this:
 
@@ -15,17 +15,17 @@ These talks have stuck with me over the years, and have become the manner in whi
 2. Work with a designer from the get-go and implement a design mockup into your foundation work.
 1. Start from scratch and architect yourself, then get help from a designer on the look and feel.
 
-In this chapter we're going to mostly focus on option 1 and 3. Hiring a designer from the get-go is not a bad idea since design and front end engineering are to complete different skill sets, but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself. Typically I have found that as a consultant, when I'm brought into a project design mockups have already been developed and it's now my job to implement them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
+In this chapter we're going to mostly focus on option 1 and 3. Hiring a designer from the get-go is not a bad idea – design and front end engineering are to complete different skill sets – but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself. Typically I have found that as a consultant, when I'm brought into a project design mockups have already been developed and it's now my job to implement them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
 
 ### Blocks of Information
 
-Before any design begins though, we need to architect the application. As I mentioned in chapter 1:
+Before any design begins, we need to architect the application. As I mentioned in [chapter 1][markup]:
 
 > As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption.
 
-How does how does organizing information and function relate to storytelling?
+How does "organizing information and function" relate to storytelling?
 
-A layout is really a mosaic of information that tells (conveys) something: a particular type of story. This information was grouped together based on some criteria, and then placed on a website "page" that ultimately gets viewed by an end-user. This information needed to be organized in some logical way to make absolute sense to the end-user, and probably designed to invite/entice/cause the end-user to take the next step or action, i.e. turn the page in the story.
+A layout is really a mosaic of information that tells (conveys) something: a particular type of story. This information obviously was grouped together based on some criteria, and then placed on a website "page" that ultimately gets viewed by an end-user. It had to be organized in some logical way to make absolute sense to the end-user, and probably designed to invite/entice/cause the end-user to take the next step or action, i.e. turn the page in the story.
 
 ### The Storyline
 
@@ -33,15 +33,15 @@ The unifying message behind this mosaic of information is the storyline. Before 
 
 "I'm a great Web site for finding a job...a job that is perfect for you, you should join me, if you do you will have access to tons of perfect jobs and your life will change for the better forever!"
 
-In this theme example – with my Information Architect (IA) hat on – I immediately see several major blocks of information:
+In this storyline example – with my Information Architect (IA) hat on – I immediately see several major blocks of information:
 
-1) What is the site in 10 words or less - possibly a summary box.
-2) How do I join - a sign-up section.
-3) An area that describes the benefits of the site - maybe user testimonials.
-4) The obvious table stakes to this story, the side story:
-   - A logo
-   - Legalese (Copyright, ToS, Privacy)
-   - Non-legal footer type info (Feedback, About, Contact, Site Map)
+1)  What is the site in 10 words or less - possibly a summary box.
+2)  How do I join - a sign-up section.
+3)  An area that describes the benefits of the site - maybe user testimonials.
+4)  The obvious table stakes to this story, the side story:
+    - A logo
+    - Legalese (Copyright, ToS, Privacy)
+    - Non-legal footer type info (Feedback, About, Contact, Site Map)
 
 ...and as the front end developer I'm already beginning to imagine how these blocks of information will be conveyed. 
 
