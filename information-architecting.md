@@ -35,10 +35,10 @@ The unifying message behind this mosaic of information is the storyline. Before 
 
 In this storyline example – with my Information Architect (IA) hat on – I immediately see several major blocks of information:
 
-1)  What is the site in 10 words or less - possibly a summary box.
-2)  How do I join - a sign-up section.
-3)  An area that describes the benefits of the site - maybe user testimonials.
-4)  The obvious table stakes to this story, the side story:
+1.  What is the site in 10 words or less - possibly a summary box.
+2.  How do I join - a sign-up section.
+3.  An area that describes the benefits of the site - maybe user testimonials.
+4.  The obvious table stakes to this story, the side story:
     - A logo
     - Legalese (Copyright, ToS, Privacy)
     - Non-legal footer type info (Feedback, About, Contact, Site Map)
