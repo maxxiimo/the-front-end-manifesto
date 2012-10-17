@@ -48,10 +48,8 @@ Table of Contents
   - Mobile First
   - Plan of Attack
   - User Agent Sniffing
-  - Mobile Solutions Roundup
+    - Mobile Solutions Roundup
   - Responsive Web Design
-  - Where Do Styles Go?
-  - User Agents or Media Queries
 - [Information Architecting][]
   - Blocks of Information
   - The Storyline
