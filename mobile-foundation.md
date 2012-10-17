@@ -33,14 +33,14 @@ I'm undecided about which method I prefer insofar as 1 and 2 go. My gut tells me
 - Designing for a mobile device, a tablet device, and a desktop could be time-consuming, responsive design can accommodate all three.
 - With responsive design, change the code once and it trickles down to all devices.
 
-Right now "responsive" based on media queries is hugely popular and developers are circling the wagons around the preferred method for dealing with mobile browsers. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" does a great job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote there that the author uses that resonates with me:
+Right now responsive web design is hugely popular. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" does a great job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote there that the author uses that resonates with me:
 
 > Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
 \- [Brian Fling][]
 
-Whatever you decide, keep in mind that there are a spectrum of needs users and businesses may have, and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website most certainly won't need mobile specific geolocation capabilities, and the changes required between screens are minor. In this case why not use media queries and keep things together?
+Whatever approach you decide, keep in mind that there are a spectrum of user and business needs, and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website most certainly doesn't need mobile specific geolocation capabilities, and the changes required between screens are minor. In this case why not use media queries and keep things together? On the other hand more complex applications may need to serve up specific markup and styles, take for example Basecamp mobile:
 
-> Only using responsive design for Basecamp mobile would have been like fitting a Prius body to a Hummer… under-the-hood it would have been all wrong.
+> Only using responsive design for Basecamp mobile would have been like fitting a Prius body to a Hummer... under-the-hood it would have been all wrong.
 \[Behind the speed: Basecamp mobile][Basecamp Mobile]
 
 In this chapter we will explore the three plans of attack.
