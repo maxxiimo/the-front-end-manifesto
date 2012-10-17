@@ -117,7 +117,7 @@ Table of Contents
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Foundation Markup]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [Foundation Styles]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
-[Mobile Foundation]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-browsers.md
+[Mobile Foundation]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
 [Accessibility]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/accessibility.md
 [Optimization]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/optimization.md
 [Slicing and Dicing Mockups]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
