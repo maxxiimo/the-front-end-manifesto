@@ -1,7 +1,7 @@
 Mobile Foundation
 -----------------
 
-In chapter 1 we learned about [foundation markup][], and in chapter 2 [foundation styles][], but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. On the fringe back then there was talk about desktop screen sizes, but it could be overlooked: monitors became less expensive and the industry settled on standard design widths and/or employed liquid layouts. Nowadays you cannot overlook screen size, i.e. mobile. You better believe that people are going to look at your website on a mobile phone or some kind of tablet. In fact I think this is pretty much [common knowledge][], so let's end that discussion and just deal with it. 
+In chapter 1 we learned about [foundation markup][], and in chapter 2, [foundation styles][], but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. On the fringe back then there was talk about desktop screen sizes, but it could be overlooked: monitors became less expensive and the industry settled on standard design widths and/or employed liquid layouts. Nowadays you cannot overlook screen size, i.e. mobile. You better believe that people are going to look at your website on a mobile phone or some kind of tablet. In fact I think this is pretty much [common knowledge][], so let's end that discussion and just deal with it. 
 
 In this chapter  we are going to explore the different ways in which we can serve content to our end-users depending on the device they're using. In this process we will develop our applications own mobile foundation.
 
