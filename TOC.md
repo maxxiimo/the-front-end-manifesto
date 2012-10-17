@@ -54,7 +54,7 @@ Table of Contents
   - Blocks of Information
   - The Storyline
   - Gathering and Organizing Information
-  - Prototyping
+  - Prototyping on Paper
   - Look and Feel
     - Inspiration
   - Feedback
