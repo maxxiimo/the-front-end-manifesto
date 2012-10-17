@@ -1,17 +1,17 @@
 Mobile Foundation
 -----------------
 
-In chapter 1 we learned about foundation markup, and in chapter 2 foundation styles, but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. I mean on the fringe back then there was talk about desktop screen sizes, but it could be overlooked. Nowadays you cannot overlook screen size, i.e. mobile. You better believe that people are going to look at your website on a mobile phone or some kind of tablet. In fact I think this is pretty much [common knowledge][], so let's just deal with it. 
+In chapter 1 we learned about [foundation markup][], and in chapter 2 [foundation styles][], but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. On the fringe back then there was talk about desktop screen sizes, but it could be overlooked: monitors became less expensive and the industry settled on standard design widths and/or employed liquid layouts. Nowadays you cannot overlook screen size, i.e. mobile. You better believe that people are going to look at your website on a mobile phone or some kind of tablet. In fact I think this is pretty much [common knowledge][], so let's end that discussion and just deal with it. 
 
 In this chapter  we are going to explore the different ways in which we can serve content to our end-users depending on the device they're using. In this process we will develop our applications own mobile foundation.
 
 ### Mobile First
 
-Once upon a time ago when I worked for Fidelity Investments' FEB Design unit, we took an existing application and turned it into a mobile app (pre-smartphones). The result was a precise definition of the applications basic information architecture, no more no less. Several my colleagues pointed this out and used the mobile application to better architect the greater application.
+Once upon a time ago when I worked for Fidelity Investments' FEB Design unit, we took an existing application and turned it into a mobile app (pre-smartphones). The result was a precise definition of the applications basic information architecture, no more no less. Several of my colleagues pointed this out and used the mobile application to better architect the greater desktop application.
 
-As an Information Architect with this experience, the [Mobile First][] design paradigm makes sense to me, But given the staggering number of mobile users out there it is an approach you as a front end developer should consider using when building an application. In the very least do not consider mobile design as an afterthought.
+As an Information Architect with this experience, the [Mobile First][] design paradigm makes sense to me, but given the staggering number of mobile users out there, it is an approach that you as a front end developer should consider using when building an application. In the very least, DO NOT consider or leave mobile design as an afterthought.
 
-In chapter 4 we will tackle this paradigm shift as we architect our application, and I recommend doing so in every application you build, so it makes sense to include in our foundation work a blueprint or plan of attack for dealing with mobile browsers and the wide range of screen sizes users will use when viewing your work.
+In chapter 4 we will tackle this paradigm shift head-on as we architect our application. As a general rule mobile is now a factor, so it makes sense to include preparing for it in our foundation work blueprint, or plan of attack for dealing with mobile browsers and the wide range of screen sizes users will view your work with.
 
 ### Plan of Attack
 
@@ -91,8 +91,10 @@ Ethan Marcotte is widely credited for coining the term "Responsive Web Design" i
 
 [This Is Responsive][]
 
+Yada yada yada, coming soon... ;)
 
-
+[foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Markup.md
+[foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/cover
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
