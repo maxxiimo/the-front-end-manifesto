@@ -182,8 +182,8 @@ Steve Krug your book on usability testing, and gives a basic demo of it on YouTu
 
 
 [Jason Santa Maria]:    http://jasonsantamaria.com/
-[Slicing and Dicing]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Slicing%20and%20Dicing%20Mockups.md
-[chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md
+[Slicing and Dicing]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
+[chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [Premium Pixels]:       http://www.premiumpixels.com/
 [Awwwards]:             http://www.awwwards.com/
 [Pattern Tap]:          http://patterntap.com/

@@ -455,7 +455,7 @@ In the [next chapter][Foundation Styles], we will begin to set up our foundation
 [_logo]:                https://github.com/maxxiimo/base-haml/blob/master/views/shared/_logo.html.haml
 [_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/views/shared/_navigation.html.haml
 [_footer]:              https://github.com/maxxiimo/base-haml/blob/master/views/shared/_footer.html.haml
-[Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md      
+[Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md      
 [<head>]:               https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
 [Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html?utm_source=rubyweekly&utm_medium=email
 [Helpful Things]:       https://gist.github.com/1981339

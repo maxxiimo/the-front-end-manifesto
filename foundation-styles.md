@@ -541,7 +541,7 @@ Getting it to work with Rails is not impossible, hardly, but if you go this path
 With all of this work you are more than ready to begin building an app; with your best foot forward. If you want to go the extra mile, and I suggest you do, our [next chapter][] will focus on a solid foundation for small screens, i.e. mobile browsers.
 
 [starter CSS]:          https://github.com/maxxiimo/base-css
-[Foundation Markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Markup.md
+[Foundation Markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [compass-rails]:        https://github.com/Compass/compass-rails
 [FireSass]:             https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
 [Getting Compass to Work]: http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
@@ -595,6 +595,6 @@ With all of this work you are more than ready to begin building an app; with you
 [YUI website]:          http://yuilibrary.com/
 [Zurb website]:         http://foundation.zurb.com/
 [Skeleton website]:     http://www.getskeleton.com/
-[next chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Mobile%20Foundation.md
+[next chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
 
 [Basic HTML No Styles]: http://chrismaxwell.com/rails-views/assets/getting-started/base-html-files-with-styles.png

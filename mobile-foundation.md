@@ -93,8 +93,8 @@ Ethan Marcotte is widely credited for coining the term "Responsive Web Design" i
 
 Yada yada yada, coming soon... ;)
 
-[foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Markup.md
-[foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/Foundation%20Styles.md
+[foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
+[foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/cover
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
