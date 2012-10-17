@@ -13,7 +13,7 @@ Once upon a time ago when I worked for Fidelity Investments' FEB Design unit, we
 
 As an Information Architect with this experience, the [Mobile First][] design paradigm makes sense to me for information architecting alone, and given the large and increasing number of mobile users out there, it is an approach that you as a front end developer should consider using when building an application. In the very least, DO NOT leave mobile design as an afterthought.
 
-In [Chapter 4][] we will tackle this paradigm shift head-on as we architect our application. As a general rule mobile is now a factor, so it makes sense to include preparing for it in our foundation work blueprint.
+In [Chapter 4][] we will tackle this paradigm shift head-on as we architect our application. As a general rule mobile is now a factor, so it makes sense to include preparing for it in our foundation work.
 
 ### Plan of Attack
 
@@ -21,7 +21,7 @@ With Ruby on Rails there are three ways we can tackle mobile browsers:
 
 1.  Detecting user agents to serve mobile specific markup and styles.
 
-2.  Detecting screen sizes via media queries to serve up responsive styles (that also can hide markup via display: none).
+2.  Detecting screen sizes via media queries to serve up responsive styles.
 
 3.  A hybrid of 1 and 2.
 
