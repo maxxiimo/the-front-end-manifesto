@@ -1,7 +1,7 @@
 Information Architecting
 ------------------------
 
-Now that we have reviewed the three pillars of foundation work: markup, styles, and mobile, it's time to delve into actually building your websites/application. The best place to start is with the splash page or application console: its navigation, content, layout, look and feel. Your homepage and/or application console is of critical importance to your project. Most of the time it is the first thing that a user will see, and how the end-user will understand your [whatever your building] and how they will [whatever they will do], and it sets the tone and unifying theme for every subsequent page or functionality.
+Now that we have reviewed the three pillars of foundation work: [markup][], [styles][], and [mobile][], it's time to delve into actually building a websites/application. The best place to start is with the splash page or application console: its navigation, content, interaction, layout, and look and feel. The homepage is of critical importance to your project. Most of the time it is the first thing a user will see, and how they will understand your [whatever your building] and how they will [whatever they will do], and it sets the tone and unifying theme for every subsequent page or functionality.
 
 The key to being successful in building your application splash page and/or console can be summed up in one word:
 
@@ -180,7 +180,9 @@ Steve Krug your book on usability testing, and gives a basic demo of it on YouTu
 ### What We've Done
 
 
-
+[markup]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
+[styles]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
+[mobile]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
 [Jason Santa Maria]:    http://jasonsantamaria.com/
 [Slicing and Dicing]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
 [chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
