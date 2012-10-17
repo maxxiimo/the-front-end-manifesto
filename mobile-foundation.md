@@ -1,9 +1,11 @@
 Mobile Foundation
 -----------------
 
-In chapter 1 we learned about [foundation markup][], and in chapter 2, [foundation styles][], but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. On the fringe back then there was talk about desktop screen sizes, but it could be overlooked, and the "fix" came relatively quickly and second nature as monitors became less expensive and the industry settled on standard design widths and/or employed liquid layouts. Nowadays you cannot overlook screen size, i.e. mobile, and the fix is a tad bit more difficult to say the least. You better believe that people are going to look at your website on a mobile phone or some kind of tablet. In fact I think this is pretty much [common knowledge][], so let's end that discussion and just deal with it proactively by laying out a mobile foundation.
+In chapter 1 we learned about [foundation markup][], and in chapter 2, [foundation styles][], but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. On the fringe back then there was talk about desktop screen sizes, but it could be overlooked since the differences were not so great, and the "fix" came relatively quickly (and second nature) as monitors became less expensive and the industry settled on standard design widths and/or employed liquid layouts.
 
-In this chapter  we are going to explore the different ways in which we can serve content to our end-users depending on the device they're using. In this process we will develop our applications own mobile foundation.
+Nowadays you cannot overlook screen size, i.e. mobile. Devices will continue to drop in price which means more divergent screen sizes, and the fix is a tad bit more difficult to say the least. With out a doubt people are going to look at your work on a smart phone or some kind of tablet. In fact I think this is pretty much [common knowledge][], so let's end that discussion and just deal with it proactively by laying down a mobile foundation.
+
+In this chapter we are going to explore the different ways in which we can serve content to our end-users depending on the device they're using, and in this process we will develop our applications own mobile foundation.
 
 ### Mobile First
 
