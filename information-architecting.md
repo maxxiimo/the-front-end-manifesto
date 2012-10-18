@@ -94,13 +94,13 @@ Here's what my application looks like on paper:
 
 ***ADD PHOTO HERE***
 
-#### No More Exercises!
-
 There are a number of applications out there that can help you prototype, but I prefer to go old-school with a pencil and [paper][]. For presentational purposes you can transfer this exercise to PowerPoint or some other application for prototyping, but don't get bogged down and waste time doing so.
+
+### No More Exercises!
 
 At this point start coding! Remember, you have laid out the groundwork in chapters 1 through 3 for your application and hopefully have deployed on Heroku. If clients need to review beyond these early exercises, there's nothing better than sending them to a URL with content placeholders that they can click through to simulate the actual application.
 
-Finally, when prototyping remember that less is more and KISS (Keep It Simple Stupid).
+Just remember that less is more and KISS (Keep It Simple Stupid). Revise and release often.
 
 ### Look and Feel
 

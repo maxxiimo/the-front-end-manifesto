@@ -1,13 +1,77 @@
 Foundation Styles
 -----------------
 
-Equally important to your application as your foundation markup are your foundation styles. HTML and CSS are the raw materials of the World Wide Web. We laid out our HTML, now let's square away our CSS. To do so we will learn about best practices in stylesheet set up by implementing the chapters [starter CSS][]. I have developed these over the years with a lot of trial and error and OCD love.
+Equally important to your application as foundation markup are foundation styles. HTML and CSS are the raw materials of the World Wide Web. We laid out our HTML, now let's square away our CSS. To do so we will review some of the options out there in terms of preprocessors and frameworks, and then best practices in stylesheet set up and maintenance. To learn these best practices we will implement the chapters [starter CSS][] which I have developed over the years with a lot of trial and error and OCD love. 
 
-These stylesheets are written using sass, but more important than the actual styles themselves – there are really not that many included – is the way they are organized. In my experience as you move along a Rails project {and the project grows and different authors contribute}; stylesheets can become behemoths, unmanageable, and downright confusing. To avoid this it's highly advisable to start any project with some kind of organizational structure in place: from the get-go. The styles I provide do this.
+### Preprocessors
 
-### Compass Set Up
+Probably the two most well-known dynamic stylesheet preprocessors in use today are [Sass][] and [Less][]. [Sass][] is the sister of [Haml][], and my preprocessor of choice as well as the default preprocessor in Rails 3.X. Besides being awesome, as a Rails front end developer you are going to predominantly see Sass used in projects you work on, so if you haven't dived in already, [you should][].
 
-Before we move along any further, if you're planning to use Compass, you will need to quickly set it up.
+When using sass you have a choice in syntax; .sass or .scss. I prefer .sass. Most front end developers will probably go with the .scss syntax because it looks familiar (similar to CSS), and because that is what ships out-of-the-box in Rails, however, .sass is cleaner/terser (IMHO). To help you decide on the best syntax for you read this:
+
+- [Sass vs. SCSS: Which Syntax is Better?][Sass vs. SCSS]
+
+NOTE: When using Sass or Haml these two resources are absolutely indispensable:
+
+- [css2sass][]
+- [Html2Haml][]
+- [html2haml Gem][]
+
+In terms of other preprocessors, [Less][] is the runner-up. That's all I'm going to say about that (remember this is a manifesto which is opinionated by nature).
+
+### Frameworks
+
+Frameworks give you a whole boatload of base styles that are instantly accessible through your HTML tags or specified class names. Frameworks include base font sizes and rhythm, default formats for almost every kind of HTML tag, and by simply dropping in the frameworks class names you can add some great looking styles to your project that are built to work, with very few hitches, across all browsers. On top of that you get grid systems, prebuilt scripts for commonly used functions like pop-ups, modals and menu systems. The list goes on. Here are a few worth taking a look at for your project.
+
+#### Compass
+
+So right off the bat I have to say that I love [Compass][]. It's powerful, it's well-documented, it's widely used, there are a ton of extensions for it, and it generally makes life easier for me. What's not to like?
+
+I'm pretty biased on this one, and all the [starter CSS ][] files we will use in our foundation styles incorporate Compass so there's not much else to say other than that it almost doesn't belong in this section since it's really not a framework but rather a utility. It's here though because you can add all kinds of framework components like:
+
+- [Sassy Buttons][]
+- [Responsive grids for Compass][]
+
+...and essentially create your own look and feel. Most traditional frameworks on the other hand just give you styles. If you want to break free it takes some tinkering.
+
+When working with Compass the following resource may be useful to you:
+
+- [35 Great Resources for Compass and Sass][35 Great Resources]
+
+#### Twitter Bootstrap
+
+I like [Twitter Bootstrap][]. It's a great place to learn about best practices for any application or framework, and you can get some amazing designs in absolutely no time. It's well-documented, but here's the problem: it's built on [Less][], and use it and your site will look pretty much like everyone else's. Of course you can override styles, but I'm just sayin'.
+
+Getting it to work with Rails is not impossible, hardly, but if you go this path there are some choices to consider:
+
+- [Twitter Bootstrap, Less, and Sass: Understanding Your Options for Rails 3.1][Options]
+
+#### Blueprint
+
+[Blueprint][], in my opinion, is the granddaddy of all frameworks. I used to use Blueprint all of the time, and Compass makes it almost a part of the base system. It's tried-and-true, and a good choice, but I rarely use it these days. I'm not too crazy about the look and feel, and really it seems to be more of a minimalist framework which is not a bad thing.
+
+#### YUI
+
+> YUI is a free, open source JavaScript and CSS library for building richly interactive web applications. 
+\- [YUI website][]
+
+#### Foundation 3
+
+> The most advanced responsive front-end framework in the world.
+\- [Zurb website][]
+
+#### Skeleton
+
+> A Beautiful Boilerplate for Responsive, Mobile-Friendly Development
+\- [Skeleton website][]
+
+### Our Foundation
+
+Now that we briefly reviewed preprocessors and frameworks it's time to build our foundation styles. Our [stylesheets][starter CSS] are written using Sass, but more important than the actual styles themselves – there are really not that many included – is the way they are organized. In my experience as you move along a Rails project and the project grows in complexity and different authors contribute; stylesheets can become behemoths, unmanageable, and downright confusing. To avoid this it's highly advisable to start a project with some kind of organizational structure in place from the get-go. The styles I provide do exactly this.
+
+Before we begin will need to quickly set up  Compass.
+
+#### Compass Set Up
 
 1.  If you have not done so already, per the [Foundation Markup][] chapter, add "compass-rails" to your gemfile. For more explicit directions take a look at the [compass-rails][] gem source.
 
@@ -50,15 +114,13 @@ Some additional resources for working with Compass include:
 
 ### Stylesheet Set Up
 
-Now that Compass is set up, let's set up our stylesheets. This task is pretty straightforward. Basically all you have to do is clone these files and subfolders exactly as they're laid out, and paste them into your assets/styles directory:
+Now that Compass is set up, let's set up our stylesheets. This task is pretty straightforward. Basically all you have to do is clone these files and subfolders exactly as they're laid out, and paste/merge them into your assets/styles directory:
 
 - https://github.com/maxxiimo/base-css
 
 Delete your application.css file if you have not done so already. It is being replaced with [application.scss][].
 
 NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
-
-### Our Foundation
 
 Simple as that, and if you have been following along from the last chapter, [Foundation Markup][], here is what your page will now look with the new stylesheets in place:
 
@@ -469,79 +531,36 @@ To see some great examples checkout:
 - [Useful SASS Mixins][]
 - [Custom User @mixins][]
 
-### Preprocessors and Frameworks
-
-Having arrived this far, our foundation styles would not be complete without briefly discussing preprocessors. I say briefly because as you know by now I use Sass and and recommend [Compass][] as a framework, but there's more out there so here's the 411... (starting with preprocessors.)
-
-#### Sass and Less
-
-Probably the two most well-known dynamic stylesheet preprocessors out there are [Sass][] and [Less][]. [Sass][] is the sister of [Haml][], and my preprocessor of choice as well as the default preprocessor in Rails 3.X. Besides being awesome, you are more than likely going to predominantly see Sass used in projects you work on, so if you haven't dived in already, you should.
-
-When using sass you have a choice in syntax; .sass or .scss. I prefer .sass. A lot of newcomers will probably go with .scss because it looks familiar (similar to CSS), and because that is what ships out-of-the-box in Rails, however, .sass is cleaner/terser (IMHO). To help you decide on the best syntax for you read this:
-
-- [Sass vs. SCSS: Which Syntax is Better?][Sass vs. SCSS]
-
-NOTE: When using Sass or Haml these two resources are absolutely indispensable:
-
-- [css2sass][]
-- [Html2Haml][]
-- [html2haml Gem][]
-
-In terms of other preprocessors, [Less][] is the runner-up. That's all I'm going to say about that (remember this is a manifesto).
-
-#### CSS Frameworks
-
-Frameworks give you a whole boatload of styles instantly accessible through your HTML tags alone. Frameworks include base font sizes / rhythm, default formats for every kind of HTML tag, and use the frameworks class names and presto; you can drop in styles built to work, with no hitches, across all browsers and just look good. On top of that you get grid systems, prebuilt scripts for commonly used functions like pop-ups, modals and menu systems. The list goes on. Here are a few worth taking a look at for your project.
-
-##### Compass
-
-I love [Compass][]. It's powerful, it's well-documented, it's widely used, there are a ton of plug-ins for it, what's not to like? 
-
-I'm pretty biased on this one, and all the [starter CSS ][] files here incorporate it so there's not much else to say other than that it almost doesn't belong in this section. Most frameworks just give you the styles, and that's that. If you want to break free it takes some tinkering. Compass on the other hand let you pick and choose on styles, and the variety is limited by only the creativity of the developer community around the framework. Compass is more like a framework system.
-
-The following resource may be useful to you:
-
-- [35 Great Resources for Compass and Sass][35 Great Resources]
-
-##### Twitter Bootstrap
-
-I like [Twitter Bootstrap][]. It's a great place to learn about best practices for any application or framework, and you can get some amazing designs in absolutely no time. It's well-documented, but here's the problem: it's built on [Less][], and use it and your site will look pretty much like everyone else's. Of course you can override styles, but I'm just sayin'.
-
-Getting it to work with Rails is not impossible, hardly, but if you go this path there some choices to consider:
-
-- [Twitter Bootstrap, Less, and Sass: Understanding Your Options for Rails 3.1][Options]
-
-##### Blueprint
-
-[Blueprint][], in my opinion, is the granddaddy of frameworks. They're the first ones to make it big. I used to use Blueprint all the time, and Compass makes it almost a part of the base system. It's tried-and-true, and a good choice.
-
-##### YUI
-
-> YUI is a free, open source JavaScript and CSS library for building richly interactive web applications. 
-\- [YUI website][]
-
-##### Foundation 3
-
-> The most advanced responsive front-end framework in the world.
-\- [Zurb website][]
-
-##### Skeleton
-
-> A Beautiful Boilerplate for Responsive, Mobile-Friendly Development
-\- [Skeleton website][]
-
 ### What We've Done
 
-- We started this chapter by setting up Compass and implementing the chapters [starter CSS][]. That in and by itself is all you need to start a project off right - in terms of foundation styles.
+- We started this chapter by taking a look at preprocessors in general, and frameworks that significantly cut down on our front end development time.
 
-- More important than simply cutting and pasting the stylesheets into your project though has been learning about CSS organization. In this chapter we learned about how our starter styles are organized, why, and how to keep it organized moving forward.
+- We then set up Compass and implemented the chapters [starter CSS][]. That in and by itself is all you need to start a project off right - in terms of foundation styles.
 
-- Finally, with our starter styles in place, we took a look at preprocessors in general, and frameworks that significantly cut down on our front end development time.
+- We follow set up with the discussion on how our starter styles are organized, why, and how to keep it organized moving forward.
 
-With all of this work you are more than ready to begin building an app; with your best foot forward. If you want to go the extra mile, and I suggest you do, our [next chapter][] will focus on a solid foundation for small screens, i.e. mobile browsers.
+With all of this work you are more than ready to begin building an app with your best foot forward. If you want to go the extra mile, and I suggest you do, our [next chapter][] will focus on a solid foundation for small screens, i.e. mobile browsers.
 
 [starter CSS]:          https://github.com/maxxiimo/base-css
 [Foundation Markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
+[Sass]:                 http://sass-lang.com/
+[Less]:                 http://lesscss.org/
+[Haml]:                 http://haml-lang.com/
+[you should]:           http://css-tricks.com/redesigning-with-sass/
+[Sass vs. SCSS]:        http://thesassway.com/articles/sass-vs-scss-which-syntax-is-better
+[css2sass]:             http://css2sass.heroku.com/
+[Html2Haml]:            http://html2haml.heroku.com/
+[html2haml Gem]:        https://github.com/haml/html2haml
+[Compass]:              http://compass-style.org/
+[Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
+[Response Grids]:       http://susy.oddbird.net/
+[35 Great Resources]:   http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
+[Twitter Bootstrap]:    http://twitter.github.com/bootstrap/
+[Options]:              http://rubysource.com/twitter-bootstrap-less-and-sass-understanding-your-options-for-rails-3-1/
+[Blueprint]:            http://www.blueprintcss.org/
+[YUI website]:          http://yuilibrary.com/
+[Zurb website]:         http://foundation.zurb.com/
+[Skeleton website]:     http://www.getskeleton.com/
 [compass-rails]:        https://github.com/Compass/compass-rails
 [FireSass]:             https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
 [Getting Compass to Work]: http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
@@ -580,21 +599,6 @@ With all of this work you are more than ready to begin building an app; with you
 [Sass documentation]:   http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 [Useful SASS Mixins]:   http://sachagreif.com/useful-sass-mixins/
 [Custom User @mixins]:  http://css-tricks.com/custom-user-mixins/                   
-[Compass]:              http://compass-style.org/
-[Sass]:                 http://sass-lang.com/
-[Less]:                 http://lesscss.org/
-[Haml]:                 http://haml-lang.com/
-[Sass vs. SCSS]:        http://thesassway.com/articles/sass-vs-scss-which-syntax-is-better
-[css2sass]:             http://css2sass.heroku.com/
-[Html2Haml]:            http://html2haml.heroku.com/
-[html2haml Gem]:        https://github.com/haml/html2haml
-[35 Great Resources]:   http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
-[Twitter Bootstrap]:    http://twitter.github.com/bootstrap/
-[Options]:              http://rubysource.com/twitter-bootstrap-less-and-sass-understanding-your-options-for-rails-3-1/
-[Blueprint]:            http://www.blueprintcss.org/
-[YUI website]:          http://yuilibrary.com/
-[Zurb website]:         http://foundation.zurb.com/
-[Skeleton website]:     http://www.getskeleton.com/
 [next chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
 
 [Basic HTML No Styles]: http://chrismaxwell.com/rails-views/assets/getting-started/base-html-files-with-styles.png

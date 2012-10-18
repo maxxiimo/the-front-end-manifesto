@@ -87,7 +87,9 @@ To get started, if you're not sure where to begin or as a review, take a look at
 
 9.  If you're looking to beef up your detection capabilities, [Handset Detection][] is a service you can try (includes free and paid plans).
 
-10. Here is a list of "[Mobile Browser ID (User-Agent) Strings][Mobile Strings]" you could incorporate into your project if you wanted to get granular.
+10. [Akamai][] also provides a detection service.
+
+11. Here is a list of "[Mobile Browser ID (User-Agent) Strings][Mobile Strings]" you could incorporate into your project if you wanted to get granular.
 
 ### Responsive Web Design
 
@@ -119,6 +121,7 @@ Yada yada yada, coming soon... ;)
 [Browser]:              https://github.com/fnando/browser
 [Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
 [Handset Detection]:    http://code.google.com/p/mobile-device-detection-ruby-on-rails/
+[Akamai]:               http://www.akamai.com/html/solutions/mobile_detection_redirect.html
 [Mobile Strings]:       http://www.zytrax.com/tech/web/mobile_ids.html
 
 [Responsive]:           http://www.alistapart.com/articles/responsive-web-design/

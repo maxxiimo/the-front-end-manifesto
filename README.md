@@ -46,9 +46,17 @@ Table of Contents
     - IE 6
   - What We've Done
 - [Foundation Styles][]
-  - Compass Set Up
-  - Stylesheet Set Up
+  - Preprocessors
+  - Frameworks
+    - Compass
+    - Twitter Bootstrap
+    -  Blueprint
+    -  YUI
+    -  Foundation 3
+    -  Skeleton
   - Our Foundation
+    - Compass Set Up
+    - Stylesheet Set Up
   - Organization
     - Style TOC
     - Resets
@@ -60,9 +68,6 @@ Table of Contents
     - Consolidate
     - Variables
     - Mixins
-  - Preprocessors and Frameworks
-    - Sass and Less
-    - CSS Frameworks
   - What We've Done
 - [Mobile Foundation][]
   - Mobile First
@@ -74,7 +79,8 @@ Table of Contents
   - Blocks of Information
   - The Storyline
   - Gathering and Organizing Information
-  - Prototyping
+  - Prototyping on Paper
+  - No More Exercises!
   - Look and Feel
     - Inspiration
   - Feedback
