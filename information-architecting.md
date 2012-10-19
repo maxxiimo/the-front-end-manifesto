@@ -153,6 +153,38 @@ Here are a few examples:
 - [Stop, Look, Click: Attention-Grabbing Elements in Web Design][Codrops 1]
 - [Make a Statement with Type][Codrops 2]
 
+#### Mobile
+
+Since for advocating a mobile first design paradigm, it would be wrong to not include some mobile inspiration:
+
+[AppSites][]
+
+> App Sites is a showcase of beautiful iPhone, iPad & Mac app websites. 
+
+[Mobile Patterns][]
+
+#### Responsive Navigation
+
+[Responsive Navigation Patterns][Responsive Navigation]
+[Complex Navigation Patterns for Responsive Design][Complex Navigation]
+
+### Lorem Ipsum
+
+Regarding the actual type for your project, if you have it great! If not this article gives a nice overview of how content blocks can be used in situations where type is not known, perhaps a client has not yet delivered it:
+
+- [Content, First?][Content First]
+
+I for one don't mind using Lorem Ipsum. If you don't either here are some great resources for it:
+
+- [][]
+- [][]
+- [][]
+- [][]
+
+#### Image Placeholders
+
+
+
 ### Feedback
 
 One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try something like:
@@ -199,6 +231,11 @@ Steve Krug wrote a second book on usability testing, and gives a basic demo of i
 [Codrops]:              http://tympanus.net/codrops/
 [Codrops 1]:            http://tympanus.net/codrops/2012/09/28/stop-look-click-attention-grabbing-elements-in-web-design/
 [Codrops 2]:            http://tympanus.net/codrops/2012/09/26/make-a-statement-with-type/
+[AppSites]:             http://appsites.com/
+[Mobile Patterns]:      http://www.mobile-patterns.com/
+[Complex Navigation]:   http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/
+[Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
+[Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
 [Paper]:                http://generatedpaper.com/en/wireframing
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
 [Don't Make Me Think]:  http://www.sensible.com/index.html
