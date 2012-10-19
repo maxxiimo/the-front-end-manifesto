@@ -7,6 +7,11 @@ Equally important to your application as foundation markup are foundation styles
 
 Probably the two most well-known dynamic stylesheet preprocessors in use today are [Sass][] and [Less][]. [Sass][] is the sister of [Haml][], and my preprocessor of choice as well as the default preprocessor in Rails 3.X. Besides being awesome, as a Rails front end developer you are going to predominantly see Sass used in projects you work on, so if you haven't dived in already, [you should][].
 
+The following two articles will give you a great overview on Sass in rails:
+
+- [An Introduction to Sass in Rails 1][Sass in Rails 1]
+- [An Introduction to Sass in Rails 2][Sass in Rails 2]
+
 When using sass you have a choice in syntax; .sass or .scss. I prefer .sass. Most front end developers will probably go with the .scss syntax because it looks familiar (similar to CSS), and because that is what ships out-of-the-box in Rails, however, .sass is cleaner/terser (IMHO). To help you decide on the best syntax for you read this:
 
 - [Sass vs. SCSS: Which Syntax is Better?][Sass vs. SCSS]
@@ -547,6 +552,8 @@ With all of this work you are more than ready to begin building an app with your
 [Less]:                 http://lesscss.org/
 [Haml]:                 http://haml-lang.com/
 [you should]:           http://css-tricks.com/redesigning-with-sass/
+[Sass in Rails 1]:      http://rubysource.com/an-introduction-to-sass-in-rails/
+[Sass in Rails 2]:      http://rubysource.com/an-introduction-to-sass-in-rails-2/
 [Sass vs. SCSS]:        http://thesassway.com/articles/sass-vs-scss-which-syntax-is-better
 [css2sass]:             http://css2sass.heroku.com/
 [Html2Haml]:            http://html2haml.heroku.com/

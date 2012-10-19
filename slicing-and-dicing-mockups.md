@@ -89,6 +89,7 @@ Here's where we really begin to code the basic high-level questions above. At th
  
 Here are a few resources that will help you choose semantically correct elements for your base layout:
 
+
 - [HTML5 Element Flowchart][Flowchart]
 - [Structural Tags in HTML5][Structural Tags]
 - [HTML5 section, aside, header, nav, footer elements – not as obvious as they sound][Not Obvious]
@@ -205,7 +206,7 @@ Start with a blank canvas, i.e. in my text editor, and literally start placing c
 
 As you start moving through sections of your mockup, start grabbing any remaining icons or images that you have not grabbed from your mockup already and place them in their appropriate folders per the HTML Organization chapter of this manifesto. Some things will simply be placeholders, like profile pictures. You can delete your placeholders out later.
 
-Coding everything semantically correct is a practice in trial and error. In addition to the resources in step 4, [HTML5 Doctor][] has some great HTML5 semantic specific articles that will help you get organized. If you are new to all this, or rusty, I recommend reviewing the following "element" articles:
+Coding everything semantically correct is a practice in trial and error. In addition to the resources in step 4, Mozilla Developer Network's article "[Sections and Outlines of an HTML5 Document][HTML5 Document]" describes in detail the difference between HTML4 and HTML5 document structure. [HTML5 Doctor][] has some great HTML5 semantic specific articles that will help you get organized. If you are new to all this, or rusty, I recommend reviewing the following "element" articles:
 
 - [%article][]
 - [%section][]
@@ -280,6 +281,7 @@ Why do this from the get-go? Well you know you will have icons and you already h
 [CSS Tricks]:           http://css-tricks.com/
 [A List Apart]:         http://www.alistapart.com/
 [jQuery UI]:            http://jqueryui.com/
+[HTML5 Document]:       https://developer.mozilla.org/en-US/docs/Sections_and_Outlines_of_an_HTML5_document
 [HTML5 Doctor]:         http://html5doctor.com/article-archive/
 [%article]:             http://html5doctor.com/the-article-element/
 [%section]:             http://html5doctor.com/the-section-element/
