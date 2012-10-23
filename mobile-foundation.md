@@ -25,7 +25,7 @@ With Ruby on Rails there are three ways we can tackle mobile browsers:
 
 3.  A hybrid of 1 and 2.
 
-I'm undecided about which method I prefer insofar as 1 and 2 go. My gut tells me to separate concerns, but I like responsive styles and lots of minds are working towards improving them. Here are some thoughts on the matter:
+So which method should you use? That really depends on your clients or businesses needs. Asked for my preferences, personally I like to separate concerns, tend to use option three. I also like responsive styles, and lots of minds are working towards improving them. Here are some thoughts on the matter:
 
 - Keep them separate and you can serve lighter, device specific stylesheet, JavaScript and images. This translates to less complexity and better performance.
 - As applications grow and user needs change, it might become necessary to separate mobile out completely. If you start out separate this transition might be easier.
@@ -33,12 +33,12 @@ I'm undecided about which method I prefer insofar as 1 and 2 go. My gut tells me
 - Designing for a mobile device, a tablet device, and a desktop could be time-consuming, responsive design can accommodate all three.
 - With responsive design, change the code once and it trickles down to all devices.
 
-Right now responsive web design is hugely popular. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" does a great job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote there that the author uses that resonates with me:
+Right now responsive web design is hugely popular. The article [Reasons for Responsive Design][] highlights exactly that. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" gives an opposite perspective and does a good job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote that the author uses that resonates with me:
 
 > Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
 \- [Brian Fling][]
 
-Whatever approach you decide, keep in mind that there are a spectrum of user and business needs, and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website most certainly doesn't need mobile specific geolocation capabilities, and the changes required between screens are minor. In this case why not use media queries and keep things together? On the other hand more complex applications may need to serve up specific markup and styles, take for example Basecamp mobile:
+Whatever approach you decide, keep in mind that there are a spectrum of user and business needs, and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website most certainly doesn't need mobile specific geolocation capabilities, and the changes required between screens are minor, so maybe  detecting user agent to serve something specific to mobile browsers is not the best use of my time. In this case why not use media queries and keep things together? On the other hand more complex applications may need to serve up specific markup and styles, take for example Basecamp mobile:
 
 > Only using responsive design for Basecamp mobile would have been like fitting a Prius body to a Hummer... under-the-hood it would have been all wrong.
 \[Behind the speed: Basecamp mobile][Basecamp Mobile]
@@ -104,6 +104,7 @@ Yada yada yada, coming soon... ;)
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/cover
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
+[Responsive Reasons]:   http://www.mixd.co.uk/blog/technical/reasons-for-responsive-design/
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
 [Brian Fling]:          http://shop.oreilly.com/product/9780596155452.do
 [Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile               

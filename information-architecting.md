@@ -43,45 +43,43 @@ In this storyline example – with my Information Architect (IA) hat on – I immedi
     - Legalese (Copyright, ToS, Privacy)
     - Non-legal footer type info (Feedback, About, Contact, Site Map)
 
-...and as the front end developer I'm already beginning to imagine how these blocks of information will be conveyed and coded to fit into our foundation markup and/or used by our backend development team. 
-
-This is exactly what you will need to do. Think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed and coded.
+...and as the front end developer I'm already beginning to imagine how these blocks of information will be conveyed and coded to fit into our foundation markup and/or used by our backend development team. This is exactly what you will need to do. Think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed and coded.
 
 ### Gathering and Organizing Information
 
-To help me along this process, one technique I like to use, whether I know exactly what I'm after or not, is to use index cards to create a physical inventory of possible application components:
+There's more to gathering and organizing information than just creating a storyline. What follows are different techniques I use to gather all the blocks of information that will ultimately make up the users experience. I also highly recommend the book "[Don't Make Me Think][]" by Steve Krug. It’s a good read and everything he says is so darn obvious, and all there in one great reference.
 
-**Step 1:** Write down in a word or two on an index card – or a bunch of tiny pieces of paper, a digital equivalent like PowerPoint, or even a single sheet of paper as a list of items – what the card represents: content, function, a navigational element, an image, video, whatever.
+#### Index Card Exercise
+
+To help me along my process I use index cards to create a physical inventory of possible application components. It's best to do this exercise with others, especially stakeholders in the project. You can buy a pack of 200 index cards for under one dollar. Here are the steps I follow:
+
+**Step 1:** Write down in a word or two on an index card – or a bunch of tiny pieces of paper, a digital equivalent like PowerPoint, or even a single sheet of paper (as a list of items) – what the card represents: content, function, a navigational element, an image, video, whatever.
 
 Think of as many components to the page or application as you can – I prefer dealing with a single view at a time.
 
 NOTE: Color coding is helpful.
 
-**Step 2:** Lay out the index cards on a table and begin organizing them into logical groups like navigation. Not all cards need to be included.
+**Step 2:** Lay out the index cards on a table and organize them into logical groups like navigation.
 
-NOTE: It's best to do this exercise with others, most especially stakeholders in the project. This way you can brainstorm with other team members, clients, and customers.
+**Step 3:** Start eliminating all the cards you don't want to include.
 
 Here's a practical example. I need a new website for my practice "ViewThought". My storyline goes something like this:
 
 > We are a great website design, development and user experience shop. We have tons of experience, have worked with a bunch of different clients who are all happy with our work, and we really care about what we do. We specialize in Ruby on Rails, and we pay special attention to what your users will see. You should hire us! ...or give us a call and learn more.
 
-I immediately can see a few index card entries in my storyline, and write out everything I can think of, but I don't stop there. Beside your own genius, it's good practice to see what other people are doing, like the sites competitors or similar services or types of websites. I've bookmarked a bunch of sites to review. As I review them I add more index card entries. Here's what all my entries look like laid out on a table:
+I immediately can see a few index card entries in my storyline, and write out everything I can think of, but I don't stop there. Beside your own ideas, it's good to see what other people are doing, like the sites competitors or similar services or types of websites. I've bookmarked a bunch of sites to review, and as I review them I add more index card entries. For navigation I had a simple tally on the bottom of the cars to see how many of the sites I review use that particular navigation element. Here's what all my entries look like laid out on a table:
 
 ***ADD PHOTO HERE***
 
-I have XXX index cards laid out. Now I start to think about where information will be placed. I want to call attention to different parts of the story depending on its relevance and importance to the story. These components I move higher up on the page.
-
-Basically I think like a newspaper layout editor. I also "borrow from the best" to get ideas about my layout by seeing what’s out there on the Web through inspiration sites like the ones listed below under the "Inspiration" heading. I highly recommend the book "[Don't Make Me Think][]" by Steve Krug. It’s a good read and everything he says is so darn obvious, and all there in one great reference.
+I have 200 index cards laid out and grouped as navigation, content, or footer information. As I review I begin to remove components I don't plan to use and I also start to think about where information will be placed. I want to call attention to different parts of the story depending on its relevance and importance to the story. These components I move higher up on the page. Basically I think like a newspaper layout editor.
 
 After evaluating and reorganizing here is what I'm left with:
 
 ***ADD PHOTO HERE***
 
-##### Bypassing This Exercise
+As a front end coder it is so easy for me to just start coding and change things on the fly as I move along. In fact, I'd rather just do that than the index card exercise, but experience has shown me that the manual process of labeling index cards and laying them out forces me think outside of the box, think of new ideas, find new ideas, and to not work in isolation. I find that by doing the exercise there's just enough chance of a better outcome that it's worth trying.
 
-As a front-end coder it is so easy for me to just start coding and change things on the fly as I move along. In fact, I'd rather just do that than the index card exercise. The manual process of labeling index cards and laying them out though forces me think outside of the box and not work in isolation. There's just enough chance of a better outcome by doing the exercise that it's worth trying.
-
-### Prototyping on Paper
+#### Prototyping on Paper
 
 Another exercise you can do – besides or in conjunction with index cards – is prototyping on paper. Doing so helps you visualize with the site will look like on a screen, and how it will work. It also gives you some more opportunities for stakeholder input, and further reflection and brainstorming before you begin coding. When you do begin coding paper prototypes can serve as your coding blueprint. Paper is also highly portable, requires no electricity or Internet connectivity, can easily be shared with others, and its use is a skill that is common between all stakeholders.
 
@@ -89,6 +87,7 @@ Here are some resources that will help you sketch:
 
 - [Paper][]
 - [Interface Sketch][]
+- [Responsive Sketchsheets][]
 
 Here's what my application looks like on paper:
 
@@ -96,7 +95,7 @@ Here's what my application looks like on paper:
 
 There are a number of applications out there that can help you prototype, but I prefer to go old-school with a pencil and [paper][]. For presentational purposes you can transfer this exercise to PowerPoint or some other application for prototyping, but don't get bogged down and waste time doing so.
 
-### No More Exercises!
+#### No More Exercises!
 
 At this point start coding! Remember, you have laid out the groundwork in chapters 1 through 3 for your application and hopefully have deployed on Heroku. If clients need to review beyond these early exercises, there's nothing better than sending them to a URL with content placeholders that they can click through to simulate the actual application.
 
@@ -126,7 +125,7 @@ Just remember that less is more and KISS (Keep It Simple Stupid). Revise and rel
 
 #### Inspiration
 
-In addition to reviewing competitor sites or similar services to help generate ideas, the following sites might also inspire or provide you with best practices/design patterns:
+In addition to reviewing competitor sites or similar services to help generate ideas, the following sites may also inspire or provide you with best practices/design patterns:
 
 [Awwwards][]
 
@@ -238,6 +237,7 @@ Steve Krug wrote a second book on usability testing, and gives a basic demo of i
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
 [Paper]:                http://generatedpaper.com/en/wireframing
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
+[Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
 [Don't Make Me Think]:  http://www.sensible.com/index.html
 [Concept Feedback]:     http://www.conceptfeedback.com/
 [IntuitHQ]:             http://www.intuitionhq.com/

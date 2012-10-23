@@ -59,8 +59,9 @@ Table of Contents
   - Blocks of Information
   - The Storyline
   - Gathering and Organizing Information
-  - Prototyping on Paper
-  - No More Exercises!
+    - Index Card Exercise
+    - Prototyping on Paper
+    - No More Exercises!
   - Look and Feel
     - Inspiration
   - Feedback
