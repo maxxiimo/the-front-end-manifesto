@@ -263,5 +263,5 @@ Steve Krug wrote a second book on usability testing, and gives a basic demo of i
 [UserTesting.com]:      http://www.usertesting.com/
 [Rocket Surgery]:       http://www.youtube.com/watch?v=QckIzHC99Xc&feature=player_embedded
 
-[Index Before]:         http://chrismaxwell.com/manifesto/index-cards-before.jpg
-[Index After]:          http://chrismaxwell.com/manifesto/index-cards-after.jpg
+[Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
+[Index After]:          http://chrismaxwell.com/manifesto/index-cards/index-cards-after.jpg
