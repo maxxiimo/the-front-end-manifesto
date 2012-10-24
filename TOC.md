@@ -62,7 +62,8 @@ Table of Contents
     - Index Card Exercise
     - Prototyping on Paper
     - No More Exercises!
-  - Look and Feel
+  - Design
+    - Look and Feel
     - Inspiration
   - Feedback
   - What We've Done

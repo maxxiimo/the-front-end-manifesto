@@ -464,4 +464,4 @@ In the [next chapter][Foundation Styles], we will begin to set up our foundation
 [Waste of Time]:        http://www.sitepoint.com/is-internet-explorer-development-really-a-waste-of-time/             
 [RWD for IE]:           http://www.sitepoint.com/support-old-browsers-responsive-web-design/
 
-[Basic HTML]:           http://chrismaxwell.com/rails-views/assets/getting-started/base-html-no-styles.png
+[Basic HTML]:           http://chrismaxwell.com/manifesto/getting-started/base-html-no-styles.png

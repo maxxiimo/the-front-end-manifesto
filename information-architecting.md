@@ -19,7 +19,7 @@ In this chapter we're going to mostly focus on option 1 and 3. Hiring a designer
 
 ### Blocks of Information
 
-Before any design begins, we need to architect the application. As I mentioned in [chapter 1][markup]:
+To build our stories the first thing we need to do is architect the application. As I mentioned in [chapter 1][markup]:
 
 > As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption.
 
@@ -69,15 +69,19 @@ Here's a practical example. I need a new website for my practice "ViewThought". 
 
 I immediately can see a few index card entries in my storyline, and write out everything I can think of, but I don't stop there. Beside your own ideas, it's good to see what other people are doing, like the sites competitors or similar services or types of websites. I've bookmarked a bunch of sites to review, and as I review them I add more index card entries. For navigation I had a simple tally on the bottom of the cars to see how many of the sites I review use that particular navigation element. Here's what all my entries look like laid out on a table:
 
-***ADD PHOTO HERE***
+![][Index Before]
 
 I have 200 index cards laid out and grouped as navigation, content, or footer information. As I review I begin to remove components I don't plan to use and I also start to think about where information will be placed. I want to call attention to different parts of the story depending on its relevance and importance to the story. These components I move higher up on the page. Basically I think like a newspaper layout editor.
 
 After evaluating and reorganizing here is what I'm left with:
 
-***ADD PHOTO HERE***
+![][Index After]
 
-As a front end coder it is so easy for me to just start coding and change things on the fly as I move along. In fact, I'd rather just do that than the index card exercise, but experience has shown me that the manual process of labeling index cards and laying them out forces me think outside of the box, think of new ideas, find new ideas, and to not work in isolation. I find that by doing the exercise there's just enough chance of a better outcome that it's worth trying.
+As a front end coder it is so easy for me to just start coding and change things on the fly as I move along. In fact, I'd rather just do that than the index card exercise, but experience has shown me that the manual process of labeling index cards and laying them out forces me think outside of the box, think of new ideas, and to not work in isolation, i.e. include others in the process. I find that by doing the exercise there's just enough chance of a better outcome that it's worth trying.
+
+Check out how this design group uses index cards:
+
+- [Responsive Design Case Study][Case Study]
 
 #### Prototyping on Paper
 
@@ -101,7 +105,19 @@ At this point start coding! Remember, you have laid out the groundwork in chapte
 
 Just remember that less is more and KISS (Keep It Simple Stupid). Revise and release often.
 
-### Look and Feel
+### Design
+
+Back in his presentation in 2008 Jason Santa Maria stated to the audience that design must communicate your story, and that just by looking at your site your users should be able to understand what they're looking at. I mean you don't need a user manual to use Amazon.com do you? For your application we're going to have to use a combination of layout, fonts, color, images, to tell your story in such a way that the user understands.
+
+Take for example this 2007 website concept:
+
+- http://noonebelongsheremorethanyou.com/00025
+
+It illustrates to me the simplicity of the idea of telling a story and engaging the user and ultimately deliver a message and entice an action.
+
+#### Look and Feel
+
+So up until now regarding design I'm writing more conceptually, but as front-end developers we tend to want to just start coding. So let's look at the quickest way to accomplish this and at the same time create a sites look and feel:
 
 - Use a framework. We listed several frameworks you can use in [Chapter 2][styles].
 
@@ -235,6 +251,7 @@ Steve Krug wrote a second book on usability testing, and gives a basic demo of i
 [Complex Navigation]:   http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
+[Case Study]:           http://builtbyboon.com/blog/responsive-design-case-study
 [Paper]:                http://generatedpaper.com/en/wireframing
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
@@ -245,3 +262,6 @@ Steve Krug wrote a second book on usability testing, and gives a basic demo of i
 [Silverback]:           http://silverbackapp.com/
 [UserTesting.com]:      http://www.usertesting.com/
 [Rocket Surgery]:       http://www.youtube.com/watch?v=QckIzHC99Xc&feature=player_embedded
+
+[Index Before]:         http://chrismaxwell.com/manifesto/index-cards-before.jpg
+[Index After]:          http://chrismaxwell.com/manifesto/index-cards-after.jpg
