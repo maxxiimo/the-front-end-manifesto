@@ -55,6 +55,7 @@ Table of Contents
   - User Agent Sniffing
     - Mobile Solutions Roundup
   - Responsive Web Design
+  - Mobile on Rails
 - [Information Architecting][]
   - Blocks of Information
   - The Storyline

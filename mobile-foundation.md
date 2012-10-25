@@ -17,7 +17,7 @@ In [Chapter 4][] we will tackle this paradigm shift head-on as we architect our 
 
 ### Plan of Attack
 
-With Ruby on Rails there are three ways we can tackle mobile browsers:
+At the end of this chapter Dan Pickett the founder of [LaunchWare][] describes several different methods to tackle mobile on Ruby on Rails, but for this chapter we will need to choose one approach to build our mobile foundation. Perhaps in the next book "Mobile on Rails" we can dive in even further. For now, here are three possibilities:
 
 1.  Detecting user agents to serve mobile specific markup and styles.
 
@@ -25,10 +25,9 @@ With Ruby on Rails there are three ways we can tackle mobile browsers:
 
 3.  A hybrid of 1 and 2.
 
-So which method should you use? That really depends on your clients or businesses needs. As for my preferences, personally I like to separate concerns, but serve responsive designs within this separation, so I tend to use option three. Fortunately, I'm not alone in this thinking:
+Personally I like to separate concerns, but include responsive design within this separation, so I tend to use option three. Fortunately, I'm not alone in this thinking:
 
 > Now, oftentimes, people think about device detection as a "one or the other" sort of thing. Either you’re doing responsive design or you’re using device detection to route people to separate templates, and that you would choose one of those two options; you wouldn’t build something that uses both. But we’ve actually combined responsive design with server-side detection quite a bit.
-
 \- [Jason Grigsby – Mobile-First Responsive Design][Jason Grigsby]
 
 I also like responsive styles, and lots of minds are working towards improving them. Here are some thoughts on the matter:
@@ -44,7 +43,7 @@ Right now responsive web design is hugely popular. The article [Reasons for Resp
 > Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
 \- [Brian Fling][]
 
-Whatever approach you decide, keep in mind that there are a spectrum of user and business needs, and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website most certainly doesn't need mobile specific geolocation capabilities, and the changes required between screens are minor, so maybe  detecting user agent to serve something specific to mobile browsers is not the best use of my time. In this case why not use media queries and keep things together? On the other hand more complex applications may need to serve up specific markup and styles, take for example Basecamp mobile:
+Whatever approach you decide, keep in mind that there are a spectrum of user and business needs, and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website is pretty simple so maybe detecting user agents to serve something specific to mobile browsers is not the best use of my time. In this case why not use media queries and keep things together? On the other hand more complex applications may need to serve up specific markup and styles, take for example Basecamp mobile:
 
 > Only using responsive design for Basecamp mobile would have been like fitting a Prius body to a Hummer... under-the-hood it would have been all wrong.
 \[Behind the speed: Basecamp mobile][Basecamp Mobile]
@@ -59,7 +58,7 @@ To complicate matters at Fidelity it was our objective to cover 99.999% [possibl
 
 To accomplish ubiquity we developed a super dumbed down HTML 1.0 interface that would work on 90% of all small screen devices, remember pre-smart phone, and for the remaining devices served up alternative markup that would display content correctly and consistent with the company's brand and look and feel. We were able to successfully do this by analyzing the devices HTTP_ACCEPT header and HTTP_USER_AGENT header, i.e. user agent sniffing. Over time with all the customers that Fidelity had, the company developed an extensive database of devices their customers used which included the device's screen size, operating system, carrier, and other pertinent information. Armed with this information Fidelity could tailor out markup depending on the request and information it contained.
 
-Fast-forward to today, with the advent of smart devices and their proliferation we also need to make sure our applications work correctly and consistently across a multitude of different devices and screen sizes. One huge advantage in our favor between then and now is the mobile browser and its ubiquity across different devices. Consequently, as front end developers we can concentrate on real estate more so than on walled gardens and major limitations in device capabilities. Like my days at Fidelity, we can effectively use devices user agents to identify browsers, screen resolutions, type of device, and based on this determine what markup and styles to serve.
+Fast-forward to today, with the advent of smart devices and their proliferation, we also need to make sure our applications work correctly and consistently across a multitude of different devices and screen sizes. Like my days at Fidelity, we can effectively use devices user agents to identify browsers, screen resolutions, type of device, and based on this determine what markup and styles to serve.
 
 #### Mobile Solutions Roundup
 
@@ -105,11 +104,27 @@ Ethan Marcotte is widely credited for coining the term "Responsive Web Design" i
 
 Yada yada yada, coming soon... ;)
 
+### Mobile on Rails
+
+When I asked [LaunchWare][] founder Dan Pickett what he thought was the best approach for mobile, his answer was so succinct and backed with experience that I'm just going to quote it in its entirety here:
+
+> We've generally found, UI/UX wise, though that the paradigm is so different that it generally requires a different set of controllers and views. 
+
+  So I see three or four different levels:
+
+  - A responsive design for content oriented / non-workflow based sites (pure HTML/CSS/JS solution) 
+  - A set of different mobile vs. traditional web views sharing the same controllers (use only when the workflow experience is the same on both paradigms, but still have request specs exercising both mediums)
+  - A set of different controllers and views optimized for each experience, with appropriate request specs for each paradigm. (we've suggested this approach in most apps - shared business logic, different views and controllers)
+  - A separate, mobile web application that talks to the main application client side via a service oriented architecture (this is usually the last progression before going native, and we only go this route if the mobile app is vastly different from the web application)
+
+  The latter three allow for a phonegap or similar solution so that the app can be listed in the app stores and can take advantage of some of the native functions of the device.
+
 [foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/cover
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
+[LaunchWare]:           http://launchware.com/
 [Jason Grigsby]:        http://www.uie.com/brainsparks/2012/10/12/jason-grigsby-mobile-first-responsive-design/
 [Responsive Reasons]:   http://www.mixd.co.uk/blog/technical/reasons-for-responsive-design/
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
