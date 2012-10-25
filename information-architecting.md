@@ -169,6 +169,8 @@ Here are a few examples:
 
 - [Stop, Look, Click: Attention-Grabbing Elements in Web Design][Codrops 1]
 - [Make a Statement with Type][Codrops 2]
+- [Creative Background Styles and Trends in Web Design][Codrops 3]
+- [Dashboard Design Elements for the Win][Codrops 4]
 
 #### Mobile
 
@@ -248,6 +250,8 @@ Steve Krug wrote a second book on usability testing, and gives a basic demo of i
 [Codrops]:              http://tympanus.net/codrops/
 [Codrops 1]:            http://tympanus.net/codrops/2012/09/28/stop-look-click-attention-grabbing-elements-in-web-design/
 [Codrops 2]:            http://tympanus.net/codrops/2012/09/26/make-a-statement-with-type/
+[Codrops 3]:            http://tympanus.net/codrops/2012/08/17/creative-background-styles-and-trends-in-web-design/
+[Codrops 4]:            http://tympanus.net/codrops/2012/09/20/dashboard-design-elements-for-the-win/
 [AppSites]:             http://appsites.com/
 [Mobile Patterns]:      http://www.mobile-patterns.com/
 [Complex Navigation]:   http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/

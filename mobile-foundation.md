@@ -25,12 +25,12 @@ At the end of this chapter Dan Pickett the founder of [LaunchWare][] describes s
 
 3.  A hybrid of 1 and 2.
 
-Personally I like to separate concerns, but include responsive design within this separation, so I tend to use option three. Fortunately, I'm not alone in this thinking:
+Personally I like to separate concerns but include responsive design within this separation since there is no one size fits all in mobile, so I tend to use option three. Fortunately, I'm not alone in this thinking:
 
 > Now, oftentimes, people think about device detection as a "one or the other" sort of thing. Either you’re doing responsive design or you’re using device detection to route people to separate templates, and that you would choose one of those two options; you wouldn’t build something that uses both. But we’ve actually combined responsive design with server-side detection quite a bit.
 \- [Jason Grigsby – Mobile-First Responsive Design][Jason Grigsby]
 
-I also like responsive styles, and lots of minds are working towards improving them. Here are some thoughts on the matter:
+I don't think an all or nothing approach really makes sense as a rule of thumb.  Let the situation dictate the solution. Here are some thoughts on option 1 versus option 2:
 
 - Keep them separate and you can serve lighter, device specific stylesheet, JavaScript and images. This translates to less complexity and better performance.
 - As applications grow and user needs change, it might become necessary to separate mobile out completely. If you start out separate this transition might be easier.
@@ -38,7 +38,7 @@ I also like responsive styles, and lots of minds are working towards improving t
 - Designing for a mobile device, a tablet device, and a desktop could be time-consuming, responsive design can accommodate all three.
 - With responsive design, change the code once and it trickles down to all devices.
 
-Right now responsive web design is hugely popular. The article [Reasons for Responsive Design][] highlights exactly that. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" gives an opposite perspective and does a good job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote that the author uses that resonates with me:
+Right now responsive web design is hugely popular. The article [Reasons for Responsive Design][] give you some good reasons why you should consider using it. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" gives an opposite perspective and does a good job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote in particular that the author uses that resonates with me:
 
 > Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
 \- [Brian Fling][]
@@ -52,7 +52,7 @@ In this chapter we will explore the three plans of attack.
 
 ### User Agent Sniffing
 
-Back at Fidelity mobile was a complete separate concern from desktops. I worked there slightly before smart phones emerged, and back then smallscreen devices operated behind what was referred to as a carriers "walled garden" which oftentimes did not allow CSS, or JavaScript, or HTML tables, or all three. Back then there were so many different types of devices, rules, screen sizes, and mobile browsers (or none at all). 
+Back at Fidelity pre-smart phone, mobile was a complete separate concern from desktops. I worked there slightly before smart phones emerged, and back then smallscreen devices operated behind what was referred to as a carriers "walled garden" which oftentimes did not allow CSS, or JavaScript, or HTML tables, or all three. Back then there were so many different types of devices, rules, screen sizes, and mobile browsers (or none at all). 
 
 To complicate matters at Fidelity it was our objective to cover 99.999% [possibly exaggerated by me] of all small screen devices out there. Why? Imagine a billionaire customer from Bahrain trying to look at his or her Fidelity portfolio on some obscure cell phone and nothing showing up! [Rationale also made up by me, but not the underlying object. Consistent coverage.]
 
@@ -92,7 +92,7 @@ To get started, if you're not sure where to begin or as a review, take a look at
 
 9.  If you're looking to beef up your detection capabilities, [Handset Detection][] is a service you can try (includes free and paid plans).
 
-10. [Akamai][] also provides a detection service.
+10. [Akamai][] and [DeviceAtlas][] also provides a detection service.
 
 11. Here is a list of "[Mobile Browser ID (User-Agent) Strings][Mobile Strings]" you could incorporate into your project if you wanted to get granular.
 
@@ -118,6 +118,11 @@ When I asked [LaunchWare][] founder Dan Pickett what he thought was the best app
 > - A separate, mobile web application that talks to the main application client side via a service oriented architecture (this is usually the last progression before going native, and we only go this route if the mobile app is vastly different from the web application)
 >
 > The later three allow for a phonegap or a similar solution so that the app can be listed in the app stores and can take advantage of some of the native functions of the device.
+
+### An Ajax Include Pattern
+
+[An Ajax-Include Pattern for Modular Content][Ajax-Include]
+
 
 [foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
@@ -145,7 +150,9 @@ When I asked [LaunchWare][] founder Dan Pickett what he thought was the best app
 [Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
 [Handset Detection]:    http://code.google.com/p/mobile-device-detection-ruby-on-rails/
 [Akamai]:               http://www.akamai.com/html/solutions/mobile_detection_redirect.html
+[DeviceAtlas]:          https://deviceatlas.com/
 [Mobile Strings]:       http://www.zytrax.com/tech/web/mobile_ids.html
+[Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 
 [Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html

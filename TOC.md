@@ -56,6 +56,7 @@ Table of Contents
     - Mobile Solutions Roundup
   - Responsive Web Design
   - Mobile on Rails
+  - An Ajax Include Pattern
 - [Information Architecting][]
   - Blocks of Information
   - The Storyline
