@@ -109,15 +109,15 @@ Yada yada yada, coming soon... ;)
 When I asked [LaunchWare][] founder Dan Pickett what he thought was the best approach for mobile, his answer was so succinct and backed with experience that I'm just going to quote it in its entirety here:
 
 > We've generally found, UI/UX wise, though that the paradigm is so different that it generally requires a different set of controllers and views. 
-
-  So I see three or four different levels:
-
-  - A responsive design for content oriented / non-workflow based sites (pure HTML/CSS/JS solution) 
-  - A set of different mobile vs. traditional web views sharing the same controllers (use only when the workflow experience is the same on both paradigms, but still have request specs exercising both mediums)
-  - A set of different controllers and views optimized for each experience, with appropriate request specs for each paradigm. (we've suggested this approach in most apps - shared business logic, different views and controllers)
-  - A separate, mobile web application that talks to the main application client side via a service oriented architecture (this is usually the last progression before going native, and we only go this route if the mobile app is vastly different from the web application)
-
-  The latter three allow for a phonegap or similar solution so that the app can be listed in the app stores and can take advantage of some of the native functions of the device.
+>
+> So I see three or four different levels:
+>
+> - A responsive design for content oriented / non-workflow based sites (pure HTML/CSS/JS solution) 
+> - A set of different mobile vs. traditional web views sharing the same controllers (use only when the workflow experience is the same on both paradigms, but still have request specs exercising both mediums)
+> - A set of different controllers and views optimized for each experience, with appropriate request specs for each paradigm. (we've suggested this approach in most apps - shared business logic, different views and controllers)
+> - A separate, mobile web application that talks to the main application client side via a service oriented architecture (this is usually the last progression before going native, and we only go this route if the mobile app is vastly different from the web application)
+>
+> The latter three allow for a phonegap or similar solution so that the app can be listed in the app stores and can take advantage of some of the native functions of the device.
 
 [foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
