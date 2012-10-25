@@ -142,6 +142,8 @@ So starting with the header (don't forget to use your magnifying tool to really 
 
 2.  Set a background color for your header. Use Photoshop's eyedropper tool to discover the color. If you use an image for your header this color will serve as a fallback.
 
+    ![][eyedropper]
+
     Note: Try to keep all of your colors in the _define.sass partial. As your application grows you'll be thankful for this. Use a naming convention that makes sense and keeps things grouped and organized. See the examples in the CSS Organization chapter.
 
 3.  If you're header background includes gradients, isolate and slice it. Repeat it across the header along the X axis. Slice it to 5 pixels wide if it's repeating horizontally.
@@ -311,6 +313,7 @@ Why do this from the get-go? Well you know you will have icons and you already h
 [mockup]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/mockup.jpg
 [step-5]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/grids.gif
 [auto-select]:          http://chrismaxwell.com/manifesto/slicing-and-dicing/auto-select.gif
+[eyedropper]:           http://chrismaxwell.com/manifesto/slicing-and-dicing/eyedropper.gif
 [step-6]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/finished-footer.gif
 [step-8]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/HTML-no-styles-sm.gif
 
