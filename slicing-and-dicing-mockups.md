@@ -1,6 +1,10 @@
 Slicing and Dicing Mockups
 --------------------------
 
+Unlike in the last chapter, often times I find myself in situations where all of the information architect thing has been thought out, the look and feel is in place, and the designer has put it all together in a mockup. In this chapter we're going to go through the exercise of slicing and dicing an example mockup to learn one approach to turning mockups into front end code. Here is the mockup we will use:
+
+![][mockup]
+
 To begin, use Adobe Photoshop to work with mockups. You will need it. Start off by taking a look at the mockup for a few minutes. Think of yourself as a sculptor looking at a marble block for the first time. You have a vision in your head and your getting ready to chisel. In other words just absorb it, understand it. Look at the major layout elements, i.e. the framework of the site, and begin to ask yourself some basic high-level questions like:
 
 1.  How wide should it be? 960px, 980px, 1040px?
@@ -89,14 +93,13 @@ Here's where we really begin to code the basic high-level questions above. At th
  
 Here are a few resources that will help you choose semantically correct elements for your base layout:
 
-
 - [HTML5 Element Flowchart][Flowchart]
 - [Structural Tags in HTML5][Structural Tags]
 - [HTML5 section, aside, header, nav, footer elements – not as obvious as they sound][Not Obvious]
 - [What Beautiful HTML Code Looks like][Beautiful HTML]
 - [HTML 5 Outliner][]
 
-To visualize your code output it helps to use border outlines on major sections or Compass' [grid-background mixin][grid-background].
+To visualize your code output it helps to use border outlines on major sections or use Compass' [grid-background mixin][grid-background].
 
     .outline
       border: 1px solid red
@@ -119,7 +122,9 @@ For the demo project here is what my application layout looks like:
         = render :partial => 'shared/footer'
     = scripts
 
-A slight variation of this manifestos base layout found in the HTML Organization section.
+A slight variation in our foundation [layout file][application] to accommodate the design needs of this project. Using our foundation markup with Compass grid backgrounds on, here's what our project looks like:
+
+![][step-5]
 
 ### Step 6 - Start with %header and %footer
 
@@ -133,7 +138,7 @@ So starting with the header (don't forget to use your magnifying tool to really 
 
     Note: This manifesto is most definitely not a Photoshop tutorial, but in case you didn't know, or for those of you new to Photoshop, there is a tool that will help you locate the layer in which the element you are after is in. On the top of the Photoshop tools palette there is a button with an arrow and crosshair icon. Click it. The top toolbar will change and that same button will be located on the far left of the new toolbar. Immediately to the right of it there is a checkbox with the name "Auto-Select: [Group/Layer]". Check this off. Finding your elements in your layers palette will now be that much easier. In my workflow I then grab the highlighted group or layer and drag it over to a new Photoshop window to isolate it. Besides using this tool you can also toggle layers on and off by clicking the eye icon on the layers palette beside each layer until you find what you're looking for or isolate an element.
     
-    !!! NEED AN IMAGE !!!
+    ![][auto-select]
 
 2.  Set a background color for your header. Use Photoshop's eyedropper tool to discover the color. If you use an image for your header this color will serve as a fallback.
 
@@ -183,7 +188,7 @@ Regarding pollyfills and fallbacks, a super helpful tool you should familiarize 
 
 So here's what the project is looking like so far:
 
-!!! NEED AN IMAGE !!!
+![][step-6]
 
 ### Step 7 - Navigation
 
@@ -219,7 +224,7 @@ Coding everything semantically correct is a practice in trial and error. In addi
 
 Here's what I have up until now:
 
-!!! NEED AN IMAGE !!!
+![][step-8]
 
 You might need to readjust your application layout file as you move along, that's okay, this is the time to do that. You may also find that you initially placed something in your _layout.sass styles, only to realize later that really belongs in _pages.sass. That happens to me all of the time, half the time with anticipation. In those cases I usually add a little // FIXME ccm: note.
 
@@ -229,7 +234,7 @@ Like in the previous step we'll take it section by section, image by image, font
 
 !!! NEED AN IMAGE !!!
 
-Now I go from section to section. As I move along, and since all my font colors are defined in _define.sass, I begin to see patterns emerging and can consolidate and reorganize fonts into logical groups.
+Now I go from section to section, making each section look exactly like the mockup. As I move along, and since all my font colors are defined in _define.sass, I begin to see patterns emerging and can consolidate and reorganize fonts into logical groups.
 
 For example, my font colors are looking like this:
 
@@ -252,6 +257,11 @@ For example, my font colors are looking like this:
 
 Notice the repetition?
 
+... and at the end of this process here is what I am left with:
+
+!!! NEED AN IMAGE !!!
+
+
 ### Step 10 - Sprites and CSS3 for Images
 
 Save your sprite and CSS3 for image work – like replacing image gradients – for the tail end of slicing and dicing mockups. Doing so will give you enough material to work with in terms of images that can be grouped together in a sprite, and will not greatly affect other team members who may already be using your work.
@@ -265,6 +275,7 @@ Why do this from the get-go? Well you know you will have icons and you already h
 
 [grid system]:          http://www.subtraction.com/pics/0703/grids_are_good.pdf
 [grid-background]:      http://compass-style.org/reference/compass/layout/grid_background/
+[application]:          https://github.com/maxxiimo/base-haml/blob/master/views/layouts/application.html.haml
 [Containing DIV]:       http://stackoverflow.com/questions/354739/why-should-i-use-a-container-div-in-html
 [Containing BODY]:      http://csswizardry.com/2011/01/using-the-body-element-as-a-wrapper/
 [CSS Font Stack]:       http://cssfontstack.com/
@@ -297,7 +308,11 @@ Why do this from the get-go? Well you know you will have icons and you already h
 
 [Railscasts]:           http://railscasts.com/episodes/334-compass-css-sprites
 
-
+[mockup]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/mockup.jpg
+[step-5]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/grids.gif
+[auto-select]:          http://chrismaxwell.com/manifesto/slicing-and-dicing/auto-select.gif
+[step-6]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/finished-footer.gif
+[step-8]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/HTML-no-styles-sm.gif
 
 ## TODO / write:
 
