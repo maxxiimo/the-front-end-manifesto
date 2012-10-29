@@ -261,8 +261,7 @@ Notice the repetition?
 
 ... and at the end of this process here is what I am left with:
 
-!!! NEED AN IMAGE !!!
-
+![][step-9b]
 
 ### Step 10 - Sprites and CSS3 for Images
 
@@ -316,6 +315,7 @@ Why do this from the get-go? Well you know you will have icons and you already h
 [eyedropper]:           http://chrismaxwell.com/manifesto/slicing-and-dicing/eyedropper.gif
 [step-6]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/finished-footer.gif
 [step-8]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/HTML-no-styles-sm.gif
+[step-9b]:              http://chrismaxwell.com/manifesto/slicing-and-dicing/job-details.jPG
 
 ## TODO / write:
 
