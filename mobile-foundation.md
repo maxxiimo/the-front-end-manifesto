@@ -123,6 +123,9 @@ When I asked [LaunchWare][] founder Dan Pickett what he thought was the best app
 
 [An Ajax-Include Pattern for Modular Content][Ajax-Include]
 
+### Using JavaScript
+
+
 
 [foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md

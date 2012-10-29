@@ -57,6 +57,7 @@ Table of Contents
   - Responsive Web Design
   - Mobile on Rails
   - An Ajax Include Pattern
+  - Using JavaScript
 - [Information Architecting][]
   - Blocks of Information
   - The Storyline
