@@ -232,11 +232,7 @@ You might need to readjust your application layout file as you move along, that'
 
 ### Step 9 - Adding Styles
 
-Like in the previous step we'll take it section by section, image by image, font by font, etc. First, I like to get the layout positioning out-of-the-way. Here we're mostly dealing with widths, margin and padding, and borders. With everything in its correct position this is what I have:
-
-!!! NEED AN IMAGE !!!
-
-Now I go from section to section, making each section look exactly like the mockup. As I move along, and since all my font colors are defined in _define.sass, I begin to see patterns emerging and can consolidate and reorganize fonts into logical groups.
+Like in the previous step we'll take it section by section, image by image, font by font, etc. First, I like to get the layout positioning out-of-the-way. Here we're mostly dealing with widths, margin and padding, and borders. Next, I go from section to section, making each section look exactly like the mockup. As I move along, and since all my font colors are defined in _define.sass, I begin to see patterns emerging and can consolidate and reorganize fonts into logical groups.
 
 For example, my font colors are looking like this:
 
@@ -259,9 +255,11 @@ For example, my font colors are looking like this:
 
 Notice the repetition?
 
-... and at the end of this process here is what I am left with:
+Step nine is really the place where everything happens stylewise. We started slicing and dicing with a blank canvas, added semantically correct HTML5 containers, then content, and here in step 9 we start positioning and styling, from section to section... and at the end of this  methodical process here is what I am left with:
 
-![][step-9b]
+![][step-9]
+
+A styled webpage almost completely identical to the mockup, however, created through HTML5 and CSS3 with a minimal amount of imagery.
 
 ### Step 10 - Sprites and CSS3 for Images
 
@@ -315,7 +313,7 @@ Why do this from the get-go? Well you know you will have icons and you already h
 [eyedropper]:           http://chrismaxwell.com/manifesto/slicing-and-dicing/eyedropper.gif
 [step-6]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/finished-footer.gif
 [step-8]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/HTML-no-styles-sm.gif
-[step-9b]:              http://chrismaxwell.com/manifesto/slicing-and-dicing/job-details.jpg
+[step-9]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/job-details.jpg
 
 ## TODO / write:
 
