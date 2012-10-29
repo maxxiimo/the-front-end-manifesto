@@ -307,13 +307,13 @@ Why do this from the get-go? Well you know you will have icons and you already h
 
 [Railscasts]:           http://railscasts.com/episodes/334-compass-css-sprites
 
-[mockup]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/mockup.jpg
+[mockup]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/mockup-700px.jpg
 [step-5]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/grids.gif
 [auto-select]:          http://chrismaxwell.com/manifesto/slicing-and-dicing/auto-select.gif
 [eyedropper]:           http://chrismaxwell.com/manifesto/slicing-and-dicing/eyedropper.gif
 [step-6]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/finished-footer.gif
 [step-8]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/HTML-no-styles-sm.gif
-[step-9]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/job-details.jpg
+[step-9]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/job-details-700px.jpg
 
 ## TODO / write:
 
