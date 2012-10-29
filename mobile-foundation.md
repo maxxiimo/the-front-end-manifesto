@@ -125,6 +125,7 @@ When I asked [LaunchWare][] founder Dan Pickett what he thought was the best app
 
 ### Using JavaScript
 
+Feature Detection
 
 
 [foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md

@@ -5,9 +5,13 @@ Chris Coyier of [CSS-Tricks][] recently published a video called "[Let's Do Simp
 
 > 80-90% of the end-user response time is spent on the frontend.
 
-\- ["the Performance Golden Rule"][Golden Rule] by Steve Souders
+\- ["The Performance Golden Rule"][Golden Rule] by Steve Souders
 
+If you're interested, also check out Steve Sounders article:
 
+- [High Performance Web Sites: The Importance of Front-End Performance][Performance]
+
+Now shift over to mobile, and according to "[Early findings: 97% of mobile end-user response time happens at the front end][97%]" the performance Golden rule number increases significantly.
 
 ### Gzipping
 
@@ -101,6 +105,8 @@ For more details on asset pipeline compression follow these links:
 [CSS-Tricks]:           http://css-tricks.com/
 [Simple Stuff]:         http://css-tricks.com/video-screencasts/114-lets-do-simple-stuff-to-make-our-websites-faster/
 [Golden Rule]:          http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/
+[Performance]:          http://developer.yahoo.com/blogs/ydn/posts/2007/03/high_performanc/
+[97%]:                  http://www.webperformancetoday.com/2011/04/20/desktop-vs-mobile-web-page-load-speed/
 [gzipWTF]:              http://gzipwtf.com/
 [Caching]:              http://edgeguides.rubyonrails.org/caching_with_rails.html
 [CodeKit]:              http://incident57.com/codekit/
