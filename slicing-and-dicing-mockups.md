@@ -315,7 +315,7 @@ Why do this from the get-go? Well you know you will have icons and you already h
 [eyedropper]:           http://chrismaxwell.com/manifesto/slicing-and-dicing/eyedropper.gif
 [step-6]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/finished-footer.gif
 [step-8]:               http://chrismaxwell.com/manifesto/slicing-and-dicing/HTML-no-styles-sm.gif
-[step-9b]:              http://chrismaxwell.com/manifesto/slicing-and-dicing/job-details.jPG
+[step-9b]:              http://chrismaxwell.com/manifesto/slicing-and-dicing/job-details.jpg
 
 ## TODO / write:
 
