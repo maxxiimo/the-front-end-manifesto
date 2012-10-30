@@ -90,9 +90,14 @@ To get started, if you're not sure where to begin or as a review, take a look at
 
 8.  In the tutorial "[Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]" the author proposes placing mobile templates in a separate directory, then when requests come in from a mobile subdomain, like m.domain.com, these templates are served. If the templates are not available, the requester is served regular view templates; freeing you up from having to create two templates for every action. Users can switch between the two templates, and user agent detection is employed.
 
-9.  If you're looking to beef up your detection capabilities, [Handset Detection][] is a service you can try (includes free and paid plans).
+9.  If you're looking to beef up your detection capabilities, the following services are available (includes free and paid plans).
 
-10. [Akamai][] and [DeviceAtlas][] also provides a detection service.
+    - [Handset Detection][]
+    - [Akamai][]
+    - [DeviceAtlas][]
+    - [scientiamobile][]
+
+10. You can also tap into the [WURFL][] database.
 
 11. Here is a list of "[Mobile Browser ID (User-Agent) Strings][Mobile Strings]" you could incorporate into your project if you wanted to get granular.
 
@@ -155,6 +160,8 @@ Feature Detection
 [Handset Detection]:    http://code.google.com/p/mobile-device-detection-ruby-on-rails/
 [Akamai]:               http://www.akamai.com/html/solutions/mobile_detection_redirect.html
 [DeviceAtlas]:          https://deviceatlas.com/
+[scientiamobile]:       http://www.scientiamobile.com/
+[WURFL]:                http://wurfl.sourceforge.net/
 [Mobile Strings]:       http://www.zytrax.com/tech/web/mobile_ids.html
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 
