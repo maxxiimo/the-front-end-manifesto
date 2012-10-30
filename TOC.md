@@ -4,72 +4,72 @@ Table of Contents
 - [Cover][]
 - [The Manifesto][]
 - [Foundation Markup][]
-  -  Groundwork
-    - Gemfile
-    - .gitignore
-    - Deployment
-  -  The Application Layout
-    - A Framework within a Framework
-    - Where Does It Live?
-  - The Code
-    - Where Do Things Go?
-    - Prep the App
-  - Our Foundation
-  - Organization
-    - Partials
-    - JavaScript
-    - What to Put in \<head>
-    - The Title
-  - Moving Forward
-    - Naming Conventions
-    - Using Partials
-    - IE 6
-  - What We've Done
+    -  Groundwork
+      - Gemfile
+      - .gitignore
+      - Deployment
+    -  The Application Layout
+      - A Framework within a Framework
+      - Where Does It Live?
+    - The Code
+      - Where Do Things Go?
+      - Prep the App
+    - Our Foundation
+    - Organization
+      - Partials
+      - JavaScript
+      - What to Put in \<head>
+      - The Title
+    - Moving Forward
+      - Naming Conventions
+      - Using Partials
+      - IE 6
+    - What We've Done
 - [Foundation Styles][]
-  - Preprocessors
-  - Frameworks
-    - Compass
-    - Twitter Bootstrap
-    -  Blueprint
-    -  YUI
-    -  Foundation 3
-    -  Skeleton
-  - Our Foundation
-    - Compass Set Up
-    - Stylesheet Set Up
-  - Organization
-    - Style TOC
-    - Resets
-  - Moving Forward
-    - Modularize Styles
-    - Use a Labeling System
-    - Naming Conventions
-  - Keep it DRY!
-    - Consolidate
-    - Variables
-    - Mixins
-  - What We've Done
+    - Preprocessors
+    - Frameworks
+      - Compass
+      - Twitter Bootstrap
+      -  Blueprint
+      -  YUI
+      -  Foundation 3
+      -  Skeleton
+    - Our Foundation
+      - Compass Set Up
+      - Stylesheet Set Up
+    - Organization
+      - Style TOC
+      - Resets
+    - Moving Forward
+      - Modularize Styles
+      - Use a Labeling System
+      - Naming Conventions
+    - Keep it DRY!
+      - Consolidate
+      - Variables
+      - Mixins
+    - What We've Done
 - [Mobile Foundation][]
-  - Mobile First
-  - Plan of Attack
-  - User Agent Sniffing
-    - Mobile Solutions Roundup
-  - Responsive Web Design
-  - Mobile on Rails
-  - An Ajax Include Pattern
-  - Using JavaScript
+    - Mobile First
+    - Plan of Attack
+    - User Agent Sniffing
+      - Mobile Solutions Roundup
+    - Responsive Web Design
+    - Mobile on Rails
+    - An Ajax Include Pattern
+    - Using JavaScript
 - [Information Architecting][]
-  - Blocks of Information
-  - The Storyline
-  - Gathering and Organizing Information
-    - Index Card Exercise
-    - Prototyping on Paper
-    - No More Exercises!
-  - Design
-    - Look and Feel
-    - Inspiration
-  - Feedback
-  - What We've Done
+    - Blocks of Information
+    - The Storyline
+    - Gathering and Organizing Information
+      - Index Card Exercise
+      - Prototyping on Paper
+      - No More Exercises!
+    - Design
+      - Look and Feel
+      - Inspiration
+    - Feedback
+    - What We've Done
 - [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
@@ -84,14 +84,14 @@ Table of Contents
   - Standardize Your Links
   - Use ARIA Roles
 - [Optimization][]
-  - Gzipping
-  - Caching
-    - Client-Side
-    - Server-Side
-  - Image Optimization
-  - Compressing and the Asset Pipeline
-  - Spriting
-  - What We've Done
+    - Gzipping
+    - Caching
+      - Client-Side
+      - Server-Side
+    - Image Optimization
+    - Compressing and the Asset Pipeline
+    - Spriting
+    - What We've Done
 - [Getting the Fonts Right][]
   - font-family
 - [Images][]
