@@ -135,8 +135,6 @@ Table of Contents
 - [Email Coding][]
 - [Refactoring][]
 - [Tools][]
-  -.gemfile
-  -.gitignore
 - [Search Engine Optimization][]
 - [Style Guides][]
 - [Good Advice][]
