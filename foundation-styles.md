@@ -1,7 +1,7 @@
 Foundation Styles
 -----------------
 
-Equally important to your application as foundation markup are foundation styles. HTML and CSS are the raw materials of the World Wide Web. We laid out our HTML, now let's square away our CSS. To do so we will review some of the options out there in terms of preprocessors and frameworks, and then best practices in stylesheet set up and maintenance. To learn these best practices we will implement the chapters [starter CSS][] which I have developed over the years with a lot of trial and error and OCD love. 
+Equally important to your application as foundation markup are foundation styles. HTML and CSS are the raw materials of the World Wide Web. We laid out our HTML, now let's square away our CSS. To do so we will review some of the options out there in terms of preprocessors and frameworks, and then best practices in stylesheet set up and maintenance. To learn these best practices we will implement the chapters [starter CSS][] which I have developed over the years with a lot of trial and error and OCD love.
 
 ### Preprocessors
 
@@ -26,11 +26,17 @@ In terms of other preprocessors, [Less][] is the runner-up. That's all I'm going
 
 ### Frameworks
 
-Frameworks give you a whole boatload of base styles that are instantly accessible through your HTML tags or specified class names. Frameworks include base font sizes and rhythm, default formats for almost every kind of HTML tag, and by simply dropping in the frameworks class names you can add some great looking styles to your project that are built to work, with very few hitches, across all browsers. On top of that you get grid systems, prebuilt scripts for commonly used functions like pop-ups, modals and menu systems. The list goes on. Here are a few worth taking a look at for your project.
+Frameworks give you a whole boatload of base styles that are instantly accessible through your HTML tags or specified class names. Frameworks include base font sizes and rhythm, default formats for almost every kind of HTML tag, and by simply dropping in the frameworks class names you can add some great looking styles to your project that are built to work, with very few hitches, across all browsers. On top of that you get grid systems, prebuilt scripts for commonly used functions like pop-ups, modals and menu systems. The list goes on.
+
+In so far as responsive frameworks go, the following article gives you a nice comparison:
+
+- [Responsive CSS Framework Comparison][Framework Comparison]
+
+Here is a brief framework roundup worth taking a look at for your project.
 
 #### Compass
 
-So right off the bat I have to say that I love [Compass][]. It's powerful, it's well-documented, it's widely used, there are a ton of extensions for it, and it generally makes life easier for me. What's not to like?
+So right off the bat I have to say that I love [Compass][]. It's powerful, it's well-documented, it's widely used, there are a ton of extensions for it, and it generally makes life easier for me.
 
 I'm pretty biased on this one, and all the [starter CSS ][] files we will use in our foundation styles incorporate Compass so there's not much else to say other than that it almost doesn't belong in this section since it's really not a framework but rather a utility. It's here though because you can add all kinds of framework components like:
 
@@ -53,19 +59,25 @@ Getting it to work with Rails is not impossible, hardly, but if you go this path
 
 #### Blueprint
 
-[Blueprint][], in my opinion, is the granddaddy of all frameworks. I used to use Blueprint all of the time, and Compass makes it almost a part of the base system. It's tried-and-true, and a good choice, but I rarely use it these days. I'm not too crazy about the look and feel, and really it seems to be more of a minimalist framework which is not a bad thing.
+[Blueprint][], in my opinion, is the granddaddy of all frameworks. I used to use Blueprint all of the time, and Compass makes it readily available. It's tried-and-true, and a good choice, but I rarely use it these days. I'm not too crazy about it's look and feel. It does seem to be more of a minimalist framework - which is not a bad thing.
 
 #### YUI
 
-> YUI is a free, open source JavaScript and CSS library for building richly interactive web applications. 
+ I've used YUI and personally I'm not too crazy about its grid system which is a pretty major component to any framework - so I generally stay away.
+
+> YUI is a free, open source JavaScript and CSS library for building richly interactive web applications.
 \- [YUI website][]
 
 #### Foundation 3
+
+I haven't used Foundation, but I'm interested.
 
 > The most advanced responsive front-end framework in the world.
 \- [Zurb website][]
 
 #### Skeleton
+
+I also haven't use Skeleton, but soon enough.
 
 > A Beautiful Boilerplate for Responsive, Mobile-Friendly Development
 \- [Skeleton website][]
@@ -83,7 +95,7 @@ Before we begin will need to quickly set up  Compass.
 2.  Run...
 
         $ bundle exec compass init
-        
+
     Compass will generate a configuration file and stylesheets. Delete the stylesheets. We're going to use our own.
 
 3.  Delete your application.css file and replace it with [application.scss][].
@@ -182,8 +194,8 @@ I use the above structure for most of my projects. What follows is a snippet of 
     * Important! Do *not* use Sprockets "require" syntax.
     * Use @import to include other stylesheets and Compass mixins.
     */
-    
-    
+
+
     /* DEFINITIONS
     ============================================================================ */
     @import "define";
@@ -281,7 +293,7 @@ I converted Eric Meyer's, and both the original Normalize.css and HTML 5 Boilerp
 
 In the case of [H5BP's normalize][], I have commented out some of the typographic styles to give myself the option to keep them or move them into more appropriate partials.
 
-The following article briefly outlines the changes in resets moving into HTML 5: 
+The following article briefly outlines the changes in resets moving into HTML 5:
 
 - [HTML5 Reset Stylesheet][HTML5 Resets]
 
@@ -296,7 +308,7 @@ Modularizing your styles is a great way to keep things organized. The degree of 
 1.  Group related partials together with a common prefix:
 
         _homepage_form.sass
-        
+
         _homepage_blog.sass
 
     Or...
@@ -322,17 +334,17 @@ Here is an example of one I use:
 
     /* Heading
       -----------------------
-    
+
     /* subdivision, description, comment
 
 The same one using the .scss syntax:
 
     /* MAJOR SECTION
       ============================================================================ */
-    
+
     /* Heading
       ----------------------- */
-    
+
     /* subdivision, description, comment */
 
 
@@ -341,8 +353,8 @@ I like the above sequence, but some other examples include:
     /* =============================================================================
        Major Section
        ========================================================================== */
-    
-    
+
+
     /* =============================================================================
      * Major Section (same as previous but for .sass)
      * =============================================================================
@@ -350,30 +362,30 @@ I like the above sequence, but some other examples include:
 For descriptions:
 
     /* -----------------------------------------------------------------------
-    
+
      Something major in here. Maybe a long description?
-    
+
     ----------------------------------------------------------------------- */
-    
-    
+
+
     /*
      * Comment in here, title, description, etc.
      */
-    
-    
+
+
     /* Comment in here, title, description, etc.
      * Yada yada yada.
      * And a 3rd line maybe. */
-    
+
 Once upon a time ago I used to always use this:
 
     /* Title
     ------------------------------------------------------------------ */
-    
-    
+
+
     /* Subtitle
     -----------–--- */
-    
+
     (use the same number of trailing dashes after the last letter for all subtitles - in this case 4.)
 
 
@@ -387,36 +399,36 @@ By far the most used labeling level in your stylesheets will be "subtitles". Use
 
     /* common
     ------------- */
-    
-    
+
+
     /* labels
     ------------- */
-    
-    
+
+
     /* inputs
     ------------- */
-    
-    
+
+
     /* checks and radials
     ------------------------- */
-    
-    
+
+
     /* text areas
     ----------------- */
-    
-    
+
+
     /* selects
     -------------- */
-    
-    
+
+
     /* buttons
     -------------- */
-    
-    
+
+
     /* link buttons
     ------------------- */
-    
-    
+
+
     /* misc
     ----------- */
 
@@ -493,7 +505,7 @@ The corresponding styles:
       background-color: $white
       border: 1px solid $border
       @include border-radius(8px)
-    
+
     .span3 aside
       padding: 0 19px
       background-color: $white
@@ -558,6 +570,7 @@ With all of this work you are more than ready to begin building an app with your
 [css2sass]:             http://css2sass.heroku.com/
 [Html2Haml]:            http://html2haml.heroku.com/
 [html2haml Gem]:        https://github.com/haml/html2haml
+[Framework Comparison]: http://responsive.vermilion.com/compare.php
 [Compass]:              http://compass-style.org/
 [Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
 [Response Grids]:       http://susy.oddbird.net/
@@ -605,7 +618,7 @@ With all of this work you are more than ready to begin building an app with your
 [Mixins in SASS]:       http://thecodingdesigner.com/tutorials/mixins-sass
 [Sass documentation]:   http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 [Useful SASS Mixins]:   http://sachagreif.com/useful-sass-mixins/
-[Custom User @mixins]:  http://css-tricks.com/custom-user-mixins/                   
+[Custom User @mixins]:  http://css-tricks.com/custom-user-mixins/
 [next chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
 
 [Basic HTML No Styles]: http://chrismaxwell.com/manifesto/getting-started/base-html-files-with-styles.png
