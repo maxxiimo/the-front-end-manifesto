@@ -196,7 +196,7 @@ In addition to reviewing competitor sites or similar services to help generate i
 
     > siteInspire is showcase and CSS gallery featuring the best web design today.
 
-5.  [Codrops][Codrops]
+5.  [Codrops][]
     > Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.
 
     Here are a few Codrops examples:
@@ -225,36 +225,26 @@ Since for advocating a mobile first design paradigm, it would be wrong to not in
 
 One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try something like:
 
-> Get Website Feedback and Increase Conversion Rates
-> Expert analysis, detailed recommendations and solutions you can implement today.
-\- [Concept Feedback][]
+1.  [Concept Feedback][]
+    > Get Website Feedback and Increase Conversion Rates
+    > Expert analysis, detailed recommendations and solutions you can implement today.
 
-<p></p>
+2.  [IntuitHQ][]
+    > Get useful, actionable results, improve usability in no time, and create a site your users will love.
 
-> Get useful, actionable results, improve usability in no time, and create a site your users will love.
-\- [IntuitHQ][]
+3.  [Loop11][]
+    > Loop11 is a remote usability testing tool that enables you to test the user-experience of any website and identify navigational and usability issues. Get the hard facts about your website quickly and cost effectively!
 
-<p></p>
+4.  [Silverback][]
+    > Guerrilla usability testing software for designers and developers
 
-> Loop11 is a remote usability testing tool that enables you to test the user-experience of any website and identify navigational and usability issues. Get the hard facts about your website quickly and cost effectively!
-\- [Loop11][]
+5.  [UserTesting.com][]
+    > Usability Testing Has Never Been Easier
+    > The fastest, cheapest way to find out why users leave your website.
 
-<p></p>
+6.  Steve Krug wrote a second book on usability testing, and gives a basic demo of it on YouTube:
 
->Guerrilla usability testing software for designers and developers
-\- [Silverback][]
-
-<p></p>
-
-> Usability Testing Has Never Been Easier
-> The fastest, cheapest way to find out why users leave your website.
-\- [UserTesting.com][]
-
-<p></p>
-
-Steve Krug wrote a second book on usability testing, and gives a basic demo of it on YouTube:
-
-- [Rocket Surgery Made Easy by Steve Krug: Usability Demo][Rocket Surgery]
+    - [Rocket Surgery Made Easy by Steve Krug: Usability Demo][Rocket Surgery]
 
 ### What We've Done
 
