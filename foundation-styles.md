@@ -40,8 +40,8 @@ So right off the bat I have to say that I love [Compass][]. It's powerful, it's 
 
 I'm pretty biased on this one, and all the [starter CSS ][] files we will use in our foundation styles incorporate Compass so there's not much else to say other than that it almost doesn't belong in this section since it's really not a framework but rather a utility. It's here though because you can add all kinds of framework components like:
 
-- [Sassy Buttons][]
-- [Responsive grids for Compass][]
+- [Sassy Buttons][] or [Fancy Buttons][]
+- [Responsive grids for Compass][] or [Zen Grids][]
 
 ...and essentially create your own look and feel. Most traditional frameworks on the other hand just give you styles. If you want to break free it takes some tinkering.
 
@@ -573,7 +573,9 @@ With all of this work you are more than ready to begin building an app with your
 [Framework Comparison]: http://responsive.vermilion.com/compare.php
 [Compass]:              http://compass-style.org/
 [Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
+[Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/
 [Response Grids]:       http://susy.oddbird.net/
+[Zen Grids]:            http://zengrids.com/
 [35 Great Resources]:   http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
 [Twitter Bootstrap]:    http://twitter.github.com/bootstrap/
 [Options]:              http://rubysource.com/twitter-bootstrap-less-and-sass-understanding-your-options-for-rails-3-1/

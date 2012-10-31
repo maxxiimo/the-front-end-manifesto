@@ -77,9 +77,11 @@ After evaluating and reorganizing here is what I'm left with:
 
 ![][Index After]
 
-Quite a bit less, and through the process I really have a great idea on what my site will look like and how I'm going to start coding.
+Quite a bit less, and through the process I really have a great idea on what my site will look like and how I'm going to start coding, but I need to whittle it down even further since we're going to use the mobile first approach. We need to shed even more, and here's what I'm left with:
 
-The truth be known, as a front end coder with years of practice it would be so easy for me to just bypass index carding, and start coding and change things on the fly as I move along. I'm always tempted to just do that because like many of you I see markup and styles like Neo sees the matrix  and can churn it out in my sleep. So why do I even bother? Experience has shown me that the manual process of labeling index cards and laying them out forces me think outside of my box, discover new ideas, and to not work in isolation, i.e. include others in the process. I find that by doing the exercise there's just enough chance of a better outcome that it's worth trying.  So should you.
+![][Index Mobile]
+
+The truth be known, as a front end coder with years of practice a huge part of me just wants to bypass index carding, and start coding and change things on the fly as I move along. I'm tempted to do that because like many of you I see markup and styles like Neo sees the Matrix and can churn out code in my sleep. So why do I even bother? Experience has shown me that the manual process of labeling index cards and laying them out forces me to reflect and think outside of my coding box. It helps me discover new ideas, refine the information architecture, and to not work in isolation, i.e. include others in the process. I find that by doing the exercise there's just enough chance of a better outcome that it's worth trying.  So should you.
 
 Check out how this design group uses index cards:
 
@@ -178,7 +180,7 @@ Since for advocating a mobile first design paradigm, it would be wrong to not in
 
 [AppSites][]
 
-> App Sites is a showcase of beautiful iPhone, iPad & Mac app websites. 
+> App Sites is a showcase of beautiful iPhone, iPad & Mac app websites.
 
 [Mobile Patterns][]
 
@@ -271,3 +273,4 @@ Steve Krug wrote a second book on usability testing, and gives a basic demo of i
 
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
 [Index After]:          http://chrismaxwell.com/manifesto/index-cards/index-cards-after.jpg
+[Index Mobile]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-mobile.jpg
