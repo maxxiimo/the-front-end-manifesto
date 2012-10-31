@@ -115,19 +115,43 @@ There are a number of applications out there that can help you prototype, but I 
 
 Paper is highly portable, can be digitized (scan), requires no electricity or Internet connectivity, can easily be shared with others, and its use is a skill that is common between all stakeholders.
 
-#### No More Exercises!
+#### Wireframing
 
-At this point start coding. What you code moving forward will serve as your living wireframe. Remember, you have laid out the groundwork in chapters 1 through 3 for your application and hopefully have deployed on Heroku. If clients need to review beyond these early exercises, there's nothing better than sending them to a URL with content placeholders that they can click through to simulate the actual application.
+No More Exercises! At this point start coding. What you code moving forward will serve as your living wireframe. Remember, you have laid out the groundwork in chapters 1 through 3 for your application and hopefully have deployed on Heroku. If clients need to review beyond these early exercises, there's nothing better than sending them to a URL with content placeholders that they can click through to simulate the actual application.
+
+### Placeholders
+
+Regarding the actual type for your project, if you have it great! If not this article gives a nice overview of how content blocks can be used in situations where type is not known, perhaps a client has not yet delivered it:
+
+- [Content, First?][Content First]
+
+I for one don't mind using Lorem Ipsum.
+
+#### Lorem Ipsum
+
+Here are some great resources for it:
+
+- [][]
+- [][]
+- [][]
+- [][]
+
+#### Image Placeholders
+
+- [][]
+- [][]
+- [][]
+- [][]
 
 ### Design
 
-Back in his presentation in 2008 Jason Santa Maria stated to the audience that design must communicate your story, and that just by looking at your site your users should be able to understand what they're looking at. I mean you don't need a user manual to use Amazon.com do you? For your application we're going to have to use a combination of layout, fonts, color, images, to tell your story in such a way that the user understands.
+Back in 2008 Jason Santa Maria emphasized in his presentation that design must communicate your story, and that just by looking at your site your users should be able to understand what they're looking at. I mean you don't need a user manual to use Amazon.com do you? (Not including Kindle!) For your application to communicate your story, on top of the content and layout we have begun wireframing, we're going to have to use a combination of fonts, color, images, and anything else we can think of to tell your sites story in such a way that the user just gets it.
 
-Take for example this 2007 website concept:
+To illustrate how simple this can be take a look at this 2007 website concept:
 
 - http://noonebelongsheremorethanyou.com/00025
 
-It illustrates to me the simplicity of the idea of telling a story and engaging the user and ultimately deliver a message and entice an action.
+It illustrates to me the simplicity of storytelling and engaging the user, and ultimately delivering a message to entice an action.
 
 #### Look and Feel
 
@@ -198,23 +222,6 @@ Since for advocating a mobile first design paradigm, it would be wrong to not in
 
 [Responsive Navigation Patterns][Responsive Navigation]
 [Complex Navigation Patterns for Responsive Design][Complex Navigation]
-
-### Lorem Ipsum
-
-Regarding the actual type for your project, if you have it great! If not this article gives a nice overview of how content blocks can be used in situations where type is not known, perhaps a client has not yet delivered it:
-
-- [Content, First?][Content First]
-
-I for one don't mind using Lorem Ipsum. If you don't either here are some great resources for it:
-
-- [][]
-- [][]
-- [][]
-- [][]
-
-#### Image Placeholders
-
-
 
 ### Feedback
 

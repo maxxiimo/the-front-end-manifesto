@@ -64,7 +64,10 @@ Table of Contents
     - Gathering and Organizing Information
       - Index Card Exercise
       - Prototyping on Paper
-      - No More Exercises!
+      - Wireframing
+    - Placeholders
+      - Lorem Ipsum
+      - Image Placeholders
     - Design
       - Look and Feel
       - Inspiration
