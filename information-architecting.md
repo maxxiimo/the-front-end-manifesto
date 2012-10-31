@@ -201,10 +201,10 @@ In addition to reviewing competitor sites or similar services to help generate i
 
     Here are a few Codrops examples:
 
-      - [Stop, Look, Click: Attention-Grabbing Elements in Web Design][Codrops 1]
-      - [Make a Statement with Type][Codrops 2]
-      - [Creative Background Styles and Trends in Web Design][Codrops 3]
-      - [Dashboard Design Elements for the Win][Codrops 4]
+    - [Stop, Look, Click: Attention-Grabbing Elements in Web Design][Codrops 1]
+    - [Make a Statement with Type][Codrops 2]
+    - [Creative Background Styles and Trends in Web Design][Codrops 3]
+    - [Dashboard Design Elements for the Win][Codrops 4]
 
 #### Mobile
 
@@ -249,7 +249,7 @@ One very important thing to practice when designing interfaces is do nothing in 
 
 6.  Steve Krug wrote a second book on usability testing, and gives a basic demo of it on YouTube:
 
-      - [Rocket Surgery Made Easy by Steve Krug: Usability Demo][Rocket Surgery]
+    - [Rocket Surgery Made Easy by Steve Krug: Usability Demo][Rocket Surgery]
 
 ### What We've Done
 
