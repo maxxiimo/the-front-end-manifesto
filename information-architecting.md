@@ -200,7 +200,6 @@ In addition to reviewing competitor sites or similar services to help generate i
     > Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.
 
     Here are a few Codrops examples:
-
     - [Stop, Look, Click: Attention-Grabbing Elements in Web Design][Codrops 1]
     - [Make a Statement with Type][Codrops 2]
     - [Creative Background Styles and Trends in Web Design][Codrops 3]
@@ -248,7 +247,6 @@ One very important thing to practice when designing interfaces is do nothing in 
     > The fastest, cheapest way to find out why users leave your website.
 
 6.  Steve Krug wrote a second book on usability testing, and gives a basic demo of it on YouTube:
-
     - [Rocket Surgery Made Easy by Steve Krug: Usability Demo][Rocket Surgery]
 
 ### What We've Done
