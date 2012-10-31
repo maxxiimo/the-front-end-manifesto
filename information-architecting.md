@@ -181,19 +181,19 @@ So up until now regarding design I'm writing more conceptually, but as front-end
 
 In addition to reviewing competitor sites or similar services to help generate ideas, the following sites may also inspire or provide you with best practices/design patterns:
 
-> Awwwards are the awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.
+> Awwwards are the awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.<br>
 \- [Awwwards][]
 
-> ...It’s a living classroom, where designers learn what is working well on the Web and why.
+> ...It’s a living classroom, where designers learn what is working well on the Web and why.<br>
 \- [Pattern Tap][]
 
-> User Interface Design patterns are recurring solutions that solve common design problems. Design patterns are standard reference points for the experienced user interface designer.
+> User Interface Design patterns are recurring solutions that solve common design problems. Design patterns are standard reference points for the experienced user interface designer.<br>
 \- [UI Patterns][]
 
-> siteInspire is showcase and CSS gallery featuring the best web design today.
+> siteInspire is showcase and CSS gallery featuring the best web design today.<br>
 \- [siteInspire][]
 
-> Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.
+> Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.<br>
 \- [Codrops][Codrops]
 
 Here are a few examples:
