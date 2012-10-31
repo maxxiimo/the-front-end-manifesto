@@ -536,7 +536,6 @@ By using variables, which I always locate in my _define.sass style partial, I ca
 In a word, mixins are shortcuts.
 
 > They’re shortcuts that allow you to apply a lot of css to a selector from only one line of Sass.
-
 \- [Mixins in SASS][]
 
 In other words if you have a bunch of lines of CSS that keep on appearing throughout your stylesheet, rather than repeating it throughout your stylesheet you can write it once and bring it in via a single line of sass, a shortcut. Our [starter CSS][] gives you two areas to include mixins, as a partial brought in through the MIXINS section of [application.scss][] or a snippet of code within [_define.sass][].
