@@ -183,23 +183,23 @@ In addition to reviewing competitor sites or similar services to help generate i
 
 > Awwwards are the awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.
 \- [Awwwards][]
-
+<p></p>
 
 > ...It’s a living classroom, where designers learn what is working well on the Web and why.
 \- [Pattern Tap][]
-
+<p></p>
 
 > User Interface Design patterns are recurring solutions that solve common design problems. Design patterns are standard reference points for the experienced user interface designer.
 \- [UI Patterns][]
-
+<p></p>
 
 > siteInspire is showcase and CSS gallery featuring the best web design today.
 \- [siteInspire][]
-
+<p></p>
 
 > Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.
 \- [Codrops][Codrops]
-
+<p></p>
 
 Here are a few examples:
 
@@ -227,27 +227,27 @@ Since for advocating a mobile first design paradigm, it would be wrong to not in
 
 One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try something like:
 
-[Concept Feedback][]
-
 > Get Website Feedback and Increase Conversion Rates
 > Expert analysis, detailed recommendations and solutions you can implement today.
-
-[IntuitHQ][]
+\- [Concept Feedback][]
+<p></p>
 
 > Get useful, actionable results, improve usability in no time, and create a site your users will love.
-
-[Loop11][]
+\- [IntuitHQ][]
+<p></p>
 
 > Loop11 is a remote usability testing tool that enables you to test the user-experience of any website and identify navigational and usability issues. Get the hard facts about your website quickly and cost effectively!
-
-[Silverback][]
+\- [Loop11][]
+<p></p>
 
 >Guerrilla usability testing software for designers and developers
-
-[UserTesting.com][]
+\- [Silverback][]
+<p></p>
 
 > Usability Testing Has Never Been Easier
 > The fastest, cheapest way to find out why users leave your website.
+\- [UserTesting.com][]
+<p></p>
 
 Steve Krug wrote a second book on usability testing, and gives a basic demo of it on YouTube:
 
