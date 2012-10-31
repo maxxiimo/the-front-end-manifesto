@@ -30,10 +30,10 @@ Table of Contents
     - Frameworks
       - Compass
       - Twitter Bootstrap
-      -  Blueprint
-      -  YUI
-      -  Foundation 3
-      -  Skeleton
+      - Blueprint
+      - YUI
+      - Foundation 3
+      - Skeleton
     - Our Foundation
       - Compass Set Up
       - Stylesheet Set Up

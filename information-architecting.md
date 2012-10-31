@@ -89,7 +89,7 @@ Check out how this design group uses index cards:
 
 #### Prototyping on Paper
 
-Another exercise you can do – a great follow-up to index carding – is prototype on paper. Doing so will help you visualize what the site will look like on a screen. It also gives you some more opportunities for stakeholder input, and further reflection and brainstorming before you begin coding. Your paper prototype can serve as your coding blueprint.
+Another exercise you can do – a great follow-up to index carding – is prototype on paper. Doing so will help you determine the layout and visualize what the site will look like on a screen, and how pages interconnect. It also gives you some more opportunities for stakeholder input, and further reflection and brainstorming before you begin coding. Your paper prototype can serve as your coding blueprint.
 
 Here are some resources that will help you sketch:
 
@@ -97,9 +97,19 @@ Here are some resources that will help you sketch:
 - [Interface Sketch][]
 - [Responsive Sketchsheets][]
 
-Here's what my application looks like on paper:
+Also, check out some of the inspirational sites below. Here's what my application looks like on paper:
 
-![][Prototype]
+![][Prototype 1]
+
+Mobile
+
+![][Prototype 2]
+
+Tablet
+
+![][Prototype 3]
+
+Desktop
 
 There are a number of applications out there that can help you prototype, but I prefer to go old-school with a pencil and [paper][]. For presentational purposes you can transfer this exercise to PowerPoint or some other application for prototyping, but don't get bogged down and waste time doing so.
 
@@ -107,9 +117,7 @@ Paper is highly portable, can be digitized (scan), requires no electricity or In
 
 #### No More Exercises!
 
-At this point start coding! Remember, you have laid out the groundwork in chapters 1 through 3 for your application and hopefully have deployed on Heroku. If clients need to review beyond these early exercises, there's nothing better than sending them to a URL with content placeholders that they can click through to simulate the actual application.
-
-Just remember that less is more and KISS (Keep It Simple Stupid). Revise and release often.
+At this point start coding. What you code moving forward will serve as your living wireframe. Remember, you have laid out the groundwork in chapters 1 through 3 for your application and hopefully have deployed on Heroku. If clients need to review beyond these early exercises, there's nothing better than sending them to a URL with content placeholders that they can click through to simulate the actual application.
 
 ### Design
 
@@ -240,6 +248,7 @@ Steve Krug wrote a second book on usability testing, and gives a basic demo of i
 
 ### What We've Done
 
+Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release often.
 
 [markup]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [styles]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
@@ -276,4 +285,6 @@ Steve Krug wrote a second book on usability testing, and gives a basic demo of i
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
 [Index After]:          http://chrismaxwell.com/manifesto/index-cards/index-cards-after.jpg
 [Index Mobile]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-mobile.jpg
-[Prototype]:            http://chrismaxwell.com/manifesto/index-cards/prototype.jpg
+[Prototype 1]:          http://chrismaxwell.com/manifesto/index-cards/prototype1.jpg
+[Prototype 2]:          http://chrismaxwell.com/manifesto/index-cards/prototype2.jpg
+[Prototype 3]:          http://chrismaxwell.com/manifesto/index-cards/prototype3.jpg
