@@ -89,7 +89,7 @@ Check out how this design group uses index cards:
 
 #### Prototyping on Paper
 
-Another exercise you can do – besides or in conjunction with index cards – is prototyping on paper. Doing so helps you visualize with the site will look like on a screen, and how it will work. It also gives you some more opportunities for stakeholder input, and further reflection and brainstorming before you begin coding. When you do begin coding paper prototypes can serve as your coding blueprint. Paper is also highly portable, requires no electricity or Internet connectivity, can easily be shared with others, and its use is a skill that is common between all stakeholders.
+Another exercise you can do – a great follow-up to index carding – is prototype on paper. Doing so will help you visualize what the site will look like on a screen. It also gives you some more opportunities for stakeholder input, and further reflection and brainstorming before you begin coding. Your paper prototype can serve as your coding blueprint.
 
 Here are some resources that will help you sketch:
 
@@ -99,9 +99,11 @@ Here are some resources that will help you sketch:
 
 Here's what my application looks like on paper:
 
-***ADD PHOTO HERE***
+![][Prototype]
 
 There are a number of applications out there that can help you prototype, but I prefer to go old-school with a pencil and [paper][]. For presentational purposes you can transfer this exercise to PowerPoint or some other application for prototyping, but don't get bogged down and waste time doing so.
+
+Paper is highly portable, can be digitized (scan), requires no electricity or Internet connectivity, can easily be shared with others, and its use is a skill that is common between all stakeholders.
 
 #### No More Exercises!
 
@@ -274,3 +276,4 @@ Steve Krug wrote a second book on usability testing, and gives a basic demo of i
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
 [Index After]:          http://chrismaxwell.com/manifesto/index-cards/index-cards-after.jpg
 [Index Mobile]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-mobile.jpg
+[Prototype]:            http://chrismaxwell.com/manifesto/index-cards/prototype.jpg
