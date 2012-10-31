@@ -15,7 +15,7 @@ These talks have stuck with me over the years, and have become the manner in whi
 2. Work with a designer from the get-go and implement a design mockup into your foundation work.
 1. Start from scratch and architect yourself, then get help from a designer on the look and feel.
 
-In this chapter we're going to mostly focus on option 1 and 3. Hiring a designer from the get-go is not a bad idea – design and front end engineering are to complete different skill sets – but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself. Typically I have found that as a consultant, when I'm brought into a project design mockups have already been developed and it's now my job to implement them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
+In this chapter we're going to mostly focus on option 1 and 3. Hiring a designer from the get-go is not a bad idea - design and front end engineering are to complete different skill sets - but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself. Typically I have found that as a consultant, when I'm brought into a project design mockups have already been developed and it's now my job to implement them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
 
 ### Blocks of Information
 
@@ -33,7 +33,7 @@ The unifying message behind this mosaic of information is the storyline. Before 
 
 > I'm a great Web site for finding a job...a job that is perfect for you, you should join me, if you do you will have access to tons of perfect jobs and your life will change for the better forever!
 
-In this storyline example – with my Information Architect (IA) hat on – I immediately see several major blocks of information:
+In this storyline example - with my Information Architect (IA) hat on - I immediately see several major blocks of information:
 
 1.  What is the site in 10 words or less - possibly a summary box.
 2.  How do I join - a sign-up section.
@@ -53,9 +53,9 @@ There's more to gathering and organizing information than just creating a storyl
 
 To help me along my process I use index cards to create a physical inventory of possible application components. It's best to do this exercise with others, especially stakeholders in the project. You can buy a pack of 200 index cards for under one dollar. Here are the steps I follow:
 
-**Step 1:** Write down in a word or two on an index card – or a bunch of tiny pieces of paper, a digital equivalent like PowerPoint, or even a single sheet of paper (as a list of items) – what the card represents: content, function, a navigational element, an image, video, whatever.
+**Step 1:** Write down in a word or two on an index card - or a bunch of tiny pieces of paper, a digital equivalent like PowerPoint, or even a single sheet of paper (as a list of items) - what the card represents: content, function, a navigational element, an image, video, whatever.
 
-Think of as many components to the page or application as you can – I prefer dealing with a single view at a time.
+Think of as many components to the page or application as you can - I prefer dealing with a single view at a time.
 
 NOTE: Color coding is helpful.
 
@@ -89,7 +89,7 @@ Check out how this design group uses index cards:
 
 #### Prototyping on Paper
 
-Another exercise you can do – a great follow-up to index carding – is prototype on paper. Doing so will help you determine the layout and visualize what the site will look like on a screen, and how pages interconnect. It also gives you some more opportunities for stakeholder input, and further reflection and brainstorming before you begin coding. Your paper prototype can serve as your coding blueprint.
+Another exercise you can do - a great follow-up to index carding - is prototype on paper. Doing so will help you determine the layout and visualize what the site will look like on a screen, and how pages interconnect. It also gives you some more opportunities for stakeholder input, and further reflection and brainstorming before you begin coding. Your paper prototype can serve as your coding blueprint.
 
 Here are some resources that will help you sketch:
 
@@ -183,22 +183,27 @@ In addition to reviewing competitor sites or similar services to help generate i
 
 > Awwwards are the awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.
 \- [Awwwards][]
+
 <p></p>
 
-> ...It’s a living classroom, where designers learn what is working well on the Web and why.
+> ...It's a living classroom, where designers learn what is working well on the Web and why.
 \- [Pattern Tap][]
+
 <p></p>
 
 > User Interface Design patterns are recurring solutions that solve common design problems. Design patterns are standard reference points for the experienced user interface designer.
 \- [UI Patterns][]
+
 <p></p>
 
 > siteInspire is showcase and CSS gallery featuring the best web design today.
 \- [siteInspire][]
+
 <p></p>
 
 > Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.
 \- [Codrops][Codrops]
+
 <p></p>
 
 Here are a few examples:
@@ -230,23 +235,28 @@ One very important thing to practice when designing interfaces is do nothing in 
 > Get Website Feedback and Increase Conversion Rates
 > Expert analysis, detailed recommendations and solutions you can implement today.
 \- [Concept Feedback][]
+
 <p></p>
 
 > Get useful, actionable results, improve usability in no time, and create a site your users will love.
 \- [IntuitHQ][]
+
 <p></p>
 
 > Loop11 is a remote usability testing tool that enables you to test the user-experience of any website and identify navigational and usability issues. Get the hard facts about your website quickly and cost effectively!
 \- [Loop11][]
+
 <p></p>
 
 >Guerrilla usability testing software for designers and developers
 \- [Silverback][]
+
 <p></p>
 
 > Usability Testing Has Never Been Easier
 > The fastest, cheapest way to find out why users leave your website.
 \- [UserTesting.com][]
+
 <p></p>
 
 Steve Krug wrote a second book on usability testing, and gives a basic demo of it on YouTube:
