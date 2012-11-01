@@ -81,11 +81,13 @@ Quite a bit less, and through the process I really have a great idea on what my 
 
 ![][Index Mobile]
 
-The truth be known, as a front end coder with years of practice a huge part of me just wants to bypass index carding, and start coding and change things on the fly as I move along. I'm tempted to do that because like many of you I see markup and styles like Neo sees the Matrix and can churn out code in my sleep. So why do I even bother? Experience has shown me that the manual process of labeling index cards and laying them out forces me to reflect and think outside of my coding box. It helps me discover new ideas, refine the information architecture, and to not work in isolation, i.e. include others in the process. I find that by doing the exercise there's just enough chance of a better outcome that it's worth trying.  So should you.
+...And there you have it, the application in its absolute simplest form doing only the things that are most important to it. From here we can build up to the desktop. From here I will take this architecture and mockup the user interface on paper.
 
 Check out how this design group uses index cards:
 
 - [Responsive Design Case Study][Case Study]
+
+In concluding this section on index carding, as a front end developer with years of practice, a huge part of me just wants to bypass this exercise and start coding (and change things on the fly as I move along). So why do I even bother? Experience has shown me that the manual process of labeling index cards and laying them out forces me to reflect and think outside of my coding box. It helps me discover new ideas, visualize and refine the information architecture, and to not work in isolation, i.e. include others in the process. I find that by doing the exercise there's just enough chance of a better outcome that it's worth trying.
 
 #### Prototyping on Paper
 
