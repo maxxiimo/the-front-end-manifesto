@@ -65,7 +65,9 @@ Table of Contents
       - Index Card Exercise
       - Prototyping on Paper
     - Wireframing
-      - Placeholders
+      - Content
+      - Lorem Ipsum
+      - Image Placeholders
     - Design
       - Look and Feel
       - Inspiration
