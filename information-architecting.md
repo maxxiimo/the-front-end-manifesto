@@ -3,21 +3,21 @@ Information Architecting
 
 Now that we have reviewed the three pillars of foundation work: [markup][], [styles][], and [mobile][], it's time to delve into actually building a websites/application. The best place to start is with the splash page or application console: its navigation, content, interaction, layout, and look and feel. The homepage is of critical importance to your project. Most of the time it is the first thing a user will see, and how they will understand your [whatever your building] and how they will [whatever they will do]. It also sets the tone and unifying theme for every subsequent page or functionality.
 
-The key to being successful in building your application splash page and/or console can be summed up in one word: **Storytelling**
+The key to being successful in building your application splash page and/or console can be summed up in one word: **Storytelling**.
 
-Back in 2008 at "An Event Apart: Boston" I listened to [Jason Santa Maria][], then the Creative Director of Happy Cog Studios, give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
+Back in 2008, at "An Event Apart: Boston," I listened to [Jason Santa Maria][] -- then the Creative Director of Happy Cog Studios -- give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
 
-These talks have stuck with me over the years, and have become the manner in which I view site design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code, and the sites look and feel (styles). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about this:
+These talks have stuck with me over the years, and have become the manner in which I view site design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code and the sites look and feel (styles). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about this:
 
 1. Start from scratch and architect and design everything yourself.
 2. Work with a designer from the get-go and implement a design mockup into your foundation work.
 3. Start from scratch and architect yourself, then get help from a designer on the look and feel.
 
-In this chapter we're going to mostly focus on option 1 and 3. Hiring a designer from the get-go is not a bad idea - design and front end engineering are to complete different skill sets - but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself. Typically I have found that as a consultant, when I'm brought into a project design mockups have already been developed and it's now my job to implement them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
+In this chapter we're going to mostly focus on option 1 and 3. Hiring a designer from the get-go is not a bad idea -- design and front end engineering are to complete different skill sets -- but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself. Typically, I have found that as a consultant brought into a project, design mockups have already been developed and it's now my job to integrate them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
 
 ### Blocks of Information
 
-To build our stories the first thing we need to do is architect the application. As I mentioned in [chapter 1][markup]:
+To build our stories the first thing we need to do is architect the applications information. As I mentioned in [chapter 1][markup]:
 
 > As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption.
 
@@ -109,7 +109,7 @@ Paper is highly portable, can be digitized (scan), requires no electricity or In
 
 **No More Exercises!** At this point start coding. From the exercises above you have absolutely everything you need to start coding with confidence that the site's information architecture and layout are pretty darn close to what you will ultimately develop. It's the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond these early exercises, you can send them to a live URL that they can click through to simulate the actual application and view on different devices.  Any changes you make will be reflected immediately.
 
-NOTE: Because you laid out your applications markup, styles and mobile groundwork in chapters 1 through 3 -- and hopefully have deployed on Heroku or elsewhere -- what you wireframe will be production ready.
+NOTE: Because you laid out your applications [markup][], [styles][], and [mobile][] groundwork in chapters 1 through 3 -- and hopefully have deployed on Heroku or elsewhere -- what you wireframe here will be production ready.
 
 ### Placeholders
 
