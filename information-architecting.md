@@ -29,7 +29,7 @@ A layout is really a mosaic of information that tells (conveys) something: a par
 
 ### The Storyline
 
-The unifying message behind this mosaic of information is the storyline. Before content can be discovered, grouped, and placed in a layout, the writer, in this case you, has to have the stories general theme in mind. For example, the storyline might be:
+The unifying message behind this mosaic of information is the storyline. Before content can be discovered, grouped, and placed in a layout, the narrator, in this case you, has to have the stories general theme in mind. For example, the storyline might be:
 
 > I'm a great Web site for finding a job...a job that is perfect for you, you should join me, if you do you will have access to tons of perfect jobs and your life will change for the better forever!
 
@@ -47,7 +47,9 @@ In this storyline example - with my Information Architect (IA) hat on - I immedi
 
 ### Gathering and Organizing Information
 
-There's more to gathering and organizing information than just creating a storyline. What follows are different techniques I use to gather all the blocks of information that will ultimately make up the users experience. I also highly recommend the book "[Don't Make Me Think][]" by Steve Krug. It’s a good read and everything he says is so darn obvious, and all there in one great reference.
+Before you begin coding though, it's important to take a few preliminary steps. What follows are different techniques I use to gather all the blocks of information that will ultimately make up the sites story, i.e. users experience.
+
+NOTE: Throughout this process I highly recommend referencing the book "[Don't Make Me Think][]" by Steve Krug. It’s a good read and everything he says is so darn obvious, and all there in one great reference.
 
 #### Index Card Exercise
 
