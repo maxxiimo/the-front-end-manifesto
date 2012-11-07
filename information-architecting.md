@@ -113,7 +113,7 @@ Here's what my paper prototype process looks like:
 
 ![][Prototype]
 
-#### Wireframing
+### Wireframing
 
 **No More Exercises!** At this point it's time to start coding. From the exercises above you have absolutely everything you need to start coding with confidence that the site's information architecture and layout are pretty darn close to what you will ultimately develop.
 
@@ -121,29 +121,36 @@ It's the blueprint, and what you code moving forward will serve as your living w
 
 NOTE: Because you laid out your applications [markup][], [styles][], and [mobile][] groundwork in chapters 1 through 3 -- and hopefully have deployed on Heroku or elsewhere -- what you wireframe here will be production ready.
 
-### Placeholders
+#### Placeholders
 
 Regarding the actual type for your project, if you have it great! If not this article gives a nice overview of how content blocks can be used in situations where type is not known, perhaps a client has not yet delivered it:
 
 - [Content, First?][Content First]
 
-I for one don't mind using Lorem Ipsum.
+I for one don't mind using Lorem Ipsum an image placeholders. Here are some great resources for both:
 
-#### Lorem Ipsum
+##### Lorem Ipsum
 
-Here are some great resources for it:
+[The Ruby Toolbox][Toolbox 1]
 
-- [][]
-- [][]
-- [][]
-- [][]
+There's a lot out there, here are but a few (some of them kind of funny).
 
-#### Image Placeholders
+- [<html>ipsum][]
+- [lipsum][]
+- [Fillerama][]
+- [Samuel L. Ipsum][]
+- [Hipster Ipsum][]
+- [Gangsta Lorem Ipsum][]
+- [Cupcake Ipsum][]
+- [Bacon Ipsum][]
 
-- [][]
-- [][]
-- [][]
-- [][]
+##### Image Placeholders
+
+[The Ruby Toolbox][Toolbox 2]
+
+- [List of Dummy Image Generators][Image Generators]
+- [Functional Placeholder Images][Cambelt]
+- [Holder.js][]
 
 ### Design
 
@@ -276,6 +283,19 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Complex Navigation]:   http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
+[Toolbox 2]:            https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=lorem+ipsum
+[<html>ipsum]]:         http://html-ipsum.com/
+[lipsum]:               http://www.lipsum.com/
+[Fillerama]:            http://chrisvalleskey.com/fillerama/
+[Samuel L. Ipsum]:      http://slipsum.com/
+[Hipster Ipsum]:        http://hipsteripsum.me/
+[Gangesta Lorem Ipsum]: http://lorizzle.nl/
+[Cupcake Ipsum]:        http://cupcakeipsum.com/
+[Bacon Ipsum]:          http://baconipsum.com/
+[Toolbox 2]:            https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=image+placeholders
+[Image Generators]:     http://www.russellheimlich.com/blog/list-of-dummy-image-generators/
+[Cambelt]:              http://cambelt.co/
+[Holder.js]:            http://imsky.github.com/holder/
 [Case Study]:           http://builtbyboon.com/blog/responsive-design-case-study
 [Paper]:                http://generatedpaper.com/en/wireframing
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
