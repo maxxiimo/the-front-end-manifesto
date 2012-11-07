@@ -3,17 +3,15 @@ Information Architecting
 
 Now that we have reviewed the three pillars of foundation work: [markup][], [styles][], and [mobile][], it's time to delve into actually building a websites/application. The best place to start is with the splash page or application console: its navigation, content, interaction, layout, and look and feel. The homepage is of critical importance to your project. Most of the time it is the first thing a user will see, and how they will understand your [whatever your building] and how they will [whatever they will do]. It also sets the tone and unifying theme for every subsequent page or functionality.
 
-The key to being successful in building your application splash page and/or console can be summed up in one word:
-
-Storytelling
+The key to being successful in building your application splash page and/or console can be summed up in one word: **Storytelling**
 
 Back in 2008 at "An Event Apart: Boston" I listened to [Jason Santa Maria][], then the Creative Director of Happy Cog Studios, give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
 
-These talks have stuck with me over the years, and have become the manner in which I view site design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code, and the sites look and feel (styles). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three ways to go about this:
+These talks have stuck with me over the years, and have become the manner in which I view site design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code, and the sites look and feel (styles). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about this:
 
 1. Start from scratch and architect and design everything yourself.
 2. Work with a designer from the get-go and implement a design mockup into your foundation work.
-1. Start from scratch and architect yourself, then get help from a designer on the look and feel.
+3. Start from scratch and architect yourself, then get help from a designer on the look and feel.
 
 In this chapter we're going to mostly focus on option 1 and 3. Hiring a designer from the get-go is not a bad idea - design and front end engineering are to complete different skill sets - but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself. Typically I have found that as a consultant, when I'm brought into a project design mockups have already been developed and it's now my job to implement them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
 
@@ -91,19 +89,19 @@ In concluding this section on index carding, as a front end developer with years
 
 #### Prototyping on Paper
 
-Another exercise you can do - a great follow-up to index carding - is prototype on paper. Doing so will help you determine the layout and visualize what the site will look like on a screen, and how pages interconnect. It also gives you some more opportunities for stakeholder input, and further reflection and brainstorming before you begin coding. Your paper prototype can serve as your coding blueprint.
+Another exercise I recommend you practice - and a great follow-up to index carding - is prototype on paper. Doing so will help you determine the layout, visualize what the site will look like on a screen and how pages interconnect, and it gives you plenty of room for trial and error. It also gives you some more opportunities for stakeholder input, and further reflection and brainstorming before you begin coding. Your paper prototype can serve as your coding blueprint. As I prototype on paper I've always got an eye on my reference websites or some of inspirational sites below.
 
-Here are some resources that will help you sketch:
+Here are some device mockup resources that will help you sketch:
 
 - [Paper][]
 - [Interface Sketch][]
 - [Responsive Sketchsheets][]
 
-Also, check out some of the inspirational sites below. Here's what my application looks like on paper:
+ After spending some time reorganizing my index cards and looking at the competition and some inspirational sites, I came up with a pretty complete prototype and direction to go with my mobile views. Here's what my paper prototype process looks like:
 
 ![][Prototype]
 
-There are a number of applications out there that can help you prototype, but I prefer to go old-school with a pencil and [paper][]. For presentational purposes you can transfer this exercise to PowerPoint or some other application for prototyping, but don't get bogged down and waste time doing so.
+There are a number of applications out there that can help you prototype, but I prefer to go old-school with a pencil and paper. For presentational purposes you can transfer this exercise to PowerPoint or some other application for prototyping, but don't get bogged down and waste time doing so.
 
 Paper is highly portable, can be digitized (scan), requires no electricity or Internet connectivity, can easily be shared with others, and its use is a skill that is common between all stakeholders.
 
@@ -280,4 +278,4 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
 [Index After]:          http://chrismaxwell.com/manifesto/index-cards/index-cards-after.jpg
 [Index Mobile]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-mobile.jpg
-[Prototype]:          http://chrismaxwell.com/manifesto/paper/prototype.jpg
+[Prototype]:            http://chrismaxwell.com/manifesto/paper/prototype.jpg
