@@ -117,9 +117,11 @@ Here's what my paper prototype process looks like:
 
 **No More Exercises!** At this point it's time to start coding. From the exercises above you have absolutely everything you need to start coding with confidence that the site's information architecture and layout are pretty darn close to what you will ultimately develop.
 
-It's the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond the early exercises, you can send them to a live URL where they can click through to simulate the actual application and view it on different devices to boot. Any changes you make will be reflected immediately, and they're going to love this, and so will you because anything else moving forward is just an iteration in the development process.
+It's the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond the early exercises, you can send them to a live URL where they can click through to simulate the actual application (and view it on different devices). Any changes you make will be reflected immediately, which they'll love, and so will you because everything from this point and moving forward is just an iteration in the development process.
 
-NOTE: Because you laid out your applications [markup][], [styles][], and [mobile][] groundwork in chapters 1 through 3 -- and hopefully have deployed on Heroku or elsewhere -- what you wireframe here will be production ready.
+Because you laid out your applications [markup][], [styles][], and [mobile][] groundwork in chapters 1 through 3 -- and hopefully have deployed on Heroku or elsewhere -- what you wireframe here will be production ready, and in this section we will begin to transform our paper prototype into a working wireframe.
+
+An assumption I will make here is that you already are a proficient front end coder, so for the most part I'll just briefly cover the process I follow beginning with a discussion on content which includes type and images.
 
 #### Content
 
@@ -127,13 +129,13 @@ Regarding the actual type for your project, if you have it great! If not this ar
 
 - [Content, First?][Content First]
 
-#### Lorem Ipsum
+##### Lorem Ipsum
 
-I for one don't mind using Lorem Ipsum as content placeholders. Here is the roundup of Rails Gems for it:
+I for one don't mind using Lorem Ipsum as content placeholders. Here is a roundup of Rails Gems for it:
 
 [The Ruby Toolbox][Toolbox 1]
 
-There's a lot out there, here are but a few sites that will generate some Lorem Ipsum for you (some of them are kind of funny):
+There's a lot of Lorem Ipsum generator services out there, here are but a few (some of them are kind of funny):
 
 - [html-ipsum][]
 - [lipsum][]
@@ -144,7 +146,7 @@ There's a lot out there, here are but a few sites that will generate some Lorem 
 - [Cupcake Ipsum][]
 - [Bacon Ipsum][]
 
-#### Image Placeholders
+##### Image Placeholders
 
 Image placeholders in different sizes and styles are also plentiful (the second link will give you a pretty compreshensive list to choose from):
 
@@ -152,6 +154,10 @@ Image placeholders in different sizes and styles are also plentiful (the second 
 - [List of Dummy Image Generators][Image Generators]
 - [Functional Placeholder Images][Cambelt]
 - [Holder.js][]
+
+#### Code Path
+
+
 
 ### Design
 

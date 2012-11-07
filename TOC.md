@@ -66,8 +66,8 @@ Table of Contents
       - Prototyping on Paper
     - Wireframing
       - Content
-      - Lorem Ipsum
-      - Image Placeholders
+      - Code Path
+      -
     - Design
       - Look and Feel
       - Inspiration
