@@ -7,23 +7,25 @@ The key to being successful in building your application splash page and/or cons
 
 Back in 2008, at "An Event Apart: Boston," I listened to [Jason Santa Maria][] -- then the Creative Director of Happy Cog Studios -- give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
 
-These talks have stuck with me over the years, and have become the manner in which I view site design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code and the sites look and feel (styles). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about this:
+These talks have stuck with me over the years and have become the manner in which I view site design; as storytelling. What follows is an explanation of how to build a story for your website, and translate that into code and the sites look and feel (styles). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about this:
 
 1. Start from scratch and architect and design everything yourself.
 2. Work with a designer from the get-go and implement a design mockup into your foundation work.
 3. Start from scratch and architect yourself, then get help from a designer on the look and feel.
 
-In this chapter we're going to mostly focus on option 1 and 3. Hiring a designer from the get-go is not a bad idea -- design and front end engineering are to complete different skill sets -- but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself. Typically, I have found that as a consultant brought into a project, design mockups have already been developed and it's now my job to integrate them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
+In this chapter we're going to mostly focus on option 1. Hiring a designer from the get-go is not a bad idea -- design and front end engineering are two complete different skill sets -- but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself.
+
+NOTE: As a consultant brought into a project, oftentimes design mockups have already been developed and it's now my job to integrate them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
 
 ### Blocks of Information
 
-To build our stories the first thing we need to do is architect the applications information. As I mentioned in [chapter 1][markup]:
+To build our stories the first thing we need to understand is what it means to organize our applications information. As I mentioned in [chapter 1][markup]:
 
 > As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption.
 
 How does "organizing information and function" relate to storytelling?
 
-A layout is really a mosaic of information that tells (conveys) something: a particular type of story. This information obviously was grouped together based on some criteria, and then placed on a website "page" that ultimately gets viewed by an end-user. It had to be organized in some logical way to make absolute sense to the end-user, and probably designed to invite/entice/cause the end-user to take the next step or action, i.e. turn the page in the story.
+A layout is really a mosaic of information that tells (conveys) something: a particular type of story. This information obviously was grouped together based on some criteria, and then placed on a website "page" that ultimately is viewed by an end-user. It had to be organized in some logical way to make absolute sense to the end-user, and probably designed to invite/entice/cause the end-user to take the next step or action, i.e. turn the page in the story.
 
 ### The Storyline
 
