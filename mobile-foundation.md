@@ -52,7 +52,7 @@ In this chapter we will explore the three plans of attack.
 
 ### User Agent Sniffing
 
-Back at Fidelity pre-smart phone, mobile was a complete separate concern from desktops. I worked there slightly before smart phones emerged, and back then smallscreen devices operated behind what was referred to as a carriers "walled garden" which oftentimes did not allow CSS, or JavaScript, or HTML tables, or all three. Back then there were so many different types of devices, rules, screen sizes, and mobile browsers (or none at all). 
+Back at Fidelity pre-smart phone, mobile was a complete separate concern from desktops. I worked there slightly before smart phones emerged, and back then smallscreen devices operated behind what was referred to as a carriers "walled garden" which oftentimes did not allow CSS, or JavaScript, or HTML tables, or all three. Back then there were so many different types of devices, rules, screen sizes, and mobile browsers (or none at all).
 
 To complicate matters at Fidelity it was our objective to cover 99.999% [possibly exaggerated by me] of all small screen devices out there. Why? Imagine a billionaire customer from Bahrain trying to look at his or her Fidelity portfolio on some obscure cell phone and nothing showing up! [Rationale also made up by me, but not the underlying object. Consistent coverage.]
 
@@ -103,7 +103,7 @@ To get started, if you're not sure where to begin or as a review, take a look at
 
 ### Responsive Web Design
 
-Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]". 
+Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]".
 
 [This Is Responsive][]
 
@@ -113,11 +113,11 @@ Yada yada yada, coming soon... ;)
 
 When I asked [LaunchWare][] founder Dan Pickett what he thought was the best approach for mobile, his answer was so succinct and backed with experience that I'm just going to quote it in its entirety here:
 
-> We've generally found, UI/UX wise, though that the paradigm is so different that it generally requires a different set of controllers and views. 
+> We've generally found, UI/UX wise, though that the paradigm is so different that it generally requires a different set of controllers and views.
 >
 > So I see three or four different levels:
 >
-> - A responsive design for content oriented / non-workflow based sites (pure HTML/CSS/JS solution) 
+> - A responsive design for content oriented / non-workflow based sites (pure HTML/CSS/JS solution)
 > - A set of different mobile vs. traditional web views sharing the same controllers (use only when the workflow experience is the same on both paradigms, but still have request specs exercising both mediums)
 > - A set of different controllers and views optimized for each experience, with appropriate request specs for each paradigm. (we've suggested this approach in most apps - shared business logic, different views and controllers)
 > - A separate, mobile web application that talks to the main application client side via a service oriented architecture (this is usually the last progression before going native, and we only go this route if the mobile app is vastly different from the web application)
@@ -133,6 +133,9 @@ When I asked [LaunchWare][] founder Dan Pickett what he thought was the best app
 Feature Detection
 
 
+[The Essentials of Zepto.js][Zepto]
+
+
 [foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/cover
@@ -143,7 +146,7 @@ Feature Detection
 [Responsive Reasons]:   http://www.mixd.co.uk/blog/technical/reasons-for-responsive-design/
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
 [Brian Fling]:          http://shop.oreilly.com/product/9780596155452.do
-[Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile               
+[Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile
 [Mobile Devices]:       http://railscasts.com/episodes/199-mobile-devices
 [mobylette]:            https://github.com/tscolari/mobylette
 [jquery_mobile_rails]:  https://github.com/tscolari/jquery-mobile-rails
@@ -163,8 +166,7 @@ Feature Detection
 [scientiamobile]:       http://www.scientiamobile.com/
 [WURFL]:                http://wurfl.sourceforge.net/
 [Mobile Strings]:       http://www.zytrax.com/tech/web/mobile_ids.html
-[Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
-
 [Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
-
+[Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
+[Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/

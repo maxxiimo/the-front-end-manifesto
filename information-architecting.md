@@ -101,17 +101,7 @@ Here are some resources that will help you sketch:
 
 Also, check out some of the inspirational sites below. Here's what my application looks like on paper:
 
-![][Prototype 1]
-
-Mobile
-
-![][Prototype 2]
-
-Tablet
-
-![][Prototype 3]
-
-Desktop
+![][Prototype]
 
 There are a number of applications out there that can help you prototype, but I prefer to go old-school with a pencil and [paper][]. For presentational purposes you can transfer this exercise to PowerPoint or some other application for prototyping, but don't get bogged down and waste time doing so.
 
@@ -290,6 +280,4 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
 [Index After]:          http://chrismaxwell.com/manifesto/index-cards/index-cards-after.jpg
 [Index Mobile]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-mobile.jpg
-[Prototype 1]:          http://chrismaxwell.com/manifesto/index-cards/prototype1.jpg
-[Prototype 2]:          http://chrismaxwell.com/manifesto/index-cards/prototype2.jpg
-[Prototype 3]:          http://chrismaxwell.com/manifesto/index-cards/prototype3.jpg
+[Prototype 1]:          http://chrismaxwell.com/manifesto/paper/prototype.jpg

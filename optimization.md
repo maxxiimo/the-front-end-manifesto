@@ -97,6 +97,11 @@ For more details on asset pipeline compression follow these links:
 
 [Trimage][]
 
+
+[The Essentials of Zepto.js][Zepto]
+
+
+
 ### What We've Done
 
 - We took a look at how Rails helps us optimize the styles we produce through compression and the asset pipeline.
@@ -115,6 +120,8 @@ For more details on asset pipeline compression follow these links:
 [Pngcrush]:             http://pmt.sourceforge.net/pngcrush/
 [PngUtils]:             http://gnuwin32.sourceforge.net/packages/pngutils.htm
 [Trimage]:              http://trimage.org/
+[Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
+
 [CSS Compressor]:       http://www.minifycss.com/css-compressor/
 [Google Minify]:        https://code.google.com/p/minify/
 [YUI Compressor]:       http://www.refresh-sf.com/yui/
@@ -129,6 +136,3 @@ For more details on asset pipeline compression follow these links:
 [Efficient CSS]:        https://developer.mozilla.org/en/Writing_Efficient_CSS
 [Fast(er)]:             http://www.igvita.com/slides/2012/railsconf-making-the-web-faster/#1
                         "RailsConf 2012"
-
-
-
