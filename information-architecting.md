@@ -7,19 +7,19 @@ The key to being successful in building your application splash page and/or cons
 
 Back in 2008, at "An Event Apart: Boston," I listened to [Jason Santa Maria][] -- then the Creative Director of Happy Cog Studios -- give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
 
-These talks have stuck with me over the years and have become the manner in which I view site design; as storytelling. What follows is an explanation of how to build a story for your website, and translate that into code and the sites look and feel (styles). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about this:
+These talks have stuck with me over the years and have become the manner in which I view website site design; as storytelling. What follows is an explanation of how to build a story for your website, and translate that into code and the sites look and feel (styles). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about this:
 
 1. Start from scratch and architect and design everything yourself.
 2. Work with a designer from the get-go and implement a design mockup into your foundation work.
 3. Start from scratch and architect yourself, then get help from a designer on the look and feel.
 
-In this chapter we're going to mostly focus on option 1. Hiring a designer from the get-go is not a bad idea -- design and front end engineering are two complete different skill sets -- but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself.
+In this chapter we're going to mostly focus on option 1. Hiring a designer from the get-go is not a bad idea -- graphic design and front end engineering are two complete different skill sets -- but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself.
 
 NOTE: As a consultant brought into a project, oftentimes design mockups have already been developed and it's now my job to integrate them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
 
-### Blocks of Information
+### A Mosaic of Information
 
-To build our stories the first thing we need to understand is what it means to organize our applications information. As I mentioned in [chapter 1][markup]:
+To build our stories the first thing we need to understand is what it means to organize an applications information. As I mentioned in [Chapter 1][Chapter 1 Quote]:
 
 > As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption.
 
@@ -29,7 +29,7 @@ A layout is really a mosaic of information that tells (conveys) something: a par
 
 ### The Storyline
 
-The unifying message behind this mosaic of information is the storyline. Before content can be discovered, grouped, and placed in a layout, the narrator, in this case you, has to have the stories general theme in mind. For example, the storyline might be:
+The unifying message behind this mosaic of information is the storyline. Before content can be discovered, grouped, and placed in a layout the narrator, in this case you, has to have the stories general theme in mind. For example, the storyline might be:
 
 > I'm a great Web site for finding a job...a job that is perfect for you, you should join me, if you do you will have access to tons of perfect jobs and your life will change for the better forever!
 
@@ -254,6 +254,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [mobile]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
 [Jason Santa Maria]:    http://jasonsantamaria.com/
 [Slicing and Dicing]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
+[Chapter 1 Quote]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md#the-application-layout
 [Premium Pixels]:       http://www.premiumpixels.com/
 [Awwwards]:             http://www.awwwards.com/
 [Pattern Tap]:          http://patterntap.com/

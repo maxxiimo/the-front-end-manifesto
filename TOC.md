@@ -59,7 +59,7 @@ Table of Contents
     - An Ajax Include Pattern
     - Using JavaScript
 - [Information Architecting][]
-    - Blocks of Information
+    - A Mosaic of Information
     - The Storyline
     - Gathering and Organizing Information
       - Index Card Exercise
