@@ -107,7 +107,9 @@ Paper is highly portable, can be digitized (scan), requires no electricity or In
 
 #### Wireframing
 
-No More Exercises! At this point start coding. What you code moving forward will serve as your living wireframe. Remember, you have laid out the groundwork in chapters 1 through 3 for your application and hopefully have deployed on Heroku. If clients need to review beyond these early exercises, there's nothing better than sending them to a URL with content placeholders that they can click through to simulate the actual application.
+**No More Exercises!** At this point start coding. From the exercises above you have absolutely everything you need to start coding with confidence that the site's information architecture and layout are pretty darn close to what you will ultimately develop. It's the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond these early exercises, you can send them to a live URL that they can click through to simulate the actual application and view on different devices.  Any changes you make will be reflected immediately.
+
+NOTE: Because you laid out your applications markup, styles and mobile groundwork in chapters 1 through 3 -- and hopefully have deployed on Heroku or elsewhere -- what you wireframe will be production ready.
 
 ### Placeholders
 
