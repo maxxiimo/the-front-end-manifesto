@@ -280,4 +280,4 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
 [Index After]:          http://chrismaxwell.com/manifesto/index-cards/index-cards-after.jpg
 [Index Mobile]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-mobile.jpg
-[Prototype 1]:          http://chrismaxwell.com/manifesto/paper/prototype.jpg
+[Prototype]:          http://chrismaxwell.com/manifesto/paper/prototype.jpg
