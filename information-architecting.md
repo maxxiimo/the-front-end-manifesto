@@ -115,7 +115,9 @@ Here's what my paper prototype process looks like:
 
 #### Wireframing
 
-**No More Exercises!** At this point start coding. From the exercises above you have absolutely everything you need to start coding with confidence that the site's information architecture and layout are pretty darn close to what you will ultimately develop. It's the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond these early exercises, you can send them to a live URL that they can click through to simulate the actual application and view on different devices.  Any changes you make will be reflected immediately.
+**No More Exercises!** At this point it's time to start coding. From the exercises above you have absolutely everything you need to start coding with confidence that the site's information architecture and layout are pretty darn close to what you will ultimately develop.
+
+It's the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond the early exercises, you can send them to a live URL where they can click through to simulate the actual application and view it on different devices to boot. Any changes you make will be reflected immediately, and they're going to love this, and so will you because anything else moving forward is just an iteration in the development process.
 
 NOTE: Because you laid out your applications [markup][], [styles][], and [mobile][] groundwork in chapters 1 through 3 -- and hopefully have deployed on Heroku or elsewhere -- what you wireframe here will be production ready.
 
