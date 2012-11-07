@@ -97,7 +97,7 @@ Here are some device mockup resources that will help you sketch:
 - [Interface Sketch][]
 - [Responsive Sketchsheets][]
 
- After spending some time reorganizing my index cards and looking at the competition and some inspirational sites, I came up with a pretty complete prototype and direction to go with my mobile views. Here's what my paper prototype process looks like:
+After spending some time reorganizing my index cards and looking at the competition and some inspirational sites, I came up with a pretty complete prototype and direction to go with my mobile views. Here's what my paper prototype process looks like:
 
 ![][Prototype]
 
