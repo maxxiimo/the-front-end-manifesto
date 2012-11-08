@@ -228,10 +228,9 @@ The following links deal specifically with mobile:
 1. [Pattern Tap Mobile][]
 
 2. [AppSites][]
+    > App Sites is a showcase of beautiful iPhone, iPad & Mac app websites.
 
-> App Sites is a showcase of beautiful iPhone, iPad & Mac app websites.
-
-2. [Mobile Patterns][]
+3. [Mobile Patterns][]
 
 Because responsive will play a big part in your design the following two links may help you think through your navigation:
 
