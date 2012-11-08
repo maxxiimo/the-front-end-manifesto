@@ -17,20 +17,20 @@ In [Chapter 4][] we will tackle this paradigm shift head-on as we architect our 
 
 ### Plan of Attack
 
-At the end of this chapter Dan Pickett the founder of [LaunchWare][] describes several different methods to tackle mobile on Ruby on Rails, but for this chapter we will need to choose one approach to build our mobile foundation. Perhaps in the next book "Mobile on Rails" we can dive in even further. For now, here are three possibilities:
+At the end of this chapter Dan Pickett the founder of [LaunchWare][] describes several different methods to tackle mobile on Ruby on Rails, but for this chapter we will need to choose one approach to build our mobile foundation. Perhaps in the next book "Mobile on Rails" we can dive in even further. For now, here are three possibilities we will explore:
 
-1.  Detecting user agents to serve mobile specific markup and styles.
+1.  Detecting screen sizes via media queries to serve up responsive styles.
 
-2.  Detecting screen sizes via media queries to serve up responsive styles.
+2.  Detecting user agents to serve mobile specific markup and styles.
 
 3.  A hybrid of 1 and 2.
 
-Personally I like to separate concerns but include responsive design within this separation since there is no one size fits all in mobile, so I tend to use option three. Fortunately, I'm not alone in this thinking:
+Personally I like to separate concerns but include responsive design within this separation since there is no one size fits all in mobile, so I tend to use option three. I'm not alone in this thinking:
 
 > Now, oftentimes, people think about device detection as a "one or the other" sort of thing. Either you’re doing responsive design or you’re using device detection to route people to separate templates, and that you would choose one of those two options; you wouldn’t build something that uses both. But we’ve actually combined responsive design with server-side detection quite a bit.
 \- [Jason Grigsby – Mobile-First Responsive Design][Jason Grigsby]
 
-I don't think an all or nothing approach really makes sense as a rule of thumb.  Let the situation dictate the solution. Here are some thoughts on option 1 versus option 2:
+I don't think an all or nothing approach really makes sense as a rule of thumb. Let the situation dictate the solution. Here are some thoughts on option 1 versus option 2:
 
 - Keep them separate and you can serve lighter, device specific stylesheet, JavaScript and images. This translates to less complexity and better performance.
 - As applications grow and user needs change, it might become necessary to separate mobile out completely. If you start out separate this transition might be easier.
@@ -50,7 +50,15 @@ Whatever approach you decide, keep in mind that there are a spectrum of user and
 
 In this chapter we will explore the three plans of attack.
 
-### User Agent Sniffing
+### 1. Responsive Web Design
+
+Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]".
+
+[This Is Responsive][]
+
+Yada yada yada, coming soon... ;)
+
+### 2. User Agent Sniffing
 
 Back at Fidelity pre-smart phone, mobile was a complete separate concern from desktops. I worked there slightly before smart phones emerged, and back then smallscreen devices operated behind what was referred to as a carriers "walled garden" which oftentimes did not allow CSS, or JavaScript, or HTML tables, or all three. Back then there were so many different types of devices, rules, screen sizes, and mobile browsers (or none at all).
 
@@ -84,14 +92,13 @@ To get started, if you're not sure where to begin or as a review, take a look at
 
 5.  [Agent_orange][agent_orange] looks interesting. Although stable, it has its issues per the maintainers readme.
 
-6.  > [UserAgent][] is a Ruby library that parses and compares HTTP User Agents.
+6.  [UserAgent][] is a Ruby library that parses and compares HTTP User Agents.
 
 7.  [Browser][] is a gem that allows you to test for the browser being used including mobile browsers, and includes ActionController integration.
 
 8.  In the tutorial "[Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]" the author proposes placing mobile templates in a separate directory, then when requests come in from a mobile subdomain, like m.domain.com, these templates are served. If the templates are not available, the requester is served regular view templates; freeing you up from having to create two templates for every action. Users can switch between the two templates, and user agent detection is employed.
 
 9.  If you're looking to beef up your detection capabilities, the following services are available (includes free and paid plans).
-
     - [Handset Detection][]
     - [Akamai][]
     - [DeviceAtlas][]
@@ -101,13 +108,13 @@ To get started, if you're not sure where to begin or as a review, take a look at
 
 11. Here is a list of "[Mobile Browser ID (User-Agent) Strings][Mobile Strings]" you could incorporate into your project if you wanted to get granular.
 
-### Responsive Web Design
+#### Our Solution
 
-Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]".
+We're going to use...
 
-[This Is Responsive][]
+### 3. A Hybrid Approach
 
-Yada yada yada, coming soon... ;)
+
 
 ### Mobile on Rails
 
@@ -146,6 +153,8 @@ Feature Detection
 [Responsive Reasons]:   http://www.mixd.co.uk/blog/technical/reasons-for-responsive-design/
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
 [Brian Fling]:          http://shop.oreilly.com/product/9780596155452.do
+[Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
+[This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile
 [Mobile Devices]:       http://railscasts.com/episodes/199-mobile-devices
 [mobylette]:            https://github.com/tscolari/mobylette
@@ -166,7 +175,5 @@ Feature Detection
 [scientiamobile]:       http://www.scientiamobile.com/
 [WURFL]:                http://wurfl.sourceforge.net/
 [Mobile Strings]:       http://www.zytrax.com/tech/web/mobile_ids.html
-[Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
-[This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/

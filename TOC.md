@@ -52,9 +52,11 @@ Table of Contents
 - [Mobile Foundation][]
     - Mobile First
     - Plan of Attack
-    - User Agent Sniffing
+    - 1. Responsive Web Design
+    - 2. User Agent Sniffing
       - Mobile Solutions Roundup
-    - Responsive Web Design
+      - Our Solution
+      3. A Hybrid Approach
     - Mobile on Rails
     - An Ajax Include Pattern
     - Using JavaScript
@@ -66,8 +68,6 @@ Table of Contents
       - Prototyping on Paper
     - Wireframing
       - Content
-      - Code Path
-      -
     - Design
       - Look and Feel
       - Inspiration

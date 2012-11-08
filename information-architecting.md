@@ -163,17 +163,19 @@ Image placeholders in different sizes and styles are also plentiful (the second 
 
 ### Design
 
-This chapter is about Information Architecture, so design really goes beyond our chapter scope, however, design is part of storytelling so let's take a quick look at it. We basically have a pretty blank wireframe. We need to add some spice to it. Just by looking at your site your users should be able to understand what they're looking at, your website must communicate it's story. To illustrate how simple this can be take a look at this 2007 website concept:
+This chapter is about Information Architecture, so design really goes beyond the chapters scope, however, design is part of storytelling so let's see if we can in the very least point you in the right direction.
+
+Up until now, we basically have a pretty blank wireframe. We need to add some spice to it. Just by looking at your site your users should be able to understand what they're looking at, your website must communicate it's story. To illustrate how simple this can be take a look at this 2007 website concept:
 
 - http://noonebelongsheremorethanyou.com/00025
 
 It demonstrates to me the simplicity of storytelling and engaging the user, and ultimately delivering a message to entice an action.
 
-In the case of "View Thought" part of the story is: "We are a great website design, development and user experience shop...we pay special attention to what your users will see," so we better deliver some great graphic design on top of architecture and layout that will help communicate this story! To do so we will use a combination of fonts, color, images, and anything else I can think of, to help View Thought tell it's story in such a way that users just get it.
+In the case of "View Thought" part of the story is: "We are a great website **design** [emphasis supplied], development and user experience shop...we pay special attention to what your users will see," so we better deliver some great graphic design on top of architecture and layout that will help communicate this story! To do so we will use a combination of fonts, color, images, and anything else I can think of, to help View Thought tell it's story in such a way that users just get it.
 
 #### Look and Feel
 
-The combination of fonts, color, images is a sites look and feel. What follows are some ideas and resources to help you create your site's look and feel:
+The combination of fonts, color, images is a sites look and feel. What follows are some ideas and resources to help you create your own site's look and feel:
 
 - Use a framework. We listed several frameworks you can use in [Chapter 2][styles].
 
