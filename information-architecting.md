@@ -87,7 +87,7 @@ Quite a bit less, and through the process I really have a great idea about what 
 
 ![][Index Mobile]
 
-...And there you have it, the application in its absolute simplest form doing only the things that are most important. From here we can build up to the desktop.
+And there you have it, the application in its absolute simplest form doing only the things that are most important. From here we can build up to the desktop.
 
 Check out how this design group uses index cards:
 
@@ -117,9 +117,9 @@ The end result: a well-defined user interface layout for my entire application.
 
 ### Wireframing
 
-**No More Exercises!** At this point it's time to start coding. From the exercises above you have absolutely everything you need to start coding with confidence that the site's information architecture and layout are pretty darn close to what you will ultimately develop.
+**No More Exercises!** At this point it's time to start coding. From the exercises above you have absolutely everything you need to start coding with confidence kknowing that the site's information architecture and layout are pretty darn close to what you will ultimately develop.
 
-It's the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond the early exercises, you can send them to a live URL where they can click through to simulate the actual application (and view it on different devices). Any changes you make will be reflected immediately, which they'll love, and so will you because everything from this point and moving forward is just an iteration in the development process.
+The prototype is the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond the early exercises, you can send them to a live URL where they can click through to simulate the actual application (and view it on different devices). Any changes you make will be reflected immediately, which they'll love. For you, everything from this point forward is just an iteration in the development process.
 
 Because you laid out your applications [markup][], [styles][], and [mobile][] groundwork in chapters 1 through 3 -- and hopefully have deployed on Heroku or elsewhere -- what you wireframe here will be production ready, and in this section we will begin to transform our paper prototype into a working wireframe.
 
