@@ -163,13 +163,13 @@ Image placeholders in different sizes and styles are also plentiful (the second 
 
 ### Design
 
-So we basically have a pretty blank wireframe. We need to add some spice to it through our design. Just by looking at your site your users should be able to understand what they're looking at, your design must help communicate your story. To illustrate how simple this can be take a look at this 2007 website concept:
+This chapter is about Information Architecture, so design really goes beyond our chapter scope, however, design is part of storytelling so let's take a quick look at it. We basically have a pretty blank wireframe. We need to add some spice to it. Just by looking at your site your users should be able to understand what they're looking at, your website must communicate it's story. To illustrate how simple this can be take a look at this 2007 website concept:
 
 - http://noonebelongsheremorethanyou.com/00025
 
-It illustrates to me the simplicity of storytelling and engaging the user, and ultimately delivering a message to entice an action.
+It demonstrates to me the simplicity of storytelling and engaging the user, and ultimately delivering a message to entice an action.
 
-In the case of "View Thought" part of the story is: "We are a great website design, development and user experience shop...we pay special attention to what your users will see," so we better deliver some great design that will help tell the story! To communicate this story, on top of the content and layout we have just finished wireframing, we're going to have to use a combination of fonts, color, images, and anything else I can think of to help View Thought tell it's story in such a way that users just get it.
+In the case of "View Thought" part of the story is: "We are a great website design, development and user experience shop...we pay special attention to what your users will see," so we better deliver some great graphic design on top of architecture and layout that will help communicate this story! To do so we will use a combination of fonts, color, images, and anything else I can think of, to help View Thought tell it's story in such a way that users just get it.
 
 #### Look and Feel
 
@@ -223,20 +223,21 @@ In addition to reviewing competitor sites or similar services to help generate i
     - [Creative Background Styles and Trends in Web Design][Codrops 3]
     - [Dashboard Design Elements for the Win][Codrops 4]
 
-#### Mobile
+The following links deal specifically with mobile:
 
-Since for advocating a mobile first design paradigm, it would be wrong to not include some mobile inspiration:
+1. [Pattern Tap Mobile][]
 
-[AppSites][]
+2. [AppSites][]
 
 > App Sites is a showcase of beautiful iPhone, iPad & Mac app websites.
 
-[Mobile Patterns][]
+2. [Mobile Patterns][]
 
-#### Responsive Navigation
+Because responsive will play a big part in your design the following two links may help you think through your navigation:
 
-[Responsive Navigation Patterns][Responsive Navigation]
-[Complex Navigation Patterns for Responsive Design][Complex Navigation]
+1. [Responsive Navigation Patterns][Responsive Navigation]
+
+2. [Complex Navigation Patterns for Responsive Design][Complex Navigation]
 
 ### Feedback
 
@@ -287,6 +288,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Codrops 2]:            http://tympanus.net/codrops/2012/09/26/make-a-statement-with-type/
 [Codrops 3]:            http://tympanus.net/codrops/2012/08/17/creative-background-styles-and-trends-in-web-design/
 [Codrops 4]:            http://tympanus.net/codrops/2012/09/20/dashboard-design-elements-for-the-win/
+[Pattern Tap Mobile]:   http://patterntap.com/?sort_by=created&platform[]=7
 [AppSites]:             http://appsites.com/
 [Mobile Patterns]:      http://www.mobile-patterns.com/
 [Complex Navigation]:   http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/
