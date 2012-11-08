@@ -210,6 +210,7 @@ In addition to reviewing competitor sites or similar services to help generate i
     > ...It's a living classroom, where designers learn what is working well on the Web and why.
 
 3.  [UI Patterns][]
+
     > User Interface Design patterns are recurring solutions that solve common design problems. Design patterns are standard reference points for the experienced user interface designer.
 
 4.  [siteInspire][]
@@ -230,6 +231,7 @@ The following links deal specifically with mobile:
 1. [Pattern Tap Mobile][]
 
 2. [AppSites][]
+
     > App Sites is a showcase of beautiful iPhone, iPad & Mac app websites.
 
 3. [Mobile Patterns][]

@@ -53,6 +53,7 @@ Table of Contents
     - Mobile First
     - Plan of Attack
     - 1. Responsive Web Design
+      - Grid System Roundup
     - 2. User Agent Sniffing
       - Mobile Solutions Roundup
       - Our Solution
