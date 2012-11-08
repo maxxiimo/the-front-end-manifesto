@@ -113,6 +113,8 @@ Here's what my paper prototype process looks like:
 
 ![][Prototype]
 
+The end result: a well-defined user interface layout for my entire application.
+
 ### Wireframing
 
 **No More Exercises!** At this point it's time to start coding. From the exercises above you have absolutely everything you need to start coding with confidence that the site's information architecture and layout are pretty darn close to what you will ultimately develop.
@@ -121,11 +123,15 @@ It's the blueprint, and what you code moving forward will serve as your living w
 
 Because you laid out your applications [markup][], [styles][], and [mobile][] groundwork in chapters 1 through 3 -- and hopefully have deployed on Heroku or elsewhere -- what you wireframe here will be production ready, and in this section we will begin to transform our paper prototype into a working wireframe.
 
-An assumption I will make here is that you already are a proficient front end coder, so for the most part I'll just briefly cover the process I follow beginning with a discussion on content which includes type and images.
+An assumption I will make here is that you already are a proficient front end coder, so going into how to go about writing basic markup from the prototypes we just developed is something I won't get into. After codifying my prototypes here is what I have:
+
+!!! NEED IMAGE !!!
+
+Pretty bare-bones, but that will soon change.
 
 #### Content
 
-Regarding the actual type for your project, if you have it great! If not this article gives a nice overview of how content blocks can be used in situations where type is not known, perhaps a client has not yet delivered it:
+A word on content. I have all of my content for the most part, but regarding the actual content for your project, if you have it great! If not, this article gives a nice overview of how content blocks can be used in situations where content is not known, perhaps a client has not yet delivered it:
 
 - [Content, First?][Content First]
 
@@ -135,7 +141,7 @@ I for one don't mind using Lorem Ipsum as content placeholders. Here is a roundu
 
 [The Ruby Toolbox][Toolbox 1]
 
-There's a lot of Lorem Ipsum generator services out there, here are but a few (some of them are kind of funny):
+There's a lot of Lorem Ipsum generator services out there, here are a few (some of them are kind of funny):
 
 - [html-ipsum][]
 - [lipsum][]
@@ -155,23 +161,19 @@ Image placeholders in different sizes and styles are also plentiful (the second 
 - [Functional Placeholder Images][Cambelt]
 - [Holder.js][]
 
-#### Code Path
-
-
-
 ### Design
 
-Back in 2008 Jason Santa Maria emphasized in his presentation that design must communicate your story, and that just by looking at your site your users should be able to understand what they're looking at. I mean you don't need a user manual to use Amazon.com do you? (Not including Kindle!) For your application to communicate your story, on top of the content and layout we have begun wireframing, we're going to have to use a combination of fonts, color, images, and anything else we can think of to tell your sites story in such a way that the user just gets it.
-
-To illustrate how simple this can be take a look at this 2007 website concept:
+So we basically have a pretty blank wireframe. We need to add some spice to it through our design. Just by looking at your site your users should be able to understand what they're looking at, your design must help communicate your story. To illustrate how simple this can be take a look at this 2007 website concept:
 
 - http://noonebelongsheremorethanyou.com/00025
 
 It illustrates to me the simplicity of storytelling and engaging the user, and ultimately delivering a message to entice an action.
 
+In the case of "View Thought" part of the story is: "We are a great website design, development and user experience shop...we pay special attention to what your users will see," so we better deliver some great design that will help tell the story! To communicate this story, on top of the content and layout we have just finished wireframing, we're going to have to use a combination of fonts, color, images, and anything else I can think of to help View Thought tell it's story in such a way that users just get it.
+
 #### Look and Feel
 
-So up until now regarding design I'm writing more conceptually, but as front-end developers we tend to want to just start coding. So let's look at the quickest way to accomplish this and at the same time create a sites look and feel:
+The combination of fonts, color, images is a sites look and feel. What follows are some ideas and resources to help you create your site's look and feel:
 
 - Use a framework. We listed several frameworks you can use in [Chapter 2][styles].
 
@@ -179,11 +181,11 @@ So up until now regarding design I'm writing more conceptually, but as front-end
 
 - Find a plug-in.
 
-- Hire a designer. With your layout set half of the designers work is done. Now he or she needs to pull it all together with a stellar look and feel. When hiring a designer, make sure you let them know that the layout you have in place is not set in stone. This way your designer can add their experience to the project. Here are some resources for finding designers:
+- Hire a designer. With your layout set via our wireframe work half of the designers work is done. Now he or she needs to pull it all together with a stellar look and feel. When hiring a designer, make sure you let them know that the layout you have in place is not set in stone. This way your designer can add their experience to the project. Here are some resources for finding designers:
 
   - XXX
 
-- Get a freebie.
+- Get a freebie and port it over to your application.
 
   - [Premium Pixels][]
 
