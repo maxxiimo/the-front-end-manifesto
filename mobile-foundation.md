@@ -118,7 +118,7 @@ We're going to use...
 
 ### Mobile on Rails
 
-When I asked [LaunchWare][] founder Dan Pickett what he thought was the best approach for mobile, his answer was so succinct and backed with experience that I'm just going to quote it in its entirety here:
+We've covered three approaches to mobile development in this chapter, and have incorporated these approaches into our foundation code base. So many different approaches begs the question, which one do I use? Well, that depends. It depends on the project and needs. When I asked [LaunchWare][] founder Dan Pickett what he thought was the best approach for mobile, his answer was so succinct (and backed with experience) that I'm just going to quote it in its entirety here:
 
 > We've generally found, UI/UX wise, though that the paradigm is so different that it generally requires a different set of controllers and views.
 >
