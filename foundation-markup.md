@@ -25,40 +25,40 @@ Your Gemfile will change radically throughout the lifespan of your project. With
     source 'https://rubygems.org'
 
     gem 'rails', '3.2.8'
-    
+
     gem 'sqlite3'
-    
+
     group :assets do
       gem 'sass-rails',   '~> 3.2.3'
       gem 'coffee-rails', '~> 3.2.1'
       gem 'uglifier', '>= 1.0.3'
     end
-    
+
     gem 'jquery-rails'
 
 To this I'm going to add gems that I know for certain I will work with. Borrowing from the best – I use Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" Gemfile example – I start my projects with the following [Gemfile][]:
 
     source 'https://rubygems.org'
-    
+
     gem 'rails', '3.2.8'
-    
+
     group :development, :test do
       gem 'sqlite3',      '1.3.5'
       gem 'rspec-rails',  '2.11.0'
     end
-    
+
     # Gems used only for assets and not required
     # in production environments by default.
     group :assets do
       gem 'sass-rails',   '3.2.5'
       gem 'coffee-rails', '3.2.2'
       gem 'uglifier',     '1.2.3'
-    
+
       # Compass specific gems.
       gem 'compass-rails'
       gem 'oily_png'
     end
-    
+
     gem 'jquery-rails',   '2.0.2'
     gem 'haml-rails'
 
@@ -68,7 +68,7 @@ To this I'm going to add gems that I know for certain I will work with. Borrowin
     group :test do
       gem 'capybara',     '1.1.2'
     end
-    
+
     group :production do
       gem 'pg',           '0.12.2'
     end
@@ -204,7 +204,7 @@ Our goal is to write and organize the components of our layout in such a way tha
 
 - https://github.com/maxxiimo/base-haml
 
-This is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project. 
+This is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project.
 
 NOTE: I have included some necessary asset folders and files that coincide with the defaults I will provide in this chapter. Since I'm using modernizr, I add the require in application.js as follows:
 
@@ -271,15 +271,15 @@ NOTE: If you're not sure what I just did there you should really consider gettin
 
     # You can have the root of your site routed with "root"
     # just remember to delete public/index.html.
-    root :to => 'pages#home' 
+    root :to => 'pages#home'
 
 If you run WEBrick, your application should now just work.
 
     $ rails server
 
-### Our Foundation
+#### End Result
 
-Although not apparent yet, i.e. visually, we have created a top-notch markup foundation for your application. With everything in place, and given that you followed Step 2 above, your homepage should look something like this: 
+Although not apparent yet, i.e. visually, we have created a top-notch markup foundation for your application. With everything in place, and given that you followed Step 2 above, your homepage should look something like this:
 
 ![][Basic HTML]
 
@@ -309,7 +309,7 @@ We locate partials 1 and 2 in the same layout folder as application.html.haml --
     def head
       render :partial => 'layouts/head'
     end
-    
+
     def scripts
       render :partial => 'layouts/scripts'
     end
@@ -453,13 +453,13 @@ In the [next chapter][Foundation Styles], we will begin to set up our foundation
 [_logo]:                https://github.com/maxxiimo/base-haml/blob/master/views/shared/_logo.html.haml
 [_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/views/shared/_navigation.html.haml
 [_footer]:              https://github.com/maxxiimo/base-haml/blob/master/views/shared/_footer.html.haml
-[Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md      
+[Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [<head>]:               https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
 [Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html?utm_source=rubyweekly&utm_medium=email
 [Helpful Things]:       https://gist.github.com/1981339
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
-[Waste of Time]:        http://www.sitepoint.com/is-internet-explorer-development-really-a-waste-of-time/             
+[Waste of Time]:        http://www.sitepoint.com/is-internet-explorer-development-really-a-waste-of-time/
 [RWD for IE]:           http://www.sitepoint.com/support-old-browsers-responsive-web-design/
 
 [Basic HTML]:           http://chrismaxwell.com/manifesto/getting-started/base-html-no-styles.png

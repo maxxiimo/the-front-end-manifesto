@@ -14,7 +14,7 @@ Table of Contents
     - The Code
       - Where Do Things Go?
       - Prep the App
-    - Our Foundation
+      - End Result
     - Organization
       - Partials
       - JavaScript

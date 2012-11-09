@@ -1,7 +1,7 @@
 Foundation Styles
 -----------------
 
-Equally important to your application as foundation markup are foundation styles. HTML and CSS are the raw materials of the World Wide Web. We laid out our HTML, now let's square away our CSS. To do so we will review some of the options out there in terms of preprocessors and frameworks, and then best practices in stylesheet set up and maintenance. To learn these best practices we will implement the chapters [starter CSS][] which I have developed over the years with a lot of trial and error and OCD love.
+Equally important to your application as [foundation markup][] are foundation styles. HTML and CSS are the raw materials of the World Wide Web. We laid out our HTML, now let's square away our CSS. To do so we will review some of the options out there in terms of preprocessors and frameworks, and then best practices in stylesheet set up and maintenance. To learn these best practices we will implement the chapters [starter CSS][] which I have developed over the years with a lot of trial and error and OCD love.
 
 ### Preprocessors
 
@@ -500,6 +500,7 @@ To see some great examples checkout:
 
 With all of this work you are more than ready to begin building an app with your best foot forward. If you want to go the extra mile, and I suggest you do, our [next chapter][] will focus on a solid foundation for small screens, i.e. mobile browsers.
 
+[foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [starter CSS]:          https://github.com/maxxiimo/base-css
 [Foundation Markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [Sass]:                 http://sass-lang.com/
