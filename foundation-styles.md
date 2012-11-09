@@ -336,16 +336,6 @@ NOTE: It's a good idea to precede the label name with "/* ". This way you can ea
 Here is an example of one I use:
 
     /* MAJOR SECTION
-      ============================================================================
-
-    /* Heading
-      -----------------------
-
-    /* subdivision, description, comment
-
-The same one using the .scss syntax:
-
-    /* MAJOR SECTION
       ============================================================================ */
 
     /* Heading
@@ -353,17 +343,17 @@ The same one using the .scss syntax:
 
     /* subdivision, description, comment */
 
-
 I like the above sequence, but some other examples include:
 
     /* =============================================================================
        Major Section
        ========================================================================== */
 
+    or
 
     /* =============================================================================
-     * Major Section (same as previous but for .sass)
-     * =============================================================================
+     * Major Section
+     * ========================================================================== */
 
 For descriptions:
 
@@ -373,70 +363,17 @@ For descriptions:
 
     ----------------------------------------------------------------------- */
 
-
     /*
      * Comment in here, title, description, etc.
      */
-
 
     /* Comment in here, title, description, etc.
      * Yada yada yada.
      * And a 3rd line maybe. */
 
-Once upon a time ago I used to always use this:
-
-    /* Title
-    ------------------------------------------------------------------ */
-
-
-    /* Subtitle
-    -----------–--- */
-
-    (use the same number of trailing dashes after the last letter for all subtitles - in this case 4.)
-
-
-    /* further subdivision or comment */
-
 Whatever you decide to use is totally up to you, but be consistent within a project.
 
-##### Subtitle Examples
-
-By far the most used labeling level in your stylesheets will be "subtitles". Use them to group like things or elements, and label them with an eye on searching for the label in the future. Here are some examples for form elements:
-
-    /* common
-    ------------- */
-
-
-    /* labels
-    ------------- */
-
-
-    /* inputs
-    ------------- */
-
-
-    /* checks and radials
-    ------------------------- */
-
-
-    /* text areas
-    ----------------- */
-
-
-    /* selects
-    -------------- */
-
-
-    /* buttons
-    -------------- */
-
-
-    /* link buttons
-    ------------------- */
-
-
-    /* misc
-    ----------- */
+NOTE: By far the most used labeling level in your stylesheets will be "subtitles". Use them to group like things or elements, and label them with an eye on searching for the label in the future. Here are some examples for form elements:
 
 #### Naming Conventions
 
