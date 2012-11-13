@@ -320,11 +320,12 @@ Locate partials 3 - 5 in the shared folder. I separate logo and navigation into 
 
 If you use my [starter code][], or follow my advice, your application.html.haml file will look like:
 
-    !!!
-    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-    <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
-    <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    /[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+    /[if IE 7]    <html class="no-js lt-ie9 lt-ie8" lang="en">
+    /[if IE 8]    <html class="no-js lt-ie9" lang="en">
+    /[if gt IE 8]><!-->
+    %html.no-js{:lang => "en"}
+      /<![endif]
 
       = head
       %body
@@ -403,8 +404,10 @@ So what I propose is a compromise for those of you who don't want to waste your 
       %p.chromeframe
         Your browser is
         %em ancient!
-        %a{:href => "http://browsehappy.com/"} Upgrade to a different browser or
-        %a{:href => "http://www.google.com/chromeframe/?redirect=true"} install Google Chrome Frame to experience this site.
+        %a{:href => "http://browsehappy.com/"} Upgrade to a different browser
+        or
+        %a{:href => "http://www.google.com/chromeframe/?redirect=true"} activate Google Chrome Frame
+        to experience this site.
 
 Here is the corresponding helper method:
 
