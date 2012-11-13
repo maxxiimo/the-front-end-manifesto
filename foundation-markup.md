@@ -318,26 +318,30 @@ I think it looks cleaner in application.html.haml versus using render partial th
 
 Locate partials 3 - 5 in the shared folder. I separate logo and navigation into their own partials rather than use something like _banner.html.haml or _header.html.haml to hold both because often times logos and navigation vary between clients or functional areas within an application. When you start  the project you don't necessarily see this coming, but needs do change so you might as well lay them out in such a way that you can easily get at them in the future.
 
-If you use my [starter code][], or follow my advice, your application.html.haml file will look like:
+If you use my [starter code][], your application.html.haml file will look like:
 
-    /[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
-    /[if IE 7]    <html class="no-js lt-ie9 lt-ie8" lang="en">
-    /[if IE 8]    <html class="no-js lt-ie9" lang="en">
-    /[if gt IE 8]><!-->
+    !!!
+    -# Uncomment if you want to address IE browser issues via these classes/method.
+    -# http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+    -# /[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]
+    -# /[if IE 7]>   <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]
+    -# /[if IE 8]>   <html class="no-js lt-ie9" lang="en"> <![endif]
+    -# /[if gt IE 8]><!-->
     %html.no-js{:lang => "en"}
-      /<![endif]
+    -#   /<![endif]
 
       = head
       %body
+        = chromeframe
         %header{:id => 'hd', :role => "banner"}
           = render :partial => 'shared/logo'
           = render :partial => 'shared/navigation'
         #main{:role => "main"}
           = yield
         = render :partial => 'shared/footer'
-      = scripts
+        = scripts
 
-Concise and simple. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology.
+Other than all the Internet Explorer conditions it's concise and simple. If you plan to use those conditions just uncomment each line, if not feel free to delete them. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology.
 
 #### JavaScript
 
