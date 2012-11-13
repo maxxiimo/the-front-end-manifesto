@@ -188,7 +188,7 @@ The TOC for our [application.scss][] look something like this:
 - DEVELOPERS - staging area, new styles belong here !!!DO NOT INTEGRATE!!!
   - [_staging.sass][]
 - APPLICATION - ad hoc code under this line
-- LAST - second part of HTML 5 Boilerplate
+- LAST
   - [h5bp_helpers.sass][]
   - [h5bp_print.sass][]
 
@@ -276,7 +276,7 @@ The "staging" section is exactly what it says, a staging area for code. It's goo
 
 "Application" could be a place for anything that did not fit in anywhere else and doesn't need to take precedence over preceding styles.
 
-    /* LAST - second part of HTML 5 Boilerplate
+    /* LAST
     ============================================================================ */
     @import "h5bp_helpers";
     @import "h5bp_print";
