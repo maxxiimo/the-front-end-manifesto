@@ -167,7 +167,7 @@ The TOC for our [application.scss][] look something like this:
   - [_define.sass][]
 - MIXINS
 - RESETS
-  - [normalize_h5bp.sass][]
+  - [normalize_h5bp_v101.sass][]
   - [normalize.sass][]
   - [reset.sass][]
   - [reset_meyer.sass][]
@@ -543,7 +543,7 @@ With all of this work you are more than ready to begin building an app with your
 [_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/_staging.sass
 [_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/_typography.sass
 [resets]:               https://github.com/maxxiimo/base-css/tree/master/resets
-[normalize_h5bp.sass]:  https://github.com/maxxiimo/base-css/tree/master/resets/normalize_h5bp.sass
+[normalize_h5bp.sass]:  https://github.com/maxxiimo/base-css/tree/master/resets/normalize_h5bp_v101.sass
 [normalize.sass]:       https://github.com/maxxiimo/base-css/tree/master/resets/normalize.sass
 [reset.sass]:           https://github.com/maxxiimo/base-css/tree/master/resets/reset.sass
 [reset_meyer.sass]:     https://github.com/maxxiimo/base-css/tree/master/resets/reset_meyer.sass
