@@ -136,9 +136,7 @@ To get started, if you're not sure where to begin or as a review, take a look at
 
 2.  The tutorial "[How to Build a Mobile Rails 3.1 App][How to Build]" demonstrates how to use the [mobylette][] and [jquery_mobile_rails][] gems. The mobylette gem handles requests and allows your controller to respond with a :mobile format, while the jquery-mobile-rails gem adds [jQuery Mobile][] files to your asset pipeline: which helps make everything look great and work like a native mobile app.
 
-3.  Much like mobylette, [mobile-fu][] detects mobile requests and allows your application to respond with a :mobile format. Here's a brief how to:
-
-    [Mobilize Your Rails Application with Mobile Fu][Mobilize Rails]
+3.  Much like mobylette, [mobile-fu][] detects mobile requests and allows your application to respond with a :mobile format.
 
 4.  There is a rack-based detection solution called [mobvious][]:
 
@@ -171,6 +169,9 @@ To get started, if you're not sure where to begin or as a review, take a look at
 #### Our Solution
 
 We're going to use...
+
+
+
 
 ### 3. A Hybrid Approach
 
@@ -233,7 +234,6 @@ Feature Detection
 [jquery_mobile_rails]:  https://github.com/tscolari/jquery-mobile-rails
 [How to Build]:         https://dev.tscolari.me/2011/09/15/how-to-build-a-mobile-rails-3-dot-1-app/
 [mobile-fu]:            https://github.com/brendanlim/mobile-fu
-[Mobilize Rails]:       http://www.intridea.com/blog/2008/7/21/mobilize-your-rails-application-with-mobile-fu#
 [jQuery Mobile]:        http://jquerymobile.com/demos/1.2.0/
 [mobvious]:             https://github.com/jistr/mobvious
 [mobvious-rails]:       https://github.com/jistr/mobvious-rails
