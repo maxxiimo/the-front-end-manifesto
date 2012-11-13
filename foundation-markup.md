@@ -321,15 +321,20 @@ Locate partials 3 - 5 in the shared folder. I separate logo and navigation into 
 If you use my [starter code][], or follow my advice, your application.html.haml file will look like:
 
     !!!
-    = head
-    %body
-      %header{:id => 'hd', :role => "banner"}
-        = render :partial => 'shared/logo'
-        = render :partial => 'shared/navigation'
-      #main{:role => "main"}
-        = yield
-      = render :partial => 'shared/footer'
-    = scripts
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+      = head
+      %body
+        %header{:id => 'hd', :role => "banner"}
+          = render :partial => 'shared/logo'
+          = render :partial => 'shared/navigation'
+        #main{:role => "main"}
+          = yield
+        = render :partial => 'shared/footer'
+      = scripts
 
 Concise and simple. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology.
 

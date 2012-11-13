@@ -189,8 +189,8 @@ The TOC for our [application.scss][] look something like this:
   - [_staging.sass][]
 - APPLICATION - ad hoc code under this line
 - LAST - second part of HTML 5 Boilerplate
-  - [normalize_h5bp_p2.sass][]
-  - [normalize_h5bp_p2_print.sass][]
+  - [h5bp_helpers.sass][]
+  - [h5bp_print.sass][]
 
 ##### What's in Each Section
 
@@ -278,10 +278,10 @@ The "staging" section is exactly what it says, a staging area for code. It's goo
 
     /* LAST - second part of HTML 5 Boilerplate
     ============================================================================ */
-    @import "resets/normalize_h5bp_p2";
-    @import "resets/normalize_h5bp_p2_print";
+    @import "h5bp_helpers";
+    @import "h5bp_print";
 
-"Last" is a reminder that those Normalize styles need to appear last.
+"Last" is a reminder that those styles need to appear last.
 
 NOTE: Why the "=" underlines? It helps me find things, or see the organization, when I browse CSS output from a browser.
 
@@ -547,8 +547,8 @@ With all of this work you are more than ready to begin building an app with your
 [normalize.sass]:       https://github.com/maxxiimo/base-css/tree/master/resets/normalize.sass
 [reset.sass]:           https://github.com/maxxiimo/base-css/tree/master/resets/reset.sass
 [reset_meyer.sass]:     https://github.com/maxxiimo/base-css/tree/master/resets/reset_meyer.sass
-[normalize_h5bp_p2.sass]: https://github.com/maxxiimo/base-css/tree/master/resets/normalize_h5bp_p2.sass
-[normalize_h5bp_p2_print.sass]: https://github.com/maxxiimo/base-css/tree/master/resets/normalize_h5bp_p2_print.sass
+[h5bphelpers.sass]:     https://github.com/maxxiimo/base-css/tree/master/h5bp_helpers.sass
+[h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/h5bp_print.sass
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
 [reset utilities]:      http://compass-style.org/reference/compass/reset/utilities/
 [Normalize.css]:        https://github.com/necolas/normalize.css/
