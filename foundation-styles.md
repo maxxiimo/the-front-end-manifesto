@@ -547,7 +547,7 @@ With all of this work you are more than ready to begin building an app with your
 [normalize.sass]:       https://github.com/maxxiimo/base-css/tree/master/resets/normalize.sass
 [reset.sass]:           https://github.com/maxxiimo/base-css/tree/master/resets/reset.sass
 [reset_meyer.sass]:     https://github.com/maxxiimo/base-css/tree/master/resets/reset_meyer.sass
-[h5bphelpers.sass]:     https://github.com/maxxiimo/base-css/tree/master/h5bp_helpers.sass
+[h5bp_helpers.sass]:     https://github.com/maxxiimo/base-css/tree/master/h5bp_helpers.sass
 [h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/h5bp_print.sass
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
 [reset utilities]:      http://compass-style.org/reference/compass/reset/utilities/
