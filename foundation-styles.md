@@ -169,7 +169,7 @@ The TOC for our [application.scss][] look something like this:
 - RESETS
   - [normalize_h5bp_v101.sass][]
   - [normalize.sass][]
-  - [reset.sass][]
+  - [Compass resets][]
   - [reset_meyer.sass][]
 - BASIC STRUCTURE
   - [_layout.sass][]
@@ -544,11 +544,10 @@ With all of this work you are more than ready to begin building an app with your
 [_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/_typography.sass
 [resets]:               https://github.com/maxxiimo/base-css/tree/master/resets
 [normalize_h5bp_v101.sass]: https://github.com/maxxiimo/base-css/tree/master/resets/_normalize_h5bp_v101.sass
-[normalize_h5bp_v201.sass]: https://github.com/maxxiimo/base-css/tree/master/resets/_normalize_h5bp_v101.sass
 [normalize.sass]:       https://github.com/maxxiimo/base-css/tree/master/resets/_normalize.sass
-[reset.sass]:           https://github.com/maxxiimo/base-css/tree/master/resets/_reset.sass
+[Compass resets]:       http://compass-style.org/reference/compass/reset/
 [reset_meyer.sass]:     https://github.com/maxxiimo/base-css/tree/master/resets/_reset_meyer.sass
-[h5bp_helpers.sass]:     https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.sass
+[h5bp_helpers.sass]:    https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.sass
 [h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/_h5bp_print.sass
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
 [reset utilities]:      http://compass-style.org/reference/compass/reset/utilities/
