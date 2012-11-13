@@ -543,10 +543,11 @@ With all of this work you are more than ready to begin building an app with your
 [_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/_staging.sass
 [_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/_typography.sass
 [resets]:               https://github.com/maxxiimo/base-css/tree/master/resets
-[normalize_h5bp_v101.sass]: https://github.com/maxxiimo/base-css/tree/master/resets/normalize_h5bp_v101.sass
-[normalize.sass]:       https://github.com/maxxiimo/base-css/tree/master/resets/normalize.sass
-[reset.sass]:           https://github.com/maxxiimo/base-css/tree/master/resets/reset.sass
-[reset_meyer.sass]:     https://github.com/maxxiimo/base-css/tree/master/resets/reset_meyer.sass
+[normalize_h5bp_v101.sass]: https://github.com/maxxiimo/base-css/tree/master/resets/_normalize_h5bp_v101.sass
+[normalize_h5bp_v201.sass]: https://github.com/maxxiimo/base-css/tree/master/resets/_normalize_h5bp_v101.sass
+[normalize.sass]:       https://github.com/maxxiimo/base-css/tree/master/resets/_normalize.sass
+[reset.sass]:           https://github.com/maxxiimo/base-css/tree/master/resets/_reset.sass
+[reset_meyer.sass]:     https://github.com/maxxiimo/base-css/tree/master/resets/_reset_meyer.sass
 [h5bp_helpers.sass]:     https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.sass
 [h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/_h5bp_print.sass
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
