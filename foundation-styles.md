@@ -12,7 +12,7 @@ The following two articles will give you a great overview on Sass in rails:
 - [An Introduction to Sass in Rails 1][Sass in Rails 1]
 - [An Introduction to Sass in Rails 2][Sass in Rails 2]
 
-When using sass you have a choice in syntax; .sass or .scss. I prefer .sass. Most front end developers will probably go with the .scss syntax because it looks familiar (similar to CSS), and because that is what ships out-of-the-box in Rails, however, .sass is cleaner/terser (IMHO). To help you decide on the best syntax for you, check out the article: "[Sass vs. SCSS: Which Syntax is Better?][Sass vs. SCSS]."
+When using Sass you have a choice in syntax; .sass or .scss. I prefer .sass. Most front end developers will probably go with the .scss syntax because it looks familiar (similar to CSS), and because that is what ships out-of-the-box in Rails, however, .sass is cleaner/terser (IMHO). To help you decide on the best syntax for you, check out the article: "[Sass vs. SCSS: Which Syntax is Better?][Sass vs. SCSS]."
 
 NOTE: When using Sass or Haml these two resources are absolutely indispensable:
 
