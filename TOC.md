@@ -23,13 +23,6 @@ Table of Contents
     - What We've Done
 - [Foundation Styles][]
     - Preprocessors
-    - Frameworks
-      - Compass
-      - Twitter Bootstrap
-      - Blueprint
-      - YUI
-      - Foundation 3
-      - Skeleton
     - Our Foundation
       - Compass Set Up
       - Stylesheet Set Up
@@ -126,6 +119,13 @@ Table of Contents
       - Gemfile
       - .gitignore
       - Deployment
+    - Frameworks
+      - Compass
+      - Twitter Bootstrap
+      - Blueprint
+      - YUI
+      - Foundation 3
+      - Skeleton
 
 [Cover]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
