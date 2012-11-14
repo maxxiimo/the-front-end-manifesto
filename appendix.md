@@ -10,7 +10,7 @@ Wih any Rails application their is some very basic groundwork that needs to be d
     $ git init
     $ git add .
     $ git commit -am "Initial commit."
-    $ git remote add origin git@github.com:<Github account>/.git
+    $ git remote add origin git@github.com:<Github username>/<application name>.git
     Create a new repo at Github.
     $ git push -u origin master
 

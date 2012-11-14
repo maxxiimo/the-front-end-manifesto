@@ -101,7 +101,7 @@ The TOC for our [application.scss][] look something like this:
   - [_define.sass][]
 - MIXINS
 - RESETS
-  - [normalize_h5bp_v101.sass][]
+  - [h5bp_normalize_v101.sass][]
   - [normalize.sass][]
   - [Compass resets][]
   - [reset_meyer.sass][]
@@ -150,10 +150,16 @@ If you do not plan to use Compass, remove this import.
 
     /* RESETS
     ============================================================================ */
-    @import "resets/normalize_h5bp";
-    // @import "resets/normalize";
+    @import "boilerplate/h5bp_normalize_v101";
     // @import "compass/reset";
-    // @import "resets/reset_meyer";
+    // The following can be found at https://github.com/maxxiimo/base-resets.
+    // @import "normalize";
+    // @import "reset_meyer";
+
+    // To counter normalize indentation of lists.
+    ol, ul {
+      padding-left: 0;
+    }
 
 I include four major reset styles in my application file and uncomment the one I plan to use for a particular project.
 
@@ -212,8 +218,8 @@ The "staging" section is exactly what it says, a staging area for code. It's goo
 
     /* LAST
     ============================================================================ */
-    @import "h5bp_helpers";
-    @import "h5bp_print";
+    @import "boilerplate/h5bp_helpers";
+    @import "boilerplate/h5bp_print";
 
 "Last" is a reminder that those styles need to appear last.
 
@@ -223,15 +229,13 @@ NOTE: Why the "=" underlines? It helps me find things, or see the organization, 
 
 The granddaddy of all resets is Eric Meyer's "[Reset CSS][]".
 
-Sometimes I use compass' [reset utilities][] which are based on Eric Meyer's work, but lately my preference has been to use [Normalize.css][]. HTML 5 boilerplate uses normalize.css with slight variations and style additions. The author of Normalize.css describes what it does best:
+Sometimes I use compass' [reset utilities][] which are based on Eric Meyer's work, but lately my preference has been to use [Normalize.css][]. HTML 5 boilerplate uses normalize.css. The author of Normalize.css describes what it does best:
 
 > Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards. We researched the differences between default browser styles in order to precisely target only the styles that need normalizing.
 
-I converted Eric Meyer's, and both the original Normalize.css and HTML 5 Boilerplate's normalize styles to .sass and .scss here:
+I converted Eric Meyer's, and both the original Normalize.css and HTML 5 Boilerplate's normalize styles to .sass here:
 
 - https://github.com/maxxiimo/base-resets
-
-In the case of [H5BP's normalize][], I have commented out some of the typographic styles to give myself the option to keep them or move them into more appropriate partials.
 
 The following article briefly outlines the changes in resets moving into HTML 5:
 
@@ -465,17 +469,17 @@ With all of this work you are more than ready to begin building an app with your
 [_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/_sprites.sass
 [_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/_staging.sass
 [_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/_typography.sass
-[resets]:               https://github.com/maxxiimo/base-css/tree/master/resets
-[normalize_h5bp_v101.sass]: https://github.com/maxxiimo/base-css/tree/master/resets/_normalize_h5bp_v101.sass
-[normalize.sass]:       https://github.com/maxxiimo/base-css/tree/master/resets/_normalize.sass
+[resets]:               https://github.com/maxxiimo/base-resets
+[h5bp_normalize_v101.sass]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v101.sass
+[normalize.sass]:       https://github.com/maxxiimo/base-resets/blob/master/_normalize.sass
 [Compass resets]:       http://compass-style.org/reference/compass/reset/
-[reset_meyer.sass]:     https://github.com/maxxiimo/base-css/tree/master/resets/_reset_meyer.sass
+[reset_meyer.sass]:     https://github.com/maxxiimo/base-resets/blob/master/_reset_meyer.sass
 [h5bp_helpers.sass]:    https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.sass
 [h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/_h5bp_print.sass
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
 [reset utilities]:      http://compass-style.org/reference/compass/reset/utilities/
 [Normalize.css]:        https://github.com/necolas/normalize.css/
-[H5BP's normalize]:     https://github.com/maxxiimo/base-resets/blob/master/_normalize_h5bp.sass
+[H5BP's normalize]:     https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v101.sass
 [HTML5 Resets]:         http://html5doctor.com/html-5-reset-stylesheet/
 [aB vs. a_b]:           http://stackoverflow.com/questions/1437527/css-camelcase-vs-under-score
 [Identifiers]:          http://stackoverflow.com/questions/1686337/hyphens-or-underscores-in-css-and-html-identifiers
