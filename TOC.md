@@ -4,10 +4,6 @@ Table of Contents
 - [Cover][]
 - [The Manifesto][]
 - [Foundation Markup][]
-    -  Groundwork
-      - Gemfile
-      - .gitignore
-      - Deployment
     -  The Application Layout
       - A Framework within a Framework
       - Where Does It Live?
@@ -125,6 +121,11 @@ Table of Contents
 - [Style Guides][]
 - [Good Advice][]
 - [JavaScript Libraries][]
+- [Appendix][]
+    -  Groundwork
+      - Gemfile
+      - .gitignore
+      - Deployment
 
 [Cover]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
@@ -147,3 +148,4 @@ Table of Contents
 [Style Guides]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/style-guides.md
 [Good Advice]:                       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/good-advice.md
 [JavaScript Libraries]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/javascript-libraries.md
+[Appendix]:                          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix.md

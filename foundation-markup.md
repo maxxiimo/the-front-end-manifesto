@@ -1,171 +1,7 @@
 Foundation Markup
 -----------------
 
-This chapter could be called a cut-and-paste chapter in that I will provide tried-and-true code that you can cut and paste into your application to build your projects foundation markup. In the next chapter we will add styles, but for now these are the steps necessary to start your Rails application out right in terms of foundation markup and from the front end view coders perspective. Let's get started.
-
-### Groundwork
-
-Assuming you just created a brand spanking new Rails application, these are the steps I follow...
-
-    $ rails new <name> --no-test-framework
-    Switch to new project folder.
-    $ git init
-    $ git add .
-    $ git commit -am "Initial commit."
-    $ git remote add origin git@github.com:<Github account>/.git
-    Create a new repo at Github.
-    $ git push -u origin master
-
-...you should set up your Gemfile and .gitignore files right off the bat as follows:
-
-#### Gemfile
-
-Your Gemfile will change radically throughout the lifespan of your project. With every new application Rails generates one with a lot of commented out lines. You don't need these, they take up a lot of space and clutter things up. Without comments, in the new Rails app here is what you're left with:
-
-    source 'https://rubygems.org'
-
-    gem 'rails', '3.2.8'
-
-    gem 'sqlite3'
-
-    group :assets do
-      gem 'sass-rails',   '~> 3.2.3'
-      gem 'coffee-rails', '~> 3.2.1'
-      gem 'uglifier', '>= 1.0.3'
-    end
-
-    gem 'jquery-rails'
-
-To this I'm going to add gems that I know for certain I will work with. Borrowing from the best – I use Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" Gemfile example – I start my projects with the following [Gemfile][]:
-
-    source 'https://rubygems.org'
-
-    gem 'rails', '3.2.8'
-
-    group :development, :test do
-      gem 'sqlite3',      '1.3.5'
-      gem 'rspec-rails',  '2.11.0'
-    end
-
-    # Gems used only for assets and not required
-    # in production environments by default.
-    group :assets do
-      gem 'sass-rails',   '3.2.5'
-      gem 'coffee-rails', '3.2.2'
-      gem 'uglifier',     '1.2.3'
-
-      # Compass specific gems.
-      gem 'compass-rails'
-      gem 'oily_png'
-    end
-
-    gem 'jquery-rails',   '2.0.2'
-    gem 'haml-rails'
-
-    # See https://github.com/ndbroadbent/turbo-sprockets-rails3
-    # gem 'turbo-sprockets-rails3'
-
-    group :test do
-      gem 'capybara',     '1.1.2'
-    end
-
-    group :production do
-      gem 'pg',           '0.12.2'
-    end
-
-Since I typically use compass, I added the compass-rails and oily_png gems here. You may not want to, but I think it's smart choice if you do.
-
-NOTE: Michael Hartl recommends using the following flag on your first bundle:
-
-    $ bundle install --without production
-
-Doing so installs your Gemfile gems, but prevents the installation of the production gems. You only have to do this once.
-
-Finally, you should set up rspec now:
-
-    $ rails generate rspec:install
-
-For faster asset precompiles check out:
-
-- [Turbo Sprockets for Rails 3.2.x][Turbo Sprockets]
-
-#### .gitignore
-
-For my [.gitignore][] file here is what I use; mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore]:
-
-    # Ignore bundler config
-    /.bundle
-
-    # Ignore the default SQLite database
-    /db/*.sqlite3
-
-    # Ignore all logfiles and tempfiles
-    /log/*.log
-    /tmp
-
-    # Numerous always-ignore extensions
-    *.diff
-    *.err
-    *.orig
-    *.log
-    *.rej
-    *.swo
-    *.swp
-    *.vi
-    *~
-    *.sass-cache
-
-    # OS or Editor folders
-    .DS_Store
-    Thumbs.db
-    .cache
-    .project
-    .settings
-    .tmproj
-    *.esproj
-    nbproject
-    *.sublime-project
-    *.sublime-workspace
-
-    # Dreamweaver added files
-    _notes
-    dwsync.xml
-
-    # Komodo
-    *.komodoproject
-    .komodotools
-
-    # Folders to ignore
-    .hg
-    .svn
-    .CVS
-    intermediate
-    publish
-    .idea
-    doc/
-
-    # Local
-    scratch.*
-    public/source
-
-The last section "Local" contains files or folders I use to save things within the application, but only on my local machine:
-
-- __scratch.*__ - I use this as a code graveyard; snippets of code I am no longer using but not yet ready to completely get rid of.
-
-- __public/source__ - A folder for original third-party files or source code integrated into my application; Photoshop files; original images; basically the original copies of where things came from.
-
-Some additional useful .gitignore ideas:
-
-- [Ignore files][]
-- [A Collection of Useful .gitignore Templates][.gitignore]
-
-#### Deployment
-
-If you use Heroku like I do run the following commands:
-
-    $ heroku create --stack cedar
-    $ git push heroku master
-    $ heroku rename <new name>
+This is the first of three chapters that will help you set up a stellar base of code for any Rails application you want to create. In this first chapter we'll begin with our foundation markup. In the next chapter we will add [foundation styles][], and in chapter three a [mobile foundation][]. Our goal in these chapters is to teach you how to start your Rails applications out right, from the front end view coders perspective, and to give you the files you will need to do so. Let's get started.
 
 ### The Application Layout
 
@@ -212,6 +48,8 @@ NOTE: I have included some necessary asset folders and files that coincide with 
     //= require jquery_ujs
     //= require modernizr-2.6.2.min
     //= require_tree .
+
+Also, take a look at the [Groundwork][] section of the Appendix to learn about the thinking behind our [Gemfile][] and [.gitignore][] files, as well as deploying to Heroku.
 
 ##### About HTML5 Boilerplate
 
@@ -283,7 +121,7 @@ Although not apparent yet, i.e. visually, we have created a top-notch markup fou
 
 ![][Basic HTML]
 
-Not very attractive! ...but don't worry we'll address that in the [next chapter][Foundation Styles].
+Not very attractive! ...but don't worry we'll address that in the [next chapter][foundation styles].
 
 ### Organization
 
@@ -440,22 +278,17 @@ I should mention that the author of this article follows up with a solution in h
 - We then grabbed all of the starter code for this chapter, our foundation markup, and integrated into a new Rails application.
 - Finally, we took a look at how this foundation markup is organized and briefly reviewed legacy browsers.
 
-In the [next chapter][Foundation Styles], we will begin to set up our foundation styles.
+In the [next chapter][foundation styles], we will begin to set up our foundation styles.
 
-
-[RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
-[Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
-[.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
-[Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3
-[H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
-[Tutorial .gitignore]:  http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
-                        "An augmented .gitignore file"
-[Ignore files]:         http://help.github.com/ignore-files/
-[.gitignore]:           https://github.com/github/gitignore
+[foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
+[mobile foundation]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
 [The Rails View]:       http://pragprog.com/book/warv/the-rails-view
 [starter code]:         https://github.com/maxxiimo/base-haml
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [Unofficial Guide]:     http://designreviver.com/articles/an-unofficial-guide-to-the-html5-boilerplate/
+[Groundwork]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix.md
+[Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
+[.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
 [application]:          https://github.com/maxxiimo/base-haml/blob/master/views/layouts/application.html.haml
 [application_helper]:   https://github.com/maxxiimo/base-haml/blob/master/helpers/application_helper.rb
@@ -465,7 +298,6 @@ In the [next chapter][Foundation Styles], we will begin to set up our foundation
 [_logo]:                https://github.com/maxxiimo/base-haml/blob/master/views/shared/_logo.html.haml
 [_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/views/shared/_navigation.html.haml
 [_footer]:              https://github.com/maxxiimo/base-haml/blob/master/views/shared/_footer.html.haml
-[Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [<head>]:               https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
 [Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html?utm_source=rubyweekly&utm_medium=email
 [Helpful Things]:       https://gist.github.com/1981339
