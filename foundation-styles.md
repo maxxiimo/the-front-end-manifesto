@@ -95,7 +95,7 @@ I can't stress enough how important it is to start a project with some kind of o
 
 Our [application.scss][] file is kind of like a table of contents for partials. In addition to indexing your partials, this TOC layers in styles based on precedents. Styles in the last partial entry, i.e. import, will override styles in partials listed above it so long as the styles preceding it have the same class or ID and specificity, and/or tag.
 
-The TOC for our [application.scss][] look something like this:
+The TOC for our [application.scss][] with the files I have generated for you looks like this:
 
 - DEFINITIONS
   - [_define.sass][]
@@ -125,7 +125,7 @@ The TOC for our [application.scss][] look something like this:
 
 ##### What's in Each Section
 
-I use the above structure for most of my projects. What follows is a snippet of each section as they appear in [application.scss][] followed by a description:
+I use the above structure for most of my projects. What follows is a snippet of each section as they actually appear in [application.scss][] followed by a description of what the section should be used for:
 
     /*
     * Important! Do *not* use Sprockets "require" syntax.
