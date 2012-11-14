@@ -102,9 +102,6 @@ The TOC for our [application.scss][] look something like this:
 - MIXINS
 - RESETS
   - [h5bp_normalize_v101.sass][]
-  - [normalize.sass][]
-  - [Compass resets][]
-  - [reset_meyer.sass][]
 - BASIC STRUCTURE
   - [_layout.sass][]
   - [_grids.sass][]
@@ -460,20 +457,16 @@ With all of this work you are more than ready to begin building an app with your
 [Asset Pipeline]:       http://www.engineyard.com/blog/2011/sass-compass-and-the-rails-3-1-asset-pipeline/
 [application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
-[_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/_forms.sass
-[_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/_grids.sass
-[_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/_layout.sass
-[_misc.sass]:           https://github.com/maxxiimo/base-css/blob/master/_misc.sass
-[_navigation.sass]:     https://github.com/maxxiimo/base-css/blob/master/_navigation.sass
-[_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/_pages.sass
-[_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/_sprites.sass
-[_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/_staging.sass
-[_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/_typography.sass
-[resets]:               https://github.com/maxxiimo/base-resets
 [h5bp_normalize_v101.sass]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v101.sass
-[normalize.sass]:       https://github.com/maxxiimo/base-resets/blob/master/_normalize.sass
-[Compass resets]:       http://compass-style.org/reference/compass/reset/
-[reset_meyer.sass]:     https://github.com/maxxiimo/base-resets/blob/master/_reset_meyer.sass
+[_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/_layout.sass
+[_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/_grids.sass
+[_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/_typography.sass
+[_misc.sass]:           https://github.com/maxxiimo/base-css/blob/master/_misc.sass
+[_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/_sprites.sass
+[_navigation.sass]:     https://github.com/maxxiimo/base-css/blob/master/_navigation.sass
+[_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/_forms.sass
+[_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/_pages.sass
+[_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/_staging.sass
 [h5bp_helpers.sass]:    https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.sass
 [h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/_h5bp_print.sass
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
@@ -481,6 +474,7 @@ With all of this work you are more than ready to begin building an app with your
 [Normalize.css]:        https://github.com/necolas/normalize.css/
 [H5BP's normalize]:     https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v101.sass
 [HTML5 Resets]:         http://html5doctor.com/html-5-reset-stylesheet/
+[resets]:               https://github.com/maxxiimo/base-resets
 [aB vs. a_b]:           http://stackoverflow.com/questions/1437527/css-camelcase-vs-under-score
 [Identifiers]:          http://stackoverflow.com/questions/1686337/hyphens-or-underscores-in-css-and-html-identifiers
 [Sucks]:                http://csswizardry.com/2010/12/css-camel-case-seriously-sucks/
