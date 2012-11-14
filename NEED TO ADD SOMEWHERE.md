@@ -1,9 +1,6 @@
-
 *Designers should use pixels.*
 
-
 *don't nest to deep*
-
 
 ### iPad
 

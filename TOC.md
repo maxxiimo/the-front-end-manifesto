@@ -44,9 +44,7 @@ Table of Contents
     - 1. Responsive Web Design
       - Media Queries
       - Conditional Loading
-      - Grid System Roundup
     - 2. User Agent Sniffing
-      - Mobile Solutions Roundup
       - Our Solution
       3. A Hybrid Approach
     - Mobile on Rails
@@ -75,9 +73,6 @@ Table of Contents
   - Step 8 - Navigation
   - Step 9 - HTML for the Main Content
   - Step 10 - Sprites and CSS3 for Images
-- [Accessibility][]
-  - Standardize Your Links
-  - Use ARIA Roles
 - [Optimization][]
     - Gzipping
     - Caching
@@ -87,6 +82,9 @@ Table of Contents
     - Compressing and the Asset Pipeline
     - Spriting
     - What We've Done
+- [Accessibility][]
+  - Standardize Your Links
+  - Use ARIA Roles
 - [Getting the Fonts Right][]
   - font-family
 - [Images][]
@@ -115,25 +113,18 @@ Table of Contents
 - [Good Advice][]
 - [JavaScript Libraries][]
 - [Appendix][]
-    -  Groundwork
-      - Gemfile
-      - .gitignore
-      - Deployment
-    - Frameworks
-      - Compass
-      - Twitter Bootstrap
-      - Blueprint
-      - YUI
-      - Foundation 3
-      - Skeleton
+  - Groundwork
+  - Frameworks
+  - Grid Systems
+  - Mobile Solutions Roundup
 
 [Cover]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Foundation Markup]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [Foundation Styles]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [Mobile Foundation]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
-[Accessibility]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/accessibility.md
 [Optimization]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/optimization.md
+[Accessibility]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/accessibility.md
 [Slicing and Dicing Mockups]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
 [Information Architecting]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [Getting the Fonts Right]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/getting-the-fonts-right.md

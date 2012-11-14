@@ -3,20 +3,18 @@ The Front End Manifesto
 
 by Chris Maxwell
 
-*High-performing, efficient,*  
-*Un-bloated,*  
+*High-performing, efficient,*
+*Un-bloated,*
 *Modularized and Organized*
 
 **Front End Code**
-
 
 Personal views and direction on front end coding, from a Ruby on Rails perspective.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
   <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a>
-<br />This work is licensed under a 
+<br />This work is licensed under a
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
-
 
 Table of Contents
 -----------------
@@ -24,17 +22,13 @@ Table of Contents
 - [Cover][]
 - [The Manifesto][]
 - [Foundation Markup][]
-    -  Groundwork
-      - Gemfile
-      - .gitignore
-      - Deployment
     -  The Application Layout
       - A Framework within a Framework
       - Where Does It Live?
     - The Code
       - Where Do Things Go?
       - Prep the App
-    - Our Foundation
+      - End Result
     - Organization
       - Partials
       - JavaScript
@@ -47,13 +41,6 @@ Table of Contents
     - What We've Done
 - [Foundation Styles][]
     - Preprocessors
-    - Frameworks
-      - Compass
-      - Twitter Bootstrap
-      -  Blueprint
-      -  YUI
-      -  Foundation 3
-      -  Skeleton
     - Our Foundation
       - Compass Set Up
       - Stylesheet Set Up
@@ -72,19 +59,23 @@ Table of Contents
 - [Mobile Foundation][]
     - Mobile First
     - Plan of Attack
-    - User Agent Sniffing
-      - Mobile Solutions Roundup
-    - Responsive Web Design
+    - 1. Responsive Web Design
+      - Media Queries
+      - Conditional Loading
+    - 2. User Agent Sniffing
+      - Our Solution
+      3. A Hybrid Approach
     - Mobile on Rails
     - An Ajax Include Pattern
     - Using JavaScript
 - [Information Architecting][]
-    - Blocks of Information
+    - A Mosaic of Information
     - The Storyline
     - Gathering and Organizing Information
       - Index Card Exercise
       - Prototyping on Paper
-      - No More Exercises!
+    - Wireframing
+      - Content
     - Design
       - Look and Feel
       - Inspiration
@@ -100,9 +91,6 @@ Table of Contents
   - Step 8 - Navigation
   - Step 9 - HTML for the Main Content
   - Step 10 - Sprites and CSS3 for Images
-- [Accessibility][]
-  - Standardize Your Links
-  - Use ARIA Roles
 - [Optimization][]
     - Gzipping
     - Caching
@@ -112,6 +100,9 @@ Table of Contents
     - Compressing and the Asset Pipeline
     - Spriting
     - What We've Done
+- [Accessibility][]
+  - Standardize Your Links
+  - Use ARIA Roles
 - [Getting the Fonts Right][]
   - font-family
 - [Images][]
@@ -139,14 +130,19 @@ Table of Contents
 - [Style Guides][]
 - [Good Advice][]
 - [JavaScript Libraries][]
+- [Appendix][]
+  - Groundwork
+  - Frameworks
+  - Grid Systems
+  - Mobile Solutions Roundup
 
 [Cover]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Foundation Markup]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [Foundation Styles]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [Mobile Foundation]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
-[Accessibility]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/accessibility.md
 [Optimization]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/optimization.md
+[Accessibility]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/accessibility.md
 [Slicing and Dicing Mockups]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
 [Information Architecting]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [Getting the Fonts Right]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/getting-the-fonts-right.md
@@ -161,3 +157,4 @@ Table of Contents
 [Style Guides]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/style-guides.md
 [Good Advice]:                       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/good-advice.md
 [JavaScript Libraries]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/javascript-libraries.md
+[Appendix]:                          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix.md
