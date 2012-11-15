@@ -289,7 +289,7 @@ To get started, if you're not sure where to begin or as a review, take a look at
 
 1.  Ryan Bates screencast "[Mobile Devices][]".
 
-2.  The tutorial "[How to Build a Mobile Rails 3.1 App][How to Build]" demonstrates how to use the [mobylette][] and [jquery_mobile_rails][] gems. The mobylette gem handles requests and allows your controller to respond with a :mobile format, while the jquery-mobile-rails gem adds [jQuery Mobile][] files to your asset pipeline: which helps make everything look great and work like a native mobile app.
+2.  The tutorial "[How to Build a Mobile Rails 3.1 App][How to Build]" demonstrates -- although slightly dated from the gem -- how to use the authors [mobylette][] and [jquery_mobile_rails][] gems. Mobylette handles requests and allows your controller to respond with a :mobile format, while jquery-mobile-rails adds [jQuery Mobile][] files to your asset pipeline: which helps make everything look great and work like a native mobile app.
 
 3.  Much like mobylette, [mobile-fu][] detects mobile requests and allows your application to respond with a :mobile format.
 

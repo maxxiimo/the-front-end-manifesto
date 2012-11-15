@@ -46,11 +46,38 @@ Right now responsive web design is hugely popular. The article [Reasons for Resp
 Whatever approach you decide, keep in mind that there are a spectrum of user and business needs, and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website is pretty simple so maybe detecting user agents to serve something specific to mobile browsers is not the best use of my time. In this case why not use media queries and keep things together? On the other hand more complex applications may need to serve up specific markup and styles, take for example Basecamp mobile:
 
 > Only using responsive design for Basecamp mobile would have been like fitting a Prius body to a Hummer... under-the-hood it would have been all wrong.
-\[Behind the speed: Basecamp mobile][Basecamp Mobile]
+[Behind the speed: Basecamp mobile][Basecamp Mobile]
 
 In this chapter we will explore the three plans of attack.
 
-### 1. Responsive Web Design
+### 1. User Agent Sniffing
+
+Back at Fidelity pre-smart phone, mobile was a complete separate concern from desktops. I worked there slightly before smart phones emerged, and back then smallscreen devices operated behind what was referred to as a carriers "walled garden" which oftentimes did not allow CSS, or JavaScript, or HTML tables, or all three. Back then there were so many different types of devices, rules, screen sizes, and mobile browsers (or none at all).
+
+To complicate matters at Fidelity it was our objective to cover 99.999% [possibly exaggerated by me] of all small screen devices out there. Why? Imagine a billionaire customer from Bahrain trying to look at his or her Fidelity portfolio on some obscure cell phone and nothing showing up! [Rationale also made up by me, but not the underlying object. Consistent coverage.]
+
+To accomplish ubiquity we developed a super dumbed down HTML 1.0 interface that would work on 90% of all small screen devices, remember pre-smart phone, and for the remaining devices served up alternative markup that would display content correctly and consistent with the company's brand and look and feel. We were able to successfully do this by analyzing the devices HTTP_ACCEPT header and HTTP_USER_AGENT header, i.e. user agent sniffing. Over time with all the customers that Fidelity had, the company developed an extensive database of devices their customers used which included the device's screen size, operating system, carrier, and other pertinent information. Armed with this information Fidelity could tailor out markup depending on the request and information it contained.
+
+Fast-forward to today, with the advent of smart devices and their proliferation, we also need to make sure our applications work correctly and consistently across a multitude of different devices and screen sizes. Like my days at Fidelity, we can effectively use devices user agents to identify browsers, screen resolutions, type of device, and based on this determine what markup and styles to serve.
+
+#### Our Solution
+
+There are a number of different solutions you can use. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. We're going to use Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. To begin add the following two gems to your Gemfile and then bundle install:
+
+        gem 'mobylette'
+        gem 'jquery_mobile_rails'
+
+Add the following line to application_controller.rb:
+
+    include Mobylette::RespondToMobileRequests
+
+Copy all the files located [here][base-mobile] and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
+
+And that's it! I like to use [User Agent Switcher][] to test on my browser. Give it a try.
+
+You're probably saying that there certainly does seem to be a lot of repetition in our code. So you know, if a .mobile.haml file is not available, Mobylette will default to a regular .html.haml file, but this kind of defeats the purpose of using it. I personally like splitting the two concerns, but this may not be the best approach for many projects. One of the key arguments for Responsive Web Design is the elimination of duplication. Let's give it a try in the next section.
+
+### 2. Responsive Web Design
 
 Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]".
 
@@ -63,22 +90,6 @@ Yada yada yada, coming soon... ;)
 
 
 #### Conditional Loading
-
-
-
-### 2. User Agent Sniffing
-
-Back at Fidelity pre-smart phone, mobile was a complete separate concern from desktops. I worked there slightly before smart phones emerged, and back then smallscreen devices operated behind what was referred to as a carriers "walled garden" which oftentimes did not allow CSS, or JavaScript, or HTML tables, or all three. Back then there were so many different types of devices, rules, screen sizes, and mobile browsers (or none at all).
-
-To complicate matters at Fidelity it was our objective to cover 99.999% [possibly exaggerated by me] of all small screen devices out there. Why? Imagine a billionaire customer from Bahrain trying to look at his or her Fidelity portfolio on some obscure cell phone and nothing showing up! [Rationale also made up by me, but not the underlying object. Consistent coverage.]
-
-To accomplish ubiquity we developed a super dumbed down HTML 1.0 interface that would work on 90% of all small screen devices, remember pre-smart phone, and for the remaining devices served up alternative markup that would display content correctly and consistent with the company's brand and look and feel. We were able to successfully do this by analyzing the devices HTTP_ACCEPT header and HTTP_USER_AGENT header, i.e. user agent sniffing. Over time with all the customers that Fidelity had, the company developed an extensive database of devices their customers used which included the device's screen size, operating system, carrier, and other pertinent information. Armed with this information Fidelity could tailor out markup depending on the request and information it contained.
-
-Fast-forward to today, with the advent of smart devices and their proliferation, we also need to make sure our applications work correctly and consistently across a multitude of different devices and screen sizes. Like my days at Fidelity, we can effectively use devices user agents to identify browsers, screen resolutions, type of device, and based on this determine what markup and styles to serve.
-
-#### Our Solution
-
-We're going to use...
 
 
 
@@ -124,8 +135,13 @@ Feature Detection
 [Responsive Reasons]:   http://www.mixd.co.uk/blog/technical/reasons-for-responsive-design/
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
 [Brian Fling]:          http://shop.oreilly.com/product/9780596155452.do
+[Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile
 [Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
-[Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile
+[Mobile Roundup]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix.md#mobile-solutions-roundup
+[mobylette]:            https://github.com/tscolari/mobylette
+[jQuery Mobile]:        http://jquerymobile.com/
+[base-mobile]:          https://github.com/maxxiimo/base-mobile
+[User Agent Switcher]:  http://chrispederick.com/work/user-agent-switcher/
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
