@@ -24,12 +24,12 @@ So what is this tiny view framework within a framework? Well, it is predominantl
 The front end structure I'm describing primarily lives in two high-level folders within your Rails application: the helpers and the views folders. The views folder is where the real action takes place and can be further subdivided into the Layout and Shared folders, which are home to the majority of your foundation front end code. Here's what it looks like and where you'll find these folders in any Rails 3.0 or greater project:
 
 Project
-  - assets
-  - controllers
-  - **helpers**
-  - mailers
-  - models
   - app
+    - assets
+    - controllers
+    - **helpers**
+    - mailers
+    - models
     - **views**
       - **layout**
       - **shared**
@@ -65,19 +65,15 @@ To better understand it (and my implementation of it), the following sites are a
 Code wise you have access to everything I use when starting a new application, my [sarter code][]. Structurally, these files fall into place as follows:
 
 Project
-  - assets
-    - images
-      - **fixtures**
-      - **icons**
-      - **logos**
-      - **pics**
-    - **javascripts**
-  - controllers
-  - helpers
-    - [**application_helper.rb**][application_helper]
-  - mailers
-  - models
   - app
+    - assets
+      - images
+        - **fixtures**
+        - **icons**
+        - **logos**
+        - **pics**
+    - helpers
+      - [**application_helper.rb**][application_helper]
     - views
       - layout
         - [**_chromeframe.html.haml**][_chromeframe]
@@ -88,6 +84,11 @@ Project
         - [**_footer.html.haml**][_footer]
         - [**_logo.html.haml**][_logo]
         - [**_navigation.html.haml**][_navigation]
+  - vendor
+    - assets
+      - **javascripts**
+  - [.gitignore][]
+  - [Gemfile][]
 
 Once you have downloaded the [starter code][] and placed all the files where they belong, you'll need to prep your app.
 
@@ -191,7 +192,7 @@ Generally it is best to put JavaScript at the very bottom of application.html.ha
 
 #### What to Put in \<head>
 
-If you haven't already noticed, there is a lot of commented out code in [_head.html.haml][<head>]. The reason for this is that there is a lot of things that you could put there, but don't. Obviously just put in what you need. I provide the bare minimum, but everything else, commented out, just in case you need it.
+If you haven't already noticed, there is a lot of commented out code in [_head.html.haml][_head]. The reason for this is that there is a lot of things that you could put there, but don't. Obviously just put in what you need. I provide the bare minimum, but everything else, commented out, just in case you need it.
 
 For an explanation on what this stuff is/does check out:
 
@@ -290,16 +291,17 @@ In the [next chapter][foundation styles], we will begin to set up our foundation
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
-[application]:          https://github.com/maxxiimo/base-haml/blob/master/views/layouts/application.html.haml
 [application_helper]:   https://github.com/maxxiimo/base-haml/blob/master/helpers/application_helper.rb
 [_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_chromeframe.html.haml
 [_head]:                https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
 [_scripts]:             https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_scripts.html.haml
+[application]:          https://github.com/maxxiimo/base-haml/blob/master/views/layouts/application.html.haml
+[_footer]:              https://github.com/maxxiimo/base-haml/blob/master/views/shared/_footer.html.haml
 [_logo]:                https://github.com/maxxiimo/base-haml/blob/master/views/shared/_logo.html.haml
 [_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/views/shared/_navigation.html.haml
-[_footer]:              https://github.com/maxxiimo/base-haml/blob/master/views/shared/_footer.html.haml
-[<head>]:               https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
-[Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html?utm_source=rubyweekly&utm_medium=email
+[.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
+[Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
+[Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html
 [Helpful Things]:       https://gist.github.com/1981339
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/

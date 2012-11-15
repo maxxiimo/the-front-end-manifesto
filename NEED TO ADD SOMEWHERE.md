@@ -11,7 +11,7 @@
 
 ### Mobile Development Constraints
 
-[Yehuda Katz][] of jQuerry fame and a Rails core team member discusses some of the development constraints in mobile in his presentation "[Rails 3 for Mobile Applications][Engine Yard]." Fast-forward to 13:00 to hear a great overview on limitations of mobile, but in summary:
+[Yehuda Katz][], a Rails core team member, discusses some of the development constraints in mobile in his presentation "[Rails 3 for Mobile Applications][Engine Yard]." Fast-forward to 13:00 to hear a great overview on limitations of mobile, but in summary:
 
 - Poor HTTP caching (back button requires reload)
 - Connection drops

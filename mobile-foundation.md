@@ -62,14 +62,16 @@ Fast-forward to today, with the advent of smart devices and their proliferation,
 
 #### Our Solution
 
-There are a number of different solutions you can use. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. We're going to use Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. To begin add the following two gems to your Gemfile and then bundle install:
+There are a number of different solutions you can use. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. We're going to use Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. To begin add the following gem to your Gemfile and then bundle install:
 
         gem 'mobylette'
-        gem 'jquery_mobile_rails'
 
 Add the following line to application_controller.rb:
 
     include Mobylette::RespondToMobileRequests
+    mobylette_config do |config|
+      config[:skip_xhr_requests] = false
+    end
 
 Copy all the files located [here][base-mobile] and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
