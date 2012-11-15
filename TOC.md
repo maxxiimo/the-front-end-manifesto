@@ -46,7 +46,7 @@ Table of Contents
     - 2. Responsive Web Design
       - Media Queries
       - Conditional Loading
-      3. A Hybrid Approach
+    - 3. A Hybrid Approach
     - Mobile on Rails
     - An Ajax Include Pattern
     - Using JavaScript
