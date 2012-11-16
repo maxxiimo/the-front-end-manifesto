@@ -42,7 +42,8 @@ Table of Contents
     - Mobile First
     - Plan of Attack
     - 1. User Agent Sniffing
-      - Our Solution
+      - Simplest Solution
+      - Advanced Solution
     - 2. Responsive Web Design
       - Media Queries
       - Conditional Loading

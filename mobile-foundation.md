@@ -60,7 +60,7 @@ To accomplish ubiquity we developed a super dumbed down HTML 1.0 interface that 
 
 Fast-forward to today, with the advent of smart devices and their proliferation, we also need to make sure our applications work correctly and consistently across a multitude of different devices and screen sizes. Like my days at Fidelity, we can effectively use devices user agents to identify browsers, screen resolutions, type of device, and based on this determine what markup and styles to serve.
 
-#### Our Solution
+#### Simplest Solution
 
 There are a number of different solutions you can use. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. We're going to use Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. To begin add the following gem to your Gemfile and then bundle install:
 
@@ -77,7 +77,11 @@ Copy all the files located [here][base-mobile] and place them into their corresp
 
 And that's it! I like to use [User Agent Switcher][] to test on my browser. Give it a try.
 
-You're probably saying that there certainly does seem to be a lot of repetition in our code. So you know, if a .mobile.haml file is not available, Mobylette will default to a regular .html.haml file, but this kind of defeats the purpose of using it. I personally like splitting the two concerns, but this may not be the best approach for many projects. One of the key arguments for Responsive Web Design is the elimination of duplication. Let's give it a try in the next section.
+You're probably saying that there certainly does seem to be a lot of repetition in our code. So you know, if a .mobile.haml file is not available, Mobylette will default to a regular .html.haml file, but this kind of defeats the purpose of using it. I personally like splitting the two concerns, but this may not be the best approach for many projects. One of the key arguments for Responsive Web Design is the elimination of duplication.
+
+#### Advanced Solution
+
+
 
 ### 2. Responsive Web Design
 

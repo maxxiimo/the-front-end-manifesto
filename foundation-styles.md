@@ -116,9 +116,9 @@ The TOC for our [application.scss][] with the files I have generated for you loo
   - [_forms.sass][]
 - PAGES
   - [_pages.sass][]
-- DEVELOPERS - staging area, new styles belong here !!!DO NOT INTEGRATE!!!
+- DEVELOPERS
   - [_staging.sass][]
-- APPLICATION - ad hoc code under this line
+- APPLICATION
 - LAST
   - [h5bp_helpers.sass][]
   - [h5bp_print.sass][]
