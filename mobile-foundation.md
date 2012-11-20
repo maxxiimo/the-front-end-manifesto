@@ -85,7 +85,7 @@ There are a number of different solutions you can use to deliver a mobile soluti
 
 ([Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work])
 
-**Step 5:** Add the following to your production.rb file:
+**Step 5:** Add the following to your config/environments/production.rb:
 
     # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
     config.assets.precompile += %w( modernizr-2.6.2.min.js, jquery.mobile-1.2.0.css )

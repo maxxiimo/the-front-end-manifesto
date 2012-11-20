@@ -44,7 +44,7 @@ Take a look at the [Groundwork][] section of the Appendix to learn about the thi
 
 NOTE: This is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project. I have included some necessary asset folders and files that coincide with the defaults I will provide in this chapter.
 
-IMPORTANT: Since I'm using modernizr, add the following to config/environments/production.rb:
+IMPORTANT: Since we're using modernizr and the asset pipeline, add the following to config/environments/production.rb:
 
     # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
     config.assets.precompile += %w( modernizr-2.6.2.min.js )
