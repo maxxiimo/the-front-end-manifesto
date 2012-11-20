@@ -1,9 +1,9 @@
-Appendices
-----------
+Appendix
+--------
 
 ### Groundwork
 
-Wih any Rails application their is some very basic groundwork that needs to be done; creating the application and using some kind of versioning system. In the Rails world Git and Github are the versioning sytem and service of choice. Here are the steps I follow to set this up:
+With any Rails application their is some very basic groundwork that needs to be done; creating the application and using some kind of versioning system. In the Rails world Git and Github are the versioning sytem and service of choice. Here are the steps I follow to set this up:
 
     $ rails new <name> --no-test-framework
     Switch to new project folder.
@@ -36,39 +36,39 @@ With every new application Rails generates a Gemfile with a lot of commented out
 
 To this I add the gems that I know I will use, and in my case Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" Gemfile example pretty much sums up my base [Gemfile][] with a few minor additions:
 
-    source 'https://rubygems.org'
+source 'https://rubygems.org'
 
     gem 'rails', '3.2.8'
 
+    gem 'jquery-rails', '2.0.2'
+    gem 'haml-rails'
+
     group :development, :test do
-      gem 'sqlite3',      '1.3.5'
-      gem 'rspec-rails',  '2.11.0'
+      gem 'sqlite3', '1.3.5'
+      gem 'rspec-rails', '2.11.0'
     end
 
     # Gems used only for assets and not required
     # in production environments by default.
     group :assets do
-      gem 'sass-rails',   '3.2.5'
+      gem 'sass-rails', '3.2.5'
       gem 'coffee-rails', '3.2.2'
-      gem 'uglifier',     '1.2.3'
+      gem 'uglifier', '1.2.3'
 
       # Compass specific gems.
       gem 'compass-rails'
       gem 'oily_png'
     end
 
-    gem 'jquery-rails',   '2.0.2'
-    gem 'haml-rails'
-
     # See https://github.com/ndbroadbent/turbo-sprockets-rails3
     # gem 'turbo-sprockets-rails3'
 
     group :test do
-      gem 'capybara',     '1.1.2'
+      gem 'capybara', '1.1.2'
     end
 
     group :production do
-      gem 'pg',           '0.12.2'
+      gem 'pg', '0.12.2'
     end
 
 Since I typically use compass, I added the compass-rails and oily_png gems as well.

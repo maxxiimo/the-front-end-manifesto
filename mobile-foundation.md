@@ -75,6 +75,16 @@ Add the following line to application_controller.rb:
 
 Copy all the files located [here][base-mobile] and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
+Add the following to your application.rb file:
+
+    # Precompile *all* assets, except those that start with underscore
+    config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+
+Add the following to your production.rb file:
+
+  # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
+  config.assets.precompile += %w( modernizr-2.6.2.min.js, jquery.mobile-1.2.0.css )
+
 And that's it! I like to use [User Agent Switcher][] to test on my browser. Give it a try.
 
 You're probably saying that there certainly does seem to be a lot of repetition in our code. So you know, if a .mobile.haml file is not available, Mobylette will default to a regular .html.haml file, but this kind of defeats the purpose of using it. I personally like splitting the two concerns, but this may not be the best approach for many projects. One of the key arguments for Responsive Web Design is the elimination of duplication.
