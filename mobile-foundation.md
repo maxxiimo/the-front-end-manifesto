@@ -62,28 +62,33 @@ Fast-forward to today, with the advent of smart devices and their proliferation,
 
 #### Simplest Solution
 
-There are a number of different solutions you can use. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. We're going to use Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. To begin add the following gem to your Gemfile and then bundle install:
+There are a number of different solutions you can use to deliver a mobile solution based on User Agent Sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. To deliver our mobile views in what I consider the simplest way possible, we're going to use Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow:
+
+**Step 1:** Add the following gem to your Gemfile and then bundle install:
 
         gem 'mobylette'
 
-Add the following line to application_controller.rb:
+**Step 2:** Add the following line to application_controller.rb:
 
     include Mobylette::RespondToMobileRequests
     mobylette_config do |config|
       config[:skip_xhr_requests] = false
     end
 
-Copy all the files located [here][base-mobile] and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
+**Step 3:** Copy all the files located [here][base-mobile] and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
-Add the following to your application.rb file:
+**Step 4:** Add the following to your application.rb file:
 
-    # Precompile *all* assets, except those that start with underscore
+    # Precompile *all* assets, except those that start with underscore per:
+    # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
     config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
-Add the following to your production.rb file:
+([Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work])
 
-  # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  config.assets.precompile += %w( modernizr-2.6.2.min.js, jquery.mobile-1.2.0.css )
+**Step 5:** Add the following to your production.rb file:
+
+    # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
+    config.assets.precompile += %w( modernizr-2.6.2.min.js, jquery.mobile-1.2.0.css )
 
 And that's it! I like to use [User Agent Switcher][] to test on my browser. Give it a try.
 
@@ -158,6 +163,7 @@ Feature Detection
 [mobylette]:            https://github.com/tscolari/mobylette
 [jQuery Mobile]:        http://jquerymobile.com/
 [base-mobile]:          https://github.com/maxxiimo/base-mobile
+[Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
 [User Agent Switcher]:  http://chrispederick.com/work/user-agent-switcher/
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/

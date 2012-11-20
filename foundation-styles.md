@@ -65,7 +65,7 @@ If you find your system has a problem with sass partial underscores when precomp
 
 Some additional resources for working with Compass include:
 
-- [Getting Compass to Work With Rails 3.1 (and 3.2)][Getting Compass to Work]
+- [Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work]
 - [How I Use Compass With Rails 3.1][How I Use Compass]
 - [Sass, Compass, and the Rails 3.1 Asset Pipeline][Asset Pipeline]
 
@@ -452,7 +452,7 @@ With all of this work you are more than ready to begin building an app with your
 [Compass]:              http://compass-style.org/
 [compass-rails]:        https://github.com/Compass/compass-rails
 [FireSass]:             https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
-[Getting Compass to Work]: http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+[Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
 [How I Use Compass]:    http://austintech.com/blog/2011/08/19/how-i-use-compass-with-rails-3-1/
 [Asset Pipeline]:       http://www.engineyard.com/blog/2011/sass-compass-and-the-rails-3-1-asset-pipeline/
 [application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss

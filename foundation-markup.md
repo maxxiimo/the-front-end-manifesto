@@ -40,16 +40,14 @@ Our goal is to write and organize the components of our layout in such a way tha
 
 - https://github.com/maxxiimo/base-haml
 
-This is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project.
+Take a look at the [Groundwork][] section of the Appendix to learn about the thinking behind our [Gemfile][] and [.gitignore][] files, as well as deploying to Heroku.
 
-NOTE: I have included some necessary asset folders and files that coincide with the defaults I will provide in this chapter. Since I'm using modernizr, I add the require in application.js as follows:
+NOTE: This is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project. I have included some necessary asset folders and files that coincide with the defaults I will provide in this chapter.
 
-    //= require jquery
-    //= require jquery_ujs
-    //= require modernizr-2.6.2.min
-    //= require_tree .
+IMPORTANT: Since I'm using modernizr, add the following to config/environments/production.rb:
 
-Also, take a look at the [Groundwork][] section of the Appendix to learn about the thinking behind our [Gemfile][] and [.gitignore][] files, as well as deploying to Heroku.
+    # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
+    config.assets.precompile += %w( modernizr-2.6.2.min.js )
 
 ##### About HTML5 Boilerplate
 
