@@ -66,7 +66,7 @@ There are a number of different solutions you can use to deliver mobile based on
 
 **Step 1:** Copy all the [base-mobile][] files ffrom the simple solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
-**Step 2:** Add the following to your application.rb file:
+**Step 2:** Uncomment the following in your application.rb file:
 
     # Precompile *all* assets, except those that start with underscore per:
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
