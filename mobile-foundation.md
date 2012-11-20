@@ -62,28 +62,28 @@ Fast-forward to today, with the advent of smart devices and their proliferation,
 
 #### Simplest Solution
 
-There are a number of different solutions you can use to deliver a mobile solution based on User Agent Sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. To deliver our mobile views in what I consider the simplest way possible, we're going to use Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow:
+There are a number of different solutions you can use to deliver mobile based on User Agent Sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. To deliver our mobile views we will use the quickest and simplest solution: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
 
-**Step 1:** Add the following gem to your Gemfile and then bundle install:
+**Step 1:** Copy all the [base-mobile][] files ffrom the simple solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
-        gem 'mobylette'
-
-**Step 2:** Add the following line to application_controller.rb:
-
-    include Mobylette::RespondToMobileRequests
-    mobylette_config do |config|
-      config[:skip_xhr_requests] = false
-    end
-
-**Step 3:** Copy all the files located [here][base-mobile] and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
-
-**Step 4:** Add the following to your application.rb file:
+**Step 2:** Add the following to your application.rb file:
 
     # Precompile *all* assets, except those that start with underscore per:
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
     config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
 ([Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work])
+
+**Step 3:** Add the following gem to your Gemfile and then bundle install:
+
+        gem 'mobylette'
+
+**Step 4:** Add the following line to application_controller.rb:
+
+    include Mobylette::RespondToMobileRequests
+    mobylette_config do |config|
+      config[:skip_xhr_requests] = false
+    end
 
 **Step 5:** Add the following to your config/environments/production.rb:
 
@@ -92,11 +92,25 @@ There are a number of different solutions you can use to deliver a mobile soluti
 
 And that's it! I like to use [User Agent Switcher][] to test on my browser. Give it a try.
 
-You're probably saying that there certainly does seem to be a lot of repetition in our code. So you know, if a .mobile.haml file is not available, Mobylette will default to a regular .html.haml file, but this kind of defeats the purpose of using it. I personally like splitting the two concerns, but this may not be the best approach for many projects. One of the key arguments for Responsive Web Design is the elimination of duplication.
+There certainly does seem to be a lot of repetition in our code, two files for almost everything. So you know, if a .mobile.haml file is not available, Mobylette will default to a regular .html.haml file. I personally like splitting concerns, but understand that this may not be the best approach for many projects. One of the key arguments for Responsive Web Design is the elimination of duplication. We will investigate this option thoroughly, but before then let's try a more advanced agent sniffing solution.
 
 #### Advanced Solution
 
 
+
+**Step 1:** Copy all the [base-mobile][] files from the advanced solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
+
+**Step 2:** Add the following to your application.rb file:
+
+    # Precompile *all* assets, except those that start with underscore per:
+    # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+    config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+
+([Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work])
+
+**Step :**
+**Step :**
+**Step :**
 
 ### 2. Responsive Web Design
 
