@@ -92,25 +92,45 @@ There are a number of different solutions you can use to deliver mobile based on
 
 And that's it! I like to use [User Agent Switcher][] to test on my browser. Give it a try.
 
-There certainly does seem to be a lot of repetition in our code, two files for almost everything. So you know, if a .mobile.haml file is not available, Mobylette will default to a regular .html.haml file. I personally like splitting concerns, but understand that this may not be the best approach for many projects. One of the key arguments for Responsive Web Design is the elimination of duplication. We will investigate this option thoroughly, but before then let's try a more advanced agent sniffing solution.
+There certainly does seem to be a lot of repetition in our code, two files for almost everything. So you know, if a .mobile.haml file is not available, Mobylette will default to a regular .html.haml file. I personally like splitting concerns, but I also understand that this may not be the best approach for many projects. One of the key arguments for Responsive Web Design is the elimination of duplication. We will investigate this option thoroughly, but before then let's try a more advanced agent sniffing solution.
 
 #### Advanced Solution
 
+Mobvious will give you a greater deal of versatility on how you detect mobile requests:
 
+1.  User-Agent sniffing
+2.  URL pattern matching
+3.  Remembering a user's manual choice
+
+It is a rack-based solution and easy to set up. Here are the steps we will use to configure Mobvious for our needs:
 
 **Step 1:** Copy all the [base-mobile][] files from the advanced solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
-**Step 2:** Add the following to your application.rb file:
+**Step 2:** Add the following gems to your Gemfile and then bundle install:
 
-    # Precompile *all* assets, except those that start with underscore per:
-    # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
-    config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+    gem 'mobvious'
+    gem 'mobvious-rails'
 
-([Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work])
+**Step 3:** Add the following into application.rb:
 
-**Step :**
-**Step :**
-**Step :**
+    # Tell your app to use Mobvious::Manager as Rack middleware.
+    config.middleware.use Mobvious::Manager
+
+**Step 4:** Add the following includes into application_controller.rb and application_helper.rb:
+
+    include Mobvious::Rails::Controller
+
+    include Mobvious::Rails::Helper
+
+**Step 5:** Create a initializer file (config/initializers/mobvious.rb) and configure it as follows:
+
+    Mobvious.configure do |config|
+      config.strategies = [ Mobvious::Strategies::MobileESP.new(:mobile_desktop) ]
+    end
+
+This detection strategy will detect by user agent into mobile vs. desktop groups, tablets are categorized as desktop.
+
+
 
 ### 2. Responsive Web Design
 
