@@ -64,7 +64,7 @@ Fast-forward to today, with the advent of smart devices and their proliferation,
 
 There are a number of different solutions you can use to deliver mobile based on User Agent Sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. To deliver our mobile views we will use the quickest and simplest solution: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
 
-**Step 1:** Copy all the [base-mobile][] files ffrom the simple solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
+**Step 1:** Copy all the [base-mobile][] files from the simple solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
 **Step 2:** Add the following to your application.rb file:
 
