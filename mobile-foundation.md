@@ -102,6 +102,8 @@ Mobvious will give you a greater deal of versatility on how you detect mobile re
 2.  URL pattern matching
 3.  Remembering a user's manual choice
 
+##### Set Up
+
 It is a rack-based solution and easy to set up. Here are the steps we will use to configure Mobvious for our needs:
 
 **Step 1:** Copy all the [base-mobile][] files from the advanced solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
@@ -128,7 +130,23 @@ It is a rack-based solution and easy to set up. Here are the steps we will use t
       config.strategies = [ Mobvious::Strategies::MobileESP.new(:mobile_desktop) ]
     end
 
-This detection strategy will detect by user agent into mobile vs. desktop groups, tablets are categorized as desktop.
+Don't forget to restart your application, and wallah! You have a detection strategy that will detect user agents and return a variable of :mobile or :desktop depending on the device type of the request. Tablets as configured here will returns :desktop.
+
+To test that it is working you can use:
+
+    def device_test
+        # Drop in controller: @device = request.env['mobvious.device_type']
+        no_device = "What!? That's nil bro."
+        if @device.nil?
+          no_device
+        else
+          "#{@device}"
+        end
+    end
+
+##### Using Mobvious
+
+Now that we have it set up, here is how we will use it.
 
 
 
