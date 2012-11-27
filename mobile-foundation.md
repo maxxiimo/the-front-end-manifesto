@@ -146,13 +146,34 @@ To test that it is working you can use:
 
 ##### Using Mobvious
 
-Now that we have it set up, here is how we will use it.
+Now that we have it set up, here is how we will use it. From our [Mobile Solutions Roundup][Mobile Roundup] we combine a bit of [Ryan Bates][] mobile solution with Mobvious.
+
+To fork requests to the correct views we add the following to application_controller.rb:
+
+    class ApplicationController < ActionController::Base
+      protect_from_forgery
+      include Mobvious::Rails::Controller
+      before_filter :prepare_for_mobile
 
 
+      private
+
+      def prepare_for_mobile
+        if request.env['mobvious.device_type'] == :mobile
+          request.format = :mobile
+        end
+      end
+    end
+
+...and the following to /config/initializers/mime_types.rb:
+
+    Mime::Type.register_alias "text/html", :mobile
+
+Just like in the simple solution, requests from different devices will be served up the correct markup and styles for the device.
 
 ### 2. Responsive Web Design
 
-Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]".
+User agent stiffing is great, but what about in projects where it's overkill? Couldn't we use CSS3 to serve up different styles to different devices? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]".
 
 [This Is Responsive][]
 
@@ -209,13 +230,14 @@ Feature Detection
 [Media Queries]:        http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
 [Brian Fling]:          http://shop.oreilly.com/product/9780596155452.do
 [Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile
-[Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
-[This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Mobile Roundup]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-4.md#mobile-solutions-roundup
 [mobylette]:            https://github.com/tscolari/mobylette
 [jQuery Mobile]:        http://jquerymobile.com/
 [base-mobile]:          https://github.com/maxxiimo/base-mobile
 [Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
 [User Agent Switcher]:  http://chrispederick.com/work/user-agent-switcher/
+[Ryan Bates]:           http://railscasts.com/episodes/199-mobile-devices
+[Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
+[This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
