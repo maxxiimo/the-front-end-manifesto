@@ -2,13 +2,11 @@ Appendices
 ----------
 
 1.  [Groundwork][Appendix 1]
-
     - Gemfile
     - .gitignore
     - Deployment
 
 2.  [Frameworks][Appendix 2]
-
     - Compass
     - Twitter Bootstrap
     - YUI
