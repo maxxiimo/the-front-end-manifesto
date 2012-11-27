@@ -113,7 +113,7 @@ Table of Contents
 - [Style Guides][]
 - [Good Advice][]
 - [JavaScript Libraries][]
-- [Appendix][]
+- [Appendices][]
   - Groundwork
   - Frameworks
   - Grid Systems
@@ -140,7 +140,4 @@ Table of Contents
 [Style Guides]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/style-guides.md
 [Good Advice]:                       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/good-advice.md
 [JavaScript Libraries]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/javascript-libraries.md
-[Appendix]:                          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md
-[Appendix 1]:                        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md
-[Appendix 2]:                        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-2.md
-[Appendix 3]:                        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md
+[Appendices]:                        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md

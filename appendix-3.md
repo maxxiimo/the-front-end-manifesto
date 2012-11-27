@@ -1,59 +1,67 @@
 Appendix 3
 ----------
 
-### Mobile Solutions Roundup
+### Grid Systems
 
-To get started, if you're not sure where to begin or as a review, take a look at this round up of mobile solutions:
+You just can't believe how many grid system there are out there so here is a roundup for you to choose from (in alphabetical order):
 
-1.  Ryan Bates screencast "[Mobile Devices][]".
+1.  [320 and Up][]
 
-2.  The tutorial "[How to Build a Mobile Rails 3.1 App][How to Build]" demonstrates -- although slightly dated from the gem -- how to use the authors [mobylette][] and [jquery_mobile_rails][] gems. Mobylette handles requests and allows your controller to respond with a :mobile format, while jquery-mobile-rails adds [jQuery Mobile][] files to your asset pipeline: which helps make everything look great and work like a native mobile app.
+    > ‘320 and Up’ is a lightweight, easy to use and content first responsive web design boilerplate.
 
-3.  Much like mobylette, [mobile-fu][] detects mobile requests and allows your application to respond with a :mobile format.
+2.  [34Grid][]
 
-4.  There is a rack-based detection solution called [mobvious][]:
+    > 34Grid is a Responsive Grid System based on "equally distributed columns" layout basis. In contrast to other great grid systems (@see bottom of page), 34Grid provides equally distributed columns for each row. (and also column complements for inequal distributions)
 
-    > Mobvious detects whether your app / website is being accessed by a phone, or by a tablet, or by a personal computer. You can then use this information throughout your app. (E.g. fork your front-end code with regard to device type. There is a [plugin][mobvious-rails] for Ruby on Rails that helps you with this.)
+3.  [Columnal][]
 
-    The [mobvious-rails][] gem allows you to:
+    > The Columnal CSS grid system is a “remix” of a couple others with some custom code thrown in. The elastic grid system is borrowed from cssgrid.net, while some code inspiration (and the idea for subcolumns) are taken from 960.gs.
 
-    > Access detected device type easily from controllers and views.<br>
-    > Execute code for given device types only. Both in controllers and views.<br>
-    > Do the above stuff also in your CoffeeScript.
+4.  [Frameless][]
 
-5.  [Agent_orange][agent_orange] looks interesting. Although stable, it has its issues per the maintainers readme.
+    > Dig responsive design? Hate fluid grids? Try a Frameless grid.
 
-6.  [UserAgent][] is a Ruby library that parses and compares HTTP User Agents.
+5.  [Golden Grid System ][]
 
-7.  [Browser][] is a gem that allows you to test for the browser being used including mobile browsers, and includes ActionController integration.
+    > A folding grid for responsive design.
 
-8.  In the tutorial "[Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]" the author proposes placing mobile templates in a separate directory, then when requests come in from a mobile subdomain, like m.domain.com, these templates are served. If the templates are not available, the requester is served regular view templates; freeing you up from having to create two templates for every action. Users can switch between the two templates, and user agent detection is employed.
+6.  [Fluid Baseline Grid System][]
 
-9.  If you're looking to beef up your detection capabilities, the following services are available (includes free and paid plans).
-    - [Handset Detection][]
-    - [Akamai][]
-    - [DeviceAtlas][]
-    - [scientiamobile][]
+    > The FBG system was built with typographic standards in mind and combines principals of fluid-column layouts, baseline grids and mobile-first responsive design into a resolution independent and device agnostic framework.
 
-10. You can also tap into the [WURFL][] database.
+7.  [Responsive GS][]
 
-11. Here is a list of "[Mobile Browser ID (User-Agent) Strings][Mobile Strings]" you could incorporate into your project if you wanted to get granular.
+    > Fluid grid CSS framework for fast, intuitive development of responsive websites. Available in 12, 16 and 24 columns with media queries for all standard devices, clearfix, and optional reset.
 
-[Mobile Devices]:       http://railscasts.com/episodes/199-mobile-devices
-[mobylette]:            https://github.com/tscolari/mobylette
-[jquery_mobile_rails]:  https://github.com/tscolari/jquery-mobile-rails
-[How to Build]:         https://dev.tscolari.me/2011/09/15/how-to-build-a-mobile-rails-3-dot-1-app/
-[mobile-fu]:            https://github.com/brendanlim/mobile-fu
-[jQuery Mobile]:        http://jquerymobile.com/demos/1.2.0/
-[mobvious]:             https://github.com/jistr/mobvious
-[mobvious-rails]:       https://github.com/jistr/mobvious-rails
-[agent_orange]:         https://github.com/kevinelliott/agent_orange
-[UserAgent]:            https://github.com/josh/useragent
-[Browser]:              https://github.com/fnando/browser
-[Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
-[Handset Detection]:    http://code.google.com/p/mobile-device-detection-ruby-on-rails/
-[Akamai]:               http://www.akamai.com/html/solutions/mobile_detection_redirect.html
-[DeviceAtlas]:          https://deviceatlas.com/
-[scientiamobile]:       http://www.scientiamobile.com/
-[WURFL]:                http://wurfl.sourceforge.net/
-[Mobile Strings]:       http://www.zytrax.com/tech/web/mobile_ids.html
+8.  [Responsive Grid System][]
+
+    > The Responsive Grid System isn't a framework. It's not a boilerplate either. It's a quick, easy & flexible way to create a responsive web site.
+
+9.  [rwdgrid][]
+
+    > rwdgrid is just another Grid system based on popular 960grid , which is responsive and ranges from mobile, tablet, laptops and wide screen displays.
+
+10. [SimpleGrid][]
+
+    > Responsive. Infinite nesting. One class per element. Simple.
+
+11. [1140 CSS Grid][]
+
+    > The 1140 grid fits perfectly into a 1280 monitor. On smaller monitors it becomes fluid and adapts to the width of the browser.
+
+12. [Gridiculous][]
+
+    > Gridiculous was created after I tried out a bunch of different responsive grids and realized that none of them offered all of the features I required. First and foremost, I wanted to make sure that the grid would work from a large desktop monitor through to a tablet and all the way down to a mobile phone. That's why Gridiculous starts off at 1200px and works itself down to 320px.
+
+[320 and Up]:           http://stuffandnonsense.co.uk/projects/320andup/
+[34Grid]:               http://34grid.com/
+[Columnal]:             http://www.columnal.com/
+[Frameless]:            http://framelessgrid.com/
+[Golden Grid System ]:  http://goldengridsystem.com/
+[Fluid Baseline Grid System]:http://fluidbaselinegrid.com/
+[Responsive GS]:        http://responsive.gs/
+[Responsive Grid System]:http://www.responsivegridsystem.com/
+[rwdgrid]:              http://rwdgrid.com/
+[SimpleGrid]:           http://simplegrid.info/
+[1140 CSS Grid]:        http://cssgrid.net/
+[Gridiculous]:          http://gridiculo.us/
