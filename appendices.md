@@ -7,7 +7,6 @@ Appendices
     - Deployment
 
 2.  [Frameworks][Appendix 2]
-    - Compass
     - Twitter Bootstrap
     - YUI
     - Foundation 3

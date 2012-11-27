@@ -3,30 +3,11 @@ Appendix 2
 
 ### Frameworks
 
-Frameworks give you a whole boatload of base styles that are instantly accessible through your HTML tags or specified class names. Frameworks include base font sizes and rhythm, default formats for almost every kind of HTML tag, and by simply dropping in the frameworks class names you can add some great looking styles to your project that are built to work, with very few hitches, across all browsers. On top of that you get grid systems, prebuilt scripts for commonly used functions like pop-ups, modals and menu systems. The list goes on.
-
 In so far as responsive frameworks go, the following article gives you a nice comparison:
 
 - [Responsive CSS Framework Comparison][Framework Comparison]
 
 Here is a brief framework roundup worth taking a look at for your project.
-
-#### Compass
-
-So right off the bat I have to say that I love [Compass][]. It's powerful, it's well-documented, it's widely used, there are a ton of extensions for it, and it generally makes life easier for me.
-
-> Compass is an open-source CSS Authoring Framework.
-
-I'm pretty biased on this one, and all the [starter CSS ][] files we will use in our foundation styles incorporate Compass so there's not much else to say other than that it almost doesn't belong in this section since it's really not a framework but rather a utility. It's here though because you can add all kinds of framework components like:
-
-- [Responsive grids for Compass][Responsive Grids] or [Zen Grids][]
-- [Sassy Buttons][] or [Fancy Buttons][]
-
-...and essentially create your own look and feel. Most traditional frameworks on the other hand just give you styles. If you want to break free it takes some tinkering.
-
-When working with Compass the following resource may be useful to you:
-
-- [35 Great Resources for Compass and Sass][35 Great Resources]
 
 #### Twitter Bootstrap
 
@@ -66,12 +47,6 @@ I also haven't use Skeleton, but soon enough.
 \- [Skeleton website][]
 
 [Framework Comparison]: http://responsive.vermilion.com/compare.php
-[Compass]:              http://compass-style.org/
-[Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
-[Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/
-[Responsive Grids]:     http://susy.oddbird.net/
-[Zen Grids]:            http://zengrids.com/
-[35 Great Resources]:   http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
 [Twitter Bootstrap]:    http://twitter.github.com/bootstrap/
 [Options]:              http://rubysource.com/twitter-bootstrap-less-and-sass-understanding-your-options-for-rails-3-1/
 [Blueprint]:            http://www.blueprintcss.org/

@@ -1,7 +1,7 @@
 Foundation Styles
 -----------------
 
-Equally important to your application as [foundation markup][] are foundation styles. HTML and CSS are the rebar of the World Wide Web. We laid out our HTML, now let's square away on our CSS. To do so we will review some of the options out there in terms of preprocessors and in or Appendix; [frameworks][]. We will conclude with best practices in stylesheet set up and maintenance. For our foudation styles we will implement the chapters [starter CSS][] -- which I have developed over the years with a lot of trial and error and OCD love.
+Equally important to your application as [foundation markup][] are foundation styles. HTML and CSS are the rebar of the World Wide Web. We laid out our HTML, now let's square away on our CSS. To do so we will review some of the options out there in terms of preprocessors, CSS authoring utilities, CSS frameworks and grade systems. We will conclude with best practices in stylesheet set up and maintenance. For our foudation styles we will implement the chapters [starter CSS][] -- which I have developed over the years with a lot of trial and error and OCD love.
 
 ### Preprocessors
 
@@ -22,13 +22,47 @@ NOTE: When using Sass or Haml these two resources are absolutely indispensable:
 
 So what about [Less][]? Well it's the runner-up. That's all I'm going to say about that (remember this is a manifesto which is opinionated by nature).
 
-Don't forget to ceck out the [Frameworks][frameworks] section of our Appendix to learn all about them and the choices available to you, and why we choose to roll our own using [Compass][].
+### Compass
+
+So right off the bat I have to say that I love [Compass][]. It's based on Sass, powerful, well-documented, widely used, there are a ton of extensions for it, and it generally makes life easier for me.
+
+> Compass is an open-source CSS Authoring Framework.
+
+I'm pretty biased on this one, and all the [starter CSS ][] files we will use in our foundation styles incorporate Compass.
+
+In the next section will take a brief look at CSS Frameworks and Grid Systems, but only a brief look because we are not going to use them. Through Compass you can add all kinds of framework components like:
+
+- [Responsive grids for Compass][Responsive Grids] or [Zen Grids][]
+- [Sassy Buttons][] or [Fancy Buttons][]
+
+...and essentially create your own framework with a unique look and feel. Traditional frameworks on the other hand just give you styles. If you want to break free it takes some tinkering.
+
+When working with Compass the following resource may be useful to you:
+
+- [35 Great Resources for Compass and Sass][35 Great Resources]
+
+### CSS Frameworks and Grid Systems
+
+Although my preference is to use Compass, I don't want to discourage you from adopting a framework in your project. Frameworks can be extremely helpful in starting a project. They give you a whole boatload of base styles that are instantly accessible through your HTML tags or specified class names. They include base font sizes and rhythm, default formats for almost every kind of HTML tag, and by simply dropping in the frameworks class names you can add some great looking styles to your project that are built to work, with very few hitches, across all browsers. On top of that you get prebuilt scripts for commonly used functions like pop-ups, modals and menu systems. The list goes on.
+
+You'll find a roundup of the most well-known [frameworks][] in the Appendix.
+
+Pretty much every framework has a [grid systems] incorporated into it, but there are also a number of standalone grid systems that might be useful to you. To understand what a grid system is checkout:
+
+- [Grids Are Good][]
+
+Why use a grid system? The following quote most succinctly answers this question:
+
+> After a few minutes of griddy thinking, the benefits become clear: designers gain a rational, structured framework for organizing content and users gain well-organized, legible sites.
+- [Fluid Grids by Ethan Marcotte][Fluid Grids]
+
+You'll also find a comprehensive roundup of [grid systems][] in the Appendix.
 
 ### Our Foundation
 
 It's time to build our foundation styles. Our [stylesheets][starter CSS] are written using Sass, but more important than the actual styles themselves – there are really not that many included – is the way they are organized. In my experience as you move along a Rails project and the project grows in complexity and different authors contribute; stylesheets can become behemoths, unmanageable, and downright confusing. To avoid this it's highly advisable to start a project with some kind of organizational structure in place from the get-go. The styles I provide do exactly this.
 
-Before we begin will need to quickly set up  Compass.
+Before we begin will need to quickly set up Compass.
 
 #### Compass Set Up
 
@@ -438,7 +472,6 @@ To see some great examples checkout:
 With all of this work you are more than ready to begin building an app with your best foot forward. If you want to go the extra mile, and I suggest you do, our [next chapter][] will focus on a solid foundation for small screens, i.e. mobile browsers.
 
 [foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
-[frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-2.md#frameworks
 [starter CSS]:          https://github.com/maxxiimo/base-css
 [Foundation Markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [Sass]:                 http://sass-lang.com/
@@ -452,6 +485,15 @@ With all of this work you are more than ready to begin building an app with your
 [Html2Haml]:            http://html2haml.heroku.com/
 [html2haml Gem]:        https://github.com/haml/html2haml
 [Compass]:              http://compass-style.org/
+[Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
+[Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/
+[Responsive Grids]:     http://susy.oddbird.net/
+[Zen Grids]:            http://zengrids.com/
+[35 Great Resources]:   http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
+[frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-2.md#frameworks
+[Grids Are Good]:       http://www.subtraction.com/pics/0703/grids_are_good.pdf
+[Fluid Grids]:          http://www.alistapart.com/articles/fluidgrids/
+[grid systems]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
 [compass-rails]:        https://github.com/Compass/compass-rails
 [FireSass]:             https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
 [Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/

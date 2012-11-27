@@ -23,6 +23,8 @@ Table of Contents
     - What We've Done
 - [Foundation Styles][]
     - Preprocessors
+    - Compass
+    - CSS Frameworks and Grid Systems
     - Our Foundation
       - Compass Set Up
       - Stylesheet Set Up
