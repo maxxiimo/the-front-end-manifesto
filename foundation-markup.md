@@ -285,7 +285,7 @@ In the [next chapter][foundation styles], we will begin to set up our foundation
 [starter code]:         https://github.com/maxxiimo/base-haml
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [Unofficial Guide]:     http://designreviver.com/articles/an-unofficial-guide-to-the-html5-boilerplate/
-[Groundwork]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix.md#groundwork
+[Groundwork]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html

@@ -1,7 +1,7 @@
 Foundation Styles
 -----------------
 
-Equally important to your application as [foundation markup][] are foundation styles. HTML and CSS are the raw materials of the World Wide Web. We laid out our HTML, now let's square away on our CSS. To do so we will review some of the options out there in terms of preprocessors and in or Appendix, [frameworks][]. We will conclude with best practices in stylesheet set up and maintenance. For our foudation styles we will implement the chapters [starter CSS][] -- which I have developed over the years with a lot of trial and error and OCD love.
+Equally important to your application as [foundation markup][] are foundation styles. HTML and CSS are the rebar of the World Wide Web. We laid out our HTML, now let's square away on our CSS. To do so we will review some of the options out there in terms of preprocessors and in or Appendix; [frameworks][]. We will conclude with best practices in stylesheet set up and maintenance. For our foudation styles we will implement the chapters [starter CSS][] -- which I have developed over the years with a lot of trial and error and OCD love.
 
 ### Preprocessors
 
@@ -20,7 +20,9 @@ NOTE: When using Sass or Haml these two resources are absolutely indispensable:
 - [Html2Haml][]
 - [html2haml Gem][]
 
-So what about [Less][]? Well it's the runner-up. That's all I'm going to say about that (remember this is a manifesto which is opinionated by nature). Also, don't forget to ceck out the [Frameworks][frameworks] section of our Appendix to learn all about the choices available to you, and why we choose to roll our own using [Compass][].
+So what about [Less][]? Well it's the runner-up. That's all I'm going to say about that (remember this is a manifesto which is opinionated by nature).
+
+Don't forget to ceck out the [Frameworks][frameworks] section of our Appendix to learn all about them and the choices available to you, and why we choose to roll our own using [Compass][].
 
 ### Our Foundation
 
@@ -436,7 +438,7 @@ To see some great examples checkout:
 With all of this work you are more than ready to begin building an app with your best foot forward. If you want to go the extra mile, and I suggest you do, our [next chapter][] will focus on a solid foundation for small screens, i.e. mobile browsers.
 
 [foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
-[frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix.md#frameworks
+[frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-2.md#frameworks
 [starter CSS]:          https://github.com/maxxiimo/base-css
 [Foundation Markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [Sass]:                 http://sass-lang.com/

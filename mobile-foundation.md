@@ -211,7 +211,7 @@ Feature Detection
 [Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile
 [Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
-[Mobile Roundup]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix.md#mobile-solutions-roundup
+[Mobile Roundup]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-4.md#mobile-solutions-roundup
 [mobylette]:            https://github.com/tscolari/mobylette
 [jQuery Mobile]:        http://jquerymobile.com/
 [base-mobile]:          https://github.com/maxxiimo/base-mobile
