@@ -108,17 +108,25 @@ It is a rack-based solution and easy to set up. Here are the steps we will use t
 
 **Step 1:** Copy all the [base-mobile][] files from the advanced solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
-**Step 2:** Add the following gems to your Gemfile and then bundle install:
+**Step 2:** Add the following to your application.rb file:
+
+    # Precompile *all* assets, except those that start with underscore per:
+    # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+    config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+
+([Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work])
+
+**Step 3:** Add the following gems to your Gemfile and then bundle install:
 
     gem 'mobvious'
     gem 'mobvious-rails'
 
-**Step 3:** Add the following into application.rb:
+**Step 4:** Add the following into application.rb:
 
     # Tell your app to use Mobvious::Manager as Rack middleware.
     config.middleware.use Mobvious::Manager
 
-**Step 4:** Add the following includes into application_controller.rb and application_helper.rb:
+**Step 5:** Add the following includes into application_controller.rb and application_helper.rb:
 
     include Mobvious::Rails::Controller
 
