@@ -152,7 +152,7 @@ To test that it is working you can use:
         end
     end
 
-##### Using Mobvious
+##### Use
 
 Now that we have it set up, here is how we will use it. From our [Mobile Solutions Roundup][Mobile Roundup] we combine a bit of [Ryan Bates][] mobile solution with Mobvious.
 
@@ -178,6 +178,28 @@ To fork requests to the correct views we add the following to application_contro
     Mime::Type.register_alias "text/html", :mobile
 
 Just like in the simple solution, requests from different devices will be served up the correct markup and styles for the device.
+
+##### Reorganize
+
+Our solution is working well, but I'm feeling like there are too many files in each view folder. To better organize our mobile specific views we can create a special view folder just for them. The tutorial "[Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]" (listed in our [Mobile Solutions Roundup][Mobile Roundup]), describes exactly how to do this.
+
+Following the tutorials example we're going to add the following to our prepare_for_mobile method in application_controller.rb:
+
+    def prepare_for_mobile
+      if request.env['mobvious.device_type'] == :mobile
+        request.format = :mobile
+        prepend_view_path Rails.root + 'app' + 'views_mobile'
+      end
+    end
+
+We then take all of our *.mobile.haml files and place them in a new apps/views_mobile folder. I've already set up this folder structure [here][views_mobile]. You'll notice that you have to choices, one  ending with [mobile] and the other [html]. The difference between the two are in the files mime types: .mobile.haml vs. .html.haml.
+
+Since we're now redirecting to a specific folder we can remove:
+
+- the mime type we defined in mime_types.rb
+- request.format = :mobile in application_controller.rb
+
+Doing so will allow us to use common partials for both desktop and mobile devices, and for Rails to default to regular views when views_mobile are not available.
 
 ### 2. Responsive Web Design
 
@@ -245,6 +267,8 @@ Feature Detection
 [Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
 [User Agent Switcher]:  http://chrispederick.com/work/user-agent-switcher/
 [Ryan Bates]:           http://railscasts.com/episodes/199-mobile-devices
+[Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
+[views_mobile]:         https://github.com/maxxiimo/base-mobile/tree/master/reorganization
 [Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
