@@ -181,25 +181,23 @@ Just like in the simple solution, requests from different devices will be served
 
 ##### Reorganize
 
-Our solution is working well, but I'm feeling like there are too many files in each view folder. To better organize our mobile specific views we can create a special view folder just for them. The tutorial "[Mobile Devices and Rails: Maintaining your Sanity][Maintain Sanity]" (listed in our [Mobile Solutions Roundup][Mobile Roundup]), describes exactly how to do this.
-
-Following the tutorials example we're going to add the following to our prepare_for_mobile method in application_controller.rb:
+Our solution is working well, but I'm feeling like there are too many files in each app/views folder. To better organize we can create a special folder just for our mobile views by adding the following to the prepare_for_mobile method in application_controller.rb:
 
     def prepare_for_mobile
       if request.env['mobvious.device_type'] == :mobile
         request.format = :mobile
-        prepend_view_path "app/views/mobile"
+        **prepend_view_path "app/views/mobile"**
       end
     end
 
-We then take all of our *.mobile.haml files and place them in a new apps/views/mobile folder. I've already set up this folder structure [here][mobile views]. You'll notice that you have to choices, one ending with [mobile] and the other [html]. The difference between the two are in the files mime types: .mobile.haml vs. .html.haml. I prefer to use regular HTML files, with this structure there is no need for a different mime type. We can remove:
+Then create a new app/views/mobile folder and move all mobile views there. I've already set up this folder structure [here][mobile views]. One ends in [mobile] and the other in [html]. The difference between the two are in the files mime types: .mobile.haml vs. .html.haml. I prefer to use regular HTML files. With this new folder structure there is no need for different mime types. Remove:
 
 - the mime type we defined in mime_types.rb
-- request.format = :mobile in application_controller.rb
+- request.format = :mobile in application_controller.rb in the preparer_for_mobile method
 
-Without a different mime type we can use common partials for both desktop and mobile devices, and through Rails inheritance default to regular views when views_mobile are not available.
+With a common mime type you can use the same partials for both desktop and mobile devices, and through Rails inheritance default to regular views when mobile views are not available.
 
-If you prefer to organize your mobile files outside of the regular view folder, for example app/views_mobile, swap the prepend_view_path with:
+If you prefer to organize your mobile views outside of the regular app/views path, for example in app/views_mobile, swap the prepend_view_path with:
 
          prepend_view_path Rails.root + 'app' + 'views_mobile'
 
