@@ -195,7 +195,7 @@ Then create a new app/views/mobile folder and move all mobile views there. I've 
 - the mime type we defined in mime_types.rb
 - request.format = :mobile in application_controller.rb in the preparer_for_mobile method
 
-With a common mime type you can use the same partials for both desktop and mobile devices, and through Rails inheritance default to regular views when mobile views are not available.
+With a common mime type you can use the same partials for both desktop and mobile devices, and through Rails template inheritance your application will default to regular views when mobile views are not available which is especially useful when making an existing app mobile friendly a little bit at a time.
 
 If you prefer to organize your mobile views outside of the regular app/views path, for example in app/views_mobile, swap the prepend_view_path with:
 
