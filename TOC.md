@@ -43,13 +43,13 @@ Table of Contents
 - [Mobile Foundation][]
     - Mobile First
     - Plan of Attack
-    - 1. User Agent Sniffing
+    - I. User Agent Sniffing
       - Simplest Solution
       - Advanced Solution
-    - 2. Responsive Web Design
+    - II. Responsive Web Design
       - Media Queries
       - Conditional Loading
-    - 3. A Hybrid Approach
+    - III. A Hybrid Approach
     - Mobile on Rails
     - An Ajax Include Pattern
     - Using JavaScript

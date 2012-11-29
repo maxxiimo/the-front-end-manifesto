@@ -50,7 +50,7 @@ Whatever approach you decide, keep in mind that there are a spectrum of user and
 
 In this chapter we will explore the three plans of attack.
 
-### 1. User Agent Sniffing
+### I. User Agent Sniffing
 
 Back at Fidelity pre-smart phone, mobile was a complete separate concern from desktops. I worked there slightly before smart phones emerged, and back then smallscreen devices operated behind what was referred to as a carriers "walled garden" which oftentimes did not allow CSS, or JavaScript, or HTML tables, or all three. Back then there were so many different types of devices, rules, screen sizes, and mobile browsers (or none at all).
 
@@ -192,7 +192,7 @@ Following the tutorials example we're going to add the following to our prepare_
       end
     end
 
-We then take all of our *.mobile.haml files and place them in a new apps/views_mobile folder. I've already set up this folder structure [here][views_mobile]. You'll notice that you have to choices, one  ending with [mobile] and the other [html]. The difference between the two are in the files mime types: .mobile.haml vs. .html.haml.
+We then take all of our *.mobile.haml files and place them in a new apps/views_mobile folder. I've already set up this folder structure [here][views_mobile]. You'll notice that you have to choices, one ending with [mobile] and the other [html]. The difference between the two are in the files mime types: .mobile.haml vs. .html.haml.
 
 Since we're now redirecting to a specific folder we can remove:
 
@@ -201,7 +201,7 @@ Since we're now redirecting to a specific folder we can remove:
 
 Doing so will allow us to use common partials for both desktop and mobile devices, and for Rails to default to regular views when views_mobile are not available.
 
-### 2. Responsive Web Design
+### II. Responsive Web Design
 
 User agent stiffing is great, but what about in projects where it's overkill? Couldn't we use CSS3 to serve up different styles to different devices? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]".
 
@@ -218,7 +218,7 @@ Yada yada yada, coming soon... ;)
 
 
 
-### 3. A Hybrid Approach
+### III. A Hybrid Approach
 
 
 
