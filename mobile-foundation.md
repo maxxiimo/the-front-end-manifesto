@@ -152,7 +152,7 @@ To test that it is working you can use:
         end
     end
 
-##### Use
+##### Usage
 
 Now that we have it set up, here is how we will use it. From our [Mobile Solutions Roundup][Mobile Roundup] we combine a bit of [Ryan Bates][] mobile solution with Mobvious.
 
@@ -188,22 +188,26 @@ Following the tutorials example we're going to add the following to our prepare_
     def prepare_for_mobile
       if request.env['mobvious.device_type'] == :mobile
         request.format = :mobile
-        prepend_view_path Rails.root + 'app' + 'views_mobile'
+        prepend_view_path "app/views/mobile"
       end
     end
 
-We then take all of our *.mobile.haml files and place them in a new apps/views_mobile folder. I've already set up this folder structure [here][views_mobile]. You'll notice that you have to choices, one ending with [mobile] and the other [html]. The difference between the two are in the files mime types: .mobile.haml vs. .html.haml.
-
-Since we're now redirecting to a specific folder we can remove:
+We then take all of our *.mobile.haml files and place them in a new apps/views/mobile folder. I've already set up this folder structure [here][mobile views]. You'll notice that you have to choices, one ending with [mobile] and the other [html]. The difference between the two are in the files mime types: .mobile.haml vs. .html.haml. I prefer to use regular HTML files, with this structure there is no need for a different mime type. We can remove:
 
 - the mime type we defined in mime_types.rb
 - request.format = :mobile in application_controller.rb
 
-Doing so will allow us to use common partials for both desktop and mobile devices, and for Rails to default to regular views when views_mobile are not available.
+Without a different mime type we can use common partials for both desktop and mobile devices, and through Rails inheritance default to regular views when views_mobile are not available.
+
+If you prefer to organize your mobile files outside of the regular view folder, for example app/views_mobile, swap the prepend_view_path with:
+
+         prepend_view_path Rails.root + 'app' + 'views_mobile'
 
 ### II. Responsive Web Design
 
-User agent stiffing is great, but what about in projects where it's overkill? Couldn't we use CSS3 to serve up different styles to different devices? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]".
+User agent stiffing is awesome, but what about in projects where it's overkill? Couldn't we use CSS3 to serve up different styles to different devices? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]".
+
+
 
 [This Is Responsive][]
 
