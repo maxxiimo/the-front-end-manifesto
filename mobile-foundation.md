@@ -205,11 +205,17 @@ If you prefer to organize your mobile views outside of the regular app/views pat
 
 User agent stiffing is awesome, but what about in projects where it's overkill? Couldn't we use CSS3 to serve up different styles to different devices? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]".
 
+We're not to focus too much on defining what responsive is, but in a nutshell:
 
+>
+- [][]
 
-[This Is Responsive][]
+If you're interested in learning more checkout:
 
-Yada yada yada, coming soon... ;)
+- [This Is Responsive][]
+- [Responsive Design][]
+
+What we will focus on his building our own responsive starter packs. Ours will be based on media queries or conditional loading. Take your pick.
 
 #### Media Queries
 
@@ -270,8 +276,9 @@ Feature Detection
 [User Agent Switcher]:  http://chrispederick.com/work/user-agent-switcher/
 [Ryan Bates]:           http://railscasts.com/episodes/199-mobile-devices
 [Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
-[views_mobile]:         https://github.com/maxxiimo/base-mobile/tree/master/reorganization
+[mobile views]:         https://github.com/maxxiimo/base-mobile/tree/master/reorganization
 [Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
+[Responsive Design]:    http://alpha.responsivedesign.is/
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
