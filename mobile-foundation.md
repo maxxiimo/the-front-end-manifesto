@@ -323,7 +323,8 @@ Feature Detection
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Responsive Design]:    http://alpha.responsivedesign.is/
 [Media types]:          http://www.w3.org/TR/CSS21/media.html
-[Media Queries]:        http://www.w3.org/TR/css3-mediaqueries/#media0[Tired of Hunting]:     http://www.websitedimensions.com/
+[Media Queries]:        http://www.w3.org/TR/css3-mediaqueries/#media0
+[Tired of Hunting]:     http://www.websitedimensions.com/
 [Trends]:               http://sender11.typepad.com/sender11/2008/04/mobile-screen-s.html
 [breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
