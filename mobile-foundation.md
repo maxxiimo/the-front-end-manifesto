@@ -94,7 +94,7 @@ There certainly does seem to be a lot of repetition in our code, two files for a
 
 #### Advanced Solution
 
-For our advanced solution we we use a gem called Mobvious. It is a rack-based solution and easy to set up, and is highly configurable and versatile in on how you detect mobile requests:
+For our advanced solution we we use a gem called [Mobvious][]. It is a rack-based solution and easy to set up, and is highly configurable and versatile in on how you detect mobile requests:
 
 1.  User-Agent sniffing
 2.  URL pattern matching
@@ -272,6 +272,7 @@ Feature Detection
 [base-mobile]:          https://github.com/maxxiimo/base-mobile
 [Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
 [User Agent Switcher]:  http://chrispederick.com/work/user-agent-switcher/
+[Mobvious]:             https://github.com/jistr/mobvious
 [Ryan Bates]:           http://railscasts.com/episodes/199-mobile-devices
 [Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
 [mobile views]:         https://github.com/maxxiimo/base-mobile/tree/master/reorganization
