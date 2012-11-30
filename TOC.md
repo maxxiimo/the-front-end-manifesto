@@ -63,7 +63,6 @@ Table of Contents
       - Content
     - Design
       - Look and Feel
-      - Inspiration
     - Feedback
     - What We've Done
 - [Slicing and Dicing Mockups][]
@@ -120,6 +119,8 @@ Table of Contents
   - Frameworks
   - Grid Systems
   - Mobile Solutions Roundup
+  - Inspirational Sites
+  - Feedback Services Roundup
 
 [Cover]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
