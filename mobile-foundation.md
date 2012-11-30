@@ -201,9 +201,9 @@ If you prefer to organize your mobile views outside of the regular app/views pat
 
 ### II. Responsive Web Design
 
-User agent stiffing is awesome, but what about in projects where it's overkill? Couldn't we use CSS3 to serve up different styles to different devices? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][Responsive]".
+User agent stiffing is awesome, but what about in projects where it's overkill? Couldn't we use stylesheets to control what and how different devices get to see our website? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][RWD]".
 
-We're not to focus too much on defining what responsive is, but in a nutshell:
+We're not going to focus too much on defining what responsive is, but in a nutshell:
 
 >
 - [][]
@@ -213,11 +213,54 @@ If you're interested in learning more checkout:
 - [This Is Responsive][]
 - [Responsive Design][]
 
-What we will focus on his building our own responsive starter packs. Ours will be based on media queries or conditional loading. Take your pick.
+What we will focus on is building our own responsive code base. To start we need to understand that there are a number of ways you can serve up different styles:
+
+1.  Media Types
+2.  Media queries
+3.  Conditional loading
+4.  JavaScript
+
+#### Media Types
+
+Media dependent stylesheets were first specified in the HTML 4 and CSS 2 W3C recommendations. The recommendations included a set of recognized media types: all, braille, embossed, handheld, print, projection, screen, speech, tty, tv (CSS2). The media types could be declared in stylesheets via @media or @import or in the HTML \<link> element. This was a common use:
+
+    %link{:href => "screen.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "print.css", :media => "print", :rel => "stylesheet", :type => "text/css"}
+
+To learn more you can view the specification at:
+
+- [Media types][]
+
+The problem with this specification though was that it was implemented inconsistently across mobile browsers, and the list of media types did not accommodate the wide range of screen sizes. The solution to this problem: media queries.
 
 #### Media Queries
 
+With so many screen sizes and new devices popping up left and right, and inconsistencies in mobile browser implementation, using media type alone to serve up styles for specific devices is impractical. Media queries on the other hand allow you to test a media type with a logical expression that evaluates to true or false. For example:
 
+    @media (min-width:500px) { color: red }
+
+In this case, the media type All (implied by shorthand syntax) is matched against the devices user agent, If they match the device is then tested for a minimum width of 500 pixels. If the statement is true the specified styles, in this case the font color of red, are applied to the device. If false they are not, and the device continues to use the default font color.
+
+The power of media queries is that now developers can move beyond a finite set of media types, and test for a broader range of conditions including minimum and maximum widths and heights and screen orientation. Perfect for serving up device sensitive styles and content to a wide range of screen sizes and device capabilities.
+
+To learn more about the specification checkout:
+
+- [Media Queries][]
+
+##### Target
+
+Before we write our own media queries we need to determine what screen sizes we will target. Since most applications are consumed by desktop computers/laptops, tablet devices, and smart phones, we'll target these major groups right from the get-go, but loosely, i.e. not every single possible dimension within each group, but more of an average dimension for the group.
+
+Here are some references for device dimensions:
+
+- [Tired of Hunting][]
+- [Mobile screen size trends][Trends]
+
+After reviewing the dimensions we will settle on: 320, 480, 768, 1024, and 1400px.
+
+##### @media Rules
+
+[media queries for common device breakpoints][breakpoints]
 
 #### Conditional Loading
 
@@ -276,8 +319,12 @@ Feature Detection
 [Ryan Bates]:           http://railscasts.com/episodes/199-mobile-devices
 [Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
 [mobile views]:         https://github.com/maxxiimo/base-mobile/tree/master/reorganization
-[Responsive]:           http://www.alistapart.com/articles/responsive-web-design/
+[RWD]:                  http://www.alistapart.com/articles/responsive-web-design/
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Responsive Design]:    http://alpha.responsivedesign.is/
+[Media types]:          http://www.w3.org/TR/CSS21/media.html
+[Media Queries]:        http://www.w3.org/TR/css3-mediaqueries/#media0[Tired of Hunting]:     http://www.websitedimensions.com/
+[Trends]:               http://sender11.typepad.com/sender11/2008/04/mobile-screen-s.html
+[breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
