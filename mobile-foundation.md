@@ -94,7 +94,7 @@ There certainly does seem to be a lot of repetition in our code, two files for a
 
 #### Advanced Solution
 
-Mobvious will give you a greater deal of versatility on how you detect mobile requests:
+For our advanced solution we we use a gem called Mobvious. It is a rack-based solution and easy to set up, and is highly configurable and versatile in on how you detect mobile requests:
 
 1.  User-Agent sniffing
 2.  URL pattern matching
@@ -102,7 +102,7 @@ Mobvious will give you a greater deal of versatility on how you detect mobile re
 
 ##### Set Up
 
-It is a rack-based solution and easy to set up. Here are the steps we will use to configure Mobvious for our needs:
+Here are the steps we will use to configure Mobvious for our needs:
 
 **Step 1:** Copy all the [base-mobile][] files from the advanced solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
