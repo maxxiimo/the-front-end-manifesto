@@ -6,9 +6,8 @@ by Chris Maxwell
 *A How To on*<br>
 *High-performing, Efficient,*<br>
 *Un-bloated,*<br>
-*Modularized and Organized*
-
-**Front End Code**
+*Modularized and Organized*<br>
+*Front End Code*
 
 
 Personal views and direction on front end coding, from a Ruby on Rails perspective.
