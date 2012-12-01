@@ -232,7 +232,7 @@ Media dependent stylesheets were first specified in the HTML 4 and CSS 2 W3C rec
 
 To learn more you can view the specification at:
 
-- [Media types][]
+- [W3C - Media Types][Media Types]
 
 The problem with this specification though was that it was implemented inconsistently across mobile browsers, and the list of media types did not accommodate the wide range of screen sizes. The solution to this problem: media queries.
 
@@ -248,7 +248,7 @@ The power of media queries is that now developers can move beyond a finite set o
 
 To learn more about the specification checkout:
 
-- [Media Queries][]
+- [W3C - Media Queries][Media Queries]
 
 ##### Target
 
@@ -339,7 +339,7 @@ Feature Detection
 [RWD]:                  http://www.alistapart.com/articles/responsive-web-design/
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Responsive Design]:    http://alpha.responsivedesign.is/
-[Media types]:          http://www.w3.org/TR/CSS21/media.html
+[Media Types]:          http://www.w3.org/TR/CSS21/media.html
 [Media Queries]:        http://www.w3.org/TR/css3-mediaqueries/#media0
 [Tired of Hunting]:     http://www.websitedimensions.com/
 [Trends]:               http://sender11.typepad.com/sender11/2008/04/mobile-screen-s.html
