@@ -266,9 +266,11 @@ After reviewing the dimensions we will settle on: 320, 480, 768, 1024, and 1400p
 >
 > I hope I didn't hurt your feelings but seriously, you're approaching this in the wrong way.
 
-Ha ha! Something to keep in mind. I like this thinking, and i also like the examples given:
+Ha ha! Something to keep in mind. I like this thinking, and I also like the examples given:
 
-[media queries for common device breakpoints][breakpoints]
+- [media queries for common device breakpoints][breakpoints]
+
+Why don't we grab a few and begin. We can always change them when the design dictates that we should.
 
 ##### @media Rules
 
