@@ -256,7 +256,9 @@ Here are some references for device dimensions:
 - [Tired of Hunting][]
 - [Mobile screen size trends][Trends]
 
-After reviewing the dimensions we will settle on: 320, 480, 768, 1024, and 1400px.
+After reviewing the dimensions we will settle on: 320, 480, 768, 1024, and 1400px. Lets break this down to understand why.
+
+
 
 ##### @media Rules
 
