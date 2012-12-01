@@ -45,7 +45,7 @@ Right now responsive web design is hugely popular. The article [Reasons for Resp
 
 \- [Brian Fling][]
 
-On the other hand, Jiří Stránský -- the author of the Mobvious gem we implement later in this chapter -- commented:
+On the other hand, Jiří Stránský -- the author of the Mobvious gem we implement later in this chapter -- commented to me:
 
 > I think responsive web design is going to be preferred over server-based solutions for the vast majority of use cases in the future, for two main reasons:
 >
