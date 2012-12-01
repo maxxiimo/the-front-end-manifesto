@@ -195,7 +195,7 @@ The combination of fonts, color, images is a sites look and feel. What follows a
 
   - [Premium Pixels][]
 
-- Buy a template. Templates are significantly less expensive than hiring a designer. As a front end coder implementing them into your layout should be a breeze. Here are some template resources:
+- Buy a template. Templates are significantly less expensive than hiring a graphic designer. As a front end coder implementing them into your layout should be a breeze. Here are some template resources:
 
   - XXX
 

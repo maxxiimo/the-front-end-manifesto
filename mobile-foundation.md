@@ -249,20 +249,30 @@ To learn more about the specification checkout:
 
 ##### Target
 
-Before we write our own media queries we need to determine what screen sizes we will target. Since most applications are consumed by desktop computers/laptops, tablet devices, and smart phones, we'll target these major groups right from the get-go, but loosely, i.e. not every single possible dimension within each group, but more of an average dimension for the group.
+Before we write our own media queries we need to determine what screen sizes our media queries will target. I'm going to make the assumption that our audience uses desktop computers/laptops, tablet devices, and smart phones, but not televisions or anything else for that matter. I'm making this assumption to give us something to work with, but you should check your Web logs!
 
-Here are some references for device dimensions:
+So what dimensions should we use? Here are some references for this:
 
 - [Tired of Hunting][]
 - [Mobile screen size trends][Trends]
 
-After reviewing the dimensions we will settle on: 320, 480, 768, 1024, and 1400px. Lets break this down to understand why.
+After reviewing the dimensions we will settle on: 320, 480, 768, 1024, and 1400px. Lets break this down to understand why. In the ResponsiveDesign.is website under [Defining Breakpoints][] the section begins...
 
+> Breakpoints are the point a which your sites content will respond to provide the user with the best possible layout to consume the information.
+>
+> When you first begin to work with Responsive Design you will define your breakpoints at the exact device widths that you are looking to target. Most often these are the smart phone (usually the iPhone at 320px and 480px), the tablet (usually the iPad at 768px and 1024px) and finally anything above 1024px.
+>
+> WRONG!
+>
+> I hope I didn't hurt your feelings but seriously, you're approaching this in the wrong way.
 
+Ha ha! Something to keep in mind. I like this thinking, and i also like the examples given:
+
+[media queries for common device breakpoints][breakpoints]
 
 ##### @media Rules
 
-[media queries for common device breakpoints][breakpoints]
+
 
 #### Conditional Loading
 
@@ -328,6 +338,7 @@ Feature Detection
 [Media Queries]:        http://www.w3.org/TR/css3-mediaqueries/#media0
 [Tired of Hunting]:     http://www.websitedimensions.com/
 [Trends]:               http://sender11.typepad.com/sender11/2008/04/mobile-screen-s.html
+[Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
 [breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
