@@ -65,9 +65,9 @@ Fast-forward to today, with the advent of smart devices and their proliferation,
 
 There are a number of different solutions you can use to deliver mobile based on User Agent Sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. To deliver our mobile views we will use the quickest and simplest solution: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
 
-**Step 1:** Copy all the [base-mobile][] files from the simple solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
+*Step 1:* Copy all the [base-mobile][] files from the simple solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
-**Step 2:** Add the following to your application.rb file:
+*Step 2:* Add the following to your application.rb file:
 
     # Precompile *all* assets, except those that start with underscore per:
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
@@ -75,18 +75,18 @@ There are a number of different solutions you can use to deliver mobile based on
 
 ([Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work])
 
-**Step 3:** Add the following gem to your Gemfile and then bundle install:
+*Step 3:* Add the following gem to your Gemfile and then bundle install:
 
         gem 'mobylette'
 
-**Step 4:** Add the following line to application_controller.rb:
+*Step 4:* Add the following line to application_controller.rb:
 
     include Mobylette::RespondToMobileRequests
     mobylette_config do |config|
       config[:skip_xhr_requests] = false
     end
 
-**Step 5:** Add the following to your config/environments/production.rb:
+*Step 5:* Add the following to your config/environments/production.rb:
 
     # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
     config.assets.precompile += %w( modernizr-2.6.2.min.js, jquery.mobile-1.2.0.css )
@@ -107,9 +107,9 @@ For our advanced solution we we use a gem called [Mobvious][]. It is a rack-base
 
 Here are the steps we will use to configure Mobvious for our needs:
 
-**Step 1:** Copy all the [base-mobile][] files from the advanced solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
+*Step 1:* Copy all the [base-mobile][] files from the advanced solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
-**Step 2:** Add the following to your application.rb file:
+*Step 2:* Add the following to your application.rb file:
 
     # Precompile *all* assets, except those that start with underscore per:
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
@@ -117,23 +117,23 @@ Here are the steps we will use to configure Mobvious for our needs:
 
 ([Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work])
 
-**Step 3:** Add the following gems to your Gemfile and then bundle install:
+*Step 3:* Add the following gems to your Gemfile and then bundle install:
 
     gem 'mobvious'
     gem 'mobvious-rails'
 
-**Step 4:** Add the following into application.rb:
+*Step 4:* Add the following into application.rb:
 
     # Tell your app to use Mobvious::Manager as Rack middleware.
     config.middleware.use Mobvious::Manager
 
-**Step 5:** Add the following includes into application_controller.rb and application_helper.rb:
+*Step 5:* Add the following includes into application_controller.rb and application_helper.rb:
 
     include Mobvious::Rails::Controller
 
     include Mobvious::Rails::Helper
 
-**Step 6:** Create a initializer file (config/initializers/mobvious.rb) and configure it as follows:
+*Step 6:* Create a initializer file (config/initializers/mobvious.rb) and configure it as follows:
 
     Mobvious.configure do |config|
       config.strategies = [ Mobvious::Strategies::MobileESP.new(:mobile_desktop) ]
