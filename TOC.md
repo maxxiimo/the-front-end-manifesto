@@ -61,7 +61,7 @@ Table of Contents
       - Prototyping on Paper
     - Wireframing
       - Content
-    - Design
+    - Graphic Design
       - Look and Feel
     - Feedback
     - What We've Done
@@ -120,7 +120,7 @@ Table of Contents
   - Grid Systems
   - Mobile Solutions Roundup
   - Inspirational Sites
-  - Feedback Services Roundup
+  - Feedback Services
 
 [Cover]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md

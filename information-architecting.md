@@ -10,10 +10,10 @@ Back in 2008, at "An Event Apart: Boston," I listened to [Jason Santa Maria][] -
 These talks have stuck with me over the years and have become the manner in which I view website site design; as storytelling. What follows is an explanation of how to build a story for your website, and translate that into code and the sites look and feel (styles). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about this:
 
 1. Start from scratch and architect and design everything yourself.
-2. Work with a designer from the get-go and implement a design mockup into your foundation work.
-3. Start from scratch and architect yourself, then get help from a designer on the look and feel.
+2. Work with a graphic designer from the get-go and implement a design mockup into your foundation work.
+3. Start from scratch and architect yourself, then get help from a graphic designer on the look and feel.
 
-In this chapter we're going to mostly focus on option 1. Hiring a designer from the get-go is not a bad idea -- graphic design and front end engineering are two complete different skill sets -- but perhaps there isn't money in the budget to hire a designer, or this responsibility falls on your lap, or maybe you just want to do it yourself.
+In this chapter we're going to mostly focus on option 1. Hiring a graphic designer from the get-go is not a bad idea -- graphic design and front end engineering are two complete different skill sets -- but perhaps there isn't money in the budget to hire a graphic designer, or this responsibility falls on your lap, or maybe you just want to do it yourself.
 
 NOTE: As a consultant brought into a project, oftentimes design mockups have already been developed and it's now my job to integrate them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
 
@@ -161,11 +161,12 @@ Image placeholders in different sizes and styles are also plentiful (the second 
 - [Functional Placeholder Images][Cambelt]
 - [Holder.js][]
 
-### Design
+### Graphic Design
 
 This chapter is about Information Architecture, so design really goes beyond the chapters scope, however, design is part of storytelling so let's see if we can in the very least point you in the right direction.
 
 > Firstly, think about what your pages do, not what they look like. Let your design flow from the services which they will provide to your users, rather than from some overarching idea of what you want pages to look like. Let form follow function, rather than trying to take a particular design and make it "work".
+
 - [A Dao of Web Design][Dao] by John Allsopp
 
 Up until now, we basically have a pretty blank wireframe: function before form. We need to add some spice to it. Just by looking at your site your users should be able to understand what they're looking at, your website must communicate it's story. To illustrate how simple this can be take a look at this 2007 website concept:
@@ -180,13 +181,13 @@ In the case of "View Thought" part of the story is: "We are a great website **de
 
 The combination of fonts, color, images is a sites look and feel. What follows are some ideas and resources to help you create your own site's look and feel:
 
-- Use a framework. We listed several frameworks you can use in [Chapter 2][styles].
+- Use a framework. We listed several frameworks you can use in the [Frameworks][] section of the Appendix.
 
 - Reverse engineer pieces of things you already like.
 
 - Find a plug-in.
 
-- Hire a designer. With your layout set via our wireframe work half of the designers work is done. Now he or she needs to pull it all together with a stellar look and feel. When hiring a designer, make sure you let them know that the layout you have in place is not set in stone. This way your designer can add their experience to the project. Here are some resources for finding designers:
+- Hire a graphic designer. With your layout set via our wireframe work half of the designers work is done. Now he or she needs to pull it all together with a stellar look and feel. When hiring a designer, make sure you let them know that the layout you have in place is not set in stone. This way your designer can add their experience to the project. Here are some resources for finding graphic designers:
 
   - XXX
 
@@ -202,7 +203,7 @@ The combination of fonts, color, images is a sites look and feel. What follows a
 
 ### Feedback
 
-One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services in our [Feedback Services Roundup][Feedback Services] in the Appendix.
+One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services in our [Feedback Services][] in the Appendix.
 
 ### What We've Done
 
@@ -231,13 +232,14 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Cambelt]:              http://cambelt.co/
 [Holder.js]:            http://imsky.github.com/holder/
 [Dao]:                  http://www.alistapart.com/articles/dao
+[Frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#frameworks
 [Case Study]:           http://builtbyboon.com/blog/responsive-design-case-study
 [inspirational sites]:  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#inspirational-sites
 [Paper]:                http://generatedpaper.com/en/wireframing
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
 [Don't Make Me Think]:  http://www.sensible.com/index.html
-[Feedback Services]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#feedback-services-roundup
+[Feedback Services]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#feedback-services
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
 [Index After]:          http://chrismaxwell.com/manifesto/index-cards/index-cards-after.jpg
 [Index Mobile]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-mobile.jpg
