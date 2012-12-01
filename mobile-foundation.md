@@ -270,7 +270,7 @@ Ha ha! Something to keep in mind. I like this thinking, and I also like the exam
 
 - [media queries for common device breakpoints][breakpoints]
 
-Why don't we grab a few and begin. We can always change them when the design dictates that we should.
+Why don't we grab a few and begin. LEts define three sizes as small, medium, and large. We can always change dimensions when devices dictate that we should.
 
 ##### @media Rules
 
