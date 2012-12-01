@@ -3,9 +3,9 @@ The Front End Manifesto
 
 by Chris Maxwell
 
-*A How To on*
-*High-performing, Efficient,*
-*Un-bloated,*
+*A How To on*<br>
+*High-performing, Efficient,*<br>
+*Un-bloated,*<br>
 *Modularized and Organized*
 
 **Front End Code**
