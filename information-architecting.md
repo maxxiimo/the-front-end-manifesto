@@ -167,7 +167,7 @@ This chapter is about Information Architecture, so design really goes beyond the
 
 > Firstly, think about what your pages do, not what they look like. Let your design flow from the services which they will provide to your users, rather than from some overarching idea of what you want pages to look like. Let form follow function, rather than trying to take a particular design and make it "work".
 
-- [A Dao of Web Design][Dao] by John Allsopp
+\- [A Dao of Web Design][Dao] by John Allsopp
 
 Up until now, we basically have a pretty blank wireframe: function before form. We need to add some spice to it. Just by looking at your site your users should be able to understand what they're looking at, your website must communicate it's story. To illustrate how simple this can be take a look at this 2007 website concept:
 
