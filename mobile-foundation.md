@@ -130,7 +130,7 @@ Here are the steps we will use to configure Mobvious for our needs:
 
     include Mobvious::Rails::Helper
 
-**Step 5:** Create a initializer file (config/initializers/mobvious.rb) and configure it as follows:
+**Step 6:** Create a initializer file (config/initializers/mobvious.rb) and configure it as follows:
 
     Mobvious.configure do |config|
       config.strategies = [ Mobvious::Strategies::MobileESP.new(:mobile_desktop) ]
