@@ -28,6 +28,7 @@ At the end of this chapter Dan Pickett the founder of [LaunchWare][] describes s
 Personally I like to separate concerns but include responsive design within this separation since there is no one size fits all in mobile, so I tend to use option three. I'm not alone in this thinking:
 
 > Now, oftentimes, people think about device detection as a "one or the other" sort of thing. Either you’re doing responsive design or you’re using device detection to route people to separate templates, and that you would choose one of those two options; you wouldn’t build something that uses both. But we’ve actually combined responsive design with server-side detection quite a bit.
+
 \- [Jason Grigsby – Mobile-First Responsive Design][Jason Grigsby]
 
 I don't think an all or nothing approach really makes sense as a rule of thumb. Let the situation dictate the solution. Here are some thoughts on option 1 versus option 2:
