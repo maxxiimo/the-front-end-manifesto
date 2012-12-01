@@ -44,9 +44,12 @@ Table of Contents
     - Mobile First
     - Plan of Attack
     - I. User Agent Sniffing
-      - Simplest Solution
+      - Quickest Solution
       - Advanced Solution
     - II. Responsive Web Design
+      - Flexible Grids
+      - Flexible Media
+      - Media Types
       - Media Queries
       - Conditional Loading
     - III. A Hybrid Approach

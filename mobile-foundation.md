@@ -27,9 +27,9 @@ At the end of this chapter Dan Pickett the founder of [LaunchWare][] describes s
 
 Personally I like to separate concerns but include responsive design within this separation since there is no one size fits all in mobile, so I tend to use option three. I'm not alone in this thinking:
 
-> Now, oftentimes, people think about device detection as a "one or the other" sort of thing. Either you�re doing responsive design or you�re using device detection to route people to separate templates, and that you would choose one of those two options; you wouldn�t build something that uses both. But we�ve actually combined responsive design with server-side detection quite a bit.
+> Now, oftentimes, people think about device detection as a "one or the other" sort of thing. Either you’re doing responsive design or you’re using device detection to route people to separate templates, and that you would choose one of those two options; you wouldn’t build something that uses both. But we’ve actually combined responsive design with server-side detection quite a bit.
 
-\- [Jason Grigsby � Mobile-First Responsive Design][Jason Grigsby]
+\- [Jason Grigsby – Mobile-First Responsive Design][Jason Grigsby]
 
 I don't think an all or nothing approach really makes sense as a rule of thumb. Let the situation dictate the solution. Here are some thoughts on option 1 versus option 2:
 
@@ -39,13 +39,23 @@ I don't think an all or nothing approach really makes sense as a rule of thumb. 
 - Designing for a mobile device, a tablet device, and a desktop could be time-consuming, responsive design can accommodate all three.
 - With responsive design, change the code once and it trickles down to all devices.
 
-Right now responsive web design is hugely popular. The article [Reasons for Responsive Design][] give you some good reasons why you should consider using it. The article "[CSS MediaQuery for Mobile is Fool�s Gold][Media Queries]" gives an opposite perspective and does a good job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote in particular that the author uses that resonates with me:
+Right now responsive web design is hugely popular. The article [Reasons for Responsive Design][] give you some good reasons why you should consider using it. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" gives an opposite perspective and does a good job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote in particular that the author uses that resonates with me:
 
-> Create a product, don�t re-imagine one for small screens. Great mobile products are created, never ported.
+> Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
 
 \- [Brian Fling][]
 
-Whatever approach you decide, keep in mind that there are a spectrum of user and business needs, and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website is pretty simple so maybe detecting user agents to serve something specific to mobile browsers is not the best use of my time. In this case why not use media queries and keep things together? On the other hand more complex applications may need to serve up specific markup and styles, take for example Basecamp mobile:
+On the other hand, Jiří Stránský -- the author of the Mobvious gem we implement later in this chapter -- commented:
+
+> I think responsive web design is going to be preferred over server-based solutions for the vast majority of use cases in the future, for two main reasons:
+>
+> 1. Boundaries within device types will blend. It used to be PCs and phones, now it's tablets, TVs, e-book readers and more. It's hard to detect them server-side and for some of them, even if you know what device it is, you're still not sure what category they should belong to :) Hence the term "phablets" :)
+>
+> 2. Bandwidth is less of an issue, year by year. It will be best to send the whole thing to the client, then detect client's precise capabilities and render what you want, how you want.
+
+This prediction certainly makes an awful lot of sense.
+
+Whatever approach you decide, keep in mind that there are a spectrum of user and business needs, and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website is pretty simple so maybe detecting user agents to serve something specific to mobile browsers is not the best use of my time. In this case why not use Responsive Web Design and keep things together? On the other hand more complex applications may need to serve up specific markup and styles, take for example Basecamp mobile:
 
 > Only using responsive design for Basecamp mobile would have been like fitting a Prius body to a Hummer... under-the-hood it would have been all wrong.
 
@@ -61,7 +71,7 @@ To accomplish ubiquity we developed a super dumbed down HTML 1.0 interface that 
 
 Fast-forward to today, with the advent of smart devices and their proliferation, we also need to make sure our applications work correctly and consistently across a multitude of different devices and screen sizes. Like my days at Fidelity, we can effectively use devices user agents to identify browsers, screen resolutions, type of device, and based on this information determine what markup and styles to serve.
 
-#### Simplest Solution
+#### Quickest Solution
 
 There are a number of different solutions you can use to deliver mobile based on User Agent Sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. To deliver our mobile views we will use the quickest and simplest solution: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
 
@@ -204,24 +214,26 @@ If you prefer to organize your mobile views outside of the regular app/views pat
 
 ### II. Responsive Web Design
 
-User agent stiffing is awesome, but what about in projects where it's overkill? Couldn't we use stylesheets to control what and how different devices get to see our website? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][RWD]".
+User agent stiffing is awesome, but what about in projects where it's overkill? Is there something else we can do? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][RWD]". In his corresponding book he explains:
 
-We're not going to focus too much on defining what responsive is, but in a nutshell:
-
+> So what does it take to create a responsive design? Speaking purely in terms of front-end layout, it takes three core ingredients:
 >
-- [][]
+> 1. A flexible, grid-based layout,
+> 2. Flexible images and media, and
+> 3. Media queries, a module from the CSS3 specification.
 
-If you're interested in learning more checkout:
+- Ethan Marcotte, [Responsive Web Design][RWD Book], p.9
+
+If you're interested in learning more definitely read the book, it's pretty good, and checkout:
 
 - [This Is Responsive][]
 - [Responsive Design][]
 
-What we will focus on is building our own responsive code base. To start we need to understand that there are a number of ways you can serve up different styles:
+#### Flexible Grids
 
-1.  Media Types
-2.  Media queries
-3.  Conditional loading
-4.  JavaScript
+
+#### Flexible Media
+
 
 #### Media Types
 
@@ -273,7 +285,7 @@ Ha ha! Something to keep in mind. I like this thinking, and I also like the exam
 
 - [media queries for common device breakpoints][breakpoints]
 
-Why don't we grab a few and begin. Lets target three sizes defined as small, medium, and large. We can always change dimensions or add/remove sizes when devices dictate that we should.
+Why don't we grab a few and begin. Lets target three sizes defined as small, medium, and large. We can always change dimensions or add/remove sizes when user needs dictate that we should.
 
 ##### @media Rules
 
@@ -285,6 +297,10 @@ Why don't we grab a few and begin. Lets target three sizes defined as small, med
 
 
 ### III. A Hybrid Approach
+
+> That’s not to say that mobile websites are inherently flawed, or that there aren’t valid business cases for creating them. But I do think fragmenting our content across different "device-optimized" experiences is a losing proposition, or at least an unsustainable one. As the past few years have shown us, we simply can’t compete with the pace of technology.
+
+- Ethan Marcotte, [Responsive Web Design][RWD Book], p.96
 
 
 
@@ -337,6 +353,7 @@ Feature Detection
 [Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
 [mobile views]:         https://github.com/maxxiimo/base-mobile/tree/master/reorganization
 [RWD]:                  http://www.alistapart.com/articles/responsive-web-design/
+[RWD Book]:             http://www.abookapart.com/products/responsive-web-design
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Responsive Design]:    http://alpha.responsivedesign.is/
 [Media Types]:          http://www.w3.org/TR/CSS21/media.html
