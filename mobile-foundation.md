@@ -231,8 +231,43 @@ If you're interested in learning more definitely read the book, it's pretty good
 
 #### Flexible Grids
 
+"A flexible, grid-based layout" is a layout that proportionally responds via CSS to the context in which the page is drawn through the use of percentages in declaring a containers dimensions, margins, and/or padding. In other words the grids dimensions are flexible and change proportionately as a screen size changes.
+
+Percentages are determined by taking the target width and dividing it by the context in which that width proportionally responds to.
+
+Target ÷ Context = Result
+
+For example, if the main container in your webpage, call it .container, has a width of 960 pixels, and within .container there are two equally sized containers called .left-side and .right-side, what would there widths be?
+
+    %body
+      .container
+        .left-side
+        .right-side
+
+Well obviously half of 960 pixels; 480 pixels, and declaring percentages for this equally obvious; 50%. But mathematically, using our formula, this will be calculated as follows: 480 ÷ 960 = .5 or 50%.
+
+    .container
+      width: 960px
+
+    .left-side
+      width: 50%
+
+    .right-side
+      width: 50%
+
+Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all containers and you have a responsive grid that will resize itself depending upon the screen size it is drawn into.
+
+Rather than calculate all the different ratios within a layout, I prefer to use a grid system and save some time. You will find a pretty comprehensive list of [Grid Systems][]in the appendix, but my preference is to use [Susy][]. To get started checkout:
+
+- [Responsive Grids With Susy][Susy Grids]
+
+
+
+
 
 #### Flexible Media
+
+
 
 
 #### Media Types
@@ -354,8 +389,11 @@ Feature Detection
 [mobile views]:         https://github.com/maxxiimo/base-mobile/tree/master/reorganization
 [RWD]:                  http://www.alistapart.com/articles/responsive-web-design/
 [RWD Book]:             http://www.abookapart.com/products/responsive-web-design
-[This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Responsive Design]:    http://alpha.responsivedesign.is/
+[This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
+[Grid Systems]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
+[Susy]:                 http://susy.oddbird.net/
+[Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
 [Media Types]:          http://www.w3.org/TR/CSS21/media.html
 [Media Queries]:        http://www.w3.org/TR/css3-mediaqueries/#media0
 [Tired of Hunting]:     http://www.websitedimensions.com/
