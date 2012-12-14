@@ -257,15 +257,34 @@ Well obviously half of 960 pixels; 480 pixels, and declaring percentages for thi
 
 Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all containers and you have a responsive grid that will resize itself depending upon the screen size it is drawn into.
 
-Rather than calculate all the different ratios within a layout, I prefer to use a grid system and save some time. You will find a pretty comprehensive list of [Grid Systems][]in the appendix, but my preference is to use [Susy][]. To get started checkout:
+Rather than calculate all the different ratios within a layout, I prefer to use a grid system and save some time. You will find a pretty comprehensive list of [Grid Systems][]in the appendix, but my preference is to use [Susy][] since we are already using Compass and it is authored by Eric Meyer whom I have a great deal of confidence in. Installation is pretty straightforward:
+
+*Step 1:* Add the following to /config/compass.rb:
+
+    require "susy"
+
+*Step 2:* Add the Susy gem to your .gemfile and bundle install:
+
+    # Compass specific gems.
+    gem 'compass-rails'
+    gem 'oily_png'
+    **gem 'susy'**
+
+Import Susy into your compass project:
+
+    /* BASIC STRUCTURE
+      ============================================================================ */
+    **@import "susy";**
+    @import "mobile/layout";
+
+Don't forget to restart your server, and wallah! You have a pretty powerful responsive grid system. To learn how to use it, the best reference can be found at the [source][]. The following tutorials might also be helpful:
 
 - [Responsive Grids With Susy][Susy Grids]
-
-
-
-
+- [Off-canvas layout with Susy][Off-canvas]
 
 #### Flexible Media
+
+Now that we have a flexible grid, it's time to look at Ethan's second ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a smart phone screen. It just doesn't make any sense.
 
 
 
@@ -393,7 +412,9 @@ Feature Detection
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Grid Systems]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
 [Susy]:                 http://susy.oddbird.net/
+[source]:               http://susy.oddbird.net/guides/getting-started/
 [Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
+[Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
 [Media Types]:          http://www.w3.org/TR/CSS21/media.html
 [Media Queries]:        http://www.w3.org/TR/css3-mediaqueries/#media0
 [Tired of Hunting]:     http://www.websitedimensions.com/
