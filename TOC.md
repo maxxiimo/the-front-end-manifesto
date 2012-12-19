@@ -66,6 +66,10 @@ Table of Contents
       - Content
     - Visual Design
       - Look and Feel
+      - Color
+      - Typeface
+      - Branding
+      - Images
     - Feedback
     - What We've Done
 - [Slicing and Dicing Mockups][]

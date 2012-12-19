@@ -179,7 +179,7 @@ In the case of "View Thought" part of the story is: "We are a great website **de
 
 #### Look and Feel
 
-The combination of fonts, color, images is a sites look and feel. What follows are some ideas and resources to help you create your own site's look and feel:
+The combination of color, typefaces (fonts), branding, and images are the cornerstones of a sites look and feel. What follows are some ideas and resources to help you create your site's look and feel:
 
 - Use a framework. We listed several frameworks you can use in the [Frameworks][] section of the Appendix.
 
@@ -200,6 +200,15 @@ The combination of fonts, color, images is a sites look and feel. What follows a
   - XXX
 
 - Read a tutorial.
+
+#### Color
+
+#### Typeface
+
+#### Branding
+
+#### Images
+
 
 ### Feedback
 
