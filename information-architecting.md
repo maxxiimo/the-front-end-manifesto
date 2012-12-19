@@ -203,6 +203,10 @@ The combination of color, typefaces (fonts), branding, and images are the corner
 
 #### Color
 
+> There are many contributing factors that go into making a good visual design, but one of the simplest ways to do this is through the use of colour. The colour palette used in a design can have such a profound effect on a visual design that it almost feels like you’re cheating. It’s easy to add more and more subtle shades of colour to add a sense of sophistication and complexity to a design, but it dilutes the overall visual impact. When I design, I almost have a rule that only allows me to use a very limited colour palette.
+
+- Mike Kus, "[Nine Things I've Learned][9 Things]"
+
 #### Typeface
 
 #### Branding
@@ -225,6 +229,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Slicing and Dicing]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
 [Chapter 1 Quote]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md#the-application-layout
 [Premium Pixels]:       http://www.premiumpixels.com/
+[9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
 [Toolbox 1]:            https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=lorem+ipsum
