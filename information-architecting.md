@@ -161,9 +161,9 @@ Image placeholders in different sizes and styles are also plentiful (the second 
 - [Functional Placeholder Images][Cambelt]
 - [Holder.js][]
 
-### Graphic Design
+### Visual Design
 
-This chapter is about Information Architecture, so design really goes beyond the chapters scope, however, design is part of storytelling so let's see if we can in the very least point you in the right direction.
+This chapter is about Information Architecture, so design really goes beyond the chapters scope, however, [design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction.
 
 > Firstly, think about what your pages do, not what they look like. Let your design flow from the services which they will provide to your users, rather than from some overarching idea of what you want pages to look like. Let form follow function, rather than trying to take a particular design and make it "work".
 
@@ -231,6 +231,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Image Generators]:     http://www.russellheimlich.com/blog/list-of-dummy-image-generators/
 [Cambelt]:              http://cambelt.co/
 [Holder.js]:            http://imsky.github.com/holder/
+[Story Design]:         http://24ways.org/2011/design-the-invisible/
 [Dao]:                  http://www.alistapart.com/articles/dao
 [Frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#frameworks
 [Case Study]:           http://builtbyboon.com/blog/responsive-design-case-study

@@ -64,7 +64,7 @@ Table of Contents
       - Prototyping on Paper
     - Wireframing
       - Content
-    - Graphic Design
+    - Visual Design
       - Look and Feel
     - Feedback
     - What We've Done
