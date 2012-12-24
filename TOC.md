@@ -70,6 +70,7 @@ Table of Contents
       - Typeface
       - Branding
       - Images
+      - Icons
     - Feedback
     - What We've Done
 - [Slicing and Dicing Mockups][]

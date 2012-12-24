@@ -213,6 +213,11 @@ The combination of color, typefaces (fonts), branding, and images are the corner
 
 #### Images
 
+#### Icons
+
+##### Icon Fonts
+
+##### Sprites
 
 ### Feedback
 
