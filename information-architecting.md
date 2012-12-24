@@ -217,6 +217,20 @@ The combination of color, typefaces (fonts), branding, and images are the corner
 
 ##### Icon Fonts
 
+
+
+The Big List of Flat Icons & Icon Fonts
+http://css-tricks.com/flat-icons-icon-fonts/
+
+HTML for Icon Font Usage
+http://css-tricks.com/html-for-icon-font-usage/
+
+Getting Font-Face to work with the Asset Pipeline
+http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
+
+Testing @font-face Support on Mobile and Tablet
+http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
+
 ##### Sprites
 
 ### Feedback
