@@ -228,10 +228,13 @@ http://css-tricks.com/html-for-icon-font-usage/
 Getting Font-Face to work with the Asset Pipeline
 http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
 
+How to make your own icon webfont
+http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/
+
 Testing @font-face Support on Mobile and Tablet
 http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
 
-##### Sprites
+##### Images and Icon Sprites
 
 ### Feedback
 
