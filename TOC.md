@@ -64,15 +64,15 @@ Table of Contents
       - Prototyping on Paper
     - Wireframing
       - Content
-    - Visual Design
-      - Look and Feel
-      - Color
-      - Typeface
-      - Branding
-      - Images
-      - Icons
     - Feedback
     - What We've Done
+- [Visual Design][]
+  - Look and Feel
+  - Color
+  - Typeface
+  - Branding
+  - Images
+  - Icons
 - [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
@@ -139,6 +139,7 @@ Table of Contents
 [Accessibility]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/accessibility.md
 [Slicing and Dicing Mockups]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
 [Information Architecting]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
+[Visual Design]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design.md
 [Getting the Fonts Right]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/getting-the-fonts-right.md
 [Images]:                            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/images.md
 [Forms]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/forms.md
