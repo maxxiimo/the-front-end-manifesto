@@ -1,13 +1,15 @@
 Visual Design
 -------------
 
-The [last chapter][] was about Information Architecture, so design really goes beyond it's scope, however, [design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction in visually designing your site.
+The [last chapter][] was about Information Architecture, so design really goes beyond it's scope, however, [design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction in visual design. I say point you in the right direction because visual design is a complete different skill set than front end coding.
+
+Up until now, we basically have a pretty blank wireframe: function before form. We need to add some spice to it.
 
 > Firstly, think about what your pages do, not what they look like. Let your design flow from the services which they will provide to your users, rather than from some overarching idea of what you want pages to look like. Let form follow function, rather than trying to take a particular design and make it "work".
 
 \- [A Dao of Web Design][Dao] by John Allsopp
 
-Up until now, we basically have a pretty blank wireframe: function before form. We need to add some spice to it. Just by looking at your site your users should be able to understand what they're looking at, your website must communicate it's story. To illustrate how simple this can be take a look at this 2007 website concept:
+Just by looking at your site your users should be able to understand what they're looking at, your website must communicate it's story. To illustrate how simple this can be take a look at this 2007 website concept:
 
 - http://noonebelongsheremorethanyou.com/00025
 
@@ -57,20 +59,16 @@ The combination of color, typefaces (fonts), branding, and images are the corner
 
 
 
-The Big List of Flat Icons & Icon Fonts
-http://css-tricks.com/flat-icons-icon-fonts/
+[The Big List of Flat Icons & Icon Fonts][Big List]
 
-HTML for Icon Font Usage
-http://css-tricks.com/html-for-icon-font-usage/
+[HTML for Icon Font Usage][Icon Font HTML]
 
-Getting Font-Face to work with the Asset Pipeline
-http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
+[Getting Font-Face to work with the Asset Pipeline][Pipeline]
 
-How to make your own icon webfont
-http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/
+[How to make your own icon webfont][DIY Icon Fonts]
 
-Testing @font-face Support on Mobile and Tablet
-http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
+[Testing @font-face Support on Mobile and Tablet][Icon Font Support]
+
 
 #### Images and Icon Sprites
 
@@ -83,3 +81,8 @@ http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-t
 [Premium Pixels]:       http://www.premiumpixels.com/
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
+[Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
+[Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/
+[Pipeline]:             http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
+[DIY Icon Fonts]:       http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/
+[Icon Font Support]:    http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
