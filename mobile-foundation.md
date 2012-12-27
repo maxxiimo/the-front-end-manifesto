@@ -306,9 +306,9 @@ The problem with this specification though was that it was implemented inconsist
 
 With so many screen sizes and new devices popping up left and right, and inconsistencies in mobile browser implementation, using media type alone to serve up styles for specific devices is impractical. Media queries on the other hand allow you to test a media type with a logical expression that evaluates to true or false. For example:
 
-    @media (min-width:500px) { color: red }
+    @media (max-width: 480px) { color: red }
 
-In this case, the media type All (implied by shorthand syntax) is matched against the devices user agent, If they match the device is then tested for a minimum width of 500 pixels. If the statement is true the specified styles, in this case the font color of red, are applied to the device. If false they are not, and the device continues to use the default font color.
+In this case, the media type All (implied by shorthand syntax) is matched against the devices user agent. If they match the device is then tested for a maximum width of 480 pixels, i.e. any device, like a smart phone in portrait and landscape mode, would pass this test. If the statement is true the specified styles, in this case the font color of red, are applied to the device. If false they are not, and the device continues to use the default font color.
 
 The power of media queries is that now developers can move beyond a finite set of media types, and test for a broader range of conditions including minimum and maximum widths and heights and screen orientation. Perfect for serving up device sensitive styles and content to a wide range of screen sizes and device capabilities.
 
@@ -316,14 +316,14 @@ To learn more about the specification checkout:
 
 - [W3C - Media Queries][Media Queries]
 
-##### Target
+##### Target Devices
 
 Before we write our own media queries we need to determine what screen sizes our media queries will target. I'm going to make the assumption that our audience uses desktop computers/laptops, tablet devices, and smart phones, but not televisions or anything else for that matter. I'm making this assumption to give us something to work with, but you should check your Web logs!
 
 So what dimensions should we use? Here are some references for this:
 
+- [StatCounter Global Stats][Stats]
 - [Tired of Hunting][]
-- [Mobile screen size trends][Trends]
 
 After reviewing the dimensions we will settle on: 320, 480, 768, 1024, and 1400px. Lets break this down to understand why. In the ResponsiveDesign.is website under [Defining Breakpoints][] the section begins...
 
@@ -339,11 +339,65 @@ Ha ha! Something to keep in mind. I like this thinking, and I also like the exam
 
 - [media queries for common device breakpoints][breakpoints]
 
-Why don't we grab a few and begin. Lets target three sizes defined as small, medium, and large. We can always change dimensions or add/remove sizes when user needs dictate that we should.
-
 ##### @media Rules
 
+Why don't we grab a few and begin. Based on [StatCounter Global Stats][Stats] for North America over the last three months we're going to define five sizes defined as xs (extra small), s (small), m (medium), l (large), and xl (extra large). It's the base we're going to start with, but keep in mind that we can always change dimensions or add/remove sizes (xxs, xxl, etc.) when user needs dictate that we should.
 
+Here is the mapping I'm thinking of:
+
+![][@media Definitions]
+
+Having defined these sizes, and to drill a point home, I want to quote Happy Cog founder Jeffrey Zeldman:
+
+> The most popular size is every size. If you're not thinking in a mobile-first, content-first way, if you're not planning an adaptive or responsive redesign, if you still think we have a standard canvas that ‘everybody’ uses, and if you can't feel the hot breath of mobile singeing the hairs on the back of your neck, you don't deserve to be a designer, or a consultant, or whatever these people think they are.
+
+- [Browser screen resolution stats rile devs][Happy Cog]
+
+So what do they look like?
+
+    @mixin breakpoint($point)
+      @if $point == xs
+        @media (max-device-width: 130px)
+          @content
+
+      @else if $point == s
+        @media (max-device-width: 260px)
+          @content
+
+      @else if $point == m
+        @media (max-device-width: 767px)
+          @content
+
+      @else if $point == l
+        @media (min-device-width: 768px)
+          @content
+
+      @else if $point == xl
+        @media (min-device-width: 1280px)
+          @content
+
+      @else if $point == xxl
+        @media (min-device-width: 1366px)
+          @content
+
+How do you use them?
+
+First, import it:
+
+    /* MIXINS
+      ============================================================================ */
+    @import "compass";
+    @import "media_queries";
+
+Then if you want to specify a particular style, lets say a different font color, for super small screens, you might write something like this:
+
+    .some-class
+      color: blue
+
+      @include breakpoint(xs)
+        color: red
+
+Now for any device with a minimum device screen size less than 130px the font color will be red vs. blue for everything larger.
 
 #### Conditional Loading
 
@@ -417,9 +471,12 @@ Feature Detection
 [Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
 [Media Types]:          http://www.w3.org/TR/CSS21/media.html
 [Media Queries]:        http://www.w3.org/TR/css3-mediaqueries/#media0
+[Stats]:                http://gs.statcounter.com/
 [Tired of Hunting]:     http://www.websitedimensions.com/
-[Trends]:               http://sender11.typepad.com/sender11/2008/04/mobile-screen-s.html
 [Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
 [breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
+[Happy Cog]:            http://www.netmagazine.com/news/browser-screen-resolution-stats-rile-devs-121897
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
+
+[@media Definitions]:   http://chrismaxwell.com/manifesto/media-queries.gif
