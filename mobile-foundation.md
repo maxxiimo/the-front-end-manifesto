@@ -351,7 +351,7 @@ Having defined these sizes, and to drill a point home, I want to quote Happy Cog
 
 > The most popular size is every size. If you're not thinking in a mobile-first, content-first way, if you're not planning an adaptive or responsive redesign, if you still think we have a standard canvas that ‘everybody’ uses, and if you can't feel the hot breath of mobile singeing the hairs on the back of your neck, you don't deserve to be a designer, or a consultant, or whatever these people think they are.
 
-- [Browser screen resolution stats rile devs][Happy Cog]
+\- [Browser screen resolution stats rile devs][Happy Cog]
 
 So what do they look like?
 
