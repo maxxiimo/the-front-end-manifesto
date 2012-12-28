@@ -136,6 +136,7 @@ The TOC for our [application.scss][] with the files I have generated for you loo
 - DEFINITIONS
   - [_define.sass][]
 - MIXINS
+  [_media_queries.sass][]
 - RESETS
   - [h5bp_normalize_v101.sass][]
 - BASIC STRUCTURE
@@ -178,8 +179,11 @@ Use a "definitions" section to set global variables such as $base-font, $base-fo
     /* MIXINS
     ============================================================================ */
     @import "compass";
+    @import "media_queries";
 
-If you do not plan to use Compass, remove this import.
+I use Compass and recommend that you do to. I also include a base set of media queries. It's just a starter set and can be tweaked however you want.
+
+If you do not plan to use Compass, remove the import.
 
     /* RESETS
     ============================================================================ */
@@ -502,6 +506,7 @@ With all of this work you are more than ready to begin building an app with your
 [application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [h5bp_normalize_v101.sass]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v101.sass
+[_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
 [_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/_layout.sass
 [_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/_grids.sass
 [_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/_typography.sass

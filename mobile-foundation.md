@@ -382,7 +382,7 @@ So what do they look like?
 
 How do you use them?
 
-First, import it:
+First, import:
 
     /* MIXINS
       ============================================================================ */
@@ -397,7 +397,7 @@ Then if you want to specify a particular style, lets say a different font color,
       @include breakpoint(xs)
         color: red
 
-Now for any device with a minimum device screen size less than 130px the font color will be red vs. blue for everything larger.
+Now for any device with a minimum device screen size less than 130px, the font color will be red vs. blue for everything larger.
 
 #### Conditional Loading
 
