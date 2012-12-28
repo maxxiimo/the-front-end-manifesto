@@ -356,28 +356,28 @@ Having defined these sizes, and to drill a point home, I want to quote Happy Cog
 So what do they look like?
 
     @mixin breakpoint($point)
-      @if $point == xs
-        @media (max-device-width: 130px)
+      @if $point == xxs
+        @media (max-width: 130px)
+          @content
+
+      @else if $point == xs
+        @media (min-width: 240px)
           @content
 
       @else if $point == s
-        @media (max-device-width: 260px)
+        @media (min-width: 320px)
           @content
 
       @else if $point == m
-        @media (max-device-width: 767px)
+        @media (min-width: 768px)
           @content
 
       @else if $point == l
-        @media (min-device-width: 768px)
+        @media (min-width: 1200px)
           @content
 
       @else if $point == xl
-        @media (min-device-width: 1280px)
-          @content
-
-      @else if $point == xxl
-        @media (min-device-width: 1366px)
+        @media (min-width: 1400px)
           @content
 
 How do you use them?
