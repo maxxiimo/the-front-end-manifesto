@@ -389,15 +389,18 @@ First, import:
     @import "compass";
     @import "media_queries";
 
-Then if you want to specify a particular style, lets say a different font color, for super small screens, you might write something like this:
+Then if you want to specify a particular style for whatever, lets say a different font color for super small screens, you might write something like this:
 
     .some-class
       color: blue
-
-      @include breakpoint(xs)
+      @include breakpoint(xxs)
         color: red
 
-Now for any device with a minimum device screen size less than 130px, the font color will be red vs. blue for everything larger.
+Now for any device with a minimum device screen size less than 130px, the font color will be red, and blue for everything else. Pretty straightforward. There's a whole heck of a lot more you can do with media queries. Here are some good references for you:
+
+- [Media queries][]
+- [Responsive Web Design in Sass: Using Media Queries in Sass 3.2][Sass Media Queries]
+- [Retina Display Media Query][Retina Media Queries]
 
 #### Conditional Loading
 
@@ -476,6 +479,9 @@ Feature Detection
 [Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
 [breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
 [Happy Cog]:            http://www.netmagazine.com/news/browser-screen-resolution-stats-rile-devs-121897
+[Media queries]:        http://alpha.responsivedesign.is/develop/media-queries
+[Sass Media Queries]:   http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
+[Retina Media Queries]: http://css-tricks.com/snippets/css/retina-display-media-query/
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
 
