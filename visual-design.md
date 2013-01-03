@@ -49,6 +49,8 @@ The combination of color, typefaces (fonts), branding, and images are the corner
 
 ### Typeface
 
+[Mobile Design Typography is Vitally Important … and Challenging][Mobile typography]
+
 ### Branding
 
 ### Images
@@ -80,6 +82,7 @@ The combination of color, typefaces (fonts), branding, and images are the corner
 [Frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#frameworks
 [Premium Pixels]:       http://www.premiumpixels.com/
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
+[Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
 [Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/
