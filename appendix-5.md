@@ -37,35 +37,43 @@ In addition to reviewing competitor sites or similar services to help generate i
 
 The following links deal specifically with mobile:
 
-1.  [Pattern Tap Mobile][]
+1.  [Inspired UI][]
 
-2.  [AppSites][]
+    > Find your inspiration
+
+2.  [Pattern Tap Mobile][]
+
+3.  [AppSites][]
 
     > App Sites is a showcase of beautiful iPhone, iPad & Mac app websites.
 
-3.  [Mobile Patterns][]
+4.  [Mobile Patterns][]
 
-4.  [Mobile Awesomeness][]
+5.  [Mobile Awesomeness][]
 
     > Big-time awesome for the small screen.
 
-5.  [Mobile Design Pattern Gallery][Mobile Gallery]
+6.  [Mobile Design Pattern Gallery][Mobile Gallery]
 
     > UI Patterns for iOS, Android and More
 
-6.  [FWA Mobile][]
+7.  [Media Queries][]
+
+    > A collection of inspirational websites using media queries and responsive web design.
+
+8.  [FWA Mobile][]
 
     > FWA is the most visited website award program in the history of the internet, with over 140 million site visits as of July 2011 (and multiple billion hits to our servers).
 
-7.  [WAPReview Directory][WapReview]
+9.  [WAPReview Directory][WapReview]
 
     > Welcome to the WapReview Directory, a comprehensive catalog of the mobile web, featuring reviews and ratings of 2254 mobile web sites.
 
-8.  [Mobile in Higher Ed][Higher Ed]
+10. [Mobile in Higher Ed][Higher Ed]
 
     > The following is a non-exhaustive listing of higher ed mobile web sites. Hopefully it’s useful to you as you evaluate features and ideas for your own mobile site.
 
-9.  [WTF Mobile Web][WTF]
+11. [WTF Mobile Web][WTF]
 
     > We need better reasons. Real examples. Proof that what we are all doing is not working anymore. That’s what this website is about. Examples convince. Seeing trends makes us smarter. The problem isn’t insurmountable if it’s known. So let’s get to know the problem.
 
@@ -85,11 +93,13 @@ Because responsive will play a big part in your design the following two links m
 [Codrops 3]:            http://tympanus.net/codrops/2012/08/17/creative-background-styles-and-trends-in-web-design/
 [Codrops 4]:            http://tympanus.net/codrops/2012/09/20/dashboard-design-elements-for-the-win/
 [FWA]:                  http://www.thefwa.com/
+[Inspired UI]:          http://inspired-ui.com/
 [Pattern Tap Mobile]:   http://patterntap.com/?sort_by=created&platform[]=7
 [AppSites]:             http://appsites.com/
 [Mobile Patterns]:      http://www.mobile-patterns.com/
 [Mobile Awesomeness]:   http://www.mobileawesomeness.com/
 [Mobile Gallery]:       http://mobiledesignpatterngallery.com/mobile-patterns.php
+[Media Queries]:        http://mediaqueri.es/
 [FWA Mobile]:           http://m.thefwa.com/mobile_type/mobile_website/
 [WAPReview]:            http://wapreview.com/?id=0
 [Higher Ed]:            http://www.dmolsen.com/mobile-in-higher-ed/higher-ed-mobile-sites/
