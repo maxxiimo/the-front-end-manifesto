@@ -165,9 +165,9 @@ To test that it is working you can use:
 
 ##### Usage
 
-Now that we have it set up, here is how we will use it. From our [Mobile Solutions Roundup][Mobile Roundup] we combine a bit of [Ryan Bates][] mobile solution with Mobvious.
+Now that we have it set up, here is how we will use it. From our [Mobile Solutions Roundup][Mobile Roundup] we combine a bit of [Ryan Bates][] mobile solution with Mobvious. Part of Ryan Bates solution creates a new mime type (:mobile), and uses a before_filter to test if the request is a mobile request. If true, the mime type is set to :mobile. As such, only files named with a ".mobile.haml" extension will be served.
 
-To fork requests to the correct views we add the following to application_controller.rb:
+To do this in our application we add the following to application_controller.rb:
 
     class ApplicationController < ActionController::Base
       protect_from_forgery
@@ -188,11 +188,11 @@ To fork requests to the correct views we add the following to application_contro
 
     Mime::Type.register_alias "text/html", :mobile
 
-Just like in the simple solution, requests from different devices will be served up the correct markup and styles for the device.
+Just like in the simple solution, requests from different devices will be served up the correct markup and styles for the device, based on the new mime type.
 
 ##### Reorganize
 
-Our solution is working well, but I'm feeling like there are too many files in each app/views folder. To better organize we can create a special folder just for our mobile views by adding the following to the prepare_for_mobile method in application_controller.rb:
+Our solution is working well, but I'm feeling like there are too many files in each app/views folder – some ending with ".html.haml" others with ".mobile.haml". To better organize we can create a special folder just for our mobile views by adding the following to the prepare_for_mobile method in application_controller.rb:
 
     def prepare_for_mobile
       if request.env['mobvious.device_type'] == :mobile
@@ -201,12 +201,20 @@ Our solution is working well, but I'm feeling like there are too many files in e
       end
     end
 
-Then create a new app/views/mobile folder and move all mobile views there. I've already set up this folder structure [here][mobile views]. One ends in [mobile] and the other in [html]. The difference between the two are in the files mime types: .mobile.haml vs. .html.haml. I prefer to use regular HTML files. With this new folder structure there is no need for different mime types. Remove:
+Now in addition to our mime type, we have designated a specific view path as the location to house our mobile views. Go ahead and create the new app/views/mobile folder and move all mobile views there. I've already set up this folder structure [here][mobile views].
+
+NOTE: One folder ends in [mobile] and the other in [html]. The difference between the two are in the files mime types: .mobile.haml vs. .html.haml.
+
+With this new folder structure there really is no need for different mime types. With a common mime type you can use the same partials for both desktop and mobile devices, and through Rails template inheritance your application will default to regular views when mobile views in the new folder are not available; which is especially useful when making an existing app mobile friendly a little bit at a time.
+
+Remove:
 
 - the mime type we defined in mime_types.rb
 - request.format = :mobile in application_controller.rb in the preparer_for_mobile method
 
-With a common mime type you can use the same partials for both desktop and mobile devices, and through Rails template inheritance your application will default to regular views when mobile views are not available which is especially useful when making an existing app mobile friendly a little bit at a time.
+NOTE: Oftentimes the same content will be used in both the mobile and regular versions of your site. With template inheritance you can refactor these out into partials, and have both the regular and mobile versions calling the same partial. Locate these partials in the regular version folder structure of your application. When they are not available in the mobile version folder structure, through template inheritance Rails will use the regular versions partials. I like to do this in order to keep my application DRY. It is not required. To see a working example visit:
+
+- https://github.com/maxxiimo/viewthought/tree/master/app/views/pages
 
 If you prefer to organize your mobile views outside of the regular app/views path, for example in app/views_mobile, swap the prepend_view_path with:
 
