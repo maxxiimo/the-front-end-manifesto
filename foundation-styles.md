@@ -142,6 +142,7 @@ The TOC for our [application.scss][] with the files I have generated for you loo
 - BASIC STRUCTURE
   - [_layout.sass][]
   - [_grids.sass][]
+  - [_mixins.sass][]
 - TYPOGRAPHY
   - [_typography.sass][]
 - MISCELLANEOUS
@@ -180,8 +181,9 @@ Use a "definitions" section to set global variables such as $base-font, $base-fo
     ============================================================================ */
     @import "compass";
     @import "media_queries";
+    @import "mixins";
 
-I use Compass and recommend that you do to. I also include a base set of media queries. It's just a starter set and can be tweaked however you want.
+I use Compass and recommend that you do to. I also include a base set of media queries and a blank file to place mixins in. It's just a starter set and can be tweaked however you want.
 
 If you do not plan to use Compass, remove the import.
 
@@ -202,8 +204,8 @@ I include four major reset styles in my application file and uncomment the one I
 
     /* BASIC STRUCTURE
     ============================================================================ */
-    @import "layout";
-    // @import "grids";
+    @import "desktop/layout";
+    // @import "desktop/grids";
 
 Use a "layout" section to style major elements and component areas such as html and body tags, or header and footer areas. This section is also a good place for grid styles, in major layout component. As you might have noticed, the partial grids is called in this example. This partial in some of my projects ports a sass version of a grid system. I also locate Compass' Grid Backgrounds which in a nutshell:
 
@@ -211,20 +213,20 @@ Use a "layout" section to style major elements and component areas such as html 
 
     /* TYPOGRAPHY
     ============================================================================ */
-    @import "typography";
+    @import "desktop/typography";
 
 Use the "typography" section to style major typographical elements such as paragraphs, fonts, links, etc. These typographical styles are standard across all pages unless redefined in subsequent partials.
 
     /* MISCELLANEOUS
     ============================================================================ */
-    @import "misc";
+    @import "desktop/misc";
     @import "sprites";
 
 "Miscellaneous" is a catchall for miscellaneous partials and styles that should appear earlier on in the stylesheet. I include two right off the bat; the first has an assortment of general styles I use for building a front end; and, the second is for sprites, whether I'm using Compass' built in sprite engine, or building them on my own.
 
     /* NAVIGATION
     ============================================================================ */
-    @import "navigation";
+    @import "desktop/navigation";
 
 "Navigation" could be part of another section, or even contained within another partial, however, experiences has taught me that a lot of things can happen in navigation. Styles can become quite large, and there can be more than one navigation design or type depending on user.
 
@@ -232,13 +234,13 @@ The main navigations parent tag \<nav> or more appropriately %nav does belong in
 
     /* FORMS
     ============================================================================ */
-    @import "forms";
+    @import "desktop/forms";
 
 "Forms" is self-evident. One comment about forms, I really dislike any form generator that doesn't easily let you change its underlying HTML or where it's not that obvious where the underlying HTML lives. I have consulted for numerous companies who started with these kinds of plug-ins only to realize how boxed in they were later on. Just a word of caution.
 
     /* PAGES
     ============================================================================ */
-    @import "pages";
+    @import "desktop/pages";
 
 "Pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, or perhaps separate them into their own partials depending on your needs, and then call them into the Pages partial, or a combination of this.
 
@@ -260,7 +262,11 @@ The "staging" section is exactly what it says, a staging area for code. It's goo
 
 "Last" is a reminder that those styles need to appear last.
 
-NOTE: Why the "=" underlines? It helps me find things, or see the organization, when I browse CSS output from a browser.
+##### Organizational Notes
+
+Why the "desktop" subfolder? To better organize desktop/tablet specific files. In the next chapter we will create another subfolder called "mobile". Files outside of these two folders are common to both device types.
+
+Why the "=" underlines? It helps me find things and see the organization, especially when I browse CSS output from a browser in development mode.
 
 #### Resets
 
@@ -507,14 +513,15 @@ With all of this work you are more than ready to begin building an app with your
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [h5bp_normalize_v101.sass]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v101.sass
 [_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
-[_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/_layout.sass
-[_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/_grids.sass
-[_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/_typography.sass
-[_misc.sass]:           https://github.com/maxxiimo/base-css/blob/master/_misc.sass
+[_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/desktop/_layout.sass
+[_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_grids.sass
+[_mixins.sass]:         https://github.com/maxxiimo/base-css/blob/master/_ mixins.sass
+[_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/desktop/_typography.sass
+[_misc.sass]:           https://github.com/maxxiimo/base-css/blob/master/desktop/_misc.sass
 [_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/_sprites.sass
-[_navigation.sass]:     https://github.com/maxxiimo/base-css/blob/master/_navigation.sass
-[_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/_forms.sass
-[_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/_pages.sass
+[_navigation.sass]:     https://github.com/maxxiimo/base-css/blob/master/desktop/_navigation.sass
+[_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_forms.sass
+[_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_pages.sass
 [_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/_staging.sass
 [h5bp_helpers.sass]:    https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.sass
 [h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/_h5bp_print.sass
