@@ -388,6 +388,10 @@ So what do they look like?
         @media (min-width: 1400px)
           @content
 
+      @else if $point == retina
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+          @content
+
 How do you use them?
 
 First, import:
@@ -396,6 +400,7 @@ First, import:
       ============================================================================ */
     @import "compass";
     @import "media_queries";
+    @import "mixins"
 
 Then if you want to specify a particular style for whatever, lets say a different font color for super small screens, you might write something like this:
 
@@ -409,6 +414,8 @@ Now for any device with a minimum device screen size less than 130px, the font c
 - [Media queries][]
 - [Responsive Web Design in Sass: Using Media Queries in Sass 3.2][Sass Media Queries]
 - [Retina Display Media Query][Retina Media Queries]
+
+So why have we defined so many @media breakpoints? To give us something to work with. We can change these, add more, delete some, whatever we want.
 
 #### Conditional Loading
 
