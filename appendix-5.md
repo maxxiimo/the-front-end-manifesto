@@ -5,6 +5,8 @@ Appendix 5
 
 In addition to reviewing competitor sites or similar services to help generate ideas, the following sites may also inspire or provide you with best practices/design patterns:
 
+#### Desktop
+
 1.  [Awwwards][]
 
     > Awwwards are the awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.
@@ -34,6 +36,8 @@ In addition to reviewing competitor sites or similar services to help generate i
 6.  [Favourite Website Awards (FWA)][FWA]
 
     >  FWA stands for Favourite Website Awards, an industry recognised internet award program and inspirational portal, established in May 2000.
+
+#### Mobile
 
 The following links deal specifically with mobile:
 
@@ -76,6 +80,8 @@ The following links deal specifically with mobile:
 11. [WTF Mobile Web][WTF]
 
     > We need better reasons. Real examples. Proof that what we are all doing is not working anymore. That’s what this website is about. Examples convince. Seeing trends makes us smarter. The problem isn’t insurmountable if it’s known. So let’s get to know the problem.
+
+#### Responsive
 
 Because responsive will play a big part in your design the following two links may help you think through your navigation:
 
