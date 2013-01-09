@@ -11,7 +11,7 @@ Appendices
     :: A roundup of the different grid systems available: 320 and Up, Responsive Grid System, etc..
 
 4.  [Mobile Solutions Roundup][Appendix 4]
-    :: Different ways to detect and deliver mobile versions of your application.
+    :: Different ways to detect mobile devices and deliver mobile versions of your application.
 
 5.  [Inspirational Sites][Appendix 5]
     :: Resources to help inspire design and UI patterns for desktop, mobile and responsive websites.
