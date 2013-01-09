@@ -63,6 +63,9 @@ Appendix 7
 
     > One of the emerging challenges for web designers is creating web typography that works in the mobile environment as well. But it can be difficult, and there are many things to consider. The keys are to focus on readability, contrast, space and responsiveness.
 
+1. [iOS Fonts][]
+
+    > A Place for Happy Typography (includes links to Android and Windows Phone 7 default typography.)
 
 [Better Stacks]:        http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
 [Honest]:               http://aversionfour.petercolesdc.com/web-fonts-nice-honest/
@@ -78,3 +81,4 @@ Appendix 7
 [Web Safe]:             http://www.w3schools.com/cssref/css_websafe_fonts.asp
 [Revised Font Stack]:   http://www.awayback.com/revised-font-stack/
 [Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
+[iOS Fonts]:            http://iosfonts.com/
