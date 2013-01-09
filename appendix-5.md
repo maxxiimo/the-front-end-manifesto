@@ -1,7 +1,7 @@
 Appendix 5
 ----------
 
-#### Inspirational Sites
+### Inspirational Sites
 
 In addition to reviewing competitor sites or similar services to help generate ideas, the following sites may also inspire or provide you with best practices/design patterns:
 

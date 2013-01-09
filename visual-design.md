@@ -49,7 +49,11 @@ The combination of color, typefaces (fonts), branding, and images are the corner
 
 ### Typeface
 
+[Build better CSS font stacks][Font Stacks]
+[CSS Web Safe Font Combinations][Web Safe]
 [Mobile Design Typography is Vitally Important … and Challenging][Mobile typography]
+
+#### Color
 
 ### Branding
 
@@ -82,6 +86,8 @@ The combination of color, typefaces (fonts), branding, and images are the corner
 [Frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#frameworks
 [Premium Pixels]:       http://www.premiumpixels.com/
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
+[Font Stacks]:          http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml
+[Web Safe]:             http://www.w3schools.com/cssref/css_websafe_fonts.asp
 [Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
