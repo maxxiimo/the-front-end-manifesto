@@ -72,7 +72,7 @@ Appendix 7
 [Google Fonts]:         http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/
 [More Google Fonts]:    http://designshack.net/articles/typography/10-more-great-google-font-combinations-you-can-copy/
 [Google Scripts]:       http://designshack.net/articles/css/the-10-best-script-and-handwritten-google-web-fonts/
-[BuildBetter Stacks]:   http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml
+[Build Better Stacks]:  http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml
 [Font Survey]:          http://www.codestyle.org/css/font-family/sampler-CombinedResults.shtml
 [CSS Font Stack]:       http://cssfontstack.com/
 [Web Safe]:             http://www.w3schools.com/cssref/css_websafe_fonts.asp
