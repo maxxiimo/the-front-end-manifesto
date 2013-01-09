@@ -15,7 +15,7 @@ Appendix 7
 
     > The font stacks listed here are grouped together by the universal font that forms the base of that stack. A designer can therefore decide on a typographical look for their site, grab the appropriate font stack, and tweak it to suit their needs.
 
-4.  *2010?* - [10-0000 16 Gorgeous Web Safe Fonts To Use With CSS][Gorgeous]
+4.  *2010?* - [16 Gorgeous Web Safe Fonts To Use With CSS][Gorgeous]
 
     > I have gathered together a nice resource list of stunning web safe fonts that you can use with CSS stylesheets.
 
@@ -63,7 +63,7 @@ Appendix 7
 
     > One of the emerging challenges for web designers is creating web typography that works in the mobile environment as well. But it can be difficult, and there are many things to consider. The keys are to focus on readability, contrast, space and responsiveness.
 
-1. [iOS Fonts][]
+15. [iOS Fonts][]
 
     > A Place for Happy Typography (includes links to Android and Windows Phone 7 default typography.)
 
