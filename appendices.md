@@ -2,25 +2,25 @@ Appendices
 ----------
 
 1.  [Groundwork Tasks][Appendix 1]
-    Setting up Gemfile, .gitignore, and Heroku deployment.
+    :: Setting up Gemfile, .gitignore, and Heroku deployment.
 
 2.  [Frameworks][Appendix 2]
-    An overview of some popular frameworks: Twitter Bootstrap, Blueprint, YUI, Foundation 3, Skeleton.
+    :: An overview of some popular frameworks: Twitter Bootstrap, Blueprint, YUI, Foundation 3, Skeleton.
 
 3.  [Grid Systems][Appendix 3]
-    A roundup of the different grid systems available: 320 and Up, Responsive Grid System, etc..
+    :: A roundup of the different grid systems available: 320 and Up, Responsive Grid System, etc..
 
 4.  [Mobile Solutions Roundup][Appendix 4]
-    Different ways to detect and deliver mobile versions of your application.
+    :: Different ways to detect and deliver mobile versions of your application.
 
 5.  [Inspirational Sites][Appendix 5]
-    Resources to help inspire design and UI patterns for desktop, mobile and responsive websites.
+    :: Resources to help inspire design and UI patterns for desktop, mobile and responsive websites.
 
 6.  [Feedback Services][Appendix 6]
-    A roundup of UX feedback services.
+    :: A roundup of UX feedback services.
 
 7.  [Font Stack Roundup][Appendix 7]
-    Different font stack combinations, fallbacks, surveys and code.
+    :: Different font stack combinations, fallbacks, surveys and code.
 
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork-tasks
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-2.md#frameworks
