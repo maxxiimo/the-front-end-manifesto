@@ -20,7 +20,7 @@ Appendices
 
 6.  [Feedback Services][Appendix 6]
 
-7.  [Font Stacks Roundup][Appendix 7]
+7.  [Font Stack Roundup][Appendix 7]
 
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-2.md#frameworks
@@ -28,4 +28,4 @@ Appendices
 [Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-4.md#mobile-solutions-roundup
 [Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#inspirational-sites
 [Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#feedback-services
-[Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stacks-roundup
+[Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stack-roundup

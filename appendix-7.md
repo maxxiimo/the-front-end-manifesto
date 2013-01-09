@@ -1,7 +1,7 @@
 Appendix 7
 ----------
 
-### Font Stacks Roundup
+### Font Stack Roundup
 
 1.  *06/26/08* - [Better CSS Font Stacks][Better Stacks]
 
