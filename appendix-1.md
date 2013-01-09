@@ -1,7 +1,7 @@
 Appendix 1
 ----------
 
-### Groundwork
+### Groundwork Tasks
 
 With any Rails application their is some very basic groundwork that needs to be done; creating the application and using some kind of versioning system. In the Rails world Git and Github are the versioning sytem and service of choice. Here are the steps I follow to set this up:
 
