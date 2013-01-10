@@ -47,35 +47,39 @@ Appendix 7
 
     > The font stack builder will help you build a better font stack from scratch, but what if you need a jump start, inspiration, or want to build on tried and trusted CSS font stacks? Start with this selection of pre-built font stacks and customise with your own preferred fonts.
 
-12. [Combined font survey results][Font Survey]
+12. [TYPECHART][]
+
+    > Browse web type, grab CSS. TYPECHART lets you flip through, preview and compare web typography while retrieving the CSS.
+
+13. [Combined font survey results][Font Survey]
 
     > Is that font Web safe? Code Style font survey results show the most common fonts on Windows, Mac and Linux computers to help you build a Web safe font stack.
 
-13. [CSS Font Stack][]
+14. [CSS Font Stack][]
 
     > A complete collection of web safe CSS font stacks
 
-14. [CSS Web Safe Font Combinations][Web Safe]
+15. [CSS Web Safe Font Combinations][Web Safe]
 
     > The font-family property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. If the browser does not support the first font, it tries the next font.
 
 #### Preinstalled
 
-15. [Revised Font Stack][]
+16. [Revised Font Stack][]
 
     > Serious efforts are being made to get more typeface choices on the web to enhance web typography. Still, most of us prefer web-safe fonts like: Verdana, Georgia, Times New Roman and Arial. Though choices are limited, yet the number can be increased by exploring other pre-installed fonts.
 
 #### Mobile
 
-16. [5 Tips for Excellent Mobile Typography][5 Tips]
+17. [5 Tips for Excellent Mobile Typography][5 Tips]
 
     > Mobile typefaces have a lot in common with Goldilocks and the Three Bears. Everything needs to be just right. To look best on a small screen and be readable at a smaller size, the best font has the following 5 qualities...
 
-17. [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
+18. [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 
     > One of the emerging challenges for web designers is creating web typography that works in the mobile environment as well. But it can be difficult, and there are many things to consider. The keys are to focus on readability, contrast, space and responsiveness.
 
-18. [iOS Fonts][]
+19. [iOS Fonts][]
 
     > A Place for Happy Typography (includes links to Android and Windows Phone 7 default typography.)
 
@@ -90,6 +94,7 @@ Appendix 7
 [Google Scripts]:       http://designshack.net/articles/css/the-10-best-script-and-handwritten-google-web-fonts/
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
 [Build Better Stacks]:  http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml
+[TYPECHART]:            http://www.typechart.com/
 [Font Survey]:          http://www.codestyle.org/css/font-family/sampler-CombinedResults.shtml
 [CSS Font Stack]:       http://cssfontstack.com/
 [Web Safe]:             http://www.w3schools.com/cssref/css_websafe_fonts.asp
