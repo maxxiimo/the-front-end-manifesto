@@ -35,35 +35,39 @@ Appendix 7
 
     > A good script is hard to find. I’m extremely picky when it comes to this particular area of typefaces and tend to hate most of what I see. With this post, you can skip the work of sorting through the crap and cut straight to the awesome scripts that are readable, attractive and perfect for your site.
 
-9.  [Build better CSS font stacks][Build Better Stacks]
+9.  *11/26/12* - [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
+
+    > Pairing fonts can be a challenge. Selecting two or more fonts which work well is one thing – selecting two which work together to achieve your typographic aims may have you reaching for the aspirin. Let’s see if we can alleviate any headaches. This guide will help you get started with font pairing for the web.
+
+10. [Build better CSS font stacks][Build Better Stacks]
 
     > The font stack builder will help you build a better font stack from scratch, but what if you need a jump start, inspiration, or want to build on tried and trusted CSS font stacks? Start with this selection of pre-built font stacks and customise with your own preferred fonts.
 
-10. [Combined font survey results][Font Survey]
+11. [Combined font survey results][Font Survey]
 
     > Is that font Web safe? Code Style font survey results show the most common fonts on Windows, Mac and Linux computers to help you build a Web safe font stack.
 
-11. [CSS Font Stack][]
+12. [CSS Font Stack][]
 
     > A complete collection of web safe CSS font stacks
 
-12. [CSS Web Safe Font Combinations][Web Safe]
+13. [CSS Web Safe Font Combinations][Web Safe]
 
     > The font-family property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. If the browser does not support the first font, it tries the next font.
 
 #### Preinstalled
 
-13. [Revised Font Stack][]
+14. [Revised Font Stack][]
 
     > Serious efforts are being made to get more typeface choices on the web to enhance web typography. Still, most of us prefer web-safe fonts like: Verdana, Georgia, Times New Roman and Arial. Though choices are limited, yet the number can be increased by exploring other pre-installed fonts.
 
 #### Mobile
 
-14. [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
+15. [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 
     > One of the emerging challenges for web designers is creating web typography that works in the mobile environment as well. But it can be difficult, and there are many things to consider. The keys are to focus on readability, contrast, space and responsiveness.
 
-15. [iOS Fonts][]
+16. [iOS Fonts][]
 
     > A Place for Happy Typography (includes links to Android and Windows Phone 7 default typography.)
 
@@ -75,6 +79,7 @@ Appendix 7
 [Google Fonts]:         http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/
 [More Google Fonts]:    http://designshack.net/articles/typography/10-more-great-google-font-combinations-you-can-copy/
 [Google Scripts]:       http://designshack.net/articles/css/the-10-best-script-and-handwritten-google-web-fonts/
+[Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
 [Build Better Stacks]:  http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml
 [Font Survey]:          http://www.codestyle.org/css/font-family/sampler-CombinedResults.shtml
 [CSS Font Stack]:       http://cssfontstack.com/
