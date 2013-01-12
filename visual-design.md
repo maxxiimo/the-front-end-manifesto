@@ -53,14 +53,14 @@ The reason we use stacks in the first place, i.e. a listing of several different
 
 #### Font Family
 
-To help you get the job done without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" in the appendix of this book. Here you will find recommendations for web safe fonts, i.e. fonts that come preinstalled in most systems that you can copy and feel confident using as either your overall default font stack, or as a fallback font stack for a more interesting typeface. The roundup also includes fonts that go well together, say one font for your headers and another contrasting font for your body.
+To help you get the job done without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" in the appendix of this book. Here you will find recommendations for web safe fonts, i.e. fonts that come preinstalled in most systems that you can copy and feel confident using as either your overall default font stack, or as a fallback font stack for a more interesting typeface. The roundup also includes fonts that go well together, say one font for your headers, and another contrasting font for your body.
 
 
 [Build better CSS font stacks][Font Stacks]
 [CSS Web Safe Font Combinations][Web Safe]
 [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 
-#### Color
+#### Size and Color
 
 
 

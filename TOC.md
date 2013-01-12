@@ -67,12 +67,16 @@ Table of Contents
     - Feedback
     - What We've Done
 - [Visual Design][]
-  - Look and Feel
-  - Color
   - Typeface
+    - Font Family
+    - Size and Color
+  - Color
   - Branding
-  - Images
   - Icons
+    - Icon Fonts
+    - Icon Sprites
+  - Images
+  - Other Resources
 - [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
