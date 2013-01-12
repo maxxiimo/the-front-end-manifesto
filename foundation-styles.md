@@ -136,7 +136,7 @@ The TOC for our [application.scss][] with the files I have generated for you loo
 - DEFINITIONS
   - [_define.sass][]
 - MIXINS
-  [_media_queries.sass][]
+  - [_media_queries.sass][]
 - RESETS
   - [h5bp_normalize_v101.sass][]
 - BASIC STRUCTURE
