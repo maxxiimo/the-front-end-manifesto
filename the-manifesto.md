@@ -9,7 +9,7 @@ The Manifesto
 
 3.  Provide intelligent and semantically correct hooks and code snippets for backend teams.
 
-4.  Abstract logic out of views, and keep view code out of controllers.
+4.  Abstract logic out of views, keep view code out of controllers.
 
 5.  Provide for the mobile experience as a forethought.
 
