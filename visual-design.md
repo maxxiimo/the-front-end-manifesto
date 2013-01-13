@@ -1,5 +1,5 @@
-Visual Design
--------------
+Visual Design for the Nondesigner
+---------------------------------
 
 The [last chapter][] was about Information Architecture, so design really goes beyond it's scope, however, [design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction in visual design.
 
@@ -32,7 +32,9 @@ After I have finished all of my information architecture stuff, the first visual
 Before we dive into this, if you really want to learn about typography, the absolute best resources out there are:
 
 - [The Elements of Typographic Style Applied to the Web][Typographic Style]
-- [][]
+- [Thinking with Type][Think Type]
+
+In this chapter I'm not going to cover a major component of typography, and that is grid systems. We introduced grid systems in the [Mobile Foundation][] chapter of this book, and include a [Grid Systems][] roundup in the appendices.
 
 So let's get started. In my opinion the lowest hanging fruit in typography are base font characteristics: family, size, color and line height. If you have implemented the base style sheets from chapter 2, [Foundation Styles][], you have several font faces available to you out of the box, and base font characteristics have been predefined in global variables. All of this is organized in [_define.sass][], a sass file reserved for defining global stylesheet variables:
 
@@ -62,8 +64,11 @@ The reason we use font stacks in the first place, i.e. a listing of several diff
 
 #### Font Family
 
-So let's pick a base font family for View Thought. For your project, to help you get the job done without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the appendix of this book. Here you will find recommendations for web safe fonts, i.e. fonts that come preinstalled in most systems that you can copy and feel confident using as either your overall default font stack, or as a fallback font stack for a more interesting typeface. The roundup also includes fonts that go well together, say one font for your headers, and another contrasting font for your body.
+So let's pick a base font family for View Thought. For your project, to help you get the job done without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the appendix of this book. Here you will find recommendations for:
 
+1. Web safe fonts, i.e. fonts that come preinstalled in most systems that you can copy and feel confident using as either your overall default font stack, or as a fallback font stack for a more interesting typeface.
+2. Fonts that go well together, say one font for your headers, and another contrasting font for your body.
+3.
 
 
 [Build better CSS font stacks][Font Stacks]
@@ -145,6 +150,9 @@ What follows are some ideas and resources to help you create your site's look an
 [Dao]:                  http://www.alistapart.com/articles/dao
 [95% typography]:       http://informationarchitects.net/blog/the-web-is-all-about-typography-period/
 [Typographic Style]:    http://webtypography.net/
+[Think Type]:           http://www.thinkingwithtype.com/
+[Mobile Foundation]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md#ii-responsive-web-design
+[Grid Systems]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
 [Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stacks-roundup
