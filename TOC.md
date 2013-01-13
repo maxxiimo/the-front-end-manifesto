@@ -67,9 +67,12 @@ Table of Contents
     - Feedback
     - What We've Done
 - [Visual Design][]
-  - Typeface
+  - Typography
+    - A note on Font Stacks
     - Font Family
-    - Size and Color
+    - Size
+    - Color
+    - Line Height
   - Color
   - Branding
   - Icons

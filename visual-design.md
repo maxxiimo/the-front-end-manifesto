@@ -21,13 +21,20 @@ In the case of "View Thought" part of the story is:
 
 If this is part of our story we better deliver some great graphic design on top of our information architecture, layout, and content that will help communicate it! To do so we will use a combination of fonts, color, images, and anything else I can think of to help View Thought tell it's story, and in such a way that users just get it. The combination of typefaces (fonts), color, branding, and images are the cornerstones of a sites look and feel. Let's explore each.
 
-### Typeface
+### Typography
 
-After I have finished all of my information architecture stuff, the first component I like to tackle in visual design is defining the font family I will use, the base font size, color and line height. Before we dive into this, if you really want to learn about typeface the absolute best resources out there are:
+After I have finished all of my information architecture stuff, the first visual design component I like to tackle is my base typography.
 
+> 95% of the information on the web is written language. It is only logical to say that a web designer should get good training in the main discipline of shaping written information, in other words: Typography.
+
+[Web Design Is 95% Typography][95% typography]
+
+Before we dive into this, if you really want to learn about typography, the absolute best resources out there are:
+
+- [The Elements of Typographic Style Applied to the Web][Typographic Style]
 - [][]
 
-Before we begin to define our fonts for View Thought let's look at what we have available to us out-of-the-box in our foundation styles. Our fonts are organized in [_define.sass][]:
+So let's get started. In my opinion the lowest hanging fruit in typography are base font characteristics: family, size, color and line height. If you have implemented the base style sheets from chapter 2, [Foundation Styles][], you have several font faces available to you out of the box, and base font characteristics have been predefined in global variables. All of this is organized in [_define.sass][], a sass file reserved for defining global stylesheet variables:
 
     /*  Fonts
       -----------------------
@@ -47,20 +54,31 @@ Before we begin to define our fonts for View Thought let's look at what we have 
     $base-font-color:   #333    !default
     $base-line-height:  1.4     !default
 
-It starts with variables set to different common font stacks. Choose one of the variables to set as your base font family. Whatever you choose will then permeate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
+In Sass you can set up variables. As you can see above, our definitions begin with variables set to different font stacks. These variables can then be assigned to the $base-font-family variable. What ever variable you sign to $base-font-family will then permeate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance. In our case we set the font family of our <body> tag to $base-font-family. All child elements will then inherit this font family, unless defined otherwise.
 
-The reason we use stacks in the first place, i.e. a listing of several different fonts, is so that if your machine does not have the first font available, your browser will look for the second one and so forth until the very last one: which is the most broadly available. Overall the fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used between different machines such as a Microsoft desktop versus a Macintosh experience.
+#### A note on Font Stacks
+
+The reason we use font stacks in the first place, i.e. a listing of several different fonts, is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use. If your device does not have the first font in the stack available, your browser will look for the second one and so forth until the very last one: which is the most broadly available. The fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used: at least that is the goal.
 
 #### Font Family
 
-To help you get the job done without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" in the appendix of this book. Here you will find recommendations for web safe fonts, i.e. fonts that come preinstalled in most systems that you can copy and feel confident using as either your overall default font stack, or as a fallback font stack for a more interesting typeface. The roundup also includes fonts that go well together, say one font for your headers, and another contrasting font for your body.
+So let's pick a base font family for View Thought. For your project, to help you get the job done without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the appendix of this book. Here you will find recommendations for web safe fonts, i.e. fonts that come preinstalled in most systems that you can copy and feel confident using as either your overall default font stack, or as a fallback font stack for a more interesting typeface. The roundup also includes fonts that go well together, say one font for your headers, and another contrasting font for your body.
+
 
 
 [Build better CSS font stacks][Font Stacks]
 [CSS Web Safe Font Combinations][Web Safe]
 [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 
-#### Size and Color
+#### Size
+
+
+
+#### Color
+
+
+
+#### Line Height
 
 
 
@@ -91,8 +109,11 @@ To help you get the job done without having to earn a PhD in typeface, I created
 
 [Testing @font-face Support on Mobile and Tablet][Icon Font Support]
 
+#### Icon Sprites
 
-#### Images and Icon Sprites
+
+
+### Images
 
 
 ### Other Resources
@@ -122,6 +143,9 @@ What follows are some ideas and resources to help you create your site's look an
 [last chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [Story Design]:         http://24ways.org/2011/design-the-invisible/
 [Dao]:                  http://www.alistapart.com/articles/dao
+[95% typography]:       http://informationarchitects.net/blog/the-web-is-all-about-typography-period/
+[Typographic Style]:    http://webtypography.net/
+[Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stacks-roundup
 [Font Stacks]:          http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml
