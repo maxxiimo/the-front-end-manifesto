@@ -34,7 +34,7 @@ Before we dive into this, if you really want to learn about typography, the abso
 - [The Elements of Typographic Style Applied to the Web][Typographic Style]
 - [Thinking with Type][Think Type]
 
-In this chapter I'm not going to cover a major component of typography, and that is grid systems. We introduced grid systems in the [Mobile Foundation][] chapter of this book, and include a [Grid Systems][] roundup in the appendices.
+In this chapter I'm not going to cover a major component of typography, and that is grid systems. We introduced grid systems in the [Mobile on Rails][] chapter of this book, and include a [Grid Systems][] roundup in the appendices.
 
 So let's get started. In my opinion the lowest hanging fruit in typography are base font characteristics: family, size, color and line height. If you have implemented the base style sheets from chapter 2, [Foundation Styles][], you have several font faces available to you out of the box, and base font characteristics have been predefined in global variables. All of this is organized in [_define.sass][], a sass file reserved for defining global stylesheet variables:
 
@@ -151,7 +151,7 @@ What follows are some ideas and resources to help you create your site's look an
 [95% typography]:       http://informationarchitects.net/blog/the-web-is-all-about-typography-period/
 [Typographic Style]:    http://webtypography.net/
 [Think Type]:           http://www.thinkingwithtype.com/
-[Mobile Foundation]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md#ii-responsive-web-design
+[Mobile on Rails]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
 [Grid Systems]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
 [Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass

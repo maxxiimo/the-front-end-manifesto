@@ -1,5 +1,5 @@
-Mobile Foundation
------------------
+Mobile on Rails
+---------------
 
 In Chapter 1 we learned about [foundation markup][], and in Chapter 2, [foundation styles][], but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. On the fringe back then there was talk about desktop screen sizes, but it could be overlooked since the differences were not so great, and the "fix" came relatively quickly (and became second nature) as monitors became less expensive and the industry settled on standard design widths and/or employed liquid layouts.
 
@@ -13,7 +13,7 @@ Once upon a time ago when I worked for Fidelity Investments' FEB Design unit, we
 
 As an Information Architect with this experience, the [Mobile First][] design paradigm makes sense to me for information architecting alone, and given the large and increasing number of mobile users out there, it is an approach that you as a front end developer should consider using when building an application. In the very least, DO NOT leave mobile design as an afterthought.
 
-In [Chapter 4][] we will tackle this paradigm shift head-on as we architect our application. As a general rule mobile is now a factor, so it makes sense to include preparing for it in our foundation work.
+In [Chapter 4][] we will tackle this paradigm shift head-on as we architect our application. As a general rule,, mobile is now a factor, so it makes sense to include preparing for it at the get-go of the project.
 
 ### Plan of Attack
 
@@ -430,7 +430,19 @@ So why have we defined so many @media breakpoints? To give us something to work 
 
 
 
-### Mobile on Rails
+### An Ajax Include Pattern
+
+[An Ajax-Include Pattern for Modular Content][Ajax-Include]
+
+### Using JavaScript
+
+Feature Detection
+
+
+[The Essentials of Zepto.js][Zepto]
+
+
+### What We've Done
 
 We've covered three approaches to mobile development in this chapter, and have incorporated these approaches into our foundation code base. So many different approaches begs the question, which one do I use? Well, that depends. It depends on the project and needs. When I asked [LaunchWare][] founder Dan Pickett what he thought was the best approach for mobile, his answer was so succinct (and backed with experience) that I'm just going to quote it in its entirety here:
 
@@ -444,18 +456,6 @@ We've covered three approaches to mobile development in this chapter, and have i
 > - A separate, mobile web application that talks to the main application client side via a service oriented architecture (this is usually the last progression before going native, and we only go this route if the mobile app is vastly different from the web application)
 >
 > The later three allow for a phonegap or a similar solution so that the app can be listed in the app stores and can take advantage of some of the native functions of the device.
-
-### An Ajax Include Pattern
-
-[An Ajax-Include Pattern for Modular Content][Ajax-Include]
-
-### Using JavaScript
-
-Feature Detection
-
-
-[The Essentials of Zepto.js][Zepto]
-
 
 [foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
