@@ -60,7 +60,11 @@ In Sass you can set up variables. As you can see above, our definitions begin wi
 
 #### A note on Font Stacks
 
-The reason we use font stacks in the first place, i.e. a listing of several different fonts, is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use. If your device does not have the first font in the stack available, your browser will look for the second one and so forth until the very last one: which is the most broadly available. The fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used: at least that is the goal.
+The reason we use font stacks in the first place, i.e. a listing of several different fonts, is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use.
+
+    Arial, "Helvetica Neue", Helvetica, sans-serif
+
+If your device does not have the first font in the stack available, your browser will look for the second one and so forth until the very last one: which is the most broadly available across different operating systems. The fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used: at least that is the goal.
 
 #### Font Family
 
