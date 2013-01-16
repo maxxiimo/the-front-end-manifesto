@@ -101,11 +101,15 @@ Here are some screenshots of different fonts on View Thought:
 
 ![][bevan-pontano]
 
-As you can see, choosing fonts is a practice in trial and error..
+As you can see, choosing fonts is a practice in trial and error. I found these articles to be helpful in framing the context of my decision:
+
+- [Make a Statement with Type][Type Statement]
+- [6 Questions You Should Ask Yourself When Choosing Fonts][6 Questions]
+- [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 
 #### Size
 
-[Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
+
 
 #### Color
 
@@ -198,6 +202,8 @@ What follows are some ideas and resources to help you create your site's look an
 [details]:              https://github.com/maxxiimo/viewthought/blob/master/app/assets/stylesheets/desktop/_typography.sass
 [Google Web Fonts]:     http://www.google.com/webfonts#
 [Beginners Guide]:      http://designshack.net/articles/css/a-beginners-guide-to-using-google-web-fonts/
+[Type Statement]:       http://tympanus.net/codrops/2012/09/26/make-a-statement-with-type/
+[6 Questions]:          http://tympanus.net/codrops/2011/12/01/6-questions-you-should-ask-yourself-when-choosing-fonts/
 [Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
