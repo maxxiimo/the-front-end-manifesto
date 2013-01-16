@@ -1,5 +1,3 @@
-*Designers should use pixels.*
-
 *don't nest to deep*
 
 ### iPad
@@ -98,3 +96,45 @@ Good Advice
 
 [User Experience]:      http://24ways.org/2011/subliminal-user-experience
 
+
+
+
+1.  [FitVids.js][]
+    > A lightweight, easy-to-use jQuery plugin for fluid width video embeds.
+
+[FitVids.js]:           http://fitvidsjs.com/
+
+
+
+
+
+
+
+What's the better way to load jquery into an application?
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+SCENARIO 1
+
+%script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+:javascript
+  window.jQuery || document.write('<script src="assets/jquery-1.8.3.min.js"><\/script>')
+
+With %head prefetch set as follows:
+
+%link{:rel => "dns-prefetch", :href => "//ajax.googleapis.com"})
+
+In this case you use Google's CDN,  and if the user already has the file cached (likely), you save a trip to the server, if not it cost you an additional server hit. If the CDN is down (unlikely) and the file is not cached, you pull the file from the application server.
+
+Reference: http://html5boilerplate.com/
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+SCENARIO 2
+
+
+
+
+
+
+
+
+http://railsapps.github.com/rails-javascript-include-external.html

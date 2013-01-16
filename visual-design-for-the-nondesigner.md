@@ -33,6 +33,9 @@ Before we dive into this, if you really want to learn about typography, the abso
 
 - [The Elements of Typographic Style Applied to the Web][Typographic Style]
 - [Thinking with Type][Think Type]
+- [][]
+- [][]
+- [][]
 
 In this chapter I'm not going to cover a major component of typography, and that is grid systems. We introduced grid systems in the [Mobile on Rails][] chapter of this book, and include a [Grid Systems][] roundup in the appendices.
 
@@ -64,24 +67,43 @@ The reason we use font stacks in the first place, i.e. a listing of several diff
 
     Arial, "Helvetica Neue", Helvetica, sans-serif
 
-If your device does not have the first font in the stack available, your browser will look for the second one and so forth until the very last one: which is the most broadly available across different operating systems. The fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used: at least that is the goal.
+If your device does not have the first font in the stack available, your browser will look for the second one and so forth until the very last one: which is typically generic and the most broadly available across different operating systems. The fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used: at least that is the goal.
 
 #### Font Family
 
 So let's pick a base font family for View Thought. For your project, to help you get the job done without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the appendix of this book. Here you will find recommendations for:
 
-1. Web safe fonts, i.e. fonts that come preinstalled in most systems that you can copy and feel confident using as either your overall default font stack, or as a fallback font stack for a more interesting typeface.
-2. Fonts that go well together, say one font for your headers, and another contrasting font for your body.
-3.
+1.  Font stacks that you can copy and use in your project.
 
+2.  Web safe fonts, i.e. fonts that are most common on most versions of Windows, Mac, and Linux.
 
-[Build better CSS font stacks][Font Stacks]
-[CSS Web Safe Font Combinations][Web Safe]
-[Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
+    You can copy these and feel confident using them as your overall default font stack, or as a fallback font stack for a more interesting typeface.
+
+3.  Fonts that go well together, say one font for your headers, and another contrasting font for your body.
+
+I like to go straight for the section titled "combinations". Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their feel, and provide samples for you to review and choose from.
+
+##### Font Services
+
+Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the Font Services and Tools [appendix][Appendix 8].
+
+I use [Typekit][]. Fortunately for us, Typekit provides an excellent [series of articles][articles] on implementing Typekit, so [I'll][] [spare][] [you][] [the][] [details][].
+
+Typekit is a paid service, [Google Web Fonts][] on the other hand is a free service:
+
+[A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
+
+##### Trial and Error
+
+Here are some screenshots of different fonts on View Thought:
+
+![][quatro-facitweb]
+
+As you can see, choosing fonts is a practice in trial and error..
 
 #### Size
 
-
+[Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 
 #### Color
 
@@ -117,6 +139,10 @@ So let's pick a base font family for View Thought. For your project, to help you
 [How to make your own icon webfont][DIY Icon Fonts]
 
 [Testing @font-face Support on Mobile and Tablet][Icon Font Support]
+
+
+##### @font-face
+
 
 #### Icon Sprites
 
@@ -160,8 +186,16 @@ What follows are some ideas and resources to help you create your site's look an
 [Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stacks-roundup
-[Font Stacks]:          http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml
-[Web Safe]:             http://www.w3schools.com/cssref/css_websafe_fonts.asp
+[Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#font-services-and-tools
+[Typekit]:              https://typekit.com/
+[articles]:             http://blog.typekit.com/category/font-events/
+[I'll]:                 https://github.com/maxxiimo/viewthought/blob/master/app/views/layouts/_head.html.haml
+[spare]:                https://github.com/maxxiimo/viewthought/blob/master/app/assets/javascripts/application.js
+[you]:                  https://github.com/maxxiimo/viewthought/blob/master/app/assets/javascripts/site.js
+[the]:                  https://github.com/maxxiimo/viewthought/blob/master/app/assets/stylesheets/_define.sass
+[details]:              https://github.com/maxxiimo/viewthought/blob/master/app/assets/stylesheets/desktop/_typography.sass
+[Google Web Fonts]:     http://www.google.com/webfonts#
+[Beginners Guide]:      http://designshack.net/articles/css/a-beginners-guide-to-using-google-web-fonts/
 [Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
@@ -172,3 +206,5 @@ What follows are some ideas and resources to help you create your site's look an
 [Icon Font Support]:    http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
 [Frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#frameworks
 [Premium Pixels]:       http://www.premiumpixels.com/
+
+[quatro-facitweb]:      http://www.chrismaxwell.com/manifesto/fonts/quatro-facitweb.gif

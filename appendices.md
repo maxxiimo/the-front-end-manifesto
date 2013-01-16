@@ -22,6 +22,9 @@ Appendices
 7.  [Font Stack Roundup][Appendix 7]
     :: Different font stack combinations, fallbacks, surveys and code.
 
+8.  [Font Services and Tools][Appendix 8]
+    :: A jackpot listing of foreign service and tools to help you deliver a great typographic experience.
+
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork-tasks
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-2.md#frameworks
 [Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
@@ -29,3 +32,4 @@ Appendices
 [Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#inspirational-sites
 [Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#feedback-services
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stack-roundup
+[Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#font-services-and-tools

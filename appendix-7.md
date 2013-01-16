@@ -27,25 +27,23 @@ Appendix 7
 
     > Browse web type, grab CSS. TYPECHART lets you flip through, preview and compare web typography while retrieving the CSS.
 
-#### Preinstalled
-
-7.  [CSS Font Stack][]
-
-    > A complete collection of web safe CSS font stacks
-
-8.  [Revised Font Stack][]
+7.  [Revised Font Stack][]
 
     > Serious efforts are being made to get more typeface choices on the web to enhance web typography. Still, most of us prefer web-safe fonts like: Verdana, Georgia, Times New Roman and Arial. Though choices are limited, yet the number can be increased by exploring other pre-installed fonts.
 
 #### Web Safe
 
-9.  *2010?* - [16 Gorgeous Web Safe Fonts To Use With CSS][Gorgeous]
+8.  *2010?* - [16 Gorgeous Web Safe Fonts To Use With CSS][Gorgeous]
 
     > I have gathered together a nice resource list of stunning web safe fonts that you can use with CSS stylesheets.
 
-10. *12/12/10* - [Web Safe Fonts Cheat Sheet v.3][Cheat Sheet]
+9.  *12/12/10* - [Web Safe Fonts Cheat Sheet v.3][Cheat Sheet]
 
     > This is the third major overhaul of the Web Safe Fonts Cheat Sheet, which now includes examples of fonts suitable for the CSS @font-face property, along with revised CSS font stacks, font installation breakdowns by operating system, and some of the new Google Font API fonts.
+
+10. [CSS Font Stack][]
+
+    > A complete collection of web safe CSS font stacks
 
 11. [Combined font survey results][Font Survey]
 
@@ -93,12 +91,11 @@ Appendix 7
 [Google Scripts]:       http://designshack.net/articles/css/the-10-best-script-and-handwritten-google-web-fonts/
 [Build Better Stacks]:  http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml
 [TYPECHART]:            http://www.typechart.com/
-
-[CSS Font Stack]:       http://cssfontstack.com/
 [Revised Font Stack]:   http://www.awayback.com/revised-font-stack/
 
 [Gorgeous]:             http://www.webdesigndev.com/web-development/16-gorgeous-web-safe-fonts-to-use-with-css
 [Cheat Sheet]:          http://www.mightymeta.co.uk/web-safe-fonts-cheat-sheet-v-3-with-font-face-fonts-and-os-breakdown/
+[CSS Font Stack]:       http://cssfontstack.com/
 [Font Survey]:          http://www.codestyle.org/css/font-family/sampler-CombinedResults.shtml
 [Web Safe]:             http://www.w3schools.com/cssref/css_websafe_fonts.asp
 

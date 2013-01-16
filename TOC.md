@@ -130,6 +130,8 @@ Table of Contents
   - Mobile Solutions Roundup
   - Inspirational Sites
   - Feedback Services
+  - Font Stack Roundup
+  - Font Services and Tools
 
 [Cover]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
