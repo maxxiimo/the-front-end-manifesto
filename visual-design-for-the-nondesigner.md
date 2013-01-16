@@ -98,6 +98,7 @@ Typekit is a paid service, [Google Web Fonts][] on the other hand is a free serv
 Here are some screenshots of different fonts on View Thought:
 
 ![][quatro-facitweb]
+![][bevan-pontano]
 
 As you can see, choosing fonts is a practice in trial and error..
 
@@ -208,3 +209,4 @@ What follows are some ideas and resources to help you create your site's look an
 [Premium Pixels]:       http://www.premiumpixels.com/
 
 [quatro-facitweb]:      http://www.chrismaxwell.com/manifesto/fonts/quatro-facitweb.gif
+[bevan-pontano]:        http://www.chrismaxwell.com/manifesto/fonts/bevan-pontano.gif
