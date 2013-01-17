@@ -1,11 +1,17 @@
 Mobile on Rails
 ---------------
 
-In Chapter 1 we learned about [foundation markup][], and in Chapter 2, [foundation styles][], but what about mobile? What about iPads? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. On the fringe back then there was talk about desktop screen sizes, but it could be overlooked since the differences were not so great, and the "fix" came relatively quickly (and became second nature) as monitors became less expensive and the industry settled on standard design widths and/or employed liquid layouts.
+In Chapter 1 we learned about [foundation markup][], and in Chapter 2, [foundation styles][], but what about mobile? What about smartphones and tablets? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. There was talk about desktop screen sizes, but it could be overlooked since the differences were not so great or prevalent, and the "fix" came relatively quickly: the industry settled on standard design widths and/or employed liquid layouts.
 
-Nowadays you cannot overlook screen size. Devices will continue to drop in price which means a greater set of divergent screen sizes in people's hands, and the fix is a tad bit more difficult to say the least. With out a doubt your end-users are going to look at your work on a smart phone or some kind of tablet. In fact I think this is pretty much [common knowledge][], so let's end that discussion and just deal with it proactively by laying down a mobile foundation.
+Fast-forward to today and as a front end engineer you cannot overlook screen size, and the fix is a tad bit more difficult than it was back then to say the least.
 
-In this chapter we are going to explore the different ways in which we can serve content to our end-users tailored to the device they're using, and in this process we will develop our applications own mobile foundation.
+> Mobile browsing is rapidly consuming the Internet. The smartphone and tablet lifestyle is replacing laptops and desktop computers as the primary way we go online.
+
+\- [Mobile Browsing: It Will Get Better and Worse][Better and Worse] by Chris Kelly of New Relic
+
+With out a doubt your end-users are going to look at your work on a smartphone or some kind of tablet. In fact I think this is pretty much [common knowledge][] now, so let's end that discussion and just deal with it proactively by laying down a mobile foundation.
+
+In this chapter we are going to explore the different ways in which we can serve content tailored to the different devices our users are using, and in this process we will develop our own mobile foundation, or best practices.
 
 ### Mobile First
 
@@ -459,6 +465,7 @@ We've covered three approaches to mobile development in this chapter, and have i
 
 [foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
+[Better and Worse]:     http://insights.wired.com/profiles/blogs/mobile-browsing-will-get-both-better-and-worse#axzz2IFWc81o0
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/cover
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md

@@ -112,11 +112,11 @@ As you can see, choosing fonts is a practice in trial and error. I found these a
 
 
 
-#### Color
-
-
-
 #### Line Height
+
+
+
+#### Color
 
 
 
