@@ -226,6 +226,6 @@ What follows are some ideas and resources to help you create your site's look an
 [cantata-imprima]:      http://www.chrismaxwell.com/manifesto/fonts/cantata-imprima.gif
 [allerta-crimson]:      http://www.chrismaxwell.com/manifesto/fonts/allerta-crimson.gif
 [crimson-allerta]:      http://www.chrismaxwell.com/manifesto/fonts/crimson-allerta.gif
-[pt-sans-arvo]:         http://www.chrismaxwell.com/manifesto/fonts/pt-sans-arvo.gift
+[pt-sans-arvo]:         http://www.chrismaxwell.com/manifesto/fonts/pt-sans-arvo.gif
 [droid-serif-droid-sans]: http://www.chrismaxwell.com/manifesto/fonts/droid-serif-droid-sans.gif
 [droid-sans-droid-serif]: http://www.chrismaxwell.com/manifesto/fonts/droid-sans-droid-serif.gif
