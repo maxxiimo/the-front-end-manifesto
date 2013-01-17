@@ -100,11 +100,9 @@ Here are some screenshots of different fonts on View Thought:
 ![][cantata-imprima]
 ![][allerta-crimson]
 ![][pt-sans-arvo]
-![][droid-serif-droid-sans]
 ![][droid-sans-droid-serif]
 
-
-As you can see, choosing fonts is a practice in trial and error. I found these articles to be helpful in framing the context of my decision:
+As you can see, choosing fonts is a practice in trial and error. I found these articles to be useful in helping frame the context of my decision making process:
 
 - [Make a Statement with Type][Type Statement]
 - [6 Questions You Should Ask Yourself When Choosing Fonts][6 Questions]
