@@ -466,7 +466,7 @@ We've covered three approaches to mobile development in this chapter, and have i
 [foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [Better and Worse]:     http://insights.wired.com/profiles/blogs/mobile-browsing-will-get-both-better-and-worse#axzz2IFWc81o0
-[common knowledge]:     http://www.themobileplaybook.com/en-us/#/cover
+[common knowledge]:     http://www.themobileplaybook.com/en-us/#/introduction
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [LaunchWare]:           http://launchware.com/
