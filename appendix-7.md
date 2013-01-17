@@ -37,81 +37,89 @@ Appendix 7
 
 #### Web Safe
 
-9.  *2010?* - [16 Gorgeous Web Safe Fonts To Use With CSS][Gorgeous]
+1.  *2010?* - [16 Gorgeous Web Safe Fonts To Use With CSS][Gorgeous]
 
     > I have gathered together a nice resource list of stunning web safe fonts that you can use with CSS stylesheets.
 
-10. *12/12/10* - [Web Safe Fonts Cheat Sheet v.3][Cheat Sheet]
+2.  *12/12/10* - [Web Safe Fonts Cheat Sheet v.3][Cheat Sheet]
 
     > This is the third major overhaul of the Web Safe Fonts Cheat Sheet, which now includes examples of fonts suitable for the CSS @font-face property, along with revised CSS font stacks, font installation breakdowns by operating system, and some of the new Google Font API fonts.
 
-11. [Common fonts to all versions of Windows &amp; Mac equivalents][Common Fonts]
+3.  [Common fonts to all versions of Windows &amp; Mac equivalents][Common Fonts]
 
     > Here you can find the list with the standard set of fonts common to all versions of Windows and their Mac substitutes, referred sometimes as "browser safe fonts".
 
-12. [CSS Font Stack][]
+4.  [CSS Font Stack][]
 
     > A complete collection of web safe CSS font stacks
 
-13. [Combined font survey results][Font Survey]
+5.  [Combined font survey results][Font Survey]
 
     > Is that font Web safe? Code Style font survey results show the most common fonts on Windows, Mac and Linux computers to help you build a Web safe font stack.
 
-14. [CSS Web Safe Font Combinations][Web Safe]
+6.  [CSS Web Safe Font Combinations][Web Safe]
 
     > The font-family property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. If the browser does not support the first font, it tries the next font.
 
 #### Combinations
 
-15. *09/09/18* - [19 top fonts in 19 top combinations][19 Combinations]
+1.  *09/09/18* - [19 top fonts in 19 top combinations][19 Combinations]
 
     > I recently compiled a list of the 19 most popular fonts according to usage by graphic designers from all over the web. I could have had 100, but I got it down to under 50, and from there whittled it down to just the 19 best fonts.
 
-16. *10/23/11* - [10 Great Google Font Combinations You Can Copy][Google Fonts]
+2.  *10/23/11* - [10 Great Google Font Combinations You Can Copy][Google Fonts]
 
     > Today we’re going to use the Google Font API as a playground for mixing fonts and finding ideal pairings. You’ll be able to skim through and instantly grab out selections that you think are appropriate for your projects.
 
-17. *11/12/11* - [25 Fresh Examples of Beautiful Typeface Combinations in Web Design][25 Combinations]
+3.  *11/12/11* - [25 Fresh Examples of Beautiful Typeface Combinations in Web Design][25 Combinations]
 
     > From print to web layouts, typography is the center piece of a good design and today we gathered a few examples of beautiful typeface combinations in web design to inspire you.
 
-18. *03/20/12* - [10 More Great Google Font Combinations You Can Copy][More Google Fonts]
+4.  *03/20/12* - [10 More Great Google Font Combinations You Can Copy][More Google Fonts]
 
     > ...it’s becomingly increasingly difficult to sift through the library to find the best selections. We’ve got your back though and are serving up another great collection of Google Web Font combinations ripe for the stealing.
 
-19. *11/26/12* - [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
+5.  *11/26/12* - [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
 
     > Pairing fonts can be a challenge. Selecting two or more fonts which work well is one thing – selecting two which work together to achieve your typographic aims may have you reaching for the aspirin. Let’s see if we can alleviate any headaches. This guide will help you get started with font pairing for the web.
 
+6.  [Typeface Combinations][]
+
+    > Although the idea of typeface combining revolves around contrast, the best serif and sans serif combinations have similar characteristics.
+
 #### Mobile
 
-20. [5 Tips for Excellent Mobile Typography][5 Tips]
+1.  [5 Tips for Excellent Mobile Typography][5 Tips]
 
     > Mobile typefaces have a lot in common with Goldilocks and the Three Bears. Everything needs to be just right. To look best on a small screen and be readable at a smaller size, the best font has the following 5 qualities...
 
-21. [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
+2.  [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 
     > One of the emerging challenges for web designers is creating web typography that works in the mobile environment as well. But it can be difficult, and there are many things to consider. The keys are to focus on readability, contrast, space and responsiveness.
 
-22. [iOS Fonts][]
+3.  [iOS Fonts][]
 
     > A Place for Happy Typography (includes links to Android and Windows Phone 7 default typography.)
 
 #### Font Categories and Definitions
 
-23. *03/02/11* - [The Next Big Thing in Online Type][Online Type]
+1.  *03/02/11* - [The Next Big Thing in Online Type][Online Type]
 
     > Beginning in 2006, Microsoft says it will ship with its operating system and other software products six brand new typefaces created especially for extended on-screen reading.
 
-24. [Typefaces, like most things, are made up of constituent parts.][Constituent Parts]
+2.  [Typefaces, like most things, are made up of constituent parts.][Constituent Parts]
 
     > Typefaces, like most things, are made up of constituent parts. It is the characteristics of these parts that gives typefaces their character.
 
-25. [Font Factory][]
+3.  [Font Factory][]
 
-    >  Fonts fall into logical categories, e.g. Serif or Script etc. But within a category, there are many subtitles, so we have assigned each font a specific sub-category that best describes the unique elements of a font. Each of the primary categories below have further categories to explore.
+    > Fonts fall into logical categories, e.g. Serif or Script etc. But within a category, there are many subtitles, so we have assigned each font a specific sub-category that best describes the unique elements of a font. Each of the primary categories below have further categories to explore.
 
-26. [What are the different categories for fonts?][Different Categories]
+5.  [Typeface Classifications][Classifications]
+
+    > Serif and Sans Serif. A serif is a small projection that finishes the end of a stroke of a letter. Sans is an early French term based on a Latin word that means without.
+
+6.  [What are the different categories for fonts?][Different Categories]
 
     > You can browse fonts in the following categories...
 
@@ -133,10 +141,11 @@ Appendix 7
 
 [19 Combinations]:      http://bonfx.com/19-top-fonts-in-19-top-combinations/
 [Google Fonts]:         http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/
-
 [More Google Fonts]:    http://designshack.net/articles/typography/10-more-great-google-font-combinations-you-can-copy/
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
 [25 Combinations]:      http://tympanus.net/codrops/2011/11/12/25-fresh-examples-of-beautiful-typeface-combinations-in-web-design/
+[Typeface Combinations]: http://www.peatah.org/combinations2.html
+
 [5 Tips]:               http://wixmobile.com/5-tips-for-excellent-mobile-typography
 [Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
 [iOS Fonts]:            http://iosfonts.com/
@@ -145,3 +154,4 @@ Appendix 7
 [Constituent Parts]:    http://designingfortheweb.co.uk/book/part3/part3_chapter12.php
 [Font Factory]:         http://www.fontfactory.com/categories.php
 [Different Categories]: http://www.myfonts.com/Article8122.html
+[Classifications]:      http://www.peatah.org/classifications.html

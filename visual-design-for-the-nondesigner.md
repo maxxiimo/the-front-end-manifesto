@@ -81,7 +81,11 @@ So let's pick a base font family for View Thought. For your project, to help you
 
 3.  Fonts that go well together, say one font for your headers, and another contrasting font for your body.
 
-I like to go straight for the section titled "combinations". Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their feel, and provide samples for you to review and choose from.
+I like to go straight for the section titled "combinations". Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and/or provide samples for you to review and choose from.
+
+> You might have already heard this; successful pairing relies on concord, or contrast, but not conflict. That is to say your selected fonts can work well together by sharing certain qualities, or by being completely different from one another. However, font pairs can conflict in a number of ways – being too similar being just one.
+
+\- [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
 
 ##### Font Services
 
@@ -193,6 +197,7 @@ What follows are some ideas and resources to help you create your site's look an
 [Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stacks-roundup
+[Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
 [Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#font-services-and-tools
 [Typekit]:              https://typekit.com/
 [articles]:             http://blog.typekit.com/category/font-events/
