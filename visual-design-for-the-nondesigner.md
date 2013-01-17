@@ -97,11 +97,8 @@ Typekit is a paid service, [Google Web Fonts][] on the other hand is a free serv
 
 Here are some screenshots of different fonts on View Thought:
 
-![][quatro-facitweb]
-![][bevan-pontano]
 ![][cantata-imprima]
 ![][allerta-crimson]
-![][crimson-allerta]
 ![][pt-sans-arvo]
 ![][droid-serif-droid-sans]
 ![][droid-sans-droid-serif]
@@ -221,11 +218,8 @@ What follows are some ideas and resources to help you create your site's look an
 [Frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#frameworks
 [Premium Pixels]:       http://www.premiumpixels.com/
 
-[quatro-facitweb]:      http://www.chrismaxwell.com/manifesto/fonts/quatro-facitweb.gif
-[bevan-pontano]:        http://www.chrismaxwell.com/manifesto/fonts/bevan-pontano.gif
 [cantata-imprima]:      http://www.chrismaxwell.com/manifesto/fonts/cantata-imprima.gif
 [allerta-crimson]:      http://www.chrismaxwell.com/manifesto/fonts/allerta-crimson.gif
-[crimson-allerta]:      http://www.chrismaxwell.com/manifesto/fonts/crimson-allerta.gif
 [pt-sans-arvo]:         http://www.chrismaxwell.com/manifesto/fonts/pt-sans-arvo.gif
 [droid-serif-droid-sans]: http://www.chrismaxwell.com/manifesto/fonts/droid-serif-droid-sans.gif
 [droid-sans-droid-serif]: http://www.chrismaxwell.com/manifesto/fonts/droid-sans-droid-serif.gif
