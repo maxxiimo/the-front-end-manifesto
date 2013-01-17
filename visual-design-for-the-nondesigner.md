@@ -99,7 +99,7 @@ Here are some screenshots of different fonts on View Thought:
 
 ![][cantata-imprima]
 ![][allerta-crimson]
-![][pt-sans-arvo]
+![][arvo-pt-sans]
 ![][droid-sans-droid-serif]
 
 As you can see, choosing fonts is a practice in trial and error. I found these articles to be useful in helping frame the context of my decision making process:
@@ -218,6 +218,6 @@ What follows are some ideas and resources to help you create your site's look an
 
 [cantata-imprima]:      http://www.chrismaxwell.com/manifesto/fonts/cantata-imprima.gif
 [allerta-crimson]:      http://www.chrismaxwell.com/manifesto/fonts/allerta-crimson.gif
-[pt-sans-arvo]:         http://www.chrismaxwell.com/manifesto/fonts/pt-sans-arvo.gif
+[arvo-pt-sans]:         http://www.chrismaxwell.com/manifesto/fonts/arvo-pt-sans.gif
 [droid-serif-droid-sans]: http://www.chrismaxwell.com/manifesto/fonts/droid-serif-droid-sans.gif
 [droid-sans-droid-serif]: http://www.chrismaxwell.com/manifesto/fonts/droid-sans-droid-serif.gif
