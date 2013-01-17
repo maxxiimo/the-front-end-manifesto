@@ -102,6 +102,7 @@ Here are some screenshots of different fonts on View Thought:
 ![][cantata-imprima]
 ![][allerta-crimson]
 ![][crimson-allerta]
+![][pt-sans-arvo]
 ![][droid-serif-droid-sans]
 ![][droid-sans-droid-serif]
 
