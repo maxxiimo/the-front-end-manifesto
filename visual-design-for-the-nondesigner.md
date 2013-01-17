@@ -98,8 +98,13 @@ Typekit is a paid service, [Google Web Fonts][] on the other hand is a free serv
 Here are some screenshots of different fonts on View Thought:
 
 ![][quatro-facitweb]
-
 ![][bevan-pontano]
+![][cantata-imprima]
+![][allerta-crimson]
+![][crimson-allerta]
+![][droid-serif-droid-sans]
+![][droid-sans-droid-serif]
+
 
 As you can see, choosing fonts is a practice in trial and error. I found these articles to be helpful in framing the context of my decision:
 
@@ -217,3 +222,9 @@ What follows are some ideas and resources to help you create your site's look an
 
 [quatro-facitweb]:      http://www.chrismaxwell.com/manifesto/fonts/quatro-facitweb.gif
 [bevan-pontano]:        http://www.chrismaxwell.com/manifesto/fonts/bevan-pontano.gif
+[cantata-imprima]:      http://www.chrismaxwell.com/manifesto/fonts/cantata-imprima.gif
+[allerta-crimson]:      http://www.chrismaxwell.com/manifesto/fonts/allerta-crimson.gif
+[crimson-allerta]:      http://www.chrismaxwell.com/manifesto/fonts/crimson-allerta.gif
+[pt-sans-arvo]:         http://www.chrismaxwell.com/manifesto/fonts/pt-sans-arvo.gift
+[droid-serif-droid-sans]: http://www.chrismaxwell.com/manifesto/font/droid-serif-droid-sans.gif
+[droid-sans-droid-serif]: http://www.chrismaxwell.com/manifesto/font/droid-sans-droid-serif.gif
