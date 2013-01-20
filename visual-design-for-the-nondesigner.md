@@ -112,11 +112,13 @@ As you can see, choosing fonts is a practice in trial and error. I found these a
 - [6 Questions You Should Ask Yourself When Choosing Fonts][6 Questions]
 - [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 
-#### Size
+#### Size and Line Height
 
+Choosing font size is actually not as straightforward and easy as one would expect. At the very basic level, you need to choose between a measurement type such as px vs. ems vs. % vs. rem, and from a more complex perspective you might determine a modular scale based on ratios derived from harmonic intervals or the golden ratio. Yowza!
 
+So why so complex? Well essentially your choice might significantly impact the harmony of your design, and how your site will look across different browsers, devices, and user settings. Your choice might also be the basis from which your entire site is responsive to.
 
-#### Line Height
+Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History on Web Font Size Thought][Appendix 9]" found in the appendices of this book.
 
 
 
@@ -132,6 +134,8 @@ As you can see, choosing fonts is a practice in trial and error. I found these a
 
 
 ### Branding
+
+
 
 ### Images
 
@@ -211,6 +215,7 @@ What follows are some ideas and resources to help you create your site's look an
 [Type Statement]:       http://tympanus.net/codrops/2012/09/26/make-a-statement-with-type/
 [6 Questions]:          http://tympanus.net/codrops/2011/12/01/6-questions-you-should-ask-yourself-when-choosing-fonts/
 [Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
+[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#a-brief-history-on-web-font-size-thought
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
