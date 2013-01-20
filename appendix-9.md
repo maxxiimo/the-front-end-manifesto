@@ -1,7 +1,7 @@
 Appendix 9
 ----------
 
-### A Brief History of Web Font Size Thought
+### A Brief History of Web Font Sizes
 
 Over the years I've referred to different articles in determining font size for projects I'm working on. Here they are in chronological order. Many of them are not so relevant today, I'll let you be the judge of that.
 
