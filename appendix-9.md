@@ -3,7 +3,7 @@ Appendix 9
 
 ### A Brief History of Web Font Sizes
 
-Over the years I've referred to different articles in determining font size for projects I'm working on. Here they are in chronological order. Many of them are not so relevant today, I'll let you be the judge of that.
+Over the years I've referred to different articles when determining font size for projects I'm working on. Here they are in chronological order. A few are not so relevant today and some of them are exceptional! I'll let you be the judge of that, and have included them here as a reference.
 
 1.  *05/11/01* - [CSS Design: Size Matters][1]
 
