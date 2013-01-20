@@ -215,7 +215,7 @@ What follows are some ideas and resources to help you create your site's look an
 [Type Statement]:       http://tympanus.net/codrops/2012/09/26/make-a-statement-with-type/
 [6 Questions]:          http://tympanus.net/codrops/2011/12/01/6-questions-you-should-ask-yourself-when-choosing-fonts/
 [Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
-[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#a-brief-history-on-web-font-size-thought
+[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#a-brief-history-on-web-font-size-thought
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
