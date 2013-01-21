@@ -543,4 +543,4 @@ With all of this work you are more than ready to begin building an app with your
 [Custom User @mixins]:  http://css-tricks.com/custom-user-mixins/
 [next chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
 
-[Basic HTML No Styles]: http://chrismaxwell.com/manifesto/getting-started/base-html-files-with-styles.png
+[Basic HTML No Styles]: http://chrismaxwell.com/manifesto/getting-started/base-html-files-with-styles.jpg
