@@ -159,7 +159,7 @@ Typically browsers default to a font size of 16px. We're going to accept this de
 
     app\assets\stylesheets\_define.sass
 
-    $base-font-size:    1em          !default
+    $base-font-size:    100%         !default
 
     app\assets\stylesheets\desktop\_layout.sass
 
@@ -170,9 +170,10 @@ Typically browsers default to a font size of 16px. We're going to accept this de
       line-height: $base-line-height
       background-color: $bg-body
 
-Again, we're going to use the browser's default setting. We could specify 100% here, but I'm using 1em to establish a unit of measure whereby 1em = 16px. We could also omit the reference completely. The best explanation of why were doing this can be found here:
+Again, we're going to use the browser's default setting. I use 100% here, but could also omit the reference completely. The best explanations of why we're doing this can be found here:
 
 - [How we learned to leave default font-size alone and embrace the em][Embracing em's]
+- [CSS Font-Size: em vs. px vs. pt vs. percent][CSS Font-Size]
 
 #### Line Height
 
