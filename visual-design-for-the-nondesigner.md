@@ -89,7 +89,7 @@ I like to go straight for the section titled "combinations". Here designers with
 
 ##### Font Services
 
-Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the Font Services and Tools [appendix][Appendix 8].
+Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 8]" appendix.
 
 I use [Typekit][]. Fortunately for us, Typekit provides an excellent [series of articles][articles] on implementing Typekit, so [I'll][] [spare][] [you][] [the][] [details][].
 
@@ -101,10 +101,7 @@ Typekit is a paid service, [Google Web Fonts][] on the other hand is a free serv
 
 Here are some screenshots of different fonts on View Thought:
 
-![][cantata-imprima]
-![][allerta-crimson]
-![][arvo-pt-sans]
-![][droid-serif-droid-sans]
+![][fonts]
 
 As you can see, choosing fonts is a practice in trial and error. I found these articles to be useful in helping frame the context of my decision making process:
 
@@ -226,7 +223,4 @@ What follows are some ideas and resources to help you create your site's look an
 [Frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#frameworks
 [Premium Pixels]:       http://www.premiumpixels.com/
 
-[cantata-imprima]:      http://www.chrismaxwell.com/manifesto/fonts/cantata-imprima.gif
-[allerta-crimson]:      http://www.chrismaxwell.com/manifesto/fonts/allerta-crimson.gif
-[arvo-pt-sans]:         http://www.chrismaxwell.com/manifesto/fonts/arvo-pt-sans.gif
-[droid-serif-droid-sans]: http://www.chrismaxwell.com/manifesto/fonts/droid-serif-droid-sans.gif
+[fonts]:                http://www.chrismaxwell.com/manifesto/fonts/fonts.gif
