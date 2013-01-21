@@ -101,7 +101,7 @@ Appendix 7
 
     > A Place for Happy Typography (includes links to Android and Windows Phone 7 default typography.)
 
-#### Font Categories and Definitions
+#### Font Classifications and Definitions
 
 1.  *03/02/11* - [The Next Big Thing in Online Type][Online Type]
 
@@ -114,6 +114,10 @@ Appendix 7
 3.  [Font Factory][]
 
     > Fonts fall into logical categories, e.g. Serif or Script etc. But within a category, there are many subtitles, so we have assigned each font a specific sub-category that best describes the unique elements of a font. Each of the primary categories below have further categories to explore.
+
+4.  [Type Classifications][Type Class]
+
+    > Adobe typefaces are organized in the Type Classification pop-up menu according to a simplified version of the internationally recognized system adopted by the Association Typographique Internationale (ATypI).
 
 5.  [Typeface Classifications][Classifications]
 
@@ -153,5 +157,6 @@ Appendix 7
 [Online Type]:          http://www.poynter.org/how-tos/newsgathering-storytelling/visual-voice/32588/the-next-big-thing-in-online-type/
 [Constituent Parts]:    http://designingfortheweb.co.uk/book/part3/part3_chapter12.php
 [Font Factory]:         http://www.fontfactory.com/categories.php
-[Different Categories]: http://www.myfonts.com/Article8122.html
+[Type Class]:           http://www.adobe.com/type/browser/classifications.html
 [Classifications]:      http://www.peatah.org/classifications.html
+[Different Categories]: http://www.myfonts.com/Article8122.html
