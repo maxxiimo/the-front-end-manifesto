@@ -46,18 +46,38 @@ So let's get started. In my opinion the lowest hanging fruit in typography are b
 
     // stacks...
 
+    // http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
+
     $arial:             Arial, "Helvetica Neue", Helvetica, sans-serif
-    $georgia:           Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif
     $verdana:           Verdana, Geneva, Tahoma, sans-serif
     $geneva:            Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif
+    $georgia:           Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif
+
+    // google web fonts...
+
+    // http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/
+    // http://designshack.net/articles/typography/10-more-great-google-font-combinations-you-can-copy/
+
+    $cantata:           "Cantata One", Georgia, serif
+    $imprima:           Imprima, Verdana, Helvetica, sans-serif
+
+    $allerta:           Allerta, Helvetica, Arial, sans-serif
+    $crimson:           Crimson Text, Georgia, Times, serif
+
     $arvo:              Arvo, Georgia, Times, serif
+    $pt-sans:           "PT Sans", Helvetica, Arial, sans-serif
+
+    $droid-serif:       "Droid Serif", Georgia, Times, serif
+    $droid-sans:        "Droid Sans", Helvetica, Arial, sans-serif
 
     // base definitions...
 
-    $base-font-family:  $arial  !default
-    $base-font-size:    1em     !default
-    $base-font-color:   #333    !default
-    $base-line-height:  1.4     !default
+    $base-font-family:  $arial       !default
+    $base-font-size:    1em          !default
+    $base-font-color:   #333         !default
+    $base-line-height:  1.4          !default
+
+    $base-font-header:  $georgia     !default
 
 In Sass you can set up variables. As you can see above, our definitions begin with variables set to different font stacks. These variables can then be assigned to the $base-font-family variable. What ever variable you sign to $base-font-family will then permeate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance. In our case we set the font family of our <body> tag to $base-font-family. All child elements will then inherit this font family, unless defined otherwise.
 
@@ -87,6 +107,11 @@ I like to go straight for the section titled "combinations". Here designers with
 
 \- [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
 
+I have left a few font stacks and Google Web Fonts pairing ideas for you in our starter styles:
+
+- [_define.sass][]
+- [_head.html.haml][]
+
 ##### Font Services
 
 Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 8]" appendix.
@@ -99,23 +124,57 @@ Typekit is a paid service, [Google Web Fonts][] on the other hand is a free serv
 
 ##### Trial and Error
 
-Here are some screenshots of different fonts on View Thought:
+Here are some screenshots of different font ideas for View Thought:
 
 ![][fonts]
 
-As you can see, choosing fonts is a practice in trial and error. I found these articles to be useful in helping frame the context of my decision making process:
+As you can see, choosing fonts is a practice in trial and error. These articles might help frame the context of your decision making process:
 
 - [Make a Statement with Type][Type Statement]
 - [6 Questions You Should Ask Yourself When Choosing Fonts][6 Questions]
 - [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 
-#### Size and Line Height
+#### Size
 
-Choosing font size is actually not as straightforward and easy as one would expect. At the very basic level, you need to choose between a measurement type such as px vs. ems vs. % vs. rem, and from a more complex perspective you might determine a modular scale based on ratios derived from harmonic intervals or the golden ratio. Yowza!
+Choosing font size is actually not as straightforward and easy as one would expect. At the very basic level, you will choose between a measurement type such as px vs. ems vs. % vs. rem, and from a more complex perspective you might want to define a modular scale based on ratios derived from harmonic intervals or the golden ratio. Yowza!
 
-So why so complex? Well essentially your choice might significantly impact the harmony of your design, and how your site will look across different browsers, devices, and user settings. Your choice might also be the basis from which your entire site is responsive to.
+So why so complex? Well essentially your choice will significantly impact the harmony and feel of your design; and how your site will look across different browsers, devices, and user settings. Your choice might also be the basis from which your entire site is responsive to.
 
-Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History of Web Font Sizes][Appendix 9]" found in the appendices of this book.
+Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History of Web Font Sizes][Appendix 9]" found in the appendices.
+
+In Chapter 2 we implement [Normalize.css][]. If you look at the [stylesheet][] you will notice that we reset our base font size to 100%:
+
+    /*
+    * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using `em` units.
+    * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom.
+    */
+
+    html {
+        font-size: 100%; /* 1 */
+        -webkit-text-size-adjust: 100%; /* 2 */
+        -ms-text-size-adjust: 100%; /* 2 */
+    }
+
+Typically browsers default to a font size of 16px. We're going to accept this default font size for our project, so setting a font size of 100% through normalize is fine and dandy. Through the body tag we provide a way in which we may affect font sizes globally:
+
+    app\assets\stylesheets\_define.sass
+
+    $base-font-size:    1em          !default
+
+    app\assets\stylesheets\desktop\_layout.sass
+
+    body
+      margin: 0 auto
+      width: 960px
+      font-size: $base-font-size
+      line-height: $base-line-height
+      background-color: $bg-body
+
+Again, we're going to use the browser's default setting. We could specify 100% here, but I'm using 1em to establish a unit of measure whereby 1em = 16px. We could also omit the reference completely. The best explanation of why were doing this can be found here:
+
+- [How we learned to leave default font-size alone and embrace the em][Embracing em's]
+
+#### Line Height
 
 
 
@@ -199,6 +258,8 @@ What follows are some ideas and resources to help you create your site's look an
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stacks-roundup
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
+[_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
+[_head.html.haml]:      https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
 [Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#font-services-and-tools
 [Typekit]:              https://typekit.com/
 [articles]:             http://blog.typekit.com/category/font-events/
@@ -213,6 +274,9 @@ What follows are some ideas and resources to help you create your site's look an
 [6 Questions]:          http://tympanus.net/codrops/2011/12/01/6-questions-you-should-ask-yourself-when-choosing-fonts/
 [Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
 [Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#a-brief-history-of-web-font-sizes
+[Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md#resets
+[stylesheet]:           https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
+[Embracing em's]:                   http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/

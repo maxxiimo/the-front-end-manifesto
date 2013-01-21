@@ -276,7 +276,7 @@ Sometimes I use compass' [reset utilities][] which are based on Eric Meyer's wor
 
 > Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards. We researched the differences between default browser styles in order to precisely target only the styles that need normalizing.
 
-I converted Eric Meyer's, and both the original Normalize.css and HTML 5 Boilerplate's normalize styles to .sass here:
+You can find Eric Meyer's, and both the original Normalize.css and HTML 5 Boilerplate's normalize styles here (a few converted to sass for you):
 
 - https://github.com/maxxiimo/base-resets
 

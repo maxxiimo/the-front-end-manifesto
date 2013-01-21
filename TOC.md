@@ -70,7 +70,8 @@ Table of Contents
   - Typography
     - A note on Font Stacks
     - Font Family
-    - Size and Line Height
+    - Size
+    - Line Height
     - Color
   - Color
   - Branding
