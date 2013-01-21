@@ -1,7 +1,7 @@
 Foundation Markup
 -----------------
 
-This is the first of three chapters that will help you set up a stellar base of code for any Rails application you want to create. In this first chapter we'll begin with our foundation markup. In the next chapter we will add [foundation styles][], and in chapter three a [Mobile on Rails][]. Our goal in these chapters is to teach you how to start your Rails applications out right, from the front end view coders perspective, and to give you the files you will need to do so. Let's get started.
+This is the first of three chapters that will help you set up a stellar base of code for any Rails application you want to create. In this first chapter we'll begin with our foundation markup. In the next chapter we will add [foundation styles][Chapter 2], and in chapter three a [Mobile on Rails][]. Our goal in these chapters is to teach you how to start your Rails applications out right, from the front end view coders perspective, and to give you the files you will need to do so. Let's get started.
 
 ### The Application Layout
 
@@ -120,7 +120,7 @@ Although not apparent yet, i.e. visually, we have created a top-notch markup fou
 
 ![][Basic HTML]
 
-Not very attractive! ...but don't worry we'll address that in the [next chapter][foundation styles].
+Not very attractive! ...but don't worry we'll address that in the [next chapter][Chapter 2].
 
 ### Organization
 
@@ -277,9 +277,9 @@ I should mention that the author of this article follows up with a solution in h
 - We then grabbed all of the starter code for this chapter, our foundation markup, and integrated into a new Rails application.
 - Finally, we took a look at how this foundation markup is organized and briefly reviewed legacy browsers.
 
-In the [next chapter][foundation styles], we will begin to set up our foundation styles.
+In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 
-[foundation styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [Mobile on Rails]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
 [The Rails View]:       http://pragprog.com/book/warv/the-rails-view
 [starter code]:         https://github.com/maxxiimo/base-haml

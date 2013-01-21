@@ -1,7 +1,7 @@
 Foundation Styles
 -----------------
 
-Equally important to your application as [foundation markup][] are foundation styles. HTML and CSS are the rebar of the World Wide Web. We laid out our HTML, now let's square away on our CSS. To do so we will review some of the options out there in terms of preprocessors, CSS authoring utilities, CSS frameworks and grade systems. We will conclude with best practices in stylesheet set up and maintenance. For our foudation styles we will implement the chapters [starter CSS][] -- which I have developed over the years with a lot of trial and error and OCD love.
+Equally important to your application as [foundation markup][Chapter 1] are foundation styles. HTML and CSS are the rebar of the World Wide Web. We laid out our HTML, now let's square away on our CSS. To do so we will review some of the options out there in terms of preprocessors, CSS authoring utilities, CSS frameworks and grade systems. We will conclude with best practices in stylesheet set up and maintenance. For our foudation styles we will implement the chapters [starter CSS][] -- which I have developed over the years with a lot of trial and error and OCD love.
 
 ### Preprocessors
 
@@ -66,7 +66,7 @@ Before we begin will need to quickly set up Compass.
 
 #### Compass Set Up
 
-1.  If you have not done so already, per the [Foundation Markup][] chapter, add "compass-rails" to your gemfile. For more explicit directions take a look at the [compass-rails][] gem source.
+1.  If you have not done so already, per the [Foundation Markup][Chapter 1] chapter, add "compass-rails" to your gemfile. For more explicit directions take a look at the [compass-rails][] gem source.
 
 2.  Run...
 
@@ -115,11 +115,11 @@ Delete your application.css file if you have not done so already. It is being re
 
 NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
 
-Simple as that, and if you have been following along from the last chapter, [Foundation Markup][], here is what your page will now look with the new stylesheets in place:
+Simple as that, and if you have been following along from the last chapter, [Foundation Markup][Chapter 1], here is what your page will now look with the new stylesheets in place:<br>
 
 ![][Basic HTML No Styles]
 
-It's pretty basic, but much better than before.
+It's pretty basic, but much better than [before][].
 
 ### Organization
 
@@ -481,9 +481,8 @@ To see some great examples checkout:
 
 With all of this work you are more than ready to begin building an app with your best foot forward. If you want to go the extra mile, and I suggest you do, our [next chapter][] will focus on a solid foundation for small screens, i.e. mobile browsers.
 
-[foundation markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
+[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [starter CSS]:          https://github.com/maxxiimo/base-css
-[Foundation Markup]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [Sass]:                 http://sass-lang.com/
 [Less]:                 http://lesscss.org/
 [Haml]:                 http://haml-lang.com/
@@ -510,6 +509,7 @@ With all of this work you are more than ready to begin building an app with your
 [How I Use Compass]:    http://austintech.com/blog/2011/08/19/how-i-use-compass-with-rails-3-1/
 [Asset Pipeline]:       http://www.engineyard.com/blog/2011/sass-compass-and-the-rails-3-1-asset-pipeline/
 [application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss
+[before]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md#end-result
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [h5bp_normalize_v101.sass]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v101.sass
 [_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
