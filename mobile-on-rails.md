@@ -93,7 +93,7 @@ There are a number of different solutions you can use to deliver mobile based on
 
 *Step 3:* Add the following gem to your Gemfile and then bundle install:
 
-        gem 'mobylette'
+    gem 'mobylette'
 
 *Step 4:* Add the following line to application_controller.rb:
 
