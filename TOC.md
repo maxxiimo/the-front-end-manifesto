@@ -48,9 +48,9 @@ Table of Contents
       - Advanced Solution
     - II. Responsive Web Design
       - Flexible Grids
-      - Flexible Media
       - Media Types
       - Media Queries
+      - Flexible Media
       - Conditional Loading
     - III. A Hybrid Approach
     - An Ajax Include Pattern
