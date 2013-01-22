@@ -395,13 +395,12 @@ So what do our brand-new breakpoints look like?
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
           @content
 
-How do you use them? First we'll place them in a sass partial called [_media_queries.sass][], and then import them into our [application.scss][]
-file (this will be included by default in your base styles):
+How do you use them? First we'll place them in a sass partial called [_media_queries_px.sass][px media querries], and then import them into our application.scss file (this will be included by default in your base styles):
 
     /* MIXINS
       ============================================================================ */
     @import "compass";
-    @import "media_queries";
+    @import "media_queries_px";
     @import "mixins"
 
 Then if you want to specify a particular style for whatever, lets say a different font color for super small screens, you might write something like this:
@@ -419,15 +418,26 @@ There's a whole heck of a lot more you can do with media queries. Here are some 
 - [Responsive Web Design in Sass: Using Media Queries in Sass 3.2][Sass Media Queries]
 - [Retina Display Media Query][Retina Media Queries]
 
-#### Media Queries em's
+#### Em's and Media Queries
 
-You might have notice that are responsive grid uses em's, and our media queries are using px's.
+You might have noticed that our responsive grid uses em's, and our media queries are using px's. In fact all over the web in various media query articles you'll see the use of px's, but this in fact is not the best practice. Em's-based media queries are actually a better idea and here's why:
 
+Let's say your user – when viewing your project on their desktop – increases the base font size of their browser by hitting CTRL + several times (maybe they're a baby boomer and have trouble seeing at the default font size). Imagine that the content they are reading is contained in a \<div> using px's to define width, well when the user increases the base font size nothing will happen with its containing div, the width will remain the same, and those lines of text they are reading will be squeezed into the same \<div> – that smaller lines of text once harmoniously fit into.
 
+The bottom line, it might not look so good. If that same \<div>'s width had been defined with em's, it's width would have increased proportionally with the base font size increase. In other words, the amount of text per line would not dramatically alter the contents readability.
+
+If we use em's for our breakpoints, the trigger for the breakpoint would also take into account the base font size since it is based on em's, and even though the actual screen size has not changed, serving a layout on their desktop designed for smaller devices might make better sense when a larger base font is used.
+
+That's a lot to digest, and as usual I'm going to point you to some references that will help you understand the concept better:
+
+- [The EMs have it: Proportional Media Queries FTW!][EMs have it]
+- [How we learned to leave default font-size alone and embrace the em][Embrace the em]
+
+I've gone ahead and [converted the above breakpoints][converted breakpoints] to em's for you. They are already part of your base styles if you are following along with the book.
 
 #### Flexible Media
 
-Now that we have a flexible grid, it's time to look at Ethan's second ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a smart phone screen. It just doesn't make any sense.
+Now that we have a flexible grid and em-based media queries, it's time to look at Ethan's second ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a 320px wide screen. It just doesn't make any sense.
 
 
 
@@ -511,11 +521,13 @@ We've covered three approaches to mobile development in this chapter, and have i
 [Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
 [breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
 [Happy Cog]:            http://www.netmagazine.com/news/browser-screen-resolution-stats-rile-devs-121897
-[_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
-[application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss
+[px media querries]:    https://github.com/maxxiimo/base-css/blob/master/_media_queries_px.sass
 [Media queries]:        http://alpha.responsivedesign.is/develop/media-queries
 [Sass Media Queries]:   http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
 [Retina Media Queries]: http://css-tricks.com/snippets/css/retina-display-media-query/
+[EMs have it]:                     http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
+[Embrace the em]:     http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
+[converted breakpoints]: https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
 
