@@ -12,6 +12,7 @@ Table of Contents
       - A Framework within a Framework
       - Where Does It Live?
     - The Code
+      - HTML5 Boilerplate
       - Where Do Things Go?
       - Prep the App
       - End Result

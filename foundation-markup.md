@@ -1,8 +1,10 @@
-# Foundation Markup
+Foundation Markup
+=================
 
 This is the first of three chapters that will help you set up a stellar base of code for any Rails application you create. In this first chapter we'll begin with our foundation markup. In the Chapter 2 we add [foundation styles][Chapter 2], and in Chapter 3 we look at the alternatives for [mobile on Rails][Chapter 3]. Our goal in these chapters is to teach you how to start your Rails applications out right, from the front end view coders perspective, and to give you the files you will need to do so. Let's get started.
 
-## The Application Layout
+The Application Layout
+----------------------
 
 As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption. In this role when speaking about "layout" I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
 
@@ -33,7 +35,8 @@ Project
       - **layout**
       - **shared**
 
-## The Code
+The Code
+--------
 
 Our goal is to write and organize the components of our layout in such a way that different browsers and devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug into it with ease. To help you along this path you can grab my [starter code][]:
 
@@ -48,7 +51,7 @@ IMPORTANT: Since we're using modernizr and the asset pipeline, add the following
     # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
     config.assets.precompile += %w( modernizr-2.6.2.min.js )
 
-#### About HTML5 Boilerplate
+### HTML5 Boilerplate
 
 In coding copy and learn from the best, improve, then give back. I find that the best place to reference when building front end view templates is [HTML5 Boilerplate][]. This resource is an ongoing collaboration between expert front-end developers and the community.
 
@@ -123,7 +126,8 @@ Although not apparent yet, i.e. visually, we have created a top-notch markup fou
 
 Not very attractive! ...but don't worry we'll address that in the [next chapter][Chapter 2].
 
-## Organization
+Organization
+------------
 
 Let's dissect what we've done.
 
@@ -183,9 +187,9 @@ Other than all the Internet Explorer conditions it's concise and simple. If you 
 
 ### JavaScript
 
-I don't think I have found a more comprehensive overview on this than Daniel Kehoe's article: "[Unholy Rails: External Scripts, jQuery Plugins, and Page-Specific JavaScript][Unholy Rails]"
+I don't think I have found a more comprehensive overview on this than Daniel Kehoe's article:
 
-#### The Scripts Partial
+- [Unholy Rails: External Scripts, jQuery Plugins, and Page-Specific JavaScript][Unholy Rails]
 
 Generally it is best to put JavaScript at the very bottom of application.html.haml. Doing so will allow the page to render before scripts are loaded, but some scripts such as modernizr need to load before your HTML so naturally I include them in [_head.html.haml][_head]. To accommodate all other JavaScript files I use a [_scripts.html.haml][_scripts] partial located in the layouts folder.
 
@@ -197,7 +201,7 @@ For an explanation on what this stuff is/does check out:
 
 - [Helpful things to keep in your \<head>][Helpful Things]
 
-#### The Title
+### The Title
 
 You may have also noticed that I use the following snippet of code in [<head>][_head]:
 
@@ -208,7 +212,8 @@ You can use whatever you would like, or nothing at all (although I wouldn't advi
     - content_for :title do
       Some Cool Title
 
-## Moving Forward
+Moving Forward
+--------------
 
 Before we move on to styles, there are a few things we need to consider when adding files and organizing code within our framework moving forward.
 
@@ -271,7 +276,8 @@ I should mention that the author of this article follows up with a solution in h
 
 - [How to Use Responsive Web Design to Support Old Browsers][RWD for IE]
 
-## What We've Done
+What We've Done
+---------------
 
 - We started this chapter by laying out the groundwork for your foundation markup.
 - We then began to discuss what an application layout is, from the front end coder's viewpoint, and how it is organized in a Rails application.
