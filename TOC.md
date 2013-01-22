@@ -3,7 +3,10 @@ Table of Contents
 
 - [Cover][]
 - [The Manifesto][]
-- [Foundation Markup][]
+
+**SECTION 1**
+
+- Chapter 1: [Foundation Markup][]
     -  The Application Layout
       - A Framework within a Framework
       - Where Does It Live?
@@ -21,7 +24,7 @@ Table of Contents
       - Using Partials
       - IE 6
     - What We've Done
-- [Foundation Styles][]
+- Chapter 2: [Foundation Styles][]
     - Preprocessors
     - Compass
     - CSS Frameworks and Grid Systems
@@ -40,7 +43,7 @@ Table of Contents
       - Variables
       - Mixins
     - What We've Done
-- [Mobile on Rails][]
+- Chapter 3: [Mobile on Rails][]
     - Mobile First
     - Plan of Attack
     - I. User Agent Sniffing
@@ -56,7 +59,10 @@ Table of Contents
     - An Ajax Include Pattern
     - Using JavaScript
     - What We've Done
-- [Information Architecting][]
+
+**SECTION 2**
+
+- Chapter 4: [Information Architecting][]
     - A Mosaic of Information
     - The Storyline
     - Gathering and Organizing Information
@@ -66,7 +72,7 @@ Table of Contents
       - Content
     - Feedback
     - What We've Done
-- [Visual Design for the Nondesigner][Visual Design]
+- Chapter 5: [Visual Design for the Nondesigner][Visual Design]
   - Typography
     - A note on Font Stacks
     - Font Family
@@ -80,7 +86,7 @@ Table of Contents
     - Icon Sprites
   - Images
   - Other Resources
-- [Slicing and Dicing Mockups][]
+- Chapter 6: [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
   - Step 3 - Fonts
@@ -90,24 +96,15 @@ Table of Contents
   - Step 8 - Navigation
   - Step 9 - HTML for the Main Content
   - Step 10 - Sprites and CSS3 for Images
+
+**SECTION 3**
+
 - [Images][]
   - Organization
   - Choosing an Image Format
   - Spriting
   - Responsive Resizing
   - Retina Displays
-- [Optimization][]
-    - Gzipping
-    - Caching
-      - Client-Side
-      - Server-Side
-    - Image Optimization
-    - Compressing and the Asset Pipeline
-    - Spriting
-    - What We've Done
-- [Accessibility][]
-  - Standardize Your Links
-  - Use ARIA Roles
 - [Forms][]
   - Basic Form Structure
   - Ordered List or Paragraphs?
@@ -121,9 +118,27 @@ Table of Contents
   - Context Awareness Patterns
 - [Gradients][]
 - [Email Coding][]
+
+**SECTION 4**
+
+- [Optimization][]
+    - Gzipping
+    - Caching
+      - Client-Side
+      - Server-Side
+    - Image Optimization
+    - Compressing and the Asset Pipeline
+    - Spriting
+    - What We've Done
+- [Accessibility][]
+  - Standardize Your Links
+  - Use ARIA Roles
 - [Search Engine Optimization][]
 - [Style Guides][]
-- [Appendices][]
+
+**APPENDICES**
+
+- [Appendices Index][Appendices]
   - Groundwork Tasks
   - Frameworks
   - Grid Systems
