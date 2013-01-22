@@ -143,7 +143,7 @@ view/shared
 4. [_navigation.html.haml][_navigation]
 5. [_footer.html.haml][_footer]
 
-We locate partials 1 and 2 in the same layout folder as application.html.haml -- NOT in the shared folder --- because they are essentially integral to the layout/application.html.haml file. Some people like to locate them in the shared folder. To pull them into application.html.haml  I like to use helper methods:
+We locate partials 1 and 2 in the same layout folder as application.html.haml – NOT in the shared folder – because they are essentially integral to the layout/application.html.haml file. Some people like to locate them in the shared folder. To pull them into application.html.haml  I like to use helper methods:
 
     def head
       render :partial => 'layouts/head'

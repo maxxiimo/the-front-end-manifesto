@@ -10,7 +10,7 @@ Now it is time to build on this foundation. The best place to start is with the 
 
 The key to being successful in building your application splash page and/or console can be summed up in one word: **Storytelling**.
 
-Back in 2008, at "An Event Apart: Boston," I listened to [Jason Santa Maria][] -- then the Creative Director of Happy Cog Studios -- give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
+Back in 2008, at "An Event Apart: Boston," I listened to [Jason Santa Maria][] – then the Creative Director of Happy Cog Studios – give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
 
 These talks have stuck with me over the years and have become the manner in which I view website site design; as storytelling. What follows is an explanation of how to build a story for your website, and translate that into code and the sites look and feel (styles). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about this:
 
@@ -18,7 +18,7 @@ These talks have stuck with me over the years and have become the manner in whic
 2. Work with a graphic designer from the get-go and implement a design mockup into your foundation work.
 3. Start from scratch and architect yourself, then get help from a graphic designer on the look and feel.
 
-In this chapter we're going to mostly focus on option 1. Hiring a graphic designer from the get-go is not a bad idea -- graphic design and front end engineering are two complete different skill sets -- but perhaps there isn't money in the budget to hire a graphic designer, or this responsibility falls on your lap, or maybe you just want to do it yourself.
+In this chapter we're going to mostly focus on option 1. Hiring a graphic designer from the get-go is not a bad idea – graphic design and front end engineering are two complete different skill sets – but perhaps there isn't money in the budget to hire a graphic designer, or this responsibility falls on your lap, or maybe you just want to do it yourself.
 
 NOTE: As a consultant brought into a project, oftentimes design mockups have already been developed and it's now my job to integrate them into the application. The next chapter, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
 
@@ -38,11 +38,11 @@ The unifying message behind this mosaic (blocks) of information is the storyline
 
 > I'm a great Web site for finding a job...a job that is perfect for you, you should join me, if you do you will have access to tons of perfect jobs and your life will change for the better forever!
 
-In this storyline example -- with my Information Architect (IA) hat on -- I immediately see several major blocks of information:
+In this storyline example – with my Information Architect (IA) hat on – I immediately see several major blocks of information:
 
-1.  What is the site in 10 words or less -- possibly a summary box.
-2.  How do I join -- a sign-up section.
-3.  An area that describes the benefits of the site -- maybe user testimonials.
+1.  What is the site in 10 words or less – possibly a summary box.
+2.  How do I join – a sign-up section.
+3.  An area that describes the benefits of the site – maybe user testimonials.
 4.  The obvious table stakes to this story, the side story:
     - A logo
     - Legalese (Copyright, ToS, Privacy)
@@ -126,7 +126,7 @@ The end result: a well-defined user interface layout for my entire application.
 
 The prototype is the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond the early exercises, you can send them to a live URL where they can click through to simulate the actual application (and view it on different devices). Any changes you make will be reflected immediately, which they'll love. For you, everything from this point forward is just an iteration in the development process.
 
-Because you laid out your applications [markup][], [styles][], and [mobile][] groundwork in chapters 1 through 3 -- and hopefully have deployed on Heroku or elsewhere -- what you wireframe here will be production ready, and in this section we will begin to transform our paper prototype into a working wireframe.
+Because you laid out your applications [markup][], [styles][], and [mobile][] groundwork in chapters 1 through 3 – and hopefully have deployed on Heroku or elsewhere – what you wireframe here will be production ready, and in this section we will begin to transform our paper prototype into a working wireframe.
 
 An assumption I will make here is that you already are a proficient front end coder, so going into how to go about writing basic markup from the prototypes we just developed is something I won't get into. After codifying my prototypes here is what I have:
 
