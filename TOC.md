@@ -6,7 +6,7 @@ Table of Contents
 
 **SECTION 1**
 
-- Chapter 1: [Foundation Markup][]
+- [Foundation Markup][]
     -  The Application Layout
       - A Framework within a Framework
       - Where Does It Live?
@@ -24,9 +24,7 @@ Table of Contents
       - Using Partials
       - IE 6
     - What We've Done
-
-
-- Chapter 2: [Foundation Styles][]
+- [Foundation Styles][]
     - Preprocessors
     - Compass
     - CSS Frameworks and Grid Systems
@@ -45,9 +43,7 @@ Table of Contents
       - Variables
       - Mixins
     - What We've Done
-
-
-- Chapter 3: [Mobile on Rails][]
+- [Mobile on Rails][]
     - Mobile First
     - Plan of Attack
     - I. User Agent Sniffing
@@ -66,7 +62,7 @@ Table of Contents
 
 **SECTION 2**
 
-- Chapter 4: [Information Architecting][]
+- [Information Architecting][]
     - A Mosaic of Information
     - The Storyline
     - Gathering and Organizing Information
@@ -76,9 +72,7 @@ Table of Contents
       - Content
     - Feedback
     - What We've Done
-
-
-- Chapter 5: [Visual Design for the Nondesigner][Visual Design]
+- [Visual Design for the Nondesigner][Visual Design]
   - Typography
     - A note on Font Stacks
     - Font Family
@@ -92,9 +86,7 @@ Table of Contents
     - Icon Sprites
   - Images
   - Other Resources
-
-
-- Chapter 6: [Slicing and Dicing Mockups][]
+- [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
   - Step 3 - Fonts
@@ -113,8 +105,6 @@ Table of Contents
   - Spriting
   - Responsive Resizing
   - Retina Displays
-
-
 - [Forms][]
   - Basic Form Structure
   - Ordered List or Paragraphs?
@@ -122,17 +112,11 @@ Table of Contents
   - Extras
   - FormHelpers
   - Fancy/Sassy Buttons
-
-
 - [Navigation][]
   - Types
   - CSS
   - Context Awareness Patterns
-
-
 - [Gradients][]
-
-
 - [Email Coding][]
 
 **SECTION 4**
@@ -146,16 +130,10 @@ Table of Contents
     - Compressing and the Asset Pipeline
     - Spriting
     - What We've Done
-
-
 - [Accessibility][]
   - Standardize Your Links
   - Use ARIA Roles
-
-
 - [Search Engine Optimization][]
-
-
 - [Style Guides][]
 
 **APPENDICES**
