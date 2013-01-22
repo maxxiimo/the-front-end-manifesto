@@ -433,7 +433,7 @@ That's a lot to digest, and as usual I'm going to point you to some references t
 - [The EMs have it: Proportional Media Queries FTW!][EMs have it]
 - [How we learned to leave default font-size alone and embrace the em][Embrace the em]
 
-I've gone ahead and [converted the above breakpoints][converted breakpoints] to em's for you. They are already part of your base styles if you are following along with the book.
+I've gone ahead and [converted the above breakpoints][converted breakpoints] to em's for you by dividing each breakpoint by 16: assumption being that the default screen size is 16px and therefore 1em = 16px. They are already part of your base styles if you are following along with the book.
 
 #### Flexible Media
 
