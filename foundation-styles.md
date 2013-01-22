@@ -543,6 +543,6 @@ With all of this work you are more than ready to begin building an app with your
 [Sass documentation]:   http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 [Useful SASS Mixins]:   http://sachagreif.com/useful-sass-mixins/
 [Custom User @mixins]:  http://css-tricks.com/custom-user-mixins/
-[next chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
+[next chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
 
 [Basic HTML No Styles]: http://chrismaxwell.com/manifesto/getting-started/base-html-files-with-styles.jpg
