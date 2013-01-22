@@ -4,9 +4,9 @@ Table of Contents
 - [Cover][]
 - [The Manifesto][]
 
-**SECTION 1**
+### SECTION 1
 
-Chapter 1
+#### Chapter 1
 - [Foundation Markup][]
     -  The Application Layout
       - A Framework within a Framework
@@ -26,7 +26,7 @@ Chapter 1
       - IE 6
     - What We've Done
 
-Chapter 2
+#### Chapter 2
 - [Foundation Styles][]
     - Preprocessors
     - Compass
@@ -47,7 +47,7 @@ Chapter 2
       - Mixins
     - What We've Done
 
-Chapter 3
+#### Chapter 3
 - [Mobile on Rails][]
     - Mobile First
     - Plan of Attack
@@ -65,9 +65,9 @@ Chapter 3
     - Using JavaScript
     - What We've Done
 
-**SECTION 2**
+### SECTION 2
 
-Chapter 4
+#### Chapter 4
 - [Information Architecting][]
     - A Mosaic of Information
     - The Storyline
@@ -79,7 +79,7 @@ Chapter 4
     - Feedback
     - What We've Done
 
-Chapter 5
+#### Chapter 5
 - [Visual Design for the Nondesigner][Visual Design]
   - Typography
     - A note on Font Stacks
@@ -95,7 +95,7 @@ Chapter 5
   - Images
   - Other Resources
 
-Chapter 6
+#### Chapter 6
 - [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
@@ -107,9 +107,9 @@ Chapter 6
   - Step 9 - HTML for the Main Content
   - Step 10 - Sprites and CSS3 for Images
 
-**SECTION 3**
+### SECTION 3
 
-Chapter 7
+#### Chapter 7
 - [Images][]
   - Organization
   - Choosing an Image Format
@@ -117,7 +117,7 @@ Chapter 7
   - Responsive Resizing
   - Retina Displays
 
-Chapter 8
+#### Chapter 8
 - [Forms][]
   - Basic Form Structure
   - Ordered List or Paragraphs?
@@ -126,21 +126,21 @@ Chapter 8
   - FormHelpers
   - Fancy/Sassy Buttons
 
-Chapter 9
+#### Chapter 9
 - [Navigation][]
   - Types
   - CSS
   - Context Awareness Patterns
 
-Chapter 10
+#### Chapter 10
 - [Gradients][]
 
-Chapter 11
+#### Chapter 11
 - [Email Coding][]
 
-**SECTION 4**
+### SECTION 4
 
-Chapter 12
+#### Chapter 12
 - [Optimization][]
     - Gzipping
     - Caching
@@ -151,18 +151,18 @@ Chapter 12
     - Spriting
     - What We've Done
 
-Chapter 13
+#### Chapter 13
 - [Accessibility][]
   - Standardize Your Links
   - Use ARIA Roles
 
-Chapter 14
+#### Chapter 14
 - [Search Engine Optimization][]
 
-Chapter 15
+#### Chapter 15
 - [Style Guides][]
 
-**APPENDICES**
+### APPENDICES
 
 - [Appendices Index][Appendices]
   - Groundwork Tasks
