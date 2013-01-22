@@ -1,5 +1,5 @@
 Information Architecting
-------------------------
+========================
 
 In the first section of this book we laid down the foundation for our application by:
 
@@ -22,7 +22,8 @@ In this chapter we're going to mostly focus on option 1. Hiring a graphic design
 
 NOTE: As a consultant brought into projects, oftentimes design mockups have already been developed and it's now my job to integrate them into the application. Chapter 7, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
 
-### A Mosaic of Information
+A Mosaic of Information
+-----------------------
 
 To build our stories the first thing we need to understand is what it means to organize an applications information. As I mentioned in [Chapter 1][Chapter 1 Quote]:
 
@@ -32,7 +33,8 @@ How does "organizing information and function" relate to storytelling?
 
 A layout is really a mosaic of information that tells (conveys) something: a particular type of story. This information obviously was grouped together based on some criteria, and then placed on a website "page" that ultimately is viewed by an end-user. It had to be organized in some logical way to make absolute sense to the end-user, and probably designed to invite/entice/cause the end-user to take the next step or action, i.e. turn the page in the story.
 
-### The Storyline
+The Storyline
+-------------
 
 The unifying message behind this mosaic (blocks) of information is the storyline. Before content can be discovered, grouped, and placed in a layout the narrator, in this case you, has to have the stories general theme in mind. For example, the storyline might be:
 
@@ -50,13 +52,14 @@ In this storyline example – with my Information Architect (IA) hat on – I immedi
 
 ...and as the front end developer I'm already beginning to imagine how these blocks of information will be conveyed and coded to fit into our foundation markup and/or used by our backend development team. This is exactly what you will need to do. Think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed and coded.
 
-### Gathering and Organizing Information
+Gathering and Organizing Information
+------------------------------------
 
 Before you begin coding though, it's important to take a few preliminary steps. What follows are different techniques I use to gather all the blocks of information that will ultimately make up the sites story, i.e. users experience.
 
 NOTE: Throughout this process I highly recommend keeping the book "[Don't Make Me Think][]" by Steve Krug nearby as a reference. It’s a good read and everything he says is so darn obvious, and all there in one place.
 
-#### Index Card Exercise
+### Index Card Exercise
 
 The first technique involves the use of index cards to create a physical inventory of possible information components. It's best to do this exercise with others, especially stakeholders in the project. Here are the steps I follow:
 
@@ -100,7 +103,7 @@ Check out how this design group uses index cards:
 
 As a front end developer with years of practice, a huge part of me just wants to bypass this exercise and start coding (and change things on the fly as I move along). So why don't I? Experience has shown me that the manual process of labeling index cards and laying them out forces me to reflect and think outside of my coding box. It helps me discover new ideas, visualize and refine the information architecture, and not work in isolation (i.e. include others in the process). I find that by doing the exercise there's just enough chance of a better outcome that it's worth trying.
 
-#### Prototyping on Paper
+### Prototyping on Paper
 
 There are a number of applications out there that can help you prototype, but I prefer to go old-school with a pencil and paper. For presentational purposes you can transfer this exercise to PowerPoint or some other application for prototyping, but don't get bogged down and waste time doing so. Paper is highly portable, can be digitized (scan), requires no electricity or Internet connectivity, can easily be shared with others, and its use is a skill that is common between all stakeholders.
 
@@ -120,7 +123,8 @@ Here's what my paper prototype process looks like:
 
 The end result: a well-defined user interface layout for my entire application.
 
-### Wireframing
+Wireframing
+-----------
 
 **No More Exercises!** At this point it's time to start coding. From the exercises above you have absolutely everything you need to start coding with confidence kknowing that the site's information architecture and layout are pretty darn close to what you will ultimately develop.
 
@@ -134,13 +138,13 @@ An assumption I will make here is that you already are a proficient front end co
 
 Pretty bare-bones, but that will soon change.
 
-#### Content
+### Content
 
 A word on content. I have all of my content for the most part, but regarding the actual content for your project, if you have it great! If not, this article gives a nice overview of how content blocks can be used in situations where content is not known, perhaps a client has not yet delivered it:
 
 - [Content, First?][Content First]
 
-##### Lorem Ipsum
+#### Lorem Ipsum
 
 I for one don't mind using Lorem Ipsum as content placeholders. Here is a roundup of Rails Gems for it:
 
@@ -157,7 +161,7 @@ There's a lot of Lorem Ipsum generator services out there, here are a few (some 
 - [Cupcake Ipsum][]
 - [Bacon Ipsum][]
 
-##### Image Placeholders
+#### Image Placeholders
 
 Image placeholders in different sizes and styles are also plentiful (the second link will give you a pretty compreshensive list to choose from):
 
@@ -166,11 +170,13 @@ Image placeholders in different sizes and styles are also plentiful (the second 
 - [Functional Placeholder Images][Cambelt]
 - [Holder.js][]
 
-### Feedback
+Feedback
+--------
 
 One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services in our [Feedback Services][] in the Appendix.
 
-### What We've Done
+What We've Done
+---------------
 
 Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release often.
 

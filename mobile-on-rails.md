@@ -1,5 +1,5 @@
 Mobile on Rails
----------------
+===============
 
 In Chapter 1 we learned about [foundation markup][], and in Chapter 2, [foundation styles][], but what about mobile? What about smartphones and tablets? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. There was talk about desktop screen sizes, but it could be overlooked since the differences were not so great or prevalent, and the "fix" came relatively quickly: the industry settled on standard design widths and/or employed liquid layouts.
 
@@ -13,7 +13,8 @@ With out a doubt your end-users are going to look at your work on a smartphone o
 
 In this chapter we are going to explore the different ways in which we can serve content tailored to the different devices our users are using, and in this process we will develop our own mobile foundation, or best practices.
 
-### Mobile First
+Mobile First
+------------
 
 Once upon a time ago when I worked for Fidelity Investments' FEB Design unit, we took an existing desktop application and turned it into a mobile app (pre-smartphone era). The result was a precise definition of the applications basic information architecture, no more no less. Several of my colleagues pointed this out and used the mobile application to better architect the greater desktop application.
 
@@ -21,7 +22,8 @@ As an Information Architect with this experience, the [Mobile First][] design pa
 
 In [Chapter 4][] we will tackle this paradigm shift head-on as we architect our application. As a general rule,, mobile is now a factor, so it makes sense to include preparing for it at the get-go of the project.
 
-### Plan of Attack
+Plan of Attack
+--------------
 
 At the end of this chapter Dan Pickett the founder of [LaunchWare][] describes several different methods to tackle mobile on Ruby on Rails, but for this chapter we will need to choose one approach to build our mobile foundation. Perhaps in the next book "Mobile on Rails" we can dive in even further. For now, here are three possibilities we will explore:
 
@@ -69,7 +71,8 @@ Whatever approach you decide, keep in mind that there are a spectrum of user and
 
 In this chapter we will explore the three plans of attack.
 
-### I. User Agent Sniffing
+I. User Agent Sniffing
+----------------------
 
 When I worked at Fidelity Investments, pre-smart phone era, mobile was a complete separate concern from desktops. Smallscreen devices operated behind what was referred to as a carriers "walled garden" which oftentimes did not allow CSS, or JavaScript, or HTML tables, or all three. Then, like now, there were so many different types of devices, carrier rules, screen sizes, and mobile browsers (or none at all), and Fidelity wanted to cover 99.999% [possibly exaggerated by me] of all small screen devices out there. Why? Imagine a billionaire customer from Bahrain trying to look at his or her Fidelity portfolio on some obscure cell phone and nothing showing up! [Rationale also made up by me, but not the underlying object. Consistent coverage.]
 
@@ -77,7 +80,7 @@ To accomplish ubiquity we developed a super dumbed down HTML 1.0 interface that 
 
 Fast-forward to today, with the advent of smart devices and their proliferation, we also need to make sure our applications work correctly and consistently across a multitude of different devices and screen sizes. Like my days at Fidelity, we can effectively use devices user agents to identify browsers, screen resolutions, type of device, and based on this information determine what markup and styles to serve.
 
-#### Quickest Solution
+### Quickest Solution
 
 There are a number of different solutions you can use to deliver mobile based on User Agent Sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. To deliver our mobile views we will use the quickest and simplest solution: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
 
@@ -111,7 +114,7 @@ And that's it! I like to use [User Agent Switcher][] to test on my browser. Give
 
 There certainly does seem to be a lot of repetition in our code, two files for almost everything. So you know, if a .mobile.haml file is not available, Mobylette will default to a regular .html.haml file. I personally like splitting concerns, but I also understand that this may not be the best approach for many projects. One of the key arguments for Responsive Web Design is the elimination of duplication. We will investigate this option thoroughly, but before then let's try a more advanced agent sniffing solution.
 
-#### Advanced Solution
+### Advanced Solution
 
 For our advanced solution we we use a gem called [Mobvious][]. It is a rack-based solution and easy to set up, and is highly configurable and versatile in on how you detect mobile requests:
 
@@ -119,7 +122,7 @@ For our advanced solution we we use a gem called [Mobvious][]. It is a rack-base
 2.  URL pattern matching
 3.  Remembering a user's manual choice
 
-##### Set Up
+#### Set Up
 
 Here are the steps we will use to configure Mobvious for our needs:
 
@@ -169,7 +172,7 @@ To test that it is working you can use:
         end
     end
 
-##### Usage
+#### Usage
 
 Now that we have it set up, here is how we will use it. From our [Mobile Solutions Roundup][Mobile Roundup] we combine a bit of [Ryan Bates][] mobile solution with Mobvious. Part of Ryan Bates solution creates a new mime type (:mobile), and uses a before_filter to test if the request is a mobile request. If true, the mime type is set to :mobile. As such, only files named with a ".mobile.haml" extension will be served.
 
@@ -196,7 +199,7 @@ To do this in our application we add the following to application_controller.rb:
 
 Just like in the simple solution, requests from different devices will be served up the correct markup and styles for the device, based on the new mime type.
 
-##### Reorganize
+#### Reorganize
 
 Our solution is working well, but I'm feeling like there are too many files in each app/views folder – some ending with ".html.haml" others with ".mobile.haml". To better organize we can create a special folder just for our mobile views by adding the following to the prepare_for_mobile method in application_controller.rb:
 
@@ -226,7 +229,8 @@ If you prefer to organize your mobile views outside of the regular app/views pat
 
          prepend_view_path Rails.root + 'app' + 'views_mobile'
 
-### II. Responsive Web Design
+II. Responsive Web Design
+-------------------------
 
 User agent stiffing is awesome, but what about in projects where it's overkill? Is there something else we can do? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][RWD]". In his corresponding book he explains:
 
@@ -245,7 +249,7 @@ If you're interested in learning more definitely read the book, it's pretty good
 
 Let's take a look at these three components one by one starting with flexible grids.
 
-#### Flexible Grids
+### Flexible Grids
 
 "A flexible, grid-based layout" is a layout that proportionally responds via CSS to the context in which the page is drawn. In other words the grids dimensions are flexible and change proportionately as a screen size changes. It does so through the use of percentages or em's in declaring a containers dimensions, margins, and/or padding.
 
@@ -300,7 +304,7 @@ Don't forget to restart your server, and wallah! You have a pretty powerful resp
 - [Responsive Grids With Susy][Susy Grids]
 - [Off-canvas layout with Susy][Off-canvas]
 
-#### Media Types
+### Media Types
 
 Now that we have a flexible grid, it's time to look at Ethan's second ingredient in RWD; media queries. To understand media queries let's take a little look at the history behind them.
 
@@ -313,7 +317,7 @@ Media types could be targeted via @media or @import rules, or in the HTML \<link
 
 The problem with this specification though was inconsistent implementation across mobile browsers, plus the list of media types did not accommodate the wide range of screen sizes. Could you imagine how useless it would be today? And that's where media queries came in and saved the day.
 
-#### Media Queries
+### Media Queries
 
 With so many screen sizes and new devices popping up left and right, using media type alone to serve up styles for specific devices would be impractical. Media queries, on the other hand, do not solely rely on just a handful of predefined types. Media queries are much more flexible in that they allow you to test a media type with a logical expression that evaluates to true or false. For example:
 
@@ -323,7 +327,7 @@ In this case, the media type All (implied by shorthand syntax) is matched agains
 
 Unlike the old specification, media queries allow you to move beyond a finite set of media types, and test for a broader range of conditions including minimum and maximum widths, heights, screen orientation, [and more][Media Queries]. Perfect for serving up device sensitive styles and content to a wide range of screen sizes and device capabilities.
 
-##### Target Devices
+#### Target Devices
 
 Before we write our own media queries we need to determine what screen sizes we plan to target. I'm going to make the assumption that our audience uses desktop computers/laptops, tablet devices, and smart phones, but not televisions or anything else for that matter to browse the web. I'm making this assumption to give us something to work with, but you should check your Web logs!
 
@@ -350,7 +354,7 @@ On the other hand I think it's good to start with something and redefine as cont
 
 Why don't we grab a few and begin.
 
-##### @media Rules
+#### @media Rules
 
 Based on [StatCounter Global Stats][Stats] for North America over the last three months, it looks like there are five sizes we should define. Rather than use device names let's use generic names like: xs (extra small), s (small), m (medium), l (large), and xl (extra large). FYI - The breakpoints we define here will serve as a starting point, we can always change numbers or add/remove sizes (xxs, xxl, etc.) when user needs dictate that we should.
 
@@ -418,7 +422,7 @@ There's a whole heck of a lot more you can do with media queries. Here are some 
 - [Responsive Web Design in Sass: Using Media Queries in Sass 3.2][Sass Media Queries]
 - [Retina Display Media Query][Retina Media Queries]
 
-#### Em's and Media Queries
+### Em's and Media Queries
 
 You might have noticed that our responsive grid uses em's, and our media queries are using px's. In fact all over the web in various media query articles you'll see the use of px's, but this in fact is not the best practice. Em's-based media queries are actually a better idea and here's why:
 
@@ -435,7 +439,7 @@ That's a lot to digest, and as usual I'm going to point you to some references t
 
 I've gone ahead and [converted the above breakpoints][converted breakpoints] to em's for you by dividing each breakpoint by 16: assumption being that the default screen size is 16px and therefore 1em = 16px. They are already part of your base styles if you are following along with the book.
 
-#### Flexible Media
+### Flexible Media
 
 Now that we have a flexible grid and em-based media queries, it's time to look at Ethan's second ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a 320px wide screen. It just doesn't make any sense.
 
@@ -443,12 +447,13 @@ Now that we have a flexible grid and em-based media queries, it's time to look a
 
 
 
-#### Conditional Loading
+### Conditional Loading
 
 
 
 
-### III. A Hybrid Approach
+III. A Hybrid Approach
+----------------------
 
 > That’s not to say that mobile websites are inherently flawed, or that there aren’t valid business cases for creating them. But I do think fragmenting our content across different "device-optimized" experiences is a losing proposition, or at least an unsustainable one. As the past few years have shown us, we simply can’t compete with the pace of technology.
 
@@ -456,11 +461,13 @@ Now that we have a flexible grid and em-based media queries, it's time to look a
 
 
 
-### An Ajax Include Pattern
+An Ajax Include Pattern
+-----------------------
 
 [An Ajax-Include Pattern for Modular Content][Ajax-Include]
 
-### Using JavaScript
+Using JavaScript
+----------------
 
 Feature Detection
 
@@ -468,7 +475,8 @@ Feature Detection
 [The Essentials of Zepto.js][Zepto]
 
 
-### What We've Done
+What We've Done
+---------------
 
 We've covered three approaches to mobile development in this chapter, and have incorporated these approaches into our foundation code base. So many different approaches begs the question, which one do I use? Well, that depends. It depends on the project and needs. When I asked [LaunchWare][] founder Dan Pickett what he thought was the best approach for mobile, his answer was so succinct (and backed with experience) that I'm just going to quote it in its entirety here:
 

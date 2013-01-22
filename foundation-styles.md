@@ -1,9 +1,10 @@
 Foundation Styles
------------------
+=================
 
 Equally important to your application as [foundation markup][Chapter 1] are foundation styles. HTML and CSS are the rebar of the World Wide Web. We laid out our HTML, now let's square away on our CSS. To do so we will review some of the options out there in terms of preprocessors, CSS authoring utilities, CSS frameworks and grade systems. We will conclude with best practices in stylesheet set up and maintenance. For our foudation styles we will implement the chapters [starter CSS][] – which I have developed over the years with a lot of trial and error and OCD love.
 
-### Preprocessors
+Preprocessors
+-------------
 
 Probably the two most well-known dynamic stylesheet preprocessors in use today are [Sass][] and [Less][]. [Sass][] is the sister of [Haml][], and my preprocessor of choice as well as the default preprocessor in Rails 3.X. Besides being awesome, as a Rails front end developer you are going to predominantly see Sass used in projects you work on, so if you haven't dove in already, [you should][].
 
@@ -22,7 +23,8 @@ NOTE: When using Sass or Haml these two resources are absolutely indispensable:
 
 So what about [Less][]? Well it's the runner-up. That's all I'm going to say about that (remember this is a manifesto which is opinionated by nature).
 
-### Compass
+Compass
+-------
 
 So right off the bat I have to say that I love [Compass][]. It's based on Sass, powerful, well-documented, widely used, there are a ton of extensions for it, and it generally makes life easier for me.
 
@@ -41,7 +43,8 @@ When working with Compass the following resource may be useful to you:
 
 - [35 Great Resources for Compass and Sass][35 Great Resources]
 
-### CSS Frameworks and Grid Systems
+CSS Frameworks and Grid Systems
+-------------------------------
 
 Although my preference is to use Compass, I don't want to discourage you from adopting a framework in your project. Frameworks can be extremely helpful in starting a project. They give you a whole boatload of base styles that are instantly accessible through your HTML tags or specified class names. They include base font sizes and rhythm, default formats for almost every kind of HTML tag, and by simply dropping in the frameworks class names you can add some great looking styles to your project that are built to work, with very few hitches, across all browsers. On top of that you get prebuilt scripts for commonly used functions like pop-ups, modals and menu systems. The list goes on.
 
@@ -58,13 +61,14 @@ Why use a grid system? The following quote most succinctly answers this question
 
 You'll also find a comprehensive roundup of [grid systems][] in the Appendix.
 
-### Our Foundation
+Our Foundation
+--------------
 
 It's time to build our foundation styles. Our [stylesheets][starter CSS] are written using Sass, but more important than the actual styles themselves – there are really not that many included – is the way they are organized. In my experience as you move along a Rails project and the project grows in complexity and different authors contribute; stylesheets can become behemoths, unmanageable, and downright confusing. To avoid this it's highly advisable to start a project with some kind of organizational structure in place from the get-go. The styles I provide do exactly this.
 
 Before we begin will need to quickly set up Compass.
 
-#### Compass Set Up
+### Compass Set Up
 
 1.  If you have not done so already, per the [Foundation Markup][Chapter 1] chapter, add "compass-rails" to your gemfile. For more explicit directions take a look at the [compass-rails][] gem source.
 
@@ -123,13 +127,14 @@ Simple as that, and if you have been following along from the last chapter, [Fou
 
 It's pretty basic, but much better than [before][].
 
-### Organization
+Organization
+------------
 
 The [sample stylesheets][starter CSS] I provide are pretty sparse, and that's fine. What's important are the conventions I use and organizational structure of them. The styles I do provide are very common to most projects, and perhaps the bare minimum necessary to do things right.
 
 I can't stress enough how important it is to start a project with some kind of organizational structure in place. Even if you don't know what shape the application is going to take, it will serve you well to have a basic structure. As you move along you will fill in all of the empty placeholders.
 
-#### Style TOC
+### Style TOC
 
 Our [application.scss][] file is kind of like a table of contents for partials. In addition to indexing your partials, this TOC layers in styles based on precedents. Styles in the last partial entry, i.e. import, will override styles in partials listed above it so long as the styles preceding it have the same class or ID and specificity, and/or tag.
 
@@ -163,7 +168,7 @@ The TOC for our [application.scss][] with the files I have generated for you loo
   - [h5bp_helpers.sass][]
   - [h5bp_print.sass][]
 
-##### What's in Each Section
+#### What's in Each Section
 
 I use the above structure for most of my projects. What follows is a snippet of each section as they actually appear in [application.scss][] followed by a description of what the section should be used for:
 
@@ -264,13 +269,13 @@ The "staging" section is exactly what it says, a staging area for code. It's goo
 
 "Last" is a reminder that those styles need to appear last.
 
-##### Organizational Notes
+#### Organizational Notes
 
 Why the "desktop" subfolder? To better organize desktop/tablet specific files. In the next chapter we will create another subfolder called "mobile". Files outside of these two folders are common to both device types.
 
 Why the "=" underlines? It helps me find things and see the organization, especially when I browse CSS output from a browser in development mode.
 
-#### Resets
+### Resets
 
 The granddaddy of all resets is Eric Meyer's "[Reset CSS][]".
 
@@ -286,11 +291,12 @@ The following article briefly outlines the changes in resets moving into HTML 5:
 
 - [HTML5 Reset Stylesheet][HTML5 Resets]
 
-### Moving Forward
+Moving Forward
+--------------
 
 You will add a lot more to the structure above. As you do so, here are some tips to keep things as organized as I have laid out above in the [starter CSS][].
 
-#### Modularize Styles
+### Modularize Styles
 
 Modularizing your styles is a great way to keep things organized. The degree of separation/modularization depends on your personal and/or teams preferences and project needs. As you add more styles, and consequently partials, consider the following:
 
@@ -310,7 +316,7 @@ Modularizing your styles is a great way to keep things organized. The degree of 
 
 3.  Group related partials in folders. Take for example our [resets][] files. I provide several different flavors of resets, some of which are subdivided into separate files, but all of them fall under the folder "resets".
 
-#### Use a Labeling System
+### Use a Labeling System
 
 Within your stylesheets use a system of labeling in order to better organize/manage related styles.
 
@@ -358,7 +364,7 @@ Whatever you decide to use is totally up to you, but be consistent within a proj
 
 NOTE: By far the most used labeling level in your stylesheets will be "subtitles". Use them to group like things or elements, and label them with an eye on searching for the label in the future. Here are some examples for form elements:
 
-#### Naming Conventions
+### Naming Conventions
 
 I have my way of naming styles, i.e. classes and IDs, and I've seen things all over the board. Here's My Recommendation:
 
@@ -367,7 +373,7 @@ I have my way of naming styles, i.e. classes and IDs, and I've seen things all o
 - Keep it short
 - Use underscores between words
 
-##### Semantic
+#### Semantic
 
 I've never been too crazy for style names that really have no meaning like :class => 'H2603A'...Okay maybe I'm exaggerating, but I think you get the point. Try to use something that has meaning and can be recognized for what it is, like :class => 'header', but by the same token try not to get super specific about the contents. For example it would not be good to use something like, :class => 'johns_comments', because what happens if John gets replaced by Frank?
 
@@ -382,11 +388,11 @@ The following articles may also give you some ideas:
 - [About HTML semantics and front-end architecture][About Semantics]
 - [Experimenting with component-based HTML/CSS naming and patterns][Experimenting]
 
-##### Short
+#### Short
 
 Try to keep it under 10 characters! I've seen some pretty long class names out there in the wild, and I'm not too crazy about them. They take up too much room. On the flip side, use caution when choosing something super super short.  For example I sometimes use :id => 'ft' to ID the footer. I feel fine doing this since the tag is called \<footer>.
 
-##### CamelCase, Underscores, Hyphens, Concatenated?
+#### CamelCase, Underscores, Hyphens, Concatenated?
 
 Here are your choices:
 
@@ -407,11 +413,12 @@ Here's some more opinions on the matter:
 [Hyphens or underscores in CSS and HTML identifiers?][Identifiers]
 [CSS: CamelCase Seriously Sucks!][Sucks]
 
-#### Keep it DRY!
+Keep it DRY!
+------------
 
 Try not ... no ... DON'T Repeat Yourself! In CSS this means consolidating where possible. There are also some other techniques that do not DRY up your code in output per se, but they do DRY things up when writing your stylesheets, before they are processed: variables and mixins.
 
-##### Consolidate
+### Consolidate
 
 Suppose for example in this no duh! contrived example I have two major sections to my layout. One holds my main content, and the other is an aside (I'm using Twitter Bootstrap in this example thus the .row and .span's):
 
@@ -449,7 +456,7 @@ So to keep it DRY we consolidate common code between the two:
 
 ...and in doing so we cut the number of lines of code in half! Do that wherever it makes sense. In this example both styles live in the same place in my stylesheet and are related to one another so combining them makes absolute sense.
 
-##### Variables
+### Variables
 
 While variables do not explicitly DRY up your code, they kind of do and here's how:
 
@@ -457,7 +464,7 @@ In the code above I specify a variable for the background-color of $white. At fi
 
 By using variables, which I always locate in my _define.sass style partial, I can make the change in one instance and affect styles everywhere the variable is used. Not quite DRY, but kinda'.
 
-##### Mixins
+### Mixins
 
 In a word, mixins are shortcuts.
 
@@ -473,7 +480,8 @@ To see some great examples checkout:
 - [Useful SASS Mixins][]
 - [Custom User @mixins][]
 
-### What We've Done
+What We've Done
+---------------
 
 - We started this chapter by taking a look at preprocessors in general, and frameworks that significantly cut down on our front end development time.
 
