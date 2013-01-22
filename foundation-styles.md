@@ -517,7 +517,7 @@ With all of this work you are more than ready to begin building an app with your
 [_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
 [_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/desktop/_layout.sass
 [_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_grids.sass
-[_mixins.sass]:         https://github.com/maxxiimo/base-css/blob/master/_ mixins.sass
+[_mixins.sass]:         https://github.com/maxxiimo/base-css/blob/master/_mixins.sass
 [_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/desktop/_typography.sass
 [_misc.sass]:           https://github.com/maxxiimo/base-css/blob/master/desktop/_misc.sass
 [_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/_sprites.sass
