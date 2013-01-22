@@ -1,9 +1,8 @@
-Foundation Markup
------------------
+# Foundation Markup
 
 This is the first of three chapters that will help you set up a stellar base of code for any Rails application you create. In this first chapter we'll begin with our foundation markup. In the Chapter 2 we add [foundation styles][Chapter 2], and in Chapter 3 we look at the alternatives for [mobile on Rails][Chapter 3]. Our goal in these chapters is to teach you how to start your Rails applications out right, from the front end view coders perspective, and to give you the files you will need to do so. Let's get started.
 
-### The Application Layout
+## The Application Layout
 
 As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption. In this role when speaking about "layout" I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
 
@@ -11,7 +10,7 @@ When I switch hats, as a front end coder I look at layout as the Rails view fram
 
 As a Rails front end developer, you will wear both hats, plus take on a third role in which you facilitate the handshake between the backend and the front end of your application. To be successful you must understand how the code you produce will be used by your colleagues (backend engineers). You will need to be able to reach into your models and controllers via instance variables, helper methods, Ruby via erb, Rails helpers, and you will need to think in terms of usability and work in design tools such as Photoshop, not to mention be a master in your own realm: HTML5, CSS3, JavaScript/jQuery, but before you do these things you need to layout a solid foundation to work within.
 
-#### A Framework within a Framework
+### A Framework within a Framework
 
 As much as Rails is a framework, within this framework lives a tinier front end framework; your foundation markup. Until Rails 3.0, where this foundation "lived" and the conventions for using it were very much a no man's land. It was a disorganized dumping ground for HTML, CSS, JavaScript, and Ruby: the wild wild West of coding. Since Rails 3.0 things have become "civilized" and within these new conventions is where we will begin to build our layout, the application layout.
 
@@ -19,7 +18,7 @@ NOTE: I first heard the view layer referred to as a "no man's land" and the "Wes
 
 So what is this tiny view framework within a framework? Well, it is predominantly HTML organized in specific folders of your application with styles and interactivity added via CSS and JavaScript (and Flash, but less and less these days). In Rails the heart of this view framework and all the code related to it lives in what we refer to as the layout template, or application.html.haml, which is typically broken up into different related files called partials which are all being pulled together into the whole. View code from other parts of the application for the most part pass through this layout and become framed by the layout template (with styles and JavaScript pulled in) before being rendered to the end-user.
 
-#### Where Does It Live?
+### Where Does It Live?
 
 The front end structure I'm describing primarily lives in two high-level folders within your Rails application: the helpers and the views folders. The views folder is where the real action takes place and can be further subdivided into the Layout and Shared folders, which are home to the majority of your foundation front end code. Here's what it looks like and where you'll find these folders in any Rails 3.0 or greater project:
 
@@ -34,7 +33,7 @@ Project
       - **layout**
       - **shared**
 
-### The Code
+## The Code
 
 Our goal is to write and organize the components of our layout in such a way that different browsers and devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug into it with ease. To help you along this path you can grab my [starter code][]:
 
@@ -49,7 +48,7 @@ IMPORTANT: Since we're using modernizr and the asset pipeline, add the following
     # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
     config.assets.precompile += %w( modernizr-2.6.2.min.js )
 
-##### About HTML5 Boilerplate
+#### About HTML5 Boilerplate
 
 In coding copy and learn from the best, improve, then give back. I find that the best place to reference when building front end view templates is [HTML5 Boilerplate][]. This resource is an ongoing collaboration between expert front-end developers and the community.
 
@@ -58,7 +57,7 @@ To better understand it (and my implementation of it), the following sites are a
 - [An Unofficial Guide to the HTML5 Boilerplate][Unofficial Guide]
 - [Guide to HTML5 Boilerplate for Rails Developers][H5BP for Rails]
 
-#### Where Do Things Go?
+### Where Do Things Go?
 
 Code wise you have access to everything I use when starting a new application, my [sarter code][]. Structurally, these files fall into place as follows:
 
@@ -90,7 +89,7 @@ Project
 
 Once you have downloaded the [starter code][] and placed all the files where they belong, you'll need to prep your app.
 
-#### Prep the App
+### Prep the App
 
 Prep your app by following these steps:
 
@@ -114,7 +113,7 @@ If you run WEBrick, your application should now just work.
 
     $ rails server
 
-#### End Result
+### End Result
 
 Although not apparent yet, i.e. visually, we have created a top-notch markup foundation for your application. With everything in place, and given that you followed Step 2 above, your homepage should look something like this:
 
@@ -124,11 +123,11 @@ Although not apparent yet, i.e. visually, we have created a top-notch markup fou
 
 Not very attractive! ...but don't worry we'll address that in the [next chapter][Chapter 2].
 
-### Organization
+## Organization
 
 Let's dissect what we've done.
 
-#### Partials
+### Partials
 
 All of the files in our [starter code][] layouts and shared folders could all be located in one file: [layout/application.html.haml][application], but rather than do this, to keep things organized and readable we separated the file into partials:
 
@@ -182,15 +181,15 @@ If you use my [starter code][], your application.html.haml file will look like:
 
 Other than all the Internet Explorer conditions it's concise and simple. If you plan to use those conditions just uncomment each line, if not feel free to delete them. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology.
 
-#### JavaScript
+### JavaScript
 
 I don't think I have found a more comprehensive overview on this than Daniel Kehoe's article: "[Unholy Rails: External Scripts, jQuery Plugins, and Page-Specific JavaScript][Unholy Rails]"
 
-##### The Scripts Partial
+#### The Scripts Partial
 
 Generally it is best to put JavaScript at the very bottom of application.html.haml. Doing so will allow the page to render before scripts are loaded, but some scripts such as modernizr need to load before your HTML so naturally I include them in [_head.html.haml][_head]. To accommodate all other JavaScript files I use a [_scripts.html.haml][_scripts] partial located in the layouts folder.
 
-#### What to Put in \<head>
+### What to Put in \<head>
 
 If you haven't already noticed, there is a lot of commented out code in [_head.html.haml][_head]. The reason for this is that there is a lot of things that you could put there, but don't. Obviously just put in what you need. I provide the bare minimum, but everything else, commented out, just in case you need it.
 
@@ -198,7 +197,7 @@ For an explanation on what this stuff is/does check out:
 
 - [Helpful things to keep in your \<head>][Helpful Things]
 
-##### The Title
+#### The Title
 
 You may have also noticed that I use the following snippet of code in [<head>][_head]:
 
@@ -209,11 +208,11 @@ You can use whatever you would like, or nothing at all (although I wouldn't advi
     - content_for :title do
       Some Cool Title
 
-### Moving Forward
+## Moving Forward
 
 Before we move on to styles, there are a few things we need to consider when adding files and organizing code within our framework moving forward.
 
-#### Using Partials
+### Using Partials
 
 Partials help:
 
@@ -224,7 +223,7 @@ Partials help:
 
 The key is not to go nuts and partial everything. If you do that, finding things can become a wild goose chase for backing coders trying to figure out where the markup they need lives.
 
-#### Naming Conventions
+### Naming Conventions
 
 When naming HTML files try to stay within REST conventions, i.e. index.html.haml, show.html.haml, etc.. When naming outside of REST be short and concise, use names that indicate what the files function or purpose are.
 
@@ -237,7 +236,7 @@ For partials, if there are several related to an individual file, group them by 
     _tabs.html.haml
     _tabs_sub_nav.html.haml
 
-#### IE 6
+### IE 6
 
 These days most people like to just forget about IE 6, it's old, "We're not supporting it, those users need to update!" ...But here's the problem, those users are still out there, even if they don't want to be. Have you ever been in your local public library and checked out the super old machines people have to use there? I sometimes go just to see what an application I'm working on will look like in older browsers.
 
@@ -272,7 +271,7 @@ I should mention that the author of this article follows up with a solution in h
 
 - [How to Use Responsive Web Design to Support Old Browsers][RWD for IE]
 
-### What We've Done
+## What We've Done
 
 - We started this chapter by laying out the groundwork for your foundation markup.
 - We then began to discuss what an application layout is, from the front end coder's viewpoint, and how it is organized in a Rails application.
