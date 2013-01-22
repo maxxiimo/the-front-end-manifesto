@@ -45,7 +45,7 @@ I don't think an all or nothing approach really makes sense as a rule of thumb. 
 - Designing for a mobile device, a tablet device, and a desktop could be time-consuming, responsive design can accommodate all three.
 - With responsive design, change the code once and it trickles down to all devices.
 
-Right now responsive web design is hugely popular. The article [Reasons for Responsive Design][] give you some good reasons why you should consider using it. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" gives an opposite perspective and does a good job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote in particular that the author uses that resonates with me:
+Right now responsive web design is hugely popular. The article [Reasons for Responsive Design][Responsive Reasons] give you some good reasons why you should consider using it. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" gives an opposite perspective and does a good job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote in particular that the author uses that resonates with me:
 
 > Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
 

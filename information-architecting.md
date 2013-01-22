@@ -1,7 +1,12 @@
 Information Architecting
 ------------------------
 
-Now that we have reviewed the three pillars of foundation work: [markup][], [styles][], and [mobile][], it's time to delve into actually building a websites/application. The best place to start is with the splash page or application console: its navigation, content, interaction, layout, and look and feel. The homepage is of critical importance to your project. Most of the time it is the first thing a user will see, and how they will understand your [whatever your building] and how they will [whatever they will do]. It also sets the tone and unifying theme for every subsequent page or functionality.
+In the first section of this book we laid down the foundation for our application by:
+
+1. Defining our base [markup][] and [styles][].
+2. Choosing a [mobile][] content delivery strategy.
+
+Now it is time to build on this foundation. The best place to start is with the splash page or application console: its navigation, content, interaction, layout, and look and feel. We start here because most of the time it is the first place a user will go, and how they will understand your [whatever your building] and how they will [whatever they will do]. It also sets the tone and unifying theme for every subsequent page or functionality.
 
 The key to being successful in building your application splash page and/or console can be summed up in one word: **Storytelling**.
 
