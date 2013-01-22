@@ -6,7 +6,9 @@ Table of Contents
 
 **SECTION 1**
 
-- Chapter 1: [Foundation Markup][]
+Chapter 1
+
+- [Foundation Markup][]
     -  The Application Layout
       - A Framework within a Framework
       - Where Does It Live?
@@ -24,7 +26,10 @@ Table of Contents
       - Using Partials
       - IE 6
     - What We've Done
-- Chapter 2: [Foundation Styles][]
+
+Chapter 2
+
+- [Foundation Styles][]
     - Preprocessors
     - Compass
     - CSS Frameworks and Grid Systems
@@ -43,7 +48,10 @@ Table of Contents
       - Variables
       - Mixins
     - What We've Done
-- Chapter 3: [Mobile on Rails][]
+
+Chapter 3
+
+- [Mobile on Rails][]
     - Mobile First
     - Plan of Attack
     - I. User Agent Sniffing
@@ -62,7 +70,9 @@ Table of Contents
 
 **SECTION 2**
 
-- Chapter 4: [Information Architecting][]
+Chapter 4
+
+- [Information Architecting][]
     - A Mosaic of Information
     - The Storyline
     - Gathering and Organizing Information
@@ -72,7 +82,10 @@ Table of Contents
       - Content
     - Feedback
     - What We've Done
-- Chapter 5: [Visual Design for the Nondesigner][Visual Design]
+
+Chapter 5
+
+- [Visual Design for the Nondesigner][Visual Design]
   - Typography
     - A note on Font Stacks
     - Font Family
@@ -86,7 +99,10 @@ Table of Contents
     - Icon Sprites
   - Images
   - Other Resources
-- Chapter 6: [Slicing and Dicing Mockups][]
+
+Chapter 6
+
+- [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
   - Step 3 - Fonts
