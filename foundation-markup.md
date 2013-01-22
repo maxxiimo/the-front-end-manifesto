@@ -116,7 +116,7 @@ If you run WEBrick, your application should now just work.
 
 #### End Result
 
-Although not apparent yet, i.e. visually, we have created a top-notch markup foundation for your application. With everything in place, and given that you followed Step 2 above, your homepage should look something like this:
+Although not apparent yet, i.e. visually, we have created a top-notch markup foundation for your application. With everything in place, and given that you followed Step 2 above, your homepage should look something like this:<br>
 
 ![][Basic HTML]
 
