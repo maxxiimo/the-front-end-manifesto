@@ -6,9 +6,7 @@ Table of Contents
 
 **SECTION 1**
 
-Chapter 1
-
-- [Foundation Markup][]
+- Chapter 1: [Foundation Markup][]
     -  The Application Layout
       - A Framework within a Framework
       - Where Does It Live?
@@ -27,9 +25,8 @@ Chapter 1
       - IE 6
     - What We've Done
 
-Chapter 2
 
-- [Foundation Styles][]
+- Chapter 2: [Foundation Styles][]
     - Preprocessors
     - Compass
     - CSS Frameworks and Grid Systems
@@ -49,9 +46,8 @@ Chapter 2
       - Mixins
     - What We've Done
 
-Chapter 3
 
-- [Mobile on Rails][]
+- Chapter 3: [Mobile on Rails][]
     - Mobile First
     - Plan of Attack
     - I. User Agent Sniffing
@@ -70,9 +66,7 @@ Chapter 3
 
 **SECTION 2**
 
-Chapter 4
-
-- [Information Architecting][]
+- Chapter 4: [Information Architecting][]
     - A Mosaic of Information
     - The Storyline
     - Gathering and Organizing Information
@@ -83,9 +77,8 @@ Chapter 4
     - Feedback
     - What We've Done
 
-Chapter 5
 
-- [Visual Design for the Nondesigner][Visual Design]
+- Chapter 5: [Visual Design for the Nondesigner][Visual Design]
   - Typography
     - A note on Font Stacks
     - Font Family
@@ -100,9 +93,8 @@ Chapter 5
   - Images
   - Other Resources
 
-Chapter 6
 
-- [Slicing and Dicing Mockups][]
+- Chapter 6: [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
   - Step 3 - Fonts
@@ -121,6 +113,8 @@ Chapter 6
   - Spriting
   - Responsive Resizing
   - Retina Displays
+
+
 - [Forms][]
   - Basic Form Structure
   - Ordered List or Paragraphs?
@@ -128,11 +122,17 @@ Chapter 6
   - Extras
   - FormHelpers
   - Fancy/Sassy Buttons
+
+
 - [Navigation][]
   - Types
   - CSS
   - Context Awareness Patterns
+
+
 - [Gradients][]
+
+
 - [Email Coding][]
 
 **SECTION 4**
@@ -146,10 +146,16 @@ Chapter 6
     - Compressing and the Asset Pipeline
     - Spriting
     - What We've Done
+
+
 - [Accessibility][]
   - Standardize Your Links
   - Use ARIA Roles
+
+
 - [Search Engine Optimization][]
+
+
 - [Style Guides][]
 
 **APPENDICES**
