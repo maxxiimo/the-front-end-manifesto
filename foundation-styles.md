@@ -115,7 +115,9 @@ Delete your application.css file if you have not done so already. It is being re
 
 NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
 
-Simple as that, and if you have been following along from the last chapter, [Foundation Markup][Chapter 1], here is what your page will now look with the new stylesheets in place:<br>
+Simple as that, and if you have been following along from the last chapter, [Foundation Markup][Chapter 1], here is what your page will now look with the new stylesheets in place:
+
+<br>
 
 ![][Basic HTML No Styles]
 
