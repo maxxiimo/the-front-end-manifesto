@@ -6,6 +6,7 @@ Table of Contents
 
 **SECTION 1**
 
+Chapter 1
 - [Foundation Markup][]
     -  The Application Layout
       - A Framework within a Framework
@@ -24,6 +25,8 @@ Table of Contents
       - Using Partials
       - IE 6
     - What We've Done
+
+Chapter 2
 - [Foundation Styles][]
     - Preprocessors
     - Compass
@@ -43,6 +46,8 @@ Table of Contents
       - Variables
       - Mixins
     - What We've Done
+
+Chapter 3
 - [Mobile on Rails][]
     - Mobile First
     - Plan of Attack
@@ -62,6 +67,7 @@ Table of Contents
 
 **SECTION 2**
 
+Chapter 4
 - [Information Architecting][]
     - A Mosaic of Information
     - The Storyline
@@ -72,6 +78,8 @@ Table of Contents
       - Content
     - Feedback
     - What We've Done
+
+Chapter 5
 - [Visual Design for the Nondesigner][Visual Design]
   - Typography
     - A note on Font Stacks
@@ -86,6 +94,8 @@ Table of Contents
     - Icon Sprites
   - Images
   - Other Resources
+
+Chapter 6
 - [Slicing and Dicing Mockups][]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
@@ -99,12 +109,15 @@ Table of Contents
 
 **SECTION 3**
 
+Chapter 7
 - [Images][]
   - Organization
   - Choosing an Image Format
   - Spriting
   - Responsive Resizing
   - Retina Displays
+
+Chapter 8
 - [Forms][]
   - Basic Form Structure
   - Ordered List or Paragraphs?
@@ -112,15 +125,22 @@ Table of Contents
   - Extras
   - FormHelpers
   - Fancy/Sassy Buttons
+
+Chapter 9
 - [Navigation][]
   - Types
   - CSS
   - Context Awareness Patterns
+
+Chapter 10
 - [Gradients][]
+
+Chapter 11
 - [Email Coding][]
 
 **SECTION 4**
 
+Chapter 12
 - [Optimization][]
     - Gzipping
     - Caching
@@ -130,10 +150,16 @@ Table of Contents
     - Compressing and the Asset Pipeline
     - Spriting
     - What We've Done
+
+Chapter 13
 - [Accessibility][]
   - Standardize Your Links
   - Use ARIA Roles
+
+Chapter 14
 - [Search Engine Optimization][]
+
+Chapter 15
 - [Style Guides][]
 
 **APPENDICES**
