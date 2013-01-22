@@ -4,7 +4,7 @@ Table of Contents
 - [Cover][]
 - [The Manifesto][]
 
-### SECTION I
+### Section I
 
 #### Chapter 1
 - [Foundation Markup][]
@@ -65,7 +65,7 @@ Table of Contents
     - Using JavaScript
     - What We've Done
 
-### SECTION II
+### Section II
 
 #### Chapter 4
 - [Information Architecting][]
@@ -107,7 +107,7 @@ Table of Contents
   - Step 9 - HTML for the Main Content
   - Step 10 - Sprites and CSS3 for Images
 
-### SECTION III
+### Section III
 
 #### Chapter 7
 - [Images][]
@@ -138,7 +138,7 @@ Table of Contents
 #### Chapter 11
 - [Email Coding][]
 
-### SECTION IV
+### Section IV
 
 #### Chapter 12
 - [Optimization][]
