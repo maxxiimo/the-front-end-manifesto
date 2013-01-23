@@ -1,5 +1,5 @@
 Visual Design for the Nondesigner
----------------------------------
+=================================
 
 The [last chapter][] was about Information Architecture, so design really goes beyond it's scope, however, [design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction in visual design.
 
@@ -21,7 +21,8 @@ In the case of "View Thought" part of the story is:
 
 If this is part of our story we better deliver some great graphic design on top of our information architecture, layout, and content that will help communicate it! To do so we will use a combination of fonts, color, images, and anything else I can think of to help View Thought tell it's story, and in such a way that users just get it. The combination of typefaces (fonts), color, branding, and images are the cornerstones of a sites look and feel. Let's explore each.
 
-### Typography
+Typography
+----------
 
 After I have finished all of my information architecture stuff, the first visual design component I like to tackle is my base typography.
 
@@ -81,7 +82,7 @@ So let's get started. In my opinion the lowest hanging fruit in typography are b
 
 In Sass you can set up variables. As you can see above, our definitions begin with variables set to different font stacks. These variables can then be assigned to the $base-font-family variable. What ever variable you sign to $base-font-family will then permeate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance. In our case we set the font family of our <body> tag to $base-font-family. All child elements will then inherit this font family, unless defined otherwise.
 
-#### A note on Font Stacks
+### A note on Font Stacks
 
 The reason we use font stacks in the first place, i.e. a listing of several different fonts, is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use.
 
@@ -89,7 +90,7 @@ The reason we use font stacks in the first place, i.e. a listing of several diff
 
 If your device does not have the first font in the stack available, your browser will look for the second one and so forth until the very last one: which is typically generic and the most broadly available across different operating systems. The fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used: at least that is the goal.
 
-#### Font Family
+### Font Family
 
 So let's pick a base font family for View Thought. For your project, to help you get the job done without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the appendix of this book. Here you will find recommendations for:
 
@@ -112,7 +113,7 @@ I have left a few font stacks and Google Web Fonts pairing ideas for you in our 
 - [_define.sass][]
 - [_head.html.haml][]
 
-##### Font Services
+#### Font Services
 
 Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 8]" appendix.
 
@@ -122,7 +123,7 @@ Typekit is a paid service, [Google Web Fonts][] on the other hand is a free serv
 
 [A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
 
-##### Trial and Error
+#### Trial and Error
 
 Here are some screenshots of different font ideas for View Thought:
 
@@ -134,7 +135,7 @@ As you can see, choosing fonts is a practice in trial and error. These articles 
 - [6 Questions You Should Ask Yourself When Choosing Fonts][6 Questions]
 - [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 
-#### Size
+### Size
 
 Choosing font size is actually not as straightforward and easy as one would expect. At the very basic level, you will choose between a measurement type such as px vs. ems vs. % vs. rem, and from a more complex perspective you might want to define a modular scale based on ratios derived from harmonic intervals or the golden ratio. Yowza!
 
@@ -175,30 +176,34 @@ Again, we're going to use the browser's default setting. I use 100% here, but co
 - [How we learned to leave default font-size alone and embrace the em][Embracing em's]
 - [CSS Font-Size: em vs. px vs. pt vs. percent][CSS Font-Size]
 
-#### Line Height
-
-
-
-#### Color
+### Line Height
 
 
 
 ### Color
 
+
+
+Color
+-----
+
 > There are many contributing factors that go into making a good visual design, but one of the simplest ways to do this is through the use of colour. The colour palette used in a design can have such a profound effect on a visual design that it almost feels like you’re cheating. It’s easy to add more and more subtle shades of colour to add a sense of sophistication and complexity to a design, but it dilutes the overall visual impact. When I design, I almost have a rule that only allows me to use a very limited colour palette.
 
-- Mike Kus, "[Nine Things I've Learned][9 Things]"
+\- Mike Kus, "[Nine Things I've Learned][9 Things]"
 
 
-### Branding
+Branding
+--------
 
 
+Images
+------
 
-### Images
 
-### Icons
+Icons
+-----
 
-#### Icon Fonts
+### Icon Fonts
 
 
 
@@ -213,17 +218,19 @@ Again, we're going to use the browser's default setting. I use 100% here, but co
 [Testing @font-face Support on Mobile and Tablet][Icon Font Support]
 
 
-##### @font-face
+#### @font-face
 
 
-#### Icon Sprites
+### Icon Sprites
 
 
 
-### Images
+Images
+------
 
 
-### Other Resources
+Other Resources
+---------------
 
 What follows are some ideas and resources to help you create your site's look and feel:
 

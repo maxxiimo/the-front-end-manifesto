@@ -1,5 +1,5 @@
 Slicing and Dicing Mockups
---------------------------
+==========================
 
 Unlike in the last chapter, often times I find myself in situations where all of the information architect thing has been thought out, the look and feel is in place, and the designer has put it all together in a mockup. In this chapter we're going to go through the exercise of slicing and dicing an example mockup to learn one approach to turning mockups into front end code. Here is the mockup we will use:
 
@@ -48,7 +48,7 @@ Start with the lowest hanging fruit, the background. This manifesto is not a cou
 
 Backgrounds are rarely a single large image because of bandwidth costs.
 
-To implement your background, set your body background-color property either to a specific color, or to a repeating image. If a gradient is involved you can use CSS3, or an image to achieve the effect. Whatever images you do use for the background, make it as small and optimized as possible without losing the look you are after. If you're using my CSS organization structure put your styles in _layout.sass file. 
+To implement your background, set your body background-color property either to a specific color, or to a repeating image. If a gradient is involved you can use CSS3, or an image to achieve the effect. Whatever images you do use for the background, make it as small and optimized as possible without losing the look you are after. If you're using my CSS organization structure put your styles in _layout.sass file.
 
 NOTE: When using Compass use image-url("") instead of url():
 
@@ -77,9 +77,9 @@ The overall font-family is probably the most important thing you'll define right
 NOTE: As you're moving along there'll be times that you will need to add a note for yourself so that you can revisit something. When adding notes in your code I like to use something like this:
 
     // FIXME ccm: the note goes in here.
-    
+
     or
-    
+
     // TODO ccm: the note goes in here.
 
 This way I can grep for "FIXME ccm", where ccm are my initials, and find my notes.
@@ -90,7 +90,7 @@ This way I can grep for "FIXME ccm", where ccm are my initials, and find my note
 ### Step 5 - Sectioning Content (layout/application.html.haml)
 
 Here's where we really begin to code the basic high-level questions above. At the highest level, sectioning content is the same as building your base layout template in a Rails project (layout/application.html.haml). I typically start a project using the base template described in the HTML Organization section of this manifesto. From this starting point you can add or remove things from _head.html.haml and _scripts.html.haml because they include everything plus the kitchen sink. Adjust the HTML, class names, and incorporate new elements as the project requires.
- 
+
 Here are a few resources that will help you choose semantically correct elements for your base layout:
 
 - [HTML5 Element Flowchart][Flowchart]
@@ -137,7 +137,7 @@ So starting with the header (don't forget to use your magnifying tool to really 
 1.  Grab the logo. Trim any excess transparent space around the logo. In Photoshop use "Image/Trim..." and save it in your assets/images/logo directory as logo.gif and logo.png. In Photoshop use "File/Save for Web and Devices...".
 
     Note: This manifesto is most definitely not a Photoshop tutorial, but in case you didn't know, or for those of you new to Photoshop, there is a tool that will help you locate the layer in which the element you are after is in. On the top of the Photoshop tools palette there is a button with an arrow and crosshair icon. Click it. The top toolbar will change and that same button will be located on the far left of the new toolbar. Immediately to the right of it there is a checkbox with the name "Auto-Select: [Group/Layer]". Check this off. Finding your elements in your layers palette will now be that much easier. In my workflow I then grab the highlighted group or layer and drag it over to a new Photoshop window to isolate it. Besides using this tool you can also toggle layers on and off by clicking the eye icon on the layers palette beside each layer until you find what you're looking for or isolate an element.
-    
+
     ![][auto-select]
 
 2.  Set a background color for your header. Use Photoshop's eyedropper tool to discover the color. If you use an image for your header this color will serve as a fallback.
@@ -157,7 +157,7 @@ So starting with the header (don't forget to use your magnifying tool to really 
     My logo code looks something like this:
 
         = link_to image_tag('logos/logo.png', :alt => 'XXX', :width => '##', :height => '##'), root_path, :title => '', :id => 'logo'
-        
+
         #logo
           float: left
           margin: 10px 0  0
@@ -182,9 +182,9 @@ As your coding, there should be three things you should keep in mind:
 
 For the later I like to start with images because doing so gives me images I can fallback on. In Step 10 we will begin to replace these with more modern and bandwidth efficient CSS3 properties.
 
-NOTE: In some cases just go with the CSS3 and don't bother with chopping images; like rounded corners because what is the default? A square corner, not a bad degradation. 
+NOTE: In some cases just go with the CSS3 and don't bother with chopping images; like rounded corners because what is the default? A square corner, not a bad degradation.
 
-But why image defaults at all? The reason is because some browsers may not be able to use the latest and greatest CSS3 techniques. Maybe pollyfills are out of the question because JavaScript is not available on the device? Whatever the case, for those situations we can serve up the fallback styles we created initially. 
+But why image defaults at all? The reason is because some browsers may not be able to use the latest and greatest CSS3 techniques. Maybe pollyfills are out of the question because JavaScript is not available on the device? Whatever the case, for those situations we can serve up the fallback styles we created initially.
 
 Regarding pollyfills and fallbacks, a super helpful tool you should familiarize yourself with as a front end coder is [Modernizr][]. I discuss this feature detection tool in greater detail in the JavaScript Library section of this manifesto.
 
@@ -237,7 +237,7 @@ Like in the previous step we'll take it section by section, image by image, font
 For example, my font colors are looking like this:
 
     // fonts...
-    
+
     $white:             #fff
     $font-tab:          #0089ce
     $font-util-name:    #fff
@@ -284,7 +284,7 @@ Why do this from the get-go? Well you know you will have icons and you already h
 [Complete Font Guide]:  http://www.apaddedcell.com/web-fonts
 [Flowchart]:            http://html5doctor.com/downloads/h5d-sectioning-flowchart.png
 [Structural Tags]:      http://orderedlist.com/resources/html-css/structural-tags-in-html5/
-[Not Obvious]:          http://www.anthonycalzadilla.com/2010/08/html5-section-aside-header-nav-footer-elements-not-as-obvious-as-they-sound/           
+[Not Obvious]:          http://www.anthonycalzadilla.com/2010/08/html5-section-aside-header-nav-footer-elements-not-as-obvious-as-they-sound/
 [Beautiful HTML]:       http://css-tricks.com/what-beautiful-html-code-looks-like/
 [HTML 5 Outliner]:      http://gsnedders.html5.org/outliner/
 [Modernizr]:            http://modernizr.com/
