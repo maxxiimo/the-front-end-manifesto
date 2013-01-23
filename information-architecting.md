@@ -6,13 +6,11 @@ In the first section of this book we laid down the foundation for our applicatio
 1. Defining our base [markup][] and [styles][].
 2. Choosing a [mobile][] content delivery strategy.
 
-Now it's time to build on this foundation. The best place to start is with the splash page or application console: its navigation, content, interaction, layout, and look and feel. We start here because most of the time it is the first place users will go, and how they will understand your [whatever your building] and how they will [whatever they will do]. It also sets the tone and unifying theme for every subsequent page or functionality.
-
-The key to being successful in building your application splash page and/or console can be summed up in one word: **Storytelling**.
+Now it's time to build a user experience on this foundation: how your users will understand your [whatever your building] and how they will [whatever they will do]. The key to being successful in building your applications user experience can be summed up in one word: **Storytelling**.
 
 Back in 2008, at "An Event Apart: Boston," I listened to [Jason Santa Maria][] – then the Creative Director of Happy Cog Studios – give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
 
-These talks have stuck with me over the years and have become the manner in which I view website design; as storytelling. What follows is an explanation of how to build a story for your website, and translate that into code, and in the next chapter the sites look and feel (visual design). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about this:
+These talks have stuck with me over the years and have become the manner in which I view  information architecting and visual design; as storytelling. What follows is an explanation of how to build a story for your website, and translate that into code, and in the [next chapter][Chapter 5] the sites look and feel (visual design). As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about this:
 
 1. Start from scratch and architect and design everything yourself.
 2. Work with a graphic designer from the get-go and implement a design mockup into your foundation work.
@@ -184,6 +182,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [styles]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [mobile]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
 [Jason Santa Maria]:    http://jasonsantamaria.com/
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
 [Slicing and Dicing]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
 [Chapter 1 Quote]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md#the-application-layout
 [Don't Make Me Think]:  http://www.sensible.com/index.html
