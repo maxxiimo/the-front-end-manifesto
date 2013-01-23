@@ -82,7 +82,7 @@ So let's get started. In my opinion the lowest hanging fruit in typography are b
 
 In Sass you can set up variables. As you can see above, our definitions begin with variables set to different font stacks. These variables can then be assigned to the $base-font-family variable. What ever variable you sign to $base-font-family will then permeate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance. In our case we set the font family of our <body> tag to $base-font-family. All child elements will then inherit this font family, unless defined otherwise.
 
-### A note on Font Stacks
+### Font Stacks
 
 The reason we use font stacks in the first place, i.e. a listing of several different fonts, is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use.
 
@@ -113,7 +113,7 @@ I have left a few font stacks and Google Web Fonts pairing ideas for you in our 
 - [_define.sass][]
 - [_head.html.haml][]
 
-#### Font Services
+### Font Services
 
 Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 8]" appendix.
 
@@ -123,7 +123,7 @@ Typekit is a paid service, [Google Web Fonts][] on the other hand is a free serv
 
 [A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
 
-#### Trial and Error
+### Trial and Error
 
 Here are some screenshots of different font ideas for View Thought:
 

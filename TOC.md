@@ -59,6 +59,7 @@ Table of Contents
       - Flexible Grids
       - Media Types
       - Media Queries
+      - Em's and Media Queries
       - Flexible Media
       - Conditional Loading
     - III. A Hybrid Approach
@@ -83,17 +84,19 @@ Table of Contents
 #### Chapter 5
 - [Visual Design for the Nondesigner][Visual Design]
   - Typography
-    - A note on Font Stacks
+    - Font Stacks
     - Font Family
+    - Font Services
+    - Trial and Error
     - Size
     - Line Height
     - Color
   - Color
   - Branding
+  - Images
   - Icons
     - Icon Fonts
     - Icon Sprites
-  - Images
   - Other Resources
 
 #### Chapter 6
