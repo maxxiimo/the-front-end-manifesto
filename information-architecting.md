@@ -148,7 +148,7 @@ Because you laid out your applications [markup][], [styles][], and [mobile][] gr
 
 An assumption I will make here is that you already are a proficient front end coder, so going into how to go about writing basic markup from the prototypes we just developed is something I won't get into. After codifying my prototypes here is what I have:
 
-!!! NEED IMAGE !!!
+![][Wireframe]
 
 Pretty bare-bones, but that will soon change.
 
@@ -229,3 +229,4 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Index After]:          http://chrismaxwell.com/manifesto/index-cards/index-cards-after.jpg
 [Index Mobile]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-mobile.jpg
 [Prototype]:            http://chrismaxwell.com/manifesto/paper/prototype.jpg
+[Wireframe]:            http://chrismaxwell.com/manifesto/wireframe/ipad-wireframe.gif
