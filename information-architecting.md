@@ -208,7 +208,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
 [Toolbox 1]:            https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=lorem+ipsum
-[html-ipsum]]:          http://html-ipsum.com/
+[html-ipsum]:           http://html-ipsum.com/
 [lipsum]:               http://www.lipsum.com/
 [Fillerama]:            http://chrisvalleskey.com/fillerama/
 [Samuel L. Ipsum]:      http://slipsum.com/
