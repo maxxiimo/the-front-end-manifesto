@@ -23,9 +23,9 @@ NOTE: As a consultant brought into projects, oftentimes design mockups have alre
 A Mosaic of Information
 -----------------------
 
-To build our story the first thing we need to understand is what it means to organize an applications information and function.
+To build our story we should first explore what it means to organize an applications information and function.
 
-> As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption.
+> As a front end person, oftentimes taking the role of Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption.
 
 \- [Chapter 1 Quote][]
 
@@ -35,14 +35,22 @@ How does "organizing information and function" relate to storytelling? I like to
 
 \- [Wikipedia][]
 
-Individually, the components of a mosaic are meaningless, but together they form a pattern or an image.
+Individually, the components of a mosaic are meaningless, but together they form a pattern or an image. Take for example this Roman mosaic of Ulysses, from Carthage:
 
-A website layout is similar in that it is composed of different blocks of information, a mosaic of information, that together convey a larger whole, a story. As front end developers we choose what blocks belong together, and through our code create a digital mosaic, a website "page", that ultimately is viewed and interpreted by our audience, and in most cases probably designed to invite/entice/cause the user to take the next step or action, i.e. turn the page in the story.
+![][Mosaic]
+
+Does it tell a story?
+
+A website layout is similar in that it is composed of different blocks of information that together convey a larger whole, a story: composed of text, images, color, function, and more.
+
+As front end developers we choose and arrange what blocks belong together, and through our code create a digital mosaic, a website, that ultimately is viewed and interpreted by our audience. As such we should think of what we create, it's meaning and purpose, as storytelling and ourselves as narrators. It's not as far-fetched as it might sound at first. Most websites are probably designed to invite/entice/cause the user to take a next step or action, i.e. turn the page in the story.
+
+Don't for a moment think that creative license belongs only to designers. It does not, in fact with the abilities of CSS3 much of the design work can now occur in the browser straight from our IDE's. I like to think of ourselves as digital artists; the handshake between design and backend engineering.
 
 The Storyline
 -------------
 
-The unifying message behind this mosaic (blocks) of information is the storyline or theme. Before content can be discovered, grouped, and placed in a layout, the narrator, in this case you, has to have the stories general theme in mind. For example, the storyline might be:
+The unifying message behind this mosaic of information is the storyline or theme. Before content can be discovered, grouped, and placed in a layout, the narrator, in this case you, has to have the stories general theme in mind. For example, the storyline might be:
 
 > I'm a great Web site for finding a job...a job that is perfect for you, you should join me, if you do you will have access to tons of perfect jobs and your life will change for the better forever!
 
@@ -56,12 +64,12 @@ In this storyline example – with my Information Architect (IA) hat on – I immedi
     - Legalese (Copyright, ToS, Privacy)
     - Non-legal footer type info (Feedback, About, Contact, Site Map)
 
-...and as the front end developer I'm already beginning to imagine how these blocks of information will be organized and coded into our foundation markup and/or used by our backend development team. This is exactly what you will need to do. Think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed and coded.
+...and as the front end developer I'm already beginning to imagine how these blocks of information will be organized and coded into our application and used by our backend development team. This is exactly what you will need to do: think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed and coded.
 
 Gathering and Organizing Information
 ------------------------------------
 
-Before you begin coding though, it's important to take a few preliminary steps. What follows are different techniques for gathering all the blocks of information that will ultimately make up the sites story, i.e. user experience.
+Before you begin coding though, it's important to take a few preliminary steps. What follows are different techniques for gathering all the blocks of information that will ultimately make up the sites story and user experience.
 
 NOTE: Throughout this process I highly recommend keeping the book "[Don't Make Me Think][]" by Steve Krug nearby as a reference. It’s a good read and everything he says is so darn obvious, and all there in one place.
 
