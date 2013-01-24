@@ -43,9 +43,7 @@ Does it tell a story?
 
 A website layout is similar in that it is composed of different blocks of information that together convey a larger whole, a story: composed of text, images, color, function, and more.
 
-As front end developers we choose and arrange what blocks belong together, and through our code create a digital mosaic, a website, that ultimately is viewed and interpreted by our audience. As such we should think of what we create, it's meaning and purpose, as storytelling and ourselves as narrators. It's not as far-fetched as it might sound at first. Most websites are probably designed to invite/entice/cause the user to take a next step or action, i.e. turn the page in the story.
-
-Don't for a moment think that creative license belongs only to designers. It does not, in fact with the abilities of CSS3 much of the design work can now occur in the browser straight from our IDE's. I like to think of ourselves as digital artists; the handshake between design and backend engineering.
+As front end developers we choose and arrange what blocks belong together, and through our code create a digital mosaic, a website, that ultimately is viewed and interpreted by our audience. As such we should think of what we create, it's meaning and purpose, as storytelling and ourselves as narrators. It's not as far-fetched as it might sound at first when you consider that most websites are probably designed to invite/entice/cause the user to take a next step or action, i.e. turn the page in the story.
 
 The Storyline
 -------------

@@ -254,6 +254,11 @@ What follows are some ideas and resources to help you create your site's look an
 
 - Read a tutorial.
 
+What We've Done
+---------------
+
+Don't for a moment think that creative license belongs only to designers. It does not, in fact with the abilities of CSS3, much of the design work can now occur in the browser straight from our IDE's. Think of yourself as artists of a new age; you are the handshake between design and backend engineering and can work in either realm.
+
 [last chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [Story Design]:         http://24ways.org/2011/design-the-invisible/
 [Dao]:                  http://www.alistapart.com/articles/dao
