@@ -133,6 +133,7 @@ As you can see, choosing fonts is a practice in trial and error. These articles 
 
 - [Make a Statement with Type][Type Statement]
 - [6 Questions You Should Ask Yourself When Choosing Fonts][6 Questions]
+- [A Brief Primer on Typeface Selection][Brief Primer]
 - [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 
 ### Size
@@ -285,6 +286,7 @@ Don't for a moment think that creative license belongs only to designers. It doe
 [Beginners Guide]:      http://designshack.net/articles/css/a-beginners-guide-to-using-google-web-fonts/
 [Type Statement]:       http://tympanus.net/codrops/2012/09/26/make-a-statement-with-type/
 [6 Questions]:          http://tympanus.net/codrops/2011/12/01/6-questions-you-should-ask-yourself-when-choosing-fonts/
+[Brief Primer]:         http://blog.8thlight.com/billy-whited/2011/08/25/a-brief-primer-on-typeface-selection.html
 [Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
 [Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#a-brief-history-of-web-font-sizes
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md#resets
