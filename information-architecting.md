@@ -1,7 +1,7 @@
 Information Architecting
 ========================
 
-In the first section of this book we laid down the foundation for our application by:
+In the first section of this book we laid down the foundation of our application by:
 
 1. Defining our base [markup][] and [styles][].
 2. Choosing a [mobile][] content delivery strategy.
@@ -185,7 +185,7 @@ Image placeholders in different sizes and styles are also plentiful (the second 
 Feedback
 --------
 
-One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services in our [Feedback Services][] in the Appendix.
+One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services in our [Feedback Services][] in the appendix.
 
 What We've Done
 ---------------
