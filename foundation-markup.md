@@ -62,7 +62,7 @@ To better understand it (and my implementation of it), the following sites are a
 
 ### Where Do Things Go?
 
-Code wise you have access to everything I use when starting a new application, my [sarter code][]. Structurally, these files fall into place as follows:
+Code wise you have access to everything I use when starting a new application, my [starter code][]. Structurally, these files fall into place as follows:
 
 Project
   - app

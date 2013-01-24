@@ -24,21 +24,18 @@ If this is part of our story we better deliver some great graphic design on top 
 Typography
 ----------
 
-After I have finished all of my information architecture stuff, the first visual design component I like to tackle is my base typography.
+After I have finished all of my information architecture stuff, the first visual design component I like to tackle is [typography][].
 
 > 95% of the information on the web is written language. It is only logical to say that a web designer should get good training in the main discipline of shaping written information, in other words: Typography.
 
 [Web Design Is 95% Typography][95% typography]
 
-Before we dive into this, if you really want to learn about typography, the absolute best resources out there are:
+Before we dive into this, if you really want to learn about typography, the most highly acclaimed resource out there is (I through the second one in there for good measure):
 
 - [The Elements of Typographic Style Applied to the Web][Typographic Style]
 - [Thinking with Type][Think Type]
-- [][]
-- [][]
-- [][]
 
-In this chapter I'm not going to cover a major component of typography, and that is grid systems. We introduced grid systems in the [Mobile on Rails][] chapter of this book, and include a [Grid Systems][] roundup in the appendices.
+In this chapter I'm NOT going to cover a major component of typography, and that is grid systems. We introduced grid systems in the [Mobile on Rails][] chapter of this book, and include a [Grid Systems][] roundup in the appendices.
 
 So let's get started. In my opinion the lowest hanging fruit in typography are base font characteristics: family, size, color and line height. If you have implemented the base style sheets from chapter 2, [Foundation Styles][], you have several font faces available to you out of the box, and base font characteristics have been predefined in global variables. All of this is organized in [_define.sass][], a sass file reserved for defining global stylesheet variables:
 
@@ -177,11 +174,12 @@ Again, we're going to use the browser's default setting. I use 100% here, but co
 - [How we learned to leave default font-size alone and embrace the em][Embracing em's]
 - [CSS Font-Size: em vs. px vs. pt vs. percent][CSS Font-Size]
 
-### Line Height
+### Readability
 
+Font choice, size, line length (measure), line height (leading), color all come together and contribute to your websites readability.
 
+Font choice and size we covered, let's review the remaining three.
 
-### Color
 
 
 
@@ -263,6 +261,7 @@ Don't for a moment think that creative license belongs only to designers. It doe
 [last chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [Story Design]:         http://24ways.org/2011/design-the-invisible/
 [Dao]:                  http://www.alistapart.com/articles/dao
+[typography]:           http://blog.8thlight.com/billy-whited/2011/07/26/what-is-typography.html
 [95% typography]:       http://informationarchitects.net/blog/the-web-is-all-about-typography-period/
 [Typographic Style]:    http://webtypography.net/
 [Think Type]:           http://www.thinkingwithtype.com/
@@ -291,7 +290,7 @@ Don't for a moment think that creative license belongs only to designers. It doe
 [Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#a-brief-history-of-web-font-sizes
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md#resets
 [stylesheet]:           https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
-[Embracing em's]:                   http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
+[Embracing em's]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/

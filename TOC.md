@@ -89,8 +89,7 @@ Table of Contents
     - Font Services
     - Trial and Error
     - Size
-    - Line Height
-    - Color
+    - Readability
   - Color
   - Branding
   - Images
