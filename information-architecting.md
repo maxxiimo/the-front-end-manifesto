@@ -18,23 +18,31 @@ These talks have stuck with me over the years and have become the manner in whic
 
 In this chapter we're going to mostly focus on option 1. Hiring a graphic designer from the get-go is not a bad idea – graphic design and front end engineering are two complete different skill sets – but perhaps there isn't money in the budget to hire a graphic designer, or this responsibility falls on your lap, or maybe you just want to do it yourself.
 
-NOTE: As a consultant brought into projects, oftentimes design mockups have already been developed and it's now my job to integrate them into the application. Chapter 7, [Slicing and Dicing Mockups][Slicing and Dicing] will dive into the mechanics of doing exactly that.
+NOTE: As a consultant brought into projects, oftentimes design mockups have already been developed and it's now my job to integrate them into the application. Chapter 6, [Slicing and Dicing Mockups][Chapter 6], will dive into the mechanics of doing exactly that.
 
 A Mosaic of Information
 -----------------------
 
-To build our stories the first thing we need to understand is what it means to organize an applications information. As I mentioned in [Chapter 1][Chapter 1 Quote]:
+To build our story the first thing we need to understand is what it means to organize an applications information and function.
 
 > As a front end person, sometimes called an Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption.
 
-How does "organizing information and function" relate to storytelling?
+\- [Chapter 1 Quote][]
 
-A layout is really a mosaic of information that tells (conveys) something: a particular type of story. This information obviously was grouped together based on some criteria, and then placed on a website "page" that ultimately is viewed by an end-user. It had to be organized in some logical way to make absolute sense to the end-user, and probably designed to invite/entice/cause the end-user to take the next step or action, i.e. turn the page in the story.
+How does "organizing information and function" relate to storytelling? I like to think about it in terms of traditional mosaics. What is a mosaic if not a bunch of smaller things coming together to form a meaningful whole:
+
+> Mosaic is the art of creating images with an assemblage of small pieces of colored glass, stone, or other materials.
+
+\- [Wikipedia][]
+
+Individually, the components of a mosaic are meaningless, but together they form a pattern or an image.
+
+A website layout is similar in that it is composed of different blocks of information, a mosaic of information, that together convey a larger whole, a story. As front end developers we choose what blocks belong together, and through our code create a digital mosaic, a website "page", that ultimately is viewed and interpreted by our audience, and in most cases probably designed to invite/entice/cause the user to take the next step or action, i.e. turn the page in the story.
 
 The Storyline
 -------------
 
-The unifying message behind this mosaic (blocks) of information is the storyline. Before content can be discovered, grouped, and placed in a layout the narrator, in this case you, has to have the stories general theme in mind. For example, the storyline might be:
+The unifying message behind this mosaic (blocks) of information is the storyline or theme. Before content can be discovered, grouped, and placed in a layout, the narrator, in this case you, has to have the stories general theme in mind. For example, the storyline might be:
 
 > I'm a great Web site for finding a job...a job that is perfect for you, you should join me, if you do you will have access to tons of perfect jobs and your life will change for the better forever!
 
@@ -48,12 +56,12 @@ In this storyline example – with my Information Architect (IA) hat on – I immedi
     - Legalese (Copyright, ToS, Privacy)
     - Non-legal footer type info (Feedback, About, Contact, Site Map)
 
-...and as the front end developer I'm already beginning to imagine how these blocks of information will be conveyed and coded to fit into our foundation markup and/or used by our backend development team. This is exactly what you will need to do. Think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed and coded.
+...and as the front end developer I'm already beginning to imagine how these blocks of information will be organized and coded into our foundation markup and/or used by our backend development team. This is exactly what you will need to do. Think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed and coded.
 
 Gathering and Organizing Information
 ------------------------------------
 
-Before you begin coding though, it's important to take a few preliminary steps. What follows are different techniques I use to gather all the blocks of information that will ultimately make up the sites story, i.e. users experience.
+Before you begin coding though, it's important to take a few preliminary steps. What follows are different techniques for gathering all the blocks of information that will ultimately make up the sites story, i.e. user experience.
 
 NOTE: Throughout this process I highly recommend keeping the book "[Don't Make Me Think][]" by Steve Krug nearby as a reference. It’s a good read and everything he says is so darn obvious, and all there in one place.
 
@@ -107,7 +115,7 @@ There are a number of applications out there that can help you prototype, but I 
 
 So with the index card exercise done, the next step in my process is to take the resulting information architecture and create a prototype. Doing so will help you better define the layout, visualize what the site will look like on a screen, visualize how pages interconnect, and give you plenty of room for trial and error. It also provides you with some additional and inexpensive opportunities for stakeholder input, and further reflection and brainstorming, before you begin coding.
 
-TIP: As I prototype I've always got an eye on my bookmarked reference websites, and/or some of the [inspirational sites][] listed in our Appendix.
+TIP: As I prototype I've always got an eye on my bookmarked reference websites, and/or some of the [inspirational sites][] listed in our appendix.
 
 Here are some device mockup resources that will help you sketch:
 
@@ -124,7 +132,7 @@ The end result: a well-defined user interface layout for my entire application.
 Wireframing
 -----------
 
-**No More Exercises!** At this point it's time to start coding. From the exercises above you have absolutely everything you need to start coding with confidence kknowing that the site's information architecture and layout are pretty darn close to what you will ultimately develop.
+**No More Exercises!** At this point it's time to start coding. From the exercises above you have absolutely everything you need to start coding with confidence knowing that the site's information architecture and layout are pretty darn close to what you will ultimately develop.
 
 The prototype is the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond the early exercises, you can send them to a live URL where they can click through to simulate the actual application (and view it on different devices). Any changes you make will be reflected immediately, which they'll love. For you, everything from this point forward is just an iteration in the development process.
 
@@ -161,7 +169,7 @@ There's a lot of Lorem Ipsum generator services out there, here are a few (some 
 
 #### Image Placeholders
 
-Image placeholders in different sizes and styles are also plentiful (the second link will give you a pretty compreshensive list to choose from):
+Image placeholders in different sizes and styles are also plentiful (the second link will give you a pretty comprehensive list to choose from):
 
 - [The Ruby Toolbox][Toolbox 2]
 - [List of Dummy Image Generators][Image Generators]
@@ -183,7 +191,8 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [mobile]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-foundation.md
 [Jason Santa Maria]:    http://jasonsantamaria.com/
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
-[Slicing and Dicing]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
+[Wikipedia]:            https://en.wikipedia.org/wiki/Mosaic
 [Chapter 1 Quote]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md#the-application-layout
 [Don't Make Me Think]:  http://www.sensible.com/index.html
 [Case Study]:           http://builtbyboon.com/blog/responsive-design-case-study
