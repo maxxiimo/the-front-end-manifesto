@@ -224,9 +224,8 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Holder.js]:            http://imsky.github.com/holder/
 [Feedback Services]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#feedback-services
 
+[Mosaic]:               http://chrismaxwell.com/manifesto/mosaic-1.jpg
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
 [Index After]:          http://chrismaxwell.com/manifesto/index-cards/index-cards-after.jpg
 [Index Mobile]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-mobile.jpg
 [Prototype]:            http://chrismaxwell.com/manifesto/paper/prototype.jpg
-
-
