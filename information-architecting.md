@@ -77,15 +77,15 @@ NOTE: Throughout this process I highly recommend keeping the book "[Don't Make M
 
 The first technique involves the use of index cards to create a physical inventory of possible information components. It's best to do this exercise with others, especially stakeholders in the project. Here are the steps I follow:
 
-**Step 1:** Write down in a word or two on an index card what the card represents: content, function, a navigational element, an image, video, whatever.
+*Step 1:* Write down in a word or two on an index card what the card represents: content, function, a navigational element, an image, video, whatever.
 
 Think of as many components to the page or application as you can - I prefer dealing with a single view at a time.
 
 NOTE: Color coding is helpful. You can also use a digital equivalent to index cards like PowerPoint, or even a single sheet of paper (as a list of items), but index cards are best. You can buy a pack of 200 index cards for under a dollar, so don't be afraid to get nitty-gritty with what you define as an information component.
 
-**Step 2:** Lay out the index cards on a table and organize them into logical groups like navigational or footer areas.
+*Step 2:* Lay out the index cards on a table and organize them into logical groups like navigational or footer areas.
 
-**Step 3:** Start eliminating all the cards you don't want to include.
+*Step 3:* Start eliminating all the cards you don't want to include.
 
 Here's a practical example. I need a new website for my practice "ViewThought". My storyline goes something like this:
 
