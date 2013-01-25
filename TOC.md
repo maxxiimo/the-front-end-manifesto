@@ -84,10 +84,7 @@ Table of Contents
 #### Chapter 5
 - [Visual Design for the Nondesigner][Visual Design]
   - Typography
-    - Font Stacks
     - Font Family
-    - Font Services
-    - Trial and Error
     - Size
     - Readability
   - Color
