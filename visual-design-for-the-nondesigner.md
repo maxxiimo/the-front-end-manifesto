@@ -145,7 +145,7 @@ Now that we have selected a font family, we need to set a base font size. Choosi
 
 Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History of Web Font Sizes][Appendix 9]" found in the appendices.
 
-In Chapter 2 we implemented [Normalize.css][]. If you look at the [stylesheet][] you will notice that we reset our base font size to 100%:
+In Chapter 2 we implemented [Normalize.css][]. If you look at our [implementation][] you will notice that we reset our base font size to 100%:
 
     /*
     * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using `em` units.
@@ -310,7 +310,6 @@ We started this chapter by covering typography. We discussed the basic building 
 [Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stacks-roundup
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
-[_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [_head.html.haml]:      https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
 [Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#font-services-and-tools
 [Typekit]:              https://typekit.com/
@@ -328,7 +327,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
 [Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#a-brief-history-of-web-font-sizes
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md#resets
-[stylesheet]:           https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
+[implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
 [using em's]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#ems-and-media-queries
 [CSS Font-Size]:        http://kyleschaeffer.com/user-experience/css-font-size-em-vs-px-vs-pt-vs/
 [Ideal Line Length]:    http://www.maxdesign.com.au/articles/em/
