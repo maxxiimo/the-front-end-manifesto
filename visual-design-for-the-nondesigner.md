@@ -30,9 +30,13 @@ After I have finished all of my information architecture stuff, the first visual
 
 \- [Web Design Is 95% Typography][95% typography]
 
-So let's get started. In my opinion the lowest hanging fruit in typography are fonts: family, size, and readability factors.
+So let's get started. In my opinion the lowest hanging fruit in typography are fonts:
 
-If you have implemented the base style sheets from Chapter 2, [Foundation Styles][Chapter 2], you have several font faces available to you out-of-the-box – defined and organized in [_define.sass][], a sass file reserved for defining global stylesheet variables.:
+- Family
+- Size
+- Readability
+
+If you have implemented the base style sheets from Chapter 2, [Foundation Styles][Chapter 2], these typographic elements are predefined and available to you out-of-the-box in [_define.sass][] – a sass file reserved for defining global stylesheet variables.:
 
     /*  Fonts
       -----------------------
@@ -45,6 +49,47 @@ If you have implemented the base style sheets from Chapter 2, [Foundation Styles
     $verdana:           Verdana, Geneva, Tahoma, sans-serif
     $geneva:            Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif
     $georgia:           Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif
+
+    // base definitions...
+
+    $base-font-family:  $arial       !default
+    $base-font-size:    100%         !default
+    $base-font-color:   #444         !default
+    $base-line-height:  1.4          !default
+
+    $base-font-header:  $georgia     !default
+    $base-color-header: #222         !default
+
+From this Sass partial we can effect typography throughout the site through Sass's ability to set up variables.
+
+For example, our definitions above begin with variables set to different font stacks. Variables can also be set to other variables, and in our case to the $base-font-family variable: the key to our application fonts. This variable is referenced by our \<body> tags font-family property, and will propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
+
+NOTE: I'm NOT going to cover a major component of typography in this chapter, and that is grid systems. We introduced grid systems in the [Mobile on Rails][Chapter 3] chapter of this book, and include a [Grid Systems][Appendix 3] roundup in the appendices.
+
+### Font Family
+
+Since we have already predefined font stack variables let's pick one for View Thought. If you don't like what is predefined, to help you select alternatives without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the appendix of this book. Here you will find recommendations for:
+
+1.  Font stacks that you can copy and use in your project.
+
+2.  Web safe fonts, i.e. fonts that are most common on most versions of Windows, Mac, and Linux.
+
+    You can copy these and feel confident using them as your overall default font stack, or as a fallback font stack for a more interesting typeface.
+
+3.  Fonts that go well together, say one font for your headers, and another contrasting font for your body.
+
+#### Font Pairing
+
+When selecting font families for my projects I like to go straight for the "[Font Stacks Roundup][Appendix 7]" section titled "Combinations". Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and more often than not provide samples for you to review and choose from.
+
+> You might have already heard this; successful pairing relies on concord, or contrast, but not conflict. That is to say your selected fonts can work well together by sharing certain qualities, or by being completely different from one another. However, font pairs can conflict in a number of ways – being too similar being just one.
+
+\- [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
+
+I have left a few font stacks and Google Web Fonts pairing ideas for you in our starter styles:
+
+- [_define.sass][]
+- [_head.html.haml][]
 
     // google web fonts...
 
@@ -62,45 +107,6 @@ If you have implemented the base style sheets from Chapter 2, [Foundation Styles
 
     $droid-serif:       "Droid Serif", Georgia, Times, serif
     $droid-sans:        "Droid Sans", Helvetica, Arial, sans-serif
-
-    // base definitions...
-
-    $base-font-family:  $arial       !default
-    $base-font-size:    100%         !default
-    $base-font-color:   #444         !default
-    $base-line-height:  1.4          !default
-
-    $base-font-header:  $georgia     !default
-    $base-color-header: #222         !default
-
-From this Sass partial we can effect typography throughout the site through Sass's ability to set up variables.
-
-Our definitions above begin with variables set to different font stacks. Variables can also be set to other variables, and in our case the $base-font-family variable is the key to our applications fonts. This variable is referenced by our \<body> tags font-family property, and will propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
-
-NOTE: I'm NOT going to cover a major component of typography in this chapter, and that is grid systems. We introduced grid systems in the [Mobile on Rails][Chapter 3] chapter of this book, and include a [Grid Systems][Appendix 3] roundup in the appendices.
-
-### Font Family
-
-So let's pick a base font family for View Thought. For your project, to help you get the job done without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the appendix of this book. Here you will find recommendations for:
-
-1.  Font stacks that you can copy and use in your project.
-
-2.  Web safe fonts, i.e. fonts that are most common on most versions of Windows, Mac, and Linux.
-
-    You can copy these and feel confident using them as your overall default font stack, or as a fallback font stack for a more interesting typeface.
-
-3.  Fonts that go well together, say one font for your headers, and another contrasting font for your body.
-
-I like to go straight for the section titled "combinations". Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and/or provide samples for you to review and choose from.
-
-> You might have already heard this; successful pairing relies on concord, or contrast, but not conflict. That is to say your selected fonts can work well together by sharing certain qualities, or by being completely different from one another. However, font pairs can conflict in a number of ways – being too similar being just one.
-
-\- [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
-
-I have left a few font stacks and Google Web Fonts pairing ideas for you in our starter styles:
-
-- [_define.sass][]
-- [_head.html.haml][]
 
 #### Font Stacks
 
