@@ -1,25 +1,25 @@
 Visual Design for the Nondesigner
 =================================
 
-The [last chapter][] was about Information Architecture, so design really goes beyond it's scope, however, [design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction in visual design.
+In the [last chapter][Chapter 4] our focus was Information Architecture, and in that chapter we really emphasize storytelling. [Design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction in visual design.
 
-Up until now, we basically have a pretty blank wireframe: function before form. We need to add some spice to it.
+Up until now, we basically have a pretty blank wireframe: function before form. We need to add some spice to it:
 
 > Firstly, think about what your pages do, not what they look like. Let your design flow from the services which they will provide to your users, rather than from some overarching idea of what you want pages to look like. Let form follow function, rather than trying to take a particular design and make it "work".
 
 \- [A Dao of Web Design][Dao] by John Allsopp
 
-Just by looking at your site your users should be able to understand what they're looking at. Your website must communicate it's story. To illustrate how simple this can be take a look at this 2007 website concept:
+We learned in Chapter 4 that by looking at your site your users should be able to understand what they're looking at. That your website must communicate it's story. To illustrate how simple this can be take a look at this 2007 website concept:
 
 - http://noonebelongsheremorethanyou.com/00025
 
-Jason Santa Maria pointed out this site in a presentation he gave in 2008. What I like about it is that it demonstrates the simplicity of storytelling: the entire site is written on kitchen appliances! ...and at the same time engages the user and ultimately delivers a message to entice action.
+Jason Santa Maria pointed out this site in a presentation he gave in 2008. What I like about it is that it demonstrates the simplicity of storytelling: the entire site is written on kitchen appliances! ...and at the same time engages the user and ultimately delivers a message to entice action. We want to do this.
 
 In the case of "View Thought" part of the story is:
 
-"We are a great website **design** [emphasis supplied], development and user experience shop...we pay special attention to what your users will see."
+> We are a great website **design** [emphasis supplied], development and user experience shop...we pay special attention to what your users will see.
 
-If this is part of our story we better deliver some great graphic design on top of our information architecture, layout, and content that will help communicate it! To do so we will use a combination of fonts, color, images, and anything else I can think of to help View Thought tell it's story, and in such a way that users just get it. The combination of typefaces (fonts), color, branding, and images are the cornerstones of a sites look and feel. Let's explore each.
+If this is part of our story we better deliver some great graphic design on top of our information architecture, layout, and content, that will help communicate our story! To do so we will use a combination of typography, color, branding, images, icons, and anything else I can think of to help View Thought tell it's story, and in such a way that the user just gets it. The combination of these elements are the cornerstones of a sites look and feel. Let's explore each.
 
 Typography
 ----------
@@ -290,7 +290,7 @@ What We've Done
 
 Don't for a moment think that creative license belongs only to designers. It does not, in fact with the abilities of CSS3, much of the design work can now occur in the browser straight from our IDE's. Think of yourself as artists of a new age; you are the handshake between design and backend engineering and can work in either realm.
 
-[last chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
+[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [Story Design]:         http://24ways.org/2011/design-the-invisible/
 [Dao]:                  http://www.alistapart.com/articles/dao
 [typography]:           http://blog.8thlight.com/billy-whited/2011/07/26/what-is-typography.html
