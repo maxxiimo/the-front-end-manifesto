@@ -36,7 +36,7 @@ So let's get started. In my opinion the lowest hanging fruit in typography are f
 - Size
 - Readability
 
-If you have implemented the base style sheets from Chapter 2, [Foundation Styles][Chapter 2], these typographic elements are predefined and available to you out-of-the-box in [_define.sass][] – a sass file reserved for defining global stylesheet variables.:
+If you have implemented the base style sheets from Chapter 2, [Foundation Styles][Chapter 2], these typographic elements are predefined and available to you out-of-the-box in [_define.sass][] – a sass partial reserved for defining global stylesheet variables:
 
     /*  Fonts
       -----------------------
@@ -60,7 +60,7 @@ If you have implemented the base style sheets from Chapter 2, [Foundation Styles
     $base-font-header:  $georgia     !default
     $base-color-header: #222         !default
 
-From this Sass partial we can effect typography throughout the site through Sass's ability to set up variables.
+I recommend setting up something like this if you are not using ours. From this partial we can effect typography throughout the site through Sass's ability to set up variables.
 
 For example, our definitions above begin with variables set to different font stacks. Variables can also be set to other variables, and in our case to the $base-font-family variable: the key to our application fonts. This variable is referenced by our \<body> tags font-family property, and will propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
 
@@ -68,7 +68,7 @@ NOTE: I'm NOT going to cover a major component of typography in this chapter, an
 
 ### Font Family
 
-Since we have already predefined font stack variables let's pick one for View Thought. If you don't like what is predefined, to help you select alternatives without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the appendix of this book. Here you will find recommendations for:
+Since we have already predefined font stack variables, let's pick one for View Thought. If you don't like what is predefined for your site, to help you select alternatives without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the appendix of this book. Here you will find recommendations for:
 
 1.  Font stacks that you can copy and use in your project.
 
@@ -141,9 +141,7 @@ As you can see, choosing fonts is a practice in trial and error. These articles 
 
 ### Size
 
-Choosing font size is actually not as straightforward and easy as one would expect. At the very basic level, you will choose between a measurement type such as px vs. ems vs. % vs. rem, and from a more complex perspective you might want to define a modular scale based on ratios derived from harmonic intervals or the golden ratio. Yowza!
-
-So why so complex? Well essentially your choice will significantly impact the harmony and feel of your design; and how your site will look across different browsers, devices, and user settings. Your choice might also be the basis from which your entire site is responsive to.
+Now that we have selected a font family, we need to set a base font size. Choosing font size is actually an important decision. At the very basic level you will choose between a measurement types such as px's vs. em's vs. % vs. pt's vs rem's, and from a more complex perspective you need to consider that your choice might also be the measurement from which your entire site is responsive to, and in our case it is.
 
 Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History of Web Font Sizes][Appendix 9]" found in the appendices.
 
@@ -160,7 +158,7 @@ In Chapter 2 we implemented [Normalize.css][]. If you look at the [stylesheet][]
         -ms-text-size-adjust: 100%; /* 2 */
     }
 
-Typically browsers default to a font size of 16px. We're going to accept this default font size for our project, so setting a font size of 100% through normalize is fine and dandy. Through the body tag we provide a way in which we may affect font sizes globally:
+As a rule of thumb, browsers typically default to a font size of 16px. We're going to accept this default font size for our project, so setting a font size of 100% through normalize is fine and dandy. Through the body tag we also provide a way in which we may affect font sizes globally:
 
     app\assets\stylesheets\_define.sass
 
@@ -210,6 +208,8 @@ For line length let's plan to use any of the following ranges throughout our app
 #### Leading
 
 For line height
+
+...a modular scale based on ratios derived from harmonic intervals or the golden ratio. Yowza!
 
 #### Color
 
