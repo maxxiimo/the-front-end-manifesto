@@ -37,7 +37,7 @@ Before we dive into this, if you really want to learn about typography, the most
 
 In this chapter I'm NOT going to cover a major component of typography, and that is grid systems. We introduced grid systems in the [Mobile on Rails][] chapter of this book, and include a [Grid Systems][] roundup in the appendices.
 
-So let's get started. In my opinion the lowest hanging fruit in typography are base font characteristics: family, size, color and line height. If you have implemented the base style sheets from chapter 2, [Foundation Styles][], you have several font faces available to you out of the box, and base font characteristics have been predefined in global variables. All of this is organized in [_define.sass][], a sass file reserved for defining global stylesheet variables:
+So let's get started. In my opinion the lowest hanging fruit in typography are base font characteristics: family, size, color and line height. If you have implemented the base style sheets from chapter 2, [Foundation Styles][], you have several font faces available to you out of the box and defined and organized in [_define.sass][], a sass file reserved for defining global stylesheet variables:
 
     /*  Fonts
       -----------------------
@@ -78,15 +78,7 @@ So let's get started. In my opinion the lowest hanging fruit in typography are b
     $base-font-header:  $georgia     !default
     $base-color-header: #222         !default
 
-In Sass you can set up variables. As you can see above, our definitions begin with variables set to different font stacks. These variables can then be assigned to the $base-font-family variable. What ever variable you sign to $base-font-family will then permeate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance. In our case we set the font family of our <body> tag to $base-font-family. All child elements will then inherit this font family, unless defined otherwise.
-
-### Font Stacks
-
-The reason we use font stacks in the first place, i.e. a listing of several different fonts, is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use.
-
-    Arial, "Helvetica Neue", Helvetica, sans-serif
-
-If your device does not have the first font in the stack available, your browser will look for the second one and so forth until the very last one: which is typically generic and the most broadly available across different operating systems. The fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used: at least that is the goal.
+In Sass you can set up variables. Our definitions above begin with variables set to different font stacks. Variables can be set to other variables, and in our stylesheets defined font stacks are set to the $base-font-family variable which in turn is reference by our \<body> tags font-family property. Unless defined differently in child elements, this stack will now propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
 
 ### Font Family
 
@@ -111,7 +103,15 @@ I have left a few font stacks and Google Web Fonts pairing ideas for you in our 
 - [_define.sass][]
 - [_head.html.haml][]
 
-### Font Services
+#### Font Stacks
+
+The reason we use font stacks in the first place, i.e. a listing of several different fonts, is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use.
+
+    Arial, "Helvetica Neue", Helvetica, sans-serif
+
+If your device does not have the first font in the stack available, your browser will look for the second one and so forth until the very last one: which is typically generic and the most broadly available across different operating systems. The fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used: at least that is the goal.
+
+#### Font Services
 
 Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 8]" appendix.
 
