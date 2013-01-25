@@ -121,7 +121,7 @@ Typekit is a paid service, [Google Web Fonts][] on the other hand is a free serv
 
 [A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
 
-### Trial and Error
+#### Trial and Error
 
 Here are some screenshots of different font ideas for View Thought:
 
