@@ -160,11 +160,11 @@ In Chapter 2 we implemented [Normalize.css][]. If you look at the [stylesheet][]
 
 As a rule of thumb, browsers typically default to a font size of 16px. We're going to accept this default font size for our project, so setting a font size of 100% through normalize is fine and dandy. Through the body tag we also provide a way in which we may affect font sizes globally:
 
-app\assets\stylesheets\_define.sass:
+app\assets\stylesheets\_define.sass
 
     $base-font-size:    100%         !default
 
-app\assets\stylesheets\desktop\_layout.sass:
+app\assets\stylesheets\desktop\_layout.sass
 
     body
       margin: 0 auto
