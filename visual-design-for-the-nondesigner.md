@@ -28,7 +28,7 @@ After I have finished all of my information architecture stuff, the first visual
 
 > 95% of the information on the web is written language. It is only logical to say that a web designer should get good training in the main discipline of shaping written information, in other words: Typography.
 
-[Web Design Is 95% Typography][95% typography]
+\- [Web Design Is 95% Typography][95% typography]
 
 Before we dive into this, if you really want to learn about typography, the most highly acclaimed resource out there is (I through the second one in there for good measure):
 
