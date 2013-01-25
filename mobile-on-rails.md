@@ -279,6 +279,8 @@ Well obviously half of 960 pixels: 480 pixels, and declaring percentages for thi
 
 Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all containers and you have a responsive grid that will resize itself depending upon the screen size it is drawn into.
 
+#### Using Susy
+
 Rather than calculate all the different ratios within a layout, I prefer to use a grid system and save some time. You will find a pretty comprehensive list of [Grid Systems][]in the appendix, but my preference is to use [Susy][] since we are already using Compass, and it is authored by Eric Meyer whom I have a great deal of confidence in. Installation is pretty straightforward:
 
 *Step 1:* Add the following to /config/compass.rb:
@@ -304,9 +306,11 @@ Don't forget to restart your server, and wallah! You have a pretty powerful resp
 - [Responsive Grids With Susy][Susy Grids]
 - [Off-canvas layout with Susy][Off-canvas]
 
-### Media Types
+### @media
 
 Now that we have a flexible grid, it's time to look at Ethan's second ingredient in RWD; media queries. To understand media queries let's take a little look at the history behind them.
+
+#### Media Types
 
 Media dependent stylesheets were first specified in the HTML4 and CSS2 W3C recommendations and were designed to allow developers to target specific device types. The recognized [media types][] were: all, braille, embossed, handheld, print, projection, screen, speech, tty, tv (CSS2).
 
@@ -317,7 +321,7 @@ Media types could be targeted via @media or @import rules, or in the HTML \<link
 
 The problem with this specification though was inconsistent implementation across mobile browsers, plus the list of media types did not accommodate the wide range of screen sizes. Could you imagine how useless it would be today? And that's where media queries came in and saved the day.
 
-### Media Queries
+#### Media Queries
 
 With so many screen sizes and new devices popping up left and right, using media type alone to serve up styles for specific devices would be impractical. Media queries, on the other hand, do not solely rely on just a handful of predefined types. Media queries are much more flexible in that they allow you to test a media type with a logical expression that evaluates to true or false. For example:
 
@@ -327,7 +331,7 @@ In this case, the media type All (implied by shorthand syntax) is matched agains
 
 Unlike the old specification, media queries allow you to move beyond a finite set of media types, and test for a broader range of conditions including minimum and maximum widths, heights, screen orientation, [and more][Media Queries]. Perfect for serving up device sensitive styles and content to a wide range of screen sizes and device capabilities.
 
-#### Target Devices
+### Target Devices
 
 Before we write our own media queries we need to determine what screen sizes we plan to target. I'm going to make the assumption that our audience uses desktop computers/laptops, tablet devices, and smart phones, but not televisions or anything else for that matter to browse the web. I'm making this assumption to give us something to work with, but you should check your Web logs!
 

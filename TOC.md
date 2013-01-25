@@ -57,8 +57,8 @@ Table of Contents
       - Advanced Solution
     - II. Responsive Web Design
       - Flexible Grids
-      - Media Types
-      - Media Queries
+      - @media
+      - Target Devices
       - Em's and Media Queries
       - Flexible Media
       - Conditional Loading

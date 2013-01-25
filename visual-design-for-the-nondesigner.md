@@ -71,11 +71,12 @@ So let's get started. In my opinion the lowest hanging fruit in typography are b
     // base definitions...
 
     $base-font-family:  $arial       !default
-    $base-font-size:    1em          !default
-    $base-font-color:   #333         !default
+    $base-font-size:    100%         !default
+    $base-font-color:   #444         !default
     $base-line-height:  1.4          !default
 
     $base-font-header:  $georgia     !default
+    $base-color-header: #222         !default
 
 In Sass you can set up variables. As you can see above, our definitions begin with variables set to different font stacks. These variables can then be assigned to the $base-font-family variable. What ever variable you sign to $base-font-family will then permeate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance. In our case we set the font family of our <body> tag to $base-font-family. All child elements will then inherit this font family, unless defined otherwise.
 
@@ -141,7 +142,7 @@ So why so complex? Well essentially your choice will significantly impact the ha
 
 Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History of Web Font Sizes][Appendix 9]" found in the appendices.
 
-In Chapter 2 we implement [Normalize.css][]. If you look at the [stylesheet][] you will notice that we reset our base font size to 100%:
+In Chapter 2 we implemented [Normalize.css][]. If you look at the [stylesheet][] you will notice that we reset our base font size to 100%:
 
     /*
     * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using `em` units.
@@ -169,19 +170,50 @@ Typically browsers default to a font size of 16px. We're going to accept this de
       line-height: $base-line-height
       background-color: $bg-body
 
-Again, we're going to use the browser's default setting. I use 100% here, but could also omit the reference completely. The best explanations of why we're doing this can be found here:
+Again, we're going to use the browser's default setting. I include 100% here, but could also omit the reference completely.
 
-- [How we learned to leave default font-size alone and embrace the em][Embracing em's]
+#### Using Em's
+
+Throughout our application moving forward if we would like to affect font size for let's say headers or a specific element, we will use em's. We use em's because there are a scalable unit relative to the parent font size. In our case, 1em = default browser font size = typically 16px. If we would like to double in size we use 2em = 32px.
+
+NOTE: It's important to keep in mind that ends are relative to the parent, and not the browser or \<body> font size.
+
+ In Chapter 3 we learned about the benefits of [using em's][] in our grid system, and as it relates to our content. Using em's then goes hand-in-hand with our grid system.
+
+For more details take a look at:
+
+- [Ideal line length for content][Ideal Line Length]
 - [CSS Font-Size: em vs. px vs. pt vs. percent][CSS Font-Size]
+- [How we learned to leave default font-size alone and embrace the em][Embracing em's]
 
 ### Readability
 
-Font choice, size, line length (measure), line height (leading), color all come together and contribute to your websites readability.
+Font choice, size, line length (measure), line height (leading), color all come together and contribute to your websites [readability][]. We've covered font choice and size, now let's look at the rest.
 
-Font choice and size we covered, let's review the remaining three.
+#### Measure
 
+For line length let's plan to use any of the following ranges throughout our application:
 
+> ...anywhere from 45–75 characters is considered acceptable.
 
+\- [Readability][readability] by Billy Whited
+
+> A general good rule of thumb is 2-3 alphabets in length, or 52-78 characters (including spaces).
+
+\- [Five simple steps to better typography][Better Typography] by Mark Boulton
+
+#### Leading
+
+For line height
+
+#### Color
+
+I read [somewhere][] that to make your text appear softer and still maintain a good contrast you shouldn't use pure black for your font color but something slightly lighter. The idea made a lot of sense to me so we use the following defaults in our starter styles:
+
+    $base-font-color:   #444         !default
+    $base-header-color: #222         !default
+
+Of course, black on white does not have to be the default color and contrast. Will learn more about color in the next section.
 
 Color
 -----
@@ -290,7 +322,14 @@ Don't for a moment think that creative license belongs only to designers. It doe
 [Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#a-brief-history-of-web-font-sizes
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md#resets
 [stylesheet]:           https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
+[using em's]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#ems-and-media-queries
+[CSS Font-Size]:        http://kyleschaeffer.com/user-experience/css-font-size-em-vs-px-vs-pt-vs/
+[Ideal Line Length]:    http://www.maxdesign.com.au/articles/em/
 [Embracing em's]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
+[readability]:          http://blog.8thlight.com/billy-whited/2011/08/23/readability.html
+[Better Typography]:    http://www.markboulton.co.uk/journal/five-simple-steps-to-better-typography
+[somewhere]:            http://www.kaikkonendesign.fi/typography/section/11
+
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
