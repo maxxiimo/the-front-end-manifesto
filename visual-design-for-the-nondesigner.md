@@ -30,14 +30,9 @@ After I have finished all of my information architecture stuff, the first visual
 
 \- [Web Design Is 95% Typography][95% typography]
 
-Before we dive into this, if you really want to learn about typography, the most highly acclaimed resource out there is (I through the second one in there for good measure):
+So let's get started. In my opinion the lowest hanging fruit in typography are fonts: family, size, and readability factors.
 
-- [The Elements of Typographic Style Applied to the Web][Typographic Style]
-- [Thinking with Type][Think Type]
-
-In this chapter I'm NOT going to cover a major component of typography, and that is grid systems. We introduced grid systems in the [Mobile on Rails][] chapter of this book, and include a [Grid Systems][] roundup in the appendices.
-
-So let's get started. In my opinion the lowest hanging fruit in typography are base font characteristics: family, size, color and line height. If you have implemented the base style sheets from chapter 2, [Foundation Styles][], you have several font faces available to you out of the box and defined and organized in [_define.sass][], a sass file reserved for defining global stylesheet variables:
+If you have implemented the base style sheets from Chapter 2, [Foundation Styles][Chapter 2], you have several font faces available to you out-of-the-box – defined and organized in [_define.sass][], a sass file reserved for defining global stylesheet variables.:
 
     /*  Fonts
       -----------------------
@@ -78,7 +73,11 @@ So let's get started. In my opinion the lowest hanging fruit in typography are b
     $base-font-header:  $georgia     !default
     $base-color-header: #222         !default
 
-In Sass you can set up variables. Our definitions above begin with variables set to different font stacks. Variables can be set to other variables, and in our stylesheets defined font stacks are set to the $base-font-family variable which in turn is reference by our \<body> tags font-family property. Unless defined differently in child elements, this stack will now propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
+From this Sass partial we can effect typography throughout the site through Sass's ability to set up variables.
+
+Our definitions above begin with variables set to different font stacks. Variables can also be set to other variables, and in our case the $base-font-family variable is the key to our applications fonts. This variable is referenced by our \<body> tags font-family property, and will propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
+
+NOTE: I'm NOT going to cover a major component of typography in this chapter, and that is grid systems. We introduced grid systems in the [Mobile on Rails][Chapter 3] chapter of this book, and include a [Grid Systems][Appendix 3] roundup in the appendices.
 
 ### Font Family
 
@@ -290,17 +289,19 @@ What We've Done
 
 Don't for a moment think that creative license belongs only to designers. It does not, in fact with the abilities of CSS3, much of the design work can now occur in the browser straight from our IDE's. Think of yourself as artists of a new age; you are the handshake between design and backend engineering and can work in either realm.
 
+We started this chapter by covering typography. We discussed the basic building blocks of typography and how it is implemented in our application. As a side note, if you really want to learn more, the most highly acclaimed resource out there is:
+
+- [The Elements of Typographic Style Applied to the Web][Typographic Style]
+
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [Story Design]:         http://24ways.org/2011/design-the-invisible/
 [Dao]:                  http://www.alistapart.com/articles/dao
 [typography]:           http://blog.8thlight.com/billy-whited/2011/07/26/what-is-typography.html
 [95% typography]:       http://informationarchitects.net/blog/the-web-is-all-about-typography-period/
-[Typographic Style]:    http://webtypography.net/
-[Think Type]:           http://www.thinkingwithtype.com/
-[Mobile on Rails]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
-[Grid Systems]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
-[Foundation Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
+[Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stacks-roundup
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
@@ -339,5 +340,6 @@ Don't for a moment think that creative license belongs only to designers. It doe
 [Icon Font Support]:    http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
 [Frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#frameworks
 [Premium Pixels]:       http://www.premiumpixels.com/
+[Typographic Style]:    http://webtypography.net/
 
 [fonts]:                http://www.chrismaxwell.com/manifesto/fonts/fonts.gif
