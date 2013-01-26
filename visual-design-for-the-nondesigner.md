@@ -132,17 +132,17 @@ Here are some screenshots of different font ideas for View Thought:
 
 ![][fonts]
 
-As you can see, choosing fonts is a practice in trial and error. In Appendix 9 in the section entitled "[Choosing Typeface Articles][Choosing Typeface]" I list different articles that might help you frame the context of your decision making process.
+As you can see, choosing fonts is a practice in trial and error. In Appendix 9 in the section entitled "[Choosing Typeface Articles][Choosing Typeface]," I list different articles that might help you frame the context of your decision making process.
 
-In a presentation by Tim Brown, the Type Manager for Adobe Typekit, he quotes Jason Santa Maria as saying:
+I also think the following idea is worth noting by itself: In a presentation by Tim Brown, the Type Manager for Adobe Typekit, he quotes Jason Santa Maria as saying:
 
 > Write down a general description of the qualities of the message you are trying to convey, and then look for typefaces that embody those qualities.
 
 \- [More Perfect Typography][Perfect Typography]
 
-...and states that now, this is how he always starts a project. He then goes on to describe that he starts with body text, which gives tone for a piece, then moves on to markers like headers, that give it personality and character. Food for thought.
+...and states that now, this is how he always begins a project. He then goes on to describe that he starts with body text, which gives tone for a piece, then moves on to markers like headers, that give it personality and character. Food for thought.
 
-Speaking of Jason Santa Maria, in another presentation called [On Web Typography][] he spoke about picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) were excellent. You can find them transcribed in [Appendix 9][].
+Speaking of Jason Santa Maria, in another presentation called [On Web Typography][] he gives advice on picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) are excellent. You can find them transcribed in [Appendix 9][].
 
 ### Size
 
@@ -333,7 +333,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Choosing Typeface]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#choosing-typeface-articles
 [Perfect Typography]:   http://vimeo.com/17079380
 [On Web Typography]:    http://vimeo.com/34178417
-[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#jason-to-maria-on-web-typography
+[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#jason-santa-maria-on-web-typography
 [Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#a-brief-history-of-web-font-sizes
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss

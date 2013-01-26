@@ -15,7 +15,7 @@ The following is designed to help you choose your typefaces. Here are some artic
 
 4.  *9/26/12* - [Make a Statement with Type][Type Statement]
 
-**Mobile:**
+Mobile
 
 5.  *10/2/11* - [5 Tips for Excellent Mobile Typography][5 Tips]
 
