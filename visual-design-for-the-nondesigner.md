@@ -124,7 +124,7 @@ I use [Typekit][]. Fortunately for us, Typekit provides an excellent [series of 
 
 Typekit is a paid service, [Google Web Fonts][] on the other hand is a free service:
 
-[A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
+- [A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
 
 #### Choosing Fonts
 
