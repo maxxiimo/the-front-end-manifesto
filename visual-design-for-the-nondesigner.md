@@ -132,22 +132,17 @@ Here are some screenshots of different font ideas for View Thought:
 
 ![][fonts]
 
-As you can see, choosing fonts is a practice in trial and error. These articles might help frame the context of your decision making process:
-
-- [Make a Statement with Type][Type Statement]
-- [6 Questions You Should Ask Yourself When Choosing Fonts][6 Questions]
-- [A Brief Primer on Typeface Selection][Brief Primer]
-- [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
+As you can see, choosing fonts is a practice in trial and error. In Appendix 9 in the section entitled "[Choosing Typeface Articles][Choosing Typeface]" I list different articles that might help you frame the context of your decision making process.
 
 In a presentation by Tim Brown, the Type Manager for Adobe Typekit, he quotes Jason Santa Maria as saying:
 
 > Write down a general description of the qualities of the message you are trying to convey, and then look for typefaces that embody those qualities.
 
-\- "[More Perfect Typography][Perfect Typography]" Presentation
+\- [More Perfect Typography][Perfect Typography]
 
 ...and states that now, this is how he always starts a project. He then goes on to describe that he starts with body text, which gives tone for a piece, then moves on to markers like headers, that give it personality and character. Food for thought.
 
-Speaking of Jason Santa Maria, in a presentation called [On Web Typography][] he spoke about picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) were excellent. You can find them in [Appendix 9][].
+Speaking of Jason Santa Maria, in another presentation called [On Web Typography][] he spoke about picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) were excellent. You can find them transcribed in [Appendix 9][].
 
 ### Size
 
@@ -335,10 +330,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [details]:              https://github.com/maxxiimo/viewthought/blob/master/app/assets/stylesheets/desktop/_typography.sass
 [Google Web Fonts]:     http://www.google.com/webfonts#
 [Beginners Guide]:      http://designshack.net/articles/css/a-beginners-guide-to-using-google-web-fonts/
-[Type Statement]:       http://tympanus.net/codrops/2012/09/26/make-a-statement-with-type/
-[6 Questions]:          http://tympanus.net/codrops/2011/12/01/6-questions-you-should-ask-yourself-when-choosing-fonts/
-[Brief Primer]:         http://blog.8thlight.com/billy-whited/2011/08/25/a-brief-primer-on-typeface-selection.html
-[Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
+[Choosing Typeface]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#choosing-typeface-articles
 [Perfect Typography]:   http://vimeo.com/17079380
 [On Web Typography]:    http://vimeo.com/34178417
 [Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#jason-to-maria-on-web-typography

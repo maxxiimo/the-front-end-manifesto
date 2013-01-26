@@ -25,8 +25,11 @@ Appendices
 8.  [Font Services and Tools][Appendix 8]
     :: A jackpot listing of font services and tools to help you deliver a great typographic experience.
 
-9.  [A Brief History of Web Font Sizes][Appendix 9]
-    ::  Different articles from my archives over the last 12 years regarding web font sizes.
+9.  [Choosing Typefaces][Appendix 9]
+    :: Choosing typeface articles and grear advice from Jason Santa Maria on choosing typefaces.
+
+10. [A Brief History of Web Font Sizes][Appendix 9]
+    :: Different articles from my archives over the last 12 years regarding web font sizes.
 
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork-tasks
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-2.md#frameworks
@@ -36,4 +39,5 @@ Appendices
 [Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#feedback-services
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stack-roundup
 [Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#font-services-and-tools
-[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#a-brief-history-of-web-font-sizes
+[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#choosing-typefaces
+[Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#a-brief-history-of-web-font-sizes

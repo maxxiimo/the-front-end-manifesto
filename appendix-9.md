@@ -1,7 +1,27 @@
 Appendix 9
 ----------
 
-### Jason Santa Maria On Web Typography
+### Choosing Typefaces
+
+The following is designed to help you choose your typefaces. Here are some articles, and an excellent transcript from a presentation by Jason Santa Maria.
+
+#### Choosing Typeface Articles
+
+1.  *12/14/10* - [“What Font Should I Use?”: Five Principles for Choosing and Using Typefaces][Five Principles]
+
+2.  *8/25/11* - [A Brief Primer on Typeface Selection][Brief Primer]
+
+3.  *12/1/11* - [6 Questions You Should Ask Yourself When Choosing Fonts][6 Questions]
+
+4.  *9/26/12* - [Make a Statement with Type][Type Statement]
+
+**Mobile:**
+
+5.  *10/2/11* - [5 Tips for Excellent Mobile Typography][5 Tips]
+
+6.  *11/12/12* - [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
+
+#### Jason Santa Maria On Web Typography
 
 Jason Santa Maria, in a presentation at [Build 2011][] called [On Web Typography][] spoke about picking typefaces. I've transcribed it here in part and slightly paraphrased:
 
@@ -37,6 +57,14 @@ Jason Santa Maria, in a presentation at [Build 2011][] called [On Web Typography
 9.  Try it out! Test out your ideas. See how it looks. See how it reads. See how it feels. In long-form text, in short-form text. Small columns, wide columns. Big text, small text. Doing this gives you a very real impression on how other people are going to see it.
 
 NOTE: This work is [copyrighted][].
+
+[Five Principles]:      http://www.smashingmagazine.com/2010/12/14/what-font-should-i-use-five-principles-for-choosing-and-using-typefaces/
+[Brief Primer]:         http://blog.8thlight.com/billy-whited/2011/08/25/a-brief-primer-on-typeface-selection.html
+[Type Statement]:       http://tympanus.net/codrops/2012/09/26/make-a-statement-with-type/
+[6 Questions]:          http://tympanus.net/codrops/2011/12/01/6-questions-you-should-ask-yourself-when-choosing-fonts/
+
+[5 Tips]:               http://wixmobile.com/5-tips-for-excellent-mobile-typography
+[Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
 
 [Build 2011]:           http://2011.buildconf.com/
 [On Web Typography]:    http://vimeo.com/34178417
