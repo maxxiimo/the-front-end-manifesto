@@ -63,27 +63,31 @@ Appendix 7
 
 #### Combinations
 
-1.  *09/09/18* - [19 top fonts in 19 top combinations][19 Combinations]
+1.  *09/18/09* - [19 top fonts in 19 top combinations][19 Combinations]
 
     > I recently compiled a list of the 19 most popular fonts according to usage by graphic designers from all over the web. I could have had 100, but I got it down to under 50, and from there whittled it down to just the 19 best fonts.
 
-2.  *10/23/11* - [10 Great Google Font Combinations You Can Copy][Google Fonts]
+2.  *03/10* - [Four Techniques for Combining Fonts][Four Techniques]
+
+    > Is there a way to know what fonts will work together? Building a palette is an intuitive process, but expanding a typographic duet to three, four, or even five voices can be daunting.
+
+3.  *10/23/11* - [10 Great Google Font Combinations You Can Copy][Google Fonts]
 
     > Today we’re going to use the Google Font API as a playground for mixing fonts and finding ideal pairings. You’ll be able to skim through and instantly grab out selections that you think are appropriate for your projects.
 
-3.  *11/12/11* - [25 Fresh Examples of Beautiful Typeface Combinations in Web Design][25 Combinations]
+4.  *11/12/11* - [25 Fresh Examples of Beautiful Typeface Combinations in Web Design][25 Combinations]
 
     > From print to web layouts, typography is the center piece of a good design and today we gathered a few examples of beautiful typeface combinations in web design to inspire you.
 
-4.  *03/20/12* - [10 More Great Google Font Combinations You Can Copy][More Google Fonts]
+5.  *03/20/12* - [10 More Great Google Font Combinations You Can Copy][More Google Fonts]
 
     > ...it’s becomingly increasingly difficult to sift through the library to find the best selections. We’ve got your back though and are serving up another great collection of Google Web Font combinations ripe for the stealing.
 
-5.  *11/26/12* - [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
+6.  *11/26/12* - [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
 
     > Pairing fonts can be a challenge. Selecting two or more fonts which work well is one thing – selecting two which work together to achieve your typographic aims may have you reaching for the aspirin. Let’s see if we can alleviate any headaches. This guide will help you get started with font pairing for the web.
 
-6.  [Typeface Combinations][]
+7.  [Typeface Combinations][]
 
     > Although the idea of typeface combining revolves around contrast, the best serif and sans serif combinations have similar characteristics.
 
@@ -144,6 +148,7 @@ Appendix 7
 [Web Safe]:             http://www.w3schools.com/cssref/css_websafe_fonts.asp
 
 [19 Combinations]:      http://bonfx.com/19-top-fonts-in-19-top-combinations/
+[Four Techniques]:      http://www.typography.com/email/2010_03/index_tw.htm
 [Google Fonts]:         http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/
 [More Google Fonts]:    http://designshack.net/articles/typography/10-more-great-google-font-combinations-you-can-copy/
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/

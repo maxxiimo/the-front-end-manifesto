@@ -62,13 +62,13 @@ If you have implemented the base style sheets from Chapter 2, [Foundation Styles
 
 I recommend setting up something like this if you are not using ours. From this partial we can effect typography throughout the site through Sass's ability to set up variables.
 
-For example, our definitions above begin with variables set to different font stacks. Variables can also be set to other variables, and in our case to the $base-font-family variable: the key to our application fonts. This variable is referenced by our \<body> tags font-family property, and will propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
+For example, our definitions above begin with variables set to different font stacks. Variables can also be set to other variables, and in our case to the $base-font-family variable, the key to our application fonts. This variable is referenced by our \<body> tags font-family property, and will propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
 
 NOTE: I'm NOT going to cover a major component of typography in this chapter, and that is grid systems. We introduced grid systems in the [Mobile on Rails][Chapter 3] chapter of this book, and include a [Grid Systems][Appendix 3] roundup in the appendices.
 
 ### Font Family
 
-Since we have already predefined font stack variables, let's pick one for View Thought. If you don't like what is predefined for your site, to help you select alternatives without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the appendix of this book. Here you will find recommendations for:
+Since we have already predefined font stack variables, let's pick one for View Thought. If you don't like what is predefined for your site, to help you select an alternative without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the appendix of this book. Here you will find recommendations for:
 
 1.  Font stacks that you can copy and use in your project.
 
@@ -110,11 +110,11 @@ I have left a few font stacks and Google Web Fonts pairing ideas for you in our 
 
 #### Font Stacks
 
-The reason we use font stacks in the first place, i.e. a listing of several different fonts, is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use.
+The reason we use font stacks in the first place, i.e. a listing of several different fonts, is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use. For example:
 
     Arial, "Helvetica Neue", Helvetica, sans-serif
 
-If your device does not have the first font in the stack available, your browser will look for the second one and so forth until the very last one: which is typically generic and the most broadly available across different operating systems. The fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used: at least that is the goal.
+If your device does not have the first font in the stack, Arial, your browser will look for the second one and so forth until the very last one: which is a generic font and the most broadly available across different operating systems. The fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used: at least that is the goal.
 
 #### Font Services
 
@@ -126,7 +126,7 @@ Typekit is a paid service, [Google Web Fonts][] on the other hand is a free serv
 
 [A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
 
-#### Trial and Error
+#### Choosing Fonts
 
 Here are some screenshots of different font ideas for View Thought:
 
@@ -139,11 +139,21 @@ As you can see, choosing fonts is a practice in trial and error. These articles 
 - [A Brief Primer on Typeface Selection][Brief Primer]
 - [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 
+In a presentation by Tim Brown, the Type Manager for Adobe Typekit, he quotes Jason Santa Maria as saying:
+
+> Write down a general description of the qualities of the message you are trying to convey, and then look for typefaces that embody those qualities.
+
+\- "[More Perfect Typography][Perfect Typography]" Presentation
+
+...and states that now, this is how he always starts a project. He then goes on to describe that he starts with body text, which gives tone for a piece, then moves on to markers like headers, that give it personality and character. Food for thought.
+
+Speaking of Jason Santa Maria, in a presentation called [On Web Typography][] he spoke about picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) were excellent. You can find them in [Appendix 9][].
+
 ### Size
 
 Now that we have selected a font family, we need to set a base font size. Choosing font size is actually an important decision. At the very basic level you will choose between a measurement types such as px's vs. em's vs. % vs. pt's vs rem's, and from a more complex perspective you need to consider that your choice might also be the measurement from which your entire site is responsive to, and in our case it is.
 
-Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History of Web Font Sizes][Appendix 9]" found in the appendices.
+Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History of Web Font Sizes][Appendix 10]" found in the appendices.
 
 In Chapter 2 we implemented [Normalize.css][]. If you look at our [implementation][] you will notice that we reset our base font size to 100%:
 
@@ -210,6 +220,10 @@ For line length let's plan to use any of the following ranges throughout our app
 For line height
 
 ...a modular scale based on ratios derived from harmonic intervals or the golden ratio. Yowza!
+
+When your lines are longer you need more line height, otherwise your readers might get lost.
+
+The darker the color use for your typeface the more line height you will need in order not to overwhelm the rest of the site.
 
 #### Color
 
@@ -325,7 +339,10 @@ We started this chapter by covering typography. We discussed the basic building 
 [6 Questions]:          http://tympanus.net/codrops/2011/12/01/6-questions-you-should-ask-yourself-when-choosing-fonts/
 [Brief Primer]:         http://blog.8thlight.com/billy-whited/2011/08/25/a-brief-primer-on-typeface-selection.html
 [Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
-[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#a-brief-history-of-web-font-sizes
+[Perfect Typography]:   http://vimeo.com/17079380
+[On Web Typography]:    http://vimeo.com/34178417
+[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#jason-to-maria-on-web-typography
+[Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#a-brief-history-of-web-font-sizes
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
 [using em's]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#ems-and-media-queries
@@ -335,7 +352,6 @@ We started this chapter by covering typography. We discussed the basic building 
 [readability]:          http://blog.8thlight.com/billy-whited/2011/08/23/readability.html
 [Better Typography]:    http://www.markboulton.co.uk/journal/five-simple-steps-to-better-typography
 [somewhere]:            http://www.kaikkonendesign.fi/typography/section/11
-
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/

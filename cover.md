@@ -3,7 +3,7 @@ The Front End Manifesto
 
 by Chris Maxwell
 
-*A How To on*<br>
+*A research-based How To on*<br>
 *High-performing, Efficient,*<br>
 *Un-bloated,*<br>
 *Modularized and Organized...*

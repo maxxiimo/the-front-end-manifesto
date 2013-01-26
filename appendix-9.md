@@ -1,52 +1,43 @@
 Appendix 9
 ----------
 
-### A Brief History of Web Font Sizes
+### Jason Santa Maria On Web Typography
 
-Over the years I've referred to different articles when determining font size for projects I'm working on. Here they are in chronological order. A few are not so relevant today and some of them are exceptional! I'll let you be the judge of that, and have included them here as a reference.
+Jason Santa Maria, in a presentation at [Build 2011][] called [On Web Typography][] spoke about picking typefaces. I've transcribed it here in part and slightly paraphrased:
 
-1.  *05/11/01* - [CSS Design: Size Matters][1]
+1.  Questions to ask yourself: What are you using it for? How will it be used? Under what conditions? From the slide "considerations":
 
-2.  *12/31/02* - [Text Sizing][2]
+    > **Dimensions**
+    > Are there requirements for how much text must fit in a given region?
 
-3.  *04/04/09* - [Power To The People: Relative Font Sizes][3]
+    > **Special Features** - Do you require special features your typefaces
+    > What features do you require? Multiple weights, lining &amp; old-style figures, small caps, etc?
 
-4.  *05/18/04* - [How to size text using ems][4]
+    > **Prolonged Reading** -
+    > Is this a book or a long format periodical?
 
-5.  *12/08/05* - [Don’t compose without a scale][5]
+    > **Internationalization** -
+    > Does a given font support all the special characters of the language to be used?
 
-6.  *04/09/07* - [Setting Type on the Web to a Baseline Grid][6]
 
-7.  *11/20/07* - [How to Size Text in CSS][7]
+2.  Readability and distinctness in characters matters. Will the typeface cause the reader to become confused, or tired of reading it?
 
-8.  *09/30/08* - [CSS Font-Size: em vs. px vs. pt vs. percent][8]
+3.  Avoid readymades. Fonts with design baked in.
 
-9.  *05/01/11* - [Font sizing with rem][9]
+4.  Develop your own personal palette. Find typefaces that you like, that you gravitate to, and keep using them. Get to know a typeface.
 
-10. *05/03/11* - [More Meaningful Typography][10]
+5.  Get to know the history of a typeface. When was it designed? Why was it designed? This should complement not contradict your text/subject.
 
-11. *10/28/11* - [R(a|ela)tional Design][11]
+6.  Find typefaces that embody a mental association: terms you want to associate with the design.
 
-12. *12/09/11* - [Composing the New Canon: Music, Harmony, Proportion][12]
+7.  Pair fonts that are designed together, they will work well together. The serif for the body text, the sans serif for the supplementary stuff like page numbers and captions.
 
-13. *07/18/12* - [How we learned to leave default font-size alone and embrace the em][13]
+8.  Use alternatives for commonly used typefaces get the same type of feel without being the same as everyone else. For example Helvetica. You can use an alternative rather than the frequently used Helvetica itself: FF Dagny, Proxima Nova, Museo Sans, Prehematica Slabserif.
 
-14. *07/19/12* - [On ems and rems][14]
+9.  Try it out! Test out your ideas. See how it looks. See how it reads. See how it feels. In long-form text, in short-form text. Small columns, wide columns. Big text, small text. Doing this gives you a very real impression on how other people are going to see it.
 
-15. *11/08/12* - [Why Ems?][15]
+NOTE: This work is [copyrighted][].
 
-[1]:                    http://www.alistapart.com/articles/sizematters
-[2]:                    http://www.thenoodleincident.com/tutorials/box_lesson/font/index.html
-[3]:                    http://www.alistapart.com/articles/relafont
-[4]:                    http://clagnut.com/blog/348/
-[5]:                    http://webtypography.net/Harmony_and_Counterpoint/Size/3.1.1/
-[6]:                    http://www.alistapart.com/articles/settingtypeontheweb
-[7]:                    http://www.alistapart.com/articles/howtosizetextincss/
-[8]:                    http://kyleschaeffer.com/user-experience/css-font-size-em-vs-px-vs-pt-vs/
-[9]:                    http://snook.ca/archives/html_and_css/font-size-with-rem
-[10]:                   http://www.alistapart.com/articles/more-meaningful-typography/
-[11]:                   http://blog.8thlight.com/billy-whited/2011/10/28/r-a-ela-tional-design.html
-[12]:                   http://24ways.org/2011/composing-the-new-canon/
-[13]:                   http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
-[14]:                   http://filamentgroup.com/lab/on_ems_and_rems/
-[15]:                   http://css-tricks.com/why-ems/
+[Build 2011]:           http://2011.buildconf.com/
+[On Web Typography]:    http://vimeo.com/34178417
+[copyrighted]:          http://creativecommons.org/licenses/by-nc/3.0/
