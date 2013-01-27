@@ -9,17 +9,30 @@ Up until now, we basically have a pretty blank wireframe: function before form. 
 
 \- [A Dao of Web Design][Dao] by John Allsopp
 
-We learned in Chapter 4 that by looking at your site your users should be able to understand what they're looking at. That your website must communicate it's story. To illustrate how simple this can be take a look at this 2007 website concept:
-
-- http://noonebelongsheremorethanyou.com/00025
-
-Jason Santa Maria pointed out this site in a presentation he gave in 2008. What I like about it is that it demonstrates the simplicity of storytelling: the entire site is written on kitchen appliances! ...and at the same time engages the user and ultimately delivers a message to entice action. We want to do this.
-
-In the case of "View Thought" part of the story is:
+We learned in Chapter 4 that by looking at your site your users should be able to understand what they're looking at. That your website must communicate it's story. In the case of "View Thought" part of the story is:
 
 > We are a great website **design** [emphasis supplied], development and user experience shop...we pay special attention to what your users will see.
 
 If this is part of our story we better deliver some great graphic design on top of our information architecture, layout, and content, that will help communicate our story! To do so we will use a combination of typography, color, branding, images, icons, and anything else I can think of to help View Thought tell it's story, and in such a way that the user just gets it. The combination of these elements are the cornerstones of a sites look and feel. Let's explore each.
+
+Paradigm Shift
+--------------
+
+Before we do, I want to mention a paradigm shift I've been noticing in the front end world. It used to be for really great design you absolutely needed a graphic designer. Unless you could work Photoshop or Illustrator like it was no tomorrow, graphic designers were the ones who would give you rounded corners, images of cool header fonts or hero text, gradients for your backgrounds and headers, icons an icon sprites, and the like. Because of this oftentimes entire design process had already been completed by the time you got it.
+
+Your job was then to provide a handshake between graphic design and backend code. You understood what kind of code the backend team needed and how they would use it, and you had skills to turn graphic design into front end code. In my own personal experience as a consultant brought into projects, more times than not design mockups had already been completed and I would then slice and dice these mockups and integrate them into the application as pixel perfect and cross browser friendly as possible (pixel perfect used to really matter!).
+
+NOTE: Chapter 6, [Slicing and Dicing Mockups][Chapter 6], will dive into the mechanics of doing exactly that.
+
+With the advent of HTML5 and the continuous improvement in W3C CSS3 specifications and implementation by browser vendors, a lot of these image based design elements can now be created through front end code. In other words "graphic design" cannot take place on your IDE and in the browser.
+
+As a view coder I'm really excited about this! One of the things I used to not like about the old paradigm is that a lot of decisions about information architecture and design had already taken place by the time mockups reached my hands (keep in mind that I've been a consultant for most of my career, brought in to do exactly this). This left me with very little say in these areas because often times internal bureaucracies, review committees, whatever you want to call them, were difficult to reconvene for the iteration at hand, and these iterations once implemented became the law of the land so to speak.
+
+A glaring problem with this old process was that often times those making decisions didn't understand the full capabilities or limitations of the medium used. Photoshop and mockups are inherently limited. More important than this though is that a really important resource in the process was not being fully utilized.
+
+Fast-forward to today and this has all changed. Design and the design process can now include, if not occur, at the point of front end coding. In fact I think it should be this way. Doing so provides for very rapid prototyping, experimenting, and iterations in the actual medium/s. The turnaround in relation to this chapter is that in order to participate in the process,, as front-end coders today, we need to really understand design – more so than ever before.
+
+With that lets get started...
 
 Typography
 ----------
@@ -76,9 +89,9 @@ Since we have already predefined font stack variables, let's pick one for View T
 
     You can copy these and feel confident using them as your overall default font stack, or as a fallback font stack for a more interesting typeface.
 
-3.  Fonts that go well together, say one font for your headers, and another contrasting font for your body.
+3.  Typefaces that go well together, say one font for your headers, and another contrasting font for your body.
 
-#### Font Pairing
+#### Pairing Typefaces
 
 When selecting font families for my projects I like to go straight for the "[Font Stacks Roundup][Appendix 7]" section titled "Combinations". Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and more often than not provide samples for you to review and choose from.
 
@@ -126,7 +139,7 @@ Typekit is a paid service, [Google Web Fonts][] on the other hand is a free serv
 
 - [A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
 
-#### Choosing Fonts
+#### Choosing Typefaces
 
 Here are some screenshots of different font ideas for View Thought:
 
@@ -144,7 +157,7 @@ I also think the following idea is worth noting by itself: In a presentation by 
 
 Speaking of Jason Santa Maria, in another presentation called [On Web Typography][] he gives advice on picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) are excellent. You can find them transcribed in [Appendix 9][].
 
-### Size
+### Font Size
 
 Now that we have selected a font family, we need to set a base font size. Choosing font size is actually an important decision. At the very basic level you will choose between a measurement types such as px's vs. em's vs. % vs. pt's vs rem's, and from a more complex perspective you need to consider that your choice might also be the measurement from which your entire site is responsive to, and in our case it is.
 
@@ -311,6 +324,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [Story Design]:         http://24ways.org/2011/design-the-invisible/
 [Dao]:                  http://www.alistapart.com/articles/dao
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
 [typography]:           http://blog.8thlight.com/billy-whited/2011/07/26/what-is-typography.html
 [95% typography]:       http://informationarchitects.net/blog/the-web-is-all-about-typography-period/
 [Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md

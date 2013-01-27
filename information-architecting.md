@@ -16,9 +16,13 @@ These talks have stuck with me over the years and have become the manner in whic
 2. Work with a graphic designer from the get-go and implement a design mockup into your foundation work.
 3. Start from scratch and architect yourself, then get help from a graphic designer on the look and feel.
 
-In this chapter we're going to mostly focus on option 1. Hiring a graphic designer from the get-go is not a bad idea – graphic design and front end engineering are two complete different skill sets – but perhaps there isn't money in the budget to hire a graphic designer, or this responsibility falls on your lap, or maybe you just want to do it yourself.
+In this chapter we're going to mostly focus on option 1. Hiring a graphic designer from the get-go is not a bad idea, but perhaps there isn't money in the budget to hire a graphic designer, or this responsibility falls on your lap, or maybe you just want to do it yourself.
 
-NOTE: As a consultant brought into projects, oftentimes design mockups have already been developed and it's now my job to integrate them into the application. Chapter 6, [Slicing and Dicing Mockups][Chapter 6], will dive into the mechanics of doing exactly that.
+To illustrate how simple this can be take a look at this 2007 website concept:
+
+- http://noonebelongsheremorethanyou.com/00025
+
+Jason Santa Maria pointed out this site in that presentation he gave. What I like about it is that it demonstrates the simplicity of storytelling: the entire site is written on kitchen appliances! ...and at the same time engages the user and ultimately delivers a message to entice action. We want to do this.
 
 A Mosaic of Information
 -----------------------
@@ -197,7 +201,6 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [mobile]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
 [Jason Santa Maria]:    http://jasonsantamaria.com/
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
-[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
 [Wikipedia]:            https://en.wikipedia.org/wiki/Mosaic
 [Chapter 1 Quote]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md#the-application-layout
 [Don't Make Me Think]:  http://www.sensible.com/index.html

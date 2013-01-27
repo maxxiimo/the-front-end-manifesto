@@ -83,9 +83,10 @@ Table of Contents
 
 #### Chapter 5
 - [Visual Design for the Nondesigner][Visual Design]
+  - Paradigm Shift
   - Typography
     - Font Family
-    - Size
+    - Font Size
     - Readability
   - Color
   - Branding
