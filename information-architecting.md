@@ -3,8 +3,8 @@ Information Architecting
 
 In the first section of this book we laid down the foundation of our application by:
 
-1. Defining our base [markup][] and [styles][].
-2. Choosing a [mobile][] content delivery strategy.
+1. Defining our base [markup][Chapter 1] and [styles][Chapter 2].
+2. Choosing a [mobile][Chapter 3] content delivery strategy.
 
 Now it's time to build a user experience on this foundation: how your users will understand your [whatever your building] and how they will [whatever they will do]. The key to being successful in building your applications user experience can be summed up in one word: **Storytelling**.
 
@@ -121,11 +121,11 @@ As a front end developer with years of practice, a huge part of me just wants to
 
 ### Prototyping on Paper
 
-There are a number of applications out there that can help you prototype, but I prefer to go old-school with a pencil and paper. For presentational purposes you can transfer this exercise to PowerPoint or some other application for prototyping, but don't get bogged down and waste time doing so. Paper is highly portable, can be digitized (scan), requires no electricity or Internet connectivity, can easily be shared with others, and its use is a skill that is common between all stakeholders.
+There are a number of applications out there that can help you prototype, but I prefer to go old-school with pencil and paper. For presentational purposes you can transfer this exercise to PowerPoint or some other application for prototyping, but don't get bogged down and waste time doing so. Paper is highly portable, can be digitized (scan), requires no electricity or Internet connectivity, can easily be shared with others, and its use is a skill that is common between all stakeholders.
 
-So with the index card exercise done, the next step in my process is to take the resulting information architecture and create a prototype. Doing so will help you better define the layout, visualize what the site will look like on a screen, visualize how pages interconnect, and give you plenty of room for trial and error. It also provides you with some additional and inexpensive opportunities for stakeholder input, and further reflection and brainstorming, before you begin coding.
+So with the index card exercise done, the next step in my process is to take the resulting information architecture and create a paper prototype ([sketching][]). Doing so will help you better define the layout, visualize what the site will look like on a screen, visualize how pages interconnect, and give you plenty of room for trial and error. It also provides you with some additional and inexpensive opportunities for stakeholder input, and further reflection and brainstorming, before you begin coding.
 
-TIP: As I prototype I've always got an eye on my bookmarked reference websites, and/or some of the [inspirational sites][] listed in our appendix.
+TIP: As I prototype I've always got an eye on my bookmarked reference websites, and/or some of the [inspirational sites][Appendix 5] listed in our appendix.
 
 Here are some device mockup resources that will help you sketch:
 
@@ -146,7 +146,7 @@ Wireframing
 
 The prototype is the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond the early exercises, you can send them to a live URL where they can click through to simulate the actual application (and view it on different devices). Any changes you make will be reflected immediately, which they'll love. For you, everything from this point forward is just an iteration in the development process.
 
-Because you laid out your applications [markup][], [styles][], and [mobile][] groundwork in chapters 1 through 3 – and hopefully have deployed on Heroku or elsewhere – what you wireframe here will be production ready, and in this section we will begin to transform our paper prototype into a working wireframe.
+Because you laid out your applications [markup][Chapter 1], [styles][Chapter 2], and [mobile][Chapter 3] groundwork in chapters 1 through 3 – and hopefully have deployed on Heroku or elsewhere – what you wireframe here will be production ready, and in this section we will begin to transform our paper prototype into a working wireframe.
 
 An assumption I will make here is that you already are a proficient front end coder, so going into how to go about writing basic markup from the prototypes we just developed is something I won't get into. After codifying my prototypes here is what I have:
 
@@ -189,23 +189,24 @@ Image placeholders in different sizes and styles are also plentiful (the second 
 Feedback
 --------
 
-One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services in our [Feedback Services][] in the appendix.
+One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services in our [Feedback Services][Appendix 6] in the appendix.
 
 What We've Done
 ---------------
 
 Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release often.
 
-[markup]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
-[styles]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
-[mobile]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
+[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
 [Jason Santa Maria]:    http://jasonsantamaria.com/
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
 [Wikipedia]:            https://en.wikipedia.org/wiki/Mosaic
 [Chapter 1 Quote]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md#the-application-layout
 [Don't Make Me Think]:  http://www.sensible.com/index.html
 [Case Study]:           http://builtbyboon.com/blog/responsive-design-case-study
-[inspirational sites]:  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#inspirational-sites
+[sketching]:            http://tympanus.net/codrops/2013/01/29/planning-your-web-design-with-sketches/
+[Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#inspirational-sites
 [Paper]:                http://generatedpaper.com/en/wireframing
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
@@ -223,7 +224,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Image Generators]:     http://www.russellheimlich.com/blog/list-of-dummy-image-generators/
 [Cambelt]:              http://cambelt.co/
 [Holder.js]:            http://imsky.github.com/holder/
-[Feedback Services]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#feedback-services
+[Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#feedback-services
 
 [Mosaic]:               http://chrismaxwell.com/manifesto/mosaic-800px.gif
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
