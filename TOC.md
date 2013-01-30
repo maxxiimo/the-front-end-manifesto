@@ -8,78 +8,78 @@ Table of Contents
 
 #### Chapter 1
 - [Foundation Markup][]
-    -  The Application Layout
-      - A Framework within a Framework
-      - Where Does It Live?
-    - The Code
-      - HTML5 Boilerplate
-      - Where Do Things Go?
-      - Prep the App
-      - End Result
-    - Organization
-      - Partials
-      - JavaScript
-      - What to Put in \<head>
-      - The Title
-    - Moving Forward
-      - Naming Conventions
-      - Using Partials
-      - IE 6
-    - What We've Done
+  -  The Application Layout
+    - A Framework within a Framework
+    - Where Does It Live?
+  - The Code
+    - HTML5 Boilerplate
+    - Where Do Things Go?
+    - Prep the App
+    - End Result
+  - Organization
+    - Partials
+    - JavaScript
+    - What to Put in \<head>
+    - The Title
+  - Moving Forward
+    - Naming Conventions
+    - Using Partials
+    - IE 6
+  - What We've Done
 
 #### Chapter 2
 - [Foundation Styles][]
-    - Preprocessors
-    - Compass
-    - CSS Frameworks and Grid Systems
-    - Our Foundation
-      - Compass Set Up
-      - Stylesheet Set Up
-    - Organization
-      - Style TOC
-      - Resets
-    - Moving Forward
-      - Modularize Styles
-      - Use a Labeling System
-      - Naming Conventions
-    - Keep it DRY!
-      - Consolidate
-      - Variables
-      - Mixins
-    - What We've Done
+  - Preprocessors
+  - Compass
+  - CSS Frameworks and Grid Systems
+  - Our Foundation
+    - Compass Set Up
+    - Stylesheet Set Up
+  - Organization
+    - Style TOC
+    - Resets
+  - Moving Forward
+    - Modularize Styles
+    - Use a Labeling System
+    - Naming Conventions
+  - Keep it DRY!
+    - Consolidate
+    - Variables
+    - Mixins
+  - What We've Done
 
 #### Chapter 3
 - [Mobile on Rails][]
-    - Mobile First
-    - Plan of Attack
-    - I. User Agent Sniffing
-      - Quickest Solution
-      - Advanced Solution
-    - II. Responsive Web Design
-      - Flexible Grids
-      - @media
-      - Target Devices
-      - Em's and Media Queries
-      - Flexible Media
-      - Conditional Loading
-    - III. A Hybrid Approach
-    - An Ajax Include Pattern
-    - Using JavaScript
-    - What We've Done
+  - Mobile First
+  - Plan of Attack
+  - I. User Agent Sniffing
+    - Quickest Solution
+    - Advanced Solution
+  - II. Responsive Web Design
+    - Flexible Grids
+    - @media
+    - Target Devices
+    - Em's and Media Queries
+    - Flexible Media
+    - Conditional Loading
+  - III. A Hybrid Approach
+  - An Ajax Include Pattern
+  - Using JavaScript
+  - What We've Done
 
 ### Section II
 
 #### Chapter 4
 - [Information Architecting][]
-    - A Mosaic of Information
-    - The Storyline
-    - Gathering and Organizing Information
-      - Index Card Exercise
-      - Prototyping on Paper
-    - Wireframing
-      - Content
-    - Feedback
-    - What We've Done
+  - A Mosaic of Information
+  - The Storyline
+  - Gathering and Organizing Information
+    - Index Card Exercise
+    - Prototyping on Paper
+  - Wireframing
+    - Content
+  - Feedback
+  - What We've Done
 
 #### Chapter 5
 - [Visual Design for the Nondesigner][Visual Design]
@@ -144,14 +144,14 @@ Table of Contents
 
 #### Chapter 12
 - [Optimization][]
-    - Gzipping
-    - Caching
-      - Client-Side
-      - Server-Side
-    - Image Optimization
-    - Compressing and the Asset Pipeline
-    - Spriting
-    - What We've Done
+  - Gzipping
+  - Caching
+    - Client-Side
+    - Server-Side
+  - Image Optimization
+  - Compressing and the Asset Pipeline
+  - Spriting
+  - What We've Done
 
 #### Chapter 13
 - [Accessibility][]

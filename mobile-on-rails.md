@@ -253,7 +253,7 @@ Let's take a look at these three components one by one starting with flexible gr
 
 "A flexible, grid-based layout" is a layout that proportionally responds via CSS to the context in which the page is drawn. In other words the grids dimensions are flexible and change proportionately as a screen size changes. It does so through the use of percentages or em's in declaring a containers dimensions, margins, and/or padding.
 
-Ethan recommends using percentages. We're going to use em's, but let's first understand Ethan's method. Percentages are determined by taking the target width and dividing it by the context in which that width proportionally responds to.
+Ethan recommends using percentages which are determined by taking the target width and dividing it by the context in which that width proportionally responds to.
 
 Target ÷ Context = Result
 
@@ -281,7 +281,9 @@ Now if you were to change the size of .container, .left-side and .right-side wou
 
 #### Using Susy
 
-Rather than calculate all the different ratios within a layout, I prefer to use a grid system and save some time. You will find a pretty comprehensive list of [Grid Systems][]in the appendix, but my preference is to use [Susy][] since we are already using Compass, and it is authored by Eric Meyer whom I have a great deal of confidence in. Installation is pretty straightforward:
+Rather than calculate all the different percentage ratios within a layout, I prefer to use a grid system and save some time. You will find a pretty comprehensive list of [Grid Systems][]in the appendix, but my preference is to use [Susy][] since we are already using Compass, and it is authored by Eric Meyer whom I have a great deal of confidence in. On top of that it is based on em's which is my metric of choice, more on this below and in [Chapter 5][].
+
+Installation is pretty straightforward:
 
 *Step 1:* Add the following to /config/compass.rb:
 
@@ -301,10 +303,18 @@ Import Susy into your compass project:
     **@import "susy";**
     @import "mobile/layout";
 
-Don't forget to restart your server, and wallah! You have a pretty powerful responsive grid system. To learn how to use it, the best reference can be found at the [source][]. The following tutorials demonstrate Susy in action:
+Don't forget to restart your server, and wallah! You have a pretty powerful responsive grid system. To learn how to use it, the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
 
 - [Responsive Grids With Susy][Susy Grids]
 - [Off-canvas layout with Susy][Off-canvas]
+
+For our application we'll set up our responsive grid through Susy follows:
+
+
+
+XXXX
+
+
 
 ### @media
 
@@ -523,6 +533,7 @@ We've covered three approaches to mobile development in this chapter, and have i
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Grid Systems]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
 [Susy]:                 http://susy.oddbird.net/
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
 [source]:               http://susy.oddbird.net/guides/getting-started/
 [Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
 [Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/

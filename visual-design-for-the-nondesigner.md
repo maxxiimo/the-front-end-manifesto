@@ -43,10 +43,10 @@ After I have finished all of my information architecture stuff, the first visual
 
 \- [Web Design Is 95% Typography][95% typography]
 
-So let's get started. In my opinion the lowest hanging fruit in typography are fonts:
+So let's get started. In my opinion the lowest hanging fruit in typography are typefaces:
 
-- Family
-- Size
+- Font Family
+- Font Size
 - Readability
 
 If you have implemented the base style sheets from Chapter 2, [Foundation Styles][Chapter 2], these typographic elements are predefined and available to you out-of-the-box in [_define.sass][] – a sass partial reserved for defining global stylesheet variables:
@@ -76,8 +76,6 @@ If you have implemented the base style sheets from Chapter 2, [Foundation Styles
 I recommend setting up something like this if you are not using ours. From this partial we can effect typography throughout the site through Sass's ability to set up variables.
 
 For example, our definitions above begin with variables set to different font stacks. Variables can also be set to other variables, and in our case to the $base-font-family variable, the key to our application fonts. This variable is referenced by our \<body> tags font-family property, and will propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
-
-NOTE: I'm NOT going to cover a major component of typography in this chapter, and that is grid systems. We introduced grid systems in the [Mobile on Rails][Chapter 3] chapter of this book, and include a [Grid Systems][Appendix 3] roundup in the appendices.
 
 ### Font Family
 
@@ -197,11 +195,11 @@ Again, we're going to use the browser's default setting. I include 100% here, bu
 
 Throughout our application moving forward if we would like to affect font size for let's say headers or a specific element, we will use em's. We use em's because there are a scalable unit relative to the parent font size. In our case, 1em = default browser font size = typically 16px. If we would like to double in size we use 2em = 32px.
 
-NOTE: It's important to keep in mind that ends are relative to the parent, and not the browser or \<body> font size.
+NOTE: It's important to keep in mind that em's are relative to the parent, and not the browser or \<body> font size.
 
- In Chapter 3 we learned about the benefits of [using em's][] in our grid system, and as it relates to our content. Using em's then goes hand-in-hand with our grid system.
+In Chapter 3 we learned about the benefits of [using em's][] in our media querries, and that using em's goes hand-in-hand with our Susy grid system.
 
-For more details take a look at:
+For more details on using em's take a look at:
 
 - [Ideal line length for content][Ideal Line Length]
 - [CSS Font-Size: em vs. px vs. pt vs. percent][CSS Font-Size]
@@ -209,11 +207,37 @@ For more details take a look at:
 
 ### Readability
 
-Font choice, size, line length (measure), line height (leading), color all come together and contribute to your websites [readability][]. We've covered font choice and size, now let's look at the rest.
+Font choice, size, line length (measure), line height (leading), and font color and contrast all come together and contribute to your websites [readability][]. We've covered font choice and size, now let's look at the rest. Before we do we need to first understand what a modular scale is and define our own.
 
-#### Measure
+#### Modular Scales
 
-For line length let's plan to use any of the following ranges throughout our application:
+A modular scale is a scale based on ratios derived from harmonic intervals or the golden ratio and key measure/s in your application (such as the base font size). Yowza! What? Well in layman's terms it's a bunch of measurements used for key measurements in your application, a scale, that are related to one another in some artistic/design awesome way; versus randomly picking numbers. You use numbers from the scale throughout your application for things like line length, column widths, line heights, etc., and by doing so your design will be better, or in the very least you are making a design informed decision!
+
+So how is this modular scale created? Fortunately there are some great references out there that will do a much better job of explaining the what's and how's of modular scales:
+
+- [Tim Brown - More Perfect Typography][Perfect Typography] (Go to minute 15:00, great talk.)
+- Articles 10, 11, and 12 in Appendix 10, [A Brief History of Web Font Sizes][Appendix 10]
+- The [Modular Scale][] tool
+
+ Using the Modular Scale tool here is the scale we will use for View Thought:
+
+- http://modularscale.com/scale/?px1=16&px2=30&ra1=1.618&ra2=0
+
+Our scale is based on the golden ratio and two important numbers, our base font size of 16px and our logo font size of 30px. In our [_define.sass][] partial we take note of this as follows:
+
+    /*  Modular Scale
+      -----------------------
+
+    // http://modularscale.com/scale/?px1=16&px2=30&ra1=1.618&ra2=0
+
+    // 16px  @ 1:1.618 - base font size
+    // 30px  @ 1:1.618 - logo font size
+
+Now that we have a scale, let's apply it.
+
+#### Line Length (Measure)
+
+For line length the following character ranges seem to be the best ones to use:
 
 > ...anywhere from 45–75 characters is considered acceptable.
 
@@ -223,15 +247,59 @@ For line length let's plan to use any of the following ranges throughout our app
 
 \- [Five simple steps to better typography][Better Typography] by Mark Boulton
 
-#### Leading
+For View Thought I'll take a sample of text directly off of our wireframe:
 
-For line height
+> Nothing beats the involvement of a well-seasoned, front-end developer that understands the semantics of what you're trying to pull off.
 
-...a modular scale based on ratios derived from harmonic intervals or the golden ratio. Yowza!
+There are 116 characters in that sample, so what I need to do is find the 45 to 75 character cutoff points (without spaces) in it. To do so I'll use a word processors word count capabilities.
 
-When your lines are longer you need more line height, otherwise your readers might get lost.
+~45 characters:
 
-The darker the color use for your typeface the more line height you will need in order not to overwhelm the rest of the site.
+> Nothing beats the involvement of a well-seasoned,
+
+~75 characters:
+
+> Nothing beats the involvement of a well-seasoned, front-end developer that understands
+
+With the fonts and font size I have chosen and implemented, for this particular piece of text my measure should not cause the text to span shorter than the "," after seasoned or longer than "understands". Well great, how does that help me with the rest of my content?
+
+Knowing this about our sample we can translate this information into measurable units by marginally decreasing the texts containing elements width until we reach the cutoff points. I use Firebug to easily decrease the width of my containing element and come up with the following two measurements:
+
+    28em
+    42em
+
+...my minimum and maximum line lengths. But neither measure is in my scale. No problem, find the closest numbers:
+
+    29.03em
+    46.971em
+
+Need them to be even closer? You can add and subtract up to two numbers from the same scale, just comment your math:
+
+    // 29.03-1
+    28.03em
+
+    // 46.971 - 4.909
+    42.062em
+
+> Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
+
+\- [More Meaningful Typography][Meaningful Typography] by Tim Brown
+
+Moving forward in my design I now have constraints I can keep an eye on when sizing columns in my layout.
+
+#### Line Heigt (Leading)
+
+For line height there are a couple key things to keep in mind: You will need more line height when your lines are longer – otherwise your readers might get lost, and/or when you use a darker font color – so that you do not to overwhelm the rest of the site.
+
+For our site we're going to pick a number from our scale. After some trial and error, 1.618 seems to be the best line height:
+
+    $base-line-height:  1.618         !default
+
+The next natural step down in our scale is 1.159, which seems to be too much of a step down, so using another figure in our scale I calculate an alternative in case I need it:
+
+    // 1.618 - 0.105 = 1.513
+    // 1.618 - 0.236 = 1.382
+    // 1.618 - 0.382 = 1.236
 
 #### Color
 
@@ -330,7 +398,6 @@ We started this chapter by covering typography. We discussed the basic building 
 [Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
-[Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stacks-roundup
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
 [_head.html.haml]:      https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
@@ -355,8 +422,10 @@ We started this chapter by covering typography. We discussed the basic building 
 [CSS Font-Size]:        http://kyleschaeffer.com/user-experience/css-font-size-em-vs-px-vs-pt-vs/
 [Ideal Line Length]:    http://www.maxdesign.com.au/articles/em/
 [Embracing em's]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
+[Modular Scale]:        http://modularscale.com/
 [readability]:          http://blog.8thlight.com/billy-whited/2011/08/23/readability.html
 [Better Typography]:    http://www.markboulton.co.uk/journal/five-simple-steps-to-better-typography
+[Meaningful Typography]: http://alistapart.com/article/more-meaningful-typography
 [somewhere]:            http://www.kaikkonendesign.fi/typography/section/11
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/

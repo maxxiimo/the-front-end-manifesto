@@ -129,7 +129,7 @@ TIP: As I prototype I've always got an eye on my bookmarked reference websites, 
 
 Here are some device mockup resources that will help you sketch:
 
-- [Paper][]
+- [Generated Paper][]
 - [Interface Sketch][]
 - [Responsive Sketchsheets][]
 
@@ -207,7 +207,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Case Study]:           http://builtbyboon.com/blog/responsive-design-case-study
 [sketching]:            http://tympanus.net/codrops/2013/01/29/planning-your-web-design-with-sketches/
 [Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#inspirational-sites
-[Paper]:                http://generatedpaper.com/en/wireframing
+[Generated Paper]:      http://generatedpaper.com/en/wireframing
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first

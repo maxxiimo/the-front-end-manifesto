@@ -28,7 +28,7 @@ Appendices
 9.  [Choosing Typefaces][Appendix 9]
     :: Choosing typeface articles and grear advice from Jason Santa Maria on choosing typefaces.
 
-10. [A Brief History of Web Font Sizes][Appendix 9]
+10. [A Brief History of Web Font Sizes][Appendix 10]
     :: Different articles from my archives over the last 12 years regarding web font sizes.
 
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork-tasks
