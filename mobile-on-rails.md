@@ -318,7 +318,7 @@ Don't forget to restart your server, and wallah! You have a pretty powerful resp
 - [Responsive Grids With Susy][Susy Grids]
 - [Off-canvas layout with Susy][Off-canvas]
 
-#### Implementing Susy
+#### Implementation
 
 Within our application layout we will implement our Susy responsive grid as follows:
 
