@@ -294,23 +294,116 @@ Installation is pretty straightforward:
     gem 'oily_png'
     **gem 'susy'**
 
-Import Susy into your compass project:
+*Step 3:* Import Susy into your project:
+
+app/assets/stylesheets/mobile.scss
 
     /* BASIC STRUCTURE
       ============================================================================ */
     **@import "susy";**
     @import "mobile/layout";
 
+app/assets/stylesheets/application.scss
+
+    /* BASIC STRUCTURE
+      ============================================================================ */
+    @import "susy";
+    @import "desktop/layout";
+    // @import "grids";
+
 Don't forget to restart your server, and wallah! You have a pretty powerful responsive grid system. To learn how to use it, the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
 
 - [Responsive Grids With Susy][Susy Grids]
 - [Off-canvas layout with Susy][Off-canvas]
 
-For our application we'll set up our responsive grid through Susy follows:
+For our application we'll set up our responsive grid as follows:
+
+*Step 1*: Define the [basic settings][] of our grid:
+
+app/assets/stylesheets/mobile.scss
+
+    /* DEFINITIONS
+      ============================================================================ */
+    @import "define";
+
+    /*  Susy Grid
+      -----------------------
+
+    $total-columns:     5
+    $column-width:      4em
+    $gutter-width:      1em
+    $grid-padding:      $gutter-width
+
+app/assets/stylesheets/application.scss
+
+    /* DEFINITIONS
+      ============================================================================ */
+    @import "define";
+
+    /*  Susy Grid
+      -----------------------
+
+    $total-columns:     12
+    $column-width:      4em
+    $gutter-width:      1em
+    $grid-padding:      $gutter-width
+
+NOTE: We do not add these definitions directly into our define partial because the variables will differ between desktop and mobile versions of our application.
+
+*Step 2*: Create an [outer grid-containing element][.container] in our application.html.haml (for both desktop and mobile) by creating a \<body> tag child \<div> called .container:
+
+app/views/mobile/layouts/application.html.haml
+
+    %body
+      **.container**
+        %header{:role => "banner"}
+          = render :partial => 'shared/navigation'
+          .header
+            = render :partial => 'shared/logo'
+        #main{:role => "main"}
+          = yield
+        = render :partial => 'shared/footer'
+      = scripts
+
+app/views/layouts/application.html.haml
+
+    %body
+      **.container**
+        = chromeframe
+        %header{:role => "banner"}
+          = render :partial => 'shared/logo'
+          = render :partial => 'shared/navigation'
+        #main{:role => "main"}
+          = yield
+        = render :partial => 'shared/footer'
+      = scripts
+
+*Step 3*: Add the corresponding CSS:
+
+app/assets/stylesheets/mobile/_layout.sass
+
+    .container
+      +container
+
+app/assets/stylesheets/desktop/_layout.sass and
+
+    body
+      font-size: $base-font-size
+      line-height: $base-line-height
+      background-color: $bg-bo
+
+    .container
+      +container
+
+NOTE: We removed...
+
+      margin: 0 auto
+      width: 960px
+
+...from the desktop version body tag since we are now replacing these properties with Susy.
 
 
 
-XXXX
 
 
 
@@ -535,6 +628,8 @@ We've covered three approaches to mobile development in this chapter, and have i
 [source]:               http://susy.oddbird.net/guides/getting-started/
 [Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
 [Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
+[basic settings]:       http://susy.oddbird.net/guides/reference/#ref-basic-settings
+[.container]:           http://susy.oddbird.net/guides/reference/#ref-basic-mixins
 [media types]:          http://www.w3.org/TR/CSS21/media.html
 [Media Queries]:        http://www.w3.org/TR/css3-mediaqueries/#media0
 [Stats]:                http://gs.statcounter.com/
