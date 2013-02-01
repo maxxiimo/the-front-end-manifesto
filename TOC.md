@@ -57,6 +57,7 @@ Table of Contents
     - Advanced Solution
   - II. Responsive Web Design
     - Flexible Grids
+    - Using Susy
     - @media
     - Target Devices
     - Em's and Media Queries

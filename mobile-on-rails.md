@@ -277,9 +277,11 @@ Well obviously half of 960 pixels: 480 pixels, and declaring percentages for thi
 
 Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all containers and you have a responsive grid that will resize itself depending upon the screen size it is drawn into.
 
-#### Using Susy
+### Using Susy
 
 Rather than calculate all the different percentage ratios within a layout, I prefer to use a grid system and save some time. You will find a pretty comprehensive list of [Grid Systems][]in the appendix, but my preference is to use [Susy][] since we are already using Compass, and it is authored by Eric Meyer whom I have a great deal of confidence in. On top of that it is based on em's which is my metric of choice, more on this below and in [Chapter 5][].
+
+#### Installation
 
 Installation is pretty straightforward:
 
