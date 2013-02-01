@@ -3,8 +3,8 @@ The Front End Manifesto
 
 by Chris Maxwell
 
-*A research-based How To on<br>
-best practices for writing<br>
+*A research-based How To<br>
+on best practices for writing<br>
 Well Organized, Efficient,<br>
 Mobile and Desktop...*
 
