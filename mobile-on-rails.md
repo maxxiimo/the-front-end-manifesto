@@ -406,14 +406,9 @@ NOTE: We removed...
 
 ...from the desktop version body tag since we are now replacing these properties with Susy.
 
-
-
-
-
-
 ### @media
 
-Now that we have a flexible grid, it's time to look at Ethan's second ingredient in RWD; media queries. To understand media queries let's take a little look at the history behind them.
+Now that we have a Susy flexible grid, it's time to look at Ethan's second ingredient in RWD; media queries. To understand them let's take a little look at their history.
 
 #### Media Types
 
@@ -463,7 +458,7 @@ On the other hand I think it's good to start with something and redefine as cont
 
 Why don't we grab a few and begin.
 
-#### @media Rules
+### Breakpoints
 
 Based on [StatCounter Global Stats][Stats] for North America over the last three months, it looks like there are five sizes we should define. Rather than use device names let's use generic names like: xs (extra small), s (small), m (medium), l (large), and xl (extra large). FYI - The breakpoints we define here will serve as a starting point, we can always change numbers or add/remove sizes (xxs, xxl, etc.) when user needs dictate that we should.
 
@@ -547,6 +542,12 @@ That's a lot to digest, and as usual I'm going to point you to some references t
 - [How we learned to leave default font-size alone and embrace the em][Embrace the em]
 
 I've gone ahead and [converted the above breakpoints][converted breakpoints] to em's for you by dividing each breakpoint by 16: assumption being that the default screen size is 16px and therefore 1em = 16px. They are already part of your base styles if you are following along with the book.
+
+### Susy Breakpoints
+
+
+
+
 
 ### Flexible Media
 

@@ -205,11 +205,7 @@ For more details on using em's take a look at:
 - [CSS Font-Size: em vs. px vs. pt vs. percent][CSS Font-Size]
 - [How we learned to leave default font-size alone and embrace the em][Embracing em's]
 
-### Readability
-
-Font choice, size, line length (measure), line height (leading), and font color and contrast all come together and contribute to your websites [readability][]. We've covered font choice and size, now let's look at the rest. Before we do we need to first understand what a modular scale is and define our own.
-
-#### Modular Scales
+### Modular Scales
 
 A modular scale is a scale based on ratios derived from harmonic intervals or the golden ratio and key measure/s in your application (such as the base font size). Yowza! What? Well in layman's terms it's a bunch of measurements used for key measurements in your application, a scale, that are related to one another in some artistic/design awesome way; versus randomly picking numbers. You use numbers from the scale throughout your application for things like line length, column widths, line heights, etc., and by doing so your design will be better, or in the very least you are making a design informed decision!
 
@@ -233,7 +229,13 @@ Our scale is based on the golden ratio and two important numbers, our base font 
     // 16px  @ 1:1.618 - base font size
     // 30px  @ 1:1.618 - logo font size
 
-Now that we have a scale, let's apply it.
+Now that we have a scale, let's apply it. For the more adventurous take a look at:
+
+[Sassy Modular Scale][]
+
+### Readability
+
+Readability is the perfect place to begin applying our brand-new Modular Scale. Font choice, size, line length (measure), line height (leading), and font color and contrast are the main components of [readability][]. We've covered font choice and size, now let's look at the rest.
 
 #### Line Length (Measure)
 
@@ -423,6 +425,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Ideal Line Length]:    http://www.maxdesign.com.au/articles/em/
 [Embracing em's]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
 [Modular Scale]:        http://modularscale.com/
+[Sassy Modular Scale]:  https://github.com/scottkellum/modular-scale
 [readability]:          http://blog.8thlight.com/billy-whited/2011/08/23/readability.html
 [Better Typography]:    http://www.markboulton.co.uk/journal/five-simple-steps-to-better-typography
 [Meaningful Typography]: http://alistapart.com/article/more-meaningful-typography

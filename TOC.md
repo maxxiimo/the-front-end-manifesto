@@ -60,7 +60,9 @@ Table of Contents
     - Using Susy
     - @media
     - Target Devices
+    - Breakpoints
     - Em's and Media Queries
+    - Susy Breakpoints
     - Flexible Media
     - Conditional Loading
   - III. A Hybrid Approach
@@ -88,6 +90,7 @@ Table of Contents
   - Typography
     - Font Family
     - Font Size
+    - Modular Scales
     - Readability
   - Color
   - Branding
