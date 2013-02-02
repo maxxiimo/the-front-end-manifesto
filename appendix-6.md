@@ -1,36 +1,41 @@
 Appendix 6
 ----------
 
-### Feedback Services
+### Placeholder Services
 
-1.  [Concept Feedback][]
+Here are some Rails Gems for creating Lorem Ipsum placeholders:
 
-    > Get Website Feedback and Increase Conversion Rates
-    > Expert analysis, detailed recommendations and solutions you can implement today.
+- [The Ruby Toolbox - Lorem Ipsum][Toolbox 1]
 
-2.  [IntuitHQ][]
+There are a lot of Lorem Ipsum generator services out there (some of them are kind of funny):
 
-    > Get useful, actionable results, improve usability in no time, and create a site your users will love.
+1. [html-ipsum][]
+2. [lipsum][]
+3. [Fillerama][]
+4. [Samuel L. Ipsum][]
+5. [Hipster Ipsum][]
+6. [Gangsta Lorem Ipsum][]
+7. [Cupcake Ipsum][]
+8. [Bacon Ipsum][]
 
-3.  [Loop11][]
+Image placeholders in different sizes and styles are also plentiful. The second link will give you a pretty comprehensive list to choose from, followed by two that are not included in the list that I list separately for thoroughness:
 
-    > Loop11 is a remote usability testing tool that enables you to test the user-experience of any website and identify navigational and usability issues. Get the hard facts about your website quickly and cost effectively!
+1. [The Ruby Toolbox - Image Placeholders][Toolbox 2]
+2. [List of Dummy Image Generators][Image Generators]
+3. [Functional Placeholder Images][Cambelt]
+4. [Holder.js][]
 
-4.  [Silverback][]
+[Toolbox 1]:            https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=lorem+ipsum
+[html-ipsum]:           http://html-ipsum.com/
+[lipsum]:               http://www.lipsum.com/
+[Fillerama]:            http://chrisvalleskey.com/fillerama/
+[Samuel L. Ipsum]:      http://slipsum.com/
+[Hipster Ipsum]:        http://hipsteripsum.me/
+[Gangsta Lorem Ipsum]:  http://lorizzle.nl/
+[Cupcake Ipsum]:        http://cupcakeipsum.com/
+[Bacon Ipsum]:          http://baconipsum.com/
 
-    > Guerrilla usability testing software for designers and developers
-
-5.  [UserTesting.com][]
-
-    > Usability Testing Has Never Been Easier
-    > The fastest, cheapest way to find out why users leave your website.
-
-6.  Steve Krug wrote a second book on usability testing, and gives a basic demo of it on YouTube:
-    - [Rocket Surgery Made Easy by Steve Krug: Usability Demo][Rocket Surgery]
-
-[Concept Feedback]:     http://www.conceptfeedback.com/
-[IntuitHQ]:             http://www.intuitionhq.com/
-[Loop11]:               http://www.loop11.com/
-[Silverback]:           http://silverbackapp.com/
-[UserTesting.com]:      http://www.usertesting.com/
-[Rocket Surgery]:       http://www.youtube.com/watch?v=QckIzHC99Xc&feature=player_embedded
+[Toolbox 2]:            https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=image+placeholders
+[Image Generators]:     http://www.russellheimlich.com/blog/list-of-dummy-image-generators/
+[Cambelt]:              http://cambelt.co/
+[Holder.js]:            http://imsky.github.com/holder/

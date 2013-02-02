@@ -16,19 +16,22 @@ Appendices
 5.  [Inspirational Sites][Appendix 5]
     :: Resources to help inspire design and UI patterns for desktop, mobile and responsive websites.
 
-6.  [Feedback Services][Appendix 6]
+6.  [Placeholder Services][Appendix 6]
+    :: A roundup of Lorem Ipsum and image placeholder services.
+
+7.  [Feedback Services][Appendix 7]
     :: A roundup of UX feedback services.
 
-7.  [Font Stack Roundup][Appendix 7]
+8.  [Font Stack Roundup][Appendix 8]
     :: Different font stack combinations, fallbacks, surveys and code.
 
-8.  [Font Services and Tools][Appendix 8]
+9.  [Font Services and Tools][Appendix 9]
     :: A jackpot listing of font services and tools to help you deliver a great typographic experience.
 
-9.  [Choosing Typefaces][Appendix 9]
+10.  [Choosing Typefaces][Appendix 10]
     :: Choosing typeface articles and grear advice from Jason Santa Maria on choosing typefaces.
 
-10. [A Brief History of Web Font Sizes][Appendix 10]
+11. [A Brief History of Web Font Sizes][Appendix 11]
     :: Different articles from my archives over the last 12 years regarding web font sizes.
 
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork-tasks
@@ -36,8 +39,9 @@ Appendices
 [Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
 [Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-4.md#mobile-solutions-roundup
 [Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#inspirational-sites
-[Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#feedback-services
-[Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#font-stack-roundup
-[Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#font-services-and-tools
-[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#choosing-typefaces
-[Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#a-brief-history-of-web-font-sizes
+[Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#placeholder-services
+[Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#feedback-services
+[Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#font-stack-roundup
+[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#font-services-and-tools
+[Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#choosing-typefaces
+[Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-11.md#a-brief-history-of-web-font-sizes

@@ -80,6 +80,7 @@ Table of Contents
     - Index Card Exercise
     - Prototyping on Paper
   - Wireframing
+    - Wireframing with Susy
     - Content
   - Feedback
   - What We've Done
@@ -171,14 +172,16 @@ Table of Contents
 ### APPENDICES
 
 - [Appendices Index][Appendices]
-  - Groundwork Tasks
-  - Frameworks
-  - Grid Systems
-  - Mobile Solutions Roundup
-  - Inspirational Sites
-  - Feedback Services
-  - Font Stack Roundup
-  - Font Services and Tools
+  - Appendix 1: Groundwork Tasks
+  - Appendix 2: Frameworks
+  - Appendix 3: Grid Systems
+  - Appendix 4: Mobile Solutions Roundup
+  - Appendix 5: Inspirational Sites
+  - Appendix 6: Placeholder and Feedback Services
+  - Appendix 7: Font Stack Roundup
+  - Appendix 8: Font Services and Tools
+  - Appendix 9: Choosing Typefaces
+  - Appendix 10: A Brief History of Web Font Sizes
 
 [Cover]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md

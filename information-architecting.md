@@ -172,40 +172,16 @@ These grid guides are very similar to what Compass offers, and can be activated 
 
 ### Content
 
-A word on content. If you have it great! If not, this article gives a nice overview of how content blocks can be used in situations where content is not known, perhaps a client has not yet delivered it:
+A word on content. If you have it great! If not, the following article gives a nice overview of how content blocks can be used in situations where content is not known, perhaps a client has not yet delivered it:
 
 - [Content, First?][Content First]
 
-#### Lorem Ipsum
-
-I for one don't mind using Lorem Ipsum as content placeholders. Here are some Rails Gems for creating it:
-
--  [The Ruby Toolbox][Toolbox 1]
-
-There's a lot of Lorem Ipsum generator services out there, here are a few (some of them are kind of funny):
-
-- [html-ipsum][]
-- [lipsum][]
-- [Fillerama][]
-- [Samuel L. Ipsum][]
-- [Hipster Ipsum][]
-- [Gangsta Lorem Ipsum][]
-- [Cupcake Ipsum][]
-- [Bacon Ipsum][]
-
-#### Image Placeholders
-
-Image placeholders in different sizes and styles are also plentiful (the second link will give you a pretty comprehensive list to choose from):
-
-- [The Ruby Toolbox][Toolbox 2]
-- [List of Dummy Image Generators][Image Generators]
-- [Functional Placeholder Images][Cambelt]
-- [Holder.js][]
+I for one don't mind using Lorem Ipsum or images as content placeholders, but nothing can substitute actual content so if you can find it or create it, do so. I've put together a pretty comprehensive list of [Placeholder Services][Appendix 6] for your benefit in the appendix of this book.
 
 Feedback
 --------
 
-One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services in our [Feedback Services][Appendix 6] in the appendix.
+One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services in our [Feedback Services][Appendix 7] in the appendix.
 
 What We've Done
 ---------------
@@ -229,20 +205,8 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Chapter 3 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#using-susy
 [Susy reference]:       http://susy.oddbird.net/guides/reference/
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
-[Toolbox 1]:            https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=lorem+ipsum
-[html-ipsum]:           http://html-ipsum.com/
-[lipsum]:               http://www.lipsum.com/
-[Fillerama]:            http://chrisvalleskey.com/fillerama/
-[Samuel L. Ipsum]:      http://slipsum.com/
-[Hipster Ipsum]:        http://hipsteripsum.me/
-[Gangsta Lorem Ipsum]:  http://lorizzle.nl/
-[Cupcake Ipsum]:        http://cupcakeipsum.com/
-[Bacon Ipsum]:          http://baconipsum.com/
-[Toolbox 2]:            https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=image+placeholders
-[Image Generators]:     http://www.russellheimlich.com/blog/list-of-dummy-image-generators/
-[Cambelt]:              http://cambelt.co/
-[Holder.js]:            http://imsky.github.com/holder/
-[Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#feedback-services
+[Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#placeholder-services
+[Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#feedback-services
 
 [Mosaic]:               http://chrismaxwell.com/manifesto/mosaic-800px.gif
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg

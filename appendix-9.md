@@ -1,71 +1,85 @@
-Appendix 9
+Appendix 8
 ----------
 
-### Choosing Typefaces
+### Font Services and Tools
 
-The following is designed to help you choose your typefaces. Here are some articles, and an excellent transcript from a presentation by Jason Santa Maria.
+The font services below are listed in alphabetical order, some are free and others subscription-based, but together they represent what I consider be the best font services out there.
 
-#### Choosing Typeface Articles
+The tools I've listed, if needed, will help you deliver a superior typographic experience for your end-users.
 
-1.  *12/14/10* - [“What Font Should I Use?”: Five Principles for Choosing and Using Typefaces][Five Principles]
+#### Services
 
-2.  *8/25/11* - [A Brief Primer on Typeface Selection][Brief Primer]
+1. [Font Squirrel][]
 
-3.  *12/1/11* - [6 Questions You Should Ask Yourself When Choosing Fonts][6 Questions]
+   > Free fonts have met their match. We know how hard it is to find quality freeware that is licensed for commercial work. We've done the hard work, hand-selecting these typefaces and presenting them in an easy-to-use format.
 
-4.  *9/26/12* - [Make a Statement with Type][Type Statement]
+2. [Fontdeck][]
 
-Mobile
+   > Maintain your distinct brand online without resorting to time-consuming hacks. Use real text with professional typefaces optimised for the web.
 
-5.  *10/2/11* - [5 Tips for Excellent Mobile Typography][5 Tips]
+3. [Fontspring][]
 
-6.  *11/12/12* - [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
+   > Font Licensing Doesn’t Have To Suck - Fontspring is a unique font license distributor. Our goal is to make buying fonts easy.
 
-#### Jason Santa Maria On Web Typography
+4. [Google Web Fonts][]
 
-Jason Santa Maria, in a presentation at [Build 2011][] called [On Web Typography][] spoke about picking typefaces. I've transcribed it here in part and slightly paraphrased:
+   > Google Web Fonts makes it quick and easy for everyone to use web fonts, including professional designers and developers. We believe that everyone should be able to bring quality typography to their web pages and applications.
 
-1.  Questions to ask yourself: What are you using it for? How will it be used? Under what conditions? From the slide "considerations":
+5. [Typekit][]
 
-    > **Dimensions**
-    > Are there requirements for how much text must fit in a given region?
+   > This will change the way you design websites. Add a line of code to your pages and choose from hundreds of web fonts. Simple, bulletproof, standards compliant, accessible, and totally legal.
 
-    > **Special Features** - Do you require special features your typefaces
-    > What features do you require? Multiple weights, lining &amp; old-style figures, small caps, etc?
+### Tools
 
-    > **Prolonged Reading** -
-    > Is this a book or a long format periodical?
+1.  [Lettering.JS][]
 
-    > **Internationalization** -
-    > Does a given font support all the special characters of the language to be used?
+    > A jQuery plugin for radical web typography - Web type is exploding all over the web but CSS currently doesn't offer complete down-to-the-letter control. So we created a jQuery plugin to give you that control.
 
+2.  [FitText.js][]
 
-2.  Readability and distinctness in characters matters. Will the typeface cause the reader to become confused, or tired of reading it?
+    > A jQuery plugin for inflating web type - FitText makes font-sizes flexible. Use this plugin on your fluid or responsive layout to achieve scalable headlines that fill the width of a parent element.
 
-3.  Avoid readymades. Fonts with design baked in.
+3.  [Em Calculator][]
 
-4.  Develop your own personal palette. Find typefaces that you like, that you gravitate to, and keep using them. Get to know a typeface.
+    > Em Calculator is a small JavaScript tool which helps making scalable and accessible CSS design. It converts size in pixels to relative em units, which are based on a text size.
 
-5.  Get to know the history of a typeface. When was it designed? Why was it designed? This should complement not contradict your text/subject.
+4.  [Ffffallback][]
 
-6.  Find typefaces that embody a mental association: terms you want to associate with the design.
+    > Web fonts are here, sparking an exciting new era in web design. Ffffallback makes it easy to find the perfect fallback fonts, so that your designs degrade gracefully.
 
-7.  Pair fonts that are designed together, they will work well together. The serif for the body text, the sans serif for the supplementary stuff like page numbers and captions.
+5.  [Font Stack Builder][]
 
-8.  Use alternatives for commonly used typefaces get the same type of feel without being the same as everyone else. For example Helvetica. You can use an alternative rather than the frequently used Helvetica itself: FF Dagny, Proxima Nova, Museo Sans, Prehematica Slabserif.
+    > Use the Code Style font stack builder to create robust CSS font-family declarations. The font stack builder shows the probability that your preferred fonts are displayed on Windows, Mac and Linux Web browsers.
 
-9.  Try it out! Test out your ideas. See how it looks. See how it reads. See how it feels. In long-form text, in short-form text. Small columns, wide columns. Big text, small text. Doing this gives you a very real impression on how other people are going to see it.
+6.  [Modular Scale][]
 
-NOTE: This work is [copyrighted][].
+7.  [Relative \<font-size> calculator][Calculator]
 
-[Five Principles]:      http://www.smashingmagazine.com/2010/12/14/what-font-should-i-use-five-principles-for-choosing-and-using-typefaces/
-[Brief Primer]:         http://blog.8thlight.com/billy-whited/2011/08/25/a-brief-primer-on-typeface-selection.html
-[Type Statement]:       http://tympanus.net/codrops/2012/09/26/make-a-statement-with-type/
-[6 Questions]:          http://tympanus.net/codrops/2011/12/01/6-questions-you-should-ask-yourself-when-choosing-fonts/
+8.  [Soma FontFriend][FontFriend]
 
-[5 Tips]:               http://wixmobile.com/5-tips-for-excellent-mobile-typography
-[Mobile Typography]:    http://tympanus.net/codrops/2012/11/12/mobile-design-typography-is-vitally-important-and-challenging/
+    > Font­Friend is a book­marklet for typo­graph­i­cally obsessed web design­ers. It enables rapid check­ing of fonts and font styles directly in the browser with­out edit­ing code and refresh­ing pages...
 
-[Build 2011]:           http://2011.buildconf.com/
-[On Web Typography]:    http://vimeo.com/34178417
-[copyrighted]:          http://creativecommons.org/licenses/by-nc/3.0/
+9.  [Typetester][]
+
+    > The Typetester is an online application for comparison of the fonts for the screen.
+
+10. [Web Font Specimen][]
+
+    > Real web type in real web context. Web Font Specimen is a handy, free resource web designers and type designers can use to see how typefaces will look on the web.
+
+[Font Squirrel]:        http://www.fontsquirrel.com/
+[Fontdeck]:             http://fontdeck.com/
+[Fontspring]:           http://www.fontspring.com/
+[Google Web Fonts]:     http://www.google.com/webfonts#
+[Typekit]:              https://typekit.com/
+
+[Lettering.JS]:         http://letteringjs.com/
+[FitText.js]:           http://fittextjs.com/
+[Em Calculator]:        http://riddle.pl/emcalc/
+[Ffffallback]:          http://ffffallback.com/
+[Font Stack Builder]:   http://www.codestyle.org/servlets/FontStack
+[Modular Scale]:        http://modularscale.com/
+[Calculator]:           http://tools.the-echoplex.net/font-size/
+[FontFriend]:           http://somadesign.ca/projects/fontfriend/
+[Typetester]:           http://www.typetester.org/
+[Web Font Specimen]:    http://webfontspecimen.com/
