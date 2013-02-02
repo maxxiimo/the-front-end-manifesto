@@ -150,15 +150,27 @@ Because you laid out your applications [markup][Chapter 1], [styles][Chapter 2],
 
 An assumption I will make here is that you already are a proficient front end coder, so going into how to go about writing basic markup from the prototypes we just developed is something I won't get into. After codifying my prototypes here is what I have:
 
+Mobile Version
 ![][Wireframe]
+
+Desktop Version
+![][Laptop]
 
 Pretty bare-bones, but that will soon change.
 
 ### Wireframing with Susy
 
-![][Laptop]
+In [Chapter 3][Chapter 3 - Susy] we learned how to install and implement Susy. To learn how to use it, the best source of information is the [Susy reference][]. It's a powerful tool which I strongly recommend you use. Using it will allow you to quickly alter the layout of your application, set breakpoints, and test across different devices until you zero in on the perfect layout for your project.
+
+One feature that will help you wireframe is the ability to outline your grid system:
 
 ![][Laptop Grid]
+
+These guides are very similar to what Compass offers, and can be activated by simply including the following line to your .container's CSS properties:
+
+    .container
+      +container
+      **+susy-grid-background**
 
 ### Content
 
@@ -216,6 +228,8 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Generated Paper]:      http://generatedpaper.com/en/wireframing
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
+[Chapter 3 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#using-susy
+[Susy reference]:       http://susy.oddbird.net/guides/reference/
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
 [Toolbox 1]:            https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=lorem+ipsum
 [html-ipsum]:           http://html-ipsum.com/
