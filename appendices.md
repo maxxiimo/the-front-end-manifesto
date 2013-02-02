@@ -34,14 +34,14 @@ Appendices
 11. [A Brief History of Web Font Sizes][Appendix 11]
     :: Different articles from my archives over the last 12 years regarding web font sizes.
 
-[Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork-tasks
-[Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-2.md#frameworks
-[Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
-[Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-4.md#mobile-solutions-roundup
-[Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#inspirational-sites
-[Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#placeholder-services
-[Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#feedback-services
-[Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#font-stack-roundup
-[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#font-services-and-tools
-[Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#choosing-typefaces
-[Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-11.md#a-brief-history-of-web-font-sizes
+[Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#appendix-1
+[Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-2.md#appendix-2
+[Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#appendix-3
+[Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-4.md#appendix-4
+[Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#appendix-5
+[Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#appendix-6
+[Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#appendix-7
+[Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#appendix-8
+[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#appendix-9
+[Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#appendix-10
+[Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-11.md#appendix-11
