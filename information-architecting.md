@@ -180,7 +180,7 @@ A word on content. If you have it great! If not, this article gives a nice overv
 
 I for one don't mind using Lorem Ipsum as content placeholders. Here are some Rails Gems for creating it:
 
-[The Ruby Toolbox][Toolbox 1]
+-  [The Ruby Toolbox][Toolbox 1]
 
 There's a lot of Lorem Ipsum generator services out there, here are a few (some of them are kind of funny):
 
