@@ -160,11 +160,11 @@ Pretty bare-bones, but that will soon change.
 
 In [Chapter 3][Chapter 3 - Susy] we learned how to install and implement Susy. To learn how to use it, the best source of information is the [Susy reference][]. It's a powerful tool which I strongly recommend you use. Using it will allow you to quickly alter the layout of your application, set breakpoints, and test across different devices until you zero in on the perfect layout for your project.
 
-One feature that will help you wireframe is the ability to outline your grid system:
+One feature that will help you wireframe is the grid background tool:
 
 ![][Laptop Grid]
 
-These guides are very similar to what Compass offers, and can be activated by simply including the following line to your .container's CSS properties:
+These grid guides are very similar to what Compass offers, and can be activated by simply adding the following line to your .container's CSS properties:
 
     .container
       +container
@@ -172,13 +172,13 @@ These guides are very similar to what Compass offers, and can be activated by si
 
 ### Content
 
-A word on content. I have all of my content for the most part, but regarding the actual content for your project, if you have it great! If not, this article gives a nice overview of how content blocks can be used in situations where content is not known, perhaps a client has not yet delivered it:
+A word on content. If you have it great! If not, this article gives a nice overview of how content blocks can be used in situations where content is not known, perhaps a client has not yet delivered it:
 
 - [Content, First?][Content First]
 
 #### Lorem Ipsum
 
-I for one don't mind using Lorem Ipsum as content placeholders. Here is a roundup of Rails Gems for it:
+I for one don't mind using Lorem Ipsum as content placeholders. Here are some Rails Gems for creating it:
 
 [The Ruby Toolbox][Toolbox 1]
 
