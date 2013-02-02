@@ -150,10 +150,8 @@ Because you laid out your applications [markup][Chapter 1], [styles][Chapter 2],
 
 An assumption I will make here is that you already are a proficient front end coder, so going into how to go about writing basic markup from the prototypes we just developed is something I won't get into. After codifying my prototypes here is what I have:
 
-Mobile Version
 ![][Wireframe]
 
-Desktop Version
 ![][Laptop]
 
 Pretty bare-bones, but that will soon change.
