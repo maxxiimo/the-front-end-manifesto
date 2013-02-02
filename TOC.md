@@ -82,7 +82,7 @@ Table of Contents
   - Wireframing
     - Wireframing with Susy
     - Content
-  - Feedback
+  - Feedback and Testing
   - What We've Done
 
 #### Chapter 5
@@ -177,11 +177,12 @@ Table of Contents
   - Appendix 3: Grid Systems
   - Appendix 4: Mobile Solutions Roundup
   - Appendix 5: Inspirational Sites
-  - Appendix 6: Placeholder and Feedback Services
-  - Appendix 7: Font Stack Roundup
-  - Appendix 8: Font Services and Tools
-  - Appendix 9: Choosing Typefaces
-  - Appendix 10: A Brief History of Web Font Sizes
+  - Appendix 6: Placeholder Services
+  - Appendix 6: Feedback Services and Device Testing
+  - Appendix 8: Font Stack Roundup
+  - Appendix 9: Font Services and Tools
+  - Appendix 10: Choosing Typefaces
+  - Appendix 11: A Brief History of Web Font Sizes
 
 [Cover]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md

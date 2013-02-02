@@ -158,13 +158,13 @@ Pretty bare-bones, but that will soon change.
 
 ### Wireframing with Susy
 
-In [Chapter 3][Chapter 3 - Susy] we learned how to install and implement Susy. To learn how to use it, the best source of information is the [Susy reference][]. It's a powerful tool which I strongly recommend you use. Using it will allow you to quickly alter the layout of your application, set breakpoints, and test across different devices until you zero in on the perfect layout for your project.
+In [Chapter 3][Chapter 3 - Susy] we learned how to install and implement Susy. To learn how to use it, the best source of information is the [Susy reference][]. It's a powerful tool which I strongly recommend you use. Using it will allow you to quickly layout of the content of your application, set breakpoints, and test across different devices until you zero in on the perfect layout for your project.
 
 One feature that will help you wireframe is the grid background tool:
 
 ![][Laptop Grid]
 
-These grid guides are very similar to what Compass offers, and can be activated by simply adding the following line to your .container's CSS properties:
+These grid guides are very similar to what [Compass offers][], and can be activated by simply adding the following line to your .container's CSS properties:
 
     .container
       +container
@@ -178,15 +178,19 @@ A word on content. If you have it great! If not, the following article gives a n
 
 I for one don't mind using Lorem Ipsum or images as content placeholders, but nothing can substitute actual content so if you can find it or create it, do so. I've put together a pretty comprehensive list of [Placeholder Services][Appendix 6] for your benefit in the appendix of this book.
 
-Feedback
---------
+Feedback and Testing
+--------------------
 
-One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services in our [Feedback Services][Appendix 7] in the appendix.
+One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services listed in the [Feedback Services][Appendix 7-1] Appendix.
+
+Testing on actual device is also very important. Resizing a browser window and simulators cannot substitute for an actual device. The "[Device Testing][Appendix 7-2]" section in Appendix 7 lists several useful articles to get you started on testing or build your own lab.
+
+Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release often.
 
 What We've Done
 ---------------
 
-Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release often.
+
 
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
@@ -204,9 +208,11 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
 [Chapter 3 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#using-susy
 [Susy reference]:       http://susy.oddbird.net/guides/reference/
+[Compass offers]:       http://compass-style.org/reference/compass/layout/grid_background/
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
 [Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#placeholder-services
-[Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#feedback-services
+[Appendix 7-1]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#feedback-services
+[Appendix 7-2]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#device-testing
 
 [Mosaic]:               http://chrismaxwell.com/manifesto/mosaic-800px.gif
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg

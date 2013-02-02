@@ -19,8 +19,8 @@ Appendices
 6.  [Placeholder Services][Appendix 6]
     :: A roundup of Lorem Ipsum and image placeholder services.
 
-7.  [Feedback Services][Appendix 7]
-    :: A roundup of UX feedback services.
+7.  [Feedback Services and Device Testing][Appendix 7]
+    :: A roundup of UX feedback services, and articles on device testing.
 
 8.  [Font Stack Roundup][Appendix 8]
     :: Different font stack combinations, fallbacks, surveys and code.

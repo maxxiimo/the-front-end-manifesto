@@ -439,6 +439,7 @@ So what dimensions should we use? Here are some references for this:
 
 - [StatCounter Global Stats][Stats]
 - [Tired of Hunting][]
+- [2012 Device Map][]
 
 After reviewing these references we will settle on: 320, 480, 768, 1024, and 1400px. Lets break this down to understand why. In the ResponsiveDesign.is website under [Defining Breakpoints][] the section begins...
 
@@ -639,6 +640,7 @@ We've covered three approaches to mobile development in this chapter, and have i
 [Media Queries]:        http://www.w3.org/TR/css3-mediaqueries/#media0
 [Stats]:                http://gs.statcounter.com/
 [Tired of Hunting]:     http://www.websitedimensions.com/
+[2012 Device Map]:      http://viljamis.com/blog/2012/responsive-workflow/device-map-2012.pdf
 [Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
 [breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
 [Happy Cog]:            http://www.netmagazine.com/news/browser-screen-resolution-stats-rile-devs-121897
