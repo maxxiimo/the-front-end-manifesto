@@ -154,6 +154,12 @@ An assumption I will make here is that you already are a proficient front end co
 
 Pretty bare-bones, but that will soon change.
 
+### Wireframing with Susy
+
+![][Laptop]
+
+![][Laptop Grid]
+
 ### Content
 
 A word on content. I have all of my content for the most part, but regarding the actual content for your project, if you have it great! If not, this article gives a nice overview of how content blocks can be used in situations where content is not known, perhaps a client has not yet delivered it:
@@ -232,3 +238,5 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Index Mobile]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-mobile.jpg
 [Prototype]:            http://chrismaxwell.com/manifesto/paper/prototype.jpg
 [Wireframe]:            http://chrismaxwell.com/manifesto/wireframe/ipad-wireframe.gif
+[Laptop]:               http://chrismaxwell.com/manifesto/wireframe/laptop-home.gif
+[Laptop Grid]:          http://chrismaxwell.com/manifesto/wireframe/laptop-home-grid.gif
