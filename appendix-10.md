@@ -1,5 +1,5 @@
-Appendix 9
-----------
+Appendix 10
+-----------
 
 ### Choosing Typefaces
 

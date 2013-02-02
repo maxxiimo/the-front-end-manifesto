@@ -1,4 +1,4 @@
-Appendix 10
+Appendix 11
 -----------
 
 ### A Brief History of Web Font Sizes
