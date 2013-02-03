@@ -176,7 +176,16 @@ A word on content. If you have it great! If not, the following article gives a n
 
 - [Content, First?][Content First]
 
-I for one don't mind using Lorem Ipsum or images as content placeholders, but nothing can substitute actual content so if you can find it or create it, do so. I've put together a pretty comprehensive list of [Placeholder Services][Appendix 6] for your benefit in the appendix of this book.
+I for one don't mind using Lorem Ipsum or images as content placeholders, but nothing can substitute actual content so if you can find it or create it, do so. I've put together a pretty comprehensive list of [placeholder services][Appendix 6] for your benefit in the appendix of this book. It includes text and image placeholder services.
+
+I also keep a 1px x 1px transparent gif sometimes referred to as a shim in our assets/images/fixtures folder. It can be use as follows to create image placeholders:
+
+    = link_to image_tag('fixtures/shim.gif', :alt => '', :width => '75', :height => '75'), root_path, :title => ''
+
+Don't forget to set the color:
+
+    img
+      background-color: gray
 
 Feedback and Testing
 --------------------
