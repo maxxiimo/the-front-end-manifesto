@@ -178,7 +178,7 @@ A word on content. If you have it great! If not, the following article gives a n
 
 I for one don't mind using Lorem Ipsum or images as content placeholders, but nothing can substitute actual content so if you can find it or create it, do so. I've put together a pretty comprehensive list of [placeholder services][Appendix 6] for your benefit in the appendix of this book. It includes text and image placeholder services.
 
-I also keep a 1px x 1px transparent gif sometimes referred to as a shim in our assets/images/fixtures folder. It can be use as follows to create image placeholders:
+Although I like to use [Dummy Image][], I also keep a 1px x 1px transparent gif sometimes referred to as a shim in our assets/images/fixtures folder. It can be use as follows to create image placeholders:
 
     = link_to image_tag('fixtures/shim.gif', :alt => '', :width => '75', :height => '75'), root_path, :title => ''
 
@@ -220,6 +220,7 @@ What We've Done
 [Compass offers]:       http://compass-style.org/reference/compass/layout/grid_background/
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
 [Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#placeholder-services
+[Dummy Image]:          http://dummyimage.com
 [Appendix 7-1]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#feedback-services
 [Appendix 7-2]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#device-testing
 
