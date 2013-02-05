@@ -7,7 +7,7 @@ Table of Contents
 ### Section I
 
 #### Chapter 1
-- [Foundation Markup][]
+- [Foundation Markup][Chapter 1]
   -  The Application Layout
     - A Framework within a Framework
     - Where Does It Live?
@@ -28,7 +28,7 @@ Table of Contents
   - What We've Done
 
 #### Chapter 2
-- [Foundation Styles][]
+- [Foundation Styles][Chapter 2]
   - Preprocessors
   - Compass
   - CSS Frameworks and Grid Systems
@@ -49,7 +49,7 @@ Table of Contents
   - What We've Done
 
 #### Chapter 3
-- [Mobile on Rails][]
+- [Mobile on Rails][Chapter 3]
   - Mobile First
   - Plan of Attack
   - I. User Agent Sniffing
@@ -73,7 +73,7 @@ Table of Contents
 ### Section II
 
 #### Chapter 4
-- [Information Architecting][]
+- [Information Architecting][Chapter 4]
   - A Mosaic of Information
   - The Storyline
   - Gathering and Organizing Information
@@ -86,7 +86,7 @@ Table of Contents
   - What We've Done
 
 #### Chapter 5
-- [Visual Design for the Nondesigner][Visual Design]
+- [Visual Design for the Nondesigner][Chapter 5]
   - Paradigm Shift
   - Typography
     - Font Family
@@ -103,7 +103,7 @@ Table of Contents
     - What We've Done
 
 #### Chapter 6
-- [Slicing and Dicing Mockups][]
+- [Slicing and Dicing Mockups][Chapter 6]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
   - Step 3 - Fonts
@@ -184,22 +184,22 @@ Table of Contents
   - Appendix 10: Choosing Typefaces
   - Appendix 11: A Brief History of Web Font Sizes
 
-[Cover]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
-[The Manifesto]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
-[Foundation Markup]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
-[Foundation Styles]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
-[Mobile on Rails]:                   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
-[Optimization]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/optimization.md
-[Accessibility]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/accessibility.md
-[Slicing and Dicing Mockups]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
-[Information Architecting]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
-[Visual Design]:                     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
-[Images]:                            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/images.md
-[Forms]:                             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/forms.md
-[Navigation]:                        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/navigation.md
-[Gradients]:                         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/gradients.md
-[Email Coding]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/email-coding.md
-[Refactoring]:                       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/refactoring.md
-[Search Engine Optimization]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/search-engine-optimization.md
-[Style Guides]:                      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/style-guides.md
-[Appendices]:                        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md
+[Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
+[The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
+[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
+[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
+[Images]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/images.md
+[Forms]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/forms.md
+[Navigation]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/navigation.md
+[Gradients]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/gradients.md
+[Email Coding]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/email-coding.md
+[Refactoring]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/refactoring.md
+[Optimization]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/optimization.md
+[Accessibility]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/accessibility.md
+[Search Engine Optimization]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/search-engine-optimization.md
+[Style Guides]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/style-guides.md
+[Appendices]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md

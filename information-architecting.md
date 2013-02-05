@@ -192,14 +192,18 @@ Feedback and Testing
 
 One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services listed in the [Feedback Services][Appendix 7-1] Appendix.
 
-Testing on actual device is also very important. Resizing a browser window and simulators cannot substitute for an actual device. The "[Device Testing][Appendix 7-2]" section in Appendix 7 lists several useful articles to get you started on testing or build your own lab.
+Testing on actual device is also very important. Resizing a browser window an/or simulators cannot substitute for an actual device. The "[Device Testing][Appendix 7-2]" section in Appendix 7 lists several useful articles to get you started on testing or building your own testing lab.
 
-Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release often.
+At the end of our information architecting cycle, with our basic content and layouts in place, here's what we're left with across several different devices:
+
+![][Multidevice]
+
+Now all that we need to do is make them look pretty. We will tackle this head on in Chapter 5, "[Visual Design for the Nondesigner][Chapter 5]".
 
 What We've Done
 ---------------
 
-
+Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release often.
 
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
@@ -223,6 +227,7 @@ What We've Done
 [Dummy Image]:          http://dummyimage.com
 [Appendix 7-1]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#feedback-services
 [Appendix 7-2]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#device-testing
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
 
 [Mosaic]:               http://chrismaxwell.com/manifesto/mosaic-800px.gif
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
@@ -232,3 +237,4 @@ What We've Done
 [Wireframe]:            http://chrismaxwell.com/manifesto/wireframe/ipad-wireframe.gif
 [Laptop]:               http://chrismaxwell.com/manifesto/wireframe/laptop-home.gif
 [Laptop Grid]:          http://chrismaxwell.com/manifesto/wireframe/laptop-home-grid.gif
+[Multidevice]:          http://chrismaxwell.com/manifesto/wireframe/multidevice.gif
