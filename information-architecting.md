@@ -198,10 +198,15 @@ At the end of our information architecting cycle, with our basic content and lay
 
 ![][Multidevice]
 
-Now all that we need to do is make them look pretty. We will tackle this head on in Chapter 5, "[Visual Design for the Nondesigner][Chapter 5]".
+We were able to rapidly create wireframes across multiple devices by using [Susy breakpoints][Susy]. Now all that we need to do is make our wireframes look pretty! We will tackle this head on in Chapter 5, "[Visual Design for the Nondesigner][Chapter 5]".
 
 What We've Done
 ---------------
+
+
+
+
+As developers we oftentimes think in terms of boxes. Notice our wireframe is essentially a layout of different content boxes. As we move into design mode [in the next chapter][Chapter 5] we need to completely change how we use our brains.
 
 Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release often.
 
@@ -227,6 +232,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid). Revise and release
 [Dummy Image]:          http://dummyimage.com
 [Appendix 7-1]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#feedback-services
 [Appendix 7-2]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#device-testing
+[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#susy-breakpoints
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
 
 [Mosaic]:               http://chrismaxwell.com/manifesto/mosaic-800px.gif
