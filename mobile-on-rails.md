@@ -313,10 +313,7 @@ app/assets/stylesheets/application.scss
     @import "desktop/layout";
     // @import "grids";
 
-Don't forget to restart your server, and wallah! You have a pretty powerful responsive grid system. To learn how to use it, the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
-
-- [Responsive Grids With Susy][Susy Grids]
-- [Off-canvas layout with Susy][Off-canvas]
+Don't forget to restart your server, and wallah! You have a pretty powerful responsive grid system ready for implementation in your project.
 
 #### Implementation
 
@@ -384,17 +381,7 @@ app/views/layouts/application.html.haml
 
 *Step 3*: Add the corresponding CSS:
 
-app/assets/stylesheets/mobile/_layout.sass
-
-    .container
-      +container
-
-app/assets/stylesheets/desktop/_layout.sass and
-
-    body
-      font-size: $base-font-size
-      line-height: $base-line-height
-      background-color: $bg-bo
+app/assets/stylesheets/desktop/_layout.sass and app/assets/stylesheets/mobile/_layout.sass
 
     .container
       +container
@@ -405,6 +392,45 @@ NOTE: We removed...
       width: 960px
 
 ...from the desktop version body tag since we are now replacing these properties with Susy.
+
+#### Use
+
+In our previous flexible grid example:
+
+    %body
+      .container
+        .left-side
+        .right-side
+
+...we used percentages to define our flexible widths:
+
+    .container
+      width: 960px
+
+    .left-side
+      width: 50%
+
+    .right-side
+      width: 50%
+
+With Susy .container does not need to be set since it was defined in step three of our implementation, and for the two remaining layout elements we would use Susy as follows:
+
+    .left-side
+      +span-columns(6, 12)
+
+    .right-side
+      +span-columns(6 omega, 12)
+
+What did we do? Earlier on we set the total number of columns in our Susy grid to 12:
+
+    $total-columns:     12
+
+For the two elements we layout we then set the total number of columns the element will span through the +span-columns() mixin. In our case half of the available columns for each element. The "omega" in the .right-side element denotes that this element will Contain the last column in the grid and therefore will not have a right margin.
+
+To learn how to use Susy, the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
+
+- [Responsive Grids With Susy][Susy Grids]
+- [Off-canvas layout with Susy][Off-canvas]
 
 ### @media
 
@@ -441,7 +467,15 @@ So what dimensions should we use? Here are some references for this:
 - [Tired of Hunting][]
 - [2012 Device Map][]
 
-After reviewing these references we will settle on: 320, 480, 768, 1024, and 1400px. Lets break this down to understand why. In the ResponsiveDesign.is website under [Defining Breakpoints][] the section begins...
+After reviewing these references we will settle on:
+
+- 320px (iPhone portrait, default)
+- 480px (iPhone landscape)
+- 600px, 768px (iPad portrait)
+- 900px, 1024px (iPad landscape)
+- 1140+ (Desktops)
+
+Lets break this down to understand why. In the ResponsiveDesign.is website under [Defining Breakpoints][] the section begins...
 
 > Breakpoints are the point a which your sites content will respond to provide the user with the best possible layout to consume the information.
 >
@@ -451,7 +485,7 @@ After reviewing these references we will settle on: 320, 480, 768, 1024, and 140
 >
 > I hope I didn't hurt your feelings but seriously, you're approaching this in the wrong way.
 
-Ha ha! Something to keep in mind. I like this thinking. We should start with content and see how it looks on different screen sizes, then define our breakpoints.
+Ha! Something to keep in mind. I like this thinking. We should start with content and see how it looks on different screen sizes, then define our breakpoints.
 
 On the other hand I think it's good to start with something and redefine as content dictates. I like the examples the author gives:
 
@@ -546,6 +580,9 @@ I've gone ahead and [converted the above breakpoints][converted breakpoints] to 
 
 ### Susy Breakpoints
 
+One of the great features of Susy is that breakpoints are baked right in. We could use the breakpoints we created above, but why not take advantage of the mathematical capabilities of Susy and also be consistent at the same time. In addition to the Susy's own [reference][source] and the articles I recommend above, the following discussion hits the nail right on the head when it comes to understanding how to use Susy breakpoints:
+
+[Susy and Media Queries (guide for Muppets)][Muppets]
 
 
 
@@ -632,10 +669,10 @@ We've covered three approaches to mobile development in this chapter, and have i
 [Susy]:                 http://susy.oddbird.net/
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
 [source]:               http://susy.oddbird.net/guides/getting-started/
-[Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
-[Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
 [basic settings]:       http://susy.oddbird.net/guides/reference/#ref-basic-settings
 [.container]:           http://susy.oddbird.net/guides/reference/#ref-basic-mixins
+[Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
+[Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
 [media types]:          http://www.w3.org/TR/CSS21/media.html
 [Media Queries]:        http://www.w3.org/TR/css3-mediaqueries/#media0
 [Stats]:                http://gs.statcounter.com/
@@ -651,6 +688,7 @@ We've covered three approaches to mobile development in this chapter, and have i
 [EMs have it]:                     http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
 [Embrace the em]:     http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
 [converted breakpoints]: https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
+[Muppets]:                     https://groups.google.com/d/topic/compass-users/oXHAtZE4euI/discussion
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
 
