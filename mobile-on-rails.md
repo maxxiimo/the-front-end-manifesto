@@ -678,7 +678,7 @@ This produces the following @media rules:
         *omitted*
       }
 
-As you can see it is very similar to what we created manually, and remember that since we're using a base font size of 16px, if you multiply em's by that number you will get the equivalent in px:
+As you can see it is very similar to what we created manually, and remember that since we're using a base font size of 16px, if you multiply the em's value by that number you will get the equivalent in px:
 
 -  2 columns:  9em x 16px = 144px
 -  3 columns: 14em x 16px = 224px
@@ -694,10 +694,10 @@ As you can see it is very similar to what we created manually, and remember that
 
 After reviewing the grid on several different devices I settle on the following breakpoints:
 
-Samsung, iPhone: 4 columns, 19em x 16px = 304px
-Small Tablet: 6 columns, 29em x 16px = 464px
-iPad: 9 columns, 44em x 16px = 704px
-Desktop: 12 columns, 59em x 16px = 944px
+- Samsung, iPhone: 4 columns, 19em x 16px = 304px
+- Small Tablet: 6 columns, 29em x 16px = 464px
+- iPad: 9 columns, 44em x 16px = 704px
+- Desktop: 12 columns, 59em x 16px = 944px
 
 ...which leaves the following Susy definitions in app/assets/stylesheets/application.scss:
 

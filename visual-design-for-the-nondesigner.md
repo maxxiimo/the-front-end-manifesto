@@ -310,7 +310,7 @@ I read [somewhere][] that to make your text appear softer and still maintain a g
     $base-font-color:   #444         !default
     $base-header-color: #222         !default
 
-Of course, black on white does not have to be the default color and contrast. Will learn more about color in the next section.
+Of course, black on white does not have to be the default color and contrast.
 
 Color
 -----
@@ -318,6 +318,9 @@ Color
 > There are many contributing factors that go into making a good visual design, but one of the simplest ways to do this is through the use of colour. The colour palette used in a design can have such a profound effect on a visual design that it almost feels like you’re cheating. It’s easy to add more and more subtle shades of colour to add a sense of sophistication and complexity to a design, but it dilutes the overall visual impact. When I design, I almost have a rule that only allows me to use a very limited colour palette.
 
 \- Mike Kus, "[Nine Things I've Learned][9 Things]"
+
+
+
 
 
 Branding
