@@ -598,7 +598,8 @@ Here's how we will use Susy breakpoints in our project. First, let's define our 
     $break11:           11;
     $break12:           12;
 
-We're starting from a total column size of 4 instead of 12 since we are approaching development from a mobile first perspective. Then I create breakpoints from 5 to 12 columns. I do this because I want to test which breakpoints are best for the devices I'm targeting. To identify the breakpoint being utilized I set up my styles as follows:
+
+We're starting from a total column size of 4 instead of 12 since we are approaching development from a mobile first perspective. Then I add breakpoints from 5 to 12 columns. I do this because I want to test which breakpoints are best for the devices I'm targeting. To identify the breakpoint being utilized I set up my styles as follows:
 
     .container
       +container($total-columns, $break5, $break6, $break7, $break8, $break9, $break10, $break11, $break12)
@@ -678,7 +679,12 @@ This produces the following @media rules:
         *omitted*
       }
 
-As you can see it is very similar to what we created manually, and remember that since we're using a base font size of 16px, if you multiply the em's value by that number you will get the equivalent in px:
+As you can see it is very similar to what we created manually except Susy calculates all the breakpoints based on the grid set up and following formula:
+
+($total-columns x $column-width) + (($total-columns - 1) x $gutter-width)
+(12 x 4em) + ((12 - 1) x 1em) = 59em
+
+...and remember that since we're using a base font size of 16px, if you multiply the em's value by that number you will get the equivalent in px:
 
 -  2 columns:  9em x 16px = 144px
 -  3 columns: 14em x 16px = 224px
@@ -699,7 +705,7 @@ After reviewing the grid on several different devices I settle on the following 
 - iPad: 9 columns, 44em x 16px = 704px
 - Desktop: 12 columns, 59em x 16px = 944px
 
-...which leaves the following Susy definitions in app/assets/stylesheets/application.scss:
+...which leaves the following Susy definitions:
 
     $total-columns:     4;
     $column-width:      4em;
@@ -725,7 +731,7 @@ After reviewing the grid on several different devices I settle on the following 
     +at-breakpoint($break12)
       +susy-grid-background
 
-Now when you need to apply a particular style to a specific device in use these breakpoints. Using our example from before:
+Now when you need to apply a particular style that is dependent on specific screen sizes use these breakpoints. In our example from before:
 
     %body
       .container
@@ -738,7 +744,9 @@ Now when you need to apply a particular style to a specific device in use these 
     .right-side
       +span-columns(6 omega, 12)
 
-With the new breakpoint set up we can now target each of the different device sizes with different styles. Our four column base setting is designed for smaller screen sizes, so we might want to stack the .left-side and .right-side div's rather than have them appear cramped side-by-side. For the remaining three breakpoints we will need to apply the correct grid widths, and for illustration purposes let's color .left-side and .right-side red and blue, but only for our two largest screen sizes: ipad and desktops, i.e. $break9 and $break12.
+With the new breakpoints set up we can add styles that will only take affect when the viewport reaches the defined breakpoint.
+
+Here is a practical example. Our four column base setting is designed for smaller screen sizes so we might want to stack the .left-side and .right-side div's (rather than have them appear cramped side-by-side), but for the remaining three breakpoints we will apply grid widths that will result in a 50-50 side-by-side placement. For illustration purposes let's color .left-side and .right-side red and blue, but only for our two largest screen sizes: ipad and desktops, i.e. $break9 and $break12.
 
     .left-side
       +span-columns(4 omega, 4)
