@@ -461,21 +461,21 @@ Unlike the old specification, media queries allow you to move beyond a finite se
 
 Before we write our own media queries we need to determine what screen sizes we plan to target. I'm going to make the assumption that our audience uses desktop computers/laptops, tablet devices, and smart phones, but not televisions or anything else for that matter to browse the web. I'm making this assumption to give us something to work with, but you should check your Web logs!
 
-So what dimensions should we use? Here are some references for this:
+So what dimensions should we use? Here are some references to help you decide:
 
 - [StatCounter Global Stats][Stats]
 - [Tired of Hunting][]
 - [2012 Device Map][]
 
-After reviewing these references we will settle on:
+Here are some common device dimensions:
 
 - 320px (iPhone portrait, default)
 - 480px (iPhone landscape)
-- 600px, 768px (iPad portrait)
-- 900px, 1024px (iPad landscape)
+- 768px (iPad portrait)
+- 1024px (iPad landscape)
 - 1140+ (Desktops)
 
-Lets break this down to understand why. In the ResponsiveDesign.is website under [Defining Breakpoints][] the section begins...
+So what should we use? In the ResponsiveDesign.is website under [Defining Breakpoints][] the section begins...
 
 > Breakpoints are the point a which your sites content will respond to provide the user with the best possible layout to consume the information.
 >
@@ -580,12 +580,195 @@ I've gone ahead and [converted the above breakpoints][converted breakpoints] to 
 
 ### Susy Breakpoints
 
-One of the great features of Susy is that breakpoints are baked right in. We could use the breakpoints we created above, but why not take advantage of the mathematical capabilities of Susy and also be consistent at the same time. In addition to the Susy's own [reference][source] and the articles I recommend above, the following discussion hits the nail right on the head when it comes to understanding how to use Susy breakpoints:
+One of the great features of Susy is that breakpoints are baked right in. We could use the breakpoints we created above, but why not take advantage of the mathematical capabilities of Susy and also be consistent with our grid system at the same time.
+
+Here's how we will use Susy breakpoints in our project. First, let's define our Susy flexible grid as follows:
+
+    $total-columns:     4;
+    $column-width:      4em;
+    $gutter-width:      1em;
+    $grid-padding:      $gutter-width;
+
+    $break5:            5;
+    $break6:            6;
+    $break7:            7;
+    $break8:            8;
+    $break9:            9;
+    $break10:           10;
+    $break11:           11;
+    $break12:           12;
+
+We're starting from a total column size of 4 instead of 12 since we are approaching development from a mobile first perspective. Then I create breakpoints from 5 to 12 columns. I do this because I want to test which breakpoints are best for the devices I'm targeting. To identify the breakpoint being utilized I set up my styles as follows:
+
+    .container
+      +container($total-columns, $break5, $break6, $break7, $break8, $break9, $break10, $break11, $break12)
+      +susy-grid-background
+
+      +at-breakpoint($break5)
+        +susy-grid-background
+        background-color: red
+
+      +at-breakpoint($break6)
+        +susy-grid-background
+        background-color: blue
+
+      +at-breakpoint($break7)
+        +susy-grid-background
+        background-color: green
+
+      +at-breakpoint($break8)
+        +susy-grid-background
+        background-color: yellow
+
+      +at-breakpoint($break9)
+        +susy-grid-background
+        background-color: aqua
+
+      +at-breakpoint($break10)
+        +susy-grid-background
+        background-color: brown
+
+      +at-breakpoint($break11)
+        +susy-grid-background
+        background-color: violet
+
+      +at-breakpoint($break12)
+        +susy-grid-background
+        background-color: white
+
+This produces the following @media rules:
+
+    @media (min-width: 24em) {
+      .container {
+        *omitted*
+      }
+    }
+    @media (min-width: 29em) {
+      .container {
+        *omitted*
+      }
+    }
+    @media (min-width: 34em) {
+      .container {
+        *omitted*
+      }
+    }
+    @media (min-width: 39em) {
+      .container {
+        *omitted*
+      }
+    }
+    @media (min-width: 44em) {
+      .container {
+        *omitted*
+      }
+    }
+    @media (min-width: 49em) {
+      .container {
+        *omitted*
+      }
+    }
+    @media (min-width: 54em) {
+      .container {
+        *omitted*
+      }
+    }
+    @media (min-width: 59em) {
+      .container {
+        *omitted*
+      }
+
+As you can see it is very similar to what we created manually, and remember that since we're using a base font size of 16px, if you multiply em's by that number you will get the equivalent in px:
+
+-  2 columns:  9em x 16px = 144px
+-  3 columns: 14em x 16px = 224px
+-  4 columns: 19em x 16px = 304px
+-  5 columns: 24em x 16px = 384px
+-  6 columns: 29em x 16px = 464px
+-  7 columns: 34em x 16px = 544px
+-  8 columns: 39em x 16px = 624px
+-  9 columns: 44em x 16px = 704px
+- 10 columns: 49em x 16px = 784px
+- 11 columns: 54em x 16px = 864px
+- 12 columns: 59em x 16px = 944px
+
+After reviewing the grid on several different devices I settle on the following breakpoints:
+
+Samsung, iPhone: 4 columns, 19em x 16px = 304px
+Small Tablet: 6 columns, 29em x 16px = 464px
+iPad: 9 columns, 44em x 16px = 704px
+Desktop: 12 columns, 59em x 16px = 944px
+
+...which leaves the following Susy definitions in app/assets/stylesheets/application.scss:
+
+    $total-columns:     4;
+    $column-width:      4em;
+    $gutter-width:      1em;
+    $grid-padding:      $gutter-width;
+
+    $break6:            6;
+    $break9:            9;
+    $break12:           12;
+
+...and in our styles:
+
+  .container
+    +container($total-columns, $break6, $break9, $break12)
+    +susy-grid-background
+
+    +at-breakpoint($break6)
+      +susy-grid-background
+
+    +at-breakpoint($break9)
+      +susy-grid-background
+
+    +at-breakpoint($break12)
+      +susy-grid-background
+
+Now when you need to apply a particular style to a specific device in use these breakpoints. Using our example from before:
+
+    %body
+      .container
+        .left-side
+        .right-side
+
+    .left-side
+      +span-columns(6, 12)
+
+    .right-side
+      +span-columns(6 omega, 12)
+
+With the new breakpoint set up we can now target each of the different device sizes with different styles. Our four column base setting is designed for smaller screen sizes, so we might want to stack the .left-side and .right-side div's rather than have them appear cramped side-by-side. For the remaining three breakpoints we will need to apply the correct grid widths, and for illustration purposes let's color .left-side and .right-side red and blue, but only for our two largest screen sizes: ipad and desktops, i.e. $break9 and $break12.
+
+    .left-side
+      +span-columns(4 omega, 4)
+
+      +at-breakpoint($break6)
+        +span-columns(6, $break6)
+
+      +at-breakpoint($break9)
+        +span-columns(9, $break9)
+        background-color: red
+
+      +at-breakpoint($break12)
+        +span-columns(12, $break12)
+
+    .right-side
+      +span-columns(4 omega, 4)
+
+      +at-breakpoint($break6)
+        +span-columns(6 omega, $break6)
+
+      +at-breakpoint($break9)
+        +span-columns(9 omega, $break9)
+        background-color: blue
+
+      +at-breakpoint($break12)
+        +span-columns(12 omega, $break12)
+
+If you're not too sure how this is all working, in addition to the Susy's own [reference][source] (and the articles I recommend above), the following discussion hits the nail right on the head when it comes to understanding how to use Susy breakpoints:
 
 [Susy and Media Queries (guide for Muppets)][Muppets]
-
-
-
 
 ### Flexible Media
 
