@@ -212,11 +212,8 @@ I include four major reset styles in my application file and uncomment the one I
     /* BASIC STRUCTURE
     ============================================================================ */
     @import "desktop/layout";
-    // @import "desktop/grids";
 
-Use a "layout" section to style major elements and component areas such as html and body tags, or header and footer areas. This section is also a good place for grid styles, in major layout component. As you might have noticed, the partial grids is called in this example. This partial in some of my projects ports a sass version of a grid system. I also locate Compass' Grid Backgrounds which in a nutshell:
-
-> The grid-background mixins allow you to generate fixed, fluid and elastic grid-images on-the-fly using css3 gradients. These can be used for testing both horizontal and vertical grids.
+Use a "layout" section to style major elements and component areas such as html and body tags, or header and footer areas.
 
     /* TYPOGRAPHY
     ============================================================================ */
@@ -532,7 +529,7 @@ With all of this work you are more than ready to begin building an app with your
 [_navigation.sass]:     https://github.com/maxxiimo/base-css/blob/master/desktop/_navigation.sass
 [_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_forms.sass
 [_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_pages.sass
-[_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/_staging.sass
+[_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/desktop/_staging.sass
 [h5bp_helpers.sass]:    https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.sass
 [h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/_h5bp_print.sass
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
