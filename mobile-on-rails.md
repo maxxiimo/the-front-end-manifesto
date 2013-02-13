@@ -799,6 +799,27 @@ III. A Hybrid Approach
 
 - Ethan Marcotte, [Responsive Web Design][RWD Book], p.96
 
+...But what about a hybrid approach? What Ethan says here is true, things are happening so fast it would be literally impossible to keep up with the speed of change using User Agent Sniffing to deliver a mobile version of a website – some devices might not register as mobile and receive the desktop version of the website.
+
+On the other hand, a purely responsive web design may deliver too much bloat for smaller devices with lower connection speeds, higher latency, smaller CPUs. On top of that, smaller devices may require a lot more tweaks between device capabilities (from dumb phones to smart phones) and require developers to contend with a greater amount of screen size increments, that it might be better to keep all of this code organized separately. Not just in a separate stylesheet and hidden and conditionally loaded elements, but as a separate system entirely.
+
+If we took this hybrid approach, for devices that clearly register as mobile devices, we could provide responsive web design geared specifically to that range of device types, and we can use the information available in user agent strings for even greater levels adaptation and tweaking.
+
+For nonmobile we can use a different responsive web design that provides a more general small screen responsive design backup for those devices the slip through the cracks.
+
+Will this be too much work? That remains to be discovered, but if we should choose to use this type of approach here is how we would do it:
+
+1. Leave the User Agent Sniffing Advanced Solution in place.
+
+2. Leave the Susy-based Responsive Web Design in place as is.
+
+3. Create a second Susy-based Responsive Web Design specifically for small devices.
+
+### Susy-based Mobile RWD
+
+We literally are going to take all the techniques we learned in the previous section, and repeat them for mobile. First is important to understand (and revisit) the lay of the land, i.e. our file organization.
+
+
 
 
 An Ajax Include Pattern

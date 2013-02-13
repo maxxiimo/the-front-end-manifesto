@@ -32,6 +32,12 @@ In client-side caching the browser stores website assets. When these assets are 
 
 You tell browsers how long to cache things for.
 
+
+
+Serve up different image formats depending on the size of the image.
+
+
+
 ##### Caching Styles
 
 Versioning stylesheets breaks the cache.
