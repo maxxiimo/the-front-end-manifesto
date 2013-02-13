@@ -819,6 +819,13 @@ Will this be too much work? That remains to be discovered, but if we should choo
 
 We literally are going to take all the techniques we learned in the previous section, and repeat them for mobile. First is important to understand (and revisit) the lay of the land, i.e. our file organization.
 
+![][file-structure]
+
+What you see is our project as it is organized up until now. To understand how this relates with a hybrid approach allow me to draw a couple arrows and explain:
+
+![][file-structure-w-lines]
+
+(1)
 
 
 
@@ -907,3 +914,5 @@ We've covered three approaches to mobile development in this chapter, and have i
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
 
 [@media Definitions]:   http://chrismaxwell.com/manifesto/media-queries.gif
+[file-structure]:       http://chrismaxwell.com/manifesto/file-structure.gif
+[file-structure-w-lines]: http://chrismaxwell.com/manifesto/file-structure-w-lines.gif
