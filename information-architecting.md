@@ -73,7 +73,7 @@ Gathering and Organizing Information
 
 Before you begin coding though, it's important to take a few preliminary steps. What follows are different techniques for gathering all the blocks of information that will ultimately make up the sites story and user experience.
 
-NOTE: Throughout this process I highly recommend keeping the book "[Don't Make Me Think][]" by Steve Krug nearby as a reference. It’s a good read and everything he says is so darn obvious, and all there in one place.
+NOTE: I'm going to make the assumption that you have conducted basic client discovery and subject research for your project. Also, throughout this process I highly recommend keeping the book "[Don't Make Me Think][]" by Steve Krug nearby as a reference. It’s a good read and everything he says is so darn obvious, and all there in one place.
 
 ### Index Card Exercise
 
@@ -192,7 +192,7 @@ Feedback and Testing
 
 One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services listed in the [Feedback Services][Appendix 7-1] Appendix.
 
-Testing on actual device is also very important. Resizing a browser window an/or simulators cannot substitute for an actual device. The "[Device Testing][Appendix 7-2]" section in Appendix 7 lists several useful articles to get you started on testing or building your own testing lab.
+Testing on actual device is also very important. Resizing a browser window and/or using device simulators cannot substitute for an actual device. The "[Device Testing][Appendix 7-2]" section in Appendix 7 lists several useful articles to get you started on testing or building your own testing lab. As a rule of thumb, test on at least four different devices: desktop, tablet, small tablet, and a smartphone. Walk into the Mac store, or Verizon or AT&T and test away.
 
 At the end of our information architecting cycle, with our basic content and layouts in place, here's what we're left with across several different devices:
 
