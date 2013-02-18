@@ -823,13 +823,16 @@ What you see is our project as it is organized up until now. To understand how t
 
 ![][file-structure-w-lines]
 
-(1) There are two main stylesheets, one called mobile.scss that organizes all the partials under the mobile folder, and application.scss which organizes all the partials under the desktop folder. mobile.scss is called only when Mobvious detects, via the user agent string, that the device is a mobile device. application.scss is used in all other cases.
+(1) There are two main stylesheets:
+    - mobile.scss which organizes and pulls together all the partials under the mobile folder
+    - application.scss which organizes and pulls together all the partials under the desktop folder
+    mobile.scss is called through the mobile version of application.html.haml – when Mobvious detects via the user agent string that the device is a mobile device. application.scss is served in all other cases.
 
 (2) Partials common to both mobile.scss and application.scss.
 
-(3) Within our views we organized all mobile related views under the folder "mobile". Files here will be served only when Mobvious detects, via the user agent string, that the device is a mobile device.
+(3) All mobile related views are organized under the "mobile" folder. Files here will be served only to mobile devices.
 
-(4) When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the mobile folder. When those views are not available under the mobile folder, through template inheritance, Rails will look for the view in its regular location. In this case _footer.html.haml is the only file with a difference between mobile and desktop type devices and therefore can use the same files between the two device types.
+(4) When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the mobile folder. When those views are not available in the mobile folder, through template inheritance, Rails will look for the view in its regular location. In our file structure _footer.html.haml is the only file with a difference between mobile and desktop type devices therefore we can use the same navigation, logo, etc. files between the two device types.
 
 
 
