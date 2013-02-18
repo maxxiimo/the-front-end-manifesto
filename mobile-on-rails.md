@@ -3,37 +3,35 @@ Mobile on Rails
 
 In Chapter 1 we learned about [foundation markup][], and in Chapter 2, [foundation styles][], but what about mobile? What about smartphones and tablets? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. There was talk about desktop screen sizes, but it could be overlooked since the differences were not so great or prevalent, and the "fix" came relatively quickly: the industry settled on standard design widths and/or employed liquid layouts.
 
-Fast-forward to today and as a front end engineer you cannot overlook screen size, and the fix is a tad bit more difficult than it was back then to say the least.
+Fast-forward to today and as a front end engineer you cannot overlook screen size, and the fix is a tad bit more difficult than it was back then to say the least!
 
 > Mobile browsing is rapidly consuming the Internet. The smartphone and tablet lifestyle is replacing laptops and desktop computers as the primary way we go online.
 
 \- [Mobile Browsing: It Will Get Better and Worse][Better and Worse] by Chris Kelly of New Relic
 
-With out a doubt your end-users are going to look at your work on a smartphone or some kind of tablet. In fact I think this is pretty much [common knowledge][] now, so let's end that discussion and just deal with it proactively by laying down a mobile foundation.
+The fact of the matter is that your end-users are going to look at your work on a smartphone or some kind of tablet. I think this is pretty much [common knowledge][] now, so let's deal with it proactively by laying down a mobile foundation.
 
-In this chapter we are going to explore the different ways in which we can serve content tailored to the different devices our users are using, and in this process we will develop our own mobile foundation, or best practices.
+In this chapter we are going to explore the different ways in which we can serve content tailored to the different devices our users are using, and in this process we will develop our own mobile foundation best practices.
 
 Mobile First
 ------------
 
-Once upon a time ago when I worked for Fidelity Investments' FEB Design unit, we took an existing desktop application and turned it into a mobile app (pre-smartphone era). The result was a precise definition of the applications basic information architecture, no more no less. Several of my colleagues pointed this out and used the mobile application to better architect the greater desktop application.
+Once upon a time ago when I worked for Fidelity Investments' FEB Design unit in Boston, we took an existing desktop application and turned it into a mobile app (pre-smartphone era). The result was a precise definition of the applications basic information architecture, no more no less. Several of my colleagues pointed this out and used the mobile application to better architect the greater desktop application.
 
-As an Information Architect with this experience, the [Mobile First][] design paradigm makes sense to me for information architecting alone, and given the large and increasing number of mobile users out there, it is an approach that you as a front end developer should consider using when building an application. In the very least, DO NOT leave mobile design as an afterthought.
-
-In [Chapter 4][] we will tackle this paradigm shift head-on as we architect our application. As a general rule,, mobile is now a factor, so it makes sense to include preparing for it at the get-go of the project.
+As an Information Architect with this experience, the [Mobile First][] design paradigm makes sense to me for information architecting alone, and given the large and increasing number of mobile users out there, it is an approach that you as a front end developer should consider adopting when building an application. In the very least, DO NOT leave mobile design as an afterthought.
 
 Plan of Attack
 --------------
 
-At the end of this chapter Dan Pickett the founder of [LaunchWare][] describes several different methods to tackle mobile on Ruby on Rails, but for this chapter we will need to choose one approach to build our mobile foundation. Perhaps in the next book "Mobile on Rails" we can dive in even further. For now, here are three possibilities we will explore:
+At the end of this chapter Dan Pickett the founder of [LaunchWare][] describes several different methods to tackle mobile on Ruby on Rails, but for this chapter we will need to choose one approach to build our mobile foundation. Perhaps in the next book "Mobile on Rails" we can dive in even further. For now, here are three possibilities to explore:
 
-1.  Detecting screen sizes via media queries to serve up responsive styles.
+1.  Detect user agents to serve mobile versions of our website.
 
-2.  Detecting user agents to serve mobile specific markup and styles.
+2.  Detect screen size via media queries to serve up responsive web design.
 
 3.  A hybrid of 1 and 2.
 
-Personally I like to separate concerns but include responsive design within this separation since there is no one size fits all in mobile, so I tend to use option three. I'm not alone in this thinking:
+Personally I like to separate concerns, but include responsive design within this separation since there is no one size fits all in mobile, so I tend to use option three. I'm not alone in this thinking:
 
 > Now, oftentimes, people think about device detection as a "one or the other" sort of thing. Either you’re doing responsive design or you’re using device detection to route people to separate templates, and that you would choose one of those two options; you wouldn’t build something that uses both. But we’ve actually combined responsive design with server-side detection quite a bit.
 
@@ -41,13 +39,15 @@ Personally I like to separate concerns but include responsive design within this
 
 I don't think an all or nothing approach really makes sense as a rule of thumb. Let the situation dictate the solution. Here are some thoughts on option 1 versus option 2:
 
-- Keep them separate and you can serve lighter, device specific stylesheet, JavaScript and images. This translates to less complexity and better performance.
+- Keep them separate and you can serve lighter, device specific stylesheets, JavaScript and images. This translates to less complexity and better performance.
 - As applications grow and user needs change, it might become necessary to separate mobile out completely. If you start out separate this transition might be easier.
-- Keep styles together, and you won't forget to work on one while working on the other.
-- Designing for a mobile device, a tablet device, and a desktop could be time-consuming, responsive design can accommodate all three.
-- With responsive design, change the code once and it trickles down to all devices.
+- Many argue that if you keep styles together, you won't forget to work on one while working on the other.
+- Designing for a mobile and desktop version of your website can be time-consuming, responsive design can accommodate all three.
+- You may miss mobile devices or miscategorize devices using user agent strings and device databases.
 
-Right now responsive web design is hugely popular. The article [Reasons for Responsive Design][Responsive Reasons] give you some good reasons why you should consider using it. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" gives an opposite perspective and does a good job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote in particular that the author uses that resonates with me:
+The article [Reasons for Responsive Design][Responsive Reasons] give you some good reasons why you should consider using it.
+
+The article "[CSS MediaQuery for Mobile is Fool’s Gold][Media Queries]" gives an opposite perspective and does a good job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote in particular that the author uses that resonates with me:
 
 > Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
 
@@ -61,30 +61,30 @@ On the other hand, Jiří Stránský -- the author of the Mobvious gem we implem
 >
 > 2. Bandwidth is less of an issue, year by year. It will be best to send the whole thing to the client, then detect client's precise capabilities and render what you want, how you want.
 
-This prediction certainly makes an awful lot of sense.
-
 Whatever approach you decide, keep in mind that there are a spectrum of user and business needs, and responsive may in fact be the silver bullet for some sites on that spectrum. For example my personal website is pretty simple so maybe detecting user agents to serve something specific to mobile browsers is not the best use of my time. In this case why not use Responsive Web Design and keep things together? On the other hand more complex applications may need to serve up specific markup and styles, take for example Basecamp mobile:
 
 > Only using responsive design for Basecamp mobile would have been like fitting a Prius body to a Hummer... under-the-hood it would have been all wrong.
 
 \- [Behind the speed: Basecamp mobile][Basecamp Mobile]
 
-In this chapter we will explore the three plans of attack.
+In this chapter we will explore all three plans of attack.
 
 I. User Agent Sniffing
 ----------------------
 
-When I worked at Fidelity Investments, pre-smart phone era, mobile was a complete separate concern from desktops. Smallscreen devices operated behind what was referred to as a carriers "walled garden" which oftentimes did not allow CSS, or JavaScript, or HTML tables, or all three. Then, like now, there were so many different types of devices, carrier rules, screen sizes, and mobile browsers (or none at all), and Fidelity wanted to cover 99.999% [possibly exaggerated by me] of all small screen devices out there. Why? Imagine a billionaire customer from Bahrain trying to look at his or her Fidelity portfolio on some obscure cell phone and nothing showing up! [Rationale also made up by me, but not the underlying object. Consistent coverage.]
+When I worked at Fidelity Investments, pre-smart phone era, mobile was a complete separate concern from desktops. Smallscreen devices operated behind what was referred to as a carriers "walled garden" – which oftentimes did not allow CSS, or JavaScript, or HTML tables, or any combinmation of the three. Then, like now, there were so many different types of devices, carrier rules, screen sizes, and mobile browsers (or none at all), and Fidelity wanted to cover 99.999% [possibly exaggerated by me] of all small screen devices out there. Why? Imagine a billionaire customer from Bahrain trying to look at his or her Fidelity portfolio on some obscure cell phone and nothing showing up! [Rationale also made up by me, but not the underlying objective: consistent coverage.]
 
-To accomplish ubiquity we developed a super dumbed down HTML 1.0 interface that would work on 90% of all small screen devices, remember pre-smart phone, and for the remaining devices served up alternative markup that would display content correctly and consistent with the company's brand and look and feel. We were able to successfully do this by analyzing the devices HTTP_ACCEPT header and HTTP_USER_AGENT header, i.e. user agent sniffing. Over time with all the customers that Fidelity had, the company developed an extensive database of devices that their customers used which included the device's screen size, operating system, carrier, and other pertinent information. Armed with this information Fidelity could serve tailored markup depending on the request and information it contained.
+To accomplish ubiquity we developed a super dumbed down HTML 1.0 interface that would work on 90% of all small screen devices, remember pre-smart phone, and for the remaining devices served up alternative markup. We were able to successfully do this by analyzing the devices HTTP_ACCEPT header and HTTP_USER_AGENT header, i.e. user agent sniffing. Over time with all the customers that Fidelity had, the company developed an extensive database of devices that their customers used which included the device's screen size, operating system, carrier, and other pertinent information. Armed with this information Fidelity could serve tailored markup depending on the request and information it contained.
 
-Fast-forward to today, with the advent of smart devices and their proliferation, we also need to make sure our applications work correctly and consistently across a multitude of different devices and screen sizes. Like my days at Fidelity, we can effectively use devices user agents to identify browsers, screen resolutions, type of device, and based on this information determine what markup and styles to serve.
+Fast-forward to today, and we can still effectively use devices user agents to identify browsers, screen resolutions, type of device, and based on this information determine what markup and styles to serve.
 
-### Quickest Solution
+### Mobylette
 
-There are a number of different solutions you can use to deliver mobile based on User Agent Sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. To deliver our mobile views we will use the quickest and simplest solution: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
+There are a number of different solutions you can use to deliver mobile via user agent sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. To deliver our mobile views lets experiment with one of the quickest and simplest solutions: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface.
 
-*Step 1:* Copy all the [base-mobile][] files from the simple solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
+Here are the steps you will follow to implement this solution:
+
+*Step 1:* Copy all the [base-mobile][] files from the mobylette folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
 *Step 2:* Add the following to your application.rb file:
 
@@ -114,9 +114,9 @@ And that's it! I like to use [User Agent Switcher][] to test on my browser. Give
 
 There certainly does seem to be a lot of repetition in our code, two files for almost everything. So you know, if a .mobile.haml file is not available, Mobylette will default to a regular .html.haml file. I personally like splitting concerns, but I also understand that this may not be the best approach for many projects. One of the key arguments for Responsive Web Design is the elimination of duplication. We will investigate this option thoroughly, but before then let's try a more advanced agent sniffing solution.
 
-### Advanced Solution
+### Mobvious
 
-For our advanced solution we we use a gem called [Mobvious][]. It is a rack-based solution and easy to set up, and is highly configurable and versatile in on how you detect mobile requests:
+For an alternative to Mobylette we we use a gem called [Mobvious][]. It is a rack-based solution and easy to set up, and highly configurable and versatile in on how you detect mobile requests:
 
 1.  User-Agent sniffing
 2.  URL pattern matching
@@ -126,7 +126,7 @@ For our advanced solution we we use a gem called [Mobvious][]. It is a rack-base
 
 Here are the steps we will use to configure Mobvious for our needs:
 
-*Step 1:* Copy all the [base-mobile][] files from the advanced solution folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
+*Step 1:* Copy all the [base-mobile][] files from the mobvious folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
 *Step 2:* Add the following to your application.rb file:
 
@@ -210,9 +210,7 @@ Our solution is working well, but I'm feeling like there are too many files in e
       end
     end
 
-Now in addition to our mime type, we have designated a specific view path as the location to house our mobile views. Go ahead and create the new app/views/mobile folder and move all mobile views there. I've already set up this folder structure [here][mobile views].
-
-NOTE: One folder ends in [mobile] and the other in [html]. The difference between the two are in the files mime types: .mobile.haml vs. .html.haml.
+Now in addition to our mime type, we have designated a specific view path as the location to organize our mobile views. Go ahead and create the new app/views/mobile folder and move all mobile views there.
 
 With this new folder structure there really is no need for different mime types. With a common mime type you can use the same partials for both desktop and mobile devices, and through Rails template inheritance your application will default to regular views when mobile views in the new folder are not available; which is especially useful when making an existing app mobile friendly a little bit at a time.
 
@@ -880,7 +878,6 @@ We've covered three approaches to mobile development in this chapter, and have i
 [Mobvious]:             https://github.com/jistr/mobvious
 [Ryan Bates]:           http://railscasts.com/episodes/199-mobile-devices
 [Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
-[mobile views]:         https://github.com/maxxiimo/base-mobile/tree/master/reorganization
 [RWD]:                  http://www.alistapart.com/articles/responsive-web-design/
 [RWD Book]:             http://www.abookapart.com/products/responsive-web-design
 [Responsive Design]:    http://alpha.responsivedesign.is/

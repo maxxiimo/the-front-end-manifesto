@@ -53,8 +53,8 @@ Table of Contents
   - Mobile First
   - Plan of Attack
   - I. User Agent Sniffing
-    - Quickest Solution
-    - Advanced Solution
+    - Mobylette
+    - Mobvious
   - II. Responsive Web Design
     - Flexible Grids
     - Using Susy
