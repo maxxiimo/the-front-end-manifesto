@@ -795,7 +795,7 @@ III. A Hybrid Approach
 
 > That’s not to say that mobile websites are inherently flawed, or that there aren’t valid business cases for creating them. But I do think fragmenting our content across different "device-optimized" experiences is a losing proposition, or at least an unsustainable one. As the past few years have shown us, we simply can’t compete with the pace of technology.
 
-- Ethan Marcotte, [Responsive Web Design][RWD Book], p.96
+\- Ethan Marcotte, [Responsive Web Design][RWD Book], p.96
 
 ...But what about a hybrid approach? What Ethan says here is true, things are happening so fast it could be difficult to keep up with the speed of change using User Agent Sniffing to deliver a mobile version of a website – some devices might not register as mobile and receive the desktop version of the website.
 
@@ -823,7 +823,7 @@ What you see is our project as it is organized up until now. To understand how t
 
 ![][file-structure-w-lines]
 
-(1) There are two main stylesheets:
+**(1)** There are two main stylesheets:
 
 - **mobile.scss** which organizes and pulls together all the partials under the mobile folder
 - **application.scss** which organizes and pulls together all the partials under the desktop folder
@@ -832,11 +832,11 @@ What you see is our project as it is organized up until now. To understand how t
 
 **application.scss** is served in all other cases.
 
-(2) Partials common to both **mobile.scss** and **application.scss**.
+**(2)** Partials common to both **mobile.scss** and **application.scss**.
 
-(3) All mobile related views are organized under the "mobile" folder.
+**(3)** All mobile related views are organized under the "mobile" folder.
 
-(4) When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the mobile folder. When those views are not available in the mobile folder, through template inheritance, Rails will look for the view with the same name in its regular default location.
+**(4)** When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the mobile folder. When those views are not available in the mobile folder, through template inheritance, Rails will look for the view with the same name in its regular default location.
 
 EXAMPLE: In our file structure under the views/mobile/shared folder, _footer.html.haml is the only file with a display difference between the mobile and desktop versions of our site, therefore it is the only file we need to add the mobile shared folder. We can use the same logo, navigation, and social links files found in the views/shared folder between both versions of our site.
 
