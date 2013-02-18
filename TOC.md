@@ -66,6 +66,7 @@ Table of Contents
     - Flexible Media
     - Conditional Loading
   - III. A Hybrid Approach
+    - File Structure
     - Susy-based Mobile RWD
   - An Ajax Include Pattern
   - Using JavaScript

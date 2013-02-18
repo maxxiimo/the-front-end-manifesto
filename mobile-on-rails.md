@@ -797,25 +797,25 @@ III. A Hybrid Approach
 
 - Ethan Marcotte, [Responsive Web Design][RWD Book], p.96
 
-...But what about a hybrid approach? What Ethan says here is true, things are happening so fast it would be literally impossible to keep up with the speed of change using User Agent Sniffing to deliver a mobile version of a website – some devices might not register as mobile and receive the desktop version of the website.
+...But what about a hybrid approach? What Ethan says here is true, things are happening so fast it could be difficult to keep up with the speed of change using User Agent Sniffing to deliver a mobile version of a website – some devices might not register as mobile and receive the desktop version of the website.
 
-On the other hand, a purely responsive web design may deliver too much bloat for smaller devices with lower connection speeds, higher latency, smaller CPUs. On top of that, smaller devices may require a lot more tweaks between device capabilities (from dumb phones to smart phones) and require developers to contend with a greater amount of screen size increments, that it might be better to keep all of this code organized separately. Not just in a separate stylesheet and hidden and conditionally loaded elements, but as a separate system entirely.
+On the other hand, a purely responsive web design may deliver too much bloat for smaller devices with lower connection speeds, higher latency, and smaller CPUs. On top of that, smaller devices may require a lot more tweaks between device capabilities (from dumb phones to smart phones), and require developers to contend with a greater amount of screen size increments found with smaller devices. All of these factors might be good reason to keep code organized separately, not just in a separate stylesheet or hidden and conditionally loaded elements, but as a separate system entirely.
 
-If we took this hybrid approach, for devices that clearly register as mobile devices, we could provide responsive web design geared specifically to that range of device types, and we can use the information available in user agent strings for even greater levels adaptation and tweaking.
+If we took this hybrid approach, we might do so by providing responsive web design specifically for small screen devices that register as mobile via our user agent detection scheme. These devices would not receive any of the bloat that may be associated to desktop and tablet versions of our website. We could also use the information available in user agent strings for even greater levels adaptation and tweaking.
 
-For nonmobile we can use a different responsive web design that provides a more general small screen responsive design backup for those devices the slip through the cracks.
+For non-mobile we can use a different responsive web design that provides a small screen responsive design backup for those devices the slip through the cracks.
 
 Will this be too much work? That remains to be discovered, but if we should choose to use this type of approach here is how we would do it:
 
-1. Leave the User Agent Sniffing Advanced Solution in place.
+1. Leave the User Agent Sniffing solution in place.
 
 2. Leave the Susy-based Responsive Web Design in place as is.
 
 3. Create a second Susy-based Responsive Web Design specifically for small devices.
 
-### Susy-based Mobile RWD
+### File Structure
 
-We literally are going to take all of the techniques we learned in the previous section, and repeat them for mobile. First it is important to understand (and revisit) the lay of the land, i.e. our file organization.
+To create a second Susy-based responsive web design specifically for small devices we are literally going to take all of the techniques we learned in the previous section, and repeat them for mobile. First let's understand where everything will belonged by revisiting the lay of the land, i.e. our file organization:
 
 ![][file-structure]
 
@@ -838,9 +838,51 @@ What you see is our project as it is organized up until now. To understand how t
 
 (4) When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the mobile folder. When those views are not available in the mobile folder, through template inheritance, Rails will look for the view with the same name in its regular default location.
 
-In our file structure _footer.html.haml is the only file with a display difference between mobile and desktop versions of our site, therefore we can use the same logo, navigation, and social links files between both versions of our site.
+EXAMPLE: In our file structure under the views/mobile/shared folder, _footer.html.haml is the only file with a display difference between the mobile and desktop versions of our site, therefore it is the only file we need to add the mobile shared folder. We can use the same logo, navigation, and social links files found in the views/shared folder between both versions of our site.
 
+So what does this mean? It means that our second set of Susy-based mobile responsive web design has a clear home to live in, and will be served only when our user agent detection scheme has determined that a device is mobile.
 
+### Susy-based Mobile RWD
+
+In our previous implementation of Susy breakpoints we defined the following:
+
+    application.scss
+
+    // Susy Grid
+
+    $total-columns:     4;
+    $column-width:      4em;
+    $gutter-width:      1em;
+    $grid-padding:      $gutter-width;
+
+    $break6:            6;
+    $break9:            9;
+    $break12:           12;
+
+To start our mobile implementation we will focus on only the first two break points as follows:
+
+    mobile.scss
+
+    // Susy Grid
+
+    $total-columns:     4;
+    $column-width:      4em;
+    $gutter-width:      1em;
+    $grid-padding:      $gutter-width;
+
+    $break6:            6;
+
+How will this work?
+
+It all starts with the question, "is the requests coming from a mobile device?"
+
+If true mobile.scss will be served. mobile.scss is coded to optimally handle devices with column widths of < 6 columns (464px).
+
+If false application.scss will be served. application.scss is designed to take advantage of the greater capabilities of devices with > 9 columns (704px) screen widths.
+
+If a false false squeaks by, application.scss is coded to handle the < 6 columns cases as well – although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized.
+
+And there lies the crux of using a hybrid approach, optimizing for smaller screen sizes.
 
 An Ajax Include Pattern
 -----------------------
