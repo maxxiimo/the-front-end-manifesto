@@ -319,8 +319,33 @@ Color
 
 \- Mike Kus, "[Nine Things I've Learned][9 Things]"
 
+The articles:
+
+- [Build a Color Scheme: The Fundamentals][Color Fundamentals]
+- [Basic color schemes - Introduction to Color Theory][Color Theory]
+- [Color Matters - Basic Color Theory][Color Matters]
+
+...do an excellent job of **defining** the fundamentals of color theory and the basic steps and components in building a color scheme:
+
+1.  Selecting a base color while taking into account the effect colors have on our perceptions and feelings.
+2.  Choosing color harmonies from the color wheel, i.e. what colors will work well together.
+3.  Selecting the right tones, shades and tints for each color in the color scheme.
+
+Read the article and you'll understand what these steps entail, but it still begs the question, practically speaking, how do I begin?
+
+### Base Color
 
 
+
+[The Meanings of Colors][]
+
+
+
+
+### Color Wheel
+
+
+### Finishing Touches
 
 
 Branding
@@ -435,6 +460,10 @@ We started this chapter by covering typography. We discussed the basic building 
 [Meaningful Typography]: http://alistapart.com/article/more-meaningful-typography
 [somewhere]:            http://www.kaikkonendesign.fi/typography/section/11
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
+[Color Fundamentals]:   http://tympanus.net/codrops/2012/09/17/build-a-color-scheme-the-fundamentals/
+[Color Theory]:         http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm
+[Color Matters]:        http://colormatters.com/color-and-design/basic-color-theory
+[The Meanings of Colors]: http://colormatters.com/color-symbolism/the-meanings-of-colors
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
 [Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/

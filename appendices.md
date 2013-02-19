@@ -34,6 +34,9 @@ Appendices
 11. [A Brief History of Web Font Sizes][Appendix 11]
     :: Different articles from my archives over the last 12 years regarding web font sizes.
 
+12. [Color Palettes, Tools and Collections][Appendix 12]
+    :: A roundup of different color palette creation and sharing services, color tools and collections of colors.
+
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#appendix-1
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-2.md#appendix-2
 [Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#appendix-3
@@ -45,3 +48,4 @@ Appendices
 [Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#appendix-9
 [Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#appendix-10
 [Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-11.md#appendix-11
+[Appendix 12]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-12.md#appendix-12

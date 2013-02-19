@@ -96,6 +96,9 @@ Table of Contents
     - Modular Scales
     - Readability
   - Color
+    - Base Color
+    - Color Wheel
+    - Finishing Touches
   - Branding
   - Images
   - Icons
@@ -185,6 +188,7 @@ Table of Contents
   - Appendix 9: Font Services and Tools
   - Appendix 10: Choosing Typefaces
   - Appendix 11: A Brief History of Web Font Sizes
+  - Appendix 12: Color Palettes, Tools and Collections
 
 [Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
