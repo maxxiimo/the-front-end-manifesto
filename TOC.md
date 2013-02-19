@@ -96,8 +96,8 @@ Table of Contents
     - Modular Scales
     - Readability
   - Color
-    - Step 1: Base Color
-    - Step 2: Color Wheel
+    - Step 1: Base Color Selection
+    - Step 2: Color Wheel Experimentation
     - Step 3: Finishing Touches
     - Step 4: Where to Apply
   - Branding

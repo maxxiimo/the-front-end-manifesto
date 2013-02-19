@@ -356,7 +356,7 @@ So how do we begin to develop our own color palette? The articles:
 
 Read the article and you'll understand what these steps entail, but it still begs the question, practically speaking, how do I begin?
 
-### Step 1: Base Color
+### Step 1: Base Color Selection
 
 > With colors you can set a mood, attract attention, or make a statement. You can use color to energize, or to cool down. By selecting the right color scheme, you can create an ambiance of elegance, warmth or tranquility, or you can convey an image of playful youthfulness. Color can be your most powerful design element if you learn to use it effectively.
 
@@ -377,23 +377,61 @@ Wow, that quote certainly says something. Obviously a color scheme is powerful s
 11. Fun
 12. Steadfast
 
-Are there any colors that may help convey this? Reviewing the following references:
+Are there any colors that may help convey this? Reviewing the color descriptions in the following references:
 
-- [The Meanings of Colors][]
+- [The Meanings of Colors][] (MoC)
+- [Build a Color Scheme: The Fundamentals][Color Fundamentals] (BaCS)
+- [What do colors mean?][Color Meaning]
 
 ...I do come up with a few:
 
+- **White** - This makes a lot of sense to me since we start our adjectives list with the word "Clean"
 
-### Step 2: Color Wheel
+  > A white color scheme can represent cleanliness, purity, perfection and space...If you are looking for a clean design with plenty of negative space, play around with white more. - BaCS
+
+- **Red** - As an overall base color I'm not sold on it for my purposes, but I do have some callout buttons so will keep this color in mind if it fits in my color wheel choice.
+
+  > A red color scheme is bold, fiery, aggressive and screams for your attention...Red is a really powerful marketing color that can be used to grab the user’s attention and get them to click on an ad or register for a product. - BaCS
+
+  > Red is the color of extremes. It’s the color of passionate love, seduction, violence, danger, anger, and adventure...Red captures attention. It is one of the most visible colors, second only to yellow... - MoC
+
+- **Orange** - This might be the one. Aside from the fact that the parent company of View Thought uses it, it's feeling seems to touch on a lot of adjectives I have listed, plus it could be an alternative to read for our callouts.
+
+  > An orange color scheme speaks happiness...Orange is a very friendly color, a warm color that is inviting and can be another very effective color for call-to-actions. - BaCS
+
+  > Orange is vibrant. It’s hot, healthy, fruity and engaging – but it can be abrasive and crass. It’s a polarizing color. People either love it or detest it. - MoC
+
+- **Green** - I'm liking this one insofar as it touches on trust and stability.
+
+  > A green color scheme is peaceful and natural and is usually associated with growth, harmony, peace, strength and stability....it portrays a feeling of safety and trust... - BaCS
+
+  > Green is no longer just a color. It's now the symbol of ecology and a verb. - MoC
+
+- **Blue** - Well if this isn't the cats meow.
+
+  > Blue means stability and depth and is a great color for creating a calm clean environment. Blue symbolizes confidence, faith, hope, wisdom, knowledge and trust. - BaCS
+
+  > Blue is the favorite color of all people...Most blues convey a sense of trust, loyalty, cleanliness, and understanding. On the other hand, blue evolved as symbol of depression in American culture...Blue is the most commonly used color in corporate identity. - MoC
+
+### Step 2: Color Wheel Experimentation
 
 > The human brain will reject under-stimulating information. At the other extreme is a visual experience that is so overdone, so chaotic that the viewer can't stand to look at it. The human brain rejects what it can not organize, what it can not understand. The visual task requires that we present a logical structure. Color harmony delivers visual interest and a sense of order.
 
 \- [Color Matters - Basic Color Theory][Color Matters]
 
+If you read the three articles reference in the introduction of this section, especially  - [Basic color schemes - Introduction to Color Theory][Color Theory]
+
 Colors on the color wheel can be:
 
 - Analogous
 - Complementary
+- Monochromatic
+- Triadic
+- Split-Complementary
+- Rectangle (Tetradic)
+- Square
+
+
 
 
 
@@ -520,6 +558,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [somewhere]:            http://www.kaikkonendesign.fi/typography/section/11
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Color Fundamentals]:   http://tympanus.net/codrops/2012/09/17/build-a-color-scheme-the-fundamentals/
+[Color Meaning]:        http://lmgtfy.com/?q=What+do+colors+mean%3F
 [Color Theory]:         http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm
 [Color Matters]:        http://colormatters.com/color-and-design/basic-color-theory
 [Choosing Typefaces]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md#choosing-typefaces
