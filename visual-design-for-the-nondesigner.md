@@ -392,20 +392,19 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 - **Red** - As an overall base color I'm not sold on it for my purposes, but I do have some callout buttons so will keep this color in mind if it fits in my color wheel choice.
 
   > A red color scheme is bold, fiery, aggressive and screams for your attention...Red is a really powerful marketing color that can be used to grab the user’s attention and get them to click on an ad or register for a product. - BaCS
-<br>
+
   > Red is the color of extremes. It’s the color of passionate love, seduction, violence, danger, anger, and adventure...Red captures attention. It is one of the most visible colors, second only to yellow... - MoC
 
 - **Orange** - This might be the one. Aside from the fact that the parent company of View Thought uses it, it's feeling seems to touch on a lot of adjectives I have listed, plus it could be an alternative to read for our callouts.
 
   > An orange color scheme speaks happiness...Orange is a very friendly color, a warm color that is inviting and can be another very effective color for call-to-actions. - BaCS
 
-
   > Orange is vibrant. It’s hot, healthy, fruity and engaging – but it can be abrasive and crass. It’s a polarizing color. People either love it or detest it. - MoC
 
 - **Green** - I'm liking this one insofar as it touches on trust and stability.
 
   > A green color scheme is peaceful and natural and is usually associated with growth, harmony, peace, strength and stability....it portrays a feeling of safety and trust... - BaCS
-<p></p>
+
   > Green is no longer just a color. It's now the symbol of ecology and a verb. - MoC
 
 - **Blue** - Well if this isn't the cats meow.
