@@ -96,9 +96,10 @@ Table of Contents
     - Modular Scales
     - Readability
   - Color
-    - Base Color
-    - Color Wheel
-    - Finishing Touches
+    - Step 1: Base Color
+    - Step 2: Color Wheel
+    - Step 3: Finishing Touches
+    - Step 4: Where to Apply
   - Branding
   - Images
   - Icons

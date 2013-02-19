@@ -9,15 +9,15 @@ The following is designed to help you choose your typefaces. Here are some artic
 
 1.  *12/14/10* - [“What Font Should I Use?”: Five Principles for Choosing and Using Typefaces][Five Principles]
 
-2.  *8/25/11* - [A Brief Primer on Typeface Selection][Brief Primer]
+2.  *08/25/11* - [A Brief Primer on Typeface Selection][Brief Primer]
 
-3.  *12/1/11* - [6 Questions You Should Ask Yourself When Choosing Fonts][6 Questions]
+3.  *12/01/11* - [6 Questions You Should Ask Yourself When Choosing Fonts][6 Questions]
 
-4.  *9/26/12* - [Make a Statement with Type][Type Statement]
+4.  *09/26/12* - [Make a Statement with Type][Type Statement]
 
 Mobile
 
-5.  *10/2/11* - [5 Tips for Excellent Mobile Typography][5 Tips]
+5.  *10/02/11* - [5 Tips for Excellent Mobile Typography][5 Tips]
 
 6.  *11/12/12* - [Mobile Design Typography is Vitally Important ... and Challenging][Mobile typography]
 

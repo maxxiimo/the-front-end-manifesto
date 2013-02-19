@@ -153,7 +153,30 @@ I also think the following idea is worth noting by itself: In a presentation by 
 
 ...and states that now, this is how he always begins a project. He then goes on to describe that he starts with body text, which gives tone for a piece, then moves on to markers like headers, that give it personality and character. Food for thought.
 
-Speaking of Jason Santa Maria, in another presentation called [On Web Typography][] he gives advice on picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) are excellent. You can find them transcribed in [Appendix 10][Appendix 10-2].
+The article, "[A Brief Primer on Typeface Selection][Brief Primer]" echoes the same idea:
+
+> Read your content to determine the mood it conveys. Describe this mood using a list of adjectives. Find typefaces that you feel are accurately described by these adjectives. Essentially, you want to ensure that your typeface conveys the appropriate feeling.
+
+What adjectives describe View Thought? To start, let's revisit our storyline:
+
+> We are a great website design, development and user experience shop. We have tons of experience, have worked with a bunch of different clients who are all happy with our work, and we really care about what we do. We specialize in Ruby on Rails, and we pay special attention to what your users will see. You should hire us! ...or give us a call and learn more.
+
+That is our message, and here are some adjectives that help communicate the mood and qualities of the message we're trying to convey:
+
+1.  Clean
+2.  Reliable
+3.  Artistic
+4.  Appealing
+5.  Youthful
+6.  Competent
+7.  Knowledgeable
+8.  Trustworthy
+9.  Cutting Edge
+10. Innovative
+11. Fun
+12. Steadfast
+
+A final note on selecting typefaces, Jason Santa Maria in a presentation called [On Web Typography][] gives advice on picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) are excellent. You can find them transcribed in [Appendix 10][Appendix 10-2].
 
 ### Font Size
 
@@ -319,7 +342,7 @@ Color
 
 \- Mike Kus, "[Nine Things I've Learned][9 Things]"
 
-The articles:
+So how do we begin to develop our own color palette? The articles:
 
 - [Build a Color Scheme: The Fundamentals][Color Fundamentals]
 - [Basic color schemes - Introduction to Color Theory][Color Theory]
@@ -333,19 +356,54 @@ The articles:
 
 Read the article and you'll understand what these steps entail, but it still begs the question, practically speaking, how do I begin?
 
-### Base Color
+### Step 1: Base Color
+
+> With colors you can set a mood, attract attention, or make a statement. You can use color to energize, or to cool down. By selecting the right color scheme, you can create an ambiance of elegance, warmth or tranquility, or you can convey an image of playful youthfulness. Color can be your most powerful design element if you learn to use it effectively.
+
+\- [Basic color schemes - Introduction to Color Theory][Color Theory]
+
+Wow, that quote certainly says something. Obviously a color scheme is powerful so to start let's choose a base color, and to do so I'm going to borrow from the techniques we used in the "[Choosing Typefaces][]" section of this chapter. Here is the list of adjectives I came up with:
+
+1.  Clean
+2.  Reliable
+3.  Artistic
+4.  Appealing
+5.  Youthful
+6.  Competent
+7.  Knowledgeable
+8.  Trustworthy
+9.  Cutting Edge
+10. Innovative
+11. Fun
+12. Steadfast
+
+Are there any colors that may help convey this? Reviewing the following references:
+
+- [The Meanings of Colors][]
+
+...I do come up with a few:
+
+
+### Step 2: Color Wheel
+
+> The human brain will reject under-stimulating information. At the other extreme is a visual experience that is so overdone, so chaotic that the viewer can't stand to look at it. The human brain rejects what it can not organize, what it can not understand. The visual task requires that we present a logical structure. Color harmony delivers visual interest and a sense of order.
+
+\- [Color Matters - Basic Color Theory][Color Matters]
+
+Colors on the color wheel can be:
+
+- Analogous
+- Complementary
 
 
 
-[The Meanings of Colors][]
+- Based on nature
+
+### Step 3: Finishing Touches
 
 
+### Step 4: Where to Apply
 
-
-### Color Wheel
-
-
-### Finishing Touches
 
 
 Branding
@@ -444,6 +502,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Beginners Guide]:      http://designshack.net/articles/css/a-beginners-guide-to-using-google-web-fonts/
 [Appendix 10-1]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#choosing-typeface-articles
 [Perfect Typography]:   http://vimeo.com/17079380
+[Brief Primer]:         http://blog.8thlight.com/billy-whited/2011/08/25/a-brief-primer-on-typeface-selection.html
 [On Web Typography]:    http://vimeo.com/34178417
 [Appendix 10-2]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#jason-santa-maria-on-web-typography
 [Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-11.md#a-brief-history-of-web-font-sizes
@@ -463,6 +522,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Color Fundamentals]:   http://tympanus.net/codrops/2012/09/17/build-a-color-scheme-the-fundamentals/
 [Color Theory]:         http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm
 [Color Matters]:        http://colormatters.com/color-and-design/basic-color-theory
+[Choosing Typefaces]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md#choosing-typefaces
 [The Meanings of Colors]: http://colormatters.com/color-symbolism/the-meanings-of-colors
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
