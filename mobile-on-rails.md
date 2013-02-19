@@ -1,9 +1,9 @@
 Mobile on Rails
 ===============
 
-In Chapter 1 we learned about [foundation markup][Chapter 1], and in Chapter 2, [foundation styles][Chapter 2], but what about mobile? What about smartphones and tablets? What about mobile browsers!! In the old days all you really had to worry about "cross anything" were browser issues. Desktop screen sizes were debated, but it could be overlooked since the differences were not so great or prevalent, and the "fix" came relatively quickly: the industry settled on standard design widths and/or employed liquid layouts.
+In Chapter 1 we learned about [foundation markup][Chapter 1], and in Chapter 2, [foundation styles][Chapter 2], but we never addressed mobile. What about smartphones and tablets? What about mobile browsers!! In the old days it never was an issue for most developers. All you really had to worry about "cross anything" were browser issues. Desktop screen sizes were debated then, but it could be overlooked since the differences were not so great or prevalent, and the "fix" came relatively quickly: the industry settled on standard design widths and/or employed liquid layouts.
 
-Fast-forward to today and as a front end engineer you cannot overlook screen size, and the fix is a tad bit more difficult than it was back then to say the least!
+Fast-forward to today and as a front end engineer you cannot help but think about screen size, and the fix is a tad bit more difficult than it was back then to say the least!
 
 > Mobile browsing is rapidly consuming the Internet. The smartphone and tablet lifestyle is replacing laptops and desktop computers as the primary way we go online.
 
