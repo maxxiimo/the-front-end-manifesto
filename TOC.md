@@ -4,7 +4,7 @@ Table of Contents
 - [Cover][]
 - [The Manifesto][]
 
-### Section I
+### Section I - Setting up a Foundation
 
 #### Chapter 1
 - [Foundation Markup][Chapter 1]
@@ -72,7 +72,7 @@ Table of Contents
   - Using JavaScript
   - What We've Done
 
-### Section II
+### Section II - Build Something
 
 #### Chapter 4
 - [Information Architecting][Chapter 4]
