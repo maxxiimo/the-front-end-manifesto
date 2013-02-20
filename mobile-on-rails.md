@@ -48,7 +48,7 @@ Personally I like to separate concerns and tend to use option three, but include
 
 > Now, oftentimes, people think about device detection as a "one or the other" sort of thing. Either you’re doing responsive design or you’re using device detection to route people to separate templates, and that you would choose one of those two options; you wouldn’t build something that uses both. But we’ve actually combined responsive design with server-side detection quite a bit.
 
-\- [Jason Grigsby – Mobile-First Responsive Design][Jason Grigsby]
+\- [Jason Grigsby – Mobile-First Responsive Design][Jason Grigsby] Podcast by Sean Carmichael
 
 Like Jason Grigsby, I don't think an all or nothing approach really makes sense as a rule of thumb. Let the situation dictate the solution. Here are some thoughts on option 1 versus option 2:
 
@@ -62,7 +62,7 @@ The article [Reasons for Responsive Design][Responsive Reasons] give you some go
 
 > Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
 
-\- [Brian Fling][]
+\- [Mobile Design and Development ][Brian Fling] by Brian Fling
 
 On the other hand, Jiří Stránský -- the author of the Mobvious gem we implement later in this chapter -- commented to me:
 
