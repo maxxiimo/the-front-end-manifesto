@@ -83,21 +83,21 @@ In this chapter we will explore all three plans of attack.
 I. User Agent Sniffing
 ----------------------
 
-At Fidelity, pre-smart phone era, mobile was a complete separate concern from desktop. Mobile operated behind a carriers "walled garden" – which oftentimes did not allow CSS, or JavaScript, or HTML tables, or any combination of the three. Then, like now, there were so many different types of devices, screen sizes, and mobile browsers (or none at all), and Fidelity wanted to cover 99.999% [possibly exaggerated by me] of all small screen devices out there.
+At Fidelity, pre-smart phone era, mobile was a complete separate concern from desktop. Mobile operated behind a carriers "walled garden" – which oftentimes did not allow CSS, or JavaScript, or HTML tables, or any combination of the three. Then, like now, there were so many different types of devices, screen sizes, and mobile browsers (or none at all), and we wanted to cover 99.999% [possibly exaggerated by me] of all small screen devices out there.
 
 Why? Imagine a billionaire customer from Bahrain trying to look at his or her Fidelity portfolio on some obscure cell phone and nothing showing up! [Rationale also made up by me, but not the underlying objective: consistent coverage.]
 
-To accomplish ubiquity we developed a super dumbed down HTML 1.0 interface that would work on 90% of all small screen devices, and for the remaining devices served alternative markup designed for those cases. We were able to successfully do this by analyzing the devices HTTP_ACCEPT header and HTTP_USER_AGENT header, i.e. user agent sniffing.
+To accomplish ubiquity we developed a super dumbed down HTML 1.0 interface that would work on 90% of all small screen devices, and for the remaining devices served alternative markup designed for those edge cases. We were able to successfully do this by analyzing the devices HTTP_ACCEPT header and HTTP_USER_AGENT header, i.e. user agent sniffing.
 
 Over time with all the customers that Fidelity had, the company developed an extensive database of devices that their customers used which included the device's screen size, operating system, and other pertinent information. Armed with this information Fidelity could serve tailored markup depending on the request and the information it contained.
 
-Fast-forward to today, and we can still effectively use device user agents and third-party databases to identify browsers, screen resolutions, type of device, and based on this information determine what markup and styles to serve.
+Fast-forward to today, and you can still effectively use device user agents and third-party databases to identify browsers, screen resolutions, type of device, and based on this information determine what markup and styles to serve.
 
 ### Mobylette
 
-There are a number of different solutions you can use to deliver mobile via user agent sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there. To deliver our mobile views lets experiment with one of the quickest and simplest solutions: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface.
+There are a number of different solutions you can use to deliver mobile versions of your application using user agent sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there.
 
-Here are the steps you will follow to implement this solution:
+To deliver our mobile views lets experiment with one of the quickest and simplest solutions: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
 
 *Step 1:* Copy all the [base-mobile][] files from the mobylette folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
