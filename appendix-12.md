@@ -63,16 +63,18 @@ Color palette creation and sharing tools.
 
 14. [Mother-effing hsl][14]
 
+15. [Color Schemer][15]
+
 
 #### Collections
 
-15. [BrandColors][15]
+16. [BrandColors][16]
 
     > A collection of major brand color codes curated by Galen Gidman.
 
-16. [Fifty Shades of Grey: A Review][16]
+17. [Fifty Shades of Grey: A Review][17]
 
-17. [216 Web Safe Colors][17]
+18. [216 Web Safe Colors][18]
 
 [1]:                    http://colrd.com/
 [2]:                    http://colorexplorer.com/
@@ -89,7 +91,8 @@ Color palette creation and sharing tools.
 [12]:                   http://colorto.me/
 [13]:                   http://www.paciellogroup.com/resources/contrast-analyser.html
 [14]:                   http://mothereffinghsl.com/
+[15]:                   http://www.colorschemer.com/online.html
 
-[15]:                   http://brandcolors.net/
-[16]:                   http://visualidiot.com/articles/fifty-shades
-[17]:                   http://websafecolors.info/
+[16]:                   http://brandcolors.net/
+[17]:                   http://visualidiot.com/articles/fifty-shades
+[18]:                   http://websafecolors.info/

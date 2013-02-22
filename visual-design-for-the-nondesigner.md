@@ -382,6 +382,7 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 - [The Meanings of Colors][] (MoC)
 - [Build a Color Scheme: The Fundamentals][Color Fundamentals] (BaCS)
 - [What do colors mean?][Color Meaning]
+- [Color in Motion][]
 
 ...I do come up with a few:
 
@@ -559,6 +560,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Color Fundamentals]:   http://tympanus.net/codrops/2012/09/17/build-a-color-scheme-the-fundamentals/
 [Color Meaning]:        http://lmgtfy.com/?q=What+do+colors+mean%3F
+[Color in Motion]:      http://www.mariaclaudiacortes.com/colors/Colors.html
 [Color Theory]:         http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm
 [Color Matters]:        http://colormatters.com/color-and-design/basic-color-theory
 [Choosing Typefaces]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md#choosing-typefaces
