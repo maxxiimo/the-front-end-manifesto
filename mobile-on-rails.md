@@ -83,17 +83,24 @@ In this chapter we will explore all three plans of attack.
 I. User Agent Sniffing
 ----------------------
 
-At Fidelity, pre-smart phone era, mobile was a complete separate concern from desktop. Mobile operated behind a carriers "walled garden" – which oftentimes did not allow CSS, or JavaScript, or HTML tables, or any combination of the three. Then, like now, there were so many different types of devices, screen sizes, and mobile browsers (or none at all), and we wanted to cover 99.999% [possibly exaggerated by me] of all small screen devices out there.
+When web-enabled mobile phones first appeared, front end engineers we were faced with many challenges:
 
-Why? Imagine a billionaire customer from Bahrain trying to look at his or her Fidelity portfolio on some obscure cell phone and nothing showing up! [Rationale also made up by me, but not the underlying objective: consistent coverage.] To accomplish ubiquity we developed a super dumbed down HTML 1.0 interface that would work on 90% of all small screen devices, and for the remaining devices served alternative markup designed for those edge cases. We were able to successfully do this by analyzing the devices HTTP_ACCEPT header and HTTP_USER_AGENT header, i.e. user agent sniffing.
+- Mobile browsers were relatively unsophisticated, extremely fragmented and operating system/device bound, and rendered and/or supported languages inconsistently.
+- Parsing issues due to different protocol (WAP versus HTTP) markup languages: Wireless Markup Language (WML), XHTML Mobile Profile / XHTML Basic, HTML
+- Bandwidth, latency, and CPU issues were significantly worse than what we work with today.
+- Screen sizes were extremely varied, and smaller than today.
+- Carrier "walled gardens" oftentimes did not allow CSS, or JavaScript, or HTML tables, or any combination of the three, or enforced throughput cutoff points.
+- Proxy servers also might strip your site of images, flash (hugely popular back then), multimedia.
+- Only a basic set of media types were available and they were implemented inconsistently across browsers.
+- A highly fragmented device market made compatibility testing extremely difficult.
 
-Over time with all the customers that Fidelity had, the company developed an extensive database of devices that their customers used which included the device's screen size, operating system, and other pertinent information. Armed with this information Fidelity could serve tailored markup depending on the request and the information it contained.
+At Fidelity in those days we wanted to cover 99.999% [possibly exaggerated by me] of all web-enabled mobile phones out there. To accomplish this we developed a super dumbed down HTML 1.0 interface that would work on 90% of all devices, and for the edge cases served alternative markup designed for them. We were able to successfully cater to edge cases by analyzing the devices HTTP_ACCEPT header and HTTP_USER_AGENT header, i.e. user agent sniffing. Over time with all the customers that Fidelity had, the company developed an extensive database of devices that their customers used which included the device's screen size, operating system, and other pertinent information. Armed with this information Fidelity could then serve tailored markup for edge cases depending on the request and the information it contained.
 
 Fast-forward to today, and you can still effectively use device user agents and third-party databases to identify browsers, screen resolutions, type of device, and based on this information determine what markup and styles to serve.
 
-### Mobylette
-
 There are a number of different solutions you can use to deliver mobile versions of your application using user agent sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there.
+
+### Mobylette
 
 To deliver our mobile views lets experiment with one of the quickest and simplest solutions: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
 
