@@ -94,7 +94,13 @@ When web-enabled mobile phones first appeared, front end engineers we were faced
 - Only a basic set of media types were available and they were implemented inconsistently across browsers.
 - A highly fragmented device market made compatibility testing extremely difficult.
 
-At Fidelity, under these challenges, we wanted to cover 99.999% of all web-enabled mobile phones our customers used. To accomplish this we developed a super dumbed down HTML 1.0 template that would render correctly on 90% of all devices, and for the edge cases serve an alternative template. We were able to do this by analyzing the devices HTTP_ACCEPT and HTTP_USER_AGENT headers, i.e. user agent sniffing. Over time with all the customers that Fidelity had, the company developed an extensive database of devices that their customers used which included the device's screen size, operating system, and other pertinent information. Armed with this information Fidelity could then serve tailored markup for edge cases depending on the request and the information it contained.
+At Fidelity, under these challenges, our goal was to cover 99.999% of all web-enabled mobile phones that our customers used. To accomplish this we developed a super dumbed down HTML 1.0 template that would render correctly on 90% of customer devices, and for the remaining edge cases serve an alternative template. We were able to do this by analyzing device HTTP_ACCEPT and HTTP_USER_AGENT headers, i.e. user agent sniffing.
+
+> The User-Agent request-header field contains information about the user agent originating the request. This is for statistical purposes, the tracing of protocol violations, and automated recognition of user agents for the sake of tailoring responses to avoid particular user agent limitations.
+
+\- [Hypertext Transfer Protocol -- HTTP/1.1, Section 14.43 User-Agent][User-Agent]
+
+Over time Fidelity developed an extensive database of devices their global customer base used which included information about the devices screen size, operating system, browser, and other pertinent information. Armed with this Fidelity could then serve markup depending on the request and the information it contained.
 
 Fast-forward to today, and you can still effectively use device user agents and third-party databases to identify browsers, screen resolutions, type of device, and based on this information determine what markup and styles to serve.
 
@@ -950,6 +956,7 @@ We have a solid base to build on, and are ready to move onto Section II of this 
 [Fools Gold]:           http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
 [Brian Fling]:          http://shop.oreilly.com/product/9780596155452.do
 [Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile
+[User-Agent]:           http://tools.ietf.org/html/rfc2616#section-14.43
 [Mobile Roundup]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-4.md#mobile-solutions-roundup
 [mobylette]:            https://github.com/tscolari/mobylette
 [jQuery Mobile]:        http://jquerymobile.com/
