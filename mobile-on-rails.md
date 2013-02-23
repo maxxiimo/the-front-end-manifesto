@@ -227,11 +227,11 @@ To do this in our application in conjunction with Mobvious we add the following 
 
     Mime::Type.register_alias "text/html", :mobile
 
-Just like in the Mobylette solution, requests from mobile devices will be detected and served the correct markup and styles for the device, based on the new mime type.
+Just like in the Mobylette solution, requests from mobile devices will be detected by Mobvious and served the correct markup and styles. Of course we will need to create all the new .html.mobile views, and again like in the Mobylette solution, I'm feeling like there are too many files in our app/views folder – some ending with ".html.haml" others with ".mobile.haml".
 
 #### Reorganize
 
-Our solution is working well, but I'm feeling like there are too many files in each app/views folder – some ending with ".html.haml" others with ".mobile.haml". To better organize we can create a special folder just for our mobile views by adding the following to the prepare_for_mobile method in application_controller.rb:
+To better organize and reduce clutter and even repetition we can create a special folder just for our mobile views by adding the following to the prepare_for_mobile method in application_controller.rb:
 
     def prepare_for_mobile
       if request.env['mobvious.device_type'] == :mobile
