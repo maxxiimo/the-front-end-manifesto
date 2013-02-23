@@ -102,9 +102,7 @@ At Fidelity, under these challenges, our goal was to cover 99.999% of all web-en
 
 Over time Fidelity developed an extensive database of devices their global customer base used which included information about the devices screen size, operating system, browser, and other pertinent information. Armed with this Fidelity could then serve markup depending on the request and the information it contained.
 
-Fast-forward to today, and you can still effectively use device user agents and third-party databases to identify browsers, screen resolutions, type of device, and based on this information determine what markup and styles to serve.
-
-There are a number of different solutions you can use to deliver mobile versions of your application using user agent sniffing. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's out there.
+Fast-forward to today, and you can still effectively use device user agents and third-party databases to identify device characteristics and based on this information serve appropriate markup and styles. Doing this and Rails is not too difficult. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's available.
 
 ### Mobylette
 
