@@ -244,7 +244,7 @@ Create a new app/views/mobile folder and move all mobile views there. We tell Ra
 
 Now in addition to our mime type, we have designated a specific view path as the location to organize our mobile views.
 
-With this new folder structure in place there really no longer is a need for different mime types. With a common mime type you can use the same partials for both desktop and mobile devices, and through Rails [template inheritance][] your application will default to regular views when mobile views in the new folder are not available – which is especially useful when making an existing app mobile friendly a little bit at a time.
+With this new folder structure in place there really no longer is a need for a mobile mime type, plus with a common mime type you can use the same partials for both desktop and mobile devices. Through Rails [template inheritance][] your application will default to regular views when mobile views in the new mobile folder are not available – which is especially useful when making an existing app mobile friendly a little bit at a time.
 
 Remove:
 
