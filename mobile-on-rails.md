@@ -142,15 +142,17 @@ NOTE: I like to use [User Agent Switcher][] to test on my desktop. Give it a try
 
 ### Mobvious
 
-For an alternative to Mobylette we we use a gem called [Mobvious][]. It is a rack-based solution and easy to set up, and highly configurable and versatile in on how you detect mobile requests:
+For an alternative to Mobylette we will try a gem called [Mobvious][]. It is a rack-based solution, easy to set up, and highly configurable. It is also versatile in on how you detect mobile requests:
 
 1.  User-Agent sniffing
 2.  URL pattern matching
 3.  Remembering a user's manual choice
 
+In other words it gives us more options, although we will only be experimenting with the first.
+
 #### Set Up
 
-Here are the steps we will use to configure Mobvious for our needs:
+Here are the steps we will follow to configure Mobvious for our needs:
 
 *Step 1:* Copy all the [base-mobile][] files from the mobvious folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
@@ -160,19 +162,19 @@ Here are the steps we will use to configure Mobvious for our needs:
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
     config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
-([Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work])
+\- [Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work]
 
 *Step 3:* Add the following gems to your Gemfile and then bundle install:
 
     gem 'mobvious'
     gem 'mobvious-rails'
 
-*Step 4:* Add the following into application.rb:
+*Step 4:* Add the following to application.rb:
 
     # Tell your app to use Mobvious::Manager as Rack middleware.
     config.middleware.use Mobvious::Manager
 
-*Step 5:* Add the following includes into application_controller.rb and application_helper.rb:
+*Step 5:* Add the following includes to application_controller.rb and application_helper.rb:
 
     include Mobvious::Rails::Controller
 
@@ -184,9 +186,9 @@ Here are the steps we will use to configure Mobvious for our needs:
       config.strategies = [ Mobvious::Strategies::MobileESP.new(:mobile_desktop) ]
     end
 
-Don't forget to restart your application, and wallah! You have a detection strategy that will detect user agents and return a variable of :mobile or :desktop depending on the device type of the request. Tablets as configured here will returns :desktop.
+Don't forget to restart your application, and wallah! You have a detection strategy that will detect user agents and return a variable of :mobile or :desktop depending on the device type of the request. Tablets as configured here will return :desktop as well, although you can change this.
 
-To test that it is working you can use:
+To test that Mobvious is working you can add the following helper method in application_helper.rb:
 
     def device_test
         # Drop in controller: @device = request.env['mobvious.device_type']
@@ -200,7 +202,9 @@ To test that it is working you can use:
 
 #### Usage
 
-Now that we have it set up, here is how we will use it. From our [Mobile Solutions Roundup][Mobile Roundup] we combine a bit of [Ryan Bates][] mobile solution with Mobvious. Part of Ryan Bates solution creates a new mime type (:mobile), and uses a before_filter to test if the request is a mobile request. If true, the mime type is set to :mobile. As such, only files named with a ".mobile.haml" extension will be served.
+Now that we have Mobvious set up, here is how we will use it.
+
+From our [Mobile Solutions Roundup][Mobile Roundup] we combine a bit of [Ryan Bates][] mobile solution with Mobvious. Part of Ryan Bates solution creates a new mime type (:mobile), and uses a before_filter to test if the request is a mobile request. If true, the mime type is set to :mobile. As such, only files named with a ".mobile.haml" extension will be served.
 
 To do this in our application we add the following to application_controller.rb:
 
