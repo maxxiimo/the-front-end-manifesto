@@ -102,7 +102,7 @@ At Fidelity, under these challenges, our goal was to cover 99.999% of all web-en
 
 Over time Fidelity developed an extensive database of devices their global customer base used which included information about the devices screen size, operating system, browser, and other pertinent information. Armed with this Fidelity could then serve markup depending on the request and the information it contained.
 
-Fast-forward to today, and you can still effectively use device user agents and third-party databases to identify device characteristics and based on this information serve appropriate markup and styles. Doing this and Rails is not too difficult. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's available.
+Fast-forward to today, and you can still effectively use device user agents and third-party databases to identify device characteristics and based on this information serve appropriate markup and styles. Doing this in Rails is not too difficult. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's available.
 
 ### Mobylette
 
@@ -116,27 +116,29 @@ To deliver our mobile views lets experiment with one of the quickest and simples
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
     config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
-([Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work])
+\- [Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work]
 
 *Step 3:* Add the following gem to your Gemfile and then bundle install:
 
     gem 'mobylette'
 
-*Step 4:* Add the following line to application_controller.rb:
+*Step 4:* Add the following to application_controller.rb:
 
     include Mobylette::RespondToMobileRequests
     mobylette_config do |config|
       config[:skip_xhr_requests] = false
     end
 
-*Step 5:* Add the following to your config/environments/production.rb:
+*Step 5:* Add the following to config/environments/production.rb:
 
     # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
     config.assets.precompile += %w( modernizr-2.6.2.min.js, jquery.mobile-1.2.0.css )
 
-And that's it! I like to use [User Agent Switcher][] to test on my browser. Give it a try.
+And that's it!
 
-There certainly does seem to be a lot of repetition in our code, two files for almost everything. So you know, if a .mobile.haml file is not available, Mobylette will default to a regular .html.haml file. I personally like splitting concerns, but I also understand that this may not be the best approach for many projects. One of the key arguments for Responsive Web Design is the elimination of duplication. We will investigate this option thoroughly, but before then let's try a more advanced agent sniffing solution.
+One thing that you may have noticed is that there certainly does seem to be a lot of repetition in our code, two files for almost everything. One of the key arguments for Responsive Web Design is the elimination of duplication. We will investigate this option thoroughly, but before then let's try one more user agent sniffing solution.
+
+NOTE: I like to use [User Agent Switcher][] to test on my desktop. Give it a try.
 
 ### Mobvious
 
@@ -925,7 +927,7 @@ Feature Detection
 What We've Done
 ---------------
 
-We began this chapter by briefly describing the state of mobile today and yesterday, how important it is, and in light of this, adopted the [Mobile First][] design and development strategy. We then laid out our plan of attack, the different means by which we might develop a mobile foundation to build from.
+We began this chapter by briefly describing the state of mobile today and yesterday, how important it is, and in light of this, adopted the [Mobile First][] design and development strategy. We then laid out our plan of attack, the different means by which we might develop a mobile foundation for our application.
 
 Our plan of attack divided this chapter into three major sections for each prospective method:
 
@@ -933,13 +935,13 @@ I. User Agent Sniffing<br>
 II. Responsive Web Design<br>
 III. A Hybrid Approach
 
-We covered each method in detail and incorporated our work into our foundation code base, but with so many different approaches begs the question, which one do I use? Well, that depends. It depends on the project and needs.
+We covered each method in detail and incorporated our work into our foundation code base, but with so many different approaches begs the question, which one do I use? Well, that depends. It depends on the project and it's needs.
 
 What is important is that you now have options for a mobile foundation that can handle a variety of needs, depending on which one you choose to employ.
 
-The goal of Section I of this book has been to set up a foundation for any application we build. The three major pillars of this validation are: our [foundation markup][Chapter 1], [foundation styles][Chapter 2], and with this chapter of our mobile foundation.
+"Mobile on Rails" is the last chapter of "Section I - Setting up a Foundation". The three pillars of this foundation are our [foundation markup][Chapter 1], [foundation styles][Chapter 2], and with this chapter our mobile foundation.
 
-We have a solid base to build on, and are ready to move onto Section II of this book beginning with Chapter 4, "[Information Architecting][Chapter 4]".
+We now have a solid base to build on, and are ready to move onto Section II of this book beginning with Chapter 4, "[Information Architecting][Chapter 4]".
 
 
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
