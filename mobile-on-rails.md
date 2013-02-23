@@ -251,8 +251,6 @@ Remove:
 - the mime type we defined in mime_types.rb
 - request.format = :mobile in application_controller.rb in the preparer_for_mobile method
 
-NOTE: More often than not the same content will be used in both the mobile and regular versions of your site. With template inheritance you can refactor content into partials, and have both the regular and mobile versions use the same partials. This can get messy though so be careful. It may be overkill.
-
 If you prefer to organize your mobile views outside of the regular app/views path, for example in app/views_mobile, swap the prepend_view_path with:
 
          prepend_view_path Rails.root + 'app' + 'views_mobile'
