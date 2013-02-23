@@ -227,11 +227,13 @@ To do this in our application in conjunction with Mobvious we add the following 
 
     Mime::Type.register_alias "text/html", :mobile
 
-Just like in the Mobylette solution, requests from mobile devices will be detected by Mobvious and served the correct markup and styles. Of course we will need to create all the new .html.mobile views, and again like in the Mobylette solution, I'm feeling like there are too many files in our app/views folder – some ending with ".html.haml" others with ".mobile.haml".
+Just like in the Mobylette solution, requests from mobile devices are detected by Mobvious and served the correct markup and styles. Of course we will need to create all the new .html.mobile views, and again like in the Mobylette solution, I'm feeling like there are way too many files in our app/views folder – some ending with ".html.haml" others with ".mobile.haml".
 
 #### Reorganize
 
-To better organize and reduce clutter and even repetition we can create a special folder just for our mobile views by adding the following to the prepare_for_mobile method in application_controller.rb:
+To better organize, and reduce clutter and even repetition, let's keep our mobile views separate from our regular views.
+
+Create a new app/views/mobile folder and move all mobile views there. We tell Rails that our mobile views are located here by adding the following to the prepare_for_mobile method in application_controller.rb:
 
     def prepare_for_mobile
       if request.env['mobvious.device_type'] == :mobile
@@ -240,9 +242,9 @@ To better organize and reduce clutter and even repetition we can create a specia
       end
     end
 
-Now in addition to our mime type, we have designated a specific view path as the location to organize our mobile views. Go ahead and create the new app/views/mobile folder and move all mobile views there.
+Now in addition to our mime type, we have designated a specific view path as the location to organize our mobile views.
 
-With this new folder structure there really is no need for different mime types. With a common mime type you can use the same partials for both desktop and mobile devices, and through Rails template inheritance your application will default to regular views when mobile views in the new folder are not available; which is especially useful when making an existing app mobile friendly a little bit at a time.
+With this new folder structure in place there really no longer is a need for different mime types. With a common mime type you can use the same partials for both desktop and mobile devices, and through Rails [template inheritance][] your application will default to regular views when mobile views in the new folder are not available – which is especially useful when making an existing app mobile friendly a little bit at a time.
 
 Remove:
 
@@ -969,7 +971,7 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [User Agent Switcher]:  http://chrispederick.com/work/user-agent-switcher/
 [Mobvious]:             https://github.com/jistr/mobvious
 [Ryan Bates]:           http://railscasts.com/episodes/199-mobile-devices
-[Maintain Sanity]:      http://erniemiller.org/2011/01/05/mobile-devices-and-rails-maintaining-your-sanity/
+[template inheritance]: http://railscasts.com/episodes/269-template-inheritance
 [RWD]:                  http://www.alistapart.com/articles/responsive-web-design/
 [RWD Book]:             http://www.abookapart.com/products/responsive-web-design
 [Responsive Design]:    http://alpha.responsivedesign.is/
