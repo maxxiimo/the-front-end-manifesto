@@ -258,7 +258,7 @@ If you prefer to organize your mobile views outside of the regular app/views pat
 II. Responsive Web Design
 -------------------------
 
-User agent stiffing is awesome, but what about in projects where it's overkill? Is there something else we can do? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][RWD]". In his corresponding book he explains:
+User agent stiffing is awesome, but what about in projects where it's overkill? Is there something else we can do? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][RWD]". In his [book][RWD Book] he goes on to explain:
 
 > So what does it take to create a responsive design? Speaking purely in terms of front-end layout, it takes three core ingredients:
 >
@@ -268,12 +268,12 @@ User agent stiffing is awesome, but what about in projects where it's overkill? 
 
 \- Ethan Marcotte, [Responsive Web Design][RWD Book], p.9
 
-If you're interested in learning more definitely read the book, it's pretty good, and also checkout:
+Let's take a look at these three components one by one starting with flexible grids.
+
+Before we move on I want to also recommend the following resources:
 
 - [This Is Responsive][]
 - [Responsive Design][]
-
-Let's take a look at these three components one by one starting with flexible grids.
 
 ### Flexible Grids
 
