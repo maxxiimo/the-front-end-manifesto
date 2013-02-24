@@ -258,7 +258,7 @@ If you prefer to organize your mobile views outside of the regular app/views pat
 II. Responsive Web Design
 -------------------------
 
-User agent stiffing is awesome, but what about in projects where it's overkill? Is there something else we can do? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][RWD]". In his [book][RWD Book] he goes on to explain:
+User agent stiffing is awesome, but what about in projects where it's overkill or just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][RWD]". In his [book][RWD Book] he goes on to explain:
 
 > So what does it take to create a responsive design? Speaking purely in terms of front-end layout, it takes three core ingredients:
 >
@@ -268,20 +268,20 @@ User agent stiffing is awesome, but what about in projects where it's overkill? 
 
 \- Ethan Marcotte, [Responsive Web Design][RWD Book], p.9
 
-Let's take a look at these three components one by one starting with flexible grids. Before we move on I want to first recommend the following resources to keep in your back pocket:
+Let's take a look at these three components one by one starting with flexible grids. Before we do I want to first recommend the following resources to keep in your back pocket:
 
 - [This Is Responsive][]
 - [Responsive Design][]
 
 ### Flexible Grids
 
-"A flexible, grid-based layout" is a layout whose grid dimensions change proportionately as a screen size changes. For example if its width on a desktop were 960px maybe on a tablet it changes to 768px. In other words, it proportionally responds via CSS to the context in which the page is drawn. It does this through the use of percentages or em's (relative measurements) in declaring a containers dimensions, margins, and/or padding.
+"A flexible, grid-based layout" is a layout whose grid dimensions change proportionately as a screen size changes. For example, if its width on a desktop were 960px maybe on a tablet it changes to 768px. In other words, it proportionally responds via CSS to the context in which the page is drawn. It does this through the use of percentages or em's (relative measurements) in declaring a containers dimensions, margins, and/or padding.
 
-Ethan recommends using percentages which are determined by taking the target width and dividing it by the context in which that width proportionally responds to.
+Ethan Marcotte recommends using percentages as the relative measurement. In his book he gives the following formula to determine percentages:
 
 Target ÷ Context = Result
 
-For example, if the main container in your webpage, call it .container, has a width of 960 pixels, and within .container there are two equally sized containers called .left-side and .right-side:
+...Take the target width and dividing it by the context in which that width proportionally responds to, it's context. For example, if the main container in your webpage, call it .container, has a width of 960 pixels, and within .container there are two equally sized containers called .left-side and .right-side:
 
     %body
       .container
@@ -290,7 +290,7 @@ For example, if the main container in your webpage, call it .container, has a wi
 
 ...what would there widths be?
 
-Well obviously half of 960 pixels: 480 pixels, and declaring percentages for this equally obvious: 50%. Mathematically, using the formula, this is calculated as follows: 480 ÷ 960 = .5 or 50%.
+The context is .container and half of 960 pixels: 480 pixels, 50%. Mathematically, using the formula, this is calculated as follows: 480 ÷ 960 = .5 or 50%.
 
     .container
       width: 960px
