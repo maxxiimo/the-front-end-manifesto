@@ -290,7 +290,7 @@ Target ÷ Context = Result
 
 ...what would there widths be?
 
-The context is .container and half of 960 pixels: 480 pixels, 50%. Mathematically, using the formula, this is calculated as follows: 480 ÷ 960 = .5 or 50%.
+The context is .container and half of 960 pixels is 480 pixels, 50%. Mathematically, using the formula, this is calculated as follows: 480 ÷ 960 = .5 or 50%.
 
     .container
       width: 960px
