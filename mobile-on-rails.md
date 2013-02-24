@@ -268,16 +268,14 @@ User agent stiffing is awesome, but what about in projects where it's overkill? 
 
 \- Ethan Marcotte, [Responsive Web Design][RWD Book], p.9
 
-Let's take a look at these three components one by one starting with flexible grids.
-
-Before we move on I want to also recommend the following resources:
+Let's take a look at these three components one by one starting with flexible grids. Before we move on I want to first recommend the following resources to keep in your back pocket:
 
 - [This Is Responsive][]
 - [Responsive Design][]
 
 ### Flexible Grids
 
-"A flexible, grid-based layout" is a layout that proportionally responds via CSS to the context in which the page is drawn. In other words the grids dimensions are flexible and change proportionately as a screen size changes. It does so through the use of percentages or em's in declaring a containers dimensions, margins, and/or padding.
+"A flexible, grid-based layout" is a layout whose grid dimensions change proportionately as a screen size changes. For example if its width on a desktop were 960px maybe on a tablet it changes to 768px. In other words, it proportionally responds via CSS to the context in which the page is drawn. It does this through the use of percentages or em's (relative measurements) in declaring a containers dimensions, margins, and/or padding.
 
 Ethan recommends using percentages which are determined by taking the target width and dividing it by the context in which that width proportionally responds to.
 
