@@ -258,9 +258,9 @@ If you prefer to organize your mobile views outside of the regular app/views pat
 II. Responsive Web Design
 -------------------------
 
-User agent sniffing is awesome, but what about in projects where it's just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design (RWD). Responsive Web Design allows for pages to adapt to different screen sizes in a manner that makes sense for the device the page renders on.
+User agent sniffing is awesome, but what about in projects where it's just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design (RWD). Responsive Web Design allows for pages to adapt to different screen sizes in a manner that you think makes sense for the device the page renders on.
 
-Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 A List Apart article "[Responsive Web Design][RWD]", and in his [book][RWD Book] he goes on to explain:
+Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 A List Apart article, "[Responsive Web Design][RWD]", and in his [book][RWD Book] he goes on to explain:
 
 > So what does it take to create a responsive design? Speaking purely in terms of front-end layout, it takes three core ingredients:
 >
@@ -270,14 +270,14 @@ Ethan Marcotte is widely credited for coining the term "Responsive Web Design" i
 
 \- Ethan Marcotte, [Responsive Web Design][RWD Book], p.9
 
-Let's take a look at these three components one by one starting with flexible grids and learn how to implement RWD in our project. Before we do I want to first recommend the following resources to keep in your back pocket:
+Let's take a look at these three components one by one starting with flexible grids. Before we do I want to first recommend the following resources to keep in your back pocket:
 
 - [This Is Responsive][]
 - [Responsive Design][]
 
 ### Flexible Grids
 
-The first component of Responsive Web Design is "a flexible, grid-based layout." What this means is a layout whose grid dimensions change proportionately as a containing element, such as the screen size or viewport, changes. For example, if a pages major containing element width were 960 pixels relative to a typical desktop screen, maybe as the screen real estate decreased on a tablet it would make sense to decrease the width to 768 pixels. In other words, proportionally respond to the context in which the page is drawn.
+The first component of Responsive Web Design is the "flexible, grid-based layout." What this means is a layout whose grid dimensions change proportionately as a containing element, such as the screen size or viewport, changes. For example, if a pages major containing element width were 960 pixels relative to a typical desktop screen, maybe as the screen real estate decreased on a tablet it would make sense to decrease the width to 768 pixels. In other words, proportionally respond to the context in which the page is drawn.
 
 This can be accomplished through the use of relative measurements in declaring the containers and sub containers dimensions, margins, and/or padding. Ethan Marcotte recommends using percentages as the relative measurement, and in his book gives the following formula to determine these percentages:
 
