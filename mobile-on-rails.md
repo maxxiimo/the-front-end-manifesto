@@ -258,9 +258,9 @@ If you prefer to organize your mobile views outside of the regular app/views pat
 II. Responsive Web Design
 -------------------------
 
-User agent sniffing is awesome, but what about in projects where it's overkill or just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design (RWD). Responsive Web Design allows for pages to adapt to different screen sizes in a manner that makes sense for the screen size the page renders in.
+User agent sniffing is awesome, but what about in projects where it's just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design (RWD). Responsive Web Design allows for pages to adapt to different screen sizes in a manner that makes sense for the screen size the page renders in.
 
-Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][RWD]". In his [book][RWD Book] he goes on to explain:
+Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 A List Apart article "[Responsive Web Design][RWD]". In his [book][RWD Book] he goes on to explain:
 
 > So what does it take to create a responsive design? Speaking purely in terms of front-end layout, it takes three core ingredients:
 >
@@ -277,7 +277,7 @@ Let's take a look at these three components one by one starting with flexible gr
 
 ### Flexible Grids
 
-"A flexible, grid-based layout" is a layout whose grid dimensions change proportionately as a containing element, such as the screen size or viewport, changes. For example, if a pages major containing element width were 960 pixels relative to a typical desktop screen, maybe as the screen real estate decreased on a tablet it would make sense to decrease the width to 768 pixels. In other words, proportionally respond to the context in which the page is drawn.
+The first component of Responsive Web Design is "a flexible, grid-based layout." What this means is a layout whose grid dimensions change proportionately as a containing element, such as the screen size or viewport, changes. For example, if a pages major containing element width were 960 pixels relative to a typical desktop screen, maybe as the screen real estate decreased on a tablet it would make sense to decrease the width to 768 pixels. In other words, proportionally respond to the context in which the page is drawn.
 
 This can be accomplished through the use of relative measurements in declaring the containers and sub containers dimensions, margins, and/or padding. Ethan Marcotte recommends using percentages as the relative measurement, and in his book gives the following formula to determine these percentages:
 
@@ -299,17 +299,14 @@ In our CSS we then write:
     .container
       width: 960px
 
-    .left-side
+    .left-side, .right-side
       width: 50%
 
-    .right-side
-      width: 50%
-
-Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all grid elements including .container and you have a responsive grid that will resize itself depending upon the context it is drawn on.
+Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all grid elements including .container and you have a responsive grid that will resize itself depending upon the context it renders on.
 
 ### Using Susy
 
-Rather than calculate all the different percentage for a flexible grid, I prefer to use a grid system that does this for me and save some time. You will find a pretty comprehensive list of [Grid Systems][]in the appendix, but my preference is to use [Susy][] since it is a plug-in of Compass, and authored by Eric Meyer whom I have a great deal of confidence in.
+Rather than calculate all the different percentage for a flexible grid, I prefer to use a grid system that does this for me and save some time. You will find a pretty comprehensive list of [Grid Systems][]in the appendix, but my preference is to use [Susy][] since it is a plug-in of Compass, which we are already using, and authored by Eric Meyer whom I have a great deal of confidence in.
 
 #### Installation
 
