@@ -3,7 +3,7 @@ Visual Design for the Nondesigner
 
 In the [last chapter][Chapter 4] our focus was Information Architecture, and in that chapter we really emphasize storytelling. [Design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction in visual design.
 
-Up until now, we basically have a pretty blank wireframe: function before form. We need to add some spice to it:
+Up until now, we basically have a pretty blank wireframe: Function before form. We need to add some spice to it:
 
 > Firstly, think about what your pages do, not what they look like. Let your design flow from the services which they will provide to your users, rather than from some overarching idea of what you want pages to look like. Let form follow function, rather than trying to take a particular design and make it "work".
 
