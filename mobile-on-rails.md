@@ -258,7 +258,9 @@ If you prefer to organize your mobile views outside of the regular app/views pat
 II. Responsive Web Design
 -------------------------
 
-User agent stiffing is awesome, but what about in projects where it's overkill or just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design. Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][RWD]". In his [book][RWD Book] he goes on to explain:
+User agent sniffing is awesome, but what about in projects where it's overkill or just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design (RWD). Responsive Web Design allows for pages to adapt to different screen sizes in a manner that makes sense for the screen size the page renders in.
+
+Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 article "[Responsive Web Design][RWD]". In his [book][RWD Book] he goes on to explain:
 
 > So what does it take to create a responsive design? Speaking purely in terms of front-end layout, it takes three core ingredients:
 >
@@ -268,29 +270,31 @@ User agent stiffing is awesome, but what about in projects where it's overkill o
 
 \- Ethan Marcotte, [Responsive Web Design][RWD Book], p.9
 
-Let's take a look at these three components one by one starting with flexible grids. Before we do I want to first recommend the following resources to keep in your back pocket:
+Let's take a look at these three components one by one starting with flexible grids and learn how to implement RWD in our project. Before we do I want to first recommend the following resources to keep in your back pocket:
 
 - [This Is Responsive][]
 - [Responsive Design][]
 
 ### Flexible Grids
 
-"A flexible, grid-based layout" is a layout whose grid dimensions change proportionately as a screen size changes. For example, if its width on a desktop were 960px maybe on a tablet it changes to 768px. In other words, it proportionally responds via CSS to the context in which the page is drawn. It does this through the use of percentages or em's (relative measurements) in declaring a containers dimensions, margins, and/or padding.
+"A flexible, grid-based layout" is a layout whose grid dimensions change proportionately as a containing element, such as the screen size or viewport, changes. For example, if a pages major containing element width were 960 pixels relative to a typical desktop screen, maybe as the screen real estate decreased on a tablet it would make sense to decrease the width to 768 pixels. In other words, proportionally respond to the context in which the page is drawn.
 
-Ethan Marcotte recommends using percentages as the relative measurement. In his book he gives the following formula to determine percentages:
+This can be accomplished through the use of relative measurements in declaring the containers and sub containers dimensions, margins, and/or padding. Ethan Marcotte recommends using percentages as the relative measurement, and in his book gives the following formula to determine these percentages:
 
 Target ÷ Context = Result
 
-...Take the target width and dividing it by the context in which that width proportionally responds to, it's context. For example, if the main container in your webpage, call it .container, has a width of 960 pixels, and within .container there are two equally sized containers called .left-side and .right-side:
+...where target is the element in a layout you wish to apply the relevant measurement to, and context is the containing element in which the target responds to. For example, if the main container in your webpage, call it .container, has a width of 960 pixels, and within .container there are two equally sized containers called .left-side and .right-side:
 
     %body
       .container
         .left-side
         .right-side
 
-...what would there widths be?
+...what would there relative measurement widths be?
 
-The context is .container and half of 960 pixels is 480 pixels, 50%. Mathematically, using the formula, this is calculated as follows: 480 ÷ 960 = .5 or 50%.
+The context is .container and since it contains two equally sized grid elements we can easily calculate in our heads that each will need to have a width of 480 pixels (half of 960 pixels), but rather than use "width: 480px" in our CSS for both elements, we use "width: 50%". Mathematically, using the formula, this is calculated as follows: 480 ÷ 960 = .5 or 50%.
+
+In our CSS we then write:
 
     .container
       width: 960px
@@ -301,11 +305,11 @@ The context is .container and half of 960 pixels is 480 pixels, 50%. Mathematica
     .right-side
       width: 50%
 
-Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all containers and you have a responsive grid that will resize itself depending upon the screen size it is drawn into.
+Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all grid elements including .container and you have a responsive grid that will resize itself depending upon the context it is drawn on.
 
 ### Using Susy
 
-Rather than calculate all the different percentage ratios within a layout, I prefer to use a grid system and save some time. You will find a pretty comprehensive list of [Grid Systems][]in the appendix, but my preference is to use [Susy][] since we are already using Compass, and it is authored by Eric Meyer whom I have a great deal of confidence in. On top of that it is based on em's which is my metric of choice, more on this below and in [Chapter 5][].
+Rather than calculate all the different percentage for a flexible grid, I prefer to use a grid system that does this for me and save some time. You will find a pretty comprehensive list of [Grid Systems][]in the appendix, but my preference is to use [Susy][] since it is a plug-in of Compass, and authored by Eric Meyer whom I have a great deal of confidence in.
 
 #### Installation
 
@@ -974,7 +978,6 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [Grid Systems]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
 [Susy]:                 http://susy.oddbird.net/
-[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
 [source]:               http://susy.oddbird.net/guides/getting-started/
 [basic settings]:       http://susy.oddbird.net/guides/reference/#ref-basic-settings
 [.container]:           http://susy.oddbird.net/guides/reference/#ref-basic-mixins
