@@ -260,7 +260,7 @@ II. Responsive Web Design
 
 User agent sniffing is awesome, but what about in projects where it's just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design (RWD). Responsive Web Design allows for pages to adapt to different screen sizes in a manner that makes sense for the device the page renders on.
 
-Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 A List Apart article "[Responsive Web Design][RWD]". In his [book][RWD Book] he goes on to explain:
+Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 A List Apart article "[Responsive Web Design][RWD]", and in his [book][RWD Book] he goes on to explain:
 
 > So what does it take to create a responsive design? Speaking purely in terms of front-end layout, it takes three core ingredients:
 >
