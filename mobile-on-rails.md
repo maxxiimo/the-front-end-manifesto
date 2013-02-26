@@ -382,27 +382,14 @@ NOTE: We remove the following styles from the body tag since we are now replacin
       margin: 0 auto
       width: 960px
 
-#### Use
+#### Basic Usage
 
-In our previous flexible grid example:
+If you recall in the previous Flexible Grids section, in our example we used percentages to define our widths:
 
-    %body
-      .container
-        .left-side
-        .right-side
-
-...we used percentages to define our flexible widths:
-
-    .container
-      width: 960px
-
-    .left-side
+    .left-side, .right-side
       width: 50%
 
-    .right-side
-      width: 50%
-
-With Susy .container does not need to be set since it was defined in step three of our implementation, and for the two remaining layout elements we would use Susy as follows:
+With Susy instead of using percentages we define our wits as follows:
 
     .left-side
       +span-columns(6, 12)
@@ -410,18 +397,18 @@ With Susy .container does not need to be set since it was defined in step three 
     .right-side
       +span-columns(6 omega, 12)
 
-What did we do? Earlier on we set the total number of columns in our Susy grid to 12:
+What did we do? Since we set the total number of columns in our Susy grid to 12:
 
     $total-columns:     12
 
-For the two elements we layout we then set the total number of columns the element will span through the +span-columns() mixin. In our case half of the available columns for each element. The "omega" in the .right-side element denotes that this element will Contain the last column in the grid and therefore will not have a right margin.
+For the two elements we layout we then set the total number of columns the element will span through the +span-columns() mixin. In our case half of the available columns for each element. The "omega" in the .right-side element denotes that this element will be the last column in the grid and therefore will not have a gutter (right margin).
 
-To learn how to use Susy, the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
+To realyy learn how to use Susy, it really packs a lot more punch, the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
 
 - [Responsive Grids With Susy][Susy Grids]
 - [Off-canvas layout with Susy][Off-canvas]
 
-### @media
+### Media Queries
 
 Now that we have a Susy flexible grid, it's time to look at Ethan's second ingredient in RWD; media queries. To understand them let's take a little look at their history.
 

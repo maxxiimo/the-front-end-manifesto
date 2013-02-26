@@ -58,7 +58,7 @@ Table of Contents
   - II. Responsive Web Design
     - Flexible Grids
     - Using Susy
-    - @media
+    - Media Queries
     - Target Devices
     - Breakpoints
     - Em's and Media Queries
