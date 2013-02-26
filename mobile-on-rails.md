@@ -401,7 +401,35 @@ What did we do? Since we set the total number of columns in our Susy grid to 12:
 
     $total-columns:     12
 
-...for the two elements we layout we set the total number of columns the element will span through the Susy +span-columns() mixin, i.e. +span-columns(6, 12). What this means is that element will span 6 of the available 12 columns we defined in the grid; in our case half of the available columns for each element. The "omega" in the .right-side element denotes that this element will be the last column in the grid and therefore will not have a gutter (right margin).
+...for the two elements we are targeting we set the total number of columns each element will span through the Susy +span-columns() mixin, i.e. +span-columns(6, 12). What this means is that it will span 6 of the available 12 columns we defined in the grid; in our case half of the available columns for each element. The "omega" in .right-side denotes that it will be the last column in the grid and therefore will not have a gutter (right margin). With this information Susy calculates your percentages and produces the following CSS:
+
+    .container:after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 59em;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+
+    .left-side {
+      display: inline;
+      float: left;
+      margin-right: 1.69492%;
+      width: 49.1525%;
+    }
+
+    .right-side {
+      display: inline;
+      float: right;
+      margin-right: 0;
+      width: 49.1525%;
+    }
 
 To really learn how to use Susy – it really packs a lot more punch – the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
 
