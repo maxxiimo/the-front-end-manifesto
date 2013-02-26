@@ -306,7 +306,7 @@ Now if you were to change the size of .container, .left-side and .right-side wou
 
 ### Using Susy
 
-As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you and save some time. There is a pretty comprehensive list of [grid systems][]in the appendix, but my preference is to use [Susy][] since it is a plug-in of Compass, which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in.
+As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you and save time. There is a pretty comprehensive list of [grid systems][] in the appendix, but my preference is to use [Susy][] since it is a plug-in of Compass, which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in.
 
 #### Installation
 
@@ -321,7 +321,7 @@ Installation is pretty straightforward:
     # Compass specific gems.
     gem 'compass-rails'
     gem 'oily_png'
-    **gem 'susy'**
+    <strong>gem 'susy'</strong>
 
 *Step 3:* Import Susy into your project:
 
