@@ -389,7 +389,7 @@ If you recall in the previous Flexible Grids section, in our example we used per
     .left-side, .right-side
       width: 50%
 
-With Susy instead of using percentages we define our wits as follows:
+With Susy instead of using percentages directly, we define our widths through the +span-columns() mixin as follows:
 
     .left-side
       +span-columns(6, 12)
@@ -401,9 +401,9 @@ What did we do? Since we set the total number of columns in our Susy grid to 12:
 
     $total-columns:     12
 
-For the two elements we layout we then set the total number of columns the element will span through the +span-columns() mixin. In our case half of the available columns for each element. The "omega" in the .right-side element denotes that this element will be the last column in the grid and therefore will not have a gutter (right margin).
+...for the two elements we layout we set the total number of columns the element will span through the +span-columns() mixin, i.e. +span-columns(6, 12), meaning that element will span six of the available 12 columns in the grid, and in our case half of the available columns for each element. The "omega" in the .right-side element denotes that this element will be the last column in the grid and therefore will not have a gutter (right margin).
 
-To realyy learn how to use Susy, it really packs a lot more punch, the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
+To really learn how to use Susy, it really packs a lot more punch, the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
 
 - [Responsive Grids With Susy][Susy Grids]
 - [Off-canvas layout with Susy][Off-canvas]
