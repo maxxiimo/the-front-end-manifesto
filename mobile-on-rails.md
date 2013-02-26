@@ -355,7 +355,7 @@ app/assets/stylesheets/application.scss
     $gutter-width:      1em
     $grid-padding:      $gutter-width
 
-*Step 2*: Create an [outer grid-containing element][.container] in application.html.haml (for both desktop and mobile) by creating a \<body> tag child \<div> called .container:
+*Step 2*: Create an [outer grid-containing element][.container] in application.html.haml by creating a child \<div> to the \<body> tag called .container:
 
 app/views/layouts/application.html.haml
 
