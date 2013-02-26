@@ -306,7 +306,7 @@ Now if you were to change the size of .container, .left-side and .right-side wou
 
 ### Using Susy
 
-Rather than calculate all the different percentage for a flexible grid, I prefer to use a grid system that does this for me and save some time. You will find a pretty comprehensive list of [Grid Systems][]in the appendix, but my preference is to use [Susy][] since it is a plug-in of Compass, which we are already using, and authored by Eric Meyer whom I have a great deal of confidence in.
+As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you and save some time. There is a pretty comprehensive list of [grid systems][]in the appendix, but my preference is to use [Susy][] since it is a plug-in of Compass, which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in.
 
 #### Installation
 
@@ -974,8 +974,9 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [Responsive Design]:    http://alpha.responsivedesign.is/
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
 [grid]:                 http://www.subtraction.com/pics/0703/grids_are_good.pdf
-[Grid Systems]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
+[grid systems]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
 [Susy]:                 http://susy.oddbird.net/
+[Eric Meyer]:           http://meyerweb.com/
 [source]:               http://susy.oddbird.net/guides/getting-started/
 [basic settings]:       http://susy.oddbird.net/guides/reference/#ref-basic-settings
 [.container]:           http://susy.oddbird.net/guides/reference/#ref-basic-mixins
