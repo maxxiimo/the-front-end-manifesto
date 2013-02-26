@@ -377,7 +377,7 @@ _layout.sass
     .container
       +container
 
-NOTE: We remove the following from the body tag since we are now replacing these properties with Susy:
+NOTE: We remove the following styles from the body tag since we are now replacing these properties with Susy:
 
       margin: 0 auto
       width: 960px
