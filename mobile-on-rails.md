@@ -348,7 +348,7 @@ Within our application layout we will implement our Susy responsive grid as foll
 
 *Step 1*: Define the [basic settings][] of our grid:
 
-app/assets/stylesheets/mobile.scss
+For the mobile version of our site use app/assets/stylesheets/mobile.scss.
 
     /* DEFINITIONS
       ============================================================================ */
@@ -362,7 +362,7 @@ app/assets/stylesheets/mobile.scss
     $gutter-width:      1em
     $grid-padding:      $gutter-width
 
-app/assets/stylesheets/application.scss
+For the mobile version of our site use app/assets/stylesheets/application.scss.
 
     /* DEFINITIONS
       ============================================================================ */
@@ -378,9 +378,9 @@ app/assets/stylesheets/application.scss
 
 NOTE: We do not add these definitions directly into our define partial because the variables will differ between desktop and mobile versions of our application.
 
-*Step 2*: Create an [outer grid-containing element][.container] in our application.html.haml (for both desktop and mobile) by creating a '<body>' tag child '<div>' called .container:
+*Step 2*: Create an [outer grid-containing element][.container] in application.html.haml (for both desktop and mobile) by creating a \<body> tag child \<div> called .container:
 
-app/views/mobile/layouts/application.html.haml
+For the mobile version of our site use app/views/mobile/layouts/application.html.haml.
 
     %body
       .container
@@ -393,7 +393,7 @@ app/views/mobile/layouts/application.html.haml
         = render :partial => 'shared/footer'
       = scripts
 
-app/views/layouts/application.html.haml
+For the mobile version of our site use app/views/layouts/application.html.haml.
 
     %body
       .container
