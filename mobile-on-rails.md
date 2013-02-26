@@ -310,7 +310,7 @@ As you can imagine there's quite a lot of math involved, so rather than calculat
 
 #### Installation
 
-Installation is pretty straightforward:
+Before we begin I'm going to assume that you have removed or disabled our previous work with user agent sniffing. If so, installation is pretty straightforward:
 
 *Step 1:* Add the following to /config/compass.rb:
 
@@ -324,13 +324,6 @@ Installation is pretty straightforward:
     gem 'susy'
 
 *Step 3:* Import Susy into your project:
-
-app/assets/stylesheets/mobile.scss
-
-    /* BASIC STRUCTURE
-      ============================================================================ */
-    @import "susy";
-    @import "mobile/layout";
 
 app/assets/stylesheets/application.scss
 
@@ -348,21 +341,7 @@ Within our application layout we will implement our Susy responsive grid as foll
 
 *Step 1*: Define the [basic settings][] of our grid:
 
-For the mobile version of our site use app/assets/stylesheets/mobile.scss.
-
-    /* DEFINITIONS
-      ============================================================================ */
-    @import "define";
-
-    /*  Susy Grid
-      -----------------------
-
-    $total-columns:     5
-    $column-width:      4em
-    $gutter-width:      1em
-    $grid-padding:      $gutter-width
-
-For the mobile version of our site use app/assets/stylesheets/application.scss.
+app/assets/stylesheets/application.scss
 
     /* DEFINITIONS
       ============================================================================ */
@@ -376,24 +355,9 @@ For the mobile version of our site use app/assets/stylesheets/application.scss.
     $gutter-width:      1em
     $grid-padding:      $gutter-width
 
-NOTE: We do not add these definitions directly into our define partial because the variables will differ between desktop and mobile versions of our application.
-
 *Step 2*: Create an [outer grid-containing element][.container] in application.html.haml (for both desktop and mobile) by creating a \<body> tag child \<div> called .container:
 
-For the mobile version of our site use app/views/mobile/layouts/application.html.haml.
-
-    %body
-      .container
-        %header{:role => "banner"}
-          = render :partial => 'shared/navigation'
-          .header
-            = render :partial => 'shared/logo'
-        #main{:role => "main"}
-          = yield
-        = render :partial => 'shared/footer'
-      = scripts
-
-For the mobile version of our site use app/views/layouts/application.html.haml.
+app/views/layouts/application.html.haml
 
     %body
       .container
@@ -408,17 +372,15 @@ For the mobile version of our site use app/views/layouts/application.html.haml.
 
 *Step 3*: Add the corresponding CSS:
 
-app/assets/stylesheets/desktop/_layout.sass and app/assets/stylesheets/mobile/_layout.sass
+_layout.sass
 
     .container
       +container
 
-NOTE: We removed...
+NOTE: We remove the following from the body tag since we are now replacing these properties with Susy:
 
       margin: 0 auto
       width: 960px
-
-...from the desktop version body tag since we are now replacing these properties with Susy.
 
 #### Use
 
