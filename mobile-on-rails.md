@@ -401,7 +401,7 @@ What did we do? Since we set the total number of columns in our Susy grid to 12:
 
     $total-columns:     12
 
-...for the two elements we are targeting we need only set the total number of columns each element will span in the available 12 columns, i.e. +span-columns(6, 12); in our case half of the available columns for each element. The "omega" in .right-side denotes that it will be the last column in the grid and therefore will not have a gutter (right margin). With this information Susy calculates your percentages and produces the following CSS:
+...for the two elements we are targeting we need only set the total number of columns each element will span of the available 12 columns, i.e. +span-columns(6, 12); in our case half of the available columns for each element. The "omega" in .right-side denotes that it will be the last column in the grid and therefore will not have a gutter (right margin). With this information Susy calculates your percentages and produces the following CSS:
 
     .container:after {
       clear: both;
