@@ -238,7 +238,7 @@ Create a new app/views/mobile folder and move all mobile views there. We tell Ra
     def prepare_for_mobile
       if request.env['mobvious.device_type'] == :mobile
         request.format = :mobile
-        **prepend_view_path "app/views/mobile"**
+        prepend_view_path "app/views/mobile"
       end
     end
 
@@ -321,7 +321,7 @@ Installation is pretty straightforward:
     # Compass specific gems.
     gem 'compass-rails'
     gem 'oily_png'
-    <strong>gem 'susy'</strong>
+    gem 'susy'
 
 *Step 3:* Import Susy into your project:
 
@@ -329,7 +329,7 @@ app/assets/stylesheets/mobile.scss
 
     /* BASIC STRUCTURE
       ============================================================================ */
-    **@import "susy";**
+    @import "susy";
     @import "mobile/layout";
 
 app/assets/stylesheets/application.scss
@@ -378,12 +378,12 @@ app/assets/stylesheets/application.scss
 
 NOTE: We do not add these definitions directly into our define partial because the variables will differ between desktop and mobile versions of our application.
 
-*Step 2*: Create an [outer grid-containing element][.container] in our application.html.haml (for both desktop and mobile) by creating a \<body> tag child \<div> called .container:
+*Step 2*: Create an [outer grid-containing element][.container] in our application.html.haml (for both desktop and mobile) by creating a '<body>' tag child '<div>' called .container:
 
 app/views/mobile/layouts/application.html.haml
 
     %body
-      **.container**
+      .container
         %header{:role => "banner"}
           = render :partial => 'shared/navigation'
           .header
@@ -396,7 +396,7 @@ app/views/mobile/layouts/application.html.haml
 app/views/layouts/application.html.haml
 
     %body
-      **.container**
+      .container
         = chromeframe
         %header{:role => "banner"}
           = render :partial => 'shared/logo'
