@@ -258,7 +258,7 @@ If you prefer to organize your mobile views outside of the regular app/views pat
 II. Responsive Web Design
 -------------------------
 
-User agent sniffing is awesome, but what about in projects where it's just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design (RWD). Responsive Web Design allows for pages to adapt to different screen sizes in a manner that you the developer/designer think makes sense for the device the page renders on.
+User agent sniffing is awesome, but what about in projects where it's just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design (RWD). Responsive Web Design allows for pages to adapt to different screen sizes in a manner that makes sense for the device the page renders on, whether that is on a mobile device or on the desktop.
 
 Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 A List Apart article, "[Responsive Web Design][RWD]", and in his [book][RWD Book] he goes on to explain:
 
@@ -279,7 +279,7 @@ Let's take a look at these three components one by one starting with flexible gr
 
 So the first component of Responsive Web Design is the "flexible, grid-based layout." What this means is a layout whose [grid][] dimensions change proportionately as a containing element, such as the screen size or viewport, changes. For example, if a pages major containing element width were 960 pixels relative to a typical desktop screen, maybe as the screen real estate decreased on a tablet it would make sense to decrease the width to 768 pixels. In other words, proportionally respond to the context in which the page is drawn.
 
-This can be accomplished through the use of relative measurements in declaring the containers and sub containers dimensions, margins, and/or padding. Ethan Marcotte recommends using percentages as the relative measurement, and in his book gives the following formula to determine these percentages:
+This can be accomplished through the use of relative measurements in declaring grid element dimensions, margins, and/or padding. Ethan Marcotte recommends using percentages as the relative measurement, and in his book gives the following formula to determine these percentages:
 
 Target ÷ Context = Result
 
@@ -292,7 +292,7 @@ Target ÷ Context = Result
 
 ...what would there relative measurement widths be?
 
-The context is .container and since it contains two equally sized grid elements we can easily calculate in our heads that each will need to have a width of 480 pixels (half of 960 pixels), but rather than use "width: 480px" in our CSS for both elements, we use "width: 50%". Mathematically, using the formula, this is calculated as follows: 480 ÷ 960 = .5 or 50%.
+The context is .container and since it contains two equally sized grid elements we can easily calculate in our heads that since they must be equal, each will have a width of 480 pixels (half of 960 pixels), but rather than use "width: 480px" in our CSS for both elements, we use "width: 50%". Mathematically, using the formula, this is calculated as follows: 480 ÷ 960 = .5 or 50%.
 
 In our CSS we then write:
 
@@ -302,7 +302,7 @@ In our CSS we then write:
     .left-side, .right-side
       width: 50%
 
-Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all grid elements including .container and you have a responsive grid that will resize itself depending upon the context it renders on.
+Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all grid elements including converting the 960px in .container to a percentage, and you have a responsive grid that will resize itself depending upon the context it renders on.
 
 ### Using Susy
 
