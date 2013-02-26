@@ -389,7 +389,7 @@ If you recall in the previous Flexible Grids section, in our example we used per
     .left-side, .right-side
       width: 50%
 
-With Susy instead of using percentages directly, we define our widths through the Susy +span-columns() mixin as follows:
+With Susy instead of using percentages directly, we allow Susy to do the calculations by defining our widths through the Susy +span-columns() mixin as follows:
 
     .left-side
       +span-columns(6, 12)
