@@ -494,7 +494,7 @@ In general, here are the most common devices and dimensions:
 - 1024px (iPad landscape)
 - 1140+ (Desktops)
 
-So what should we use? In the ResponsiveDesign.is website under [Defining Breakpoints][] the section begins...
+So what should you use? In the ResponsiveDesign.is website under [Defining Breakpoints][] the section begins...
 
 > Breakpoints are the point a which your sites content will respond to provide the user with the best possible layout to consume the information.
 >
@@ -512,8 +512,6 @@ On the other hand I think it's good to start with something and redefine as cont
 
 Why don't we grab a few and begin.
 
-
-I'm going to make the assumption that our audience uses desktop computers/laptops, tablet devices, and smart phones, but not televisions or anything else for that matter. I'm making this assumption to give us something to work with, but you should check your Web logs!
 #### Breakpoints
 
 Based on [StatCounter Global Stats][Stats] for North America over the last three months, it looks like there are five sizes we should define. Rather than use device names let's use generic names like: xs (extra small), s (small), m (medium), l (large), and xl (extra large). FYI - The breakpoints we define here will serve as a starting point, we can always change numbers or add/remove sizes (xxs, xxl, etc.) when user needs dictate that we should.
