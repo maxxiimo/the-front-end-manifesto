@@ -377,6 +377,8 @@ This tells Susy what the basic characteristics of your flexible grid are. In thi
     .container
       +container
 
++container is a Susy mixin that applies the definitions you defined in Step 1 to the outer grid containing element you created in Step 2.
+
 NOTE: We remove the following styles from the body tag since we are now replacing these properties with Susy:
 
       margin: 0 auto
