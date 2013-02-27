@@ -615,7 +615,7 @@ First, let's redefine our Susy flexible grid as follows:
     $break11:           11;
     $break12:           12;
 
-We're starting from a total column size of 4 instead of 12 since we are approaching development from a mobile first perspective. Then I add breakpoints from 5 to 12 columns. I do this because I want to test which breakpoints are best for the devices I'm targeting. To identify the breakpoint being utilized I set up my styles as follows:
+We're starting from a total column size of 4 instead of 12 since we are approaching development from a mobile first perspective. Then I add breakpoints from 5 to 12 column layouts. I do this because I want to test which breakpoints and corresponding grid layouts are best for the devices I'm targeting. To identify the breakpoint being utilized I set up my styles as follows:
 
     .container
       +container($total-columns, $break5, $break6, $break7, $break8, $break9, $break10, $break11, $break12)
