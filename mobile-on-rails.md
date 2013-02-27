@@ -339,9 +339,7 @@ Don't forget to restart your server, and wallah! You have a powerful responsive 
 
 Within our application layout we will implement our Susy responsive grid as follows:
 
-*Step 1*: Define the [basic settings][] of our grid:
-
-app/assets/stylesheets/application.scss
+*Step 1*: Define the [basic settings][] of our grid in application.scss:
 
     /* DEFINITIONS
       ============================================================================ */
@@ -363,8 +361,6 @@ This tells Susy what the basic characteristics of your flexible grid are. In thi
 
 *Step 2*: Create an [outer grid-containing element][.container] in application.html.haml called .container:
 
-app/views/layouts/application.html.haml
-
     %body
       .container
         = chromeframe
@@ -376,9 +372,7 @@ app/views/layouts/application.html.haml
         = render :partial => 'shared/footer'
       = scripts
 
-*Step 3*: Add the corresponding CSS:
-
-_layout.sass
+*Step 3*: Add the corresponding CSS to _layout.sass:
 
     .container
       +container
