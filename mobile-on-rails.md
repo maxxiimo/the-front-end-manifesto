@@ -698,6 +698,7 @@ This produces the following @media rules:
 As you can see it is very similar to what we created manually except Susy calculates all the breakpoints based on the grid we defined and the following formula:
 
 ($total-columns x $column-width) + (($total-columns - 1) x $gutter-width)
+
 (12 x 4em) + ((12 - 1) x 1em) = 59em
 
 ...and remember that since we're using a base font size of 16px, if you multiply the em's value by that number you will get the equivalent breakpoints in px:
