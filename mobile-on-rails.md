@@ -433,7 +433,7 @@ What did we do? Since we set the total number of columns in our Susy grid to 12:
       width: 49.1525%;
     }
 
-And there it is in a nutshell! To really learn how to use Susy – it really packs a lot more punch – the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
+And there it is in a nutshell! To really learn how to use Susy – it really packs a lot more punch than what I've shown – the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
 
 - [Responsive Grids With Susy][Susy Grids]
 - [Off-canvas layout with Susy][Off-canvas]
