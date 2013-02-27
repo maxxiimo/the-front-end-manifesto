@@ -785,7 +785,7 @@ Since they are floated elements, doing so stacks .left-side and .right-side one 
 
 If you're not too sure how this is all working, in addition to the Susy's own [reference][source] (and the articles I recommend above), the following discussion hits the nail right on the head when it comes to understanding how to use Susy breakpoints:
 
-[Susy and Media Queries (guide for Muppets)][Muppets]
+- [Susy and Media Queries (guide for Muppets)][Muppets]
 
 III. A Hybrid Approach
 ----------------------
