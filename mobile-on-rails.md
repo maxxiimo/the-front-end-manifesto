@@ -477,9 +477,9 @@ In addition to max-width, media queries allow you to test for a broader range of
 
 #### Target Devices
 
-Before we write our own media queries we need to determine what screen sizes we plan to target. I'm going to make the assumption that our audience uses desktop computers/laptops, tablet devices, and smart phones, but not televisions or anything else for that matter to browse the web. I'm making this assumption to give us something to work with, but you should check your Web logs!
+Before we write our own media queries we need to determine what screen sizes we plan to target. I'm going to make the assumption that our audience uses desktop computers/laptops, tablet devices, and smart phones, but not televisions or anything else for that matter. I'm making this assumption to give us something to work with, but you should check your Web logs!
 
-So what dimensions should we use? Here are some references to help you decide:
+To help you determine what devices and screen sizes are out there and being used, here are some references to guide you:
 
 - [StatCounter Global Stats][Stats]
 - [Tired of Hunting][]
