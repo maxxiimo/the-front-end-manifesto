@@ -557,15 +557,15 @@ So what do our brand-new breakpoints look like?
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
           @content
 
-How do you use them? First we'll place them in a sass partial called [_media_queries.sass][], and then import them into our application.scss file (this will be included by default in your base styles):
+How do you use them? First we'll place them in a sass partial called [_media_queries.sass][], and then import them into our application.scss file:
 
     /* MIXINS
       ============================================================================ */
     @import "compass";
-    @import "media_queries_px";
+    @import "media_queries";
     @import "mixins"
 
-Then if you want to specify a particular style for whatever, lets say a different font color for super small screens, you might write something like this:
+Then if you want to specify a particular style for an element, lets say a different font color for super small screens for .some-class, you might write something like this:
 
     .some-class
       color: blue
