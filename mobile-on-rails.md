@@ -479,7 +479,7 @@ In addition to max-width, media queries allow you to test for a broader range of
 
 #### Target Devices
 
-Now that we have a basic understanding of media queries and their history, the first step in writing your own is determine what screen sizes you plan to target, i.e. what devices are your users using? The best source of this information comes from your weblogs. The following references will also help you understand what's out there and what's being used:
+Now that we have a basic understanding of media queries, the first step Writing your own is determine what screen sizes you plan to target, i.e. what devices are your users using? The best source of this information comes from your weblogs. The following references will also help you understand what's out there and what's being used:
 
 - [StatCounter Global Stats][Stats]
 - [Tired of Hunting][]
