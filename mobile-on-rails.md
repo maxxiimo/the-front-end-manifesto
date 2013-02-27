@@ -514,7 +514,7 @@ Why don't we grab a few and begin.
 
 #### Breakpoints
 
-Based on [StatCounter Global Stats][Stats] for North America over the last three months, it looks like there are five sizes we should define. Rather than use device names let's use generic names like: xs (extra small), s (small), m (medium), l (large), and xl (extra large). FYI - The breakpoints we define here will serve as a starting point, we can always change numbers or add/remove sizes (xxs, xxl, etc.) when user needs dictate that we should.
+Based on [StatCounter Global Stats][Stats] for North America over a three month period, it looks like there are five sizes we will need to address. Rather than use device names let's use generic names like: xs (extra small), s (small), m (medium), l (large), and xl (extra large). FYI - The breakpoints we define here will serve as a starting point, we can always change numbers or add/remove sizes (xxs, xxl, etc.) when user needs dictate that we should.
 
 Here is the mapping I'm thinking of:
 
@@ -972,7 +972,7 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
 [breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
 [Happy Cog]:            http://www.netmagazine.com/news/browser-screen-resolution-stats-rile-devs-121897
-[px media querries]:    https://github.com/maxxiimo/base-css/blob/master/_media_queries_px.sass
+[px media querries]:    https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
 [Media queries]:        http://alpha.responsivedesign.is/develop/media-queries
 [Sass Media Queries]:   http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
 [Retina Media Queries]: http://css-tricks.com/snippets/css/retina-display-media-query/
