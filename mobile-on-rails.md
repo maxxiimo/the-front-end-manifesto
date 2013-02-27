@@ -384,7 +384,7 @@ NOTE: We remove the following styles from the body tag since we are now replacin
       margin: 0 auto
       width: 960px
 
-##### Basic Usage
+##### Using Susy
 
 Using Susy is also pretty straightforward. Essentially it is a mixin scheme that applies a specified amount of columns to an element, based on the total columns available. If you recall in the previous Flexible Grids section, in our example we used percentages to define our widths:
 
