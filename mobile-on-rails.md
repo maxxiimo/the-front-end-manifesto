@@ -448,20 +448,22 @@ Now that we have a flexible grid, it's time to look at Ethan's second ingredient
 
 ### 3. Media Queries
 
-Now that we have a Susy flexible grid, it's time to look at Ethan's second ingredient in RWD; media queries. To understand them let's take a little look at their history.
+Now that we have a Susy flexible grid, it's time to look at Ethan's second ingredient in RWD; media queries. Our goal is to respond to different screen sizes with content that makes sense for the device being used by our users. For example, maybe in smaller devices it makes sense to use a smaller font size, or a single column layout rather than a three column layout. Media queries will allow us to do this. To understand them and how they will help us, let's take a quick look at their history.
 
 ##### Media Types
 
-Media dependent stylesheets were first specified in the HTML4 and CSS2 W3C recommendations, and were designed to allow developers to target different devices through [media types][]: all, braille, embossed, handheld, print, projection, screen, speech, tty, tv. The idea was that through these media types, devices the belonged to the type could be targeted using @media or @import rules, or the HTML \<link> element. For example:
+Media dependent stylesheets were first specified in the HTML4 and CSS2 W3C recommendations, and were designed to allow developers to target different devices through [media types][]: all, braille, embossed, handheld, print, projection, screen, speech, tty, tv. The idea was that through these media types, devices the belonged to a specific type could be targeted using @media or @import rules, or the HTML \<link> element, and served styles that applied to them and not other types. For example:
 
     %link{:href => "screen.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "print.css", :media => "print", :rel => "stylesheet", :type => "text/css"}
 
-The problem with this specification in practice for mobile was inconsistent implementation across mobile browsers, plus the list of media types did not accommodate the wide range of device types and screen sizes. And that's essentially where media queries come in and save the day.
+In this example screen.css would be served only to devices that were of the "screen" type, and print.css was served to devices of the "print" type.
+
+The problem with this specification in practice for mobile was inconsistent implementation across mobile browsers, plus the list of media types did not accommodate the wide range of device types, especially in regards to different screen sizes. And that's essentially where media queries come in and save the day.
 
 ##### Media Queries to the Rescue
 
-With inconsistent browser implementation and so many screen sizes and new devices coming to market, developers found that using media types alone to serve up styles for specific devices was impractical. On June 19, 2012, although in practice well before this, an official W3C recommendation was released that greatly expanded the capabilities of media types:
+With inconsistent browser implementation and so many screen sizes and new devices coming to market, developers found that using media types alone to serve up styles for specific devices was impractical. On June 19, 2012, although in practice well before this, an official W3C recommendation was released that greatly expanded the capabilities of media types through media queries:
 
 > A media query consists of a media type and zero or more expressions that check for the conditions of particular media features. Among the media features that can be used in media queries are ‘width’, ‘height’, and ‘color’. By using media queries, presentations can be tailored to a specific range of output devices without changing the content itself.
 
@@ -477,16 +479,16 @@ In addition to max-width, media queries allow you to test for a broader range of
 
 #### Target Devices
 
-Before we write our own media queries we need to determine what screen sizes we plan to target. I'm going to make the assumption that our audience uses desktop computers/laptops, tablet devices, and smart phones, but not televisions or anything else for that matter. I'm making this assumption to give us something to work with, but you should check your Web logs!
+Before we write our media queries we need to determine what screen sizes we plan to target.
 
-To help you determine what devices and screen sizes are out there and being used, here are some references to guide you:
+The following references will help you understand what's out there and what's being used:
 
 - [StatCounter Global Stats][Stats]
 - [Tired of Hunting][]
 - [2012 Device Map][]
 - [A Simple Device Diagram for Responsive Design Planning][Device Diagram]
 
-Here are some common device dimensions:
+In general, here are the common device dimensions:
 
 - 320px (iPhone portrait, default)
 - 480px (iPhone landscape)
@@ -512,6 +514,8 @@ On the other hand I think it's good to start with something and redefine as cont
 
 Why don't we grab a few and begin.
 
+
+I'm going to make the assumption that our audience uses desktop computers/laptops, tablet devices, and smart phones, but not televisions or anything else for that matter. I'm making this assumption to give us something to work with, but you should check your Web logs!
 #### Breakpoints
 
 Based on [StatCounter Global Stats][Stats] for North America over the last three months, it looks like there are five sizes we should define. Rather than use device names let's use generic names like: xs (extra small), s (small), m (medium), l (large), and xl (extra large). FYI - The breakpoints we define here will serve as a starting point, we can always change numbers or add/remove sizes (xxs, xxl, etc.) when user needs dictate that we should.
