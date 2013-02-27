@@ -56,18 +56,18 @@ Table of Contents
     - Mobylette
     - Mobvious
   - II. Responsive Web Design
-    - Flexible Grids
-    - Using Susy
-    - Media Queries
-    - Target Devices
-    - Breakpoints
-    - Em's and Media Queries
-    - Susy Breakpoints
-    - Flexible Media
-    - Conditional Loading
+    - 1.Flexible Grids
+      - Using Susy
+    - 2. Flexible Media
+    - 3. Media Queries
+      - Target Devices
+      - Breakpoints
+      - Em's and Media Queries
+      - Susy Breakpoints
   - III. A Hybrid Approach
     - File Structure
     - Susy-based Mobile RWD
+  - Conditional Loading
   - An Ajax Include Pattern
   - Using JavaScript
   - What We've Done

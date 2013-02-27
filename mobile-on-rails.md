@@ -275,7 +275,7 @@ Let's take a look at these three components one by one starting with flexible gr
 - [This Is Responsive][]
 - [Responsive Design][]
 
-### Flexible Grids
+### 1. Flexible Grids
 
 So the first component of Responsive Web Design is the "flexible, grid-based layout." What this means is a layout whose [grid][] dimensions change proportionately as a containing element, such as the screen size or viewport, changes. For example, if a pages major containing element width were 960 pixels relative to a typical desktop screen, maybe as the screen real estate decreased on a tablet it would make sense to decrease the width to 768 pixels. In other words, proportionally respond to the context in which the page is drawn.
 
@@ -304,11 +304,11 @@ In our CSS we then write:
 
 Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all grid elements including converting the 960px in .container to a percentage, and you have a responsive grid that will resize itself depending upon the context it renders on.
 
-### Using Susy
+#### Using Susy
 
 As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you and save time. There is a pretty comprehensive list of [grid systems][] in the appendix, but my preference is to use [Susy][] since it is a plug-in of Compass, which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in.
 
-#### Installation
+##### Installation
 
 Before we begin I'm going to assume that you have removed or disabled our previous work with user agent sniffing. If so proceed. Installation is pretty straightforward:
 
@@ -335,7 +335,7 @@ app/assets/stylesheets/application.scss
 
 Don't forget to restart your server, and wallah! You have a powerful responsive grid system ready for implementation in your project.
 
-#### Implementation
+##### Implementation
 
 Within our application layout we will implement our Susy responsive grid as follows:
 
@@ -384,7 +384,7 @@ NOTE: We remove the following styles from the body tag since we are now replacin
       margin: 0 auto
       width: 960px
 
-#### Basic Usage
+##### Basic Usage
 
 Using Susy is also pretty straightforward. Essentially it is a mixin scheme that applies a specified amount of columns to an element, based on the total columns available. If you recall in the previous Flexible Grids section, in our example we used percentages to define our widths:
 
@@ -438,11 +438,19 @@ And there it is in a nutshell! To really learn how to use Susy – it really pac
 - [Responsive Grids With Susy][Susy Grids]
 - [Off-canvas layout with Susy][Off-canvas]
 
-### Media Queries
+### 2. Flexible Media
+
+Now that we have a flexible grid, it's time to look at Ethan's second ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a 320px wide screen. It just doesn't make any sense.
+
+
+
+
+
+### 3. Media Queries
 
 Now that we have a Susy flexible grid, it's time to look at Ethan's second ingredient in RWD; media queries. To understand them let's take a little look at their history.
 
-#### Media Types
+##### Media Types
 
 Media dependent stylesheets were first specified in the HTML4 and CSS2 W3C recommendations and were designed to allow developers to target specific device types. The recognized [media types][] were: all, braille, embossed, handheld, print, projection, screen, speech, tty, tv (CSS2).
 
@@ -453,7 +461,7 @@ Media types could be targeted via @media or @import rules, or in the HTML \<link
 
 The problem with this specification though was inconsistent implementation across mobile browsers, plus the list of media types did not accommodate the wide range of screen sizes. Could you imagine how useless it would be today? And that's where media queries came in and saved the day.
 
-#### Media Queries
+##### @media
 
 With so many screen sizes and new devices popping up left and right, using media type alone to serve up styles for specific devices would be impractical. Media queries, on the other hand, do not solely rely on just a handful of predefined types. Media queries are much more flexible in that they allow you to test a media type with a logical expression that evaluates to true or false. For example:
 
@@ -463,7 +471,7 @@ In this case, the media type All (implied by shorthand syntax) is matched agains
 
 Unlike the old specification, media queries allow you to move beyond a finite set of media types, and test for a broader range of conditions including minimum and maximum widths, heights, screen orientation, [and more][Media Queries]. Perfect for serving up device sensitive styles and content to a wide range of screen sizes and device capabilities.
 
-### Target Devices
+#### Target Devices
 
 Before we write our own media queries we need to determine what screen sizes we plan to target. I'm going to make the assumption that our audience uses desktop computers/laptops, tablet devices, and smart phones, but not televisions or anything else for that matter to browse the web. I'm making this assumption to give us something to work with, but you should check your Web logs!
 
@@ -500,7 +508,7 @@ On the other hand I think it's good to start with something and redefine as cont
 
 Why don't we grab a few and begin.
 
-### Breakpoints
+#### Breakpoints
 
 Based on [StatCounter Global Stats][Stats] for North America over the last three months, it looks like there are five sizes we should define. Rather than use device names let's use generic names like: xs (extra small), s (small), m (medium), l (large), and xl (extra large). FYI - The breakpoints we define here will serve as a starting point, we can always change numbers or add/remove sizes (xxs, xxl, etc.) when user needs dictate that we should.
 
@@ -568,7 +576,7 @@ There's a whole heck of a lot more you can do with media queries. Here are some 
 - [Responsive Web Design in Sass: Using Media Queries in Sass 3.2][Sass Media Queries]
 - [Retina Display Media Query][Retina Media Queries]
 
-### Em's and Media Queries
+#### Em's and Media Queries
 
 You might have noticed that our responsive grid uses em's, and our media queries are using px's. In fact all over the web in various media query articles you'll see the use of px's, but this in fact is not the best practice. Em's-based media queries are actually a better idea and here's why:
 
@@ -585,7 +593,7 @@ That's a lot to digest, and as usual I'm going to point you to some references t
 
 I've gone ahead and [converted the above breakpoints][converted breakpoints] to em's for you by dividing each breakpoint by 16: assumption being that the default screen size is 16px and therefore 1em = 16px. They are already part of your base styles if you are following along with the book.
 
-### Susy Breakpoints
+#### Susy Breakpoints
 
 One of the great features of Susy is that breakpoints are baked right in. We could use the breakpoints we created above, but why not take advantage of the mathematical capabilities of Susy and also be consistent with our grid system at the same time.
 
@@ -604,7 +612,6 @@ Here's how we will use Susy breakpoints in our project. First, let's define our 
     $break10:           10;
     $break11:           11;
     $break12:           12;
-
 
 We're starting from a total column size of 4 instead of 12 since we are approaching development from a mobile first perspective. Then I add breakpoints from 5 to 12 columns. I do this because I want to test which breakpoints are best for the devices I'm targeting. To identify the breakpoint being utilized I set up my styles as follows:
 
@@ -785,19 +792,6 @@ If you're not too sure how this is all working, in addition to the Susy's own [r
 
 [Susy and Media Queries (guide for Muppets)][Muppets]
 
-### Flexible Media
-
-Now that we have a flexible grid and em-based media queries, it's time to look at Ethan's second ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a 320px wide screen. It just doesn't make any sense.
-
-
-
-
-
-### Conditional Loading
-
-
-
-
 III. A Hybrid Approach
 ----------------------
 
@@ -892,6 +886,11 @@ If a false false squeaks by, application.scss is coded to handle the < 6 columns
 
 And there lies the crux of using a hybrid approach, optimizing for smaller screen sizes.
 
+Conditional Loading
+-------------------
+
+
+
 An Ajax Include Pattern
 -----------------------
 
@@ -902,9 +901,7 @@ Using JavaScript
 
 Feature Detection
 
-
 [The Essentials of Zepto.js][Zepto]
-
 
 What We've Done
 ---------------
