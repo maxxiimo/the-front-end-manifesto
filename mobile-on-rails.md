@@ -582,13 +582,13 @@ There's a whole heck of a lot more you can do with media queries. Here are some 
 
 #### Em's and Media Queries
 
-You might have noticed that our responsive grid uses em's, and our media queries are using px's. In fact all over the web in various media query articles you'll see the use of px's, but this in fact is not the best practice. Em's-based media queries are actually a better idea and here's why:
+You might have noticed that our responsive grid uses em's in this definitions, and our media queries are using pixels. In fact all over the web in various media query articles you'll see the use of pixels, but this in fact is not the best practice. Em's-based media queries are actually a better idea and here's why.
 
-Let's say your user – when viewing your project on their desktop – increases the base font size of their browser by hitting CTRL + several times (maybe they're a baby boomer and have trouble seeing at the default font size). Imagine that the content they are reading is contained in a \<div> using px's to define width, well when the user increases the base font size nothing will happen with its containing div, the width will remain the same, and those lines of text they are reading will be squeezed into the same \<div> – that smaller lines of text once harmoniously fit into.
+Let's say a user – when viewing your project on their desktop – increases the base font size of their browser by hitting CTRL + several times (maybe they're a baby boomer and have trouble seeing at the default font size). Imagine that the content they are reading is contained in a \<div> using pixels to define it's width, well when the user increases the base font size nothing will happen with its containing div, the width will remain the same, and those lines of text they are reading will be squeezed into the same \<div> that smaller lines of text once harmoniously fit into.
 
-The bottom line, it might not look so good. If that same \<div>'s width had been defined with em's, it's width would have increased proportionally with the base font size increase. In other words, the amount of text per line would not dramatically alter the contents readability.
+The bottom line, it might not look so good. If that same \<div>'s width had been defined with em's, it's width would have increased proportional to the base font size increase. In other words, the amount of text per line would not dramatically alter the contents readability.
 
-If we use em's for our breakpoints, the trigger for the breakpoint would also take into account the base font size since it is based on em's, and even though the actual screen size has not changed, serving a layout on their desktop designed for smaller devices might make better sense when a larger base font is used.
+If we use em's for our breakpoints, the trigger for the breakpoint would also take into account the base font size since it is based on em's, and even though the actual screen size has not changed, responding to the changing font size and serving a layout on their desktop that was designed for smaller devices might make better sense than serving the desktop version.
 
 That's a lot to digest, and as usual I'm going to point you to some references that will help you understand the concept better:
 
