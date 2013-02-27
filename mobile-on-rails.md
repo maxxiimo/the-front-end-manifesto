@@ -582,11 +582,11 @@ There's a whole heck of a lot more you can do with media queries. Here are some 
 
 #### Em's and Media Queries
 
-You might have noticed that our responsive grid uses em's in this definitions, and our media queries are using pixels. In fact all over the web in various media query articles you'll see the use of pixels, but this in fact is not the best practice. Em's-based media queries are actually a better idea and here's why.
+You might have noticed that our responsive grid uses em's in it's definitions, and our media queries are using pixels. In fact all over the web in various media query articles you'll see the use of pixels, but this in fact is not the best practice. Em's-based media queries are actually a better idea and here's why.
 
-Let's say a user – when viewing your project on their desktop – increases the base font size of their browser by hitting CTRL + several times (maybe they have trouble seeing at the default font size). Imagine that the content they are reading is split into three columns, which makes sense on a desktop, and for smaller screen sizes changes to a single column based on breakpoints. When the user zooms in the pixel-based breakpoints will have no effect on the layout since the pixel widths remain the same, And that three column layout that used to harmoniously fit into a desktop screen no longer fits.
+Let's say a user – when viewing your project on their desktop – increases the base font size of their browser by hitting CTRL + several times (maybe they have trouble seeing at the default font size). Imagine that the content they are reading is split into three columns, which makes sense on a desktop, and for smaller screen sizes changes to a single column based on breakpoints. When the user zooms in,, the pixel-based breakpoints will have no affect on the layout since the pixel widths remain the same, and that three column layout that used to fit harmoniously into a desktop screen no longer does.
 
-The bottom line, it might not look so good. If that same breakpoints had been defined with em's, the layout would have responded to the base font size increase. In other words, a three column layout would have changed to a single column layout even though the screen size remained the same, which might make better sense than serving the desktop version when zoomed in.
+The bottom line, it might not look so good. If those same breakpoints had been defined with em's, the layout would have responded to the base font size increase. In other words, a three column layout would have changed to a single column layout even though the screen size remained the same, which might make better sense than serving the desktop version when zoomed in.
 
 That's a lot to digest, and as usual I'm going to point you to some references that will help you understand the concept better:
 
