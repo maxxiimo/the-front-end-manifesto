@@ -748,9 +748,9 @@ I then remove the unneeded breakpoints which leaves the following Susy definitio
       +at-breakpoint($break12)
         +susy-grid-background
 
-Now when you need to apply a particular style to a specific screen sizes use these breakpoints. Here is a practical example using the Flexible Grids section example we've been working with.
+Now when you need to apply a particular style to a specific screen size use these breakpoints.
 
-Since our four column base setting is designed for smaller screen sizes, we might want to stack the .left-side and .right-side div's (rather than have them appear cramped side-by-side), but for the remaining three breakpoints we will apply grid widths that will result in a 50-50 side-by-side placement. For illustration purposes let's color .left-side and .right-side red and blue, but only for our two largest screen sizes: ipad and desktops, i.e. $break9 and $break12.
+Here is a practical example using the Flexible Grids section example we've been working with. Since our four column base setting is designed for smaller screen sizes, we might want to stack the .left-side and .right-side div's (rather than have them appear cramped side-by-side), but for the remaining three breakpoints we will apply grid widths that will result in a 50-50 side-by-side placement. For illustration purposes let's color .left-side and .right-side red and blue, but only for our two largest screen sizes: ipad and desktops, i.e. $break9 and $break12.
 
     .left-side
       +span-columns(4 omega, 4)
