@@ -452,7 +452,7 @@ Now that we have a Susy flexible grid, it's time to look at Ethan's second ingre
 
 ##### Media Types
 
-Media dependent stylesheets were first specified in the HTML4 and CSS2 W3C recommendations and were designed to allow developers to target specific device types. The recognized [media types][] were: all, braille, embossed, handheld, print, projection, screen, speech, tty, tv (CSS2).
+Media dependent stylesheets were first specified in the HTML4 and CSS2 W3C recommendations, and were designed to allow developers to target specific device types through [media types][]. The recognized media types were: all, braille, embossed, handheld, print, projection, screen, speech, tty, tv.
 
 Media types could be targeted via @media or @import rules, or in the HTML \<link> element. For example:
 
@@ -958,7 +958,7 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [.container]:           http://susy.oddbird.net/guides/reference/#ref-basic-mixins
 [Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
 [Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
-[media types]:          http://www.w3.org/TR/CSS21/media.html
+[media types]:          http://www.w3.org/TR/CSS21/media.html#media-types
 [Media Queries]:        http://www.w3.org/TR/css3-mediaqueries/#media0
 [Stats]:                http://gs.statcounter.com/
 [Tired of Hunting]:     http://www.websitedimensions.com/
