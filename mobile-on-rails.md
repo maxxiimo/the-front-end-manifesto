@@ -782,7 +782,7 @@ What did we do? For the 4 column case we told Susy to span .left-side and .right
 
     +span-columns(4 omega, 4)
 
-Since they are floated elements, doing so stacks .left-side and .right-side one on top of the other. For the remaining cases we told Susy to float the elements side-by-side equally, except in the case of the nine column layout. In that case one side is slightly bigger than the other. We can override this if we want to. Finally starting at the 9 column breakpoint, we apply our background color which also trickle down to the 12 column layout.
+Since they are floated elements, doing so stacks .left-side and .right-side one on top of the other. For the remaining cases we told Susy to float the elements side-by-side equally, except in the case of the 9 column layout. In that case one side is slightly bigger than the other. We can override this if we want to. Finally starting at the 9 column breakpoint, we apply our background color which also trickles down to the 12 column layout.
 
 If you're not too sure how this is all working, in addition to the Susy's own [reference][source] (and the articles I recommend above), the following discussion hits the nail right on the head when it comes to understanding how to use Susy breakpoints:
 
