@@ -595,7 +595,7 @@ That's a lot to digest, and as usual I'm going to point you to some references t
 - [The EMs have it: Proportional Media Queries FTW!][EMs have it]
 - [How we learned to leave default font-size alone and embrace the em][Embrace the em]
 
-I've gone ahead and [converted the above breakpoints][converted breakpoints] to em's for you by dividing each breakpoint by 16: assumption being that the default screen size is 16px and therefore 1em = 16px. They are already part of your base styles if you are following along with the book.
+NOTE: You can convert our pixel-based breakpoints to em's by dividing each breakpoint by 16: assumption being that the default screen size is 16px and therefore 1em = 16px.
 
 #### Susy Breakpoints
 
@@ -978,7 +978,6 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [Retina Media Queries]: http://css-tricks.com/snippets/css/retina-display-media-query/
 [EMs have it]:                     http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
 [Embrace the em]:     http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
-[converted breakpoints]: https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
 [Muppets]:                     https://groups.google.com/d/topic/compass-users/oXHAtZE4euI/discussion
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
