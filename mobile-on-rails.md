@@ -597,9 +597,9 @@ NOTE: You can convert our pixel-based breakpoints to em's by dividing each break
 
 #### Susy Breakpoints
 
-One of the great features of Susy is that breakpoints are baked right in. We could use the breakpoints we created above, but why not take advantage of the mathematical capabilities of Susy and also be consistent with our grid system at the same time.
+One of the great features of Susy is that breakpoints are baked right in. We could use the breakpoints we created above, but why not take advantage of the mathematical capabilities of Susy and also be consistent with our grid system at the same time? Sounds like a good idea, and here's how we will use Susy breakpoints in our project.
 
-Here's how we will use Susy breakpoints in our project. First, let's define our Susy flexible grid as follows:
+First, let's redefine our Susy flexible grid as follows:
 
     $total-columns:     4;
     $column-width:      4em;
@@ -695,7 +695,7 @@ This produces the following @media rules:
         *omitted*
       }
 
-As you can see it is very similar to what we created manually except Susy calculates all the breakpoints based on the grid set up and following formula:
+As you can see it is very similar to what we created manually except Susy calculates all the breakpoints based on the grid set up and the following formula:
 
 ($total-columns x $column-width) + (($total-columns - 1) x $gutter-width)
 (12 x 4em) + ((12 - 1) x 1em) = 59em
@@ -721,7 +721,7 @@ After reviewing the grid on several different devices I settle on the following 
 - iPad: 9 columns, 44em x 16px = 704px
 - Desktop: 12 columns, 59em x 16px = 944px
 
-...which leaves the following Susy definitions:
+I then removed the unneeded breakpoints which leaves the following Susy definition:
 
     $total-columns:     4;
     $column-width:      4em;
@@ -747,48 +747,41 @@ After reviewing the grid on several different devices I settle on the following 
     +at-breakpoint($break12)
       +susy-grid-background
 
-Now when you need to apply a particular style that is dependent on specific screen sizes use these breakpoints. In our example from before:
+Now when you need to apply a particular style to a specific screen sizes use these breakpoints. Here is a practical example using the Flexible Grids section example we've been working with.
 
-    %body
-      .container
-        .left-side
-        .right-side
-
-    .left-side
-      +span-columns(6, 12)
-
-    .right-side
-      +span-columns(6 omega, 12)
-
-With the new breakpoints set up we can add styles that will only take affect when the viewport reaches the defined breakpoint.
-
-Here is a practical example. Our four column base setting is designed for smaller screen sizes so we might want to stack the .left-side and .right-side div's (rather than have them appear cramped side-by-side), but for the remaining three breakpoints we will apply grid widths that will result in a 50-50 side-by-side placement. For illustration purposes let's color .left-side and .right-side red and blue, but only for our two largest screen sizes: ipad and desktops, i.e. $break9 and $break12.
+Since our four column base setting is designed for smaller screen sizes, we might want to stack the .left-side and .right-side div's (rather than have them appear cramped side-by-side), but for the remaining three breakpoints we will apply grid widths that will result in a 50-50 side-by-side placement. For illustration purposes let's color .left-side and .right-side red and blue, but only for our two largest screen sizes: ipad and desktops, i.e. $break9 and $break12.
 
     .left-side
       +span-columns(4 omega, 4)
 
       +at-breakpoint($break6)
-        +span-columns(6, $break6)
+        +span-columns(3, $break6)
 
       +at-breakpoint($break9)
-        +span-columns(9, $break9)
+        +span-columns(4, $break9)
         background-color: red
 
       +at-breakpoint($break12)
-        +span-columns(12, $break12)
+        +span-columns(6, $break12)
 
     .right-side
       +span-columns(4 omega, 4)
 
       +at-breakpoint($break6)
-        +span-columns(6 omega, $break6)
+        +span-columns(3 omega, $break6)
 
       +at-breakpoint($break9)
-        +span-columns(9 omega, $break9)
+        +span-columns(5 omega, $break9)
         background-color: blue
 
       +at-breakpoint($break12)
-        +span-columns(12 omega, $break12)
+        +span-columns(6 omega, $break12)
+
+What did we do? For the 4 column case we told Susy to span .left-side and .right-side across 4 of the available 4 columns.
+
+    +span-columns(4 omega, 4)
+
+Since they are floated elements, doing so stacks .left-side and .right-side one on top of the other. For the remaining cases we told Susy to float the elements side-by-side equally, except in the case of the nine column layout. In that case one side is slightly bigger than the other. We can override this if we want to. Finally starting at the 9 column breakpoint, we apply our background color which also trickle down to the 12 column layout.
 
 If you're not too sure how this is all working, in addition to the Susy's own [reference][source] (and the articles I recommend above), the following discussion hits the nail right on the head when it comes to understanding how to use Susy breakpoints:
 
