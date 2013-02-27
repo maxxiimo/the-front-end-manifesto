@@ -695,12 +695,12 @@ This produces the following @media rules:
         *omitted*
       }
 
-As you can see it is very similar to what we created manually except Susy calculates all the breakpoints based on the grid set up and the following formula:
+As you can see it is very similar to what we created manually except Susy calculates all the breakpoints based on the grid we defined and the following formula:
 
 ($total-columns x $column-width) + (($total-columns - 1) x $gutter-width)
 (12 x 4em) + ((12 - 1) x 1em) = 59em
 
-...and remember that since we're using a base font size of 16px, if you multiply the em's value by that number you will get the equivalent in px:
+...and remember that since we're using a base font size of 16px, if you multiply the em's value by that number you will get the equivalent breakpoints in px:
 
 -  2 columns:  9em x 16px = 144px
 -  3 columns: 14em x 16px = 224px
@@ -716,12 +716,12 @@ As you can see it is very similar to what we created manually except Susy calcul
 
 After reviewing the grid on several different devices I settle on the following breakpoints:
 
-- Samsung, iPhone: 4 columns, 19em x 16px = 304px
-- Small Tablet: 6 columns, 29em x 16px = 464px
-- iPad: 9 columns, 44em x 16px = 704px
-- Desktop: 12 columns, 59em x 16px = 944px
+- 4 columns, 19em x 16px = 304px (Samsung, iPhone)
+- 6 columns, 29em x 16px = 464px (Small Tablet)
+- 9 columns, 44em x 16px = 704px (iPad)
+- 12 columns, 59em x 16px = 944px (Desktop)
 
-I then removed the unneeded breakpoints which leaves the following Susy definition:
+I then remove the unneeded breakpoints which leaves the following Susy definition:
 
     $total-columns:     4;
     $column-width:      4em;
