@@ -557,7 +557,7 @@ So what do our brand-new breakpoints look like?
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
           @content
 
-How do you use them? First we'll place them in a sass partial called [_media_queries_px.sass][px media querries], and then import them into our application.scss file (this will be included by default in your base styles):
+How do you use them? First we'll place them in a sass partial called [_media_queries.sass][], and then import them into our application.scss file (this will be included by default in your base styles):
 
     /* MIXINS
       ============================================================================ */
@@ -972,7 +972,7 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
 [breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
 [Happy Cog]:            http://www.netmagazine.com/news/browser-screen-resolution-stats-rile-devs-121897
-[px media querries]:    https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
+[_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
 [Media queries]:        http://alpha.responsivedesign.is/develop/media-queries
 [Sass Media Queries]:   http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
 [Retina Media Queries]: http://css-tricks.com/snippets/css/retina-display-media-query/
