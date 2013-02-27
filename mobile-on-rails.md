@@ -452,16 +452,14 @@ Now that we have a Susy flexible grid, it's time to look at Ethan's second ingre
 
 ##### Media Types
 
-Media dependent stylesheets were first specified in the HTML4 and CSS2 W3C recommendations, and were designed to allow developers to target specific device types through [media types][]. The recognized media types were: all, braille, embossed, handheld, print, projection, screen, speech, tty, tv.
-
-Media types could be targeted via @media or @import rules, or in the HTML \<link> element. For example:
+Media dependent stylesheets were first specified in the HTML4 and CSS2 W3C recommendations, and were designed to allow developers to target specific device types through [media types][]: all, braille, embossed, handheld, print, projection, screen, speech, tty, tv. The idea was then that devices could be targeted using these media types via @media or @import rules, or in the HTML \<link> element. For example:
 
     %link{:href => "screen.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "print.css", :media => "print", :rel => "stylesheet", :type => "text/css"}
 
-The problem with this specification though was inconsistent implementation across mobile browsers, plus the list of media types did not accommodate the wide range of screen sizes. Could you imagine how useless it would be today? And that's where media queries came in and saved the day.
+The problem with this specification though was inconsistent implementation across mobile browsers, plus the list of media types did not accommodate the wide range of screen sizes. Could you imagine how useless it would be today? And that's essentially where media queries come in and save the day.
 
-##### @media
+##### Media Queries to the Rescue
 
 With so many screen sizes and new devices popping up left and right, using media type alone to serve up styles for specific devices would be impractical. Media queries, on the other hand, do not solely rely on just a handful of predefined types. Media queries are much more flexible in that they allow you to test a media type with a logical expression that evaluates to true or false. For example:
 
