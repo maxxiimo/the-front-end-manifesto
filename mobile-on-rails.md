@@ -386,12 +386,12 @@ NOTE: We remove the following styles from the body tag since we are now replacin
 
 #### Basic Usage
 
-If you recall in the previous Flexible Grids section, in our example we used percentages to define our widths:
+Using Susy is also pretty straightforward. Essentially it is a mixin scheme that applies a specified amount of columns to an element, based on the total columns available. If you recall in the previous Flexible Grids section, in our example we used percentages to define our widths:
 
     .left-side, .right-side
       width: 50%
 
-With Susy instead of using percentages directly, we allow Susy to do the calculations by defining our widths through the Susy +span-columns() mixin as follows:
+With Susy instead of using percentages directly, we allow Susy to do the calculations by defining our widths through the Susy +span-columns() mixin:
 
     .left-side
       +span-columns(6, 12)
@@ -433,7 +433,7 @@ What did we do? Since we set the total number of columns in our Susy grid to 12:
       width: 49.1525%;
     }
 
-To really learn how to use Susy – it really packs a lot more punch – the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
+And there it is in a nutshell! To really learn how to use Susy – it really packs a lot more punch – the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
 
 - [Responsive Grids With Susy][Susy Grids]
 - [Off-canvas layout with Susy][Off-canvas]
