@@ -584,11 +584,9 @@ There's a whole heck of a lot more you can do with media queries. Here are some 
 
 You might have noticed that our responsive grid uses em's in this definitions, and our media queries are using pixels. In fact all over the web in various media query articles you'll see the use of pixels, but this in fact is not the best practice. Em's-based media queries are actually a better idea and here's why.
 
-Let's say a user – when viewing your project on their desktop – increases the base font size of their browser by hitting CTRL + several times (maybe they're a baby boomer and have trouble seeing at the default font size). Imagine that the content they are reading is contained in a \<div> using pixels to define it's width, well when the user increases the base font size nothing will happen with its containing div, the width will remain the same, and those lines of text they are reading will be squeezed into the same \<div> that smaller lines of text once harmoniously fit into.
+Let's say a user – when viewing your project on their desktop – increases the base font size of their browser by hitting CTRL + several times (maybe they have trouble seeing at the default font size). Imagine that the content they are reading is split into three columns, which makes sense on a desktop, and for smaller screen sizes changes to a single column based on breakpoints. When the user zooms in the pixel-based breakpoints will have no effect on the layout since the pixel widths remain the same, And that three column layout that used to harmoniously fit into a desktop screen no longer fits.
 
-The bottom line, it might not look so good. If that same \<div>'s width had been defined with em's, it's width would have increased proportional to the base font size increase. In other words, the amount of text per line would not dramatically alter the contents readability.
-
-If we use em's for our breakpoints, the trigger for the breakpoint would also take into account the base font size since it is based on em's, and even though the actual screen size has not changed, responding to the changing font size and serving a layout on their desktop that was designed for smaller devices might make better sense than serving the desktop version.
+The bottom line, it might not look so good. If that same breakpoints had been defined with em's, the layout would have responded to the base font size increase. In other words, a three column layout would have changed to a single column layout even though the screen size remained the same, which might make better sense than serving the desktop version when zoomed in.
 
 That's a lot to digest, and as usual I'm going to point you to some references that will help you understand the concept better:
 
