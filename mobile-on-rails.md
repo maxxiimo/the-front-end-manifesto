@@ -701,7 +701,7 @@ As you can see it is very similar to what we created manually except Susy calcul
 
 (12 x 4em) + ((12 - 1) x 1em) = 59em
 
-...and remember that since we're using a base font size of 16px, if you multiply the em's value by that number you will get the equivalent breakpoints in px:
+...and remember that since we're using a base font size of 16px, if you multiply the em's value by that number you will get the equivalent breakpoints in pixels:
 
 -  2 columns:  9em x 16px = 144px
 -  3 columns: 14em x 16px = 224px
@@ -735,18 +735,18 @@ I then remove the unneeded breakpoints which leaves the following Susy definitio
 
 ...and in our styles:
 
-  .container
-    +container($total-columns, $break6, $break9, $break12)
-    +susy-grid-background
-
-    +at-breakpoint($break6)
+    .container
+      +container($total-columns, $break6, $break9, $break12)
       +susy-grid-background
 
-    +at-breakpoint($break9)
-      +susy-grid-background
+      +at-breakpoint($break6)
+        +susy-grid-background
 
-    +at-breakpoint($break12)
-      +susy-grid-background
+      +at-breakpoint($break9)
+        +susy-grid-background
+
+      +at-breakpoint($break12)
+        +susy-grid-background
 
 Now when you need to apply a particular style to a specific screen sizes use these breakpoints. Here is a practical example using the Flexible Grids section example we've been working with.
 
