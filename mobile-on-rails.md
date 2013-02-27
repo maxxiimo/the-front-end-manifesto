@@ -310,7 +310,7 @@ As you can imagine there's quite a lot of math involved, so rather than calculat
 
 #### Installation
 
-Before we begin I'm going to assume that you have removed or disabled our previous work with user agent sniffing. If so, installation is pretty straightforward:
+Before we begin I'm going to assume that you have removed or disabled our previous work with user agent sniffing. If so proceed. Installation is pretty straightforward:
 
 *Step 1:* Add the following to /config/compass.rb:
 
@@ -333,7 +333,7 @@ app/assets/stylesheets/application.scss
     @import "desktop/layout";
     // @import "grids";
 
-Don't forget to restart your server, and wallah! You have a pretty powerful responsive grid system ready for implementation in your project.
+Don't forget to restart your server, and wallah! You have a powerful responsive grid system ready for implementation in your project.
 
 #### Implementation
 
@@ -354,6 +354,12 @@ app/assets/stylesheets/application.scss
     $column-width:      4em
     $gutter-width:      1em
     $grid-padding:      $gutter-width
+
+This tells Susy what the basic characteristics of your flexible grid are. In this case the grid spans 12 columns across, each column has a width of 4em with a gutter and grid padding of 1em. To calculate the total width of your grid including its padding use the following formula:
+
+($total-columns x $column-width) + (($total-columns - 1) x $gutter-width) + ($grid-padding x 2)
+
+(12 x 4em) + ((12 - 1) x 1em) + (1em x 2) = 61em
 
 *Step 2*: Create an [outer grid-containing element][.container] in application.html.haml called .container:
 
