@@ -832,7 +832,7 @@ What you see is our project as it is organized up until now. To understand how t
 
 **(2)** Partials common to both **mobile.scss** and **application.scss**.
 
-**(3)** All mobile related views are organized under the "mobile" folder.
+**(3)** All mobile related views are organized under the "mobile" folder. Desktop views are organized under the default Rails file structure.
 
 **(4)** When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the mobile folder. When those views are not available in the mobile folder, through template inheritance, Rails will look for the view with the same name in its regular default location.
 
