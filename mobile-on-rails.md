@@ -826,25 +826,30 @@ What you see is our project as it is organized up until now. To understand how t
 - **mobile.scss** which organizes and pulls together all the partials under the mobile folder.
 - **application.scss** which organizes and pulls together all the partials under the desktop folder.
 
-**mobile.scss** is called through the mobile version of **application.html.haml** (mobile/layout/application.html.haml) – served only when Mobvious detects that the device is a mobile device.
+**mobile.scss** is called through the mobile version of **application.html.haml** (mobile/layouts/application.html.haml) – served only when Mobvious detects that the device is a mobile device.
 
 **application.scss** is served in all other cases.
 
 **(2)** Partials common to both **mobile.scss** and **application.scss**.
 
-**(3)** All mobile related views are organized under the "mobile" folder. Desktop views are organized under the default Rails file structure. For example, the _logo.html.haml partial is common to both website versions, so there is no reason repeat it.
+**(3)** All mobile related views are organized under the "mobile" folder. Desktop views are organized under the default Rails file structure.
 
-**(4)** When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the mobile folder. When those views are not available in the mobile folder, through template inheritance, Rails will look for the view with the same name in its regular default location.
-
-EXAMPLE: In our file structure under the views/mobile/shared folder, _footer.html.haml is the only file with a display difference between the mobile and desktop versions of our site, therefore it is the only file we need to add the mobile shared folder. We can use the same logo, navigation, and social links files found in the views/shared folder between both versions of our site.
-
-So what does this mean? It means that our second set of Susy-based mobile responsive web design has a clear home to live in, and will be served only when our user agent detection scheme has determined that a device is mobile.
+**(4)** When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the mobile folder. When those views are not available in the mobile folder, through template inheritance, Rails will look for the view with the same name in its regular default location. For example, the _logo.html.haml partial is common to both website versions, so there is no reason repeat it.
 
 ### Susy-based Mobile RWD
 
-In our previous implementation of Susy breakpoints we defined the following:
+Now that we have reviewed where everything belongs, let's set up our mobile version of our website.
 
-    application.scss
+First, import Susy into the mobile version of your website:
+
+app/assets/stylesheets/mobile.scss
+
+    /* BASIC STRUCTURE
+      ============================================================================ */
+    @import "susy";
+    @import "mobile/layout";
+
+In our previous implementation of Susy breakpoints we defined the following in application.scss:
 
     // Susy Grid
 
@@ -857,9 +862,7 @@ In our previous implementation of Susy breakpoints we defined the following:
     $break9:            9;
     $break12:           12;
 
-To start our mobile implementation we will focus on only the first two break points as follows:
-
-    mobile.scss
+To start our mobile implementation we do the same in mobile.scss, but we will focus on only the first two breakpoints as follows:
 
     // Susy Grid
 
@@ -870,15 +873,33 @@ To start our mobile implementation we will focus on only the first two break poi
 
     $break6:            6;
 
-How will this work?
+Also,, create the outer grid-containing element in app/views/mobile/layouts/application.html.haml:
 
-It all starts with the question, "is the requests coming from a mobile device?"
+    %body
+      .container
+        = chromeframe
+        %header{:role => "banner"}
+          = render :partial => 'shared/logo'
+          = render :partial => 'shared/navigation'
+        #main{:role => "main"}
+          = yield
+        = render :partial => 'shared/footer'
+      = scripts
 
-If true mobile.scss will be served. mobile.scss is coded to optimally handle devices with column widths of < 6 columns (464px).
+...and add the corresponding CSS to app/assets/stylesheets/mobile/_layout.sass:
 
-If false application.scss will be served. application.scss is designed to take advantage of the greater capabilities of devices with > 9 columns (704px) screen widths.
+    .container
+      +container
 
-If a false false squeaks by, application.scss is coded to handle the < 6 columns cases as well – although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized.
+That's it! How will this work?
+
+It all starts with the question, "is the request coming from a mobile device?"
+
+If true, mobile.scss along with of the mobile version of application.html.haml will be served. mobile.scss is coded to optimally handle devices with column widths of < 6 columns (464px), and application.html.haml is coded with mobile in mind only. Compare the _head.html.haml files for both and you see that they are significantly different from one another. One draws from regular [HTML5 Boilerplate][] and the other from [Mobile Boilerplate] [].
+
+If false, application.scss will be served. application.scss is designed to take advantage of the greater capabilities of devices with > 9 columns (704px) screen widths.
+
+If a false false squeaks by, application.scss is coded to handle the < 6 columns cases as well (although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized).
 
 And there lies the crux of using a hybrid approach, optimizing for smaller screen sizes.
 
@@ -968,9 +989,11 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [Media queries]:        http://alpha.responsivedesign.is/develop/media-queries
 [Sass Media Queries]:   http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
 [Retina Media Queries]: http://css-tricks.com/snippets/css/retina-display-media-query/
-[EMs have it]:                     http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
-[Embrace the em]:     http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
-[Muppets]:                     https://groups.google.com/d/topic/compass-users/oXHAtZE4euI/discussion
+[EMs have it]:          http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
+[Embrace the em]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
+[Muppets]:              https://groups.google.com/d/topic/compass-users/oXHAtZE4euI/discussion
+[HTML5 Boilerplate]:    http://html5boilerplate.com/
+[Mobile Boilerplate]:   http://html5boilerplate.com/html5boilerplate.com/dist/mobile/
 [Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
 
