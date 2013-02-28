@@ -862,7 +862,7 @@ In our previous implementation of Susy breakpoints we defined the following in a
     $break9:            9;
     $break12:           12;
 
-To start our mobile implementation we do the same in mobile.scss, but we will focus on only the first two breakpoints as follows:
+To start our mobile implementation we do the same in mobile.scss, but will focus on only the first two breakpoints as follows:
 
     // Susy Grid
 
@@ -873,7 +873,7 @@ To start our mobile implementation we do the same in mobile.scss, but we will fo
 
     $break6:            6;
 
-Also,, create the outer grid-containing element in app/views/mobile/layouts/application.html.haml:
+Finally, create the outer grid-containing element in app/views/mobile/layouts/application.html.haml:
 
     %body
       .container
@@ -895,13 +895,17 @@ That's it! How will this work?
 
 It all starts with the question, "is the request coming from a mobile device?"
 
-If true, mobile.scss along with of the mobile version of application.html.haml will be served. mobile.scss is coded to optimally handle devices with column widths of < 6 columns (464px), and application.html.haml is coded with mobile in mind only. Compare the _head.html.haml files for both and you see that they are significantly different from one another. One draws from regular [HTML5 Boilerplate][] and the other from [Mobile Boilerplate] [].
+If true, mobile.scss along with of the mobile version of application.html.haml will be served.
 
-If false, application.scss will be served. application.scss is designed to take advantage of the greater capabilities of devices with > 9 columns (704px) screen widths.
+NOTE: mobile.scss is coded to optimally handle devices with column widths of < 6 columns (464px), and application.html.haml is coded with mobile in mind only. Compare the _head.html.haml files for both and you will see that they are significantly different from one another. One draws from regular [HTML5 Boilerplate][] and the other from [Mobile Boilerplate][].
 
-If a false false squeaks by, application.scss is coded to handle the < 6 columns cases as well (although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized).
+If false, application.scss along with of the mobile version of application.html.haml will be served.
 
-And there lies the crux of using a hybrid approach, optimizing for smaller screen sizes.
+NOTE: application.scss is designed to take advantage of the greater capabilities of devices with > 9 columns (704px) screen widths.
+
+If a false positive squeaks by, application.scss is coded to handle the < 6 columns cases as well (although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized).
+
+I personally really like this approach. To see how I have organized this in a live application, feel free to clone or poke around https://github.com/maxxiimo/viewthought.
 
 Conditional Loading
 -------------------
