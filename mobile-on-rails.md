@@ -795,15 +795,15 @@ III. A Hybrid Approach
 
 \- Ethan Marcotte, [Responsive Web Design][RWD Book], p.96
 
-...But what about a hybrid approach? What Ethan says here is true, things are happening so fast it could be difficult to keep up with the speed of change using User Agent Sniffing to deliver a mobile version of a website – some devices might not register as mobile and receive the desktop version of the website.
+But what about a hybrid approach? What Ethan says here is true, things are happening so fast it might be difficult to keep up with the speed of change using User Agent Sniffing to deliver different optimized mobile version of a website, plus some devices might not register as mobile and slip through the cracks and receive the desktop version of the website.
 
 On the other hand, a purely responsive web design may deliver too much bloat for smaller devices with lower connection speeds, higher latency, and smaller CPUs. On top of that, smaller devices may require a lot more tweaks between device capabilities (from dumb phones to smart phones), and require developers to contend with a greater amount of screen size increments found with smaller devices. All of these factors might be good reason to keep code organized separately, not just in a separate stylesheet or hidden and conditionally loaded elements, but as a separate system entirely.
 
-If we took this hybrid approach, we might do so by providing responsive web design specifically for small screen devices that register as mobile via our user agent detection scheme. These devices would not receive any of the bloat that may be associated to desktop and tablet versions of our website. We could also use the information available in user agent strings for even greater levels adaptation and tweaking.
+If we took this hybrid approach, we might do so by providing responsive web design for larger screens and tablets, and a responsive web design for small screen devices that register as mobile via our user agent detection scheme. The smaller devices then would not receive any of the bloat that may be associated to desktop and tablet versions of our website. We could also use the information available in user agent strings for even greater levels adaptation and tweaking.
 
-For non-mobile we can use a different responsive web design that provides a small screen responsive design backup for those devices the slip through the cracks.
+For small screen devices that slip through the cracks, our desktop version of the site could provide a small screen responsive design backup for those devices the slip through the cracks.
 
-Will this be too much work? That remains to be discovered, but if we should choose to use this type of approach here is how we would do it:
+Will this be too much work? That remains to be discovered, I personally don't think so, but if we should choose to use this type of approach here is how we would do it:
 
 1. Leave the User Agent Sniffing solution in place.
 
@@ -813,7 +813,7 @@ Will this be too much work? That remains to be discovered, but if we should choo
 
 ### File Structure
 
-To create a second Susy-based responsive web design specifically for small devices we are literally going to take all of the techniques we learned in the previous section, and repeat them for mobile. First let's understand where everything will belonged by revisiting the lay of the land, i.e. our file organization:
+To create a second Susy-based responsive web design specifically for small devices we are literally going to take all of the techniques we learned in the previous section, and repeat them for mobile. First let's understand where everything will belong by revisiting the lay of the land, i.e. our file organization:
 
 ![][file-structure]
 
