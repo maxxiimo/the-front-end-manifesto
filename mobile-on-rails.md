@@ -448,9 +448,7 @@ NOTE: You may have noticed the "max-with: 59em" property in .container. The reas
 
 Now that we have a flexible grid, it's time to look at Ethan's second ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a 320px wide screen. It just doesn't make any sense.
 
-
-
-
+COMING SOON
 
 ### 3. Media Queries
 
@@ -952,7 +950,7 @@ JavaScript Libraries:
 
   > enquire.js is a lightweight, pure javascript library (with no dependencies) for programmatically responding to media queries.
 
-- [Adapt.js - Adaptive CSS ][]
+- [Adapt.js - Adaptive CSS ][Adapt.js]
 
   > Adapt.js is a lightweight (848 bytes minified) JavaScript file that determines which CSS file to load before the browser renders a page. If the browser tilts or resizes, Adapt.js simply checks its width, and serves only the CSS that is needed, when it is needed.
 
@@ -1055,7 +1053,7 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [Conditional Content]:  http://adactio.com/journal/5414/
 [Callbacks]:            http://css-tricks.com/enquire-js-media-query-callbacks-in-javascript/
 [enquire.js]:           http://wicky.nillia.ms/enquire.js/
-[Adapt.JS]:             http://adapt.960.gs/
+[Adapt.js]:             http://adapt.960.gs/
 [Github Zepto]:         https://github.com/madrobby/zepto
 [Zepto.js]:             http://zeptojs.com/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
