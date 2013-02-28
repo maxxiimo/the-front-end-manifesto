@@ -980,9 +980,9 @@ I. User Agent Sniffing<br>
 II. Responsive Web Design<br>
 III. A Hybrid Approach
 
-We covered each method in detail and incorporated our work into our foundation code base, but with so many different approaches begs the question, which one do I use? Well, that depends. It depends on the project and it's needs.
+We covered each method in detail and incorporated our work into our foundation code base, but with so many different approaches begs the question, which one do I use? Well, that depends. It depends on the project and it's needs. What is important is that you now have options for a mobile foundation that can handle a variety of needs, depending on which one you choose to employ.
 
-What is important is that you now have options for a mobile foundation that can handle a variety of needs, depending on which one you choose to employ.
+We ended the chapter with a quick overview of JavaScript and mobile: media query polyfills, conditional loading, and ending with a very brief reference to Zepto, a minimalist JavaScript library.
 
 "Mobile on Rails" is the last chapter of "Section I - Setting up a Foundation". The three pillars of this foundation are our [foundation markup][Chapter 1], [foundation styles][Chapter 2], and with this chapter our mobile foundation.
 
