@@ -823,10 +823,10 @@ What you see is our project as it is organized up until now. To understand how t
 
 **(1)** There are two main stylesheets:
 
-- **mobile.scss** which organizes and pulls together all the partials under the mobile folder
-- **application.scss** which organizes and pulls together all the partials under the desktop folder
+- **mobile.scss** which organizes and pulls together all the partials under the mobile folder.
+- **application.scss** which organizes and pulls together all the partials under the desktop folder.
 
-**mobile.scss** is called through the mobile version of **application.html.haml** – served only when Mobvious detects that the device is a mobile device.
+**mobile.scss** is called through the mobile version of mobile/layout/**application.html.haml** – served only when Mobvious detects that the device is a mobile device.
 
 **application.scss** is served in all other cases.
 
