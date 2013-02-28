@@ -16,6 +16,10 @@ Mobile First
 
 Once upon a time ago when I worked for Fidelity Investments' FEB Design unit in Boston, we took an existing desktop application and turned it into a mobile app (pre-smartphone era). The result was a precise definition of the applications basic information architecture, no more no less. Several of my colleagues pointed this out to me, and used the mobile application to better architect the greater desktop application.
 
+Luke Wroblewski in his 2009 article "[Mobile First][LukeW]" echoes this exact same sentiment:
+
+> Mobile devices require software development teams to focus on only the most important data and actions in an application. There simply isn't room in a 320 by 480 pixel screen for extraneous, unnecessary elements. You have to prioritize.
+
 As an Information Architect with this experience, the [Mobile First][] design paradigm makes sense to me for information architecting alone, but given the large and increasing number of mobile users out there, it is an approach that you as a front end developer should consider adopting when building any application. In the very least, DO NOT leave mobile design as an afterthought.
 
 Throughout the rest of this book I will take the Mobile First approach.
@@ -258,7 +262,7 @@ If you prefer to organize your mobile views outside of the regular app/views pat
 II. Responsive Web Design
 -------------------------
 
-User agent sniffing is awesome, but what about in projects where it's just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design (RWD). Responsive Web Design allows for pages to adapt to different screen sizes in a manner that makes sense for the device the page renders on, whether that is on a mobile device or on the desktop.
+User agent sniffing is awesome, but what about in projects where it's just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design (RWD). Responsive Web Design allows for pages to adapt to different screen sizes in a manner that makes sense for the device the page renders on, whether that is on a mobile device, the desktop, or devices yet to be introduced to the market.
 
 Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 A List Apart article, "[Responsive Web Design][RWD]", and in his [book][RWD Book] he goes on to explain:
 
@@ -437,6 +441,8 @@ And there it is in a nutshell! To really learn how to use Susy – it really pac
 
 - [Responsive Grids With Susy][Susy Grids]
 - [Off-canvas layout with Susy][Off-canvas]
+
+NOTE: You may have noticed the "max-with: 59em" property in .container. The reason this is here is to constrain the maximum width in the largest of screens, while maintaining flexibility within this limit. Doing so ensures that pages do not completely span the widths of very large screens and thereby reduce readability. This setting can be overridden in Susy.
 
 ### 2. Flexible Media
 
@@ -797,7 +803,7 @@ III. A Hybrid Approach
 
 But what about a hybrid approach? What Ethan says here is true, things are happening so fast it might be difficult to keep up with the speed of change using User Agent Sniffing to deliver different optimized mobile version of a website, plus some devices might not register as mobile and slip through the cracks and receive the desktop version of the website.
 
-On the other hand, a purely responsive web design may deliver too much bloat for smaller devices with lower connection speeds, higher latency, and smaller CPUs. On top of that, smaller devices may require a lot more tweaks between device capabilities (from dumb phones to smart phones), and require developers to contend with a greater amount of screen size increments found with smaller devices. All of these factors might be good reason to keep code organized separately, not just in a separate stylesheet or hidden and conditionally loaded elements, but as a separate system entirely.
+On the other hand, a purely responsive web design may deliver too much bloat for smaller devices with lower connection speeds, higher latency, and smaller CPUs. The idea of context sensitivity also comes into play. Perhaps your user needs are different on mobile than they are on a desktop because of the context in which they are viewing and using your application. A hybrid approach allows you to address these needs. On top of that, smaller devices may require a lot more tweaks between device capabilities (from dumb phones to smart phones), and require developers to contend with a greater amount of screen size increments found with smaller devices. All of these factors might be good reason to keep code organized separately, not just in a separate stylesheet or in hidden and conditionally loaded elements, but as a separate system entirely.
 
 If we took this hybrid approach, we might do so by providing responsive web design for larger screens and tablets, and a responsive web design for small screen devices that register as mobile via our user agent detection scheme. The smaller devices then would not receive any of the bloat that may be associated to desktop and tablet versions of our website. We could also use the information available in user agent strings for even greater levels adaptation and tweaking.
 
@@ -838,11 +844,9 @@ What you see is our project as it is organized up until now. To understand how t
 
 ### Susy-based Mobile RWD
 
-Now that we have reviewed where everything belongs, let's set up our mobile version of our website.
+Now that we have reviewed where everything belongs, let's set up the mobile version of our website.
 
-First, import Susy into the mobile version of your website:
-
-app/assets/stylesheets/mobile.scss
+First, import Susy into app/assets/stylesheets/mobile.scss:
 
     /* BASIC STRUCTURE
       ============================================================================ */
@@ -862,7 +866,7 @@ In our previous implementation of Susy breakpoints we defined the following in a
     $break9:            9;
     $break12:           12;
 
-To start our mobile implementation we do the same in mobile.scss, but will focus on only the first two breakpoints as follows:
+To start our mobile implementation we will do the same in mobile.scss, but focus only on the first two breakpoints as follows:
 
     // Susy Grid
 
@@ -907,22 +911,63 @@ If a false positive squeaks by, application.scss is coded to handle the < 6 colu
 
 I personally really like this approach. To see how I have organized this in a live application, feel free to clone or poke around https://github.com/maxxiimo/viewthought.
 
-Conditional Loading
--------------------
-
-
-
-An Ajax Include Pattern
------------------------
-
-[An Ajax-Include Pattern for Modular Content][Ajax-Include]
-
 Using JavaScript
 ----------------
 
-Feature Detection
+### Media Query Polyfills
 
-[The Essentials of Zepto.js][Zepto]
+Media queries are a cornerstone of responsive web design, however, as a front end developer you need to be aware that many older versions of browsers do not support media queries. To overcome these deficiencies in older browsers there are a couple JavaScript-based solutions that will bridge this gap:
+
+- [css3-mediaqueries-js][]
+
+  > ...a JavaScript library to make IE 5+, Firefox 1+ and Safari 2 transparently parse, test and apply CSS3 Media Queries. Firefox 3.5+, Opera 7+, Safari 3+ and Chrome already offer native support.
+
+- [Respond.js][]
+
+  > A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more)
+
+- [Mediatizr][]
+
+  > This library adds media queries support to browsers that don't support it (like Internet Explorer 5.5-8).
+
+The key for these JavaScript-based fixes is that JavaScript must be available or enabled, but unfortunately this is not always the case. Fortunately, we approached development from a mobile first perspective. If media queries or JavaScript are not available, breakpoints will not take affect, and our users will be served our four column layout, which is not a bad fallback since the site will still look great and be readable: Another perk of the mobile first approach!
+
+### Conditional Loading
+
+The idea behind conditional loading is to use JavaScript to test if there is enough screen real estate to display certain pieces of content, say for example a sidebar or a large image. If there is enough room then load the content, if not, don't.
+
+A great idea, but beyond the scope of this chapter and the section it belongs to: Setting up a Foundation. To help you explore this idea though, here is a list of articles iin publication order that will more than set you on the right path:
+
+- *12/18/10* [Speed Up Your Site with Delayed Content][24 Ways Speed]
+- *02/12/11* [Conditional Loading for Responsive Designs][24 Ways Loading]
+- *12/02/11* [Clean conditional loading][Clean Loading]
+- *12/02/11* [Conditional Loading for Responsive Designs][Conditional Loading]
+- *03/28/12* [An Ajax-Include Pattern for Modular Content][Ajax-Include Pattern]
+- *04/24/12* [Conditionally loading content][Conditional Content]
+- *09/04/12* [Enquire.js – Media Query Callbacks in JavaScript][Callbacks]
+
+JavaScript Libraries:
+
+- [enquire.js][]
+
+  > enquire.js is a lightweight, pure javascript library (with no dependencies) for programmatically responding to media queries.
+
+- [Adapt.js - Adaptive CSS ][]
+
+  > Adapt.js is a lightweight (848 bytes minified) JavaScript file that determines which CSS file to load before the browser renders a page. If the browser tilts or resizes, Adapt.js simply checks its width, and serves only the CSS that is needed, when it is needed.
+
+### Zepto
+
+One of the major issues with mobile browsing is CPU and bandwidth limitations. Zepto is a JavaScript library developed for speed, or it could be said to reduce the type of bloat found in libraries such as jQuery:
+
+> Zepto is a minimalist JavaScript library for modern browsers with a largely jQuery-compatible API. If you use jQuery, you already know how to use Zepto.
+
+\- [Github Zepto][]
+
+To learn more visit:
+
+- [Zepto.js][]
+- [The Essentials of Zepto.js][Zepto]
 
 What We've Done
 ---------------
@@ -948,6 +993,7 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [Better and Worse]:     http://insights.wired.com/profiles/blogs/mobile-browsing-will-get-both-better-and-worse#axzz2IFWc81o0
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/introduction
+[LukeW]:                http://www.lukew.com/ff/entry.asp?933
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [LaunchWare]:           http://launchware.com/
@@ -998,9 +1044,23 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [Muppets]:              https://groups.google.com/d/topic/compass-users/oXHAtZE4euI/discussion
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [Mobile Boilerplate]:   http://html5boilerplate.com/html5boilerplate.com/dist/mobile/
-[Ajax-Include]:         http://filamentgroup.com/lab/ajax_includes_modular_content/
+[css3-mediaqueries-js]: http://code.google.com/p/css3-mediaqueries-js/
+[Respond.js]:           https://github.com/scottjehl/Respond
+[Mediatizr]:            https://github.com/pyrsmk/mediatizr
+[24 Ways Speed]:        http://24ways.org/2010/speed-up-your-site-with-delayed-content/
+[24 Ways Loading]:      http://24ways.org/2011/conditional-loading-for-responsive-designs/
+[Clean Loading]:        http://adactio.com/journal/5042/
+[Conditional Loading]:  http://adactio.com/articles/5043/
+[Ajax-Include Pattern]: http://filamentgroup.com/lab/ajax_includes_modular_content/
+[Conditional Content]:  http://adactio.com/journal/5414/
+[Callbacks]:            http://css-tricks.com/enquire-js-media-query-callbacks-in-javascript/
+[enquire.js]:           http://wicky.nillia.ms/enquire.js/
+[Adapt.JS]:             http://adapt.960.gs/
+[Github Zepto]:         https://github.com/madrobby/zepto
+[Zepto.js]:             http://zeptojs.com/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
 
 [@media Definitions]:   http://chrismaxwell.com/manifesto/media-queries.gif
 [file-structure]:       http://chrismaxwell.com/manifesto/file-structure.gif
 [file-structure-w-lines]: http://chrismaxwell.com/manifesto/file-structure-w-lines.gif
+

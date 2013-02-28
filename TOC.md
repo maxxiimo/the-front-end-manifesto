@@ -67,9 +67,10 @@ Table of Contents
   - III. A Hybrid Approach
     - File Structure
     - Susy-based Mobile RWD
-  - Conditional Loading
-  - An Ajax Include Pattern
   - Using JavaScript
+    - Media Query Polyfills
+    - Conditional Loading
+    - Zepto
   - What We've Done
 
 ### Section II - Build Something
