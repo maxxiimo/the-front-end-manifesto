@@ -27,7 +27,9 @@ Layout templates are the heart of the view framework because view code from othe
 
 ### Where Does It Live?
 
-The templating framework I'm describing primarily lives in two high-level folders within your Rails application: the *helpers* and the *views* folders. The views folder is where the action takes place and can be further subdivided into a *layout* and *shared* folders, which are home to the majority of your foundation front end code. Here's what it looks like and where you'll find these folders by default in any Rails 3.0 or greater project:
+The templating framework I'm describing primarily lives in two high-level folders within your Rails application: the *helpers* and the *views* folders. The views folder is where the action takes place and can be further subdivided into a *layout* and *shared* folders, which as you will soon see are home to the majority of your foundation front end code.
+
+Here's what it looks like and where you'll find these folders by default in any Rails 3.0 or greater project:
 
 Project
   - app
