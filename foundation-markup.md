@@ -79,25 +79,25 @@ Once you have cloned the [starter code][], structurally, these files and folders
       - **logos**
       - **pics**
     - javascripts
-      - [**application.js**][application.js]
-      - [**site.js**][site.js]
+      - [application.js][application]
+      - [site.js][site]
   - helpers
-      - [**application_helper.rb**][application_helper]
+      - [application_helper.rb][application_helper]
   - views
       - layout
-          - [**_chromeframe.html.haml**][_chromeframe]
-          - [**_head.html.haml**][_head]
-          - [**_scripts.html.haml**][_scripts]
-          - [**application.html.haml**][application]
+          - [_chromeframe.html.haml][_chromeframe]
+          - [_head.html.haml][_head]
+          - [_scripts.html.haml][_scripts]
+          - [application.html.haml][application]
     - shared
-        - [**_footer.html.haml**][_footer]
-        - [**_logo.html.haml**][_logo]
-        - [**_navigation.html.haml**][_navigation]
+        - [_footer.html.haml][_footer]
+        - [_logo.html.haml][_logo]
+        - [_navigation.html.haml][_navigation]
 - vendor
     - assets
         - **javascripts**
-            - [**jquery-1.8.3.min.js**][jquery]
-            - [**modernizr-2.6.2.min**][modernizer]
+            - [jquery-1.8.3.min.js][jquery]
+            - [modernizr-2.6.2.min][modernizer]
 - [.gitignore][]
 - [Gemfile][]
 
@@ -310,8 +310,8 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [starter code]:         https://github.com/maxxiimo/base-haml
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
-[application.js]:       https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/application.js
-[site.js]:              https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/site.js
+[application]:          https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/application.js
+[site]:                 https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/site.js
 [application_helper]:   https://github.com/maxxiimo/base-haml/blob/master/helpers/application_helper.rb
 [_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_chromeframe.html.haml
 [_head]:                https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
