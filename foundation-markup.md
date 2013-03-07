@@ -1,12 +1,7 @@
 Foundation Markup
 =================
 
-This is the first of three chapters written to help developers set up and understand the components of a stellar Ruby on Rails front end code base. In this first chapter we begin with our **Foundation Markup**, i.e. view templates. In [Chapter 2][] we add **Foundation Styles**, and in [Chapter 3][] we explore **Mobile on Rails**. Our goals in these three chapters are to:
-
-1. Demonstrate how to start a Rails applications out right – soup to nuts – from the front end view coders perspective.
-2. Provide example code and the files you will need for a stellar front end code foundation, which you can freely use or modify (with no attribution) for your own projects.
-
-The goal of Chapter 1 is to write and organize the components of our foundation markup in such a way that different browsers and desktop devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug into it with ease.Let's get started.
+The goal of Chapter 1 is to write and organize the components of our foundation markup in such a way that different browsers and desktop devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug into it with ease. Let's get started.
 
 The Application Layout
 ----------------------
@@ -300,8 +295,6 @@ What We've Done
 
 In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 
-[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
 [The Rails View]:       http://pragprog.com/book/warv/the-rails-view
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [starter code]:         https://github.com/maxxiimo/base-haml
@@ -327,5 +320,6 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
 [Waste of Time]:        http://www.sitepoint.com/is-internet-explorer-development-really-a-waste-of-time/
 [RWD for IE]:           http://www.sitepoint.com/support-old-browsers-responsive-web-design/
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 
 [Basic HTML]:           http://chrismaxwell.com/manifesto/getting-started/base-html-no-styles.jpg
