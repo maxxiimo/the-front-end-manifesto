@@ -13,7 +13,7 @@ The Application Layout
 
 As a Front End Engineer, oftentimes taking the role of Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption. In this IA role, when speaking about layout I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
 
-When I switch hats, as a front end developer, I look at layout as the Rails view framework in which all of my front end code lives and interacts with the outside world. In other words, code a browser is served and interprets into something visual; that an end user can understand and interact with, i.e. consume.
+When I switch hats, as a front end developer, I look at layout as the Rails view framework in which all of my front end code lives and interacts with the outside world. In other words, code a browser is served and interprets into something visual; that an end-user can understand and interact with, i.e. consume.
 
 As a Rails Front End Engineer, you will wear both hats, plus take on a third role in which you facilitate the handshake between the backend and the front end of your application. To be successful you must understand how the code you produce will be used by your colleagues (Backend Engineers). You will need to be able to reach into your models and controllers, and you will need to think in terms of usability, not to mention be a master in your own realm: HTML5, CSS3, JavaScript/jQuery. It's a tall order, but before you do these things you need to layout a solid foundation to work within.
 
@@ -48,13 +48,17 @@ NOTE: I first heard the view layer referred to as a "no man's land" and the "Wes
 The Code
 --------
 
-Our goal is to write and organize the components of our layout in such a way that different browsers and devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug into it with ease. To help you along this path you can grab my [starter code][]:
+Before we begin to explore the code that lives in the templating framework I described above, there are three things you will need to do to follow along with this book:
 
-- https://github.com/maxxiimo/base-haml
+1. Create a brand-new Rails 3.2 application.
 
-Take a look at the [Groundwork][] section of the Appendix to learn about the thinking behind our [Gemfile][] and [.gitignore][] files, as well as deploying to Heroku.
+2. Integrate this books[start code][] into your application.
 
-NOTE: This is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project. I have included some necessary asset folders and files that coincide with the defaults I will provide in this chapter.
+   NOTE: This is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project. I have included some necessary asset folders and files that coincide with the defaults I will provide in this chapter.
+
+3. Take a look at the [Groundwork][] section of the Appendix to learn about the thinking behind our [Gemfile][] and [.gitignore][] files, as well as deploying to Heroku.
+
+Our goal is to write and organize the components of our layout in such a way that different browsers and devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug into it with ease. Following these three steps will help you achieve this goal.
 
 IMPORTANT: Since we're using modernizr and the asset pipeline, add the following to config/environments/production.rb:
 
