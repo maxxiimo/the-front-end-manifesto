@@ -4,7 +4,7 @@ Foundation Markup
 This is the first of three chapters written to help developers set up and understand the components of a stellar Ruby on Rails front end code base. In this first chapter we begin with our **Foundation Markup**, i.e. view templates. In [Chapter 2][] we add **Foundation Styles**, and in [Chapter 3][] we explore **Mobile on Rails**. Our goals in these three chapters are to:
 
 1. Demonstrate how to start a Rails applications out right – soup to nuts – from the front end view coders perspective.
-2. Provide example code and the files you will need to do so, and that you can freely use in your own projects.
+2. Provide example code and the files you will need to do so, which you can freely use or modify for your own projects if you wish to.
 
 Let's get started.
 
