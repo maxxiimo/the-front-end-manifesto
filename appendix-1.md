@@ -3,7 +3,7 @@ Appendix 1
 
 ### Groundwork Tasks
 
-With any Rails application their is some very basic groundwork that needs to be done; creating the application and using some kind of versioning system. In the Rails world Git and Github are the versioning sytem and service of choice. Here are the steps I follow to set this up:
+With any Rails application their aare some very basic groundwork tasks that needs to be done; creating the application and using some kind of versioning system. In the Rails world Git and Github are the versioning sytem and service of choice. Here are the steps I follow to set this up:
 
     $ rails new <name> --no-test-framework
     Switch to new project folder.
