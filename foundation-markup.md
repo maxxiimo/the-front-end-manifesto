@@ -107,7 +107,11 @@ Notice that your Rails application file structure is pretty much identical minus
 
 Prep your app by following these steps:
 
-**Step 1** - Delete the default *public/index.html* file, and the *assets/images/rails.png* image, as well as the *app/views/layouts/application.html.erb* file you are replacing with application.html.haml.
+**Step 1** - Delete:
+
+- the default *public/index.html* file
+- the *assets/images/rails.png* image
+- the *app/views/layouts/application.html.erb* file you are replacing with *application.html.haml*
 
 **Step 2** - If you do not have a page for your routes to go to, which I'm assuming you don't if this is a brand-new application, create one now. I'm going to generate a Pages controller now to match my footer links:
 
