@@ -21,9 +21,9 @@ As a Rails Front End Engineer, you will wear both hats, plus take on a third rol
 
 As much as Rails is a framework, within this framework lives a smaller templating framework, views, made up predominantly of HTML organized in specific folders of your application (styles and interactivity are added in via CSS and JavaScript).
 
-In Rails, the heart of this view framework is referred to as the layout template. The default Rails name for the layout template is application.html.haml, but you can have more than one layout template.
+In Rails, the heart of this view framework is referred to as the layout template, whose default name is **application.html.haml**, but you can have more than one layout template.
 
-The layout template is the heart of the view framework because view code from other parts of a Rails application pass through and become framed by application.html.haml, or any other layout template you create, before being served and rendered by the end-user. It's kind of like an ice cream cone. You can add any number of flavors, but however you arrange your ice cream, the cone will be its base.
+Layout templates are the heart of the view framework because view code from other parts of a Rails application pass through and become framed by application.html.haml, or any other layout template you create, before being served and rendered by the end-user. It's kind of like an ice cream cone. You can add any number of flavors, but however you arrange your ice cream, the cone will be at its base.
 
 ### Where Does It Live?
 
