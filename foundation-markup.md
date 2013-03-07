@@ -96,10 +96,12 @@ Once you have cloned the [starter code][], structurally, these files and folders
 - vendor
     - assets
         - **javascripts**
+            - [**jquery-1.8.3.min.js**][jquery]
+            - [**modernizr-2.6.2.min**][modernizer]
 - [.gitignore][]
 - [Gemfile][]
 
-Notice that your Rails application file structure is pretty much identical minus a few files and folders. We're going to just replace some existing files and add a few new files and folders. Go ahead and start manually copying all the files and folders from your cloned starter code repository into your existing application structure.
+Notice that your Rails application file structure is pretty much identical minus a few files and folders (new folders in bold, files are links). We're going to just replace some existing files, and add a few new files and folders. Go ahead and start manually copying all the files and folders from your cloned starter code repository into your existing application structure.
 
 ### Prep the App
 
@@ -318,6 +320,8 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [_footer]:              https://github.com/maxxiimo/base-haml/blob/master/views/shared/_footer.html.haml
 [_logo]:                https://github.com/maxxiimo/base-haml/blob/master/views/shared/_logo.html.haml
 [_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/views/shared/_navigation.html.haml
+[jquery]:               https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/jquery-1.8.3.min.js
+[modernizer]:           https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/modernizr-2.6.2.min.js
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
 [Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html
