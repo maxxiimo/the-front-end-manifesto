@@ -69,7 +69,7 @@ To better understand HTML5 Boilerplate as it applies to Rails, the following art
 
 ### Where Do Things Go?
 
-Once you have cloned the [starter code][], structurally, these files fall into place as follows:
+Once you have cloned the [starter code][], structurally, these files and folders fall into place as follows:
 
 - app
   - assets
@@ -308,8 +308,8 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [starter code]:         https://github.com/maxxiimo/base-haml
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
-[application.js]:       https://github.com/maxxiimo/base-haml/blob/master/helpers/application.js
-[site.js]:              https://github.com/maxxiimo/base-haml/blob/master/helpers/site.js
+[application.js]:       https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/application.js
+[site.js]:              https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/site.js
 [application_helper]:   https://github.com/maxxiimo/base-haml/blob/master/helpers/application_helper.rb
 [_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_chromeframe.html.haml
 [_head]:                https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
