@@ -6,6 +6,6 @@ Section I is comprised of three chapters written to help developers set up and u
 1. Demonstrate how to start a Rails applications out right – soup to nuts – from the front end view coders perspective.
 2. Provide example code and the files you will need for a stellar front end code foundation, which you can freely use or modify (with no attribution) for your own projects.
 
-[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/edit/master/foundation-markup.md
+[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
