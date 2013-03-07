@@ -1,7 +1,7 @@
 Foundation Markup
 =================
 
-This is the first of three chapters that will help you set up a stellar base of code for any Rails application you create. In this first chapter we'll begin with our foundation markup. In the Chapter 2 we add [foundation styles][Chapter 2], and in Chapter 3 we look at the alternatives for [mobile on Rails][Chapter 3]. Our goal in these chapters is to teach you how to start your Rails applications out right, from the front end view coders perspective, and to give you the files you will need to do so. Let's get started.
+This is the first of three chapters written to help you set up and understand the components of a stellar front end code base for any Rails application you create. In this first chapter we will begin with our foundation markup, our view templates. In Chapter 2 we add [foundation styles][Chapter 2], and in Chapter 3 we look at the alternatives for [mobile on Rails][Chapter 3]. Our goal in these chapters is to teach you how to start your Rails applications out right, from the front end view coders perspective, and to give you the files you will need to do so. Let's get started.
 
 The Application Layout
 ----------------------

@@ -448,7 +448,13 @@ NOTE: You may have noticed the "max-with: 59em" property in .container. The reas
 
 Now that we have a flexible grid, it's time to look at Ethan's second ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a 320px wide screen. It just doesn't make any sense.
 
-COMING SOON
+
+
+
+
+
+
+
 
 ### 3. Media Queries
 
