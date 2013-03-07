@@ -6,7 +6,7 @@ This is the first of three chapters written to help developers set up and unders
 1. Demonstrate how to start a Rails applications out right – soup to nuts – from the front end view coders perspective.
 2. Provide example code and the files you will need for a stellar front end code foundation, which you can freely use or modify (with no attribution) for your own projects.
 
-Let's get started.
+The goal of Chapter 1 is to write and organize the components of our foundation markup in such a way that different browsers and desktop devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug into it with ease.Let's get started.
 
 The Application Layout
 ----------------------
@@ -52,13 +52,13 @@ Before we begin to explore the code that lives in the templating framework descr
 
 1. Create a brand-new Rails 3.2 application.
 
+   NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
+
 2. Integrate this books[start code][] into your application.
 
    NOTE: This is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project. I have included some necessary asset folders and files that coincide with the defaults I will provide in this chapter.
 
 3. Take a look at the [Groundwork][] section of the Appendix to learn about the thinking behind our [Gemfile][] and [.gitignore][] files, as well as deploying to Heroku.
-
-Our goal is to write and organize the components of our layout in such a way that different browsers and devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug into it with ease. Following these three steps will help you achieve this goal.
 
 IMPORTANT: Since we're using modernizr and the asset pipeline, add the following to config/environments/production.rb:
 
@@ -303,6 +303,7 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
 [The Rails View]:       http://pragprog.com/book/warv/the-rails-view
+[RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [starter code]:         https://github.com/maxxiimo/base-haml
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [Unofficial Guide]:     http://designreviver.com/articles/an-unofficial-guide-to-the-html5-boilerplate/
