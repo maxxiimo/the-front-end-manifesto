@@ -70,7 +70,7 @@ To this I add the gems that I know I will use, and in my case Michael Hartl's "[
 
 Since I typically use compass, I added the compass-rails and oily_png gems and the Susy plugin as well.
 
-NOTE: Michael Hartl recommends using the following flag on your first bundle:
+NOTE: Michael Hartl [recommends][] using the following flag on your first bundle:
 
     $ bundle install --without production
 
@@ -167,6 +167,7 @@ Obviously, I already have an account.
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
+[recommends]:           http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2#sec-heroku_setup
 [Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3
 [H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
 [Tutorial .gitignore]:  http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
