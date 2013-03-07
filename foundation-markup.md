@@ -55,6 +55,8 @@ Before we begin to explore the code that lives in the templating framework descr
 
 3.  Integrate this books [starter code][] into your application.
 
+        git clone git@github.com:maxxiimo/base-haml.git
+
     NOTE: This is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project. I have included some necessary asset folders and files that coincide with the defaults I will provide in this chapter.
 
 IMPORTANT: Since we're using modernizr and the asset pipeline, add the following to config/environments/production.rb:
