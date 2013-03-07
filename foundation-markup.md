@@ -85,10 +85,10 @@ Once you have cloned the [starter code][], structurally, these files and folders
       - [**application_helper.rb**][application_helper]
   - views
       - layout
-        - [**_chromeframe.html.haml**][_chromeframe]
-        - [**_head.html.haml**][_head]
-        - [**_scripts.html.haml**][_scripts]
-        - [**application.html.haml**][application]
+          - [**_chromeframe.html.haml**][_chromeframe]
+          - [**_head.html.haml**][_head]
+          - [**_scripts.html.haml**][_scripts]
+          - [**application.html.haml**][application]
     - shared
         - [**_footer.html.haml**][_footer]
         - [**_logo.html.haml**][_logo]
