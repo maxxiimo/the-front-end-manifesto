@@ -21,13 +21,13 @@ As a Rails Front End Engineer, you will wear both hats, plus take on a third rol
 
 As much as Rails is a framework, within this framework lives a smaller templating framework, views, made up predominantly of HTML organized in specific folders of your application (styles and interactivity are added in via CSS and JavaScript).
 
-In Rails, the heart of this view framework is referred to as the layout template, whose default name is **application.html.haml**, but you can have more than one layout template.
+In Rails, the heart of this view framework is referred to as the layout template, whose default name is *application.html.haml*, but you can have more than one layout template so long as it's name is different.
 
 Layout templates are the heart of the view framework because view code from other parts of a Rails application pass through and become framed by application.html.haml, or any other layout template you create, before being served and rendered by the end-user. It's kind of like an ice cream cone. You can add any number of flavors, but however you arrange your ice cream, the cone will be at its base.
 
 ### Where Does It Live?
 
-The templating framework I'm describing primarily lives in two high-level folders within your Rails application: the **helpers** and the **views** folders. The views folder is where the action takes place and can be further subdivided into a **Layout** and **Shared** folders, which are home to the majority of your foundation front end code. Here's what it looks like and where you'll find these folders by default in any Rails 3.0 or greater project:
+The templating framework I'm describing primarily lives in two high-level folders within your Rails application: the *helpers* and the *views* folders. The views folder is where the action takes place and can be further subdivided into a *Layout* and *Shared* folders, which are home to the majority of your foundation front end code. Here's what it looks like and where you'll find these folders by default in any Rails 3.0 or greater project:
 
 Project
   - app
