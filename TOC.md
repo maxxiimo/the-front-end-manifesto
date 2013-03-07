@@ -4,7 +4,7 @@ Table of Contents
 - [Cover][]
 - [The Manifesto][]
 
-### Section I - Setting up a Foundation
+### [Section I - Setting up a Foundation][Section I]
 
 #### Chapter 1
 - [Foundation Markup][Chapter 1]
@@ -73,7 +73,7 @@ Table of Contents
     - Zepto
   - What We've Done
 
-### Section II - Build Something
+### [Section II - Build Something][Section II]
 
 #### Chapter 4
 - [Information Architecting][Chapter 4]
@@ -194,9 +194,11 @@ Table of Contents
 
 [Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
+[Section I]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-1.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
+[Section II]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-2.md
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
 [Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
