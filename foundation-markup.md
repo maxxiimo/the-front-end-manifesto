@@ -1,7 +1,7 @@
 Foundation Markup
 =================
 
-The goal of Chapter 1 is to write and organize the components of our foundation markup in such a way that different browsers and desktop devices can consistently, correctly, and efficiently display visual information to the end-user, and backend coders can understand and plug into it with ease. Let's get started.
+The goal of Chapter 1 is to write and organize the components of our foundation markup in such a way that different browsers and desktop devices can consistently, correctly, and efficiently display visual information to the end-user; and backend coders can understand and plug into it with ease. Let's get started.
 
 The Application Layout
 ----------------------
