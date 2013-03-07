@@ -162,7 +162,7 @@ Finally I deploy on Heroku by running the following commands:
     $ git push heroku master
     $ heroku rename <new name>
 
-Obviously, I already have an account.
+You will need to set up an account if you don't already have one.
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
