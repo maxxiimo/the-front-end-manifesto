@@ -297,10 +297,10 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 
 [The Rails View]:       http://pragprog.com/book/warv/the-rails-view
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
+[Groundwork]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork-tasks
 [starter code]:         https://github.com/maxxiimo/base-haml
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [Unofficial Guide]:     http://designreviver.com/articles/an-unofficial-guide-to-the-html5-boilerplate/
-[Groundwork]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
