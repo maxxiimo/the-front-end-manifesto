@@ -53,57 +53,53 @@ Before we begin to explore the code that lives in the templating framework descr
 
 2.  Take a look at the [Groundwork Tasks][Groundwork] section of the Appendix to learn about the thinking behind our [Gemfile][] and [.gitignore][] files, as well as deploying to Heroku.
 
-3.  Integrate this books [starter code][] into your application by cloning the repository and copying folders and files to their corresponding locations.
+3.  Clone this books [starter code][]:
 
         git clone git@github.com:maxxiimo/base-haml.git
 
-    NOTE: This is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project. I have included some necessary asset folders and files that coincide with the defaults I will provide in this chapter.
-
-IMPORTANT: Since we're using modernizr and the asset pipeline, add the following to config/environments/production.rb:
-
-    # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-    config.assets.precompile += %w( modernizr-2.6.2.min.js )
-
 ### HTML5 Boilerplate
 
-In coding copy and learn from the best, improve, then give back. I find that the best place to reference when building front end view templates is [HTML5 Boilerplate][]. This resource is an ongoing collaboration between expert front-end developers and the community.
+Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project.
 
-To better understand it (and my implementation of it), the following sites are also worth a visit:
+In coding copy and learn from the best, improve, then give back. I find that the best place to reference when building front end view templates is [HTML5 Boilerplate][]. This resource is an ongoing collaboration between expert front end developers and the community.
 
-- [An Unofficial Guide to the HTML5 Boilerplate][Unofficial Guide]
+To better understand HTML5 Boilerplate as it applies to Rails, the following article is helpful:
+
 - [Guide to HTML5 Boilerplate for Rails Developers][H5BP for Rails]
 
 ### Where Do Things Go?
 
-Code wise you have access to everything I use when starting a new application, my [starter code][]. Structurally, these files fall into place as follows:
+Once you have cloned the [starter code][], structurally, these files fall into place as follows:
 
-Project
-  - app
-    - assets
-      - images
-        - **fixtures**
-        - **icons**
-        - **logos**
-        - **pics**
-    - helpers
-      - [**application_helper.rb**][application_helper]
-    - views
-      - layout
-        - [**_chromeframe.html.haml**][_chromeframe]
-        - [**_head.html.haml**][_head]
-        - [**_scripts.html.haml**][_scripts]
-        - [**application.html.haml**][application]
-      - shared
-        - [**_footer.html.haml**][_footer]
-        - [**_logo.html.haml**][_logo]
-        - [**_navigation.html.haml**][_navigation]
-  - vendor
-    - assets
-      - **javascripts**
-  - [.gitignore][]
-  - [Gemfile][]
+- app
+  - assets
+    - images
+      - **fixtures**
+      - **icons**
+      - **logos**
+      - **pics**
+    - javascripts
+      - [**application.js**][application.js]
+      - [**site.js**][site.js]
+  - helpers
+    - [**application_helper.rb**][application_helper]
+  - views
+    - layout
+      - [**_chromeframe.html.haml**][_chromeframe]
+      - [**_head.html.haml**][_head]
+      - [**_scripts.html.haml**][_scripts]
+      - [**application.html.haml**][application]
+    - shared
+      - [**_footer.html.haml**][_footer]
+      - [**_logo.html.haml**][_logo]
+      - [**_navigation.html.haml**][_navigation]
+- vendor
+  - assets
+    - **javascripts**
+- [.gitignore][]
+- [Gemfile][]
 
-Once you have downloaded the [starter code][] and placed all the files where they belong, you'll need to prep your app.
+Notice that your Rails application file structure is pretty much identical minus a few files and folders. We're going to just replace some existing files and add a few new files and folders. Go ahead and start manually copying all the files and folders from your cloned starter code repository into your existing application structure.
 
 ### Prep the App
 
@@ -128,6 +124,12 @@ NOTE: If you're not sure what I just did there you should really consider gettin
 If you run WEBrick, your application should now just work.
 
     $ rails server
+
+
+IMPORTANT: Since we're using modernizr and the asset pipeline, add the following to config/environments/production.rb:
+
+    # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
+    config.assets.precompile += %w( modernizr-2.6.2.min.js )
 
 ### End Result
 
@@ -302,12 +304,12 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [The Rails View]:       http://pragprog.com/book/warv/the-rails-view
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [Groundwork]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork-tasks
-[starter code]:         https://github.com/maxxiimo/base-haml
-[HTML5 Boilerplate]:    http://html5boilerplate.com/
-[Unofficial Guide]:     http://designreviver.com/articles/an-unofficial-guide-to-the-html5-boilerplate/
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
+[starter code]:         https://github.com/maxxiimo/base-haml
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
+[application.js]:       https://github.com/maxxiimo/base-haml/blob/master/helpers/application.js
+[site.js]:              https://github.com/maxxiimo/base-haml/blob/master/helpers/site.js
 [application_helper]:   https://github.com/maxxiimo/base-haml/blob/master/helpers/application_helper.rb
 [_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_chromeframe.html.haml
 [_head]:                https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
