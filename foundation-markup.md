@@ -133,7 +133,7 @@ If you run WEBrick, your application should now just work.
 
 ### End Result
 
-Although not apparent yet, i.e. visually, we have created an excellent foundation for your application. With everything in place, and given that you followed Step 2 above, your homepage should look something like this:
+Although not apparent yet, i.e. visually, we have created an excellent foundation for your application. With everything in place, and given that you followed all the steps above, your homepage should look something like this:
 
 <br>
 
