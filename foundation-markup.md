@@ -48,7 +48,7 @@ NOTE: I first heard the view layer referred to as a "no man's land" and the "Wes
 The Code
 --------
 
-Before we begin to explore the code that lives in the templating framework I described above, there are three things you will need to do to follow along with this book:
+Before we begin to explore the code that lives in the templating framework described above, there are three things you will need to do to follow along with this book:
 
 1. Create a brand-new Rails 3.2 application.
 
