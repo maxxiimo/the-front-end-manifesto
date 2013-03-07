@@ -36,9 +36,9 @@ With every new application Rails generates a Gemfile with a lot of commented out
 
 To this I add the gems that I know I will use, and in my case Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" Gemfile example pretty much sums up my base [Gemfile][] with a few minor additions:
 
-source 'https://rubygems.org'
+    source 'https://rubygems.org'
 
-    gem 'rails', '3.2.8'
+    gem 'rails', '3.2.12'
 
     gem 'jquery-rails', '2.0.2'
     gem 'haml-rails'
@@ -58,20 +58,17 @@ source 'https://rubygems.org'
       # Compass specific gems.
       gem 'compass-rails'
       gem 'oily_png'
+      gem 'susy'
     end
 
     # See https://github.com/ndbroadbent/turbo-sprockets-rails3
     # gem 'turbo-sprockets-rails3'
 
-    group :test do
-      gem 'capybara', '1.1.2'
-    end
-
     group :production do
       gem 'pg', '0.12.2'
     end
 
-Since I typically use compass, I added the compass-rails and oily_png gems as well.
+Since I typically use compass, I added the compass-rails and oily_png gems and the Susy plugin as well.
 
 NOTE: Michael Hartl recommends using the following flag on your first bundle:
 
