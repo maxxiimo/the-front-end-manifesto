@@ -49,7 +49,7 @@ Before we begin to explore the code that lives in the templating framework descr
 
    NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
 
-2. Take a look at the [Groundwork][] section of the Appendix to learn about the thinking behind our [Gemfile][] and [.gitignore][] files, as well as deploying to Heroku.
+2. Take a look at the [Groundwork Tasks][Groundwork] section of the Appendix to learn about the thinking behind our [Gemfile][] and [.gitignore][] files, as well as deploying to Heroku.
 
 3. Integrate this books [starter code][] into your application.
 
