@@ -95,13 +95,13 @@ Once you have cloned the [starter code][], structurally, these files and folders
         - [_navigation.html.haml][_navigation]
 - vendor
     - assets
-        - **javascripts**
+        - javascripts
             - [jquery-1.8.3.min.js][jquery]
             - [modernizr-2.6.2.min][modernizer]
 - [.gitignore][]
 - [Gemfile][]
 
-Notice that your Rails application file structure is pretty much identical minus a few files and folders (new folders in bold, files are links). We're going to just replace some existing files, and add a few new files and folders. Go ahead and start manually copying all the files and folders from your cloned starter code repository into your existing application structure.
+Notice that your Rails application file structure is pretty much identical minus a few files and folders. We're going to replace some existing files, and add a few new files and folders from the starter code structure above (new folders in bold, new or replacement files are links). Go ahead and start manually copying all the files and folders from your cloned starter code repository into your existing application structure.
 
 ### Prep the App
 
