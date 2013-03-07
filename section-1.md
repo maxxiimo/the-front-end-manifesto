@@ -1,8 +1,5 @@
-Section I
-=========
-
-Setting up the Foundation
--------------------------
+Section I - Setting up the Foundation
+-------------------------------------
 
 Section I is comprised of three chapters written to help developers set up and understand the components of a stellar Ruby on Rails front end code base. In [Chapter 1][] we begin with our **Foundation Markup**, i.e. view templates. In [Chapter 2][] we add **Foundation Styles**, CSS, and in [Chapter 3][] we explore **Mobile on Rails**. Our goals in these three chapters are to:
 

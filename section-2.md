@@ -1,6 +1,3 @@
-Section II
-==========
-
-Build Something
----------------
+Section II - Build Something
+----------------------------
 
