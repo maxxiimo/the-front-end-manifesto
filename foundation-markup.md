@@ -19,11 +19,11 @@ As a Rails Front End Engineer, you will wear both hats, plus take on a third rol
 
 ### A Framework within a Framework
 
-As much as Rails is a framework, within this framework lives a smaller templating framework, views, made up of predominantly HTML organized in specific folders of your application. Styles and interactivity are added in via CSS and JavaScript.
+As much as Rails is a framework, within this framework lives a smaller templating framework, views, made up predominantly of HTML organized in specific folders of your application (styles and interactivity are added in via CSS and JavaScript).
 
-In Rails, the heart of this view framework is referred to as the layout template, which is typically broken up into different related files called partials. Partials allow you to better organize and keep to the principle of DRY (Don't Repeat Yourself).
+In Rails, the heart of this view framework is referred to as the layout template. The default Rails name for the layout template is application.html.haml, but you can have more than one.
 
-View code from other parts of the application pass through and become framed by the layout template before being rendered to the end-user. The default Rails name for this layout template is application.html.haml. You can have more than one which you can name whatever you would like.
+The layout template is the heart of the view framework because view code from other parts of a Rails application pass through and become framed by application.html.haml, or any other layout template you create, before being served and rendered by the end-user.
 
 ### Where Does It Live?
 
