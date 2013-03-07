@@ -94,8 +94,8 @@ Once you have cloned the [starter code][], structurally, these files and folders
         - [**_logo.html.haml**][_logo]
         - [**_navigation.html.haml**][_navigation]
 - vendor
-  - assets
-    - **javascripts**
+    - assets
+        - **javascripts**
 - [.gitignore][]
 - [Gemfile][]
 
