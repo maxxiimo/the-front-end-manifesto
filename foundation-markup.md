@@ -31,7 +31,6 @@ The templating framework I'm describing primarily lives in two high-level folder
 
 Here's what it looks like and where you'll find these folders by default in any Rails 3.0 or greater project:
 
-Project
   - app
     - assets
     - controllers
