@@ -13,21 +13,21 @@ The Application Layout
 
 As a Front End Engineer, oftentimes taking the role of Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption. In this IA role, when speaking about layout I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
 
-When I switch hats, as a front end developer I look at layout as the Rails view framework in which all of my front end code lives and interacts with the outside world. In other words code a browser is served and interprets into something visual; that an end user can understand and interact with, i.e. consume.
+When I switch hats, as a front end developer, I look at layout as the Rails view framework in which all of my front end code lives and interacts with the outside world. In other words, code a browser is served and interprets into something visual; that an end user can understand and interact with, i.e. consume.
 
 As a Rails Front End Engineer, you will wear both hats, plus take on a third role in which you facilitate the handshake between the backend and the front end of your application. To be successful you must understand how the code you produce will be used by your colleagues (Backend Engineers). You will need to be able to reach into your models and controllers, and you will need to think in terms of usability, not to mention be a master in your own realm: HTML5, CSS3, JavaScript/jQuery. It's a tall order, but before you do these things you need to layout a solid foundation to work within.
 
 ### A Framework within a Framework
 
-As much as Rails is a framework, within this framework lives a tinier front end framework; your foundation markup. Until Rails 3.0, where this foundation "lived" and the conventions for using it were very much a no man's land. It was a disorganized dumping ground for HTML, CSS, JavaScript, and Ruby: the wild wild West of coding. Since Rails 3.0 things have become "civilized" and within these new conventions is where we will begin to build our layout, the application layout.
+As much as Rails is a framework, within this framework lives a smaller templating framework, views, made up of predominantly HTML organized in specific folders of your application. Styles and interactivity are added in via CSS and JavaScript.
 
-NOTE: I first heard the view layer referred to as a "no man's land" and the "West" in John Athayde and Bruce Williams' preface to "[The Rails View: Create a Beautiful and Maintainable User Experience][The Rails View]". These guys are masters in this subject and I highly recommend reading their book.
+In Rails, the heart of this view framework is referred to as the layout template, which is typically broken up into different related files called partials. Partials allow you to better organize and keep to the principle of DRY (Don't Repeat Yourself).
 
-So what is this tiny view framework within a framework? Well, it is predominantly HTML organized in specific folders of your application with styles and interactivity added via CSS and JavaScript (and Flash, but less and less these days). In Rails the heart of this view framework and all the code related to it lives in what we refer to as the layout template, or application.html.haml, which is typically broken up into different related files called partials which are all being pulled together into the whole. View code from other parts of the application for the most part pass through this layout and become framed by the layout template (with styles and JavaScript pulled in) before being rendered to the end-user.
+View code from other parts of the application pass through and become framed by the layout template before being rendered to the end-user. The default Rails name for this layout template is application.html.haml. You can have more than one which you can name whatever you would like.
 
 ### Where Does It Live?
 
-The front end structure I'm describing primarily lives in two high-level folders within your Rails application: the helpers and the views folders. The views folder is where the real action takes place and can be further subdivided into the Layout and Shared folders, which are home to the majority of your foundation front end code. Here's what it looks like and where you'll find these folders in any Rails 3.0 or greater project:
+The templating framework I'm describing primarily lives in two high-level folders within your Rails application: the **helpers** and the **views** folders. The views folder is where the action takes place and can be further subdivided into a **Layout** and **Shared** folders, which are home to the majority of your foundation front end code. Here's what it looks like and where you'll find these folders by default in any Rails 3.0 or greater project:
 
 Project
   - app
@@ -39,6 +39,10 @@ Project
     - **views**
       - **layout**
       - **shared**
+
+Until Rails 3.0, where this foundation "lived" and the conventions for using it were very much a no man's land. It was a disorganized dumping ground for HTML, CSS, JavaScript, and Ruby: the wild wild West of coding. Since Rails 3.0 things have become more organized and within these new conventions is where we will begin to build our foundation markup.
+
+NOTE: I first heard the view layer referred to as a "no man's land" and the "West" in John Athayde and Bruce Williams' preface to "[The Rails View: Create a Beautiful and Maintainable User Experience][The Rails View]". Great book.
 
 The Code
 --------
