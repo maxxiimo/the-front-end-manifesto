@@ -53,7 +53,7 @@ Before we begin to explore the code that lives in the templating framework descr
 
 2.  Take a look at the [Groundwork Tasks][Groundwork] section of the Appendix to learn about the thinking behind our [Gemfile][] and [.gitignore][] files, as well as deploying to Heroku.
 
-3.  Integrate this books [starter code][] into your application.
+3.  Integrate this books [starter code][] into your application by cloning the repository and copying folders and files to their corresponding locations.
 
         git clone git@github.com:maxxiimo/base-haml.git
 
