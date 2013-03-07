@@ -82,17 +82,17 @@ Once you have cloned the [starter code][], structurally, these files and folders
       - [**application.js**][application.js]
       - [**site.js**][site.js]
   - helpers
-    - [**application_helper.rb**][application_helper]
+      - [**application_helper.rb**][application_helper]
   - views
-    - layout
-      - [**_chromeframe.html.haml**][_chromeframe]
-      - [**_head.html.haml**][_head]
-      - [**_scripts.html.haml**][_scripts]
-      - [**application.html.haml**][application]
+      - layout
+        - [**_chromeframe.html.haml**][_chromeframe]
+        - [**_head.html.haml**][_head]
+        - [**_scripts.html.haml**][_scripts]
+        - [**application.html.haml**][application]
     - shared
-      - [**_footer.html.haml**][_footer]
-      - [**_logo.html.haml**][_logo]
-      - [**_navigation.html.haml**][_navigation]
+        - [**_footer.html.haml**][_footer]
+        - [**_logo.html.haml**][_logo]
+        - [**_navigation.html.haml**][_navigation]
 - vendor
   - assets
     - **javascripts**
