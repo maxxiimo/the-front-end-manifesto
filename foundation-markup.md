@@ -189,7 +189,7 @@ It looks cleaner than the render method.
 
 \- [Manifesto][manifesto]
 
-You may have noticed that I separated logo and navigation into their own partials rather than use something like *_banner.html.haml* or *_header.html.haml* to hold both. Often times logos and navigation vary between clients or functional areas within an application. When you start the project you don't necessarily see this coming, but needs do change so you might as well lay them out in such a way that you can easily get at them in the future.
+You may have noticed that I separated logo and navigation into their own partials rather than use something like *_banner.html.haml* or *_header.html.haml* to hold both. Often times logos and navigation vary between clients or functional areas within an application. When you start a project you don't necessarily see this coming, but needs do change so you might as well lay them out in such a way that you and backend developers can easily get at them in the future.
 
 > Future proof code.
 
@@ -197,9 +197,7 @@ You may have noticed that I separated logo and navigation into their own partial
 
 \- [Manifesto][manifesto]
 
-#### application.html.haml
-
-The end result is a very succinct *application.html.haml* file:
+The end result of our organizational efforts is a very succinct *application.html.haml* file:
 
     !!!
     -# Uncomment if you want to address IE browser issues via these classes/method.
@@ -222,9 +220,7 @@ The end result is a very succinct *application.html.haml* file:
         = render :partial => 'shared/footer'
         = scripts
 
-Other than all the Internet Explorer conditions it's concise and simple.
-
-NOTE: If you plan to use those conditionals just uncomment each line, if not feel free to delete them. Also note the use of [ARIA roles][]:
+Other than all the Internet Explorer conditions, it's concise and simple. If you plan to use those conditionals just uncomment each line, if not, feel free to delete them. Also note the use of [ARIA roles][]:
 
     %header{:role => "banner"}
 
