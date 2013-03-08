@@ -179,11 +179,11 @@ To pull these integral partials into *application.html.haml* I like to use helpe
 
 It looks cleaner than the render method.
 
-  = head
+    = head
 
-  vs.
+    vs.
 
-  = render :partial => 'shared/head'
+    = render :partial => 'shared/head'
 
 > Seek perfection and excellence, write beautiful code.
 
