@@ -167,7 +167,7 @@ view/shared
 
 Partials 1 and 2 are located in the same layout folder as *application.html.haml* – NOT in the shared folder – because they are essentially integral to the *layout/application.html.haml* file. Some developers like to locate these partials in the shared folder, but to me it makes more sense to put them in the layout folder. The files in the shared folder, on the other hand, may be shared by multiple layout files and feel more "markup" like; much like the many more shared partials you will create along the development cycle.
 
-To pull all these partials into *application.html.haml* I like to use helper methods:
+To pull these integral partials into *application.html.haml* I like to use helper methods:
 
     def head
       render :partial => 'layouts/head'
