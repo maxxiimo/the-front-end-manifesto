@@ -148,7 +148,11 @@ Let's dissect what we've done.
 
 ### Partials
 
-All of the files in our [starter code][] layouts and shared folders could all be located in one file: [layout/application.html.haml][application], but rather than do this, to keep things organized and readable we separated the file into partials:
+All of the files in our layouts and shared folders could all be grouped together in one file: *application.html.haml*, but by convention and in keeping with our [manifesto][]:
+
+> Be consistent, keep code well organized, readable and DRY.
+
+...we separate parts of the file into partials that feed back into *application.html.haml*:
 
 view/layout
 
@@ -161,7 +165,9 @@ view/shared
 4. [_navigation.html.haml][_navigation]
 5. [_footer.html.haml][_footer]
 
-We locate partials 1 and 2 in the same layout folder as application.html.haml – NOT in the shared folder – because they are essentially integral to the layout/application.html.haml file. Some people like to locate them in the shared folder. To pull them into application.html.haml  I like to use helper methods:
+Partials 1 and 2 are located in the same layout folder as *application.html.haml* – NOT in the shared folder – because they are essentially integral to the *layout/application.html.haml* file. Some developers like to locate these partials in the shared folder as well, but to me it makes more sense to put them in the layout folder. The files in the shared folder on the other hand may be shared by multiple layout files, and feel more "markup" like, much like many more shared partials you will create along the development cycle.
+
+To pull all these partials into *application.html.haml* I like to use helper methods:
 
     def head
       render :partial => 'layouts/head'
@@ -171,11 +177,29 @@ We locate partials 1 and 2 in the same layout folder as application.html.haml �
       render :partial => 'layouts/scripts'
     end
 
-I think it looks cleaner in application.html.haml versus using render partial there.
+It looks cleaner than the render method.
 
-Locate partials 3 - 5 in the shared folder. I separate logo and navigation into their own partials rather than use something like _banner.html.haml or _header.html.haml to hold both because often times logos and navigation vary between clients or functional areas within an application. When you start  the project you don't necessarily see this coming, but needs do change so you might as well lay them out in such a way that you can easily get at them in the future.
+  = head
 
-If you use my [starter code][], your application.html.haml file will look like:
+  vs.
+
+  = render :partial => 'shared/head'
+
+> Seek perfection and excellence, write beautiful code.
+
+\- [Manifesto][manifesto]
+
+You may have noticed that I separated logo and navigation into their own partials rather than use something like *_banner.html.haml* or *_header.html.haml* to hold both. Often times logos and navigation vary between clients or functional areas within an application. When you start the project you don't necessarily see this coming, but needs do change so you might as well lay them out in such a way that you can easily get at them in the future.
+
+> Future proof code.
+
+> Provide intelligent and semantically correct hooks and code snippets for backend teams.
+
+\- [Manifesto][manifesto]
+
+#### application.html.haml
+
+The end result is a very succinct *application.html.haml* file:
 
     !!!
     -# Uncomment if you want to address IE browser issues via these classes/method.
@@ -198,7 +222,17 @@ If you use my [starter code][], your application.html.haml file will look like:
         = render :partial => 'shared/footer'
         = scripts
 
-Other than all the Internet Explorer conditions it's concise and simple. If you plan to use those conditions just uncomment each line, if not feel free to delete them. Also note the use of [ARIA roles][]. It's good practice to always consider users that require assistive technology.
+Other than all the Internet Explorer conditions it's concise and simple.
+
+NOTE: If you plan to use those conditionals just uncomment each line, if not feel free to delete them. Also note the use of [ARIA roles][]:
+
+    %header{:role => "banner"}
+
+It's good practice to always consider users that require assistive technology.
+
+> Think in terms of all use cases including and especially accessibility.
+
+\- [Manifesto][manifesto]
 
 ### JavaScript
 
@@ -322,8 +356,15 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [modernizer]:           https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/modernizr-2.6.2.min.js
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
+[manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
+
+
+
 [Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html
 [Helpful Things]:       https://gist.github.com/1981339
+
+
+
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
 [Waste of Time]:        http://www.sitepoint.com/is-internet-explorer-development-really-a-waste-of-time/
