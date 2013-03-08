@@ -238,17 +238,15 @@ I don't think I have found a more comprehensive overview of JavaScript in Rails 
 
 In so far as our *application.html.haml* organization goes, generally it is best to put JavaScript at the very bottom of your markup. Doing so will allow pages to render before scripts are loaded. In other words, they won't hold up the show.
 
-Some scripts though, such as modernizr, need to load before your HTML, and are included in [_head.html.haml][_head] using the JavaScript include tag:
+Some scripts though, such as modernizr, need to load before your HTML, and are included in the [_head.html.haml][_head] partial using the JavaScript include tag which calls our [application.js][application] manifest file:
 
     = javascript_include_tag "application"
-
-This method calls our [application.js][application] manifest file.
 
 > Sprockets uses manifest files to determine which assets to include and serve. These manifest files contain directives — instructions that tell Sprockets which files to require in order to build a single CSS or JavaScript file. With these directives, Sprockets loads the files specified, processes them if necessary, concatenates them into one single file and then compresses them.
 
 \- [Asset Pipeline - Manifest Files and Directives][Manifest Files]
 
-To accommodate all other JavaScript files I use a [_scripts.html.haml][_scripts] partial located in the layouts folder. It is called by the scripts helper method, located at the bottom of our application.html.haml file:
+To accommodate all other JavaScript files I use our [_scripts.html.haml][_scripts] partial. This partial is called by the scripts helper method located at the bottom of our *application.html.haml* file:
 
     = scripts
 
