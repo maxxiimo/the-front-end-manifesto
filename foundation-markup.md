@@ -258,17 +258,19 @@ The [_scripts.html.haml][_scripts] partial is designed for additional scripts, a
 
 If you haven't already noticed, there is quite a bit of commented code in [_head.html.haml][_head]. The reason for this is that there are a lot of things that can be added to this file, but might not be needed. I provide the bare minimum. Everything else, commented out, is just there in case it's needed. Feel free to cherry pick through this commented code and delete what you do not need.
 
-For an explanation on what some of this code does check out:
+For an explanation on what you might need and what some of this code does check out:
 
 - [Helpful things to keep in your \<head>][Helpful Things]
 
 ### The Title
 
-You may have also noticed that I use the following snippet of code in [<head>][_head]:
+You may have also noticed that I use the following snippet of code in [\<head>][_head]:
 
     %title= content_for?(:title) ? yield(:title) : "XXX"
 
-You can use whatever you would like, or nothing at all (although I wouldn't advise this), but please, whatever you do, DO NOT put the actual titles in your controllers. Text belongs in views and should stay there whenever humanly possible. With the above code I would add this to an individual page:
+It is designed to provide a title for each page your end-users visit. If a unique title does not exist for any particular page, the default "XXX" title is given. Obviously change this.
+
+Never put title text in your controllers. Text belongs in views and should stay there whenever humanly possible. Add the following to the top of any page you wish to add a unique title to:
 
     - content_for :title do
       Some Cool Title
