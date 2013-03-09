@@ -6,10 +6,11 @@ HTML and CSS are the rebar of the World Wide Web. Equally important to your appl
 Preprocessors
 -------------
 
-Probably the two most well-known dynamic stylesheet preprocessors in use today are [Sass][] and [Less][]. Sass is the sister of [Haml][], my preprocessor of choice as well as the default preprocessor in Rails 3.X. Besides being awesome, as a Rails front end developer you are going to predominantly see Sass being used in projects you work on as a consultant or as a new member of an existing team and project, so if you haven't dove in already, [you should][].
+Probably the two most well-known dynamic stylesheet preprocessors in use today are [Sass][] and [Less][]. Sass is the sister of [Haml][], my preprocessor of choice, and the default preprocessor in Rails 3.X. As a Rails front end developer you are going to find Sass in many projects you work on as a consultant or as a new member of an existing team and project.
 
-The following two articles will give you a great overview on Sass in rails:
+If your new to preprocessors the following articles will give you a great overview on why Sass is great, and more importantly, Sass in Rails:
 
+- [David Walsh on Redesigning with Sass][Redesigning with Sass]
 - [An Introduction to Sass in Rails 1][Sass in Rails 1]
 - [An Introduction to Sass in Rails 2][Sass in Rails 2]
 
@@ -493,7 +494,7 @@ With all of this work you are more than ready to begin building an app with your
 [Sass]:                 http://sass-lang.com/
 [Less]:                 http://lesscss.org/
 [Haml]:                 http://haml-lang.com/
-[you should]:           http://css-tricks.com/redesigning-with-sass/
+[Redesigning with Sass]: http://css-tricks.com/redesigning-with-sass/
 [Sass in Rails 1]:      http://rubysource.com/an-introduction-to-sass-in-rails/
 [Sass in Rails 2]:      http://rubysource.com/an-introduction-to-sass-in-rails-2/
 [Sass vs. SCSS]:        http://thesassway.com/articles/sass-vs-scss-which-syntax-is-better
