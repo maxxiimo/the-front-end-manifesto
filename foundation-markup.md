@@ -307,7 +307,7 @@ The key is not to go nuts and partial out everything. If you do that, finding th
 
 ### Naming Conventions
 
-When naming HTML files try to stay within REST conventions, i.e. index.html.haml, show.html.haml, etc. When naming outside of REST be short and concise, use names that indicate what the files function or purpose are.
+When naming HTML files try to stay within REST conventions, i.e. *index.html.haml*, *show.html.haml*, etc. When naming outside of REST be short and concise, use names that indicate what the files function or purpose are.
 
 When naming HTML files separate words with underscores:
 
@@ -332,7 +332,7 @@ For partials, if there are several related to an individual file, group them by 
 
 These days most people like to just forget about IE 6, it's old, "we're not supporting it, those users need to update!" ...But here's the problem, those users are still out there, even if they don't want to be. Have you ever been to your local public library and checked out the super old machines people have to use there? I sometimes go just to see what an application I'm working on will look like in older browsers.
 
-So what I propose is a compromise for those of you who don't want to waste your time developing for IE 6; give those users notice and ability via [Chrome Frame][]. Our [starter code][] by includes this by default in the [following partial][_chromeframe]:
+So what I propose is a compromise for those of you who don't want to waste your time developing for IE 6; give those users notice and ability via [Chrome Frame][]. Our [starter code][] includes this by default in the [following partial][_chromeframe]:
 
     /[if lt IE 7 ]
       %p.chromeframe
@@ -364,10 +364,10 @@ I should mention that the author of this article follows up with a solution in h
 What We've Done
 ---------------
 
-- We started this chapter by laying out the groundwork for your foundation markup.
-- We then began to discuss what an application layout is, from the front end coder's viewpoint, and how it is organized in a Rails application.
-- We then grabbed all of the starter code for this chapter, our foundation markup, and integrated into a new Rails application.
-- Finally, we took a look at how this foundation markup is organized and briefly reviewed legacy browsers.
+- We started this chapter by laying out the groundwork for our foundation markup.
+- We then began to discuss what an application layout is, from the front end coder's perspective, and how it is organized in a Rails application.
+- We then grabbed all of the starter code for this chapter, our foundation markup, and integrated it into a new Rails application.
+- Finally, we took a look at how this foundation markup is organized, and briefly reviewed legacy browsers.
 
 In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 
