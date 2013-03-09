@@ -256,9 +256,9 @@ The [_scripts.html.haml][_scripts] partial is designed for additional scripts, a
 
 ### What to Put in \<head>
 
-If you haven't already noticed, there is a lot of commented out code in [_head.html.haml][_head]. The reason for this is that there are a lot of things that you can add to this file, but might not need. I provide the bare minimum, and everything else, commented out, just in case you need it.
+If you haven't already noticed, there is quite a bit of commented code in [_head.html.haml][_head]. The reason for this is that there are a lot of things that can be added to this file, but might not be needed. I provide the bare minimum. Everything else, commented out, is just there in case it's needed. Feel free to cherry pick through this commented code and delete what you do not need.
 
-For an explanation on what this stuff is/does check out:
+For an explanation on what some of this code does check out:
 
 - [Helpful things to keep in your \<head>][Helpful Things]
 
