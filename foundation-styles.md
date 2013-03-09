@@ -6,7 +6,7 @@ HTML and CSS are the rebar of the World Wide Web. Equally important to your appl
 Preprocessors
 -------------
 
-Probably the two most well-known dynamic stylesheet preprocessors in use today are [Sass][] and [Less][]. Sass is the sister of [Haml][], my preprocessor of choice as well as the default preprocessor in Rails 3.X. Besides being awesome, as a Rails front end developer you are going to predominantly see Sass being used in projects you work on as a consultant or as a new member to an existing team and project, so if you haven't dove in already, [you should][].
+Probably the two most well-known dynamic stylesheet preprocessors in use today are [Sass][] and [Less][]. Sass is the sister of [Haml][], my preprocessor of choice as well as the default preprocessor in Rails 3.X. Besides being awesome, as a Rails front end developer you are going to predominantly see Sass being used in projects you work on as a consultant or as a new member of an existing team and project, so if you haven't dove in already, [you should][].
 
 The following two articles will give you a great overview on Sass in rails:
 
