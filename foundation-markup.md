@@ -270,7 +270,13 @@ You may have also noticed that I use the following snippet of code in [\<head>][
 
 It is designed to provide a title for each page your end-users visit. If a unique title does not exist for any particular page, the default "XXX" title is given. Obviously change this.
 
-Never put title text in your controllers. Text belongs in views and should stay there whenever humanly possible. Add the following to the top of any page you wish to add a unique title to:
+NOTE: Never put title text in your controllers. Text belongs in views and should stay there whenever humanly possible.
+
+> Abstract logic out of views, keep view code out of controllers.
+
+\- [Manifesto][manifesto]
+
+Add the following to the top of any page you wish to add a unique title to:
 
     - content_for :title do
       Some Cool Title
@@ -289,11 +295,19 @@ Partials help:
 3.  Reuse code, i.e. keep things DRY
 4.  Encapsulate logic, although helper methods are preferred
 
-The key is not to go nuts and partial everything. If you do that, finding things can become a wild goose chase for backing coders trying to figure out where the markup they need lives.
+The key is not to go nuts and partial out everything. If you do that, finding things can become a wild goose chase for backend coders trying to figure out where the markup they need lives.
+
+> Provide intelligent and semantically correct hooks and code snippets for backend teams.
+
+> Be consistent, keep code well organized, readable and DRY.
+
+> KISS (keep it simple stupid)
+
+\- [Manifesto][manifesto]
 
 ### Naming Conventions
 
-When naming HTML files try to stay within REST conventions, i.e. index.html.haml, show.html.haml, etc.. When naming outside of REST be short and concise, use names that indicate what the files function or purpose are.
+When naming HTML files try to stay within REST conventions, i.e. index.html.haml, show.html.haml, etc. When naming outside of REST be short and concise, use names that indicate what the files function or purpose are.
 
 When naming HTML files separate words with underscores:
 
@@ -304,11 +318,21 @@ For partials, if there are several related to an individual file, group them by 
     _tabs.html.haml
     _tabs_sub_nav.html.haml
 
+> Seek perfection and excellence, write beautiful code.
+
+> Provide intelligent and semantically correct hooks and code snippets for backend teams.
+
+> Be consistent, keep code well organized, readable and DRY.
+
+> KISS (keep it simple stupid)
+
+\- [Manifesto][manifesto]
+
 ### IE 6
 
-These days most people like to just forget about IE 6, it's old, "We're not supporting it, those users need to update!" ...But here's the problem, those users are still out there, even if they don't want to be. Have you ever been in your local public library and checked out the super old machines people have to use there? I sometimes go just to see what an application I'm working on will look like in older browsers.
+These days most people like to just forget about IE 6, it's old, "we're not supporting it, those users need to update!" ...But here's the problem, those users are still out there, even if they don't want to be. Have you ever been to your local public library and checked out the super old machines people have to use there? I sometimes go just to see what an application I'm working on will look like in older browsers.
 
-So what I propose is a compromise for those of you who don't want to waste your time developing for IE 6; give those users notice and ability via [Chrome Frame][]. If you're using my [starter code][] you'll notice that I added to the [following partial][_chromeframe] to your layouts folder:
+So what I propose is a compromise for those of you who don't want to waste your time developing for IE 6; give those users notice and ability via [Chrome Frame][]. Our [starter code][] by includes this by default in the [following partial][_chromeframe]:
 
     /[if lt IE 7 ]
       %p.chromeframe
@@ -324,8 +348,6 @@ Here is the corresponding helper method:
     def chromeframe
       render :partial => 'layouts/chromeframe'
     end
-
-There really are a lot of factors that could prevent the user from upgrading:
 
 > As a web developer, you’re working with IT every day. Upgrading doesn’t worry you; it’s easy and everyone should do it. But are you neglecting to consider:
 >
