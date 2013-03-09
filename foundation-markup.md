@@ -238,21 +238,25 @@ I don't think I have found a more comprehensive overview of JavaScript in Rails 
 
 In so far as our *application.html.haml* organization goes, generally it is best to put JavaScript at the very bottom of your markup. Doing so will allow pages to render before scripts are loaded. In other words, they won't hold up the show.
 
-Some scripts though, such as modernizr, need to load before your HTML, and are included in the [_head.html.haml][_head] partial using the JavaScript include tag which calls our [application.js][application] manifest file:
+Some scripts though, such as modernizr, need to load before your HTML does and therefore are called through a Rails JavaScript include tag in [_head.html.haml][_head]:
 
     = javascript_include_tag "application"
+
+The JavaScript include tag specifies a manifest file called [application.js][application], which in turn requires the modernizer script:
+
+    //= require modernizr-2.6.2.min
+    //= require jquery-1.8.3.min
+    //= require site
 
 > Sprockets uses manifest files to determine which assets to include and serve. These manifest files contain directives — instructions that tell Sprockets which files to require in order to build a single CSS or JavaScript file. With these directives, Sprockets loads the files specified, processes them if necessary, concatenates them into one single file and then compresses them.
 
 \- [Asset Pipeline - Manifest Files and Directives][Manifest Files]
 
-To accommodate all other JavaScript files I use our [_scripts.html.haml][_scripts] partial. This partial is called by the scripts helper method located at the bottom of our *application.html.haml* file:
-
-    = scripts
+The [_scripts.html.haml][_scripts] partial is designed for additional scripts, and located at the bottom of *application.html.haml*, after all our markup.
 
 ### What to Put in \<head>
 
-If you haven't already noticed, there is a lot of commented out code in [_head.html.haml][_head]. The reason for this is that there is a lot of things that you could put there, but don't. Obviously just put in what you need. I provide the bare minimum, but everything else, commented out, just in case you need it.
+If you haven't already noticed, there is a lot of commented out code in [_head.html.haml][_head]. The reason for this is that there are a lot of things that you can add to this file, but might not need. I provide the bare minimum, and everything else, commented out, just in case you need it.
 
 For an explanation on what this stuff is/does check out:
 
