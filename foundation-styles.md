@@ -33,7 +33,7 @@ So right off the bat I have to say that I love [Compass][]. It's based on Sass, 
 
 \- [Compass][]
 
-All the [starter CSS ][] files we will use in our foundation styles incorporate Compass.
+All the [starter CSS][] files we will use in our foundation styles incorporate Compass.
 
 In the next section will take a brief look at CSS Frameworks and Grid Systems, but only a brief look because we are not going to use them. Through Compass you can add all kinds of framework components like:
 
