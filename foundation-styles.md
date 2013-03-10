@@ -68,7 +68,9 @@ You'll also find a comprehensive roundup of [grid systems][] in the Appendix for
 Our Foundation
 --------------
 
-It's time to build our foundation styles. Our [stylesheets][starter CSS] are written using Sass, but more important than the actual styles themselves – there are really not that many included – is the way they are organized. In my experience as you move along a Rails project and the project grows in complexity and different authors contribute; stylesheets can become behemoths, unmanageable, and downright confusing. To avoid this it's highly advisable to start a project with some kind of organizational structure in place from the get-go. The styles I provide do exactly this.
+It's time to build our foundation styles. Our [stylesheets][starter CSS] are written using Sass, but more important than the actual styles themselves – there are really not that many included – is the way that they are organized.
+
+In my experience, as you move along a Rails project and the project grows in complexity, and different authors contribute, stylesheets can become behemoths, unmanageable, and downright confusing. To avoid this it's highly advisable to start a project with some kind of organizational structure in place from the get-go. The styles I provide do exactly this.
 
 Before we begin will need to quickly set up Compass.
 
