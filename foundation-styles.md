@@ -125,19 +125,17 @@ Setting up our CSS is pretty straightforward. Basically, all you have to do is c
 
 Your stylesheet file structure should now look like this:
 
-<br>
-
 ![][stylesheets]
 
-NOTE: You may have noticed that only our base application file uses the .scss syntax, and all other other partials are using the .sass syntax. This is perfectly fine and done so because of my own personal preference to use .sass where I can.
-
-Simple as that, and if you have been following along from the last chapter, [Foundation Markup][Chapter 1], here is what your page will now look with the new stylesheets in place:
+Simple as that, and here is what your page will now look with the new stylesheets in place:
 
 <br>
 
 ![][Basic HTML No Styles]
 
 It's pretty basic, but much better than [before][].
+
+NOTE: You may have noticed that only our base application file uses the .scss syntax, and all other other partials are using the .sass syntax. This is perfectly fine and done so because of my own personal preference to use .sass where I can.
 
 Organization
 ------------
