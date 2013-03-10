@@ -49,20 +49,21 @@ When working with Compass the following resource may be useful to you:
 CSS Frameworks and Grid Systems
 -------------------------------
 
-Although my preference is to use Compass, I don't want to discourage you from adopting a framework in your project. Frameworks can be extremely helpful in starting a project. They give you a whole boatload of base styles that are instantly accessible through your HTML tags or specified class names. They include base font sizes and rhythm, default formats for almost every kind of HTML tag, and by simply dropping in the frameworks class names you can add some great looking styles to your project that are built to work, with very few hitches, across all browsers. On top of that you get prebuilt scripts for commonly used functions like pop-ups, modals and menu systems. The list goes on.
+Although my preference is to use Compass, I don't want to discourage you from adopting a framework in your project. Frameworks can be extremely helpful, especially when starting a new project. They give you a whole boatload of base styles that are instantly accessible through your HTML tags and/or specified class names. They include base font sizes and rhythm, default formats for almost every kind of HTML tag, and by simply dropping in the frameworks class names you can add some great looking styles to your project that are built to work, with very few hitches, across all browsers. On top of that you get prebuilt scripts for commonly used functions like pop-ups, modals and menu systems. The list goes on.
 
 You'll find a roundup of the most well-known [frameworks][] in the Appendix.
 
-Pretty much every framework has a [grid systems] incorporated into it, but there are also a number of standalone grid systems that might be useful to you. To understand what a grid system is checkout:
+Pretty much every framework has a grid systems incorporated into it, but there are also a number of standalone grid systems that might be useful to you. If you're not 100% positive what a grid system is, take a look at:
 
 - [Grids Are Good][]
 
 Why use a grid system? The following quote most succinctly answers this question:
 
 > After a few minutes of griddy thinking, the benefits become clear: designers gain a rational, structured framework for organizing content and users gain well-organized, legible sites.
+
 - [Fluid Grids by Ethan Marcotte][Fluid Grids]
 
-You'll also find a comprehensive roundup of [grid systems][] in the Appendix.
+You'll also find a comprehensive roundup of [grid systems][] in the Appendix for you to review and choose from.
 
 Our Foundation
 --------------
