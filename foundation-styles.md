@@ -143,7 +143,7 @@ Simple as that, and here is what your page will now look with the new stylesheet
 
 It's pretty basic, but much better than [before][].
 
-NOTE: You may have noticed that only our base application file uses the .scss syntax, and all other other partials are using the .sass syntax. This is perfectly fine and done so because of my own personal preference to use .sass where I can.
+NOTE: You may have noticed that only our base application file uses the .scss syntax, while all other other partials use the .sass syntax. This is perfectly fine and done so because of my own personal preference to use .sass where I can.
 
 Organization
 ------------
