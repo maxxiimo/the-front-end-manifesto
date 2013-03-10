@@ -76,7 +76,7 @@ Before we begin will need to quickly set up Compass.
 
 ### Compass Set Up
 
-1.  If you have not done so already, per the [Foundation Markup][Chapter 1] chapter, add "compass-rails" to your gemfile. For more explicit directions take a look at the [compass-rails][] gem source.
+1.  If you have not done so already, per [Chapter 1][], add "compass-rails" to your gemfile. For more explicit directions take a look at the [compass-rails][] gem source.
 
 2.  Run...
 
