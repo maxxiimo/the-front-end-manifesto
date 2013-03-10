@@ -101,13 +101,23 @@ Before we begin will need to quickly set up Compass.
 
     If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming from which is extremely helpful when debugging. Un-comment the last two lines if you plan to use FireSass.
 
+5.  Edit *config/application.rb*:
+
+    Un-comment the following:
+
+        if defined?(Bundler)
+          # If you precompile assets before deploying to production, use this line
+          Bundler.require(*Rails.groups(:assets => %w(development test)))
+          # If you want your assets lazily compiled in production, use this line
+          Bundler.require(:default, :assets, Rails.env)
+
+    If you find your system has a problem with sass partial underscores when precompiling, add the following:
+
+        # Precompile *all* assets, except those that start with underscore per:
+        # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+        config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+
 That's it! You now have Compass and all that it brings available to you.
-
-If you find your system has a problem with sass partial underscores when precompiling, add the following to your *config/application.rb* file:
-
-    # Precompile *all* assets, except those that start with underscore per:
-    # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
-    config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
 Some additional resources for working with Compass include:
 
