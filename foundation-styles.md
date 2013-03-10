@@ -37,7 +37,7 @@ All the [starter CSS][] files we will use in our foundation styles incorporate C
 
 In the next section will take a brief look at CSS Frameworks and Grid Systems, but only a brief look because we are not going to use them. Through Compass you can add all kinds of framework components like:
 
-- [Responsive grids for Compass][Responsive Grids] or [Zen Grids][]
+- [Susy][] or [Zen Grids][]
 - [Sassy Buttons][] or [Fancy Buttons][]
 
 ...and essentially create your own framework with a unique look and feel. Traditional frameworks on the other hand just give you styles. If you want to break free it takes some tinkering.
@@ -504,10 +504,10 @@ With all of this work you are more than ready to begin building an app with your
 [Html2Haml]:            http://html2haml.heroku.com/
 [html2haml Gem]:        https://github.com/haml/html2haml
 [Compass]:              http://compass-style.org/
+[Susy]:                 http://susy.oddbird.net/
+[Zen Grids]:            http://zengrids.com/
 [Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
 [Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/
-[Responsive Grids]:     http://susy.oddbird.net/
-[Zen Grids]:            http://zengrids.com/
 [35 Great Resources]:   http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
 [frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-2.md#frameworks
 [Grids Are Good]:       http://www.subtraction.com/pics/0703/grids_are_good.pdf
