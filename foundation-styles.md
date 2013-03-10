@@ -88,13 +88,13 @@ Before we begin will need to quickly set up Compass.
 
     Compass will generate a configuration file and stylesheets. Delete the stylesheets. We're going to use our own.
 
-3.  Delete your application.css file and create and replace it with a blank application.scss.
+3.  Delete your *application.css* file and create and replace it with a blank *application.scss*.
 
     NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
 
     IMPORTANT: Use @import to organize styles rather than Sprockets. You can use Sprockets' require syntax, however per the explanation found at of the [compass-rails][] gem source this is not a good idea.
 
-4.  Add the following commented out code to your config/compass.rb file generated in step 1:
+4.  Add the following commented out code to your *config/compass.rb* file generated in step 1:
 
         # To allow compass to import partials from subdirectories per:
         # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
@@ -109,7 +109,7 @@ Before we begin will need to quickly set up Compass.
 
 That's it! You now have Compass and all that it brings available to you.
 
-If you find your system has a problem with sass partial underscores when precompiling, add the following to your config/application.rb file:
+If you find your system has a problem with sass partial underscores when precompiling, add the following to your *config/application.rb* file:
 
     # Precompile *all* assets, except those that start with underscore per:
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
