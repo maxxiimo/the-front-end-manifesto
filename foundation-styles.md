@@ -72,10 +72,6 @@ It's time to build our foundation styles. Our [stylesheets][starter CSS] are wri
 
 In my experience, as you move along a Rails project and the project grows in complexity, as different authors contribute, stylesheets can become behemoths, unmanageable, and downright confusing. To avoid this I highly recommend that you start a project with some kind of organizational structure in place from the get-go. The styles we will use in this chapter do exactly this.
 
-Clone this books [starter CSS][]:
-
-        git clone git@github.com:maxxiimo/base-css.git
-
 Before we begin will need to quickly set up Compass.
 
 ### Compass Set Up
@@ -89,8 +85,6 @@ Before we begin will need to quickly set up Compass.
     Compass will generate a configuration file and stylesheets. Delete the stylesheets. We're going to use our own.
 
 3.  Delete your *application.css* file and create and replace it with a blank *application.scss*.
-
-    NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
 
     IMPORTANT: Use @import to organize styles rather than Sprockets. You can use Sprockets' require syntax, however per the explanation found at of the [compass-rails][] gem source this is not a good idea.
 
@@ -123,13 +117,19 @@ Some additional resources for working with Compass include:
 
 ### Stylesheet Set Up
 
-Now that Compass is set up, let's set up our stylesheets. This task is pretty straightforward. Basically all you have to do is clone these files and subfolders exactly as they're laid out, and paste/merge them into your assets/styles directory:
+Now that Compass is set up, let's set up our stylesheets. Clone this books [starter CSS][]:
 
-- https://github.com/maxxiimo/base-css
+        git clone git@github.com:maxxiimo/base-css.git
 
-Delete your application.css file if you have not done so already. It is being replaced with [application.scss][].
+Setting up our CSS is pretty straightforward. Basically, all you have to do is copy into your project the cloned files and subfolders exactly as they are laid out, in their entirety. You will only need to replace the blank *application.scss* file, otherwise you should have no other files in your stylesheets directory, unless you forgot to delete *application.css* when setting up Compass.
 
-NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
+Your stylesheet file structure should now look like this:
+
+<br>
+
+![][stylesheets]
+
+NOTE: You may have noticed that only our base application file uses the .scss syntax, and all other other partials are using the .sass syntax. This is perfectly fine and done so because of my own personal preference to use .sass where I can.
 
 Simple as that, and if you have been following along from the last chapter, [Foundation Markup][Chapter 1], here is what your page will now look with the new stylesheets in place:
 
@@ -563,3 +563,4 @@ With all of this work you are more than ready to begin building an app with your
 [next chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
 
 [Basic HTML No Styles]: http://chrismaxwell.com/manifesto/getting-started/base-html-files-with-styles.jpg
+[stylesheets]:          http://chrismaxwell.com/manifesto/stylesheets.gif
