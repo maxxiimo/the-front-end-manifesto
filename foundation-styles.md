@@ -27,11 +27,13 @@ So what about [Less][]? Well it's the runner-up. That's all I'm going to say abo
 Compass
 -------
 
-So right off the bat I have to say that I love [Compass][]. It's based on Sass, powerful, well-documented, widely used, there are a ton of extensions for it, and it generally makes life easier for me.
+So right off the bat I have to say that I love [Compass][]. It's based on Sass, powerful, well-documented, widely used, there are a ton of extensions for it, and it generally makes life easier.
 
 > Compass is an open-source CSS Authoring Framework.
 
-I'm pretty biased on this one, and all the [starter CSS ][] files we will use in our foundation styles incorporate Compass.
+\- [Compass][]
+
+All the [starter CSS ][] files we will use in our foundation styles incorporate Compass.
 
 In the next section will take a brief look at CSS Frameworks and Grid Systems, but only a brief look because we are not going to use them. Through Compass you can add all kinds of framework components like:
 
