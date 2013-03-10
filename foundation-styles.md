@@ -72,6 +72,10 @@ It's time to build our foundation styles. Our [stylesheets][starter CSS] are wri
 
 In my experience, as you move along a Rails project and the project grows in complexity, as different authors contribute, stylesheets can become behemoths, unmanageable, and downright confusing. To avoid this I highly recommend that you start a project with some kind of organizational structure in place from the get-go. The styles we will use in this chapter do exactly this.
 
+Clone this books [starter CSS][]:
+
+        git clone git@github.com:maxxiimo/base-css.git
+
 Before we begin will need to quickly set up Compass.
 
 ### Compass Set Up
