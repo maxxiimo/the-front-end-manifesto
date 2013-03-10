@@ -525,7 +525,7 @@ With all of this work you are more than ready to begin building an app with your
 [compass-rails]:        https://github.com/Compass/compass-rails
 [FireSass]:             https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
 [Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
-[How I Use Compass]:    http://austintech.com/blog/2011/08/19/how-i-use-compass-with-rails-3-1/
+[How I Use Compass]:    http://patrickward.com/code/2011/08/19/how-i-use-compass-with-rails-3-dot-1/
 [Asset Pipeline]:       http://www.engineyard.com/blog/2011/sass-compass-and-the-rails-3-1-asset-pipeline/
 [application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss
 [before]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md#end-result
