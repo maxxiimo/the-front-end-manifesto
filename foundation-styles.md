@@ -148,9 +148,13 @@ NOTE: You may have noticed that only our base application file uses the .scss sy
 Organization
 ------------
 
-The [sample stylesheets][starter CSS] I provide are pretty sparse, and that's fine. What's important are the conventions I use and organizational structure of them. The styles I do provide are very common to most projects, and perhaps the bare minimum necessary to do things right.
+If you dig around our new stylesheets you'll find that they are pretty sparse, and that's fine, they are that way by design. What's important are the conventions used and organizational structure. The few styles provided are common to many projects, and perhaps the bare minimum necessary for this book.
 
-I can't stress enough how important it is to start a project with some kind of organizational structure in place. Even if you don't know what shape the application is going to take, it will serve you well to have a basic structure. As you move along you will fill in all of the empty placeholders.
+I can't stress enough how important it is to start a project with some kind of organizational structure in place. Even if you don't know what shape the application is going to take, it will serve you well to have a basic structure in mind. As you move along you will fill in all of the empty placeholders.
+
+> Be consistent, keep code well organized, readable and DRY.
+
+\- [Manifesto][manifesto]
 
 ### Style TOC
 
