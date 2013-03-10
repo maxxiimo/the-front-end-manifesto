@@ -88,7 +88,7 @@ Before we begin will need to quickly set up Compass.
 
     Compass will generate a configuration file and stylesheets. Delete the stylesheets. We're going to use our own.
 
-3.  Delete your application.css file and replace it with the starter styles [application.scss][].
+3.  Delete your application.css file and create and replace it with a blank application.scss.
 
     NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
 
@@ -103,7 +103,9 @@ Before we begin will need to quickly set up Compass.
         # To compile in the necessary debugging information for FireSass.
         # sass_options = {:debug_info => true}
 
-    If you have problems with subfolders within your assets/stylesheets folder, un-comment the first three lines. If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming from which is extremely helpful when debugging. Un-comment the last two lines if you plan to use FireSass.
+    If you have problems with subfolders within your assets/stylesheets folder, un-comment the first three lines.
+
+    If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming from which is extremely helpful when debugging. Un-comment the last two lines if you plan to use FireSass.
 
 That's it! You now have Compass and all that it brings available to you.
 
