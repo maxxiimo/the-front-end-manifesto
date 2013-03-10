@@ -88,11 +88,11 @@ Before we begin will need to quickly set up Compass.
 
     Compass will generate a configuration file and stylesheets. Delete the stylesheets. We're going to use our own.
 
-3.  Delete your application.css file and replace it with [application.scss][].
+3.  Delete your application.css file and replace it with the starter styles [application.scss][].
 
     NOTE: Your base application file needs to use the .scss syntax, however, other partials can use the .sass syntax, which is my preference.
 
-    IMPORTANT: Use @import to organize styles rather than Sprockets. You can use Sprockets' require syntax, however per the explanation found at of the [compass-rails][] gem source it is probably not a good idea.
+    IMPORTANT: Use @import to organize styles rather than Sprockets. You can use Sprockets' require syntax, however per the explanation found at of the [compass-rails][] gem source this is not a good idea.
 
 4.  Add the following commented out code to your config/compass.rb file generated in step 1:
 
