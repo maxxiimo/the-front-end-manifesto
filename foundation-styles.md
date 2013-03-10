@@ -61,7 +61,7 @@ Why use a grid system? The following quote most succinctly answers this question
 
 > After a few minutes of griddy thinking, the benefits become clear: designers gain a rational, structured framework for organizing content and users gain well-organized, legible sites.
 
-- [Fluid Grids by Ethan Marcotte][Fluid Grids]
+\- [Fluid Grids by Ethan Marcotte][Fluid Grids]
 
 You'll also find a comprehensive roundup of [grid systems][] in the Appendix for you to review and choose from.
 
