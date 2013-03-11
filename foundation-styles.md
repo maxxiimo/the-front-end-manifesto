@@ -158,9 +158,9 @@ I can't stress enough how important it is to start a project with some kind of o
 
 ### Style TOC
 
-Our [application.scss][] file is kind of like a table of contents for partials. In addition to indexing your partials, this TOC layers in styles based on precedents. Styles in the last partial entry, i.e. import, will override styles in partials listed above it so long as the styles preceding it have the same class or ID and specificity, and/or tag.
+The heart of our organizational structure is [application.scss][]. This file reminds me of a table of contents for partials. In addition to indexing your partials, it layers in styles based on precedents. Styles in the last partial listed override styles in partials listed above it – so long as the styles preceding it have the same class or ID and specificity (and/or tag).
 
-The TOC for our [application.scss][] with the files I have generated for you looks like this:
+Our hierarchy looks like this:
 
 - DEFINITIONS
   - [_define.sass][]
@@ -192,19 +192,13 @@ The TOC for our [application.scss][] with the files I have generated for you loo
 
 #### What's in Each Section
 
-I use the above structure for most of my projects. What follows is a snippet of each section as they actually appear in [application.scss][] followed by a description of what the section should be used for:
-
-    /*
-    * Important! Do *not* use Sprockets "require" syntax.
-    * Use @import to include other stylesheets and Compass mixins.
-    */
-
+What follows is a snippet of each section of *application.scss* followed by a description of what the section should be used for:
 
     /* DEFINITIONS
     ============================================================================ */
     @import "define";
 
-Use a "definitions" section to set global variables such as $base-font, $base-font-size, etc..
+Use the "definitions" section to set global variables for the entire project such as $base-font or $base-font-size.
 
     /* MIXINS
     ============================================================================ */
@@ -212,30 +206,24 @@ Use a "definitions" section to set global variables such as $base-font, $base-fo
     @import "media_queries";
     @import "mixins";
 
-I use Compass and recommend that you do to. I also include a base set of media queries and a blank file to place mixins in. It's just a starter set and can be tweaked however you want.
-
-If you do not plan to use Compass, remove the import.
+Major mixins such as Compass and homebrewed mixins. Included in our starter CSS is a base set of media queries (to be discussed in [Chapter 3 - Media Queries][Media Queries]) and a blank file to place mixins into.
 
     /* RESETS
     ============================================================================ */
-    @import "boilerplate/h5bp_normalize_v101";
-    // @import "compass/reset";
-    // The following can be found at https://github.com/maxxiimo/base-resets.
-    // @import "normalize";
-    // @import "reset_meyer";
+    @import "boilerplate/h5bp_normalize_v102";
 
     // To counter normalize indentation of lists.
     ol, ul {
       padding-left: 0;
     }
 
-I include four major reset styles in my application file and uncomment the one I plan to use for a particular project.
+HTML5 Boilerplate version of normalize.css. Notice the ad hoc code following the import? Feel free to add code anywhere throughout *application.scss*. Rules of CSS precedence apply here.
 
     /* BASIC STRUCTURE
     ============================================================================ */
     @import "desktop/layout";
 
-Use a "layout" section to style major elements and component areas such as html and body tags, or header and footer areas.
+Use "basic structure" section to style major elements and component areas such as html and body tags, or header and footer areas.
 
     /* TYPOGRAPHY
     ============================================================================ */
@@ -248,38 +236,38 @@ Use the "typography" section to style major typographical elements such as parag
     @import "desktop/misc";
     @import "sprites";
 
-"Miscellaneous" is a catchall for miscellaneous partials and styles that should appear earlier on in the stylesheet. I include two right off the bat; the first has an assortment of general styles I use for building a front end; and, the second is for sprites, whether I'm using Compass' built in sprite engine, or building them on my own.
+"Miscellaneous" is a catchall for miscellaneous partials and styles that should appear earlier on in the stylesheet. "desktop/misc" has an assortment of general helper styles; "sprites" obviously is for sprites, whether using Compass' built in sprite engine, or building them on my own.
 
     /* NAVIGATION
     ============================================================================ */
     @import "desktop/navigation";
 
-"Navigation" could be part of another section, or even contained within another partial, however, experiences has taught me that a lot of things can happen in navigation. Styles can become quite large, and there can be more than one navigation design or type depending on user.
-
-The main navigations parent tag \<nav> or more appropriately %nav does belong in the layout partial though since through it you might control layout factors such as position or width and height.
+"Navigation" could be part of another section, or even contained within another partial, however, experiences has proven that a lot of things can happen in navigation. Styles can become quite large, and there can be more than one navigation design or user driven type.
 
     /* FORMS
     ============================================================================ */
     @import "desktop/forms";
 
-"Forms" is self-evident. One comment about forms, I really dislike any form generator that doesn't easily let you change its underlying HTML or where it's not that obvious where the underlying HTML lives. I have consulted for numerous companies who started with these kinds of plug-ins only to realize how boxed in they were later on. Just a word of caution.
+"Forms" is self-evident. One comment about forms.
+
+TIP: I dislike any form generator that do not easily allow you to change its underlying HTML, or not that obvious where the underlying HTML lives. I have consulted for numerous companies who started with these kinds of plug-ins only to realize how boxed in they were later on. Just a word of caution.
 
     /* PAGES
     ============================================================================ */
     @import "desktop/pages";
 
-"Pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, or perhaps separate them into their own partials depending on your needs, and then call them into the Pages partial, or a combination of this.
+"Pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, separate them into their own partials, or a combination of this, depending on your needs.
 
     /* STAGING - new styles belong here !!!DO NOT INTEGRATE!!!
     ============================================================================ */
     @import "staging";
 
-The "staging" section is exactly what it says, a staging area for code. It's good to have a staging area for developers so that one individual or team can be the gatekeeper to code entering stylesheets. This ensures that things remain organized, DRY, follow the stylesheet standards, and at a bare minimum provide a form of quality control.
+The "staging" section is a staging area for code and allows an individual or team to be the gatekeeper to code entering stylesheets. This ensures that stylesheets remain organized, DRY, follow the stylesheet standards, and at a bare minimum provide a form of quality control.
 
     /* APPLICATION - ad hoc code under this line
     ============================================================================ */
 
-"Application" could be a place for anything that did not fit in anywhere else and doesn't need to take precedence over preceding styles.
+"Application" could be a place for anything that did not fit in anywhere else and doesn't need to take precedence.
 
     /* LAST
     ============================================================================ */
@@ -290,9 +278,9 @@ The "staging" section is exactly what it says, a staging area for code. It's goo
 
 #### Organizational Notes
 
-Why the "desktop" subfolder? To better organize desktop/tablet specific files. In the next chapter we will create another subfolder called "mobile". Files outside of these two folders are common to both device types.
+Why the "desktop" subfolder? To better organize desktop/tablet specific files. In the [next chapter][Chapter 3] we will create another subfolder called "mobile". Files outside of these two folders are common to both device types.
 
-Why the "=" underlines? It helps me find things and see the organization, especially when I browse CSS output from a browser in development mode.
+Why the "========" underlines? It helps locate styles and see the general organization of stylesheets, especially when browsing CSS output.
 
 ### Resets
 
@@ -508,7 +496,7 @@ What We've Done
 
 - We follow set up with the discussion on how our starter styles are organized, why, and how to keep it organized moving forward.
 
-With all of this work you are more than ready to begin building an app with your best foot forward. If you want to go the extra mile, and I suggest you do, our [next chapter][] will focus on a solid foundation for small screens, i.e. mobile browsers.
+With all of this work you are more than ready to begin building an app with your best foot forward. If you want to go the extra mile, and I suggest you do, our [next chapter][Chapter 3] will focus on a solid foundation for small screens, i.e. mobile browsers.
 
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [starter CSS]:          https://github.com/maxxiimo/base-css
@@ -555,6 +543,7 @@ With all of this work you are more than ready to begin building an app with your
 [_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/desktop/_staging.sass
 [h5bp_helpers.sass]:    https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.sass
 [h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/_h5bp_print.sass
+[Media Queries]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#3-media-queries
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
 [reset utilities]:      http://compass-style.org/reference/compass/reset/utilities/
 [Normalize.css]:        https://github.com/necolas/normalize.css/
@@ -571,7 +560,7 @@ With all of this work you are more than ready to begin building an app with your
 [Sass documentation]:   http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 [Useful SASS Mixins]:   http://sachagreif.com/useful-sass-mixins/
 [Custom User @mixins]:  http://css-tricks.com/custom-user-mixins/
-[next chapter]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
 
 [Basic HTML No Styles]: http://chrismaxwell.com/manifesto/getting-started/base-html-files-with-styles.jpg
 [stylesheets]:          http://chrismaxwell.com/manifesto/stylesheets.gif
