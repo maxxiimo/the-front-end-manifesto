@@ -240,9 +240,10 @@ NOTE: Notice the ad hoc code following the import above? Feel free to add code a
 
     /* BASIC STRUCTURE
     ============================================================================ */
+    // @import "susy";
     @import "desktop/layout";
 
-Use "basic structure" section to style major elements and component areas such as html and body tags, or header and footer areas.
+Use "basic structure" section to style major elements and component areas such as html and body tags, or header and footer areas. The compass plug-in Susy is included by default and will be discussed in[Chapter 3 - Susy][Susy].
 
     /* TYPOGRAPHY
     ============================================================================ */
@@ -560,6 +561,7 @@ With all of this work you are almost ready to begin building an app with our bes
 [Normalize.css]:        https://github.com/necolas/normalize.css/
 [H5BP's normalize]:     https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v101.sass
 [HTML5 Resets]:         http://html5doctor.com/html-5-reset-stylesheet/
+[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#using-susy
 [resets]:               https://github.com/maxxiimo/base-resets
 [aB vs. a_b]:           http://stackoverflow.com/questions/1437527/css-camelcase-vs-under-score
 [Identifiers]:          http://stackoverflow.com/questions/1686337/hyphens-or-underscores-in-css-and-html-identifiers
