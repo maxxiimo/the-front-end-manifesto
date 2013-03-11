@@ -296,11 +296,17 @@ The "staging" section is a staging area for code and allows an individual or tea
 Moving Forward
 --------------
 
-You will add a lot more to the structure above. As you do so, here are some tips to keep things as organized as I have laid out above in the [starter CSS][].
+You will add a lot more to the structure outline above. As you do, here are some organizational tips to keep in mind.
 
 ### Modularize Styles
 
-Modularizing your styles is a great way to keep things organized. The degree of separation/modularization depends on your personal and/or teams preferences and project needs. As you add more styles, and consequently partials, consider the following:
+Modularizing styles is a great way to keep things organized. The degree of separation/modularization depends on your personal and/or teams preferences and project needs.
+
+> Provide intelligent and semantically correct hooks and code snippets for backend teams.
+
+\- [Manifesto][]
+
+As you add more styles, and consequently partials, consider the following:
 
 1.  Group related partials together with a common prefix:
 
@@ -321,6 +327,10 @@ Modularizing your styles is a great way to keep things organized. The degree of 
 ### Use a Labeling System
 
 A labeling system will help you better organize/manage related styles. Doing so will also help developers, including yourself, locate styles and see the general organization of stylesheets, especially when browsing CSS output.
+
+> Be consistent, keep code well organized, readable and DRY.
+
+\- [Manifesto][]
 
 Here is the labeling system used in our starter CSS:
 
@@ -363,10 +373,6 @@ For descriptions:
 Whatever you decide to use is up to you, but be consistent within a project.
 
 NOTE: By far the most used labeling level in your stylesheets will be "subtitles". Use them to group like things or elements, and label them with an eye on searching for the label in the future.
-
-> Be consistent, keep code well organized, readable and DRY.
-
-\- [Manifesto][]
 
 ### Naming Conventions
 
