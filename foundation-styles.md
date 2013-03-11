@@ -158,7 +158,7 @@ I can't stress enough how important it is to start a project with some kind of o
 
 \- [Manifesto][]
 
-### Style TOC
+### application.scss
 
 The heart of our organizational structure is [application.scss][]. This file reminds me of a table of contents for partials. In addition to indexing your partials, it layers in styles based on precedents. Styles in the last partial listed override styles in partials listed above it – so long as the styles preceding it have the same class or ID and specificity (and/or tag).
 
@@ -192,7 +192,7 @@ Our hierarchy looks like this:
   - [h5bp_helpers.sass][]
   - [h5bp_print.sass][]
 
-#### What's in Each Section
+### Detailed Explanation
 
 What follows is a snippet of each section of *application.scss* followed by a description of what the section should be used for:
 
@@ -219,7 +219,22 @@ Major mixins such as Compass and homebrewed mixins. Included in our starter CSS 
       padding-left: 0;
     }
 
-HTML5 Boilerplate version of normalize.css. Notice the ad hoc code following the import? Feel free to add code anywhere throughout *application.scss*. Rules of CSS precedence apply here.
+The granddaddy of all resets is Eric Meyer's "[Reset CSS][]".
+
+Sometimes I use compass' [reset utilities][] which are based on Eric Meyer's work, but my preference is to use [Normalize.css][]. HTML5 boilerplate uses normalize.css. The author of Normalize.css describes what it does best:
+
+> Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards. We researched the differences between default browser styles in order to precisely target only the styles that need normalizing.
+
+You can find Eric Meyer's, and both the original Normalize.css and HTML 5 Boilerplate's normalize styles here (a few converted to sass for you):
+
+- https://github.com/maxxiimo/base-resets
+
+The following article briefly outlines the changes in resets moving into HTML 5:
+
+- [HTML5 Reset Stylesheet][HTML5 Resets]
+
+NOTE: Notice the ad hoc code following the import above? Feel free to add code anywhere throughout *application.scss*. Rules of CSS precedence apply here.
+
 
     /* BASIC STRUCTURE
     ============================================================================ */
@@ -277,22 +292,6 @@ The "staging" section is a staging area for code and allows an individual or tea
     @import "boilerplate/h5bp_print";
 
 "Last" is a reminder that those styles need to appear last.
-
-### Resets
-
-The granddaddy of all resets is Eric Meyer's "[Reset CSS][]".
-
-Sometimes I use compass' [reset utilities][] which are based on Eric Meyer's work, but lately my preference has been to use [Normalize.css][]. HTML 5 boilerplate uses normalize.css. The author of Normalize.css describes what it does best:
-
-> Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards. We researched the differences between default browser styles in order to precisely target only the styles that need normalizing.
-
-You can find Eric Meyer's, and both the original Normalize.css and HTML 5 Boilerplate's normalize styles here (a few converted to sass for you):
-
-- https://github.com/maxxiimo/base-resets
-
-The following article briefly outlines the changes in resets moving into HTML 5:
-
-- [HTML5 Reset Stylesheet][HTML5 Resets]
 
 Moving Forward
 --------------

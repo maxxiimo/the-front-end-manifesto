@@ -36,8 +36,8 @@ Table of Contents
     - Compass Set Up
     - Stylesheet Set Up
   - Organization
-    - Style TOC
-    - Resets
+    - application.scss
+    - Detailed Explanation
   - Moving Forward
     - Modularize Styles
     - Use a Labeling System
