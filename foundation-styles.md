@@ -154,7 +154,7 @@ I can't stress enough how important it is to start a project with some kind of o
 
 > Be consistent, keep code well organized, readable and DRY.
 
-\- [Manifesto][manifesto]
+\- [Manifesto][]
 
 ### Style TOC
 
@@ -539,6 +539,7 @@ With all of this work you are more than ready to begin building an app with your
 [Asset Pipeline]:       http://www.engineyard.com/blog/2011/sass-compass-and-the-rails-3-1-asset-pipeline/
 [application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss
 [before]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md#end-result
+[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [h5bp_normalize_v101.sass]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v101.sass
 [_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass

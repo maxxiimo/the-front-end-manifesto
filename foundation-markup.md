@@ -148,7 +148,7 @@ Let's dissect what we've done.
 
 ### Partials
 
-All of the files in our layouts and shared folders could all be grouped together in one file: *application.html.haml*, but by convention and in keeping with our [manifesto][]:
+All of the files in our layouts and shared folders could all be grouped together in one file: *application.html.haml*, but by convention and in keeping with our [manifesto][Manifesto]:
 
 > Be consistent, keep code well organized, readable and DRY.
 
@@ -187,7 +187,7 @@ It looks cleaner than the render method.
 
 > Seek perfection and excellence, write beautiful code.
 
-\- [Manifesto][manifesto]
+\- [Manifesto][]
 
 You may have noticed that I separated logo and navigation into their own partials rather than use something like *_banner.html.haml* or *_header.html.haml* to hold both. Often times logos and navigation vary between clients or functional areas within an application. When you start a project you don't necessarily see this coming, but needs do change so you might as well lay them out in such a way that you and backend developers can easily get at them in the future.
 
@@ -195,7 +195,7 @@ You may have noticed that I separated logo and navigation into their own partial
 
 > Provide intelligent and semantically correct hooks and code snippets for backend teams.
 
-\- [Manifesto][manifesto]
+\- [Manifesto][]
 
 The end result of our organizational efforts is a very succinct *application.html.haml* file:
 
@@ -228,7 +228,7 @@ It's good practice to always consider users that require assistive technology.
 
 > Think in terms of all use cases including and especially accessibility.
 
-\- [Manifesto][manifesto]
+\- [Manifesto][]
 
 ### JavaScript
 
@@ -274,7 +274,7 @@ NOTE: Never put title text in your controllers. Text belongs in views and should
 
 > Abstract logic out of views, keep view code out of controllers.
 
-\- [Manifesto][manifesto]
+\- [Manifesto][]
 
 Add the following to the top of any page you wish to add a unique title to:
 
@@ -303,7 +303,7 @@ The key is not to go nuts and partial out everything. If you do that, finding th
 
 > KISS (keep it simple stupid)
 
-\- [Manifesto][manifesto]
+\- [Manifesto][]
 
 ### Naming Conventions
 
@@ -326,7 +326,7 @@ For partials, if there are several related to an individual file, group them by 
 
 > KISS (keep it simple stupid)
 
-\- [Manifesto][manifesto]
+\- [Manifesto][]
 
 ### IE 6
 
@@ -392,7 +392,7 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [modernizer]:           https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/modernizr-2.6.2.min.js
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
-[manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
+[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html
 [Manifest Files]:       http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives
