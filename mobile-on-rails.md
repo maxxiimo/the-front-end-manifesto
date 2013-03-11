@@ -316,18 +316,18 @@ As you can imagine there's quite a lot of math involved, so rather than calculat
 
 Before we begin I'm going to assume that you have removed or disabled our previous work with user agent sniffing. If so proceed. Installation is pretty straightforward:
 
-*Step 1:* Add the following to /config/compass.rb:
+*Step 1:* Add the following to */config/compass.rb*:
 
     require "susy"
 
-*Step 2:* Add the Susy gem to your .gemfile and bundle install:
+*Step 2:* Add the Susy gem to your *.gemfile* and bundle install:
 
     # Compass specific gems.
     gem 'compass-rails'
     gem 'oily_png'
     gem 'susy'
 
-*Step 3:* Import Susy into your project:
+*Step 3:* Import Susy into your project (uncomment):
 
 app/assets/stylesheets/application.scss
 
@@ -335,7 +335,6 @@ app/assets/stylesheets/application.scss
       ============================================================================ */
     @import "susy";
     @import "desktop/layout";
-    // @import "grids";
 
 Don't forget to restart your server, and wallah! You have a powerful responsive grid system ready for implementation in your project.
 
@@ -343,7 +342,7 @@ Don't forget to restart your server, and wallah! You have a powerful responsive 
 
 Within our application layout we will implement our Susy responsive grid as follows:
 
-*Step 1*: Define the [basic settings][] of our grid in application.scss:
+*Step 1*: Define the [basic settings][] of our grid in *application.scss*:
 
     /* DEFINITIONS
       ============================================================================ */
@@ -357,13 +356,15 @@ Within our application layout we will implement our Susy responsive grid as foll
     $gutter-width:      1em
     $grid-padding:      $gutter-width
 
-This tells Susy what the basic characteristics of your flexible grid are. In this case the grid spans 12 columns across, each column has a width of 4em with a gutter and grid padding of 1em. To calculate the total width of your grid including its padding use the following formula:
+This tells Susy what the basic characteristics of your flexible grid are. In this case the grid spans 12 columns across, each column has a width of 4em with a gutter and grid padding of 1em.
+
+To calculate the total width of your grid including its padding use the following formula:
 
 ($total-columns x $column-width) + (($total-columns - 1) x $gutter-width) + ($grid-padding x 2)
 
 (12 x 4em) + ((12 - 1) x 1em) + (1em x 2) = 61em
 
-*Step 2*: Create an [outer grid-containing element][.container] in application.html.haml called .container:
+*Step 2*: Create an [outer grid-containing element][.container] in *application.html.haml* called .container:
 
     %body
       .container
@@ -376,7 +377,7 @@ This tells Susy what the basic characteristics of your flexible grid are. In thi
         = render :partial => 'shared/footer'
       = scripts
 
-*Step 3*: Add the corresponding CSS to _layout.sass:
+*Step 3*: Add the corresponding CSS to *_layout.sass*:
 
     .container
       +container
