@@ -142,12 +142,13 @@ For my [.gitignore][] file here is what I use (mostly borrowed from [HTML 5 Boil
     # Local
     scratch.*
     public/source
+    vendor/source
 
-NOTE: The last section "Local" contains files or folders I use to save things within the application, but only on my local machine:
+NOTE: The last section "Local" contains files or folders you may use to save things within the application, but only on your local machine:
 
-- __scratch.*__ - I use this as a code graveyard; snippets of code I am no longer using but not yet ready to completely get rid of.
+- __scratch.*__ - A code graveyard; snippets of code I am no longer using but not yet ready to completely get rid of.
 
-- __public/source__ - A folder for original third-party files or source code integrated into my application; Photoshop files; original images; basically the original copies of where things came from.
+- __public/source__ and __vendor/source__ - Folders for original third-party files or source code integrated into the application; Photoshop files; original images; basically the original copies of where things came from.
 
 Here are some additional useful .gitignore ideas:
 
