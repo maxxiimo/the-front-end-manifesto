@@ -145,6 +145,8 @@ It's pretty basic, but much better than [before][].
 
 NOTE: You may have noticed that only our base application file uses the .scss syntax, while all other other partials use the .sass syntax. This is perfectly fine and done so because of my own personal preference to use .sass where I can.
 
+NOTE: Why the "desktop" subfolder? To better organize desktop/tablet specific files. In the [next chapter][Chapter 3] we will create another subfolder called "mobile". Files outside of these two folders are common to both device types.
+
 Organization
 ------------
 
@@ -276,12 +278,6 @@ The "staging" section is a staging area for code and allows an individual or tea
 
 "Last" is a reminder that those styles need to appear last.
 
-#### Organizational Notes
-
-Why the "desktop" subfolder? To better organize desktop/tablet specific files. In the [next chapter][Chapter 3] we will create another subfolder called "mobile". Files outside of these two folders are common to both device types.
-
-Why the "========" underlines? It helps locate styles and see the general organization of stylesheets, especially when browsing CSS output.
-
 ### Resets
 
 The granddaddy of all resets is Eric Meyer's "[Reset CSS][]".
@@ -325,11 +321,9 @@ Modularizing your styles is a great way to keep things organized. The degree of 
 
 ### Use a Labeling System
 
-Within your stylesheets use a system of labeling in order to better organize/manage related styles.
+A labeling system will help you better organize/manage related styles. Doing so will also help developers, including yourself, locate styles and see the general organization of stylesheets, especially when browsing CSS output.
 
-NOTE: It's a good idea to precede the label name with "/* ". This way you can easily search for specific things like "/* Form" and not pick up every form item in your stylesheet.
-
-Here is an example of one I use:
+Here is the labeling system used in our starter CSS:
 
     /* MAJOR SECTION
       ============================================================================ */
@@ -367,26 +361,34 @@ For descriptions:
      * Yada yada yada.
      * And a 3rd line maybe. */
 
-Whatever you decide to use is totally up to you, but be consistent within a project.
+Whatever you decide to use is up to you, but be consistent within a project.
 
-NOTE: By far the most used labeling level in your stylesheets will be "subtitles". Use them to group like things or elements, and label them with an eye on searching for the label in the future. Here are some examples for form elements:
+NOTE: By far the most used labeling level in your stylesheets will be "subtitles". Use them to group like things or elements, and label them with an eye on searching for the label in the future.
+
+> Be consistent, keep code well organized, readable and DRY.
+
+\- [Manifesto][]
 
 ### Naming Conventions
 
-I have my way of naming styles, i.e. classes and IDs, and I've seen things all over the board. Here's My Recommendation:
+I have my way of naming classes and IDs, and I've seen things all over the board. Here are the guidelines I follow:
 
 - Keep it simple
 - Keep it semantic
 - Keep it short
 - Use underscores between words
 
+> Provide intelligent and semantically correct hooks and code snippets for backend teams.
+
+> KISS (keep it simple stupid)
+
+\- [Manifesto][]
+
 #### Semantic
 
 I've never been too crazy for style names that really have no meaning like :class => 'H2603A'...Okay maybe I'm exaggerating, but I think you get the point. Try to use something that has meaning and can be recognized for what it is, like :class => 'header', but by the same token try not to get super specific about the contents. For example it would not be good to use something like, :class => 'johns_comments', because what happens if John gets replaced by Frank?
 
-There is no sure hit formula for naming classes and IDs, just keep these things in mind.
-
-When it comes to CSS, Chris Coyier is a maverick in the field. Here is an article on the subject:
+There is no sure hit formula for naming classes and IDs. Here is an article that may help you define your own style:
 
 - [What Makes For a Semantic Class Name?][Semantic Class Names]
 
@@ -397,7 +399,7 @@ The following articles may also give you some ideas:
 
 #### Short
 
-Try to keep it under 10 characters! I've seen some pretty long class names out there in the wild, and I'm not too crazy about them. They take up too much room. On the flip side, use caution when choosing something super super short.  For example I sometimes use :id => 'ft' to ID the footer. I feel fine doing this since the tag is called \<footer>.
+Try to keep it under 10 characters! I've seen some pretty long class names out there in the wild, and I'm not too crazy about them. They take up too much room. On the flip side, use caution when choosing something super super short.
 
 #### CamelCase, Underscores, Hyphens, Concatenated?
 
@@ -412,7 +414,7 @@ Obviously, one worders are best, but when nothing fits I personally use hyphens 
 
 Some people like to use underscores because when you double-click on one of the words, all the words are selected.
 
-Whatever your style is it's fine. I don't think it's worth a holy war with other developers, but do be consistent, i.e. if you're going to use hyphens, don't use underscores elsewhere and vice versa. I think it's okay to sprinkle in some concatenation like I described above.
+Whatever your style is I don't think it's worth a holy war with other developers, but do be consistent, i.e. if you're going to use hyphens, don't use underscores elsewhere and vice versa. Again, I think it's okay to sprinkle in some concatenation like I described above.
 
 Here's some more opinions on the matter:
 
@@ -423,11 +425,11 @@ Here's some more opinions on the matter:
 Keep it DRY!
 ------------
 
-Try not ... no ... DON'T Repeat Yourself! In CSS this means consolidating where possible. There are also some other techniques that do not DRY up your code in output per se, but they do DRY things up when writing your stylesheets, before they are processed: variables and mixins.
+Try not ... no ... DON'T Repeat Yourself! In CSS this means consolidating where possible. There are also some other techniques that do not DRY up your code in output per se, but they do DRY things up when writing your stylesheets, before they are processed: Variables and Mixins.
 
 ### Consolidate
 
-Suppose for example in this no duh! contrived example I have two major sections to my layout. One holds my main content, and the other is an aside (I'm using Twitter Bootstrap in this example thus the .row and .span's):
+Suppose for example in this no duh! contrived example I have two major sections to my layout. One holds my main content, and the other is an aside:
 
     .container
       .row
@@ -452,7 +454,9 @@ The corresponding styles:
       border: 1px solid $border
       @include border-radius(8px)
 
-So to keep it DRY we consolidate common code between the two:
+(I'm using Twitter Bootstrap in this example thus the .row and .span's)
+
+To keep the code DRY we consolidate common code between the two:
 
     #main,
     .span3 aside
@@ -461,15 +465,15 @@ So to keep it DRY we consolidate common code between the two:
       border: 1px solid $border
       @include border-radius(8px)
 
-...and in doing so we cut the number of lines of code in half! Do that wherever it makes sense. In this example both styles live in the same place in my stylesheet and are related to one another so combining them makes absolute sense.
+...and in doing so we cut the number of lines of code in half! Consolidate wherever it makes sense. In this example both styles live in the same place in my stylesheets and are related to one another so combining them makes absolute sense.
 
 ### Variables
 
 While variables do not explicitly DRY up your code, they kind of do and here's how:
 
-In the code above I specify a variable for the background-color of $white. At first glance you might think why not just use #FFF or "white", as if in this case "six in one hand, half a dozen in the other" holds true, but what if later in the applications lifecycle I want to use a different shade of white? For example #FCFCFC. I would have to find every single instance of either #FFF or "white" and swap it out with the new value.
+In the code above I specify a variable for the background-color of "$white". At first glance you might think why not just use #FFF or "white", as if in this case "six in one hand, half a dozen in the other" holds true, but what if later in the applications lifecycle I want to use a different shade of white? For example #FCFCFC. I would have to find every single instance of either #FFF or "white" and swap it out with the new value.
 
-By using variables, which I always locate in my _define.sass style partial, I can make the change in one instance and affect styles everywhere the variable is used. Not quite DRY, but kinda'.
+By using variables, which I always locate in my *_define.sass* style partial, I can make the change in one instance and affect styles everywhere the variable is used. Not quite DRY, but kinda'.
 
 ### Mixins
 
@@ -478,7 +482,7 @@ In a word, mixins are shortcuts.
 > They’re shortcuts that allow you to apply a lot of css to a selector from only one line of Sass.
 \- [Mixins in SASS][]
 
-In other words if you have a bunch of lines of CSS that keep on appearing throughout your stylesheet, rather than repeating it throughout your stylesheet you can write it once and bring it in via a single line of sass, a shortcut. Our [starter CSS][] gives you two areas to include mixins, as a partial brought in through the MIXINS section of [application.scss][] or a snippet of code within [_define.sass][].
+When you Notice a a bunch of lines of CSS that keep on appearing throughout your stylesheet, through mixins you can write it once and pull it in via a single line of sass; a shortcut. Our [starter CSS][] gives you two areas to include mixins, as a partial brought in through the MIXINS section of [application.scss][] or a snippet of code within [_define.sass][].
 
 To best understand how to use variables and mixins check out the [Sass documentation][].
 
@@ -494,9 +498,9 @@ What We've Done
 
 - We then set up Compass and implemented the chapters [starter CSS][]. That in and by itself is all you need to start a project off right - in terms of foundation styles.
 
-- We follow set up with the discussion on how our starter styles are organized, why, and how to keep it organized moving forward.
+- We follow set up with a discussion on how our starter styles are organized, why, and how to keep it organized moving forward.
 
-With all of this work you are more than ready to begin building an app with your best foot forward. If you want to go the extra mile, and I suggest you do, our [next chapter][Chapter 3] will focus on a solid foundation for small screens, i.e. mobile browsers.
+With all of this work you are almost ready to begin building an app with our best foot forward. [Chapter 3][] will conclude [Section I - Setting up a Foundation][Section I] by presenting different choices for a solid foundation for mobile.
 
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
 [starter CSS]:          https://github.com/maxxiimo/base-css
@@ -561,6 +565,7 @@ With all of this work you are more than ready to begin building an app with your
 [Useful SASS Mixins]:   http://sachagreif.com/useful-sass-mixins/
 [Custom User @mixins]:  http://css-tricks.com/custom-user-mixins/
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
+[Section I]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-1.md
 
 [Basic HTML No Styles]: http://chrismaxwell.com/manifesto/getting-started/base-html-files-with-styles.jpg
 [stylesheets]:          http://chrismaxwell.com/manifesto/stylesheets.gif
