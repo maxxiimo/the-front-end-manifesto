@@ -137,6 +137,8 @@ Your stylesheet file structure should now look like this:
 
 ![][stylesheets]
 
+<br>
+
 Simple as that, and here is what your page will now look with the new stylesheets in place:
 
 ![][Basic HTML No Styles]
