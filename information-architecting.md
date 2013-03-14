@@ -66,16 +66,17 @@ In this storyline example – with my Information Architect (IA) hat on – I immedi
     - Legalese (Copyright, ToS, Privacy)
     - Non-legal footer type info (Feedback, About, Contact, Site Map)
 
-...and as the front end developer I'm already beginning to imagine how these blocks of information will be organized and coded into our application and used by our backend development team. This is exactly what you will need to do: think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed and coded. Just remember to keep the following in mind:
+...and as the front end developer I'm already beginning to imagine how these blocks of information will be organized and coded into our application and used by our backend development team. This is exactly what you will need to do: think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed and coded. Just remember to keep the following tenant of our [Manifesto][] in mind:
 
 > Architect and design for the end user, not developers.
-
-\- [Manifesto][]
 
 Gathering and Organizing Information
 ------------------------------------
 
-Before you begin coding though, it's important to take a few preliminary steps. What follows are different techniques for gathering all the blocks of information that will ultimately make up the sites story and user experience.
+Before you begin coding though, it's important to take a few preliminary steps. What follows are two techniques for gathering all the blocks of information that will ultimately make up the sites story, help define the user experience, and establish a layout:
+
+1. Index Card Exercise
+2. Prototyping on Paper
 
 NOTE: I'm going to make the assumption that you have conducted basic client discovery and subject research for your project. Also, throughout this process I highly recommend keeping the book "[Don't Make Me Think][]" by Steve Krug nearby as a reference. It’s a good read and everything he says is so darn obvious, and all there in one place.
 
