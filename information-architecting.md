@@ -187,7 +187,7 @@ Pretty bare-bones, but that will soon change.
 
 ### Wireframing with Susy
 
-In [Chapter 3][Chapter 3 - Susy] we learned how to install and implement Susy. To learn how to use it, the best source of information is the [Susy reference][]. It's a powerful tool which I strongly recommend you use. Using it will allow you to quickly layout of the content of your application, set breakpoints, and test across different devices until you zero in on the perfect layout for your project.
+In Chapter 3 we learned how to [install and implement Susy][Chapter 3 - Susy]. It's a powerful tool which I strongly recommend you use. Using it will allow you to quickly layout of the content of your application, set breakpoints, and test across different devices until you zero in on the perfect layout for your project.
 
 One feature that will help you wireframe is the grid background tool:
 
@@ -197,7 +197,7 @@ These grid guides are very similar to what [Compass offers][], and can be activa
 
     .container
       +container
-      **+susy-grid-background**
+      +susy-grid-background
 
 ### Content
 
