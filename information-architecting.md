@@ -148,11 +148,9 @@ On a final note on index carding, as a front end developer with years of practic
 
 ### Prototyping on Paper
 
+So with the index card exercise done, the next step in my process is to take the resulting information architecture and create a paper prototype ([sketching][]). Doing so will help you better define the layout, visualize what the site will look like on a screen, visualize how pages interconnect, and give you plenty of room for trial and error. It also provides you with some additional and inexpensive opportunities for stakeholder input, and further reflection and brainstorming before you begin coding.
+
 There are a number of applications out there that can help you prototype, but I prefer to go old-school with pencil and paper. For presentational purposes you can transfer this exercise to PowerPoint or some other application for prototyping, but don't get bogged down and waste time doing so. Paper is highly portable, can be digitized (scan), requires no electricity or Internet connectivity, can easily be shared with others, and its use is a skill that is common between all stakeholders.
-
-So with the index card exercise done, the next step in my process is to take the resulting information architecture and create a paper prototype ([sketching][]). Doing so will help you better define the layout, visualize what the site will look like on a screen, visualize how pages interconnect, and give you plenty of room for trial and error. It also provides you with some additional and inexpensive opportunities for stakeholder input, and further reflection and brainstorming, before you begin coding.
-
-TIP: As I prototype I've always got an eye on my bookmarked reference websites, and/or some of the [inspirational sites][Appendix 5] listed in our appendix.
 
 Here are some device mockup resources that will help you sketch:
 
@@ -160,11 +158,13 @@ Here are some device mockup resources that will help you sketch:
 - [Interface Sketch][]
 - [Responsive Sketchsheets][]
 
-Here's what my paper prototype process looks like:
+To begin just simply translate what you indexed in the previous section into what it might look like on a screen. Here's what my paper prototype process looks like starting with a blank sheet of paper next to my index cards and ending with a paper prototype:
 
 ![][Prototype]
 
 The end result: a well-defined user interface layout for my entire application.
+
+TIP: As I prototype I've always got an eye on my bookmarked reference websites, and/or some of the [inspirational sites][Appendix 5] listed in our appendix.
 
 Wireframing
 -----------
