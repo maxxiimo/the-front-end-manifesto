@@ -235,18 +235,16 @@ We were able to rapidly create wireframes across multiple devices by using [Susy
 What We've Done
 ---------------
 
-In this chapter we began with a discussion on storytelling and how important it is to information architecting and visual design. We then described how storytelling in information architecting is similar to a traditional mosaic in that it is comprised of bits of information that together tell a story.
+In this chapter we began with a discussion on storytelling and how important it is to information architecting and visual design. We then described how storytelling in information architecting is similar to traditional mosaics in that both are comprised of bits of information that together tell a story.
 
-Understanding our storyline, we began a process of converting our thoughts into a wireframe through the use of two techniques:
+Understanding our own storyline, we began a process of converting our thoughts into a living wireframe through the use of two techniques:
 
 1. Index Card Exercise
 2. Prototyping on Paper
 
-In wireframing I recommended the use of Susy, and ended with a quick talk on content, its importance, and resources available to substitute for actual content.
+Together these two exercises, along with the foundation code we already laid out in chapters 1 -  3, made wireframing a cinch. To further ease the creation process I also recommended the use of Susy, and ended with a quick talk on content.
 
-The end result of this chapter's work was a pretty complete wireframe, ready for the next step in storytelling.
-
-Before we move on to visual design consider this for a moment. As front end developers we oftentimes think in terms of boxes. Notice our wireframe is essentially a layout of different content boxes. As we move into design mode [in the next chapter][Chapter 5] we need to completely change how we use our brains.
+The end result of this chapter's work is a complete wireframe, ready for the next step in storytelling, but before we move onto visual design consider this for a moment: As front end developers we oftentimes think in terms of boxes. Notice our wireframe is essentially a layout of different content boxes. As we move into design mode [in the next chapter][Chapter 5] we need to completely change how we use our brains.
 
 Just remember, less is more and KISS (Keep It Simple Stupid).
 
