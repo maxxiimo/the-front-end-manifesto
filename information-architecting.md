@@ -18,9 +18,7 @@ As a front end developer, without getting super complex or requiring a gazillion
 2. Work with a graphic designer from the get-go and implement a design mockup into your foundation work ([Chapter 6 - Slicing and Dicing Mockups][Chapter 6]).
 3. Start from scratch and architect yourself, then get help from a graphic designer on the look and feel.
 
-In this chapter we're going to mostly focus on option 1. Hiring a graphic designer from the get-go is not a bad idea, but perhaps there isn't money in the budget, or this responsibility falls on your lap, or maybe you just want to do it yourself.
-
-To illustrate how simple option 1 can be take a look at this 2007 website concept:
+In this chapter we're going to mostly focus on option 1. Hiring a graphic designer from the get-go is not a bad idea, but perhaps there isn't money in the budget, or this responsibility falls on your lap, or maybe you just want to do it yourself. To illustrate how simple option 1 can be take a look at this 2007 website concept:
 
 - http://noonebelongsheremorethanyou.com/00025
 
