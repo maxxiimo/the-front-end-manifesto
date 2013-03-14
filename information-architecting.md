@@ -224,7 +224,7 @@ One very important thing to practice when designing interfaces is do nothing in 
 > Test across major browsers, devices, and in front of "real-life" users.
 \- [Manifesto][]
 
-Testing on actual device is also very important. Resizing a browser window and/or using device simulators cannot substitute for an actual device. The "[Device Testing][Appendix 7-2]" section in Appendix 7 lists several useful articles to get you started on testing or building your own testing lab. As a rule of thumb, test on at least four different devices: desktop, tablet, small tablet, and a smartphone. Walk into the Mac store, or Verizon or AT&T and test away.
+Testing on actual devices is also very important. Resizing a browser window and/or using device simulators cannot substitute for an actual device. The "[Device Testing][Appendix 7-2]" section in the appendices lists several useful articles to get you started on testing or building your own testing lab. As a rule of thumb, test on at least four different devices: desktop, tablet, small tablet, and a smartphone. Walk into the Mac store, or Verizon, or AT&T if you have to and test away.
 
 At the end of our information architecting cycle, with our basic content and layouts in place, here's what we're left with across several different devices:
 
