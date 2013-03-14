@@ -278,7 +278,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
 
 [Mosaic]:               http://chrismaxwell.com/manifesto/mosaic-800px.gif
-[Index Card Reference]: http://chrismaxwell.com/manifesto/index-cards/index-card-reference.jpg
+[Index Card Reference]: http://chrismaxwell.com/manifesto/index-cards/index-card-reference.gif
 [Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
 [Index After]:          http://chrismaxwell.com/manifesto/index-cards/index-cards-after.jpg
 [Index Mobile]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-mobile.jpg
