@@ -173,9 +173,11 @@ Wireframing
 
 The prototype is the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond the early exercises, you can send them to a live URL where they can click through to simulate the actual application (and view it on different devices). Any changes you make will be reflected immediately, which they'll love. For you, everything from this point forward is just an iteration in the development process.
 
-Because you laid out your applications [markup][Chapter 1], [styles][Chapter 2], and [mobile][Chapter 3] groundwork in chapters 1 through 3 – and hopefully have deployed on Heroku or elsewhere – what you wireframe here will be production ready, and in this section we will begin to transform our paper prototype into a working wireframe.
+Because you laid out your applications [markup][Chapter 1], [styles][Chapter 2], and [mobile][Chapter 3] groundwork in chapters 1 through 3 – and hopefully have deployed on Heroku or elsewhere – what you wireframe will ultimately be production ready, and in this section we will begin to transform our paper prototype into a working wireframe.
 
-An assumption I will make here is that you already are a proficient front end coder, so going into how to go about writing basic markup from the prototypes we just developed is something I won't get into. After codifying my prototypes here is what I have:
+NOTE: An assumption I will make is that you already are a proficient front end coder, so going into how to go about writing basic markup from the prototypes we just developed is something I won't get into.
+
+After codifying my prototypes here is what I have:
 
 ![][Wireframe]
 
