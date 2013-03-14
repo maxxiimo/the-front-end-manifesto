@@ -49,10 +49,6 @@ A website layout is similar in that it is composed of different blocks of inform
 
 As front end developers we choose and arrange what blocks belong together, and through our code create a digital mosaic, a website, that ultimately is viewed and interpreted by our audience. As such we should think of what we create, it's meaning and purpose, as storytelling and ourselves as narrators. It's not as far-fetched as it might sound at first when you consider that most websites are probably designed to invite/entice/cause the user to take a next step or action, i.e. turn the page in the story.
 
-> Architect and design for the end user, not developers.
-
-\- [Manifesto][]
-
 The Storyline
 -------------
 
@@ -70,7 +66,11 @@ In this storyline example – with my Information Architect (IA) hat on – I immedi
     - Legalese (Copyright, ToS, Privacy)
     - Non-legal footer type info (Feedback, About, Contact, Site Map)
 
-...and as the front end developer I'm already beginning to imagine how these blocks of information will be organized and coded into our application and used by our backend development team. This is exactly what you will need to do: think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed and coded.
+...and as the front end developer I'm already beginning to imagine how these blocks of information will be organized and coded into our application and used by our backend development team. This is exactly what you will need to do: think of an overriding storyline, organize it into blocks of information, then begin to imagine how it will be conveyed and coded. Just remember to keep the following in mind:
+
+> Architect and design for the end user, not developers.
+
+\- [Manifesto][]
 
 Gathering and Organizing Information
 ------------------------------------
