@@ -24,6 +24,10 @@ As an Information Architect with this experience, the [Mobile First][] design pa
 
 Throughout the rest of this book I will take the Mobile First approach.
 
+> Provide for the mobile experience as a forethought.
+
+\- [Manifesto][]
+
 Plan of Attack
 --------------
 
@@ -935,7 +939,11 @@ Media queries are a cornerstone of responsive web design, however, as a front en
 
   > This library adds media queries support to browsers that don't support it (like Internet Explorer 5.5-8).
 
-The key for these JavaScript-based fixes is that JavaScript must be available or enabled, but unfortunately this is not always the case. Fortunately, we approached development from a mobile first perspective. If media queries or JavaScript are not available, breakpoints will not take affect, and our users will be served our four column layout, which is not a bad fallback since the site will still look great and be readable: Another perk of the mobile first approach!
+The key for these JavaScript-based fixes is that JavaScript must be available or enabled, but unfortunately this is not always the case. Fortunately for our end-users, we approached development from a mobile first perspective. If media queries or JavaScript are not available, breakpoints will not take affect, and our users will be served our four column layout, which is not a bad fallback since the site will still look great and be readable: Another perk of the mobile first approach!
+
+> Employ progressive enhancements and graceful degradation.
+
+\- [Manifesto][]
 
 ### Conditional Loading
 
@@ -1000,6 +1008,7 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/introduction
 [LukeW]:                http://www.lukew.com/ff/entry.asp?933
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
+[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [LaunchWare]:           http://launchware.com/
 [Jason Grigsby]:        http://www.uie.com/brainsparks/2012/10/12/jason-grigsby-mobile-first-responsive-design/
