@@ -17,7 +17,7 @@ The Manifesto
 
 7.  Be consistent, keep code well organized, readable and DRY.
 
-8.  Test across major browsers and in front of "real-life" users.
+8.  Test across major browsers, devices, and in front of "real-life" users.
 
 9.  Think in terms of all use cases including and especially accessibility.
 

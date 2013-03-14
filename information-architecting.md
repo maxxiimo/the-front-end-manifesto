@@ -138,7 +138,7 @@ I find that the process I just described works best for me, but there are other 
 
 On a final note on index carding, as a front end developer with years of practice, a huge part of me just wants to bypass this exercise and start coding (and change things on the fly as I move along). So why don't I? Experience has shown me that the manual process of labeling index cards and laying them out forces me to reflect and think outside of my coding box. It helps me discover new ideas, visualize and refine the information architecture, and not work in isolation (i.e. include others in the process). I find that by doing the exercise there's just enough chance of a better outcome that it's worth trying.
 
-> Test across major browsers and in front of "real-life" users.
+> Test across major browsers, devices, and in front of "real-life" users.
 
 > Think in terms of all use cases including and especially accessibility.
 
@@ -219,7 +219,10 @@ Don't forget to set the color:
 Feedback and Testing
 --------------------
 
-One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services listed in the [Feedback Services][Appendix 7-1] Appendix.
+One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services listed in the [Feedback Services][Appendix 7-1] appendix.
+
+> Test across major browsers, devices, and in front of "real-life" users.
+\- [Manifesto][]
 
 Testing on actual device is also very important. Resizing a browser window and/or using device simulators cannot substitute for an actual device. The "[Device Testing][Appendix 7-2]" section in Appendix 7 lists several useful articles to get you started on testing or building your own testing lab. As a rule of thumb, test on at least four different devices: desktop, tablet, small tablet, and a smartphone. Walk into the Mac store, or Verizon or AT&T and test away.
 
