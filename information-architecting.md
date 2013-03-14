@@ -90,9 +90,9 @@ Think of as many components to the page or application as you can - I prefer dea
 
 NOTE: Color coding is helpful.
 
-*Step 2:* Lay out the index cards on a table that you think you want to use, and organize them into logical groups like navigational or footer areas.
+*Step 2:* Lay out the index cards on a table, organize them into logical groups like navigational or footer areas.
 
-*Step 3:* Review the cards on the table and start eliminating the cards that.you don't want to include. Don't be conservative in eliminating.
+*Step 3:* Review the cards on the table and start eliminating the cards that you don't want to include. Don't be conservative in eliminating.
 
 > KISS (keep it simple stupid)
 
@@ -102,13 +102,13 @@ Here's a practical example and a proof of concept. I need a new website for my p
 
 > We are a great website design, development and user experience shop. We have tons of experience, have worked with a bunch of different clients who are all happy with our work, and we really care about what we do. We specialize in Ruby on Rails, and we pay special attention to what your users will see. You should hire us! ...or give us a call and learn more.
 
-I immediately can see a few index card entries in my storyline and start writing out everything I can think of. Beside my own ideas though, it's a good practice to do some basic research like see what competitors or similar services are doing with their websites.
+I immediately can see a few index card entries in my storyline and start indexing everything I can think of. Beside my own ideas though, it's a good practice to do some basic research and see what competitors or similar services are doing with their websites.
 
 TIP: It's a good idea to bookmark a bunch of sites to review and reference throughout the process. It's sometimes helpful to add a simple tally on the bottom of index cards to see how many sites referenced used that particular element:
 
 ![][Index Card Reference]
 
-Here's what all my entries look like laid out on a table:
+After completing Step 2 here is what my entries look like laid out on a table:
 
 ![][Index Before]
 
@@ -118,19 +118,33 @@ After evaluating and reorganizing here is what I'm left with:
 
 ![][Index After]
 
-Quite a bit less, and through the process I really have a great idea about what my site will look like and how I'm going to start coding, but I need to whittle it down even further since we're going to use the mobile first approach. We need to shed even more. Here's what I'm left with:
+Quite a bit less, and through the process I really have a great grasp on what my site will look like and how I'm going to start coding, but I need to whittle it down even further since we're going to use the mobile first approach.
+
+> Provide for the mobile experience as a forethought.
+
+\- [Manifesto][]
+
+We need to shed even more. Here's what I'm left with after further elimination:
 
 ![][Index Mobile]
 
 And there you have it, the application in its absolute simplest form doing only the things that are most important. From here we can build up to the desktop.
 
-Check out how this design group uses index cards:
+NOTE: You can also use a digital equivalent to index cards like PowerPoint, or even a single sheet of paper (as a list of items), but index cards are best. You can buy a pack of 200 index cards for under a dollar so don't be afraid to get nitty-gritty with what you define as an information component.
+
+I find that the process I just described works best for me, but there are other ways to go about this. Check out how this design group uses index cards:
 
 - [Responsive Design Case Study][Case Study]
 
-As a front end developer with years of practice, a huge part of me just wants to bypass this exercise and start coding (and change things on the fly as I move along). So why don't I? Experience has shown me that the manual process of labeling index cards and laying them out forces me to reflect and think outside of my coding box. It helps me discover new ideas, visualize and refine the information architecture, and not work in isolation (i.e. include others in the process). I find that by doing the exercise there's just enough chance of a better outcome that it's worth trying.
+On a final note on index carding, as a front end developer with years of practice, a huge part of me just wants to bypass this exercise and start coding (and change things on the fly as I move along). So why don't I? Experience has shown me that the manual process of labeling index cards and laying them out forces me to reflect and think outside of my coding box. It helps me discover new ideas, visualize and refine the information architecture, and not work in isolation (i.e. include others in the process). I find that by doing the exercise there's just enough chance of a better outcome that it's worth trying.
 
-NOTE: You can also use a digital equivalent to index cards like PowerPoint, or even a single sheet of paper (as a list of items), but index cards are best. You can buy a pack of 200 index cards for under a dollar so don't be afraid to get nitty-gritty with what you define as an information component.
+> Test across major browsers and in front of "real-life" users.
+
+> Think in terms of all use cases including and especially accessibility.
+
+> Architect and design for the end user, not developers.
+
+\- [Manifesto][]
 
 ### Prototyping on Paper
 
