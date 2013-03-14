@@ -164,7 +164,7 @@ To begin just simply translate what you indexed in the previous section into wha
 
 The end result: a well-defined user interface layout for my entire application.
 
-TIP: As I prototype I've always got an eye on my bookmarked reference websites, and/or some of the [inspirational sites][Appendix 5] listed in our appendix.
+TIP: As you prototype always have an eye on your bookmarked reference websites, and/or some of the [inspirational sites][Appendix 5] listed in our appendix.
 
 Wireframing
 -----------
