@@ -8,106 +8,106 @@ Table of Contents
 
 #### Chapter 1
 - [Foundation Markup][Chapter 1]
-  -  The Application Layout
-    - A Framework within a Framework
-    - Where Does It Live?
-  - The Code
-    - HTML5 Boilerplate
-    - Where Do Things Go?
-    - Prep the App
-    - End Result
-  - Organization
-    - Partials
-    - JavaScript
-    - What to Put in \<head>
-    - The Title
-  - Moving Forward
-    - Naming Conventions
-    - Using Partials
-    - IE 6
-  - What We've Done
+    -  The Application Layout
+        - A Framework within a Framework
+        - Where Does It Live?
+    - The Code
+        - HTML5 Boilerplate
+        - Where Do Things Go?
+        - Prep the App
+        - End Result
+    - Organization
+        - Partials
+        - JavaScript
+        - What to Put in \<head>
+        - The Title
+    - Moving Forward
+        - Naming Conventions
+        - Using Partials
+        - IE 6
+    - What We've Done
 
 #### Chapter 2
 - [Foundation Styles][Chapter 2]
-  - Preprocessors
-  - Compass
-  - CSS Frameworks and Grid Systems
-  - Our Foundation
-    - Compass Set Up
-    - Stylesheet Set Up
-  - Organization
-    - application.scss
-    - Detailed Explanation
-  - Moving Forward
-    - Modularize Styles
-    - Use a Labeling System
-    - Naming Conventions
-  - Keep it DRY!
-    - Consolidate
-    - Variables
-    - Mixins
-  - What We've Done
+    - Preprocessors
+    - Compass
+    - CSS Frameworks and Grid Systems
+    - Our Foundation
+        - Compass Set Up
+        - Stylesheet Set Up
+    - Organization
+        - application.scss
+        - Detailed Explanation
+    - Moving Forward
+        - Modularize Styles
+        - Use a Labeling System
+        - Naming Conventions
+    - Keep it DRY!
+        - Consolidate
+        - Variables
+        - Mixins
+    - What We've Done
 
 #### Chapter 3
 - [Mobile on Rails][Chapter 3]
-  - Mobile First
-  - Plan of Attack
-  - I. User Agent Sniffing
-    - Mobylette
-    - Mobvious
-  - II. Responsive Web Design
-    - 1.Flexible Grids
-      - Using Susy
-    - 2. Flexible Media
-    - 3. Media Queries
-      - Target Devices
-      - Breakpoints
-      - Em's and Media Queries
-      - Susy Breakpoints
-  - III. A Hybrid Approach
-    - File Structure
-    - Susy-based Mobile RWD
-  - Using JavaScript
-    - Media Query Polyfills
-    - Conditional Loading
-    - Zepto
-  - What We've Done
+    - Mobile First
+    - Plan of Attack
+    - I. User Agent Sniffing
+        - Mobylette
+        - Mobvious
+    - II. Responsive Web Design
+        - 1.Flexible Grids
+            - Using Susy
+        - 2. Flexible Media
+        - 3. Media Queries
+            - Target Devices
+            - Breakpoints
+            - Em's and Media Queries
+            - Susy Breakpoints
+    - III. A Hybrid Approach
+        - File Structure
+        - Susy-based Mobile RWD
+    - Using JavaScript
+        - Media Query Polyfills
+        - Conditional Loading
+        - Zepto
+    - What We've Done
 
 ### [Section II - Build Something][Section II]
 
 #### Chapter 4
 - [Information Architecting][Chapter 4]
-  - A Mosaic of Information
-  - The Storyline
-  - Gathering and Organizing Information
-    - Index Card Exercise
-    - Prototyping on Paper
-  - Wireframing
-    - Wireframing with Susy
-    - Content
-  - Feedback and Testing
-  - What We've Done
+    - A Mosaic of Information
+    - The Storyline
+    - Gathering and Organizing Information
+        - Index Card Exercise
+        - Prototyping on Paper
+    - Wireframing
+        - Wireframing with Susy
+        - Content
+    - Feedback and Testing
+    - What We've Done
 
 #### Chapter 5
 - [Visual Design for the Nondesigner][Chapter 5]
-  - Paradigm Shift
-  - Typography
-    - Font Family
-    - Font Size
-    - Modular Scales
-    - Readability
-  - Color
-    - Step 1: Base Color Selection
-    - Step 2: Color Wheel Experimentation
-    - Step 3: Finishing Touches
-    - Step 4: Where to Apply
-  - Branding
-  - Images
-  - Icons
-    - Icon Fonts
-    - Icon Sprites
-  - Other Resources
-    - What We've Done
+    - Paradigm Shift
+    - Typography
+        - Font Family
+        - Font Size
+        - Modular Scales
+        - Readability
+    - Color
+        - Step 1: Base Color Selection
+        - Step 2: Color Wheel Experimentation
+        - Step 3: Finishing Touches
+        - Step 4: Where to Apply
+    - Branding
+    - Images
+    - Icons
+        - Icon Fonts
+        - Icon Sprites
+    - Other Resources
+        - What We've Done
 
 #### Chapter 6
 - [Slicing and Dicing Mockups][Chapter 6]
@@ -125,26 +125,26 @@ Table of Contents
 
 #### Chapter 7
 - [Images][]
-  - Organization
-  - Choosing an Image Format
-  - Spriting
-  - Responsive Resizing
-  - Retina Displays
+    - Organization
+    - Choosing an Image Format
+    - Spriting
+    - Responsive Resizing
+    - Retina Displays
 
 #### Chapter 8
 - [Forms][]
-  - Basic Form Structure
-  - Ordered List or Paragraphs?
-  - Fieldsets and Legends
-  - Extras
-  - FormHelpers
-  - Fancy/Sassy Buttons
+    - Basic Form Structure
+    - Ordered List or Paragraphs?
+    - Fieldsets and Legends
+    - Extras
+    - FormHelpers
+    - Fancy/Sassy Buttons
 
 #### Chapter 9
 - [Navigation][]
-  - Types
-  - CSS
-  - Context Awareness Patterns
+    - Types
+    - CSS
+    - Context Awareness Patterns
 
 #### Chapter 10
 - [Gradients][]
@@ -156,19 +156,19 @@ Table of Contents
 
 #### Chapter 12
 - [Optimization][]
-  - Gzipping
-  - Caching
-    - Client-Side
-    - Server-Side
-  - Image Optimization
-  - Compressing and the Asset Pipeline
-  - Spriting
-  - What We've Done
+    - Gzipping
+    - Caching
+        - Client-Side
+        - Server-Side
+    - Image Optimization
+    - Compressing and the Asset Pipeline
+    - Spriting
+    - What We've Done
 
 #### Chapter 13
 - [Accessibility][]
-  - Standardize Your Links
-  - Use ARIA Roles
+    - Standardize Your Links
+    - Use ARIA Roles
 
 #### Chapter 14
 - [Search Engine Optimization][]
