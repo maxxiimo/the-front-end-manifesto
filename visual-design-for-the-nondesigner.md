@@ -420,7 +420,11 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 
 \- [Color Matters - Basic Color Theory][Color Matters]
 
-If you read the three articles reference in the introduction of this section, especially  - [Basic color schemes - Introduction to Color Theory][Color Theory]
+If you read the three articles referenced in the introduction of this section, especially:
+
+- [Basic color schemes - Introduction to Color Theory][Color Theory]
+
+...
 
 Colors on the color wheel can be:
 
@@ -457,6 +461,55 @@ Icons
 -----
 
 ### Icon Fonts
+
+
+
+*Step 1:* Visit http://icomoon.io/app/ and select icons you wish to use. You can add more icon sets.
+
+NOTE: I generally load all the icon sets and search by keywords, for example "home", and compare.
+
+*Step 2:* Review and configure your selected fonts.
+
+NOTE: I generally keep the defaults but change the Preferences -> Font Name to "icon-fonts", and change the encoding depending on the project to PUA (Private Use Area), Symbols or Latin characters.
+
+*Step 3:* Download your fonts. Copy the fonts folder into your assets folder. Save the original download in vendor/source.
+
+*Step 4:* Create the HTML that will handle your new fonts, for example:
+
+    %a{:href => "/", :title => 'Home'}
+      %span{"aria-hidden" => "true", "data-icon" => "&#x2616;".html_safe}
+      %span.screen-reader-text Home
+
+This is a home link that will use an icon font. Notice the Unicode value in the data-icon attribute? To find your Unicode values go back to your original download and open the index.html in your browser.
+
+*Step 5:* Pull your fonts into your project through *_define.sass*. Add the following:
+
+        // icon fonts...
+
+        @font-face
+          font-family: 'icon-fonts'
+          font-weight: normal
+          font-style: normal
+          src: font-url('icon-fonts.eot')
+          src: font-url('icon-fonts.eot?#iefix') format("embedded-opentype"), font-url('icon-fonts.svg#icon-fonts') format("svg"), font-url('icon-fonts.woff') format("woff"), font-url('icon-fonts.ttf') format("truetype")
+
+*Step 6:* Create the styles necessary to use your new font. Use a styles mixin and add to _mixin.sass:
+
+        /*  Icon Fonts
+          -----------------------
+
+        @mixin data-icon
+          font-family: 'icon-fonts'
+          content: attr(data-icon)
+          speak: none
+          font-weight: normal
+          line-height: 1
+          -webkit-font-smoothing: antialiased
+
+Call your new mixin were needed as follows:
+
+        [data-icon]:before
+          +data-icon
 
 
 
