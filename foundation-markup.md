@@ -74,13 +74,13 @@ Once you have cloned the [starter code][], structurally, these files and folders
 app<br>
 |-- assets<br>
 |&nbsp;&nbsp;&nbsp;|-- images<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **fixtures**<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **icons**<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **logos**<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **pics**<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- **fixtures**<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- **icons**<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- **logos**<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- **pics**<br>
 |&nbsp;&nbsp;&nbsp;|-- javascripts<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [application.js][application]<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [site.js][site]<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [application.js][application]<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [site.js][site]<br>
 |-- helpers<br>
 |&nbsp;&nbsp;&nbsp;|-- [application_helper.rb][application_helper]<br>
 |-- views<br>
