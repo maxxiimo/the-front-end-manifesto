@@ -26,14 +26,14 @@ The templating framework I'm describing primarily lives in two high-level folder
 
 Here's what it looks like and where you'll find these folders by default in any Rails 3.0 or greater project:
 
-  app
-  |-- assets
-  |-- controllers
-  |-- **helpers**
-  |-- mailers
-  |-- models
-  |-- **views**
-      |-- **layout**
+  app<br>
+  |-- assets<br>
+  |-- controllers<br>
+  |-- **helpers**<br>
+  |-- mailers<br>
+  |-- models<br>
+  |-- **views**<br>
+      |-- **layout**<br>
       |-- **shared**
 
 Until Rails 3.0, where this foundation "lived" and the conventions for using it were very much a no man's land. It was a disorganized dumping ground for HTML, CSS, JavaScript, and Ruby: the wild wild West of coding. Since Rails 3.0 things have become more organized and within these new conventions is where we will begin to build our foundation markup.
@@ -71,34 +71,34 @@ To better understand HTML5 Boilerplate as it applies to Rails, the following art
 
 Once you have cloned the [starter code][], structurally, these files and folders fall into place as follows:
 
-app
-|-- assets
-|   |-- images
-|   |   |-- **fixtures**
-|   |   |-- **icons**
-|   |   |-- **logos**
-|   |   |-- **pics**
-|   |-- javascripts
-|   |   |-- [application.js][application]
-|   |   |-- [site.js][site]
-|-- helpers
-|   |-- [application_helper.rb][application_helper]
-|-- views
-|   |-- layout
-|   |   |-- [_chromeframe.html.haml][_chromeframe]
-|   |   |-- [_head.html.haml][_head]
-|   |   |-- [_scripts.html.haml][_scripts]
-|   |   |-- [application.html.haml][application]
-|   |-- shared
-|   |   |-- [_footer.html.haml][_footer]
-|   |   |-- [_logo.html.haml][_logo]
-|   |   |-- [_navigation.html.haml][_navigation]
-|-- vendor
-    |-- assets
-    |   |-- javascripts
-    |       |-- [jquery-1.8.3.min.js][jquery]
-    |       |-- [modernizr-2.6.2.min][modernizer]
-- [.gitignore][]
+app<br>
+|-- assets<br>
+|   |-- images<br>
+|   |   |-- **fixtures**<br>
+|   |   |-- **icons**<br>
+|   |   |-- **logos**<br>
+|   |   |-- **pics**<br>
+|   |-- javascripts<br>
+|   |   |-- [application.js][application]<br>
+|   |   |-- [site.js][site]<br>
+|-- helpers<br>
+|   |-- [application_helper.rb][application_helper]<br>
+|-- views<br>
+|   |-- layout<br>
+|   |   |-- [_chromeframe.html.haml][_chromeframe]<br>
+|   |   |-- [_head.html.haml][_head]<br>
+|   |   |-- [_scripts.html.haml][_scripts]<br>
+|   |   |-- [application.html.haml][application]<br>
+|   |-- shared<br>
+|   |   |-- [_footer.html.haml][_footer]<br>
+|   |   |-- [_logo.html.haml][_logo]<br>
+|   |   |-- [_navigation.html.haml][_navigation]<br>
+|-- vendor<br>
+    |-- assets<br>
+    |   |-- javascripts<br>
+    |       |-- [jquery-1.8.3.min.js][jquery]<br>
+    |       |-- [modernizr-2.6.2.min][modernizer]<br>
+- [.gitignore][]<br>
 - [Gemfile][]
 
 Notice that your Rails application file structure is pretty much identical minus a few files and folders. We're going to replace some existing files, and add a few new files and folders from the starter code structure above (new folders in bold, new or replacement files are links). Go ahead and start manually copying all the files and folders from your cloned starter code repository into your existing application structure.
