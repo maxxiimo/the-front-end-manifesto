@@ -26,15 +26,15 @@ The templating framework I'm describing primarily lives in two high-level folder
 
 Here's what it looks like and where you'll find these folders by default in any Rails 3.0 or greater project:
 
-  app<br>
-  |-- assets<br>
-  |-- controllers<br>
-  |-- **helpers**<br>
-  |-- mailers<br>
-  |-- models<br>
-  |-- **views**<br>
-      |-- **layout**<br>
-      |-- **shared**
+app<br>
+|-- assets<br>
+|-- controllers<br>
+|-- **helpers**<br>
+|-- mailers<br>
+|-- models<br>
+|-- **views**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;|-- **layout**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;|-- **shared**
 
 Until Rails 3.0, where this foundation "lived" and the conventions for using it were very much a no man's land. It was a disorganized dumping ground for HTML, CSS, JavaScript, and Ruby: the wild wild West of coding. Since Rails 3.0 things have become more organized and within these new conventions is where we will begin to build our foundation markup.
 
@@ -95,11 +95,11 @@ app<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_navigation.html.haml][_navigation]<br>
 |-- vendor<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|-- assets<br>
-&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- javascripts<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- javascripts<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [jquery-1.8.3.min.js][jquery]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [modernizr-2.6.2.min][modernizer]<br>
-\- [.gitignore][]<br>
-\- [Gemfile][]
+[.gitignore][]<br>
+[Gemfile][]
 
 Notice that your Rails application file structure is pretty much identical minus a few files and folders. We're going to replace some existing files, and add a few new files and folders from the starter code structure above (new folders in bold, new or replacement files are links). Go ahead and start manually copying all the files and folders from your cloned starter code repository into your existing application structure.
 
