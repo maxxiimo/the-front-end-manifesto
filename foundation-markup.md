@@ -26,15 +26,15 @@ The templating framework I'm describing primarily lives in two high-level folder
 
 Here's what it looks like and where you'll find these folders by default in any Rails 3.0 or greater project:
 
-  - app
-    - assets
-    - controllers
-    - **helpers**
-    - mailers
-    - models
-    - **views**
-      - **layout**
-      - **shared**
+  app
+  |-- assets
+  |-- controllers
+  |-- **helpers**
+  |-- mailers
+  |-- models
+  |-- **views**
+      |-- **layout**
+      |-- **shared**
 
 Until Rails 3.0, where this foundation "lived" and the conventions for using it were very much a no man's land. It was a disorganized dumping ground for HTML, CSS, JavaScript, and Ruby: the wild wild West of coding. Since Rails 3.0 things have become more organized and within these new conventions is where we will begin to build our foundation markup.
 
@@ -71,33 +71,33 @@ To better understand HTML5 Boilerplate as it applies to Rails, the following art
 
 Once you have cloned the [starter code][], structurally, these files and folders fall into place as follows:
 
-- app
-  - assets
-    - images
-      - **fixtures**
-      - **icons**
-      - **logos**
-      - **pics**
-    - javascripts
-      - [application.js][application]
-      - [site.js][site]
-  - helpers
-      - [application_helper.rb][application_helper]
-  - views
-      - layout
-          - [_chromeframe.html.haml][_chromeframe]
-          - [_head.html.haml][_head]
-          - [_scripts.html.haml][_scripts]
-          - [application.html.haml][application]
-    - shared
-        - [_footer.html.haml][_footer]
-        - [_logo.html.haml][_logo]
-        - [_navigation.html.haml][_navigation]
-- vendor
-    - assets
-        - javascripts
-            - [jquery-1.8.3.min.js][jquery]
-            - [modernizr-2.6.2.min][modernizer]
+app
+|-- assets
+|   |-- images
+|   |   |-- **fixtures**
+|   |   |-- **icons**
+|   |   |-- **logos**
+|   |   |-- **pics**
+|   |-- javascripts
+|   |   |-- [application.js][application]
+|   |   |-- [site.js][site]
+|-- helpers
+|   |-- [application_helper.rb][application_helper]
+|-- views
+|   |-- layout
+|   |   |-- [_chromeframe.html.haml][_chromeframe]
+|   |   |-- [_head.html.haml][_head]
+|   |   |-- [_scripts.html.haml][_scripts]
+|   |   |-- [application.html.haml][application]
+|   |-- shared
+|   |   |-- [_footer.html.haml][_footer]
+|   |   |-- [_logo.html.haml][_logo]
+|   |   |-- [_navigation.html.haml][_navigation]
+|-- vendor
+    |-- assets
+    |   |-- javascripts
+    |       |-- [jquery-1.8.3.min.js][jquery]
+    |       |-- [modernizr-2.6.2.min][modernizer]
 - [.gitignore][]
 - [Gemfile][]
 
