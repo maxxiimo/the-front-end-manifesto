@@ -29,6 +29,10 @@ The tools I've listed, if needed, will help you deliver a superior typographic e
 
    > This will change the way you design websites. Add a line of code to your pages and choose from hundreds of web fonts. Simple, bulletproof, standards compliant, accessible, and totally legal.
 
+6. [WebINK][]
+
+   > The WebINK service lets you put pro-quality fonts on your website. And we deliver these fonts to every visitor's browser in an instant.
+
 ### Tools
 
 1.  [Lettering.JS][]
@@ -80,6 +84,7 @@ The tools I've listed, if needed, will help you deliver a superior typographic e
 [Fontspring]:           http://www.fontspring.com/
 [Google Web Fonts]:     http://www.google.com/webfonts#
 [Typekit]:              https://typekit.com/
+[WebINK]:               http://www.webink.com/
 
 [Lettering.JS]:         http://letteringjs.com/
 [FitText.js]:           http://fittextjs.com/
