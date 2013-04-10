@@ -10,8 +10,7 @@ Table of Contents
 - [Foundation Markup][Chapter 1]
     - Views
     - The Code
-        - HTML5 Boilerplate
-        - Where Do Things Belong?
+        - Set Up
         - Prep the App
         - End Result
     - Organization
@@ -19,6 +18,7 @@ Table of Contents
         - JavaScript
         - What to Put in \<head>
         - The Title
+        - .gitignore
     - Moving Forward
         - Naming Conventions
         - Using Partials
