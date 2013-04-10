@@ -1,16 +1,18 @@
 Foundation Markup
 =================
 
-As an Information Architect (IA), when I think about layout I literally think about how a site is "laid out" on a screen. I think in terms of the organization of information and function for an end-user's consumption. In this IA role, when speaking about layout I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
+As an Information Architect (IA), when I think about an applications layout I literally think about how a site is "laid out" on a screen. I think in terms of the organization of information and function for an end-user's consumption. In this IA role, when speaking about layout I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
 
-When I switch hats, as a developer, I look at layout as the Rails view framework in which all of my front end code lives and interacts with the outside world.
+When I switch hats, as a Rails developer, I look at layout as the Rails view framework in which all of my front end code lives, and from where it will interact with the outside world via Rails.
 
-As a Rails Front End Engineer, you will wear both hats. In [Chapter 4][] we will dive deeply into information architecting, but for now our focus will be strictly on code.
+As a Rails Front End Engineer, you will wear both hats. In [Chapter 4][] we will dive deeply into information architecting, but for now our focus will be strictly on coding and getting it right per our [manifesto][Manifesto]; for both end-users and backend developers.
 
 Views
 -----
 
-As much as Rails is a framework, within it lives a smaller templating framework made up of predominantly HTML. These are our views and where we will work in Chapter 1. View code can be found in two high-level folders within a Rails application: the *helpers* and the *views* folders. Here is where you'll find these folders by default in any Rails 3.0 or greater project:
+As much as Rails is a framework, within it lives a smaller templating framework made up of predominantly HTML. These are our views and where we will work in Chapter 1.
+
+View code can be found in two high-level folders within a Rails application: the *helpers* and the *views* folders. Here is where you'll find these folders by default in any Rails 3.0 or greater project:
 
 app<br>
 |-- assets<br>
