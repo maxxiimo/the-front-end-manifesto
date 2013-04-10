@@ -90,7 +90,8 @@ app<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [jquery-1.8.3.min.js][jquery]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [modernizr-2.6.2.min][modernizer]<br>
 [.gitignore][]<br>
-[Gemfile][]
+[Gemfile][]<br>
+[README.md][]
 
 Notice that your Rails application file structure is pretty much identical minus a few files and folders. We're going to replace some existing files, and add a few new files and folders from the starter code structure above (new folders in bold, new or replacement files are links). Go ahead and start manually copying all the files and folders from your cloned starter code repository into your existing application structure.
 
@@ -102,7 +103,8 @@ Prep your app by following these steps:
 
 - public/index.html
 - assets/images/rails.png
-- app/views/layouts/application.html.erb (The file you are replacing with *application.html.haml*.)
+- app/views/layouts/application.html.erb (Replaced by *application.html.haml*.)
+- README.rdoc (Replaced by *README.md*.)
 
 **Step 2** - If you do not have a page for your routes to go to, which I'm assuming you don't if this is a brand-new application, create one now. Generate a pages controller to match the footer links:
 
@@ -385,6 +387,7 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [modernizer]:           https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/modernizr-2.6.2.min.js
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
+[README.md]:            https://github.com/maxxiimo/base-haml/blob/master/README.md
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html
 [Manifest Files]:       http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives
