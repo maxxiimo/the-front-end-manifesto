@@ -3,7 +3,7 @@ Appendix 1
 
 ### Groundwork Tasks
 
-With any new Rails application their are some very basic groundwork tasks that should be completed:
+With any new Rails application their are some very basic groundwork tasks that should be completed.
 
 #### Version Control
 
@@ -18,148 +18,9 @@ In the Rails world Git and Github are the versioning sytem and service of choice
     Create a new repo at Github.
     $ git push -u origin master
 
-#### Gemfile
-
-With every new application Rails generates a Gemfile with a lot of commented out lines. You don't need all of these comments, they take up a lot of space and clutter things up. Once removed here is what you are left with:
-
-    source 'https://rubygems.org'
-
-    gem 'rails', '3.2.13'
-
-    gem 'sqlite3'
-
-    group :assets do
-      gem 'sass-rails',   '~> 3.2.3'
-      gem 'coffee-rails', '~> 3.2.1'
-      gem 'uglifier', '>= 1.0.3'
-    end
-
-    gem 'jquery-rails'
-
-To this I add the gems that I know I will use, and in my case Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" Gemfile example pretty much sums up our foundation [Gemfile][] with a few minor additions:
-
-    source 'https://rubygems.org'
-
-    gem 'rails', '3.2.13'
-
-    gem 'jquery-rails', '2.0.2'
-    gem 'haml-rails'
-
-    group :development, :test do
-      gem 'sqlite3', '1.3.5'
-      gem 'rspec-rails', '2.11.0'
-    end
-
-    # Gems used only for assets and not required
-    # in production environments by default.
-    group :assets do
-      gem 'sass-rails', '3.2.5'
-      gem 'coffee-rails', '3.2.2'
-      gem 'uglifier', '1.2.3'
-
-      # Compass specific gems.
-      gem 'compass-rails'
-      gem 'oily_png'
-      gem 'susy'
-    end
-
-    # See https://github.com/ndbroadbent/turbo-sprockets-rails3
-    # gem 'turbo-sprockets-rails3'
-
-    group :production do
-      gem 'pg', '0.12.2'
-    end
-
-Since I typically use compass, I added the compass-rails and oily_png gems and the Susy plugin as well.
-
-NOTE: Michael Hartl [recommends][] using the following flag on your first bundle:
-
-    $ bundle install --without production
-
-Doing so installs your Gemfile gems, but prevents the installation of the production gems. You only have to do this once.
-
-Finally, you should set up rspec:
-
-    $ rails generate rspec:install
-
-For faster asset precompiles check out:
-
-- [Turbo Sprockets for Rails 3.2.x][Turbo Sprockets]
-
-#### .gitignore
-
-Many files in a Rails application are not necessary to track or share. Git allows you to ignore these files through [.gitignore][]. Here here is what I use (mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore]):
-
-    # Ignore bundler config
-    /.bundle
-
-    # Ignore the default SQLite database
-    /db/*.sqlite3
-
-    # Ignore all logfiles and tempfiles
-    /log/*.log
-    /tmp
-
-    # Numerous always-ignore extensions
-    *.diff
-    *.err
-    *.orig
-    *.log
-    *.rej
-    *.swo
-    *.swp
-    *.vi
-    *~
-    *.sass-cache
-
-    # OS or Editor folders
-    .DS_Store
-    Thumbs.db
-    .cache
-    .project
-    .settings
-    .tmproj
-    *.esproj
-    nbproject
-    *.sublime-project
-    *.sublime-workspace
-
-    # Dreamweaver added files
-    _notes
-    dwsync.xml
-
-    # Komodo
-    *.komodoproject
-    .komodotools
-
-    # Folders to ignore
-    .hg
-    .svn
-    .CVS
-    intermediate
-    publish
-    .idea
-    doc/
-
-    # Local
-    scratch.*
-    public/source
-    vendor/source
-
-NOTE: The last section "Local" contains files or folders you may use to save things within the application, but only on your local machine:
-
-- __scratch.*__ - A code graveyard; snippets of code I am no longer using but not yet ready to completely get rid of.
-
-- __public/source__ and __vendor/source__ - Folders for original third-party files or source code integrated into the application; Photoshop files; original images; basically the original copies of where things came from.
-
-Here are some additional useful .gitignore ideas:
-
-- [Ignore files][]
-- [A Collection of Useful .gitignore Templates][Templates]
-
 #### Deployment
 
-Finally I deploy on Heroku by running the following commands:
+I like Heroku and deploy to it by running the following commands:
 
     $ heroku create --stack cedar
     $ git push heroku master
@@ -167,7 +28,77 @@ Finally I deploy on Heroku by running the following commands:
 
 You will need to set up an account if you don't already have one.
 
+#### Remove Unnecessary Files
+
+Delete:
+
+- public/index.html
+- assets/images/rails.png
+- app/views/layouts/application.html.erb
+- README.rdoc
+
+The last two deletions will be replaced by files from our [starter code][]: *application.html.haml* and *README.md*.
+
+Commit your changes.
+
+#### Gemfile
+
+With every new application Rails generates a Gemfile with a lot of commented out lines. You don't need all of these comments, they take up a lot of space and clutter things up. For our [Gemfile][] we will start with Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" example and add a few additional gems for Compass that we will use:
+
+      # Compass specific gems.
+      gem 'compass-rails'
+      gem 'oily_png'
+      gem 'susy'
+    end
+
+Replace the default Gemfile with the one found in your cloned starter code.
+
+IMPORTANT: Michael Hartl [recommends][] using the following flag on your first bundle:
+
+    $ bundle install --without production
+
+Doing so installs your Gemfile gems, but prevents the installation of the production gems. You only have to do this once.
+
+Commit your changes.
+
+#### rspec
+
+To set up rspec run the following:
+
+    $ rails generate rspec:install
+
+Commit your changes.
+
+For faster asset precompiles check out:
+
+- [Turbo Sprockets for Rails 3.2.x][Turbo Sprockets]
+
+#### .gitignore
+
+Many files in a Rails application are not necessary to track or share. Git allows you to ignore these files through .gitignore.
+
+Our [.gitignore][]. file is borrowed from [HTML 5 Boilerplate][H5BP .gitignore]) with a few additions:
+
+    # Local
+    scratch.*
+    public/source
+    vendor/source
+
+You may use these files or folders to save things within the application, but only on your local machine:
+
+- __scratch.*__ - A code graveyard; snippets of code I am no longer using but not yet ready to completely get rid of.
+
+- __public/source__ and __vendor/source__ - Folders for original third-party files or source code integrated into the application; Photoshop files; original images; basically the original copies of where things came from.
+
+Replace the default .gitignore with the one found in your cloned starter code. Commit your changes.
+
+Here are some additional useful .gitignore ideas:
+
+- [Ignore files][]
+- [A Collection of Useful .gitignore Templates][Templates]
+
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
+[starter code]:         https://github.com/maxxiimo/base-haml
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [recommends]:           http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2#sec-heroku_setup
