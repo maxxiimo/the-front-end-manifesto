@@ -174,5 +174,5 @@ You will need to set up an account if you don't already have one.
 [Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3
 [H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
 [Tutorial .gitignore]:  http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
-[Templates]:            http://help.github.com/ignore-files/
-[.gitignore]:           https://github.com/github/gitignore
+[Ignore files]:         http://help.github.com/ignore-files/
+[Templates]:            https://github.com/github/gitignore
