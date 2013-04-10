@@ -3,9 +3,11 @@ Foundation Markup
 
 As an Information Architect (IA), when I think about an applications layout I literally think about how a site is "laid out" on a screen. I think in terms of the organization of information and function for an end-user's consumption. In this IA role, when speaking about layout I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
 
-When I switch hats, as a Rails developer, I look at layout as the Rails view framework in which all of my front end code lives, and from where it will interact with the outside world via Rails.
+When I switch hats, as a Rails developer, I look at layout as the Rails view framework in which all of my front end code lives, and from where it will interact via Rails we with the outside world.
 
-As a Rails Front End Engineer, you will wear both hats. In [Chapter 4][] we will dive deeply into information architecting, but for now our focus will be strictly on coding and getting it right per our [manifesto][Manifesto]; for both end-users and backend developers.
+As a Rails Front End Engineer, you will wear both hats. In [Chapter 4][] we will dive deeply into information architecting, but for now our focus will be strictly on coding, and getting it right per our [manifesto][Manifesto], for both end-users and backend developers.
+
+Let's get started.
 
 Views
 -----
@@ -25,14 +27,14 @@ app<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- application.html.haml<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|-- **shared**
 
-The *views* folder is where the action takes place and can be further subdivided into *layout* and *shared* folders, which as you will soon discover are home to the majority of your foundation front end code.
+The *views* folder is where most of the action takes place and can be further subdivided into of the *layout* and *shared* folders, which as you will soon discover are home to the majority of your foundation front end code.
 
 The heart of this view framework is referred to as the layout template: *application.html.haml* by default. Most view code from other parts of an application pass through and become framed by *application.html.haml* before being served and rendered by browsers.
 
 The Code
 --------
 
-Before we begin to explore the code that lives in our views, there are three things you will need to do to follow along with this book:
+Before we begin to explore the code that make up our views, there are three things you will need to do to follow along with this book:
 
 1.  Create a brand-new Rails 3.2 application.
 
@@ -360,9 +362,8 @@ What We've Done
 
 In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 
-[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
-[The Rails View]:       http://pragprog.com/book/warv/the-rails-view
+[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [Groundwork]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork-tasks
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
