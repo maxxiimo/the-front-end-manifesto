@@ -8,12 +8,10 @@ Table of Contents
 
 #### Chapter 1
 - [Foundation Markup][Chapter 1]
-    -  The Application Layout
-        - A Framework within a Framework
-        - Where Does It Live?
+    - Views
     - The Code
         - HTML5 Boilerplate
-        - Where Do Things Go?
+        - Where Do Things Belong?
         - Prep the App
         - End Result
     - Organization

@@ -1,30 +1,16 @@
 Foundation Markup
 =================
 
-The goal of Chapter 1 is to write and organize the components of our foundation markup in such a way that different browsers and desktop devices can consistently, correctly, and efficiently display visual information to the end-user; and backend coders can understand and plug into it with ease. Let's get started.
+As an Information Architect (IA), when I think about layout I literally think about how a site is "laid out" on a screen. I think in terms of the organization of information and function for an end-user's consumption. In this IA role, when speaking about layout I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
 
-The Application Layout
-----------------------
+When I switch hats, as a developer, I look at layout as the Rails view framework in which all of my front end code lives and interacts with the outside world.
 
-As a Front End Engineer, oftentimes taking the role of Information Architect, when I think about layout I literally think about how a site is laid out on a screen. I don't think in terms of code, but more so in terms of organization of information and function for an end-user's consumption. In this IA role, when speaking about layout I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
+As a Rails Front End Engineer, you will wear both hats. In [Chapter 4][] we will dive deeply into information architecting, but for now our focus will be strictly on code.
 
-When I switch hats, as a front end developer, I look at layout as the Rails view framework in which all of my front end code lives and interacts with the outside world. In other words, code a browser is served and interprets into something visual; that an end-user can understand and interact with, i.e. consume.
+Views
+-----
 
-As a Rails Front End Engineer, you will wear both hats, plus take on a third role in which you facilitate the handshake between the backend and the front end of your application. To be successful you must understand how the code you produce will be used by your colleagues (Backend Engineers). You will need to be able to reach into your models and controllers, and you will need to think in terms of usability, not to mention be a master in your own realm: HTML5, CSS3, JavaScript/jQuery. It's a tall order, but before you do these things you need to layout a solid foundation to work within.
-
-### A Framework within a Framework
-
-As much as Rails is a framework, within this framework lives a smaller templating framework, views, made up predominantly of HTML organized in specific folders of your application (styles and interactivity are added in via CSS and JavaScript).
-
-In Rails, the heart of this view framework is referred to as the layout template, whose default name is *application.html.haml*, but you can have more than one layout template so long as it's name is different.
-
-Layout templates are the heart of the view framework because view code from other parts of a Rails application pass through and become framed by *application.html.haml*, or any other layout template you create, before being served and rendered by the end-user. It's kind of like an ice cream cone. You can add any number of flavors, but however you arrange your ice cream, the cone will be at its base.
-
-### Where Does It Live?
-
-The templating framework I'm describing primarily lives in two high-level folders within your Rails application: the *helpers* and the *views* folders. The views folder is where the action takes place and can be further subdivided into a *layout* and *shared* folders, which as you will soon see are home to the majority of your foundation front end code.
-
-Here's what it looks like and where you'll find these folders by default in any Rails 3.0 or greater project:
+As much as Rails is a framework, within it lives a smaller templating framework made up of predominantly HTML. These are our views and where we will work in Chapter 1. View code can be found in two high-level folders within a Rails application: the *helpers* and the *views* folders. Here is where you'll find these folders by default in any Rails 3.0 or greater project:
 
 app<br>
 |-- assets<br>
@@ -34,16 +20,17 @@ app<br>
 |-- models<br>
 |-- **views**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|-- **layout**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|-- ***application.html.haml*<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|-- **shared**
 
-Until Rails 3.0, where this foundation "lived" and the conventions for using it were very much a no man's land. It was a disorganized dumping ground for HTML, CSS, JavaScript, and Ruby: the wild wild West of coding. Since Rails 3.0 things have become more organized and within these new conventions is where we will begin to build our foundation markup.
+The *views* folder is where the action takes place and can be further subdivided into *layout* and *shared* folders, which as you will soon discover are home to the majority of your foundation front end code.
 
-NOTE: I first heard the view layer referred to as a "no man's land" and the "West" in John Athayde and Bruce Williams' preface to "[The Rails View: Create a Beautiful and Maintainable User Experience][The Rails View]". Great book.
+The heart of this view framework is referred to as the layout template: *application.html.haml* by default. Most view code from other parts of an application pass through and become framed by *application.html.haml* before being served and rendered by browsers.
 
 The Code
 --------
 
-Before we begin to explore the code that lives in the templating framework described above, there are three things you will need to do to follow along with this book:
+Before we begin to explore the code that lives in our views, there are three things you will need to do to follow along with this book:
 
 1.  Create a brand-new Rails 3.2 application.
 
@@ -67,7 +54,7 @@ To better understand HTML5 Boilerplate as it applies to Rails, the following art
 
 - [Guide to HTML5 Boilerplate for Rails Developers][H5BP for Rails]
 
-### Where Do Things Go?
+### Where Do Things Belong?
 
 Once you have cloned the [starter code][], structurally, these files and folders fall into place as follows:
 
@@ -371,6 +358,8 @@ What We've Done
 
 In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 
+[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
+[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
 [The Rails View]:       http://pragprog.com/book/warv/the-rails-view
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [Groundwork]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork-tasks
@@ -392,7 +381,6 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [modernizer]:           https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/modernizr-2.6.2.min.js
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
-[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html
 [Manifest Files]:       http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives
