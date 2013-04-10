@@ -20,7 +20,7 @@ app<br>
 |-- models<br>
 |-- **views**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|-- **layout**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|-- ***application.html.haml*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- application.html.haml<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|-- **shared**
 
 The *views* folder is where the action takes place and can be further subdivided into *layout* and *shared* folders, which as you will soon discover are home to the majority of your foundation front end code.
