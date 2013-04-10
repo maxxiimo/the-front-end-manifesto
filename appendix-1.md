@@ -56,7 +56,7 @@ Doing so installs your Gemfile gems, but prevents the installation of the produc
 
 Commit your changes.
 
-#### Task 5: rspec
+#### Task 5: RSpec
 
 To set up rspec run the following:
 
