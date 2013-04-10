@@ -7,7 +7,7 @@ With any new Rails application their are some very basic groundwork tasks that s
 
 #### Version Control
 
-In the Rails world Git and Github are the versioning sytem and service of choice. Here are the steps I follow when creating a new Rails application:
+In the Rails world Git and Github are the versioning sytem and service of choice. Here are the steps to follow when creating a new Rails application:
 
     $ rails new <name>
     Switch to new project folder.
@@ -20,7 +20,7 @@ In the Rails world Git and Github are the versioning sytem and service of choice
 
 #### Deployment
 
-I like Heroku and deploy to it by running the following commands:
+Heroku is a cloud application platform used by many members of the Rails community. Deploy to Heroku by running the following commands:
 
     $ heroku create --stack cedar
     $ git push heroku master
@@ -30,7 +30,7 @@ You will need to set up an account if you don't already have one.
 
 #### Remove Unnecessary Files
 
-Delete:
+Out-of-the-box Rails comes with a few files that should be deleted. Delete:
 
 - public/index.html
 - assets/images/rails.png
@@ -43,7 +43,7 @@ Commit your changes.
 
 #### Gemfile
 
-With every new application Rails generates a Gemfile with a lot of commented out lines. You don't need all of these comments, they take up a lot of space and clutter things up. For our [Gemfile][] we will start with Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" example and add a few additional gems for Compass that we will use:
+With every new application Rails generates a Gemfile with a lot of commented out lines. You don't need all of these comments, they take up a lot of space and clutter things. For our [Gemfile][] we will start with Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" example and add a few additional gems for Compass:
 
       # Compass specific gems.
       gem 'compass-rails'
