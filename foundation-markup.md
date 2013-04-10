@@ -38,7 +38,7 @@ Before we begin to explore the code that make up our views, there are three thin
 
 1.  Create a brand-new Rails 3.2 application.
 
-        $ rails new <name> --no-test-framework
+        $ rails new <name>
 
     NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
 
@@ -369,6 +369,7 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [starter code]:         https://github.com/maxxiimo/base-haml
+[HTML5 Boilerplate]:    http://html5boilerplate.com/
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
 [application]:          https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/application.js
 [site]:                 https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/site.js
