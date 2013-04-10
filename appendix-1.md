@@ -20,11 +20,11 @@ In the Rails world Git and Github are the versioning sytem and service of choice
 
 #### Gemfile
 
-With every new application Rails generates a Gemfile with a lot of commented out lines. You don't need all of these comments, they take up a lot of space and clutter things up. Once removed here is what your left with:
+With every new application Rails generates a Gemfile with a lot of commented out lines. You don't need all of these comments, they take up a lot of space and clutter things up. Once removed here is what you are left with:
 
     source 'https://rubygems.org'
 
-    gem 'rails', '3.2.8'
+    gem 'rails', '3.2.13'
 
     gem 'sqlite3'
 
@@ -36,11 +36,11 @@ With every new application Rails generates a Gemfile with a lot of commented out
 
     gem 'jquery-rails'
 
-To this I add the gems that I know I will use, and in my case Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" Gemfile example pretty much sums up my base [Gemfile][] with a few minor additions:
+To this I add the gems that I know I will use, and in my case Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" Gemfile example pretty much sums up our foundation [Gemfile][] with a few minor additions:
 
     source 'https://rubygems.org'
 
-    gem 'rails', '3.2.12'
+    gem 'rails', '3.2.13'
 
     gem 'jquery-rails', '2.0.2'
     gem 'haml-rails'
@@ -155,7 +155,7 @@ NOTE: The last section "Local" contains files or folders you may use to save thi
 Here are some additional useful .gitignore ideas:
 
 - [Ignore files][]
-- [A Collection of Useful .gitignore Templates][.gitignore]
+- [A Collection of Useful .gitignore Templates][Templates]
 
 #### Deployment
 
@@ -174,5 +174,5 @@ You will need to set up an account if you don't already have one.
 [Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3
 [H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
 [Tutorial .gitignore]:  http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
-[Ignore files]:         http://help.github.com/ignore-files/
+[Templates]:            http://help.github.com/ignore-files/
 [.gitignore]:           https://github.com/github/gitignore
