@@ -3,9 +3,13 @@ Appendix 1
 
 ### Groundwork Tasks
 
-With any Rails application their are some very basic groundwork tasks that needs to be done; creating the application and using some kind of versioning system. In the Rails world Git and Github are the versioning sytem and service of choice. Here are the steps I follow to set this up:
+With any new Rails application their are some very basic groundwork tasks that should be completed:
 
-    $ rails new <name> --no-test-framework
+#### Version Control
+
+In the Rails world Git and Github are the versioning sytem and service of choice. Here are the steps I follow when creating a new Rails application:
+
+    $ rails new <name>
     Switch to new project folder.
     $ git init
     $ git add .
@@ -13,8 +17,6 @@ With any Rails application their are some very basic groundwork tasks that needs
     $ git remote add origin git@github.com:<Github username>/<application name>.git
     Create a new repo at Github.
     $ git push -u origin master
-
-Next, I immediately copy my standard boilerplate Gemfile and .gitignore files into my application, and deploy to Heroku.
 
 #### Gemfile
 
@@ -76,7 +78,7 @@ NOTE: Michael Hartl [recommends][] using the following flag on your first bundle
 
 Doing so installs your Gemfile gems, but prevents the installation of the production gems. You only have to do this once.
 
-Finally, you should set up rspec now:
+Finally, you should set up rspec:
 
     $ rails generate rspec:install
 
@@ -86,7 +88,7 @@ For faster asset precompiles check out:
 
 #### .gitignore
 
-For my [.gitignore][] file here is what I use (mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore]):
+Many files in a Rails application are not necessary to track or share. Git allows you to ignore these files through [.gitignore][]. Here here is what I use (mostly borrowed from [HTML 5 Boilerplate][H5BP .gitignore]):
 
     # Ignore bundler config
     /.bundle

@@ -2,7 +2,7 @@ Appendices
 ----------
 
 1.  [Groundwork Tasks][Appendix 1]
-    :: Setting up Gemfile, .gitignore, and Heroku deployment.
+    :: Setting up Github, modifying your Gemfile and .gitignore files, and Heroku deployment.
 
 2.  [Frameworks][Appendix 2]
     :: An overview of some popular frameworks: Twitter Bootstrap, Blueprint, YUI, Foundation 3, Skeleton.
