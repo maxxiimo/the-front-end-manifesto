@@ -2,7 +2,7 @@ Appendices
 ----------
 
 1.  [Groundwork Tasks][Appendix 1]
-    :: Steps to setting up Github, deploying to Heroku, removing unnecessary files, modifying your Gemfile, installing rspec. and replacing .gitignore.
+    :: Steps to setting up Github, removing unnecessary files, modifying your Gemfile, installing rspec, replacing .gitignore, and deploying to Heroku.
 
 2.  [Frameworks][Appendix 2]
     :: An overview of some popular frameworks: Twitter Bootstrap, Blueprint, YUI, Foundation 3, Skeleton.

@@ -36,15 +36,15 @@ The Code
 
 Before we begin to explore the code that make up our views, there are three things you will need to do to follow along with this book:
 
-1.  Create a brand-new Rails 3.2 application.
+1.  Clone this books [starter code][]:
+
+        git clone git@github.com:maxxiimo/base-haml.git
+
+2.  Create a brand-new Rails 3.2 application.
 
         $ rails new <name>
 
     NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
-
-2.  Clone this books [starter code][]:
-
-        git clone git@github.com:maxxiimo/base-haml.git
 
 3.  Complete the [Groundwork Tasks][Groundwork] section of the Appendices.
 

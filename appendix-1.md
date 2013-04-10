@@ -18,16 +18,6 @@ In the Rails world Git and Github are the versioning sytem and service of choice
     Create a new repo at Github.
     $ git push -u origin master
 
-#### Deployment
-
-Heroku is a cloud application platform used by many members of the Rails community. Deploy to Heroku by running the following commands:
-
-    $ heroku create --stack cedar
-    $ git push heroku master
-    $ heroku rename <new name>
-
-You will need to set up an account if you don't already have one.
-
 #### Remove Unnecessary Files
 
 Out-of-the-box Rails comes with a few files that should be deleted. Delete:
@@ -96,6 +86,16 @@ Here are some additional useful .gitignore ideas:
 
 - [Ignore files][]
 - [A Collection of Useful .gitignore Templates][Templates]
+
+#### Deployment
+
+Heroku is a cloud application platform used by many members of the Rails community. Deploy to Heroku by running the following commands:
+
+    $ heroku create --stack cedar
+    $ git push heroku master
+    $ heroku rename <new name>
+
+You will need to set up an account if you don't already have one.
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [starter code]:         https://github.com/maxxiimo/base-haml
