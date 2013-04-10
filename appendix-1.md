@@ -5,11 +5,10 @@ Appendix 1
 
 With any new Rails application their are some very basic groundwork tasks that should be completed.
 
-#### Version Control
+#### Task 1: Version Control
 
 In the Rails world Git and Github are the versioning sytem and service of choice. Here are the steps to follow when creating a new Rails application:
 
-    $ rails new <name>
     Switch to new project folder.
     $ git init
     $ git add .
@@ -18,7 +17,7 @@ In the Rails world Git and Github are the versioning sytem and service of choice
     Create a new repo at Github.
     $ git push -u origin master
 
-#### Remove Unnecessary Files
+#### Task 2: Remove Unnecessary Files
 
 Out-of-the-box Rails comes with a few files that should be deleted. Delete:
 
@@ -31,7 +30,13 @@ The last two deletions will be replaced by files from our [starter code][]: *app
 
 Commit your changes.
 
-#### Gemfile
+#### Task 3: Add Starter Code
+
+Go ahead and copy all the files and folders from your cloned starter code repository into your existing application structure.
+
+Commit your changes.
+
+#### Task 4: Gemfile
 
 With every new application Rails generates a Gemfile with a lot of commented out lines. You don't need all of these comments, they take up a lot of space and clutter things. For our [Gemfile][] we will start with Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" example and add a few additional gems for Compass:
 
@@ -41,7 +46,7 @@ With every new application Rails generates a Gemfile with a lot of commented out
       gem 'susy'
     end
 
-Replace the default Gemfile with the one found in your cloned starter code.
+We replaced the default Gemfile with the one found in the cloned starter code. Install these gems.
 
 IMPORTANT: Michael Hartl [recommends][] using the following flag on your first bundle:
 
@@ -51,7 +56,7 @@ Doing so installs your Gemfile gems, but prevents the installation of the produc
 
 Commit your changes.
 
-#### rspec
+#### Task 5: rspec
 
 To set up rspec run the following:
 
@@ -63,31 +68,7 @@ For faster asset precompiles check out:
 
 - [Turbo Sprockets for Rails 3.2.x][Turbo Sprockets]
 
-#### .gitignore
-
-Many files in a Rails application are not necessary to track or share. Git allows you to ignore these files through .gitignore.
-
-Our [.gitignore][]. file is borrowed from [HTML 5 Boilerplate][H5BP .gitignore]) with a few additions:
-
-    # Local
-    scratch.*
-    public/source
-    vendor/source
-
-You may use these files or folders to save things within the application, but only on your local machine:
-
-- __scratch.*__ - A code graveyard; snippets of code I am no longer using but not yet ready to completely get rid of.
-
-- __public/source__ and __vendor/source__ - Folders for original third-party files or source code integrated into the application; Photoshop files; original images; basically the original copies of where things came from.
-
-Replace the default .gitignore with the one found in your cloned starter code. Commit your changes.
-
-Here are some additional useful .gitignore ideas:
-
-- [Ignore files][]
-- [A Collection of Useful .gitignore Templates][Templates]
-
-#### Deployment
+#### Task 6: Deployment
 
 Heroku is a cloud application platform used by many members of the Rails community. Deploy to Heroku by running the following commands:
 
@@ -103,7 +84,3 @@ You will need to set up an account if you don't already have one.
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [recommends]:           http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2#sec-heroku_setup
 [Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3
-[H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
-[Tutorial .gitignore]:  http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
-[Ignore files]:         http://help.github.com/ignore-files/
-[Templates]:            https://github.com/github/gitignore

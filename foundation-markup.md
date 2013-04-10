@@ -34,33 +34,15 @@ The heart of this view framework is referred to as the layout template: *applica
 The Code
 --------
 
-Before we begin to explore the code that make up our views, there are three things you will need to do to follow along with this book:
-
-1.  Clone this books [starter code][]:
-
-        git clone git@github.com:maxxiimo/base-haml.git
-
-2.  Create a brand-new Rails 3.2 application.
-
-        $ rails new <name>
-
-    NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
-
-3.  Complete the [Groundwork Tasks][Groundwork] section of the Appendices.
-
-### HTML5 Boilerplate
-
 Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project.
 
-In coding copy and learn from the best, improve, then give back. I find that the best place to reference when building front end view templates is [HTML5 Boilerplate][]. This resource is an ongoing collaboration between expert front end developers and the community.
+In coding copy and learn from the best, improve, then give back. I find that the best place to reference when building front end view templates is HTML5 Boilerplate. This resource is an ongoing collaboration between expert front end developers and the community.
 
 To better understand HTML5 Boilerplate as it applies to Rails, the following article is helpful:
 
 - [Guide to HTML5 Boilerplate for Rails Developers][H5BP for Rails]
 
-### Where Do Things Belong?
-
-Once you have cloned the [starter code][], structurally, these files and folders fall into place as follows:
+Structurally in a Rails application, our [starter code][] files and folders fall into place as follows:
 
 app<br>
 |-- assets<br>
@@ -93,7 +75,23 @@ app<br>
 [Gemfile][]<br>
 [README.md][]
 
-Notice that your Rails application file structure is pretty much identical minus a few files and folders. We're going to replace some existing files, and add a few new files and folders from the starter code structure above (new folders in bold, new or replacement files are links). Go ahead and start manually copying all the files and folders from your cloned starter code repository into your existing application structure.
+The default Rails application file structure is pretty much identical minus a few files and folders. We're going to replace some existing files and add a few new files and folders (new folders in bold, new or replacement files are links).
+
+### Set Up
+
+Before we begin to explore the code that make up our views, there are a few things you will need to do to follow along with this book:
+
+1.  Clone this books [starter code][]:
+
+        git clone git@github.com:maxxiimo/base-haml.git
+
+2.  Create a brand-new Rails 3.2 application.
+
+        $ rails new <name>
+
+    NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
+
+3. Complete the [Groundwork Tasks][Groundwork] section of the Appendices.
 
 ### Prep the App
 
@@ -267,6 +265,31 @@ Add the following to the top of any page you wish to add a unique title to:
     - content_for :title do
       Some Cool Title
 
+#### .gitignore
+
+Many files in a Rails application are not necessary to track or share. Git allows you to ignore these files through .gitignore.
+
+Our [.gitignore][]. file is borrowed from [HTML 5 Boilerplate][H5BP .gitignore]) with a few additions:
+
+    # Local
+    scratch.*
+    public/source
+    vendor/source
+
+You may use these files or folders to save things within the application, but only on your local machine:
+
+- __scratch.*__ - A code graveyard; snippets of code I am no longer using but not yet ready to completely get rid of.
+
+- __public/source__ and __vendor/source__ - Folders for original third-party files or source code integrated into the application; Photoshop files; original images; basically the original copies of where things came from.
+
+Replace the default .gitignore with the one found in your cloned starter code. Commit your changes.
+
+Here are some additional useful .gitignore ideas:
+
+- [Ignore files][]
+- [A Collection of Useful .gitignore Templates][Templates]
+
+
 Moving Forward
 --------------
 
@@ -361,11 +384,11 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [Groundwork]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork-tasks
-[Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
-[.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [starter code]:         https://github.com/maxxiimo/base-haml
+
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
+
 [application]:          https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/application.js
 [site]:                 https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/site.js
 [application_helper]:   https://github.com/maxxiimo/base-haml/blob/master/helpers/application_helper.rb
@@ -381,10 +404,15 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
 [README.md]:            https://github.com/maxxiimo/base-haml/blob/master/README.md
+
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 [Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html
 [Manifest Files]:       http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives
 [Helpful Things]:       https://gist.github.com/1981339
+[H5BP .gitignore]:      https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore
+[Tutorial .gitignore]:  http://ruby.railstutorial.org/chapters/beginning?version=3.2#code:gitignore]
+[Ignore files]:         http://help.github.com/ignore-files/
+[Templates]:            https://github.com/github/gitignore
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
 [Waste of Time]:        http://www.sitepoint.com/is-internet-explorer-development-really-a-waste-of-time/
 [RWD for IE]:           http://www.sitepoint.com/support-old-browsers-responsive-web-design/
