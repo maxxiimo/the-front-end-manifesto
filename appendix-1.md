@@ -19,7 +19,7 @@ In the Rails world Git and Github are the versioning sytem and service of choice
 
 #### Task 2: Remove Unnecessary Files
 
-Out-of-the-box Rails comes with a few files that should be deleted. Delete:
+Out-of-the-box Rails comes with a few files that should be deleted. After testing that your application works, delete:
 
 - public/index.html
 - assets/images/rails.png
