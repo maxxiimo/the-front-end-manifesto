@@ -38,15 +38,21 @@ Commit your changes.
 
 #### Task 4: Gemfile
 
-With every new application Rails generates a Gemfile with a lot of commented out lines. You don't need all of these comments, they take up a lot of space and clutter things. For our [Gemfile][] we will start with Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" example and add a few additional gems for Compass:
+With every new application Rails generates a Gemfile with a lot of commented out lines. You don't need all of these comments, they take up a lot of space and clutter things up. For our [Gemfile][] we will start with Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" example and add a few additional gems we will use like Compass:
 
       # Compass specific gems.
       gem 'compass-rails'
       gem 'oily_png'
       gem 'susy'
-    end
 
-We replaced the default Gemfile with the one found in the cloned starter code. Install these gems.
+Or some better error testing gems:
+
+      # http://railscasts.com/episodes/402-better-errors-railspanel
+      # gem 'better_errors'
+      # gem 'binding_of_caller'
+      # gem 'meta_request'
+
+After replacing the default Gemfile with the one found in the cloned starter code, bundle install these gems.
 
 IMPORTANT: Michael Hartl [recommends][] using the following flag on your first bundle:
 
@@ -55,6 +61,7 @@ IMPORTANT: Michael Hartl [recommends][] using the following flag on your first b
 Doing so installs your Gemfile gems, but prevents the installation of the production gems. You only have to do this once.
 
 Commit your changes.
+
 
 #### Task 5: RSpec
 
