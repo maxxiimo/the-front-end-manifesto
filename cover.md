@@ -5,8 +5,7 @@ by Chris Maxwell
 
 *A research-based How To<br>
 on best practices for writing<br>
-well organized, efficient,<br>
-mobile to desktop...*
+well organized mobile to desktop...*
 
 **Front End Code**
 
