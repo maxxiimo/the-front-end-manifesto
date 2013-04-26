@@ -73,7 +73,7 @@ app<br>
 [Gemfile][]<br>
 [README.md][]
 
-The default Rails application files and file structure is pretty much identical minus a few files and folders. In the next section we will replace some existing files that come out of the box by default with our starter code, and add a few new files and folders: new folders depicted above in bold, new or replacement files are links.
+The default Rails file structure and application files are pretty much identical. In the next section we will replace some existing files that come out of the box by default with our starter code, and add a few new files and folders (new folders depicted above in bold, new or replacement files are links).
 
 NOTE: Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.2.0) in haml and arranged for a Rails project. In my experience the best place to reference when building front end view templates is HTML5 Boilerplate. This resource is an ongoing collaboration between expert front end developers and the community. To better understand HTML5 Boilerplate as it applies to Rails, the following article is helpful:
 
