@@ -23,10 +23,11 @@ Out-of-the-box Rails comes with a few files that should be deleted. After testin
 
 - public/index.html
 - assets/images/rails.png
+- assets/stylesheets/application.css
 - app/views/layouts/application.html.erb
 - README.rdoc
 
-The last two deletions will be replaced by files from our [starter code][]: *application.html.haml* and *README.md*.
+The last three deletions will be replaced in the next task by files from our [starter code][]: *application.scss*, *application.html.haml* and *README.md*.
 
 Commit your changes.
 
@@ -35,6 +36,10 @@ Commit your changes.
 Go ahead and copy all the files and folders from your cloned starter code repository into your existing application structure.
 
 Commit your changes.
+
+The following files should have been added to your repository:
+
+![][New Files]
 
 #### Task 4: Gemfile
 
@@ -91,3 +96,5 @@ You will need to set up an account if you don't already have one.
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [recommends]:           http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2#sec-heroku_setup
 [Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3
+
+[New Files]:            Http://chrismaxwell.com/manifesto/appendices/new-files.gif
