@@ -437,4 +437,4 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 
 
 [Layout]:               http://chrismaxwell.com/manifesto/chp-1/layout-sm.png
-[Basic HTML]:           http://chrismaxwell.com/manifesto/chp-1/base-html-no-styles.jpg
+[Basic HTML]:           http://chrismaxwell.com/manifesto/chp-1/basic-html.png
