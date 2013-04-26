@@ -138,7 +138,7 @@ And with that you should see something like this:
 
 ![][Basic HTML]
 
-Not very attractive! ...but don't worry we'll address that in the [next chapter][Chapter 2]. What's important here is that under the hood you have an excellent foundation markup base to work with moving forward.
+Not very attractive! ...but don't worry we'll address that in the [next chapter][Chapter 2]. What's important here is what's under the hood: an excellent foundation markup base to work with moving forward.
 
 Organization
 ------------
