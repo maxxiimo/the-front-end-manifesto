@@ -10,15 +10,17 @@ Preprocessors
 
 Probably the two most well-known dynamic stylesheet preprocessors in use today are [Sass][] and [Less][]. Sass is the sister of [Haml][], my preprocessor of choice, and the default preprocessor in Rails 3.X. As a Rails front end developer you are going to find Sass in many projects you work on as a consultant or as a new member of an existing team and project.
 
-If your new to preprocessors the following articles will give you a great overview on why Sass is great, and more importantly, Sass in Rails:
+NOTE: If your new to preprocessors the following articles will give you a great overview on why Sass is great, and more importantly, Sass in Rails:
 
 - [David Walsh on Redesigning with Sass][Redesigning with Sass]
 - [An Introduction to Sass in Rails 1][Sass in Rails 1]
 - [An Introduction to Sass in Rails 2][Sass in Rails 2]
 
-When using Sass you have a choice in syntax; .sass or .scss. I prefer .sass. Most front end developers will probably go with the .scss syntax because it looks familiar (similar to CSS), and because that is what ships out-of-the-box in Rails, however, .sass is cleaner/terser (IMHO). To help you decide on the best syntax for you, check out the article: "[Sass vs. SCSS: Which Syntax is Better?][Sass vs. SCSS]."
+When using Sass you have a choice in syntax: .sass or .scss. I prefer .sass. Most front end developers will probably use the .scss syntax because it looks familiar (it is similar to CSS), and because that is what ships out-of-the-box in Rails, however, the .sass syntax is cleaner/terser (IMHO).
 
-NOTE: When using Sass or Haml these resources are absolutely indispensable:
+NOTE: To help you decide on the best syntax for you, check out the article: "[Sass vs. SCSS: Which Syntax is Better?][Sass vs. SCSS]."
+
+When using Sass or Haml these resources are absolutely indispensable:
 
 - [css2sass][]
 - [Html2Haml][]
