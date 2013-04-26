@@ -4,8 +4,6 @@ Foundation Markup
 As an Information Architect (IA), when I think about an applications layout I literally think about how a site is "laid out" on a screen. I think in terms of the organization of information and function for an end-user's consumption. In this IA role, when speaking about layout I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
 
 <br>
-<br>
-<br>
 
 ![][Layout]
 
