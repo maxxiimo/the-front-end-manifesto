@@ -2,8 +2,11 @@ Foundation Markup
 =================
 
 As an Information Architect (IA), when I think about an applications layout I literally think about how a site is "laid out" on a screen. I think in terms of the organization of information and function for an end-user's consumption. In this IA role, when speaking about layout I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
+
 <br>
 <br>
+<br>
+
 ![][Layout]
 
 When I switch hats, as a Rails developer, I look at layout as the Rails view framework in which all of my front end code lives, and from where it will interact via Rails with the outside world.
@@ -422,5 +425,5 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md
 
 
-[Layout]:               http://chrismaxwell.com/manifesto/chp-1/layout.png
+[Layout]:               http://chrismaxwell.com/manifesto/chp-1/layout-sm.png
 [Basic HTML]:           http://chrismaxwell.com/manifesto/chp-1/base-html-no-styles.jpg
