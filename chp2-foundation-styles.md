@@ -576,5 +576,5 @@ With all of this work you are almost ready to begin building an app with our bes
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md
 [Section I]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-1.md
 
-[Basic HTML No Styles]: http://chrismaxwell.com/manifesto/getting-started/base-html-files-with-styles.jpg
-[stylesheets]:          http://chrismaxwell.com/manifesto/stylesheets.gif
+[Basic HTML No Styles]: http://chrismaxwell.com/manifesto/chp-2/base-html-files-with-styles.jpg
+[stylesheets]:          http://chrismaxwell.com/manifesto/chp-2/stylesheets.gif

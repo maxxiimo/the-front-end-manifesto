@@ -3,7 +3,9 @@ Foundation Markup
 
 As an Information Architect (IA), when I think about an applications layout I literally think about how a site is "laid out" on a screen. I think in terms of the organization of information and function for an end-user's consumption. In this IA role, when speaking about layout I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
 
-When I switch hats, as a Rails developer, I look at layout as the Rails view framework in which all of my front end code lives, and from where it will interact via Rails we with the outside world.
+![][layout]
+
+When I switch hats, as a Rails developer, I look at layout as the Rails view framework in which all of my front end code lives, and from where it will interact via Rails with the outside world.
 
 As a Rails Front End Engineer, you will wear both hats. In [Chapter 4][] we will dive deeply into information architecting, but for now our focus will be strictly on coding, and getting it right per our [manifesto][Manifesto], for both end-users and backend developers.
 
@@ -418,4 +420,6 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [RWD for IE]:           http://www.sitepoint.com/support-old-browsers-responsive-web-design/
 [Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md
 
-[Basic HTML]:           http://chrismaxwell.com/manifesto/getting-started/base-html-no-styles.jpg
+
+[Layout]:               http://chrismaxwell.com/manifesto/chp-1/layout-sm.png
+[Basic HTML]:           http://chrismaxwell.com/manifesto/chp-1/base-html-no-styles.jpg
