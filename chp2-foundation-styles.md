@@ -1,7 +1,7 @@
 Foundation Styles
 =================
 
-HTML and CSS are the rebar of the World Wide Web. Equally important to your application as [foundation markup][Chapter 1] are foundation styles. We laid out our HTML, now let's square away on CSS. To do so we will review some of the options out there in terms of preprocessors, CSS authoring utilities, frameworks and grid systems. For our foundation styles we'll implement this chapters [starter CSS][] – developed over the years with a lot of OCD love, then conclude with best practices in stylesheet set up and maintenance. Lets get started.
+HTML and CSS are the rebar of the World Wide Web. In [Chapter 1][] we laid out our HTML, in this chapter we will build a solid CSS foundation, our foundation styles. To do so we will review some of the tools out there to help us get the job done. For our base styles we will implement this chapters [starter CSS][], and conclude this chapter with an overview of  techniques and best practices in stylesheet set up and maintenance. Lets get started.
 
 Preprocessors
 -------------
