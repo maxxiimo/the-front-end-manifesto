@@ -7,9 +7,9 @@ As an Information Architect (IA), when I think about an applications layout I li
 
 ![][Layout]
 
-When I switch hats, as a Rails developer, I look at layout as the Rails view framework in which all of my front end code lives, and from where it will interact via Rails with the outside world.
+When I switch hats, as a Rails developer, I look at layout as the Rails templating framework in which all of my front end code lives, and from where it will interact via Rails with the outside world.
 
-As a Rails Front End Engineer, you will wear both hats. In [Chapter 4][] we will dive deeply into information architecting, but for now our focus will be strictly on coding, and getting it right per our [manifesto][Manifesto], for both end-users and backend developers.
+As a Rails Front End Engineer, you will wear both hats. In [Chapter 4][] we dive deeply into information architecting, but for now our focus will be strictly on laying out our foundation markup, and getting it right per our front end coding [manifesto][Manifesto].
 
 Let's get started.
 
@@ -33,20 +33,14 @@ app<br>
 
 The *views* folder is where most of the action takes place and can be further subdivided into of the *layout* and *shared* folders, which as you will soon discover are home to the majority of your foundation front end code.
 
-The heart of this view framework is referred to as the layout template: *application.html.haml* by default. Most view code from other parts of an application pass through and become framed by *application.html.haml* before being served and rendered by browsers.
+The heart of this view framework is *application.html.haml*. Most view code from other parts of an application pass through and become framed by *application.html.haml* before being served to browsers.
 
 The Code
 --------
 
-Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.0.1) in haml and arranged for a Rails project.
+To help you along I will provide links to [starter code][] we will use or reference throughout this book. Feel free to use this code for your own projects.
 
-In coding copy and learn from the best, improve, then give back. I find that the best place to reference when building front end view templates is HTML5 Boilerplate. This resource is an ongoing collaboration between expert front end developers and the community.
-
-To better understand HTML5 Boilerplate as it applies to Rails, the following article is helpful:
-
-- [Guide to HTML5 Boilerplate for Rails Developers][H5BP for Rails]
-
-Structurally in a Rails application, our [starter code][] files and folders fall into place as follows:
+Structurally in a Rails application, our starter code files and folders fall into place as follows:
 
 app<br>
 |-- assets<br>
@@ -79,7 +73,11 @@ app<br>
 [Gemfile][]<br>
 [README.md][]
 
-The default Rails application file structure is pretty much identical minus a few files and folders. We're going to replace some existing files and add a few new files and folders (new folders in bold, new or replacement files are links).
+The default Rails application files and file structure is pretty much identical minus a few files and folders. In the next section we will replace some existing files that come out of the box by default with our starter code, and add a few new files and folders: new folders depicted above in bold, new or replacement files are links.
+
+NOTE: Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.2.0) in haml and arranged for a Rails project. In my experience the best place to reference when building front end view templates is HTML5 Boilerplate. This resource is an ongoing collaboration between expert front end developers and the community. To better understand HTML5 Boilerplate as it applies to Rails, the following article is helpful:
+
+- [Guide to HTML5 Boilerplate for Rails Developers][H5BP for Rails]
 
 ### Set Up
 
