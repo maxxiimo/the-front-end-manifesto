@@ -248,15 +248,15 @@ The end result of this chapter's work is a complete wireframe, ready for the nex
 
 Just remember, less is more and KISS (Keep It Simple Stupid).
 
-[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
-[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
+[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md
 [Jason Santa Maria]:    http://jasonsantamaria.com/
-[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
-[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-visual-design-for-the-nondesigner.md
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-slicing-and-dicing-mockups.md
 [Wikipedia]:            https://en.wikipedia.org/wiki/Mosaic
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
-[Chapter 1 Quote]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md#the-application-layout
+[Chapter 1 Quote]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#the-application-layout
 [Don't Make Me Think]:  http://www.sensible.com/index.html
 [Case Study]:           http://builtbyboon.com/blog/responsive-design-case-study
 [sketching]:            http://tympanus.net/codrops/2013/01/29/planning-your-web-design-with-sketches/
@@ -264,7 +264,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Generated Paper]:      http://generatedpaper.com/en/wireframing
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
-[Chapter 3 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#using-susy
+[Chapter 3 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#using-susy
 [Susy reference]:       http://susy.oddbird.net/guides/reference/
 [Compass offers]:       http://compass-style.org/reference/compass/layout/grid_background/
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
@@ -272,8 +272,8 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Dummy Image]:          http://dummyimage.com
 [Appendix 7-1]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#feedback-services
 [Appendix 7-2]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#device-testing
-[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#susy-breakpoints
-[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
+[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#susy-breakpoints
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-visual-design-for-the-nondesigner.md
 
 [Mosaic]:               http://chrismaxwell.com/manifesto/mosaic-800px.gif
 [Index Card Reference]: http://chrismaxwell.com/manifesto/index-cards/index-card-reference.gif

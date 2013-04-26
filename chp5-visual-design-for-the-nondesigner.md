@@ -569,15 +569,15 @@ We started this chapter by covering typography. We discussed the basic building 
 
 - [The Elements of Typographic Style Applied to the Web][Typographic Style]
 
-[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
+[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-information-architecting.md
 [Story Design]:         http://24ways.org/2011/design-the-invisible/
 [Dao]:                  http://www.alistapart.com/articles/dao
-[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-slicing-and-dicing-mockups.md
 [typography]:           http://blog.8thlight.com/billy-whited/2011/07/26/what-is-typography.html
 [95% typography]:       http://informationarchitects.net/blog/the-web-is-all-about-typography-period/
-[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md
 [Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#font-stacks-roundup
 [Appendix 8-2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#combinations
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
@@ -598,9 +598,9 @@ We started this chapter by covering typography. We discussed the basic building 
 [On Web Typography]:    http://vimeo.com/34178417
 [Appendix 10-2]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#jason-santa-maria-on-web-typography
 [Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-11.md#a-brief-history-of-web-font-sizes
-[Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md#resets
+[Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
-[using em's]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#ems-and-media-queries
+[using em's]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#ems-and-media-queries
 [CSS Font-Size]:        http://kyleschaeffer.com/user-experience/css-font-size-em-vs-px-vs-pt-vs/
 [Ideal Line Length]:    http://www.maxdesign.com.au/articles/em/
 [Embracing em's]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
@@ -616,7 +616,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Color in Motion]:      http://www.mariaclaudiacortes.com/colors/Colors.html
 [Color Theory]:         http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm
 [Color Matters]:        http://colormatters.com/color-and-design/basic-color-theory
-[Choosing Typefaces]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md#choosing-typefaces
+[Choosing Typefaces]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-visual-design-for-the-nondesigner.md#choosing-typefaces
 [The Meanings of Colors]: http://colormatters.com/color-symbolism/the-meanings-of-colors
 [Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/

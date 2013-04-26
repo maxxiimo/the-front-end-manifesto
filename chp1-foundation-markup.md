@@ -380,7 +380,7 @@ What We've Done
 
 In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 
-[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
+[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-information-architecting.md
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [Groundwork]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-1.md#groundwork-tasks
@@ -416,6 +416,6 @@ In the [next chapter][Chapter 2], we will begin to set up our foundation styles.
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
 [Waste of Time]:        http://www.sitepoint.com/is-internet-explorer-development-really-a-waste-of-time/
 [RWD for IE]:           http://www.sitepoint.com/support-old-browsers-responsive-web-design/
-[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md
 
 [Basic HTML]:           http://chrismaxwell.com/manifesto/getting-started/base-html-no-styles.jpg

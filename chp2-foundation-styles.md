@@ -510,7 +510,7 @@ What We've Done
 
 With all of this work you are almost ready to begin building an app with our best foot forward. [Chapter 3][] will conclude [Section I - Setting up a Foundation][Section I] by presenting different choices for a solid foundation for mobile.
 
-[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
+[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
 [starter CSS]:          https://github.com/maxxiimo/base-css
 [Sass]:                 http://sass-lang.com/
 [Less]:                 http://lesscss.org/
@@ -538,7 +538,7 @@ With all of this work you are almost ready to begin building an app with our bes
 [How I Use Compass]:    http://patrickward.com/code/2011/08/19/how-i-use-compass-with-rails-3-dot-1/
 [Asset Pipeline]:       http://www.engineyard.com/blog/2011/sass-compass-and-the-rails-3-1-asset-pipeline/
 [application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss
-[before]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md#end-result
+[before]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#end-result
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [h5bp_normalize_v101.sass]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v101.sass
@@ -555,13 +555,13 @@ With all of this work you are almost ready to begin building an app with our bes
 [_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/desktop/_staging.sass
 [h5bp_helpers.sass]:    https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.sass
 [h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/_h5bp_print.sass
-[Media Queries]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#3-media-queries
+[Media Queries]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#3-media-queries
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
 [reset utilities]:      http://compass-style.org/reference/compass/reset/utilities/
 [Normalize.css]:        https://github.com/necolas/normalize.css/
 [H5BP's normalize]:     https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v101.sass
 [HTML5 Resets]:         http://html5doctor.com/html-5-reset-stylesheet/
-[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md#using-susy
+[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#using-susy
 [resets]:               https://github.com/maxxiimo/base-resets
 [aB vs. a_b]:           http://stackoverflow.com/questions/1437527/css-camelcase-vs-under-score
 [Identifiers]:          http://stackoverflow.com/questions/1686337/hyphens-or-underscores-in-css-and-html-identifiers
@@ -573,7 +573,7 @@ With all of this work you are almost ready to begin building an app with our bes
 [Sass documentation]:   http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 [Useful SASS Mixins]:   http://sachagreif.com/useful-sass-mixins/
 [Custom User @mixins]:  http://css-tricks.com/custom-user-mixins/
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md
 [Section I]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-1.md
 
 [Basic HTML No Styles]: http://chrismaxwell.com/manifesto/getting-started/base-html-files-with-styles.jpg

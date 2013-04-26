@@ -188,13 +188,13 @@ Table of Contents
 [Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Section I]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-1.md
-[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-markup.md
-[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/foundation-styles.md
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/mobile-on-rails.md
+[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md
 [Section II]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-2.md
-[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/information-architecting.md
-[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/visual-design-for-the-nondesigner.md
-[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/slicing-and-dicing-mockups.md
+[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-information-architecting.md
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-visual-design-for-the-nondesigner.md
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-slicing-and-dicing-mockups.md
 [Images]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/images.md
 [Forms]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/forms.md
 [Navigation]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/navigation.md
