@@ -7,7 +7,7 @@ With any new Rails application their are some very basic groundwork tasks that s
 
 #### Task 1: Version Control
 
-In the Rails world Git and Github are the versioning sytem and service of choice. Here are the steps to follow when creating a new Rails application:
+In the Rails world [Git][] and [Github][] are the versioning sytem and service of choice. Here are the steps to follow when creating a new Rails application:
 
     Switch to new project folder.
     $ git init
@@ -37,20 +37,20 @@ Go ahead and copy all the files and folders from your cloned starter code reposi
 
 Commit your changes.
 
-The following files should have been added to your repository:
+The following files should have been modified or added to your repository:
 
 ![][New Files]
 
 #### Task 4: Gemfile
 
-With every new application Rails generates a Gemfile with a lot of commented out lines. You don't need all of these comments, they take up a lot of space and clutter things up. For our [Gemfile][] we will start with Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" example and add a few additional gems we will use like Compass:
+With every new application Rails generates a Gemfile with a lot of commented out lines. You don't need all of these comments, they take up a lot of space and clutter things up. For our [Gemfile][] we will start with Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" Gemfile example and add a few additional gems we will use like Compass:
 
       # Compass specific gems.
       gem 'compass-rails'
       gem 'oily_png'
       gem 'susy'
 
-Or some better error testing gems:
+Or some better error testing gems, which you may uncomment if you plan to use them:
 
       # http://railscasts.com/episodes/402-better-errors-railspanel
       # gem 'better_errors'
@@ -82,19 +82,21 @@ For faster asset precompiles check out:
 
 #### Task 6: Deployment
 
-Heroku is a cloud application platform used by many members of the Rails community. Deploy to Heroku by running the following commands:
+[Heroku][] is a cloud application platform used by many members of the Rails community. If you do not already have a Heroku account, you will need to open an account with Heroku, and [set up your computer][Heroku Set Up] with that account. Deploy to Heroku by running the following commands:
 
     $ heroku create --stack cedar
     $ git push heroku master
     $ heroku rename <new name>
 
-You will need to set up an account if you don't already have one.
-
+[Git]:                  http://git-scm.com/
+[Github]:               https://github.com/
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [starter code]:         https://github.com/maxxiimo/base-haml
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [recommends]:           http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2#sec-heroku_setup
 [Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3
+[Heroku]:               https://id.heroku.com/signup
+[Heroku Set Up]:        https://devcenter.heroku.com/articles/quickstart
 
 [New Files]:            Http://chrismaxwell.com/manifesto/appendices/new-files.gif
