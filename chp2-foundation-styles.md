@@ -8,7 +8,7 @@ Lets get started.
 Preprocessors
 -------------
 
-Probably the two most well-known dynamic stylesheet preprocessors in use today are [Sass][] and [Less][]. Sass is the sister of [Haml][], my preprocessor of choice, and the default preprocessor in Rails 3.X. As a Rails front end developer you are going to find Sass in many projects you work on as a consultant or as a new member of an existing team and project.
+Probably the two most well-known dynamic stylesheet preprocessors in use today are [Sass][] and [Less][]. Sass is the sister of [Haml][], my preprocessor of choice, and the default preprocessor in Rails 3.X. As a Rails front end developer you are going to find Sass in many projects you work on as a consultant or as a new member of an existing team and project so it would be worth your while to get your head around it if you haven't already.
 
 NOTE: If your new to preprocessors the following articles will give you a great overview on why Sass is great, and more importantly, Sass in Rails:
 
@@ -16,22 +16,20 @@ NOTE: If your new to preprocessors the following articles will give you a great 
 - [An Introduction to Sass in Rails 1][Sass in Rails 1]
 - [An Introduction to Sass in Rails 2][Sass in Rails 2]
 
-When using Sass you have a choice in syntax: .sass or .scss. I prefer .sass. Most front end developers will probably use the .scss syntax because it looks familiar (it is similar to CSS), and because that is what ships out-of-the-box in Rails, however, the .sass syntax is cleaner/terser (IMHO).
+When using Sass you have a choice in syntax: .sass or .scss. I prefer .sass aand throughout this chapter will use the syntax. Most front end developers will probably prefer the .scss syntax because it looks familiar (it is similar to CSS), and because that is what ships out-of-the-box in Rails, however, the .sass syntax is cleaner/terser (IMHO). To help you decide on the best syntax for you, check out the article: "[Sass vs. SCSS: Which Syntax is Better?][Sass vs. SCSS]."
 
-NOTE: To help you decide on the best syntax for you, check out the article: "[Sass vs. SCSS: Which Syntax is Better?][Sass vs. SCSS]."
+So what about [Less][]? Well it's the runner-up.
 
-When using Sass or Haml these resources are absolutely indispensable:
+NOTE: When using Sass or Haml these resources are absolutely indispensable:
 
 - [css2sass][]
 - [Html2Haml][]
 - [html2haml Gem][]
 
-So what about [Less][]? Well it's the runner-up. That's all I'm going to say about that (remember this is a manifesto which is opinionated by nature).
-
 Compass
 -------
 
-So right off the bat I have to say that I love [Compass][]. It's based on Sass, powerful, well-documented, widely used, there are a ton of extensions for it, and it generally makes life easier.
+So right off the bat I have to say that I love [Compass][]. It's based on Sass, powerful, well-documented, widely used, there are a ton of extensions for it, and it generally makes life easier. What's not to love?
 
 > Compass is an open-source CSS Authoring Framework.
 
