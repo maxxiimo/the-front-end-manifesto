@@ -88,6 +88,9 @@ For faster asset precompiles check out:
     $ git push heroku master
     $ heroku rename <new name>
 
+And that's it! Now it's time to [Prep and Launch][] your application.
+
+
 [Git]:                  http://git-scm.com/
 [Github]:               https://github.com/
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
@@ -98,5 +101,6 @@ For faster asset precompiles check out:
 [Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3
 [Heroku]:               https://id.heroku.com/signup
 [Heroku Set Up]:        https://devcenter.heroku.com/articles/quickstart
+[Prep and Launch]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#prep-the-app
 
 [New Files]:            Http://chrismaxwell.com/manifesto/appendices/new-files.gif

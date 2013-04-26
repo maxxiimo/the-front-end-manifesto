@@ -11,7 +11,7 @@ Table of Contents
     - Views
     - The Code
         - Set Up
-        - Prep the App
+        - Prep and Launch
         - End Result
     - Organization
         - Partials
