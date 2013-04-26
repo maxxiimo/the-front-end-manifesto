@@ -97,9 +97,9 @@ Before we begin to explore the code that make up our views, there are a few thin
 
 ### Prep and Launch
 
-Prep your app by following these steps:
+Prep and the launch your app by following these steps:
 
-**Step 1** - If you do not have a page for your routes to go to, which I'm assuming you don't if this is a brand-new application, create one now. Generate a pages controller to match the footer links:
+**Step 1** - If you do not have a page for your routes to go to, which I'm assuming you don't if this is a brand-new application, create one now. Generate a pages controller with some very basic static pages:
 
     $ rails generate controller Pages home about site_map terms privacy contact
 
