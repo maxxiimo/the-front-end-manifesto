@@ -132,15 +132,13 @@ Commit your changes.
 
     localhost:3000
 
-### End Result
-
-Although not apparent yet, i.e. visually, we have created an excellent foundation for your application. With everything in place, and given that you followed all the steps above, your homepage should look something like this:
+And with that you should see something like this:
 
 <br>
 
 ![][Basic HTML]
 
-Not very attractive! ...but don't worry we'll address that in the [next chapter][Chapter 2].
+Not very attractive! ...but don't worry we'll address that in the [next chapter][Chapter 2]. What's important here is that under the hood you have an excellent foundation markup base to work with moving forward.
 
 Organization
 ------------

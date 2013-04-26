@@ -12,7 +12,6 @@ Table of Contents
     - The Code
         - Set Up
         - Prep and Launch
-        - End Result
     - Organization
         - Partials
         - JavaScript
