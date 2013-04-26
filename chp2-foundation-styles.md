@@ -171,7 +171,7 @@ Our hierarchy looks like this:
 - MIXINS
   - [_media_queries.sass][]
 - RESETS
-  - [h5bp_normalize_v101.sass][]
+  - [h5bp_normalize_v111.scss][]
 - BASIC STRUCTURE
   - [_layout.sass][]
   - [_grids.sass][]
@@ -191,8 +191,8 @@ Our hierarchy looks like this:
   - [_staging.sass][]
 - APPLICATION
 - LAST
-  - [h5bp_helpers.sass][]
-  - [h5bp_print.sass][]
+  - [h5bp_helpers.scss][]
+  - [h5bp_print.scss][]
 
 ### Detailed Explanation
 
@@ -214,7 +214,7 @@ Major mixins such as Compass and homebrewed mixins. Included in our starter CSS 
 
     /* RESETS
     ============================================================================ */
-    @import "boilerplate/h5bp_normalize_v102";
+    @import "boilerplate/h5bp_normalize_v111";
 
     // To counter normalize indentation of lists.
     ol, ul {
@@ -540,8 +540,9 @@ With all of this work you are almost ready to begin building an app with our bes
 [application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss
 [before]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#end-result
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
+
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
-[h5bp_normalize_v101.sass]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v101.sass
+[h5bp_normalize_v101.sass]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v111.scss
 [_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
 [_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/desktop/_layout.sass
 [_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_grids.sass
@@ -553,8 +554,9 @@ With all of this work you are almost ready to begin building an app with our bes
 [_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_forms.sass
 [_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_pages.sass
 [_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/desktop/_staging.sass
-[h5bp_helpers.sass]:    https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.sass
-[h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/_h5bp_print.sass
+[h5bp_helpers.sass]:    https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.scss
+[h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/_h5bp_print.scss
+
 [Media Queries]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#3-media-queries
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
 [reset utilities]:      http://compass-style.org/reference/compass/reset/utilities/
