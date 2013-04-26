@@ -23,11 +23,10 @@ Out-of-the-box Rails comes with a few files that should be deleted. After testin
 
 - public/index.html
 - assets/images/rails.png
-- assets/stylesheets/application.css
 - app/views/layouts/application.html.erb
 - README.rdoc
 
-The last three deletions will be replaced in the next task by files from our [starter code][]: *application.scss*, *application.html.haml* and *README.md*.
+The last two deletions will be replaced in the next task by files from our [starter code][]: *application.html.haml* and *README.md*.
 
 Commit your changes.
 
