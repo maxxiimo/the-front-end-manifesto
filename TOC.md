@@ -9,9 +9,13 @@ Table of Contents
 #### Chapter 1
 - [Foundation Markup][Chapter 1]
     - Views
-    - The Code
-        - Set Up
+        - The Code
+    - Set Up
+        - Groundwork Tasks
         - Prep and Launch
+
+#### Chapter 2
+- [Markup Review][Chapter 2]
     - Organization
         - Partials
         - JavaScript
@@ -22,16 +26,18 @@ Table of Contents
         - Naming Conventions
         - Using Partials
         - IE 6
-    - What We've Done
 
-#### Chapter 2
-- [Foundation Styles][Chapter 2]
+#### Chapter 3
+- [Foundation Styles][Chapter 3]
     - Preprocessors
     - Compass
     - CSS Frameworks and Grid Systems
     - Our Foundation
         - Compass Set Up
         - Stylesheet Set Up
+
+#### Chapter 4
+- [Stylesheet Review][Chapter 4]
     - Organization
         - application.scss
         - Detailed Explanation
@@ -45,8 +51,8 @@ Table of Contents
         - Mixins
     - What We've Done
 
-#### Chapter 3
-- [Mobile on Rails][Chapter 3]
+#### Chapter 5
+- [Mobile on Rails][Chapter 5]
     - Mobile First
     - Plan of Attack
     - I. User Agent Sniffing
@@ -67,7 +73,7 @@ Table of Contents
 
 ### [Section II - Build Something][Section II]
 
-#### Chapter 4
+#### Chapter 6
 - [Information Architecting][Chapter 4]
     - A Mosaic of Information
     - The Storyline
@@ -80,7 +86,7 @@ Table of Contents
     - Feedback and Testing
     - What We've Done
 
-#### Chapter 5
+#### Chapter 7
 - [Visual Design for the Nondesigner][Chapter 5]
     - Paradigm Shift
     - Typography
@@ -101,7 +107,7 @@ Table of Contents
     - Other Resources
         - What We've Done
 
-#### Chapter 6
+#### Chapter 8
 - [Slicing and Dicing Mockups][Chapter 6]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
@@ -115,7 +121,7 @@ Table of Contents
 
 ### Section III
 
-#### Chapter 7
+#### Chapter
 - [Images][]
     - Organization
     - Choosing an Image Format
@@ -123,7 +129,7 @@ Table of Contents
     - Responsive Resizing
     - Retina Displays
 
-#### Chapter 8
+#### Chapter
 - [Forms][]
     - Basic Form Structure
     - Ordered List or Paragraphs?
@@ -132,21 +138,21 @@ Table of Contents
     - FormHelpers
     - Fancy/Sassy Buttons
 
-#### Chapter 9
+#### Chapter
 - [Navigation][]
     - Types
     - CSS
     - Context Awareness Patterns
 
-#### Chapter 10
+#### Chapter
 - [Gradients][]
 
-#### Chapter 11
+#### Chapter
 - [Email Coding][]
 
 ### Section IV
 
-#### Chapter 12
+#### Chapter
 - [Optimization][]
     - Gzipping
     - Caching
@@ -157,43 +163,47 @@ Table of Contents
     - Spriting
     - What We've Done
 
-#### Chapter 13
+#### Chapter
 - [Accessibility][]
     - Standardize Your Links
     - Use ARIA Roles
 
-#### Chapter 14
+#### Chapter
 - [Search Engine Optimization][]
 
-#### Chapter 15
+#### Chapter
 - [Style Guides][]
 
 ### APPENDICES
 
 - [Appendices Index][Appendices]
-  - Appendix 1: Groundwork Tasks
-  - Appendix 2: Frameworks
-  - Appendix 3: Grid Systems
-  - Appendix 4: Mobile Solutions Roundup
-  - Appendix 5: Inspirational Sites
-  - Appendix 6: Placeholder Services
+  - Appendix 1: Frameworks
+  - Appendix 2: Grid Systems
+  - Appendix 3: Mobile Solutions Roundup
+  - Appendix 4: Inspirational Sites
+  - Appendix 5: Placeholder Services
   - Appendix 6: Feedback Services and Device Testing
-  - Appendix 8: Font Stack Roundup
-  - Appendix 9: Font Services and Tools
-  - Appendix 10: Choosing Typefaces
-  - Appendix 11: A Brief History of Web Font Sizes
-  - Appendix 12: Color Palettes, Tools and Collections
+  - Appendix 7: Font Stack Roundup
+  - Appendix 8: Font Services and Tools
+  - Appendix 9: Choosing Typefaces
+  - Appendix 10: A Brief History of Web Font Sizes
+  - Appendix 11: Color Palettes, Tools and Collections
 
 [Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
 [The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
+
 [Section I]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-1.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
-[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
+[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md
+
 [Section II]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-2.md
-[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-information-architecting.md
-[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-visual-design-for-the-nondesigner.md
-[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-slicing-and-dicing-mockups.md
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-information-architecting.md
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-visual-design-for-the-nondesigner.md
+[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-slicing-and-dicing-mockups.md
+
 [Images]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/images.md
 [Forms]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/forms.md
 [Navigation]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/navigation.md
@@ -204,4 +214,5 @@ Table of Contents
 [Accessibility]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/accessibility.md
 [Search Engine Optimization]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/search-engine-optimization.md
 [Style Guides]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/style-guides.md
+
 [Appendices]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md

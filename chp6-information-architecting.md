@@ -3,19 +3,19 @@ Information Architecting
 
 In the first section of this book we laid down the foundation of our application by:
 
-1. Defining our base [markup][Chapter 1] and [styles][Chapter 2].
-2. Choosing a [mobile][Chapter 3] content delivery strategy.
+1. Defining our base [markup][Chapter 1] and [styles][Chapter 3].
+2. Choosing a [mobile][Chapter 5] content delivery strategy.
 
 Now it's time to build a user experience on this foundation: how your users will understand your [whatever your building] and how they will [whatever they will do]. The key to being successful in building your applications user experience can be summed up in one word: **Storytelling**.
 
 Back in 2008, at "An Event Apart: Boston," I listened to [Jason Santa Maria][] – then the Creative Director of Happy Cog Studios – give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
 
-These talks have stuck with me over the years, and they have become the way I view information architecting and visual design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code, and in the [next chapter][Chapter 5] we will create the sites look and feel (visual design) from the same perspective.
+These talks have stuck with me over the years, and they have become the way I view information architecting and visual design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code, and in the [next chapter][Chapter 7] we will create the sites look and feel (visual design) from the same perspective.
 
 As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about designing a website:
 
 1. Start from scratch and architect and design everything yourself.
-2. Work with a graphic designer from the get-go and implement a design mockup into your foundation work ([Chapter 6 - Slicing and Dicing Mockups][Chapter 6]).
+2. Work with a graphic designer from the get-go and implement a design mockup into your foundation work ([Chapter 8 - Slicing and Dicing Mockups][Chapter 8]).
 3. Start from scratch and architect yourself, then get help from a graphic designer on the look and feel.
 
 In this chapter we're going to mostly focus on option 1. Hiring a graphic designer from the get-go is not a bad idea, but perhaps there isn't money in the budget, or this responsibility falls on your lap, or maybe you just want to do it yourself. To illustrate how simple option 1 can be take a look at this 2007 website concept:
@@ -164,7 +164,7 @@ To begin just simply translate what you indexed in the previous section into wha
 
 The end result: a well-defined user interface layout for my entire application.
 
-TIP: As you prototype always have an eye on your bookmarked reference websites, and/or some of the [inspirational sites][Appendix 5] listed in our appendix. Revise and release often.
+TIP: As you prototype always have an eye on your bookmarked reference websites, and/or some of the [inspirational sites][Appendix 4] listed in the Appendices. Revise and release often.
 
 Wireframing
 -----------
@@ -173,7 +173,7 @@ Wireframing
 
 The prototype is the blueprint, and what you code moving forward will serve as your living wireframe. A living wireframe in that if clients/teammates/stakeholders need to review beyond the early exercises, you can send them to a live URL where they can click through to simulate the actual application (and view it on different devices). Any changes you make will be reflected immediately, which they'll love. For you, everything from this point forward is just an iteration in the development process.
 
-Because you laid out your applications [markup][Chapter 1], [styles][Chapter 2], and [mobile][Chapter 3] groundwork in chapters 1 through 3 – and hopefully have deployed on Heroku or elsewhere – what you wireframe will ultimately be production ready, and in this section we will begin to transform our paper prototype into a working wireframe.
+Because you laid out your applications [markup][Chapter 1], [styles][Chapter 3], and [mobile][Chapter 5] groundwork in chapters 1 through 5 – and hopefully have deployed on Heroku or elsewhere – what you wireframe will ultimately be production ready, and in this section we will begin to transform our paper prototype into a working wireframe.
 
 NOTE: An assumption I will make is that you already are a proficient front end coder, so going into how to go about writing basic markup from the prototypes we just developed is something I won't get into.
 
@@ -187,7 +187,7 @@ Pretty bare-bones, but that will soon change.
 
 ### Wireframing with Susy
 
-In Chapter 3 we learned how to [install and implement Susy][Chapter 3 - Susy]. It's a powerful tool which I strongly recommend you use. Using it will allow you to quickly layout of the content of your application, set breakpoints, and test across different devices until you zero in on the perfect layout for your project.
+In Chapter 3 we learned how to [install and implement Susy][Chapter 5 - Susy]. It's a powerful tool which I strongly recommend you use. Using it will allow you to quickly layout of the content of your application, set breakpoints, and test across different devices until you zero in on the perfect layout for your project.
 
 One feature that will help you wireframe is the grid background tool:
 
@@ -205,7 +205,7 @@ A word on content. If you have it great! If not, the following article gives a n
 
 - [Content, First?][Content First]
 
-I for one don't mind using Lorem Ipsum or images as content placeholders, but nothing can really truly substitute for actual content so if you can find it or create it, do so. I've put together a pretty comprehensive list of [placeholder services][Appendix 6] for your benefit in the appendix of this book. It includes text and image placeholder services.
+I for one don't mind using Lorem Ipsum or images as content placeholders, but nothing can really truly substitute for actual content so if you can find it or create it, do so. I've put together a pretty comprehensive list of [placeholder services][Appendix 5] for your benefit in the Appendices. It includes text and image placeholder services.
 
 Although I like to use [Dummy Image][], I also keep a 1px x 1px transparent gif, sometimes referred to as a shim, in our assets/images/fixtures folder. It can be used as follows to create image placeholders:
 
@@ -219,18 +219,18 @@ Don't forget to set the color:
 Feedback and Testing
 --------------------
 
-One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services listed in the [Feedback Services][Appendix 7-1] appendix.
+One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services listed in the [Feedback Services][Appendix 6] ssection of Appendix 6.
 
 > Test across major browsers, devices, and in front of "real-life" users.
 \- [Manifesto][]
 
-Testing on actual devices is also very important. Resizing a browser window and/or using device simulators cannot substitute for an actual device. The "[Device Testing][Appendix 7-2]" section in the appendices lists several useful articles to get you started on testing or building your own testing lab. As a rule of thumb, test on at least four different devices: desktop, tablet, small tablet, and a smartphone. Walk into the Mac store, or Verizon, or AT&T if you have to and test away.
+Testing on actual devices is also very important. Resizing a browser window and/or using device simulators cannot substitute for an actual device. The "[Device Testing][Appendix 6]" section in Appendix 6 lists several useful articles to get you started on testing or building your own testing lab. As a rule of thumb, test on at least four different devices: desktop, tablet, small tablet, and a smartphone. Walk into the Mac store, or Verizon, or AT&T if you have to and test away.
 
 At the end of our information architecting cycle, with our basic content and layouts in place, here's what we're left with across several different devices:
 
 ![][Multidevice]
 
-We were able to rapidly create wireframes across multiple devices by using [Susy breakpoints][Susy]. Now all that we need to do is make our wireframes look pretty! We will tackle this head on in Chapter 5, "[Visual Design for the Nondesigner][Chapter 5]".
+We were able to rapidly create wireframes across multiple devices by using [Susy breakpoints][Susy]. Now all that we need to do is make our wireframes look pretty! We will tackle this head on in Chapter 7, "[Visual Design for the Nondesigner][Chapter 7]".
 
 What We've Done
 ---------------
@@ -244,36 +244,41 @@ Understanding our own storyline, we began a process of converting our thoughts i
 
 Together these two exercises, along with the foundation code we already laid out in chapters 1 -  3, made wireframing a cinch. To further ease the creation process I also recommended the use of Susy, and ended with a quick talk on content.
 
-The end result of this chapter's work is a complete wireframe, ready for the next step in storytelling, but before we move onto visual design consider this for a moment: As front end developers we oftentimes think in terms of boxes. Notice our wireframe is essentially a layout of different content boxes. As we move into design mode [in the next chapter][Chapter 5] we need to completely change how we use our brains.
+The end result of this chapter's work is a complete wireframe, ready for the next step in storytelling, but before we move onto visual design consider this for a moment: As front end developers we oftentimes think in terms of boxes. Notice our wireframe is essentially a layout of different content boxes. As we move into design mode [in the next chapter][Chapter 7] we need to completely change how we use our brains.
 
 Just remember, less is more and KISS (Keep It Simple Stupid).
 
-[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
-[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md
-[Jason Santa Maria]:    http://jasonsantamaria.com/
-[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-visual-design-for-the-nondesigner.md
-[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-slicing-and-dicing-mockups.md
-[Wikipedia]:            https://en.wikipedia.org/wiki/Mosaic
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
+[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-visual-design-for-the-nondesigner.md
+[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-slicing-and-dicing-mockups.md
+[Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
+[Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-5
+[Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-6
+
+[Jason Santa Maria]:    http://jasonsantamaria.com/
+
 [Chapter 1 Quote]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#the-application-layout
+[Wikipedia]:            https://en.wikipedia.org/wiki/Mosaic
+
 [Don't Make Me Think]:  http://www.sensible.com/index.html
+
 [Case Study]:           http://builtbyboon.com/blog/responsive-design-case-study
+
 [sketching]:            http://tympanus.net/codrops/2013/01/29/planning-your-web-design-with-sketches/
-[Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#inspirational-sites
 [Generated Paper]:      http://generatedpaper.com/en/wireframing
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
-[Chapter 3 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#using-susy
-[Susy reference]:       http://susy.oddbird.net/guides/reference/
+
+[Chapter 5 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md#using-susy
 [Compass offers]:       http://compass-style.org/reference/compass/layout/grid_background/
+
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
-[Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-6.md#placeholder-services
 [Dummy Image]:          http://dummyimage.com
-[Appendix 7-1]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#feedback-services
-[Appendix 7-2]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-7.md#device-testing
+
 [Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#susy-breakpoints
-[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-visual-design-for-the-nondesigner.md
 
 [Mosaic]:               http://chrismaxwell.com/manifesto/mosaic-800px.gif
 [Index Card Reference]: http://chrismaxwell.com/manifesto/index-cards/index-card-reference.gif

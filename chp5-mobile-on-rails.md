@@ -1,7 +1,7 @@
 Mobile on Rails
 ===============
 
-In Chapter 1 we learned about [foundation markup][Chapter 1], and in Chapter 2, [foundation styles][Chapter 2], but we never addressed mobile. What about smartphones and tablets? What about mobile browsers!! In the old days it never really was an issue for most developers. All you really had to worry about "cross anything" were browser issues. Desktop screen sizes were debated then, but it could be overlooked since the differences were not so great or prevalent, and the "fix" came relatively quickly: the industry settled on standard design widths and/or employed liquid layouts.
+In Chapter 1 we learned about [foundation markup][Chapter 1], and in Chapter 3, [foundation styles][Chapter 3], but we never addressed mobile. What about smartphones and tablets? What about mobile browsers!! In the old days it never really was an issue for most developers. All you really had to worry about "cross anything" were browser issues. Desktop screen sizes were debated then, but it could be overlooked since the differences were not so great or prevalent, and the "fix" came relatively quickly: the industry settled on standard design widths and/or employed liquid layouts.
 
 Fast-forward to today and as a front end engineer you cannot help but think about screen size, and the fix is a bit more difficult than it was back then to say the least!
 
@@ -110,7 +110,7 @@ At Fidelity, under these challenges, our goal was to cover 99.999% of all web-en
 
 Over time Fidelity developed an extensive database of devices their global customer base used which included information about the devices screen size, operating system, browser, and other pertinent information. Armed with this Fidelity could then serve markup depending on the request and the information it contained.
 
-Fast-forward to today, and you can still effectively use device user agents and third-party databases to identify device characteristics and based on this information serve appropriate markup and styles. Doing this in Rails is not too difficult. Take a look at the [Mobile Solutions Roundup][Mobile Roundup] in the Appendix to get an idea of what's available.
+Fast-forward to today, and you can still effectively use device user agents and third-party databases to identify device characteristics and based on this information serve appropriate markup and styles. Doing this in Rails is not too difficult. Take a look at the [Mobile Solutions Roundup][Appendix 3] in the Appendices to get an idea of what's available.
 
 ### Mobylette
 
@@ -314,7 +314,7 @@ Now if you were to change the size of .container, .left-side and .right-side wou
 
 #### Using Susy
 
-As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you and save time. There is a pretty comprehensive list of [grid systems][] in the appendix, but my preference is to use [Susy][] since it is a plug-in of Compass, which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in.
+As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you and save time. There is a pretty comprehensive list of [grid systems][Appendix 2] in the Appendices, but my preference is to use [Susy][] since it is a plug-in of Compass, which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in.
 
 ##### Installation
 
@@ -997,48 +997,57 @@ We covered each method in detail and incorporated our work into our foundation c
 
 We ended the chapter with a quick overview of JavaScript and mobile: media query polyfills, conditional loading, and ending with a very brief reference to Zepto, a minimalist JavaScript library.
 
-"Mobile on Rails" is the last chapter of "Section I - Setting up a Foundation". The three pillars of this foundation are our [foundation markup][Chapter 1], [foundation styles][Chapter 2], and with this chapter our mobile foundation.
+"Mobile on Rails" is the last chapter of "Section I - Setting up a Foundation". The three pillars of this foundation are our [foundation markup][Chapter 1], [foundation styles][Chapter 3], and with this chapter our mobile foundation.
 
-We now have a solid base to build on, and are ready to move onto Section II of this book beginning with Chapter 4, "[Information Architecting][Chapter 4]".
+We now have a solid base to build on, and are ready to move onto Section II of this book beginning with Chapter 4, "[Information Architecting][Chapter 6]".
 
-
+[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
-[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-information-architecting.md
+[Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
+[Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-3
+
 [Better and Worse]:     http://insights.wired.com/profiles/blogs/mobile-browsing-will-get-both-better-and-worse#axzz2IFWc81o0
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/introduction
+
 [LukeW]:                http://www.lukew.com/ff/entry.asp?933
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
-[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
-[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-information-architecting.md
+
 [LaunchWare]:           http://launchware.com/
 [Jason Grigsby]:        http://www.uie.com/brainsparks/2012/10/12/jason-grigsby-mobile-first-responsive-design/
 [Responsive Reasons]:   http://www.mixd.co.uk/blog/technical/reasons-for-responsive-design/
 [Fools Gold]:           http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
 [Brian Fling]:          http://shop.oreilly.com/product/9780596155452.do
 [Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile
+
 [User-Agent]:           http://tools.ietf.org/html/rfc2616#section-14.43
-[Mobile Roundup]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-4.md#mobile-solutions-roundup
+
 [mobylette]:            https://github.com/tscolari/mobylette
 [jQuery Mobile]:        http://jquerymobile.com/
 [base-mobile]:          https://github.com/maxxiimo/base-mobile
 [Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
 [User Agent Switcher]:  http://chrispederick.com/work/user-agent-switcher/
+
 [Mobvious]:             https://github.com/jistr/mobvious
 [Ryan Bates]:           http://railscasts.com/episodes/199-mobile-devices
 [template inheritance]: http://railscasts.com/episodes/269-template-inheritance
+
 [RWD]:                  http://www.alistapart.com/articles/responsive-web-design/
 [RWD Book]:             http://www.abookapart.com/products/responsive-web-design
-[Responsive Design]:    http://alpha.responsivedesign.is/
 [This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
+[Responsive Design]:    http://alpha.responsivedesign.is/
+
 [grid]:                 http://www.subtraction.com/pics/0703/grids_are_good.pdf
-[grid systems]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-3.md#grid-systems
 [Susy]:                 http://susy.oddbird.net/
 [Eric Meyer]:           http://meyerweb.com/
-[source]:               http://susy.oddbird.net/guides/getting-started/
 [basic settings]:       http://susy.oddbird.net/guides/reference/#ref-basic-settings
 [.container]:           http://susy.oddbird.net/guides/reference/#ref-basic-mixins
+[source]:               http://susy.oddbird.net/guides/getting-started/
 [Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
 [Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
+
 [media types]:          http://www.w3.org/TR/CSS21/media.html#media-types
 [Media Queries]:        http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/
 [and more]:             http://www.w3.org/TR/css3-mediaqueries/#media0
@@ -1048,19 +1057,25 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [Device Diagram]:       http://www.metaltoad.com/blog/simple-device-diagram-responsive-design-planning
 [Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
 [breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
+
 [Happy Cog]:            http://www.netmagazine.com/news/browser-screen-resolution-stats-rile-devs-121897
 [_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
 [Media queries]:        http://alpha.responsivedesign.is/develop/media-queries
 [Sass Media Queries]:   http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
 [Retina Media Queries]: http://css-tricks.com/snippets/css/retina-display-media-query/
+
 [EMs have it]:          http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
 [Embrace the em]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
+
 [Muppets]:              https://groups.google.com/d/topic/compass-users/oXHAtZE4euI/discussion
+
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [Mobile Boilerplate]:   http://html5boilerplate.com/html5boilerplate.com/dist/mobile/
+
 [css3-mediaqueries-js]: http://code.google.com/p/css3-mediaqueries-js/
 [Respond.js]:           https://github.com/scottjehl/Respond
 [Mediatizr]:            https://github.com/pyrsmk/mediatizr
+
 [24 Ways Speed]:        http://24ways.org/2010/speed-up-your-site-with-delayed-content/
 [24 Ways Loading]:      http://24ways.org/2011/conditional-loading-for-responsive-designs/
 [Clean Loading]:        http://adactio.com/journal/5042/
@@ -1070,6 +1085,7 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [Callbacks]:            http://css-tricks.com/enquire-js-media-query-callbacks-in-javascript/
 [enquire.js]:           http://wicky.nillia.ms/enquire.js/
 [Adapt.js]:             http://adapt.960.gs/
+
 [Github Zepto]:         https://github.com/madrobby/zepto
 [Zepto.js]:             http://zeptojs.com/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
@@ -1077,4 +1093,3 @@ We now have a solid base to build on, and are ready to move onto Section II of t
 [@media Definitions]:   http://chrismaxwell.com/manifesto/media-queries.gif
 [file-structure]:       http://chrismaxwell.com/manifesto/file-structure.gif
 [file-structure-w-lines]: http://chrismaxwell.com/manifesto/file-structure-w-lines.gif
-

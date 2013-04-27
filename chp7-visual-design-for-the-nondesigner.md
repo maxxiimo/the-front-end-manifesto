@@ -1,7 +1,7 @@
 Visual Design for the Nondesigner
 =================================
 
-In the [last chapter][Chapter 4] our focus was Information Architecture, and in that chapter we really emphasize storytelling. [Design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction in visual design.
+In the [last chapter][Chapter 6] our focus was Information Architecture, and in that chapter we really emphasize storytelling. [Design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction in visual design.
 
 Up until now, we basically have a pretty blank wireframe: Function before form. We need to add some spice to it:
 
@@ -9,7 +9,7 @@ Up until now, we basically have a pretty blank wireframe: Function before form. 
 
 \- [A Dao of Web Design][Dao] by John Allsopp
 
-We learned in Chapter 4 that by looking at your site your users should be able to understand what they're looking at. That your website must communicate it's story. In the case of "View Thought" part of the story is:
+We learned in [Chapter 6][] that by looking at your site your users should be able to understand what they're looking at. That your website must communicate it's story. In the case of "View Thought" part of the story is:
 
 > We are a great website **design** [emphasis supplied], development and user experience shop...we pay special attention to what your users will see.
 
@@ -22,7 +22,7 @@ Before we do, I want to mention a paradigm shift I've been noticing in the front
 
 Your job was then to provide a handshake between graphic design and backend code. You understood what kind of code the backend team needed and how they would use it, and you had skills to turn graphic design into front end code. In my own personal experience as a consultant brought into projects, more times than not design mockups had already been completed and I would then slice and dice these mockups and integrate them into the application as pixel perfect and cross browser friendly as possible (pixel perfect used to really matter!).
 
-NOTE: Chapter 6, [Slicing and Dicing Mockups][Chapter 6], will dive into the mechanics of doing exactly that.
+NOTE: Chapter 8, [Slicing and Dicing Mockups][Chapter 8], will dive into the mechanics of doing exactly that.
 
 With the advent of HTML5 and the continuous improvement in W3C CSS3 specifications and implementation by browser vendors, a lot of these image based design elements can now be created through front end code. In other words "graphic design" cannot take place on your IDE and in the browser.
 
@@ -49,7 +49,7 @@ So let's get started. In my opinion the lowest hanging fruit in typography are t
 - Font Size
 - Readability
 
-If you have implemented the base style sheets from Chapter 2, [Foundation Styles][Chapter 2], these typographic elements are predefined and available to you out-of-the-box in [_define.sass][] – a sass partial reserved for defining global stylesheet variables:
+If you have implemented the base style sheets from Chapter 3, [Foundation Styles][Chapter 3], these typographic elements are predefined and available to you out-of-the-box in [_define.sass][] – a sass partial reserved for defining global stylesheet variables:
 
     /*  Fonts
       -----------------------
@@ -79,7 +79,7 @@ For example, our definitions above begin with variables set to different font st
 
 ### Font Family
 
-Since we have already predefined font stack variables, let's pick one for View Thought. If you don't like what is predefined for your site, to help you select an alternative without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 8]" located in the appendix of this book. Here you will find recommendations for:
+Since we have already predefined font stack variables, let's pick one for View Thought. If you don't like what is predefined for your site, to help you select an alternative without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the Appendices of this book. Here you will find recommendations for:
 
 1.  Font stacks that you can copy and use in your project.
 
@@ -91,7 +91,7 @@ Since we have already predefined font stack variables, let's pick one for View T
 
 #### Pairing Typefaces
 
-When selecting font families for my projects I like to go straight for the "[Font Stacks Roundup][Appendix 8-2]" section titled "Combinations". Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and more often than not provide samples for you to review and choose from.
+When selecting font families for my projects I like to go straight for the "[Font Stacks Roundup][Appendix 7]" Appendix, in the section entitled "Combinations". Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and more often than not provide samples for you to review and choose from.
 
 > You might have already heard this; successful pairing relies on concord, or contrast, but not conflict. That is to say your selected fonts can work well together by sharing certain qualities, or by being completely different from one another. However, font pairs can conflict in a number of ways – being too similar being just one.
 
@@ -129,7 +129,7 @@ If your device does not have the first font in the stack, Arial, your browser wi
 
 #### Font Services
 
-Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 9]" appendix.
+Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 8]" appendix.
 
 I use [Typekit][]. Fortunately for us, Typekit provides an excellent [series of articles][articles] on implementing Typekit, so [I'll][] [spare][] [you][] [the][] [details][].
 
@@ -143,7 +143,7 @@ Here are some screenshots of different font ideas for View Thought:
 
 ![][fonts]
 
-As you can see, choosing fonts is a practice in trial and error. In Appendix 10 in the section entitled "[Choosing Typeface Articles][Appendix 10-1]," I list different articles that might help you frame the context of your decision making process.
+As you can see, choosing fonts is a practice in trial and error. In Appendix 9 in the section entitled "[Choosing Typeface Articles][Appendix 9]," I list different articles that might help you frame the context of your decision making process.
 
 I also think the following idea is worth noting by itself: In a presentation by Tim Brown, the Type Manager for Adobe Typekit, he quotes Jason Santa Maria as saying:
 
@@ -176,15 +176,15 @@ That is our message, and here are some adjectives that help communicate the mood
 11. Fun
 12. Steadfast
 
-A final note on selecting typefaces, Jason Santa Maria in a presentation called [On Web Typography][] gives advice on picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) are excellent. You can find them transcribed in [Appendix 10][Appendix 10-2].
+A final note on selecting typefaces, Jason Santa Maria in a presentation called [On Web Typography][] gives advice on picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) are excellent. You can find them transcribed in [Appendix 9][Appendix 9].
 
 ### Font Size
 
 Now that we have selected a font family, we need to set a base font size. Choosing font size is actually an important decision. At the very basic level you will choose between a measurement types such as px's vs. em's vs. % vs. pt's vs rem's, and from a more complex perspective you need to consider that your choice might also be the measurement from which your entire site is responsive to, and in our case it is.
 
-Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History of Web Font Sizes][Appendix 11]" found in the appendices.
+Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History of Web Font Sizes][Appendix 10]" found in the appendices.
 
-In Chapter 2 we implemented [Normalize.css][]. If you look at our [implementation][] you will notice that we reset our base font size to 100%:
+In [Chapter 3][] we implemented [Normalize.css][]. If you look at our [implementation][] you will notice that we reset our base font size to 100%:
 
     /*
     * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using `em` units.
@@ -235,7 +235,7 @@ A modular scale is a scale based on ratios derived from harmonic intervals or th
 So how is this modular scale created? Fortunately there are some great references out there that will do a much better job of explaining the what's and how's of modular scales:
 
 - [Tim Brown - More Perfect Typography][Perfect Typography] (Go to minute 15:00, great talk.)
-- Articles 10, 11, and 12 in Appendix 11, [A Brief History of Web Font Sizes][Appendix 11]
+- Articles 10, 11, and 12 in Appendix 10, [A Brief History of Web Font Sizes][Appendix 10]
 - The [Modular Scale][] tool
 
  Using the Modular Scale tool here is the scale we will use for View Thought:
@@ -569,20 +569,27 @@ We started this chapter by covering typography. We discussed the basic building 
 
 - [The Elements of Typographic Style Applied to the Web][Typographic Style]
 
-[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-information-architecting.md
+[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-information-architecting.md
+[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-slicing-and-dicing-mockups.md
+[Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
+[Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-7
+[Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-8
+[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-9
+[Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-10
+[Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-11
+
 [Story Design]:         http://24ways.org/2011/design-the-invisible/
 [Dao]:                  http://www.alistapart.com/articles/dao
-[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-slicing-and-dicing-mockups.md
+
 [typography]:           http://blog.8thlight.com/billy-whited/2011/07/26/what-is-typography.html
 [95% typography]:       http://informationarchitects.net/blog/the-web-is-all-about-typography-period/
-[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md
-[Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#font-stacks-roundup
-[Appendix 8-2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-8.md#combinations
+
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
 [_head.html.haml]:      https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
-[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-9.md#font-services-and-tools
+
 [Typekit]:              https://typekit.com/
 [articles]:             http://blog.typekit.com/category/font-events/
 [I'll]:                 https://github.com/maxxiimo/viewthought/blob/master/app/views/layouts/_head.html.haml
@@ -592,39 +599,43 @@ We started this chapter by covering typography. We discussed the basic building 
 [details]:              https://github.com/maxxiimo/viewthought/blob/master/app/assets/stylesheets/desktop/_typography.sass
 [Google Web Fonts]:     http://www.google.com/webfonts#
 [Beginners Guide]:      http://designshack.net/articles/css/a-beginners-guide-to-using-google-web-fonts/
-[Appendix 10-1]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#choosing-typeface-articles
+
 [Perfect Typography]:   http://vimeo.com/17079380
 [Brief Primer]:         http://blog.8thlight.com/billy-whited/2011/08/25/a-brief-primer-on-typeface-selection.html
 [On Web Typography]:    http://vimeo.com/34178417
-[Appendix 10-2]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-10.md#jason-santa-maria-on-web-typography
-[Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-11.md#a-brief-history-of-web-font-sizes
+
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
+
 [using em's]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#ems-and-media-queries
-[CSS Font-Size]:        http://kyleschaeffer.com/user-experience/css-font-size-em-vs-px-vs-pt-vs/
 [Ideal Line Length]:    http://www.maxdesign.com.au/articles/em/
+[CSS Font-Size]:        http://kyleschaeffer.com/user-experience/css-font-size-em-vs-px-vs-pt-vs/
 [Embracing em's]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
+
 [Modular Scale]:        http://modularscale.com/
 [Sassy Modular Scale]:  https://github.com/scottkellum/modular-scale
+
 [readability]:          http://blog.8thlight.com/billy-whited/2011/08/23/readability.html
 [Better Typography]:    http://www.markboulton.co.uk/journal/five-simple-steps-to-better-typography
 [Meaningful Typography]: http://alistapart.com/article/more-meaningful-typography
 [somewhere]:            http://www.kaikkonendesign.fi/typography/section/11
+
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Color Fundamentals]:   http://tympanus.net/codrops/2012/09/17/build-a-color-scheme-the-fundamentals/
-[Color Meaning]:        http://lmgtfy.com/?q=What+do+colors+mean%3F
-[Color in Motion]:      http://www.mariaclaudiacortes.com/colors/Colors.html
 [Color Theory]:         http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm
 [Color Matters]:        http://colormatters.com/color-and-design/basic-color-theory
-[Choosing Typefaces]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-visual-design-for-the-nondesigner.md#choosing-typefaces
+
 [The Meanings of Colors]: http://colormatters.com/color-symbolism/the-meanings-of-colors
-[Responsive Navigation]: http://bradfrostweb.com/blog/web/responsive-nav-patterns/
+[Choosing Typefaces]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-visual-design-for-the-nondesigner.md#choosing-typefaces
+[Color Meaning]:        http://lmgtfy.com/?q=What+do+colors+mean%3F
+[Color in Motion]:      http://www.mariaclaudiacortes.com/colors/Colors.html
+
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
 [Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/
 [Pipeline]:             http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
 [DIY Icon Fonts]:       http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/
 [Icon Font Support]:    http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
-[Frameworks]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendix-5.md#frameworks
+
 [Premium Pixels]:       http://www.premiumpixels.com/
 [Typographic Style]:    http://webtypography.net/
 
