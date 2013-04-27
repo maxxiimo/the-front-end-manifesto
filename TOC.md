@@ -189,7 +189,7 @@ Table of Contents
   - Appendix 10: A Brief History of Web Font Sizes
   - Appendix 11: Color Palettes, Tools and Collections
 
-[Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/cover.md
+[Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/COVER.md
 [The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 
 [Section I]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-1.md
