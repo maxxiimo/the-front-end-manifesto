@@ -35,7 +35,7 @@ Appendices
     :: A roundup of different color palette creation and sharing services, color tools and collections of colors.
 
 
-
+<br><br><br>
 Appendix 1
 ----------
 
@@ -86,6 +86,7 @@ I also haven't use Skeleton, but soon enough.
 
 
 
+<br><br><br>
 Appendix 2
 ----------
 
@@ -147,6 +148,7 @@ You just can't believe how many grid system there are out there so here is a rou
 
 
 
+<br><br><br>
 Appendix 3
 ----------
 
@@ -184,6 +186,7 @@ To get started, if you're not sure where to begin or as a review, take a look at
 
 
 
+<br><br><br>
 Appendix 4
 ----------
 
@@ -277,6 +280,7 @@ Because responsive will play a big part in your design the following two links m
 
 
 
+<br><br><br>
 Appendix 5
 ----------
 
@@ -306,6 +310,7 @@ Image placeholders in different sizes and styles are also plentiful. The second 
 
 
 
+<br><br><br>
 Appendix 6
 ----------
 
@@ -380,6 +385,7 @@ A roundup of feedback services and device testing articles.
 
 
 
+<br><br><br>
 Appendix 7
 ----------
 
@@ -515,6 +521,7 @@ Appendix 7
 
 
 
+<br><br><br>
 Appendix 8
 ----------
 
@@ -598,6 +605,7 @@ The tools I've listed, if needed, will help you deliver a superior typographic e
 
 
 
+<br><br><br>
 Appendix 9
 ----------
 
@@ -660,6 +668,7 @@ NOTE: This work is [copyrighted][].
 
 
 
+<br><br><br>
 Appendix 10
 -----------
 
@@ -699,6 +708,7 @@ Over the years I've referred to different articles when determining font size fo
 
 
 
+<br><br><br>
 Appendix 11
 -----------
 
