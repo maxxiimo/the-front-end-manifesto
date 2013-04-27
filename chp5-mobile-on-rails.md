@@ -999,7 +999,7 @@ We ended the chapter with a quick overview of JavaScript and mobile: media query
 
 "Mobile on Rails" is the last chapter of "Section I - Setting up a Foundation". The three pillars of this foundation are our [foundation markup][Chapter 1], [foundation styles][Chapter 3], and with this chapter our mobile foundation.
 
-We now have a solid base to build on, and are ready to move onto Section II of this book beginning with Chapter 4, "[Information Architecting][Chapter 6]".
+We now have a solid base to build on, and are ready to move onto Section II of this book beginning with Chapter 6, "[Information Architecting][Chapter 6]".
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
