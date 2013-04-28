@@ -78,38 +78,41 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
 
 ### Compass Set Up
 
-1.  If you have not done so already, per [Chapter 1][], add "compass-rails" to your gemfile. For more explicit directions take a look at the [compass-rails][] gem source.
-
-2.  Run...
+1.  If you have not done so already per [Chapter 1][], add "compass-rails" to your gemfile and run:
 
         $ bundle exec compass init
 
-    Compass will generate a configuration file and stylesheets. Delete the stylesheets. We're going to use our own.
+    Compass will generate a configuration file and stylesheets. Delete the stylesheets *app/assets/stylesheets*:
 
-3.  Delete your *application.css* file and create and replace it with a blank *application.scss*.
+    - ie.css.scss
+    - print.css.scss
+    - screen.css.scss
 
-    IMPORTANT: Use @import to organize styles rather than Sprockets. You can use Sprockets' require syntax, however per the explanation found at of the [compass-rails][] gem source this is not a good idea.
+    We're going to use our own.
 
-4.  Add the following commented out code to your *config/compass.rb* file generated in step 1:
+    NOTE: For more explicit directions take a look at the [compass-rails][] gem source.
 
-        # To allow compass to import partials from subdirectories per:
-        # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+2.  Delete your *application.css* file and replace it with a blank *application.scss*.
+
+    IMPORTANT: When using Compass always use @import to organize styles rather than Sprockets. You can use Sprockets require syntax, however per the explanation found at the [compass-rails][] gem source, this is not a good idea.
+
+3.  Add the following commented out code to your *config/compass.rb* file generated in step 1:
+
+        # To allow compass to import partials from subdirectories per
+        # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/.
         # additional_import_paths = ["app/assets/stylesheets/<name>", "app/assets/stylesheets/<name>"]
 
         # To compile in the necessary debugging information for FireSass.
         # sass_options = {:debug_info => true}
 
-    If you have problems with subfolders within your assets/stylesheets folder, un-comment the first three lines.
+    If you have problems with subfolders within your *assets/stylesheets* folder, un-comment the additional_import_paths line.
 
-    If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming from which is extremely helpful when debugging. Un-comment the last two lines if you plan to use FireSass.
+    If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming; from which is extremely helpful when debugging. Un-comment the sass_options line if you plan to use FireSass.
 
-5.  Edit *config/application.rb*:
+4.  Edit *config/application.rb*:
 
     Un-comment the following:
 
-        if defined?(Bundler)
-          # If you precompile assets before deploying to production, use this line
-          Bundler.require(*Rails.groups(:assets => %w(development test)))
           # If you want your assets lazily compiled in production, use this line
           Bundler.require(:default, :assets, Rails.env)
 
@@ -119,7 +122,7 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
         # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
         config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
-That's it! You now have Compass and all that it brings available to you.
+Commit your changes and that's it! You now have Compass and all that it brings available to you.
 
 Some additional resources for working with Compass include:
 
@@ -131,15 +134,25 @@ Some additional resources for working with Compass include:
 
 Now that Compass is set up, let's set up our stylesheets. Clone this books [starter CSS][]:
 
-        git clone git@github.com:maxxiimo/base-css.git
+    git clone git@github.com:maxxiimo/base-css.git
 
 Setting up our CSS is pretty straightforward. Basically, all you have to do is copy into your project the cloned files and subfolders exactly as they are laid out, in their entirety. You will only need to replace the blank *application.scss* file, otherwise you should have no other files in your stylesheets directory, unless you forgot to delete *application.css* when setting up Compass.
 
 Your stylesheet file structure should now look like this:
 
-![][stylesheets]
-
-<br>
+app<br>
+|-- assets<br>
+|&nbsp;&nbsp;&nbsp;|-- stylesheets<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- boilerplate<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **Test**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- desktop<br
+&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **Test**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **_define.sass**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **_media_queries.sass**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **_media_queries_px.sass**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **_mixins.sass**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **_sprites.sass**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **application.scss**<br>
 
 Simple as that, and here is what your page will now look with the new stylesheets in place:
 
@@ -190,5 +203,4 @@ NOTE: Why the "desktop" subfolder? To better organize desktop/tablet specific fi
 [application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss
 [before]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#end-result
 
-[stylesheets]:          http://chrismaxwell.com/manifesto/chp-2/stylesheets.gif
 [Basic HTML No Styles]: http://chrismaxwell.com/manifesto/chp-2/base-html-files-with-styles.jpg
