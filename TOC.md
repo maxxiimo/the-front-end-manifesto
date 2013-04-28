@@ -55,26 +55,29 @@ Table of Contents
 - [Mobile on Rails][Chapter 5]
     - Mobile First
     - Plan of Attack
-    - I. User Agent Sniffing
-        - Mobylette
-        - Mobvious
-    - II. Responsive Web Design
-        - 1.Flexible Grids
-        - 2. Flexible Media
-        - 3. Media Queries
-    - III. A Hybrid Approach
+
+#### Chapter 6
+- [Responsive Web Design][Chapter 6]
+    - 1.Flexible Grids
+    - 2. Flexible Media
+    - 3. Media Queries
+
+#### Chapter 7
+- [User Agent Sniffing][Chapter 7]
+    - Mobylette
+    - Mobvious
+    - A Hybrid Approach
         - File Structure
         - Susy-based Mobile RWD
     - Using JavaScript
         - Media Query Polyfills
         - Conditional Loading
         - Zepto
-    - What We've Done
 
 ### [Section II - Build Something][Section II]
 
-#### Chapter 6
-- [Information Architecting][Chapter 4]
+#### Chapter 8
+- [Information Architecting][Chapter 8]
     - A Mosaic of Information
     - The Storyline
     - Gathering and Organizing Information
@@ -86,8 +89,8 @@ Table of Contents
     - Feedback and Testing
     - What We've Done
 
-#### Chapter 7
-- [Visual Design for the Nondesigner][Chapter 5]
+#### Chapter 9
+- [Visual Design for the Nondesigner][Chapter 9]
     - Paradigm Shift
     - Typography
         - Font Family
@@ -107,8 +110,8 @@ Table of Contents
     - Other Resources
         - What We've Done
 
-#### Chapter 8
-- [Slicing and Dicing Mockups][Chapter 6]
+#### Chapter 10
+- [Slicing and Dicing Mockups][Chapter 10]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
   - Step 3 - Fonts
@@ -198,11 +201,13 @@ Table of Contents
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-user-agent-sniffing.md
 
 [Section II]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-2.md
-[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-information-architecting.md
-[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-visual-design-for-the-nondesigner.md
-[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-slicing-and-dicing-mockups.md
+[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-information-architecting.md
+[Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-visual-design-for-the-nondesigner.md
+[Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-slicing-and-dicing-mockups.md
 
 [Images]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/images.md
 [Forms]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/forms.md

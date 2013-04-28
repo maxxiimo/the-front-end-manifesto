@@ -10,12 +10,12 @@ Now it's time to build a user experience on this foundation: how your users will
 
 Back in 2008, at "An Event Apart: Boston," I listened to [Jason Santa Maria][] – then the Creative Director of Happy Cog Studios – give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
 
-These talks have stuck with me over the years, and they have become the way I view information architecting and visual design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code, and in the [next chapter][Chapter 7] we will create the sites look and feel (visual design) from the same perspective.
+These talks have stuck with me over the years, and they have become the way I view information architecting and visual design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code, and in the [next chapter][Chapter 9] we will create the sites look and feel (visual design) from the same perspective.
 
 As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about designing a website:
 
 1. Start from scratch and architect and design everything yourself.
-2. Work with a graphic designer from the get-go and implement a design mockup into your foundation work ([Chapter 8 - Slicing and Dicing Mockups][Chapter 8]).
+2. Work with a graphic designer from the get-go and implement a design mockup into your foundation work ([Chapter 10 - Slicing and Dicing Mockups][Chapter 10]).
 3. Start from scratch and architect yourself, then get help from a graphic designer on the look and feel.
 
 In this chapter we're going to mostly focus on option 1. Hiring a graphic designer from the get-go is not a bad idea, but perhaps there isn't money in the budget, or this responsibility falls on your lap, or maybe you just want to do it yourself. To illustrate how simple option 1 can be take a look at this 2007 website concept:
@@ -230,7 +230,7 @@ At the end of our information architecting cycle, with our basic content and lay
 
 ![][Multidevice]
 
-We were able to rapidly create wireframes across multiple devices by using [Susy breakpoints][Susy]. Now all that we need to do is make our wireframes look pretty! We will tackle this head on in Chapter 7, "[Visual Design for the Nondesigner][Chapter 7]".
+We were able to rapidly create wireframes across multiple devices by using [Susy breakpoints][Susy]. Now all that we need to do is make our wireframes look pretty! We will tackle this head on in Chapter 9, "[Visual Design for the Nondesigner][Chapter 9]".
 
 What We've Done
 ---------------
@@ -244,7 +244,7 @@ Understanding our own storyline, we began a process of converting our thoughts i
 
 Together these two exercises, along with the foundation code we already laid out in chapters 1 -  3, made wireframing a cinch. To further ease the creation process I also recommended the use of Susy, and ended with a quick talk on content.
 
-The end result of this chapter's work is a complete wireframe, ready for the next step in storytelling, but before we move onto visual design consider this for a moment: As front end developers we oftentimes think in terms of boxes. Notice our wireframe is essentially a layout of different content boxes. As we move into design mode [in the next chapter][Chapter 7] we need to completely change how we use our brains.
+The end result of this chapter's work is a complete wireframe, ready for the next step in storytelling, but before we move onto visual design consider this for a moment: As front end developers we oftentimes think in terms of boxes. Notice our wireframe is essentially a layout of different content boxes. As we move into design mode [in the next chapter][Chapter 9] we need to completely change how we use our brains.
 
 Just remember, less is more and KISS (Keep It Simple Stupid).
 
@@ -252,8 +252,8 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md
-[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-visual-design-for-the-nondesigner.md
-[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-slicing-and-dicing-mockups.md
+[Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-visual-design-for-the-nondesigner.md
+[Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-slicing-and-dicing-mockups.md
 [Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
 [Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-5
 [Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-6
