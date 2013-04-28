@@ -144,15 +144,26 @@ app<br>
 |-- assets<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|-- stylesheets<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- boilerplate<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- Test<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- desktop<br
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- Test<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- _define.sass<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- _media_queries.sass<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- _media_queries_px.sass<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- _mixins.sass<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- _sprites.sass<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- application.scss<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_h5bp_helpers.scss][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_h5bp_normalize_v102.scss][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_h5bp_normalize_v111.scss][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_h5bp_print.scss][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- desktop<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_forms.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_grids.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_layout.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_misc.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_navigation.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_pages.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_staging.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_typography.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_define.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_media_queries.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_media_queries_px.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_mixins.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_sprites.sass][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [application.scss][]<br>
 
 Simple as that, and here is what your page will now look with the new stylesheets in place:
 
@@ -200,7 +211,25 @@ NOTE: Why the "desktop" subfolder? To better organize desktop/tablet specific fi
 [How I Use Compass]:    http://patrickward.com/code/2011/08/19/how-i-use-compass-with-rails-3-dot-1/
 [Asset Pipeline]:       http://www.engineyard.com/blog/2011/sass-compass-and-the-rails-3-1-asset-pipeline/
 
+[_h5bp_helpers.scss]:   https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_helpers.scss
+[_h5bp_normalize_v102.scss]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v102.scss
+[_h5bp_normalize_v111.scss]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v111.scss
+[_h5bp_print.scss]:     https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_print.scss
+[_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_forms.sass
+[_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_grids.sass
+[_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/desktop/_layout.sass
+[_misc.sass]:           https://github.com/maxxiimo/base-css/blob/master/desktop/_misc.sass
+[_navigation.sass]:     https://github.com/maxxiimo/base-css/blob/master/desktop/_navigation.sass
+[_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_pages.sass
+[_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/desktop/_staging.sass
+[_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/desktop/_typography.sass
+[_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
+[_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
+[_media_queries_px.sass]: https://github.com/maxxiimo/base-css/blob/master/_media_queries_px.sass
+[_mixins.sass]:         https://github.com/maxxiimo/base-css/blob/master/_mixins.sass
+[_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/_sprites.sass
 [application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss
+
 [before]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#end-result
 
 [Basic HTML No Styles]: http://chrismaxwell.com/manifesto/chp-2/base-html-files-with-styles.jpg
