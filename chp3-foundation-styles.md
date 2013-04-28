@@ -164,15 +164,15 @@ app<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_sprites.sass][]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [application.scss][]<br>
 
-Simple as that, and here is what your page will now look with the new stylesheets in place:
+And with everything in place your page should now look something like this:
 
 ![][Basic HTML No Styles]
 
 It's pretty basic, but much better than [before][].
 
-NOTE: You may have noticed that only our base application file uses the .scss syntax, while all other other partials use the .sass syntax. This is perfectly fine and done so because of my own personal preference to use .sass where I can.
+NOTE: You may have noticed that the base application file uses the .scss syntax, and other other partials use the .sass syntax. This is perfectly fine and done so in part because Rails needs this file to end in .scss, and with the boilerplate files to keep abreast of boilerplate changes is easier to use this syntax. Everything else and whenever possible I use the .sass syntax because of my own personal preference for it.
 
-NOTE: Why the "desktop" subfolder? To better organize desktop/tablet specific files. In the [Chapter 5][] we will create another subfolder called "mobile". Files outside of these two folders are common to both device types.
+NOTE: Why the "desktop" subfolder? To better organize desktop specific files. In the [Chapter 5][] we will create another subfolder called "mobile". Files outside of these two folders are common to both desktop and mobile device types. This will become clear to you in Chapter 5.
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
