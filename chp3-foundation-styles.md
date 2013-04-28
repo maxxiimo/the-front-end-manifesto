@@ -172,7 +172,7 @@ And now with everything in place your page should now look something like this:
 
 ![][Basic Styles]
 
-It's pretty basic, but much better than [before][]. More importantly and much like in [Chapter 1][], the greatest benefit of what we have done can be found under the hood. In this chapter it is the organization and structure of our stylesheets imported into our project, a very solid foundation, and the tools were using to help us write styles. In the [next chapter][Chapter 4] we will dissect and explain in detail this structure and organization of our stylesheets.
+It's pretty basic, but much better than [before][]. More importantly and much like in [Chapter 1][], the greatest benefit of what we have done can be found under the hood. In this chapter it is the organization and structure of the stylesheets we imported into our project, a very solid foundation, and the tools we're using to help us write styles. In the [next chapter][Chapter 4] we will dissect and explain in detail our stylesheet structure and organization as well as explore best practices in stylesheet development and maintenance.
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
