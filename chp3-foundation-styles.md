@@ -166,7 +166,7 @@ app<br>
 
 And with everything in place your page should now look something like this:
 
-![][Basic HTML No Styles]
+![][Basic Styles]
 
 It's pretty basic, but much better than [before][].
 
@@ -231,4 +231,4 @@ NOTE: Why the "desktop" subfolder? To better organize desktop specific files. In
 
 [before]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#end-result
 
-[Basic HTML No Styles]: http://chrismaxwell.com/manifesto/chp-2/base-html-files-with-styles.jpg
+[Basic Styles]:         http://chrismaxwell.com/manifesto/chp-3/basic-styles.gif
