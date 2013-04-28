@@ -231,4 +231,4 @@ NOTE: Why the "desktop" subfolder? To better organize desktop specific files. In
 
 [before]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#end-result
 
-[Basic Styles]:         http://chrismaxwell.com/manifesto/chp-3/basic-styles.gif
+[Basic Styles]:         http://chrismaxwell.com/manifesto/chp-3/basic-styles.png
