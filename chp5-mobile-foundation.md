@@ -72,13 +72,7 @@ Tabs or spaces? CamelCase, underscores or hyphens? Vim or Emacs? And the list go
 - [Reasons for Responsive Design][Responsive Reasons] - Some good reasons why you should consider using it.
 - [CSS MediaQuery for Mobile is Fool’s Gold][Fools Gold] - Illustrates why media queries might not be the silver bullet for serving up mobile styles and content.
 
-My personal number one argument against using solely Responsive Web Design:
-
-- Keep them separate and you can serve lighter, device specific stylesheets, JavaScript and images. This translates to less complexity and better performance.
-
-My personal number one reason to conclude Responsive Web Design:
-
-- You may mis-categorize or entirely miss mobile devices using user agent strings and device databases.
+Personally, I like the idea of keeping mobile and desktop development separate. In my opinion doing so will translate into less complexity and better performance by serving lighter, device specific stylesheets, JavaScript and images. On the other hand, by not using responsive web design you may mis-categorize or entirely miss mobile devices when relying solely on user agent strings and device databases.
 
 Jiří Stránský, the author of the Mobvious gem commented to me:
 
