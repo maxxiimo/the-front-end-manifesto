@@ -1,18 +1,20 @@
 Device Detection
 ================
 
-When web-enabled mobile phones first appeared, front end engineers we were faced with many challenges:
+The challenges of mobile development in 2007:
 
-- Mobile browsers were relatively unsophisticated and operating system/device bound, the browser market was highly fragmented, and browsers rendered and/or supported languages inconsistently.
-- Parsing issues due to different protocol (WAP versus HTTP) markup languages: Wireless Markup Language (WML), XHTML Mobile Profile / XHTML Basic, HTML
-- Bandwidth, latency, and CPU issues were significantly worse than what we experience today.
-- Screen sizes were much more varied or unstandardized, and smaller than today.
-- Carrier "walled gardens" oftentimes did not allow CSS, or JavaScript, or HTML tables, or any combination of the three.
-- Proxy servers might strip your site of images, flash (hugely popular back then), multimedia, or enforce throughput limitations.
-- Only a basic set of media types were available and they were implemented inconsistently across browsers.
-- A highly fragmented device market made compatibility testing extremely difficult.
+1.  Bandwidth, latency, and CPU issues were significantly worse than what we experience today.
+2.  Screen sizes were much more varied, and smaller than today.
+3.  Carrier "walled gardens" oftentimes did not allow CSS, or JavaScript, or HTML tables, or any combination of the three.
+4.  Proxy servers might strip your site of images, flash (hugely popular back then), multimedia, or enforce throughput limitations.
+5.  Only a basic set of media types were available and they were implemented inconsistently across browsers.
+6.  Compatibility testing was extremely difficult due to the highly fragmented device market.
+7.  The browser market was also highly fragmented.
+8.  Browsers were relatively unsophisticated and OS or device bound
+9.  Browsers rendered and/or supported languages inconsistently.
+10. There were competing protocols (WAP vs. HTTP) and markup languages (Wireless Markup Language - WML, XHTML Mobile Profile / XHTML Basic, HTML) which meant parsing issues and greater complexity.
 
-At Fidelity, under these challenges, our goal was to cover 99.999% of all web-enabled mobile phones that our customers used. To accomplish this we developed a super dumbed down HTML 1.0 template that would render correctly on 90% of customer devices, and for the remaining edge cases serve an alternative template. We were able to do this by analyzing device HTTP_ACCEPT and HTTP_USER_AGENT headers, i.e. user agent sniffing.
+At Fidelity Investments where I worked in 2007 helping develop their then new mobile offering, under these challenges, our goal was to cover 99.999% of all web-enabled mobile phones that our customers used. To accomplish this we developed a super dumbed down HTML 1.0 template that would render correctly on 90% of customer devices, and for the remaining edge cases serve an alternative template. We were able to do this by analyzing device HTTP_ACCEPT and HTTP_USER_AGENT headers, i.e. user agent sniffing.
 
 > The User-Agent request-header field contains information about the user agent originating the request. This is for statistical purposes, the tracing of protocol violations, and automated recognition of user agents for the sake of tailoring responses to avoid particular user agent limitations.
 
