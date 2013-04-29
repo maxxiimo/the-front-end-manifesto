@@ -375,13 +375,13 @@ To see some great examples checkout:
 [h5bp_helpers.sass]:    https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.scss
 [h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/_h5bp_print.scss
 
-[Media Queries]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md#3-media-queries
+[Media Queries]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#3-media-queries
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
 [reset utilities]:      http://compass-style.org/reference/compass/reset/utilities/
 [Normalize.css]:        https://github.com/necolas/normalize.css/
 [H5BP's normalize]:     https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v101.sass
 [HTML5 Resets]:         http://html5doctor.com/html-5-reset-stylesheet/
-[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md#using-susy
+[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#using-susy
 
 [resets]:               https://github.com/maxxiimo/base-resets
 

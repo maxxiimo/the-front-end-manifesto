@@ -251,7 +251,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
-[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-visual-design-for-the-nondesigner.md
 [Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-slicing-and-dicing-mockups.md
 [Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
@@ -272,7 +272,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
 
-[Chapter 5 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md#using-susy
+[Chapter 5 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#using-susy
 [Compass offers]:       http://compass-style.org/reference/compass/layout/grid_background/
 
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first

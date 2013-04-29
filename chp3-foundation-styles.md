@@ -177,7 +177,7 @@ It's pretty basic, but much better than [before][]. More importantly and much li
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md
-[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
 [starter CSS]:          https://github.com/maxxiimo/base-css
@@ -202,7 +202,7 @@ It's pretty basic, but much better than [before][]. More importantly and much li
 
 [Grids Are Good]:       http://www.subtraction.com/pics/0703/grids_are_good.pdf
 [Fluid Grids]:          http://www.alistapart.com/articles/fluidgrids/
-[Chapter 5 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md#1-flexible-grids
+[Chapter 5 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#1-flexible-grids
 
 [compass-rails]:        https://github.com/Compass/compass-rails
 [FireSass]:             https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/

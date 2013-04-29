@@ -1,5 +1,5 @@
-Mobile on Rails
-===============
+Mobile Foundation
+=================
 
 In Chapter 1 we set up our [foundation markup][Chapter 1], and in Chapter 3 our [foundation styles][Chapter 3], but we never addressed mobile in our foundation code. What about smartphones and tablets? What about mobile browsers!! In the old days mobile was never really a concern for most developers. All you really had to worry about "cross anything" were browser issues. Desktop screen sizes were debated then, but they could be overlooked; the differences were not so great or prevalent, and the "fix" came relatively quickly. The industry settled on standard design widths and/or employed liquid layouts.
 
@@ -9,7 +9,10 @@ Fast-forward to today and as a Front End Engineer you cannot help but think abou
 
 \- [Mobile Browsing: It Will Get Better and Worse][Better and Worse] by Chris Kelly of New Relic
 
-The fact of the matter is, your end-users are going to consume your work on smartphones or some kind of tablet. I think this is pretty much [common knowledge][] now, so let's deal with it proactively by laying down a mobile foundation. In this chapter we are going to explore the different ways in which we can serve content tailored to the different devices our users are using, and in this process develop our own mobile foundation's best practices.
+The fact of the matter is, your end-users are going to consume your work on smartphones or some kind of tablet. I think this is pretty much [common knowledge][] now, so let's deal with it proactively by laying down a mobile foundation. In this chapter we are going to explore the different ways in which we can serve content tailored to the different devices our users are using, and in this process develop our own mobile foundation's best practices. Practices that we will explore in:
+
+- [Chapter 6 - Responsive Web Design][Chapter 6]
+- [Chapter 7 - Device Detection][Chapter 7]
 
 Mobile First
 ------------
@@ -91,6 +94,8 @@ Between [Chapter 6][] and [Chapter 7][] we will explore all three plans of attac
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-device-detection.md
 
 [Better and Worse]:     http://insights.wired.com/profiles/blogs/mobile-browsing-will-get-both-better-and-worse#axzz2IFWc81o0
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/introduction
