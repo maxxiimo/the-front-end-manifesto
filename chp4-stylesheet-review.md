@@ -478,6 +478,10 @@ image-name.gif
 
 ... so when adding images to the assets directory try to use that convention since the vast majority of images will probably be produced by Photoshop and will use this convention, plus IMHO it looks better.
 
+The following reference would give you some more ideas:
+
+[Front-end Style Guides][Style Guides]
+
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
 
@@ -523,3 +527,5 @@ image-name.gif
 [Sass documentation]:   http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 [Useful SASS Mixins]:   http://sachagreif.com/useful-sass-mixins/
 [Custom User @mixins]:  http://css-tricks.com/custom-user-mixins/
+
+[Style Guides]:         http://24ways.org/2011/front-end-style-guides
