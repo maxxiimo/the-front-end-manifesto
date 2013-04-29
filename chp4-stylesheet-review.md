@@ -358,38 +358,38 @@ Stylesheet Tips
 
 Over the years I reviewed or worked on a lot of other front end developers work, and have found a lot of recurring issues that I would like to address here as stylesheet tips:
 
-### Consistent Use of Preprocessors
+#### Consistent Use of Preprocessors
 
 It would be better to pick a format such as .sass and .scss, and stick with it sitewide. Syntax varies slightly between the two, which could be an issue for some developers new to preprocessors, and is prone to errors.
 
-### Consistent Use of Indentation
+#### Consistent Use of Indentation
 
 Do not use both spaces and tabs for indentation. Pick one, preferably 2 spaces - the Rails default, and stick to it.
 
-### Hierarchical Style Formatting
+#### Hierarchical Style Formatting
 
 There is no set standard to the order/listing of styles, but adopting something makes it easier to understand and find things.
 
 For example:
 
-display: block
-position: absolute
-top: 10px
-\-------------
-width: 100px
-height: 100px
-margin: 10px
-padding: 10px
-\-------------
-font-family: Ariel
-font-size: 90%
-color: #fff
-\-------------
-border: 1px solid #000
-background: url(/images/.png) 0 0 no-repeat
-\-------------
+    display: block
+    position: absolute
+    top: 10px
+    -------------
+    width: 100px
+    height: 100px
+    margin: 10px
+    padding: 10px
+    -------------
+    font-family: Ariel
+    font-size: 90%
+    color: #fff
+    -------------
+    border: 1px solid #000
+    background: url(/images/.png) 0 0 no-repeat
+    -------------
 
-vendor prefixes
+    vendor prefixes
 
 Hierarchy Explanation:
 
@@ -402,15 +402,15 @@ The 3rd and 4th group deal more with look and feel.
 The last group deals with vendor prefixes and is preceded with a line space.
 
 
-### Use of Labeling
+#### Use of Labeling
 
 Within individual stylesheets, as described in the "Use a Labeling System" section, it would be helpful to use a labeling system in order to modularize and better organize/manage related styles.
 
-### Removal of Legacy Code
+#### Removal of Legacy Code
 
 Old code tends to clutter stylesheets. Rather than delete obsolete/legacy styles, or leave them within working stylesheets, it might be useful to create a graveyard stylesheet; graveyard.sass, where such styles are accessible (just in case) until ultimately disposed of.
 
-### Group Styles
+#### Group Styles
 
 Identical styles should be grouped in one stylesheet rather than multiple stylesheets.
 
@@ -444,7 +444,7 @@ advisor/something.sass
 
 Since these thousand are identical it would make sense to add them into a mixin as well, but the point is why separate them out into different stylesheets?
 
-### Optimize Specificity
+#### Optimize Specificity
 
 This might be considered too much:
 
@@ -452,21 +452,21 @@ stylesheets/advisor/client/invitations.sass
 
     #advisor_clients_invitations section#invite_clients form li#invitation_email_input input[type="text"], #advisor_clients_invitations section#invite_clients form li#invitation_first_name_input input[type="text"], #advisor_clients_invitations section#invite_clients form li#invitation_last_name_input input[type="text"]
 
-### Define In-House Styles over Third-Party Styles
+#### Define In-House Styles over Third-Party Styles
 
 Do not use third-party plug-ins that do not allow easy customization and/or change in the underlying HTML or CSS. (Like Formtastic or jQuery UI. I'm just sayin')
 
 Personally I would never use Formtastic, too rigid, but since it is popular I recommend not using its styles. You end up having to override quite a bit.
 
-### Standardize Styles
+#### Standardize Styles
 
 For example, all forms should use the same label color, size, and placement.
 
-### Use Variables
+#### Use Variables
 
 For example, an elements colors could be specified in a variable called "$element-color". Changes then become global, and label colors become consistent, rather than isolated, difficult to find, and inconsistent (see the Variables section above).
 
-### Consistency Pet Peeve
+#### Consistency Pet Peeve
 
 This is more of a pet peeve than anything, but when using Photoshop's color palette to discern or copy colors specified in a Photoshop mockup, the hex values are always lowercase, so as a standard, and to be consistent, when defining colors in a application use lowercase:
 
@@ -478,9 +478,11 @@ image-name.gif
 
 ... so when adding images to the assets directory try to use that convention since the vast majority of images will probably be produced by Photoshop and will use this convention, plus IMHO it looks better.
 
-The following reference would give you some more ideas:
+#### Create a Style Guide
 
-[Front-end Style Guides][Style Guides]
+The following reference will give you some great ideas:
+
+- [Front-end Style Guides][Style Guides]
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
