@@ -1,7 +1,7 @@
 Mobile Foundation
 =================
 
-In Chapter 1 we set up our [foundation markup][Chapter 1], and in Chapter 3 our [foundation styles][Chapter 3], but we never addressed mobile in our foundation code. What about smartphones and tablets? What about mobile browsers!! In the old days mobile was never really a concern for most developers. All you really had to worry about "cross anything" were browser issues. Desktop screen sizes were debated then, but they could be overlooked; the differences were not so great or prevalent, and the "fix" came relatively quickly. The industry settled on standard design widths and/or employed liquid layouts.
+In Chapter 1 we set up our [foundation markup][Chapter 1], and in Chapter 3 our [foundation styles][Chapter 3], but we never addressed mobile in our foundation code. What about smartphones and tablets? What about mobile browsers!! In the old days mobile was never really a concern for most developers. All you really had to worry about "cross anything" were browser issues. Desktop screen sizes were debated then, but they could be overlooked; the differences were not so great or prevalent, and the "fix" came relatively quickly as the industry settled on standard design widths and/or employed liquid layouts.
 
 Fast-forward to today and as a Front End Engineer you cannot help but think about screen size, and the fix is a bit more difficult than it was back then to say the least!
 
@@ -9,7 +9,7 @@ Fast-forward to today and as a Front End Engineer you cannot help but think abou
 
 \- [Mobile Browsing: It Will Get Better and Worse][Better and Worse] by Chris Kelly of New Relic
 
-The fact of the matter is, your end-users are going to consume your work on smartphones or some kind of tablet. I think this is pretty much [common knowledge][] now, so let's deal with it proactively by laying down a mobile foundation. In this chapter we are going to explore the different ways in which we can serve content tailored to the different devices our users are using, and in this process develop our own mobile foundation's best practices. Practices that we will explore in:
+The fact of the matter is end-users are going to consume your work on smartphones or some kind of tablet. I think this is pretty much [common knowledge][] now, so let's deal with it proactively by laying down a mobile foundation. In this chapter we are going to explore the different ways in which we can serve content tailored to the different devices our users are using, and in this process develop our own mobile foundation's best practices. Practices that we will explore in:
 
 - [Chapter 6 - Responsive Web Design][Chapter 6]
 - [Chapter 7 - Device Detection][Chapter 7]
@@ -47,11 +47,11 @@ When I asked [LaunchWare][] founder Dan Pickett what he thought was the best app
 >
 > The later three allow for a phonegap or a similar solution so that the app can be listed in the app stores and can take advantage of some of the native functions of the device.
 
-I think I would enjoy writing a book called "Mobile on Rails" after exploring the avenues he presents, but for this chapter (of this book) let's narrow down our plan of attack to the following:
+I think I would enjoy writing a book called "Mobile on Rails" after exploring the avenues he presents, but for this section (of this book) let's narrow down our plan of attack to the following:
 
-1.  Detect user agents to serve mobile versions of our website.
+1  Detect screen size via media queries to serve up responsive web design.
 
-2.  Detect screen size via media queries to serve up responsive web design.
+2.  Detect user agents to serve mobile versions of our website.
 
 3.  A hybrid of 1 and 2.
 
