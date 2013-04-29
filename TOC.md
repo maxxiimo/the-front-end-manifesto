@@ -39,8 +39,8 @@ Table of Contents
 #### Chapter 4
 - [Stylesheet Review][Chapter 4]
     - Organization
-        - application.scss
-        - Detailed Explanation
+        - Heart and Soul
+    - Detailed Explanation
     - Moving Forward
         - Modularize Styles
         - Use a Labeling System

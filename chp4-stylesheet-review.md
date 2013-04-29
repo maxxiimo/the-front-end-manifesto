@@ -14,7 +14,7 @@ I can't stress enough how important it is to start a project with some kind of o
 
 \- [Manifesto][]
 
-### application.scss
+### Heart and Soul
 
 The heart of our organizational structure is [application.scss][]. This file reminds me of a table of contents for partials. In addition to indexing your partials, it layers in styles based on precedents. Styles in the last partial listed override styles in partials listed above it – so long as the styles preceding it have the same class or ID and specificity (and/or tag).
 
@@ -48,7 +48,8 @@ Our hierarchy looks like this:
   - [h5bp_helpers.scss][]
   - [h5bp_print.scss][]
 
-### Detailed Explanation
+Detailed Explanation
+--------------------
 
 What follows is a snippet of each section of *application.scss* followed by a description of what the section should be used for:
 
