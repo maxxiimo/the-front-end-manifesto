@@ -82,18 +82,17 @@ Jiří Stránský, the author of the Mobvious gem commented to me:
 >
 > 2. Bandwidth is less of an issue, year by year. It will be best to send the whole thing to the client, then detect client's precise capabilities and render what you want, how you want.
 
-Whatever approach you decide, keep in mind that there are a spectrum of user and business needs. Responsive may in fact be the silver bullet for some sites on that spectrum, and for others not. For example my personal website is pretty simple so maybe detecting user agents to serve a mobile version of the site is not the best use of my time. In this case why not use Responsive Web Design and keep things together? But more complex applications may need to serve up specific markup and styles, take for example Basecamp mobile:
+Whatever approach you decide to take, keep in mind that there are a spectrum of user and business needs. Responsive may in fact be the silver bullet for some sites on that spectrum, and for others not. For example my personal website is pretty simple so maybe detecting user agents to serve a mobile version of the site is not the best use of my time. In this case why not use Responsive Web Design and keep things together? But more complex applications may need to serve up specific markup and styles, take for example Basecamp mobile:
 
 > Only using responsive design for Basecamp mobile would have been like fitting a Prius body to a Hummer... under-the-hood it would have been all wrong.
 
 \- [Behind the speed: Basecamp mobile][Basecamp Mobile]
 
-Between [Chapter 6][] and [Chapter 7][] we will explore all three plans of attack. Before we move on, I will leave you with one quote that resonates with me:
+Between [Chapter 6][] and [Chapter 7][] we will explore all three plans of attack, and depending on the situation after finishing this section you will have a solution for each.
 
 > Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
 
 \- [Mobile Design and Development ][Brian Fling] by Brian Fling
-
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
