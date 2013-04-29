@@ -49,7 +49,7 @@ When I asked [LaunchWare][] founder Dan Pickett what he thought was the best app
 
 I think I would enjoy writing a book called "Mobile on Rails" after exploring the avenues he presents, but for this section (of this book) let's narrow down our plan of attack to the following:
 
-1  Detect screen size via media queries to serve up responsive web design.
+1. Detect screen size via media queries to serve up responsive web design.
 
 2. Detect user agents to serve mobile versions of our website.
 
@@ -57,27 +57,30 @@ I think I would enjoy writing a book called "Mobile on Rails" after exploring th
 
 ### Best Choice
 
-Personally I like to separate concerns and tend to use option three, but include responsive design within this separation since there is no one size fits all in mobile. I'm not alone in this thinking:
+Personally I tend to use option three. I like to separate concerns, but include responsive design within this separation since there is no one size fits all in mobile. I'm not alone in this thinking:
 
 > Now, oftentimes, people think about device detection as a "one or the other" sort of thing. Either you’re doing responsive design or you’re using device detection to route people to separate templates, and that you would choose one of those two options; you wouldn’t build something that uses both. But we’ve actually combined responsive design with server-side detection quite a bit.
 
 \- [Jason Grigsby – Mobile-First Responsive Design][Jason Grigsby] Podcast by Sean Carmichael
 
-Like Jason Grigsby, I don't think an all or nothing approach really makes sense as a rule of thumb. Let the situation dictate the solution. Here are some thoughts on option 1 versus option 2:
+Like Jason Grigsby, I don't think an all or nothing approach really makes sense as a rule of thumb. Let the situation dictate the solution.
+
+### Holy Wars
+
+Tabs or spaces? CamelCase, underscores or hyphens? Vim or Emacs? And the list goes on in programming. In my mobile research it seems a new holy war is brewing around responsive web design and here are the two camps:
+
+- [Reasons for Responsive Design][Responsive Reasons] - Some good reasons why you should consider using it.
+- [CSS MediaQuery for Mobile is Fool’s Gold][Fools Gold] - Illustrates why media queries might not be the silver bullet for serving up mobile styles and content.
+
+My personal number one argument against using solely Responsive Web Design:
 
 - Keep them separate and you can serve lighter, device specific stylesheets, JavaScript and images. This translates to less complexity and better performance.
-- As applications grow and user needs change, it might become necessary to separate mobile out completely. If you start out separate this transition might be easier.
-- Many argue that if you keep styles together, you won't forget to work on one while working on the other.
-- Designing for a mobile, tablet and desktop versionProcess of your website can be time-consuming, responsive design can accommodate all three.
+
+My personal number one reason to conclude Responsive Web Design:
+
 - You may mis-categorize or entirely miss mobile devices using user agent strings and device databases.
 
-The article [Reasons for Responsive Design][Responsive Reasons] give you some good reasons why you should consider using it. The article "[CSS MediaQuery for Mobile is Fool’s Gold][Fools Gold]" gives an opposite perspective and does a good job of illustrating why media queries might not be the silver bullet for serving up mobile styles and content. There is one quote in particular that the author uses that resonates with me:
-
-> Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
-
-\- [Mobile Design and Development ][Brian Fling] by Brian Fling
-
-On the other hand, Jiří Stránský -- the author of the Mobvious gem we implement later in this chapter -- commented to me:
+Jiří Stránský, the author of the Mobvious gem commented to me:
 
 > I think responsive web design is going to be preferred over server-based solutions for the vast majority of use cases in the future, for two main reasons:
 >
@@ -91,7 +94,12 @@ Whatever approach you decide, keep in mind that there are a spectrum of user and
 
 \- [Behind the speed: Basecamp mobile][Basecamp Mobile]
 
-Between [Chapter 6][] and [Chapter 7][] we will explore all three plans of attack.
+Between [Chapter 6][] and [Chapter 7][] we will explore all three plans of attack. Before we move on, I will leave you with one quote that resonates with me:
+
+> Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
+
+\- [Mobile Design and Development ][Brian Fling] by Brian Fling
+
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
@@ -109,5 +117,5 @@ Between [Chapter 6][] and [Chapter 7][] we will explore all three plans of attac
 [Jason Grigsby]:        http://www.uie.com/brainsparks/2012/10/12/jason-grigsby-mobile-first-responsive-design/
 [Responsive Reasons]:   http://www.mixd.co.uk/blog/technical/reasons-for-responsive-design/
 [Fools Gold]:           http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
-[Brian Fling]:          http://shop.oreilly.com/product/9780596155452.do
 [Basecamp Mobile]:      http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile
+[Brian Fling]:          http://shop.oreilly.com/product/9780596155452.do
