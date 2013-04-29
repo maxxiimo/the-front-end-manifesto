@@ -88,7 +88,7 @@ Whatever approach you decide to take, keep in mind that there are a spectrum of 
 
 \- [Behind the speed: Basecamp mobile][Basecamp Mobile]
 
-Between [Chapter 6][] and [Chapter 7][] we will explore all three plans of attack, and depending on the situation after finishing this section you will have a solution for each.
+Between [Chapter 6][] and [Chapter 7][] we will explore all three plans of attack, and depending on the situation, after finishing these chapters you will have a solution for whatever your projects needs are.
 
 > Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
 
