@@ -134,7 +134,7 @@ Table of Contents
   - Step 9 - HTML for the Main Content
   - Step 10 - Sprites and CSS3 for Images
 
-### Section III
+### Section IV
 
 #### Chapter
 - [Images][]
@@ -182,12 +182,6 @@ Table of Contents
 - [Accessibility][]
     - Standardize Your Links
     - Use ARIA Roles
-
-#### Chapter
-- [Search Engine Optimization][]
-
-#### Chapter
-- [Style Guides][]
 
 ### APPENDICES
 
