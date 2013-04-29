@@ -280,9 +280,9 @@ Whatever your style is I don't think it's worth a holy war with other developers
 
 Here's some more opinions on the matter:
 
-[CSS: camelCase vs under_score][aB vs. a_b]
-[Hyphens or underscores in CSS and HTML identifiers?][Identifiers]
-[CSS: CamelCase Seriously Sucks!][Sucks]
+- [CSS: camelCase vs under_score][aB vs. a_b]
+- [Hyphens or underscores in CSS and HTML identifiers?][Identifiers]
+- [CSS: CamelCase Seriously Sucks!][Sucks]
 
 Keep it DRY!
 ------------
