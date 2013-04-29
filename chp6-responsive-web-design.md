@@ -19,15 +19,15 @@ Let's take a look at these three components one by one starting with flexible gr
 1. Flexible Grids
 -----------------
 
-The first component of Responsive Web Design is the "flexible, grid-based layout." In layman's terms this means a webpage that proportionally responds in size to the context in which it is drawn; the context being the screen size or viewport.
+The first component of Responsive Web Design is the "flexible, grid-based layout." In layman's terms this means a webpage that proportionally redraws itself to fit inside whatever device it is drawn in.
 
-Code wise this translates into a [grid system][grid] whose dimensions resize proportionately to changes in its containing element. For example, if a pages major containing element -- the \<body> tag or containing \<div> -- were defined with a width of 960 pixels, as the screen real estate decreased, let's say when viewed on a tablet, it wouldn't make sense to continue to draw that element at a size greater than the screen real estate available. If you did, content like its textmight get cut off in unpredictable places by the tablets screen. It would make better sense to decrease the width of the element to 768 pixels when viewed through a tablet so that none of its content will be cut off by the screen.
+Code wise this translates into a layout [grid][] whose dimensions resize proportionately to the screen size or viewport it renders within. For example, if a pages major containing element -- the \<body> tag or containing \<div> -- were defined with a width of 960 pixels, as the screen real estate decreased, let's say when viewed on a tablet, it wouldn't make sense to continue to draw the element at a size greater than the screen real estate available. If you did, content like text might get cut off in unpredictable places by the tablets smaller screen. Users would have to scroll left and right, line after line, to read it. What a pain that would be. It would make better sense to decrease the width of the element to 768 pixels when viewed through a tablet, and by less when viewed on smartphones.
 
-It's a good idea and can be accomplished through the use of relative measurements in declaring grid element dimensions, margins, and/or padding. The relative measurement Ethan Marcotte recommends using are percentages. In his book to determine these percentages he gives the following formula:
+It's a great idea and can be accomplished through the use of relative measurements in declaring grid element dimensions, margins, and/or padding. The relative measurement Ethan Marcotte recommends using are percentages. In his book, to determine these percentages he provides the following formula:
 
 Target ÷ Context = Result
 
-...where target is the element in a layout you wish to apply the relevant measurement to, and context is the containing element the target responds to. For example, if the main container in your webpage, call it .container, has a width of 960 pixels, and within .container there are two equally sized containers called .left-side and .right-side:
+...where target is the element in a layout you wish to apply the relevant measurement to, and context is the containing element the target responds to. For example, if the main container in your webpage, call it *.container*, has a width of 960 pixels, and within *.container* there are two equally sized containers called *.left-side* and *.right-side*:
 
     %body
       .container
@@ -36,7 +36,7 @@ Target ÷ Context = Result
 
 ...what would there relative measurement widths be?
 
-The context is .container and since it contains two equally sized grid elements we can easily surmise that since they must be equal, each will have a width of 480 pixels (half of 960 pixels), but rather than use "width: 480px" in our CSS for both elements, we use "width: 50%". Mathematically, using the formula, this is calculated as follows: 480 ÷ 960 = .5 or 50%.
+The context is *.container* and since it contains two equally sized grid elements we can easily surmise that since they must be equal, each will have a width of 480 pixels (half of 960 pixels), but rather than use *width: 480px* in our CSS for both elements, we use *width: 50%*. Mathematically, using the formula, this is calculated as follows: 480 ÷ 960 = .5 or 50%.
 
 In our CSS we then write:
 
@@ -46,7 +46,7 @@ In our CSS we then write:
     .left-side, .right-side
       width: 50%
 
-Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all grid elements including converting the 960 pixels in .container to a percentage, and you have a responsive grid that will resize itself depending upon the context it renders on.
+Now if you were to change the size of *.container*, *.left-side* and *.right-side* would proportionally resize themselves to the new container size. Expand this example out to all grid elements including converting the 960 pixels in *.container* to a percentage, and you have a responsive grid that will resize itself depending upon the context it renders on.
 
 ### Using Susy
 
