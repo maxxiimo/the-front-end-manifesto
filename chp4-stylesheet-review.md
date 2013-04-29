@@ -471,11 +471,11 @@ For example, an elements colors could be specified in a variable called "$elemen
 
 This is more of a pet peeve than anything, but when using Photoshop's color palette to discern or copy colors specified in a Photoshop mockup, the hex values are always lowercase, so as a standard, and to be consistent, when defining colors in a application use lowercase:
 
-color: #bbb and not color: #BBB
+    color: #bbb and not color: #BBB
 
 While on the subject, Photoshop also uses hyphens when saving images for the Web:
 
-image-name.gif
+    image-name.gif
 
 ... so when adding images to the assets directory try to use that convention since the vast majority of images will probably be produced by Photoshop and will use this convention, plus IMHO it looks better.
 
