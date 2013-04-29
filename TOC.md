@@ -51,6 +51,8 @@ Table of Contents
         - Mixins
     - What We've Done
 
+### [Section II - Mobile on Rails][Section II]
+
 #### Chapter 5
 - [Mobile on Rails][Chapter 5]
     - Mobile First
@@ -58,14 +60,22 @@ Table of Contents
 
 #### Chapter 6
 - [Responsive Web Design][Chapter 6]
-    - 1.Flexible Grids
+    - 1. Flexible Grids
+        - Using Susy
     - 2. Flexible Media
     - 3. Media Queries
+        - Media Types
+        - Target Devices
+        - Breakpoints
+        - Em's and Media Queries
+        - Susy Breakpoints
 
 #### Chapter 7
-- [User Agent Sniffing][Chapter 7]
+- [Device Detection][Chapter 7]
     - Mobylette
     - Mobvious
+        - Usage
+        - Mobile Views
     - A Hybrid Approach
         - File Structure
         - Susy-based Mobile RWD
@@ -74,7 +84,7 @@ Table of Contents
         - Conditional Loading
         - Zepto
 
-### [Section II - Build Something][Section II]
+### [Section III - Look and Feel][Section III]
 
 #### Chapter 8
 - [Information Architecting][Chapter 8]
@@ -200,11 +210,13 @@ Table of Contents
 [Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
 [Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md
-[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md
-[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md
-[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-user-agent-sniffing.md
 
 [Section II]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-2.md
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-on-rails.md
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-device-detection.md
+
+[Section III]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-3.md
 [Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-information-architecting.md
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-visual-design-for-the-nondesigner.md
 [Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-slicing-and-dicing-mockups.md

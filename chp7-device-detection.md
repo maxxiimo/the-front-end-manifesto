@@ -1,5 +1,5 @@
-I. User Agent Sniffing
-----------------------
+Device Detection
+================
 
 When web-enabled mobile phones first appeared, front end engineers we were faced with many challenges:
 
@@ -22,7 +22,8 @@ Over time Fidelity developed an extensive database of devices their global custo
 
 Fast-forward to today, and you can still effectively use device user agents and third-party databases to identify device characteristics and based on this information serve appropriate markup and styles. Doing this in Rails is not too difficult. Take a look at the [Mobile Solutions Roundup][Appendix 3] in the Appendices to get an idea of what's available.
 
-### Mobylette
+Mobylette
+---------
 
 To deliver our mobile views lets experiment with one of the quickest and simplest solutions: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
 
@@ -58,7 +59,8 @@ One thing that you may have noticed is that there certainly does seem to be a lo
 
 NOTE: I like to use [User Agent Switcher][] to test on my desktop. Give it a try.
 
-### Mobvious
+Mobvious
+--------
 
 For an alternative to Mobylette we will try a gem called [Mobvious][]. It is a rack-based solution, easy to set up, and highly configurable. It is also versatile in on how you detect mobile requests:
 
@@ -66,11 +68,7 @@ For an alternative to Mobylette we will try a gem called [Mobvious][]. It is a r
 2.  URL pattern matching
 3.  Remembering a user's manual choice
 
-In other words it gives us more options, although we will only be experimenting with the first.
-
-#### Set Up
-
-Here are the steps we will follow to configure Mobvious for our needs:
+In other words it gives us more options, although we will only be experimenting with the first. Here are the steps we will follow to configure Mobvious for our needs:
 
 *Step 1:* Copy all the [base-mobile][] files from the mobvious folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
@@ -118,7 +116,7 @@ To test that Mobvious is working you can add the following helper method in appl
         end
     end
 
-#### Usage
+### Usage
 
 Now that we have Mobvious set up, here is how we will use it.
 
@@ -147,7 +145,7 @@ To do this in our application in conjunction with Mobvious we add the following 
 
 Just like in the Mobylette solution, requests from mobile devices are detected by Mobvious and served the correct markup and styles. Of course we will need to create all the new .html.mobile views, and again like in the Mobylette solution, I'm feeling like there are way too many files in our app/views folder – some ending with ".html.haml" others with ".mobile.haml".
 
-#### Reorganize
+### Mobile Views
 
 To better organize, and reduce clutter and even repetition, let's keep our mobile views separate from our regular views.
 
@@ -173,8 +171,8 @@ If you prefer to organize your mobile views outside of the regular app/views pat
 
          prepend_view_path Rails.root + 'app' + 'views_mobile'
 
-III. A Hybrid Approach
-----------------------
+A Hybrid Approach
+-----------------
 
 > That’s not to say that mobile websites are inherently flawed, or that there aren’t valid business cases for creating them. But I do think fragmenting our content across different "device-optimized" experiences is a losing proposition, or at least an unsustainable one. As the past few years have shown us, we simply can’t compete with the pace of technology.
 
@@ -351,3 +349,42 @@ To learn more visit:
 
 - [Zepto.js][]
 - [The Essentials of Zepto.js][Zepto]
+
+[Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-3
+
+[User-Agent]:           http://tools.ietf.org/html/rfc2616#section-14.43
+
+[mobylette]:            https://github.com/tscolari/mobylette
+[jQuery Mobile]:        http://jquerymobile.com/
+[base-mobile]:          https://github.com/maxxiimo/base-mobile
+[Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+[User Agent Switcher]:  http://chrispederick.com/work/user-agent-switcher/
+
+[Mobvious]:             https://github.com/jistr/mobvious
+[Ryan Bates]:           http://railscasts.com/episodes/199-mobile-devices
+[template inheritance]: http://railscasts.com/episodes/269-template-inheritance
+
+[RWD Book]:             http://www.abookapart.com/products/responsive-web-design
+[HTML5 Boilerplate]:    http://html5boilerplate.com/
+[Mobile Boilerplate]:   http://html5boilerplate.com/html5boilerplate.com/dist/mobile/
+
+[css3-mediaqueries-js]: http://code.google.com/p/css3-mediaqueries-js/
+[Respond.js]:           https://github.com/scottjehl/Respond
+[Mediatizr]:            https://github.com/pyrsmk/mediatizr
+
+[24 Ways Speed]:        http://24ways.org/2010/speed-up-your-site-with-delayed-content/
+[24 Ways Loading]:      http://24ways.org/2011/conditional-loading-for-responsive-designs/
+[Clean Loading]:        http://adactio.com/journal/5042/
+[Conditional Loading]:  http://adactio.com/articles/5043/
+[Ajax-Include Pattern]: http://filamentgroup.com/lab/ajax_includes_modular_content/
+[Conditional Content]:  http://adactio.com/journal/5414/
+[Callbacks]:            http://css-tricks.com/enquire-js-media-query-callbacks-in-javascript/
+[enquire.js]:           http://wicky.nillia.ms/enquire.js/
+[Adapt.js]:             http://adapt.960.gs/
+
+[Github Zepto]:         https://github.com/madrobby/zepto
+[Zepto.js]:             http://zeptojs.com/
+[Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
+
+[file-structure]:       http://chrismaxwell.com/manifesto/file-structure.gif
+[file-structure-w-lines]: http://chrismaxwell.com/manifesto/file-structure-w-lines.gif

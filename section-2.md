@@ -1,3 +1,3 @@
-Section II - Build Something
+Section II - Mobile on Rails
 ----------------------------
 

@@ -1,7 +1,5 @@
-II. Responsive Web Design
--------------------------
-
-User agent sniffing is awesome, but what about in projects where it's just not the right approach? Is there something else we can do? The answer is yes, and it's called Responsive Web Design (RWD). Responsive Web Design allows for pages to adapt to different screen sizes in a manner that makes sense for the device the page renders on, whether that is on a mobile device, the desktop, or devices yet to be introduced to the market.
+Responsive Web Design
+=====================
 
 Ethan Marcotte is widely credited for coining the term "Responsive Web Design" in his 2010 A List Apart article, "[Responsive Web Design][RWD]", and in his [book][RWD Book] he goes on to explain:
 
@@ -18,7 +16,8 @@ Let's take a look at these three components one by one starting with flexible gr
 - [This Is Responsive][]
 - [Responsive Design][]
 
-### 1. Flexible Grids
+1. Flexible Grids
+-----------------
 
 So the first component of Responsive Web Design is the "flexible, grid-based layout." What this means is a layout whose [grid][] dimensions change proportionately as a containing element, such as the screen size or viewport, changes. For example, if a pages major containing element width were 960 pixels relative to a typical desktop screen, maybe as the screen real estate decreased on a tablet it would make sense to decrease the width to 768 pixels. In other words, proportionally respond to the context in which the page is drawn.
 
@@ -47,11 +46,11 @@ In our CSS we then write:
 
 Now if you were to change the size of .container, .left-side and .right-side would proportionally resize themselves to the new container size. Expand this example out to all grid elements including converting the 960px in .container to a percentage, and you have a responsive grid that will resize itself depending upon the context it renders on.
 
-#### Using Susy
+### Using Susy
 
 As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you and save time. There is a pretty comprehensive list of [grid systems][Appendix 2] in the Appendices, but my preference is to use [Susy][] since it is a plug-in of Compass, which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in.
 
-##### Installation
+#### Installation
 
 Before we begin I'm going to assume that you have removed or disabled our previous work with user agent sniffing. If so proceed. Installation is pretty straightforward:
 
@@ -77,7 +76,7 @@ app/assets/stylesheets/application.scss
 
 Don't forget to restart your server, and wallah! You have a powerful responsive grid system ready for implementation in your project.
 
-##### Implementation
+#### Implementation
 
 Within our application layout we will implement our Susy responsive grid as follows:
 
@@ -128,7 +127,7 @@ NOTE: We remove the following styles from the body tag since we are now replacin
       margin: 0 auto
       width: 960px
 
-##### Using Susy
+#### Susy in Action
 
 Using Susy is also pretty straightforward. Essentially it is a mixin scheme that applies a specified amount of columns to an element, based on the total columns available. If you recall in the previous Flexible Grids section, in our example we used percentages to define our widths:
 
@@ -184,7 +183,8 @@ And there it is in a nutshell! To really learn how to use Susy – it really pac
 
 NOTE: You may have noticed the "max-with: 59em" property in .container. The reason this is here is to constrain the maximum width in the largest of screens, while maintaining flexibility within this limit. Doing so ensures that pages do not completely span the widths of very large screens and thereby reduce readability. This setting can be overridden in Susy.
 
-### 2. Flexible Media
+2. Flexible Media
+-----------------
 
 Now that we have a flexible grid, it's time to look at Ethan's second ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a 320px wide screen. It just doesn't make any sense.
 
@@ -196,11 +196,12 @@ Now that we have a flexible grid, it's time to look at Ethan's second ingredient
 
 
 
-### 3. Media Queries
+3. Media Queries
+----------------
 
 Now that we have a Susy flexible grid, it's time to look at Ethan's second ingredient in RWD; media queries. Our goal is to respond to different screen sizes with content that makes sense for the device being used by our users. For example, maybe in smaller devices it makes sense to use a smaller font size, or a single column layout rather than a three column layout. Media queries will allow us to do this. To understand them and how they will help us, let's take a quick look at their history.
 
-##### Media Types
+### Media Types
 
 Media dependent stylesheets were first specified in the HTML4 and CSS2 W3C recommendations, and were designed to allow developers to target different devices through [media types][]: all, braille, embossed, handheld, print, projection, screen, speech, tty, tv. The idea was that through these media types, devices the belonged to a specific type could be targeted using @media or @import rules, or the HTML \<link> element, and served styles that applied to them and not other types. For example:
 
@@ -211,7 +212,7 @@ In this example screen.css would be served only to devices that were of the "scr
 
 The problem with this specification in practice for mobile was inconsistent implementation across mobile browsers, plus the list of media types did not accommodate the wide range of device types, especially in regards to different screen sizes. And that's essentially where media queries come in and save the day.
 
-##### Media Queries to the Rescue
+#### Media Queries to the Rescue
 
 With inconsistent browser implementation and so many screen sizes and new devices coming to market, developers found that using media types alone to serve up styles for specific devices was impractical. On June 19, 2012, although in practice well before this, an official W3C recommendation was released that greatly expanded the capabilities of media types through media queries:
 
@@ -227,7 +228,7 @@ In this case, the media type "All" (implied by shorthand syntax) is matched agai
 
 In addition to max-width, media queries allow you to test for a broader range of conditions including minimum widths, heights, screen orientation, [and more][]. Perfect for serving up device sensitive styles and content to a wide range of devices.
 
-#### Target Devices
+### Target Devices
 
 Now that we have a basic understanding of media queries, the first step you will need to take before writing your own is determine what screen sizes you plan to target, i.e. what devices are your users using? The best source of this information comes from your weblogs. The following references will also help you understand what's out there and what's being used:
 
@@ -262,7 +263,7 @@ On the other hand I think it's good to start with something and redefine as cont
 
 Why don't we grab a few and begin.
 
-#### Breakpoints
+### Breakpoints
 
 Based on [StatCounter Global Stats][Stats] for North America over a three month period, it looks like there are five sizes we will need to address. Rather than use device names let's use generic names like: xs (extra small), s (small), m (medium), l (large), and xl (extra large). FYI - The breakpoints we define here will serve as a starting point, we can always change numbers or add/remove sizes (xxs, xxl, etc.) when user needs dictate that we should.
 
@@ -330,7 +331,7 @@ There's a whole heck of a lot more you can do with media queries. Here are some 
 - [Responsive Web Design in Sass: Using Media Queries in Sass 3.2][Sass Media Queries]
 - [Retina Display Media Query][Retina Media Queries]
 
-#### Em's and Media Queries
+### Em's and Media Queries
 
 You might have noticed that our responsive grid uses em's in it's definitions, and our media queries are using pixels. In fact all over the web in various media query articles you'll see the use of pixels, but this in fact is not the best practice. Em's-based media queries are actually a better idea and here's why.
 
@@ -345,7 +346,7 @@ That's a lot to digest, and as usual I'm going to point you to some references t
 
 NOTE: You can convert our pixel-based breakpoints to em's by dividing each breakpoint by 16: assumption being that the default screen size is 16px and therefore 1em = 16px.
 
-#### Susy Breakpoints
+### Susy Breakpoints
 
 One of the great features of Susy is that breakpoints are baked right in. We could use the breakpoints we created above, but why not take advantage of the mathematical capabilities of Susy and also be consistent with our grid system at the same time? Sounds like a good idea, and here's how we will use Susy breakpoints in our project.
 
@@ -538,3 +539,38 @@ If you're not too sure how this is all working, in addition to the Susy's own [r
 
 - [Susy and Media Queries (guide for Muppets)][Muppets]
 
+[Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
+
+[RWD]:                  http://www.alistapart.com/articles/responsive-web-design/
+[RWD Book]:             http://www.abookapart.com/products/responsive-web-design
+[This Is Responsive]:   http://bradfrost.github.com/this-is-responsive/index.html
+[Responsive Design]:    http://alpha.responsivedesign.is/
+
+[grid]:                 http://www.subtraction.com/pics/0703/grids_are_good.pdf
+[Susy]:                 http://susy.oddbird.net/
+[Eric Meyer]:           http://meyerweb.com/
+[basic settings]:       http://susy.oddbird.net/guides/reference/#ref-basic-settings
+[.container]:           http://susy.oddbird.net/guides/reference/#ref-basic-mixins
+[source]:               http://susy.oddbird.net/guides/getting-started/
+[Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
+[Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
+
+[media types]:          http://www.w3.org/TR/CSS21/media.html#media-types
+[Media Queries]:        http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/
+[and more]:             http://www.w3.org/TR/css3-mediaqueries/#media0
+[Stats]:                http://gs.statcounter.com/
+[Tired of Hunting]:     http://www.websitedimensions.com/
+[2012 Device Map]:      http://viljamis.com/blog/2012/responsive-workflow/device-map-2012.pdf
+[Device Diagram]:       http://www.metaltoad.com/blog/simple-device-diagram-responsive-design-planning
+[Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
+[breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
+[Happy Cog]:            http://www.netmagazine.com/news/browser-screen-resolution-stats-rile-devs-121897
+[_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
+[Media queries]:        http://alpha.responsivedesign.is/develop/media-queries
+[Sass Media Queries]:   http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
+[Retina Media Queries]: http://css-tricks.com/snippets/css/retina-display-media-query/
+[EMs have it]:          http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
+[Embrace the em]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
+[Muppets]:              https://groups.google.com/d/topic/compass-users/oXHAtZE4euI/discussion
+
+[@media Definitions]:   http://chrismaxwell.com/manifesto/media-queries.gif
