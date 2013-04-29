@@ -19,7 +19,7 @@ Let's take a look at these three components one by one starting with flexible gr
 1. Flexible Grids
 -----------------
 
-So the first component of Responsive Web Design is the "flexible, grid-based layout." In layman's terms this means a webpage that proportionally responds in size to the context in which it is drawn; the context being the screen size or viewport.
+The first component of Responsive Web Design is the "flexible, grid-based layout." In layman's terms this means a webpage that proportionally responds in size to the context in which it is drawn; the context being the screen size or viewport.
 
 Code wise this translates into a [grid system][grid] whose dimensions resize proportionately to changes in its containing element. For example, if a pages major containing element -- the \<body> tag or containing \<div> -- were defined with a width of 960 pixels, as the screen real estate decreased, let's say when viewed on a tablet, it wouldn't make sense to continue to draw that element at a size greater than the screen real estate available. If you did, content like its textmight get cut off in unpredictable places by the tablets screen. It would make better sense to decrease the width of the element to 768 pixels when viewed through a tablet so that none of its content will be cut off by the screen.
 
