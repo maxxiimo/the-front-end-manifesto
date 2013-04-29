@@ -51,9 +51,11 @@ I think I would enjoy writing a book called "Mobile on Rails" after exploring th
 
 1  Detect screen size via media queries to serve up responsive web design.
 
-2.  Detect user agents to serve mobile versions of our website.
+2. Detect user agents to serve mobile versions of our website.
 
-3.  A hybrid of 1 and 2.
+3. A hybrid of 1 and 2.
+
+### Best Choice
 
 Personally I like to separate concerns and tend to use option three, but include responsive design within this separation since there is no one size fits all in mobile. I'm not alone in this thinking:
 

@@ -57,6 +57,7 @@ Table of Contents
 - [Mobile on Rails][Chapter 5]
     - Mobile First
     - Plan of Attack
+        - Best Choice
 
 #### Chapter 6
 - [Responsive Web Design][Chapter 6]
