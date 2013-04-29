@@ -205,7 +205,7 @@ Table of Contents
   - Appendix 11: Color Palettes, Tools and Collections
 
 [Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/COVER.md
-[The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
+[The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
 
 [Section I]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-1.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md

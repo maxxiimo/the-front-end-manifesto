@@ -487,7 +487,7 @@ The following reference will give you some great ideas:
 
 - [Front-end Style Guides][Style Guides]
 
-[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/the-manifesto.md
+[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
 
 [starter CSS]:          https://github.com/maxxiimo/base-css
