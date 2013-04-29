@@ -334,7 +334,7 @@ To keep the code DRY we consolidate common code between the two:
 
 While variables do not explicitly DRY up your code, they kind of do and here's how:
 
-In the code above I specify a variable for the background-color of "$white". At first glance you might think why not just use #FFF or "white", as if in this case "six in one hand, half a dozen in the other" holds true, but what if later in the applications lifecycle I want to use a different shade of white? For example #FCFCFC. I would have to find every single instance of either #FFF or "white" and swap it out with the new value.
+In the code above I specify a variable for the background-color of "$white". At first glance you might think why not just use #FFF or "white", as if in this case "six in one hand, half a dozen in the other" holds true, but what if later in the applications lifecycle I want to use a different shade of white? For example #fcfcfc. I would have to find every single instance of either #fff or "white" and swap it out with the new value.
 
 By using variables, which I always locate in my *_define.sass* style partial, I can make the change in one instance and affect styles everywhere the variable is used. Not quite DRY, but kinda'.
 
@@ -402,6 +402,8 @@ The 3rd and 4th group deal more with look and feel.
 
 The last group deals with vendor prefixes and is preceded with a line space.
 
+NOTE: The lines between groups is for demonstration purposes only.
+
 
 #### Use of Labeling
 
@@ -417,7 +419,7 @@ Identical styles should be grouped in one stylesheet rather than multiple styles
 
 Doing so will reduce duplication, for example:
 
-advisor/client/something.sass
+*advisor/client/something.sass*
 
     textarea
       width: 565px
@@ -430,7 +432,7 @@ advisor/client/something.sass
       &:focus
         color: #222
 
-advisor/something.sass
+*advisor/something.sass*
 
     textarea
       width: 565px
