@@ -49,7 +49,7 @@ Table of Contents
         - Consolidate
         - Variables
         - Mixins
-    - What We've Done
+    - Stylesheet Tips
 
 ### [Section II - Mobile on Rails][Section II]
 
@@ -58,6 +58,7 @@ Table of Contents
     - Mobile First
     - Plan of Attack
         - Best Choice
+        - Holy Wars
 
 #### Chapter 6
 - [Responsive Web Design][Chapter 6]

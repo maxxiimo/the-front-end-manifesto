@@ -26,6 +26,3 @@ The Manifesto
 11. KISS (keep it simple stupid)
 
 12. Sufficiently comment or document code.
-
-
-Do not use third-party plug-ins that do not allow easy customization and/or change in the underlying HTML or CSS. (Like Formtastic or jQuery UI. I'm just sayin' - Besides, this is a manifesto!)
