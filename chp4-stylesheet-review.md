@@ -449,9 +449,9 @@ Since these thousand are identical it would make sense to add them into a mixin 
 
 This might be considered too much:
 
-stylesheets/advisor/client/invitations.sass
-
-    #advisor_clients_invitations section#invite_clients form li#invitation_email_input input[type="text"], #advisor_clients_invitations section#invite_clients form li#invitation_first_name_input input[type="text"], #advisor_clients_invitations section#invite_clients form li#invitation_last_name_input input[type="text"]
+    #advisor_clients_invitations section#invite_clients form li#invitation_email_input input[type="text"]
+    #advisor_clients_invitations section#invite_clients form li#invitation_first_name_input input[type="text"]
+    #advisor_clients_invitations section#invite_clients form li#invitation_last_name_input input[type="text"]
 
 #### Define In-House Styles over Third-Party Styles
 
