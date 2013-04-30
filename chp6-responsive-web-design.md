@@ -52,13 +52,13 @@ Now if you were to change the size of *.container*, *.left-side* and *.right-sid
 
 ### Using Susy
 
-As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you and save time. There is a pretty comprehensive list of [grid systems][Appendix 2] in the Appendices, but my preference is to use [Susy][] since it is a plug-in of Compass, which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in.
+As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you. There is a pretty comprehensive list of [grid systems][Appendix 2] in the Appendices, but my preference is to use [Susy][] since it is a plug-in of Compass which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in.
 
-#### Installation
+#### Set Up
 
-Before we begin I'm going to assume that you have removed or disabled our previous work with user agent sniffing. If so proceed. Installation is pretty straightforward:
+Set up is pretty straightforward:
 
-*Step 1:* Add the following to */config/compass.rb*:
+*Step 1:* Add the following to *config/compass.rb*:
 
     require "susy"
 
@@ -71,7 +71,7 @@ Before we begin I'm going to assume that you have removed or disabled our previo
 
 *Step 3:* Import Susy into your project (uncomment):
 
-app/assets/stylesheets/application.scss
+*app/assets/stylesheets/application.scss*
 
     /* BASIC STRUCTURE
       ============================================================================ */
