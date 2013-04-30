@@ -194,13 +194,22 @@ NOTE: You may have noticed the "*max-with: 59em*" property in *.container*. The 
 2. Flexible Media
 -----------------
 
-Now that we have a flexible grid, it's time to look at Ethan's second ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a 320px wide screen. It just doesn't make any sense.
+Now that we have a flexible grid, it's time to look at the second ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a 320 pixel wide screen. It just doesn't make any sense?
 
+One thing you can do is use:
 
+    overflow: hidden
 
+Then 280 pixels of the image will be clipped, not really a responsive image. Using CSS you could add:
 
+    img, embed, object, video
+      max-width: 100%
 
+And just like that, in all modern browsers, you've covered several media types.
 
+NOTE: IE 6 does not support max-width, you will need to use width: 100% and check out this [article][].
+
+But still, this isn't the silver bullet I'm looking for. One thing you need to consider is that in a smart phone, although the image will resize to its container, it's still a 600 pixel image and will weigh just the same.
 
 
 
@@ -562,6 +571,8 @@ If you're not too sure how this is all working, in addition to the Susy's own [r
 [source]:               http://susy.oddbird.net/guides/getting-started/
 [Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
 [Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
+
+[article]:              http://unstoppablerobotninja.com/entry/fluid-images
 
 [media types]:          http://www.w3.org/TR/CSS21/media.html#media-types
 [Media Queries]:        http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/
