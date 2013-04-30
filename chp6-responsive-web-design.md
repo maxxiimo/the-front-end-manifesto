@@ -82,9 +82,9 @@ Don't forget to restart your server, and wallah! You have a powerful responsive 
 
 #### Implementation
 
-Within our application layout we will implement our Susy responsive grid as follows:
+To implement Susy into your application follow the following steps:
 
-*Step 1*: Define the [basic settings][] of our grid in *application.scss*:
+*Step 1*: Define the [basic settings][] of your grid in *application.scss*:
 
     /* DEFINITIONS
       ============================================================================ */
@@ -98,9 +98,9 @@ Within our application layout we will implement our Susy responsive grid as foll
     $gutter-width:      1em
     $grid-padding:      $gutter-width
 
-This tells Susy what the basic characteristics of your flexible grid are. In this case the grid spans 12 columns across, each column has a width of 4em with a gutter and grid padding of 1em.
+This tells Susy what the basic characteristics of the grid system are. In this case it will span 12 columns; each column has a width of 4em with a gutter and grid padding of 1em.
 
-To calculate the total width of your grid including its padding use the following formula:
+To calculate the total width of your grid, including its padding, use the following formula:
 
 ($total-columns x $column-width) + (($total-columns - 1) x $gutter-width) + ($grid-padding x 2)
 
@@ -124,12 +124,14 @@ To calculate the total width of your grid including its padding use the followin
     .container
       +container
 
-+container is a Susy mixin that applies the definitions you defined in Step 1 to the outer grid containing element you created in Step 2.
+*+container* is a Susy mixin that applies the definitions you defined in Step 1 to the outer grid containing element you created in Step 2.
 
-NOTE: We remove the following styles from the body tag since we are now replacing these properties with Susy:
+*Step 4*: Remove the following styles from the body tag since we are now replacing these properties with Susy:
 
       margin: 0 auto
       width: 960px
+
+And that's it! Refresh your browser. You may see a very slight shift in the content, but otherwise everything should look the same, accept that Susy is now in control. In the Media Queries section of this chapter we will use Susy quite a bit, and as you will soon discover, it's quite powerful. First, let's quickly learn how it works.
 
 #### Susy in Action
 
