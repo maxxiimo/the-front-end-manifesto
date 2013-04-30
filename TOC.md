@@ -62,15 +62,15 @@ Table of Contents
 
 #### Chapter 6
 - [Responsive Web Design][Chapter 6]
-    - 1. Flexible Grids
+    - Flexible Grids
         - Using Susy
-    - 2. Flexible Media
-    - 3. Media Queries
+    - Media Queries
         - Media Types
         - Target Devices
         - Breakpoints
         - Em's and Media Queries
         - Susy Breakpoints
+    - Flexible Media
 
 #### Chapter 7
 - [Device Detection][Chapter 7]
