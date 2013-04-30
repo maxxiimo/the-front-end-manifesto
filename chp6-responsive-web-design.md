@@ -194,7 +194,7 @@ NOTE: You may have noticed the "*max-with: 59em*" property in *.container*. The 
 Media Queries
 -------------
 
-Now that we have a Susy flexible grid, it's time to look at media queries. Our goal is to respond to different screen sizes with content that makes sense for the device being used by our users. For example, maybe in smaller devices it makes sense to use a smaller font size, or a single column layout rather than a three column layout. Media queries will allow us to do this. To understand them and how they will help us, let's take a quick look at their history.
+The goal of Responsive Web Design is to respond to different screen sizes with content that makes sense for the device being used. For example, maybe in smaller devices it makes sense to use a smaller font size, or a single column layout rather than a three column layout. Media queries will allow us to do this. To understand them, and how they will help our application become responsive, let's take a quick look at their history.
 
 ### Media Types
 
