@@ -27,7 +27,7 @@ Fast-forward to today and you can still effectively use device user agents and t
 Mobvious
 --------
 
-For oour device detection implementation we will use a gem called [Mobvious][]. It is a rack-based solution, easy to set up, and highly configurable. It is also versatile in on how you detect mobile requests:
+For our device detection implementation we will use a gem called [Mobvious][]. It is a rack-based solution, easy to set up, and highly configurable. It is also versatile in on how you detect mobile requests:
 
 1.  User-Agent sniffing
 2.  URL pattern matching
@@ -37,9 +37,9 @@ In other words it gives us more options.
 
 ### Set Up
 
-*Step 1:* Copy all the [base-mobile][] files from the mobvious folder and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application.
+**Step 1:** Copy all the [base-mobile][] files from the mobvious folder and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application.
 
-*Step 2:* Add the following to your application.rb file:
+**Step 2:** Add the following to your application.rb file:
 
     # Precompile *all* assets, except those that start with underscore per:
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
@@ -47,23 +47,23 @@ In other words it gives us more options.
 
 \- [Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work]
 
-*Step 3:* Add the following gems to your *Gemfile* and then bundle install:
+**Step 3:** Add the following gems to your *Gemfile* and then bundle install:
 
     gem 'mobvious'
     gem 'mobvious-rails'
 
-*Step 4:* Add the following to *application.rb*:
+**Step 4:** Add the following to *application.rb*:
 
     # Tell your app to use Mobvious::Manager as Rack middleware.
     config.middleware.use Mobvious::Manager
 
-*Step 5:* Add the following includes to *application_controller.rb* and *application_helper.rb*:
+**Step 5:** Add the following includes to *application_controller.rb* and *application_helper.rb*:
 
     include Mobvious::Rails::Controller
 
     include Mobvious::Rails::Helper
 
-*Step 6:* Create an initializer file *config/initializers/mobvious.rb* and configure it as follows:
+**Step 6:** Create an initializer file *config/initializers/mobvious.rb* and configure it as follows:
 
     Mobvious.configure do |config|
       config.strategies = [ Mobvious::Strategies::MobileESP.new(:mobile_desktop) ]
