@@ -60,7 +60,6 @@ In other words it gives us more options.
 **Step 5:** Add the following includes to *application_controller.rb* and *application_helper.rb*:
 
     include Mobvious::Rails::Controller
-
     include Mobvious::Rails::Helper
 
 **Step 6:** Create an initializer file *config/initializers/mobvious.rb* and configure it as follows:
