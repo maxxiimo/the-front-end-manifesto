@@ -221,18 +221,24 @@ Unlike media types, media queries, do not rely only on a handful of predefined t
 
 In this case, the media type "All" (implied by shorthand syntax) is matched against a devices user agent. If it evaluates to true the device is then tested for a maximum width of 480 pixels. If it passes the second test, the specified styles, a red font color, is applied. If false, it is not, and the device continues to use the default font color. A smart phone in portrait and landscape mode would pass this test, a desktop computer would not.
 
-In addition to *max-width*, media queries allow you to test for a broader range of conditions including minimum widths, heights, screen orientation, [and more][]. Perfect for serving up device sensitive styles and content to a wide range of devices and screen sizes.
+This second dimension of conditional testing opens a whole window of opportunity to serve up device sensitive styles based on logical conditions. Conditions that in addition to *max-width*, include tests for minimum widths, heights, screen orientation, [and more][].
 
-### Target Devices
+### Target Devices and Breakpoints
 
-Now that we have a basic understanding of media queries, the first step you will need to take before writing your own is determine what screen sizes you plan to target, i.e. what devices are your users using? The best source of this information comes from your weblogs. The following references will also help you understand what's out there and what's being used:
+With great power comes great responsibility. Just kidding, but how awesome is that? Now you can create ranges in which  certain styles and content will apply, and ranges where it will not. The point at which the conditional logic switch is flipped on or off is referred to as a "breakpoint".
+
+> Breakpoints are the point a which your sites content will respond to provide the user with the best possible layout to consume the information.
+
+\- [Defining Breakpoints][]
+
+For our application we're going to base our breakpoints on screen size, which begs the question; what screen sizes do we target, i.e. what devices are my users using? The best source of this information comes from your weblogs. The following references will also give you a good sense of what devices are out there in the wild:
 
 - [StatCounter Global Stats][Stats]
 - [Tired of Hunting][]
 - [2012 Device Map][]
 - [A Simple Device Diagram for Responsive Design Planning][Device Diagram]
 
-In general, here are the most common devices and dimensions:
+In general, here are the most common screen sizes:
 
 - 320px (iPhone portrait, default)
 - 480px (iPhone landscape)
@@ -240,39 +246,33 @@ In general, here are the most common devices and dimensions:
 - 1024px (iPad landscape)
 - 1140+ (Desktops)
 
-So what should you use? In the ResponsiveDesign.is website under [Defining Breakpoints][] the section begins...
+So which should you target?
 
-> Breakpoints are the point a which your sites content will respond to provide the user with the best possible layout to consume the information.
->
 > When you first begin to work with Responsive Design you will define your breakpoints at the exact device widths that you are looking to target. Most often these are the smart phone (usually the iPhone at 320px and 480px), the tablet (usually the iPad at 768px and 1024px) and finally anything above 1024px.
 >
 > WRONG!
 >
 > I hope I didn't hurt your feelings but seriously, you're approaching this in the wrong way.
 
-Ha! Something to keep in mind. I like this thinking. We should start with content and see how it looks on different screen sizes, then define our breakpoints.
+\- [Defining Breakpoints][]
 
-On the other hand I think it's good to start with something and redefine as content dictates. I like the examples the author gives:
+Something to keep in mind. The carry away is that we should start with content and see how it looks on different screen sizes, then define our breakpoints. On the other hand, I think it's good to start with something and redefine if content dictates. I like the examples the author gives:
 
 - [media queries for common device breakpoints][breakpoints]
 
-Why don't we grab a few and begin.
-
-### Breakpoints
-
-Based on [StatCounter Global Stats][Stats] for North America over a three month period, it looks like there are five sizes we will need to address. Rather than use device names let's use generic names like: xs (extra small), s (small), m (medium), l (large), and xl (extra large). FYI - The breakpoints we define here will serve as a starting point, we can always change numbers or add/remove sizes (xxs, xxl, etc.) when user needs dictate that we should.
-
-Here is the mapping I'm thinking of:
+But I like [StatCounter Global Stats][Stats] even more, and based on statistics for North America over a three month period, it looks like there are five sizes we will need to address. Here is the mapping I'm thinking of:
 
 ![][@media Definitions]
 
-Having defined these sizes, and to drill a point home, I want to quote Happy Cog founder Jeffrey Zeldman:
+Having defined our target devices, and to drill a point home, I want to quote Happy Cog founder Jeffrey Zeldman:
 
 > The most popular size is every size. If you're not thinking in a mobile-first, content-first way, if you're not planning an adaptive or responsive redesign, if you still think we have a standard canvas that ‘everybody’ uses, and if you can't feel the hot breath of mobile singeing the hairs on the back of your neck, you don't deserve to be a designer, or a consultant, or whatever these people think they are.
 
 \- [Browser screen resolution stats rile devs][Happy Cog]
 
-So what do our brand-new breakpoints look like?
+### A Breakpoints Mixin
+
+Our [starter CSS][] includes a breakpoint mix in called [_media_queries.sass][] that looks something like this:
 
     @mixin breakpoint($point)
       @if $point == xxs
@@ -303,24 +303,23 @@ So what do our brand-new breakpoints look like?
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
           @content
 
-How do you use them? First we'll place them in a sass partial called [_media_queries.sass][], and then import them into our application.scss file:
+To activate this mixin uncomment *@import "media_queries";* in *application.scss*:
 
     /* MIXINS
       ============================================================================ */
     @import "compass";
+    // @import "susy";
     @import "media_queries";
-    @import "mixins"
+    @import "mixins";
 
-Then if you want to specify a particular style for an element, lets say a different font color for super small screens for .some-class, you might write something like this:
+Then if you want to specify a particular style for an element, for example a different font color for super small screens for *.some-class*, you might write something like this:
 
     .some-class
       color: blue
       @include breakpoint(xxs)
         color: red
 
-Now for any device with a minimum device screen size less than 130px (as defined by the xxs breakpoint), the font color will be red, and blue for everything else. Pretty straightforward.
-
-There's a whole heck of a lot more you can do with media queries. Here are some good references for you if you're interested in learning more:
+Now for any device with a minimum device screen size less than 130 pixels (as defined by the xxs breakpoint), the font color will be red, and blue for everything else. This is a very basic example, there's a whole heck of a lot more you can do with media queries. Here are some good references for you if you're interested in learning more:
 
 - [Media queries][]
 - [Responsive Web Design in Sass: Using Media Queries in Sass 3.2][Sass Media Queries]
@@ -328,7 +327,7 @@ There's a whole heck of a lot more you can do with media queries. Here are some 
 
 ### Em's and Media Queries
 
-You might have noticed that our responsive grid uses em's in it's definitions, and our media queries are using pixels. In fact all over the web in various media query articles you'll see the use of pixels, but this in fact is not the best practice. Em's-based media queries are actually a better idea and here's why.
+You might have noticed that our responsive grid uses em's in it's definitions, and our media queries are using pixels. In fact all over the web in various media query articles you'll see the use of pixels, but this in fact is not the best practice. Em's-based media queries are actually a better idea and here's why:
 
 Let's say a user – when viewing your project on their desktop – increases the base font size of their browser by hitting CTRL + several times (maybe they have trouble seeing at the default font size). Imagine that the content they are reading is split into three columns, which makes sense on a desktop, and for smaller screen sizes changes to a single column based on breakpoints. When the user zooms in,, the pixel-based breakpoints will have no affect on the layout since the pixel widths remain the same, and that three column layout that used to fit harmoniously into a desktop screen no longer does.
 
@@ -555,6 +554,7 @@ NOTE: IE 6 does not support max-width, you will need to use width: 100% and chec
 But still, this isn't the silver bullet I'm looking for. One thing you need to consider is that in a smart phone, although the image will resize to its container, it's still a 600 pixel image and will weigh just the same.
 
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
+[starter CSS]:          https://github.com/maxxiimo/base-css
 
 [RWD]:                  http://www.alistapart.com/articles/responsive-web-design/
 [RWD Book]:             http://www.abookapart.com/products/responsive-web-design
@@ -573,12 +573,12 @@ But still, this isn't the silver bullet I'm looking for. One thing you need to c
 [media types]:          http://www.w3.org/TR/CSS21/media.html#media-types
 [Media Queries]:        http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/
 [and more]:             http://www.w3.org/TR/css3-mediaqueries/#media0
+[breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
 [Stats]:                http://gs.statcounter.com/
 [Tired of Hunting]:     http://www.websitedimensions.com/
 [2012 Device Map]:      http://viljamis.com/blog/2012/responsive-workflow/device-map-2012.pdf
 [Device Diagram]:       http://www.metaltoad.com/blog/simple-device-diagram-responsive-design-planning
 [Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
-[breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
 [Happy Cog]:            http://www.netmagazine.com/news/browser-screen-resolution-stats-rile-devs-121897
 [_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
 [Media queries]:        http://alpha.responsivedesign.is/develop/media-queries
