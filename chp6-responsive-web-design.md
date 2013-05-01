@@ -507,7 +507,19 @@ And that's it! Now when you need to apply a particular style to a specific scree
 
 ### Using Susy Breakpoints
 
-Here is a practical example using the Flexible Grids section example we've been working with. Since our four column base setting is designed for smaller screen sizes, we might want to stack the .left-side and .right-side div's (rather than have them appear cramped side-by-side), but for the remaining three breakpoints we will apply grid widths that will result in a 50-50 side-by-side placement. For illustration purposes let's color .left-side and .right-side red and blue, but only for our two largest screen sizes: ipad and desktops, i.e. $break9 and $break12.
+Let's revisit the *.left-side* and *.right-side* div's example, but this time using our newly defined Susy breakpoints. As mobile first developers we'll start with our base 4 column layout, and move our way to the 12 column layout.
+
+Since our four column base setting is designed for smaller screen sizes, we might want to stack the .left-side and .right-side div's (rather than have them appear cramped side-by-side):
+
+    .left-side
+      +span-columns(4 omega, 4)
+
+    .right-side
+      +span-columns(4 omega, 4)
+
+What did we do? Here we tell Susy to span *.left-side* and *.right-side* across 4 of the available 4 columns. Since they are floated elements, doing so stacks *.left-side* and *.right-side* one on top of the other.
+
+For the remaining three breakpoints we will apply grid widths that will result in a 50-50 side-by-side placement.
 
     .left-side
       +span-columns(4 omega, 4)
@@ -517,7 +529,6 @@ Here is a practical example using the Flexible Grids section example we've been 
 
       +at-breakpoint($break9)
         +span-columns(4, $break9)
-        background-color: red
 
       +at-breakpoint($break12)
         +span-columns(6, $break12)
@@ -530,18 +541,27 @@ Here is a practical example using the Flexible Grids section example we've been 
 
       +at-breakpoint($break9)
         +span-columns(5 omega, $break9)
-        background-color: blue
 
       +at-breakpoint($break12)
         +span-columns(6 omega, $break12)
 
-What did we do? For the 4 column case we told Susy to span .left-side and .right-side across 4 of the available 4 columns.
+Here we tell Susy to float the elements side-by-side, equally, except in the case of the 9 column layout. In that case one side is slightly bigger than the other. We could override this if we wanted to.
 
-    +span-columns(4 omega, 4)
+For illustration purposes let's color *.left-side* and *.right-side* red and blue, but only for our two largest screen sizes (all other breakpoint code committed):
 
-Since they are floated elements, doing so stacks .left-side and .right-side one on top of the other. For the remaining cases we told Susy to float the elements side-by-side equally, except in the case of the 9 column layout. In that case one side is slightly bigger than the other. We can override this if we want to. Finally starting at the 9 column breakpoint, we apply our background color which also trickles down to the 12 column layout.
+    .left-side
+      +at-breakpoint($break9)
+        +span-columns(4, $break9)
+        background-color: red
 
-If you're not too sure how this is all working, in addition to the Susy's own [reference][source] (and the articles I recommend above), the following discussion hits the nail right on the head when it comes to understanding how to use Susy breakpoints:
+    .right-side
+      +at-breakpoint($break9)
+        +span-columns(5 omega, $break9)
+        background-color: blue
+
+In this case we only need to apply the background color to the 9 column breakpoint because it will trickle down to the 12 column layout.
+
+If you're not too sure how this is all working, in addition to the Susy's own [reference][source], the following discussion hits the nail right on the head when it comes to understanding how to use Susy breakpoints:
 
 - [Susy and Media Queries (guide for Muppets)][Muppets]
 
