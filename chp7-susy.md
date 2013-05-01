@@ -41,7 +41,7 @@ Don't forget to restart your server, and wallah! You have a powerful responsive 
 Implementation
 --------------
 
-To implement Susy into your application follow the following steps:
+To implement Susy into your application follow these steps:
 
 *Step 1*: Define the [basic settings][] of your grid in *application.scss*:
 
