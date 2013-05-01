@@ -84,9 +84,9 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
 
     Compass will generate a configuration file and stylesheets. Delete the stylesheets *app/assets/stylesheets*:
 
-    - ie.css.scss
-    - print.css.scss
-    - screen.css.scss
+        - ie.css.scss
+        - print.css.scss
+        - screen.css.scss
 
     We're going to use our own.
 
