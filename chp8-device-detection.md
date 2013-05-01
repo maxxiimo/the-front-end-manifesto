@@ -77,7 +77,7 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
       config.strategies = [ Mobvious::Strategies::MobileESP.new(:mobile_desktop) ]
     end
 
-Don't forget to restart your application, and wallah! You have a detection strategy that will return a variable of *:mobile* or *:desktop* depending on the device type of the request. What you do that information is up to you.
+Don't forget to restart your application, and wallah! You have a detection strategy that will return a variable of *:mobile* or *:desktop* depending on the device type of the request. What you do with that information is entirely up to you. In the next section we will start you off on the right foot.
 
 NOTE: Tablet devices as configured here will return :desktop as well, although you can change this.
 
