@@ -272,7 +272,7 @@ Having defined our target devices, and to drill a point home, I want to quote Ha
 
 ### A Breakpoints Mixin
 
-Our [starter CSS][] includes a breakpoint mixin called [_media_queries.sass][] that looks something like this:
+Our [starter CSS][] includes a breakpoint mixin called [_media_queries.sass][] that looks like this:
 
     @mixin breakpoint($point)
       @if $point == xxs
@@ -303,7 +303,7 @@ Our [starter CSS][] includes a breakpoint mixin called [_media_queries.sass][] t
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
           @content
 
-What we've done here is applied our media definitions to our mixin and defined each with a variable starting with xxs (extra extra small) to xl (extra large). This way we're not married to a specific device name, things change, and we use variable so that within our code we can refer to variable that can be altered for all instances of the variable in one place.
+What we've done here is applied our media definitions to our mixin. We use variables so that we can easily make changes in one location. We use generic variables starting with xxs (extra extra small) to xl (extra large) to avoid marrying a specific device name, things change.
 
 To activate this mixin uncomment *@import "media_queries";* in *application.scss*:
 
@@ -314,14 +314,16 @@ To activate this mixin uncomment *@import "media_queries";* in *application.scss
     @import "media_queries";
     @import "mixins";
 
-Then if you want to specify a particular style for an element based on screen size, for example a different font color for super small screens, you might write something like this:
+Then, if you want to specify a particular style for an element based on screen size, you can write something like this:
 
     .some-class
       color: blue
       @include breakpoint(xxs)
         color: red
 
-With this definition, any device with a screen size less than 130 pixels (as defined by the xxs breakpoint), the font color will be red, and blue for everything else. This is a very basic example, there's a whole heck of a lot more you can do with media queries. Here are some good references for you if you're interested in learning more:
+With this definition, any device with a screen size less than 130 pixels (as defined by the xxs breakpoint) will use a red font color, and blue for everything else, i.e. 130 pixels or greater.
+
+To learn more check out the following:
 
 - [Media queries][]
 - [Responsive Web Design in Sass: Using Media Queries in Sass 3.2][Sass Media Queries]
