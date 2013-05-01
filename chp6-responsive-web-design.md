@@ -259,5 +259,5 @@ But still, this isn't the silver bullet I'm looking for. One thing you need to c
 
 [article]:              http://unstoppablerobotninja.com/entry/fluid-images
 
-[Devices]:              http://chrismaxwell.com/manifesto/devices.png
-[@media Definitions]:   http://chrismaxwell.com/manifesto/media-queries.gif
+[Devices]:              http://chrismaxwell.com/manifesto/chp-6/devices.png
+[@media Definitions]:   http://chrismaxwell.com/manifesto/chp-6/media-queries.gif

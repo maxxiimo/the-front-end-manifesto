@@ -282,13 +282,13 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 
 [Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#susy-breakpoints
 
-[Mosaic]:               http://chrismaxwell.com/manifesto/mosaic-800px.gif
-[Index Card Reference]: http://chrismaxwell.com/manifesto/index-cards/index-card-reference.gif
-[Index Before]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-before.jpg
-[Index After]:          http://chrismaxwell.com/manifesto/index-cards/index-cards-after.jpg
-[Index Mobile]:         http://chrismaxwell.com/manifesto/index-cards/index-cards-mobile.jpg
-[Prototype]:            http://chrismaxwell.com/manifesto/paper/prototype.jpg
-[Wireframe]:            http://chrismaxwell.com/manifesto/wireframe/ipad-wireframe.gif
-[Laptop]:               http://chrismaxwell.com/manifesto/wireframe/laptop-home.gif
-[Laptop Grid]:          http://chrismaxwell.com/manifesto/wireframe/laptop-home-grid.gif
-[Multidevice]:          http://chrismaxwell.com/manifesto/wireframe/multidevice.gif
+[Mosaic]:               http://chrismaxwell.com/manifesto/chp-9/mosaic-800px.gif
+[Index Card Reference]: http://chrismaxwell.com/manifesto/chp-9/index-cards/index-card-reference.gif
+[Index Before]:         http://chrismaxwell.com/manifesto/chp-9/index-cards/index-cards-before.jpg
+[Index After]:          http://chrismaxwell.com/manifesto/chp-9/index-cards/index-cards-after.jpg
+[Index Mobile]:         http://chrismaxwell.com/manifesto/chp-9/index-cards/index-cards-mobile.jpg
+[Prototype]:            http://chrismaxwell.com/manifesto/chp-9/prototype.jpg
+[Wireframe]:            http://chrismaxwell.com/manifesto/chp-9/wireframe/ipad-wireframe.gif
+[Laptop]:               http://chrismaxwell.com/manifesto/chp-9/wireframe/laptop-home.gif
+[Laptop Grid]:          http://chrismaxwell.com/manifesto/chp-9/wireframe/laptop-home-grid.gif
+[Multidevice]:          http://chrismaxwell.com/manifesto/chp-9/wireframe/multidevice.gif

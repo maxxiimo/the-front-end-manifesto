@@ -639,4 +639,4 @@ We started this chapter by covering typography. We discussed the basic building 
 [Premium Pixels]:       http://www.premiumpixels.com/
 [Typographic Style]:    http://webtypography.net/
 
-[fonts]:                http://www.chrismaxwell.com/manifesto/fonts/fonts.gif
+[fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
