@@ -10,29 +10,33 @@ Appendices
 3.  [Mobile Solutions Roundup][Appendix 3]
     :: Different ways to detect mobile devices and deliver mobile versions of your application.
 
-4.  [Inspirational Sites][Appendix 4]
+4.  [Mobylette and jQuery Mobile][Appendix 4]
+    :: A quick and simple solution for delivering mobile views.
+
+5.  [Inspirational Sites][Appendix 5]
     :: Resources to help inspire design and UI patterns for desktop, mobile and responsive websites.
 
-5.  [Placeholder Services][Appendix 5]
+6.  [Placeholder Services][Appendix 6]
     :: A roundup of Lorem Ipsum and image placeholder services.
 
-6.  [Feedback Services and Device Testing][Appendix 6]
+7.  [Feedback Services and Device Testing][Appendix 7]
     :: A roundup of UX feedback services, and articles on device testing.
 
-7.  [Font Stack Roundup][Appendix 7]
+8.  [Font Stack Roundup][Appendix 8]
     :: Different font stack combinations, fallbacks, surveys and code.
 
-8.  [Font Services and Tools][Appendix 8]
+9.  [Font Services and Tools][Appendix 9]
     :: A jackpot listing of font services and tools to help you deliver a great typographic experience.
 
-9.  [Choosing Typefaces][Appendix 9]
+10. [Choosing Typefaces][Appendix 10]
     :: Choosing typeface articles and grear advice from Jason Santa Maria on choosing typefaces.
 
-10. [A Brief History of Web Font Sizes][Appendix 10]
+11. [A Brief History of Web Font Sizes][Appendix 11]
     :: Different articles from my archives over the last 12 years regarding web font sizes.
 
-11. [Color Palettes, Tools and Collections][Appendix 11]
+12. [Color Palettes, Tools and Collections][Appendix 12]
     :: A roundup of different color palette creation and sharing services, color tools and collections of colors.
+
 
 
 <br><hr /><br>
@@ -190,6 +194,46 @@ To get started, if you're not sure where to begin or as a review, take a look at
 Appendix 4
 ----------
 
+### Mobylette and jQuery Mobile
+
+One of the quickest and simplest solutions to deliver mobile views is Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
+
+*Step 1:* Copy all the [base-mobile][] files from the mobylette folder and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application.
+
+*Step 2:* Add the following to your *application.rb* file:
+
+    # Precompile *all* assets, except those that start with underscore per:
+    # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+    config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+
+\- [Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work]
+
+*Step 3:* Add the following gem to your *Gemfile* and then bundle install:
+
+    gem 'mobylette'
+
+*Step 4:* Add the following to *application_controller.rb*:
+
+    include Mobylette::RespondToMobileRequests
+    mobylette_config do |config|
+      config[:skip_xhr_requests] = false
+    end
+
+*Step 5:* Add the following to *config/environments/production.rb*:
+
+    # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
+    config.assets.precompile += %w( modernizr-2.6.2.min.js, jquery.mobile-1.2.0.css )
+
+And that's it!
+
+One thing that you may have noticed is that there certainly does seem to be a lot of repetition in our code, two files for almost everything. One of the key arguments for Responsive Web Design is the elimination of duplication.
+
+
+
+<br><hr /><br>
+Appendix 5
+----------
+
 ### Inspirational Sites
 
 In addition to reviewing competitor sites or similar services to help generate ideas, the following sites may also inspire or provide you with best practices/design patterns:
@@ -281,7 +325,7 @@ Because responsive will play a big part in your design the following two links m
 
 
 <br><hr /><br>
-Appendix 5
+Appendix 6
 ----------
 
 ### Placeholder Services
@@ -311,7 +355,7 @@ Image placeholders in different sizes and styles are also plentiful. The second 
 
 
 <br><hr /><br>
-Appendix 6
+Appendix 7
 ----------
 
 ### Feedback Services and Device Testing
@@ -386,7 +430,7 @@ A roundup of feedback services and device testing articles.
 
 
 <br><hr /><br>
-Appendix 7
+Appendix 8
 ----------
 
 ### Font Stack Roundup
@@ -522,7 +566,7 @@ Appendix 7
 
 
 <br><hr /><br>
-Appendix 8
+Appendix 9
 ----------
 
 ### Font Services and Tools
@@ -606,8 +650,8 @@ The tools I've listed, if needed, will help you deliver a superior typographic e
 
 
 <br><hr /><br>
-Appendix 9
-----------
+Appendix 10
+-----------
 
 ### Choosing Typefaces
 
@@ -669,7 +713,7 @@ NOTE: This work is [copyrighted][].
 
 
 <br><hr /><br>
-Appendix 10
+Appendix 11
 -----------
 
 ### A Brief History of Web Font Sizes
@@ -709,7 +753,7 @@ Over the years I've referred to different articles when determining font size fo
 
 
 <br><hr /><br>
-Appendix 11
+Appendix 12
 -----------
 
 ### Color Palettes, Tools and Collections
@@ -798,6 +842,7 @@ Color palette creation and sharing tools.
 [Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-9
 [Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-10
 [Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-11
+[Appendix 12]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-12
 
 
 

@@ -82,8 +82,6 @@ Table of Contents
 
 #### Chapter 8
 - [Device Detection][Chapter 8]
-    - Mobylette
-        - Set Up
     - Mobvious
         - Set Up
         - Usage
@@ -199,14 +197,15 @@ Table of Contents
   - Appendix 1: Frameworks
   - Appendix 2: Grid Systems
   - Appendix 3: Mobile Solutions Roundup
-  - Appendix 4: Inspirational Sites
-  - Appendix 5: Placeholder Services
-  - Appendix 6: Feedback Services and Device Testing
-  - Appendix 7: Font Stack Roundup
-  - Appendix 8: Font Services and Tools
-  - Appendix 9: Choosing Typefaces
-  - Appendix 10: A Brief History of Web Font Sizes
-  - Appendix 11: Color Palettes, Tools and Collections
+  - Appendix 4: Mobylette and jQuery Mobile
+  - Appendix 5: Inspirational Sites
+  - Appendix 6: Placeholder Services
+  - Appendix 7: Feedback Services and Device Testing
+  - Appendix 8: Font Stack Roundup
+  - Appendix 9: Font Services and Tools
+  - Appendix 10: Choosing Typefaces
+  - Appendix 11: A Brief History of Web Font Sizes
+  - Appendix 12: Color Palettes, Tools and Collections
 
 [Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/COVER.md
 [The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md

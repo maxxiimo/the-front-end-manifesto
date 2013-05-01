@@ -165,7 +165,7 @@ To begin just simply translate what you indexed in the previous section into wha
 
 The end result: a well-defined user interface layout for my entire application.
 
-TIP: As you prototype always have an eye on your bookmarked reference websites, and/or some of the [inspirational sites][Appendix 4] listed in the Appendices. Revise and release often.
+TIP: As you prototype always have an eye on your bookmarked reference websites, and/or some of the [inspirational sites][Appendix 5] listed in the Appendices. Revise and release often.
 
 Wireframing
 -----------
@@ -206,7 +206,7 @@ A word on content. If you have it great! If not, the following article gives a n
 
 - [Content, First?][Content First]
 
-I for one don't mind using Lorem Ipsum or images as content placeholders, but nothing can really truly substitute for actual content so if you can find it or create it, do so. I've put together a pretty comprehensive list of [placeholder services][Appendix 5] for your benefit in the Appendices. It includes text and image placeholder services.
+I for one don't mind using Lorem Ipsum or images as content placeholders, but nothing can really truly substitute for actual content so if you can find it or create it, do so. I've put together a pretty comprehensive list of [placeholder services][Appendix 6] for your benefit in the Appendices. It includes text and image placeholder services.
 
 Although I like to use [Dummy Image][], I also keep a 1px x 1px transparent gif, sometimes referred to as a shim, in our assets/images/fixtures folder. It can be used as follows to create image placeholders:
 
@@ -220,12 +220,12 @@ Don't forget to set the color:
 Feedback and Testing
 --------------------
 
-One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services listed in the [Feedback Services][Appendix 6] ssection of Appendix 6.
+One very important thing to practice when designing interfaces is do nothing in isolation, and consider everything you think as intuitive to be wrong! (until proven otherwise) Iterating is key. Get feedback from your end users and refine. If you can't get to them, then ask your neighbor, a friend, or try one of the services listed in the [Feedback Services][Appendix 7] of the Appendices.
 
 > Test across major browsers, devices, and in front of "real-life" users.
 \- [Manifesto][]
 
-Testing on actual devices is also very important. Resizing a browser window and/or using device simulators cannot substitute for an actual device. The "[Device Testing][Appendix 6]" section in Appendix 6 lists several useful articles to get you started on testing or building your own testing lab. As a rule of thumb, test on at least four different devices: desktop, tablet, small tablet, and a smartphone. Walk into the Mac store, or Verizon, or AT&T if you have to and test away.
+Testing on actual devices is also very important. Resizing a browser window and/or using device simulators cannot substitute for an actual device. The "[Device Testing][Appendix 7]" section in of the Appendices lists several useful articles to get you started on testing or building your own testing lab. As a rule of thumb, test on at least four different devices: desktop, tablet, small tablet, and a smartphone. Walk into the Mac store, or Verizon, or AT&T if you have to and test away.
 
 At the end of our information architecting cycle, with our basic content and layouts in place, here's what we're left with across several different devices:
 
@@ -255,9 +255,9 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md
 [Chapter 10]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md
 [Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md
-[Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
 [Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-5
 [Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-6
+[Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-7
 
 [Jason Santa Maria]:    http://jasonsantamaria.com/
 

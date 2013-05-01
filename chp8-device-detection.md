@@ -22,53 +22,12 @@ Under these challenges, our goal was to cover 99.999% of all web-enabled mobile 
 
 Over time Fidelity developed an extensive database of devices their customers used which included information about the devices screen size, OS, browser, protocol support, and more. Armed with this information Fidelity could then serve markup depending on the device request and the information it contained.
 
-Fast-forward to today and you can still effectively use device user agents and third-party databases to serve device appropriate markup and styles to your users. In fact in Rails this is not difficult. Take a look at the [Mobile Solutions Roundup][Appendix 3] in the Appendices to get an idea of what you can do in Rails. In this chapter we will cover a few of these.
-
-Mobylette
----------
-
-To deliver our mobile views lets experiment with one of the quickest and simplest solutions: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface.
-
-### Set Up
-
-Here are the steps you will follow to implement this solution:
-
-*Step 1:* Copy all the [base-mobile][] files from the mobylette folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
-
-*Step 2:* Add the following to your application.rb file:
-
-    # Precompile *all* assets, except those that start with underscore per:
-    # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
-    config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
-
-\- [Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work]
-
-*Step 3:* Add the following gem to your Gemfile and then bundle install:
-
-    gem 'mobylette'
-
-*Step 4:* Add the following to application_controller.rb:
-
-    include Mobylette::RespondToMobileRequests
-    mobylette_config do |config|
-      config[:skip_xhr_requests] = false
-    end
-
-*Step 5:* Add the following to config/environments/production.rb:
-
-    # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-    config.assets.precompile += %w( modernizr-2.6.2.min.js, jquery.mobile-1.2.0.css )
-
-And that's it!
-
-One thing that you may have noticed is that there certainly does seem to be a lot of repetition in our code, two files for almost everything. One of the key arguments for Responsive Web Design is the elimination of duplication. We will investigate this option thoroughly, but before then let's try one more user agent sniffing solution.
-
-NOTE: If you use Firefox try [User Agent Switcher][] to test on your desktop.
+Fast-forward to today and you can still effectively use device user agents and third-party databases to serve device appropriate markup and styles to your users. In fact in Rails this is not difficult. Take a look at the [Mobile Solutions Roundup][Appendix 3] in the Appendices to get an idea of what you can do in Rails.
 
 Mobvious
 --------
 
-For an alternative to Mobylette we will try a gem called [Mobvious][]. It is a rack-based solution, easy to set up, and highly configurable. It is also versatile in on how you detect mobile requests:
+For oour device detection implementation we will use a gem called [Mobvious][]. It is a rack-based solution, easy to set up, and highly configurable. It is also versatile in on how you detect mobile requests:
 
 1.  User-Agent sniffing
 2.  URL pattern matching
@@ -78,9 +37,7 @@ In other words it gives us more options.
 
 ### Set Up
 
-Here are the steps we will follow to configure Mobvious for our needs:
-
-*Step 1:* Copy all the [base-mobile][] files from the mobvious folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
+*Step 1:* Copy all the [base-mobile][] files from the mobvious folder and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application.
 
 *Step 2:* Add the following to your application.rb file:
 
@@ -90,23 +47,23 @@ Here are the steps we will follow to configure Mobvious for our needs:
 
 \- [Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work]
 
-*Step 3:* Add the following gems to your Gemfile and then bundle install:
+*Step 3:* Add the following gems to your *Gemfile* and then bundle install:
 
     gem 'mobvious'
     gem 'mobvious-rails'
 
-*Step 4:* Add the following to application.rb:
+*Step 4:* Add the following to *application.rb*:
 
     # Tell your app to use Mobvious::Manager as Rack middleware.
     config.middleware.use Mobvious::Manager
 
-*Step 5:* Add the following includes to application_controller.rb and application_helper.rb:
+*Step 5:* Add the following includes to *application_controller.rb* and *application_helper.rb*:
 
     include Mobvious::Rails::Controller
 
     include Mobvious::Rails::Helper
 
-*Step 6:* Create a initializer file (config/initializers/mobvious.rb) and configure it as follows:
+*Step 6:* Create an initializer file *config/initializers/mobvious.rb* and configure it as follows:
 
     Mobvious.configure do |config|
       config.strategies = [ Mobvious::Strategies::MobileESP.new(:mobile_desktop) ]
@@ -114,7 +71,7 @@ Here are the steps we will follow to configure Mobvious for our needs:
 
 Don't forget to restart your application, and wallah! You have a detection strategy that will detect user agents and return a variable of :mobile or :desktop depending on the device type of the request. Tablets as configured here will return :desktop as well, although you can change this.
 
-To test that Mobvious is working you can add the following helper method in application_helper.rb:
+To test that Mobvious is working you can add the following helper method in *application_helper.rb*:
 
     def device_test
         # Drop in controller: @device = request.env['mobvious.device_type']
@@ -125,6 +82,8 @@ To test that Mobvious is working you can add the following helper method in appl
           "#{@device}"
         end
     end
+
+NOTE: For an even simpler solution checkout [Mobylette][Appendix 4] in the Appendices.
 
 ### Usage
 
@@ -154,6 +113,8 @@ To do this in our application in conjunction with Mobvious we add the following 
     Mime::Type.register_alias "text/html", :mobile
 
 Just like in the Mobylette solution, requests from mobile devices are detected by Mobvious and served the correct markup and styles. Of course we will need to create all the new .html.mobile views, and again like in the Mobylette solution, I'm feeling like there are way too many files in our app/views folder – some ending with ".html.haml" others with ".mobile.haml".
+
+NOTE: If you use Firefox try [User Agent Switcher][] to test on your desktop.
 
 ### Mobile Views
 
@@ -361,6 +322,7 @@ To learn more visit:
 - [The Essentials of Zepto.js][Zepto]
 
 [Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-3
+[Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
 
 [User-Agent]:           http://tools.ietf.org/html/rfc2616#section-14.43
 

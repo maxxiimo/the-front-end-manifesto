@@ -79,7 +79,7 @@ For example, our definitions above begin with variables set to different font st
 
 ### Font Family
 
-Since we have already predefined font stack variables, let's pick one for View Thought. If you don't like what is predefined for your site, to help you select an alternative without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 7]" located in the Appendices of this book. Here you will find recommendations for:
+Since we have already predefined font stack variables, let's pick one for View Thought. If you don't like what is predefined for your site, to help you select an alternative without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 8]" located in the Appendices of this book. Here you will find recommendations for:
 
 1.  Font stacks that you can copy and use in your project.
 
@@ -91,7 +91,7 @@ Since we have already predefined font stack variables, let's pick one for View T
 
 #### Pairing Typefaces
 
-When selecting font families for my projects I like to go straight for the "[Font Stacks Roundup][Appendix 7]" Appendix, in the section entitled "Combinations". Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and more often than not provide samples for you to review and choose from.
+When selecting font families for my projects I like to go straight for the "[Font Stacks Roundup][Appendix 8]" Appendix, in the section entitled "Combinations". Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and more often than not provide samples for you to review and choose from.
 
 > You might have already heard this; successful pairing relies on concord, or contrast, but not conflict. That is to say your selected fonts can work well together by sharing certain qualities, or by being completely different from one another. However, font pairs can conflict in a number of ways – being too similar being just one.
 
@@ -129,7 +129,7 @@ If your device does not have the first font in the stack, Arial, your browser wi
 
 #### Font Services
 
-Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 8]" appendix.
+Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 9]" appendix.
 
 I use [Typekit][]. Fortunately for us, Typekit provides an excellent [series of articles][articles] on implementing Typekit, so [I'll][] [spare][] [you][] [the][] [details][].
 
@@ -143,7 +143,7 @@ Here are some screenshots of different font ideas for View Thought:
 
 ![][fonts]
 
-As you can see, choosing fonts is a practice in trial and error. In Appendix 9 in the section entitled "[Choosing Typeface Articles][Appendix 9]," I list different articles that might help you frame the context of your decision making process.
+As you can see, choosing fonts is a practice in trial and error. In Appendix 10 in the section entitled "[Choosing Typeface Articles][Appendix 10]," I list different articles that might help you frame the context of your decision making process.
 
 I also think the following idea is worth noting by itself: In a presentation by Tim Brown, the Type Manager for Adobe Typekit, he quotes Jason Santa Maria as saying:
 
@@ -176,13 +176,13 @@ That is our message, and here are some adjectives that help communicate the mood
 11. Fun
 12. Steadfast
 
-A final note on selecting typefaces, Jason Santa Maria in a presentation called [On Web Typography][] gives advice on picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) are excellent. You can find them transcribed in [Appendix 9][Appendix 9].
+A final note on selecting typefaces, Jason Santa Maria in a presentation called [On Web Typography][] gives advice on picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) are excellent. You can find them transcribed in [Appendix 10][Appendix 10].
 
 ### Font Size
 
 Now that we have selected a font family, we need to set a base font size. Choosing font size is actually an important decision. At the very basic level you will choose between a measurement types such as px's vs. em's vs. % vs. pt's vs rem's, and from a more complex perspective you need to consider that your choice might also be the measurement from which your entire site is responsive to, and in our case it is.
 
-Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History of Web Font Sizes][Appendix 10]" found in the appendices.
+Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History of Web Font Sizes][Appendix 11]" found in the appendices.
 
 In [Chapter 3][] we implemented [Normalize.css][]. If you look at our [implementation][] you will notice that we reset our base font size to 100%:
 
@@ -235,7 +235,7 @@ A modular scale is a scale based on ratios derived from harmonic intervals or th
 So how is this modular scale created? Fortunately there are some great references out there that will do a much better job of explaining the what's and how's of modular scales:
 
 - [Tim Brown - More Perfect Typography][Perfect Typography] (Go to minute 15:00, great talk.)
-- Articles 10, 11, and 12 in Appendix 10, [A Brief History of Web Font Sizes][Appendix 10]
+- Articles 10, 11, and 12 in Appendix 11, [A Brief History of Web Font Sizes][Appendix 11]
 - The [Modular Scale][] tool
 
  Using the Modular Scale tool here is the scale we will use for View Thought:
@@ -540,7 +540,7 @@ Other Resources
 
 What follows are some ideas and resources to help you create your site's look and feel:
 
-- Use a framework. We listed several frameworks you can use in the [Frameworks][] section of the Appendix.
+- Use a framework. We listed several frameworks you can use in the [Frameworks][Appendix 1] section of the Appendices.
 
 - Reverse engineer pieces of things you already like.
 
@@ -574,11 +574,11 @@ We started this chapter by covering typography. We discussed the basic building 
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md
 [Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
-[Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-7
 [Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-8
 [Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-9
-[Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-10
+[Appendix 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-10
 [Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-11
+[Appendix 12]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-12
 
 [Story Design]:         http://24ways.org/2011/design-the-invisible/
 [Dao]:                  http://www.alistapart.com/articles/dao
