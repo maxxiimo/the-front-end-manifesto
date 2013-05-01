@@ -100,7 +100,7 @@ NOTE: For an even simpler solution checkout [Mobylette][Appendix 4] in the Appen
 
 Now that we have Mobvious set up, here is how we will use it.
 
-To begin we will add a bit of [Ryan Bates mobile solution][Ryan Beats] to our Mobvious implementation. Part of his solution creates a new mime type (:mobile), and uses a before_filter to test if an incoming request is mobile. If true, the before_filter sets the mime type to :mobile and only files named with the ".mobile.haml" extension are served to mobile requests.
+To begin we will add a bit of [Ryan Bates mobile solution][Ryan Bates] to our Mobvious implementation. Part of his solution creates a new mime type (:mobile), and uses a before_filter to test if an incoming request is mobile. If true, the before_filter sets the mime type to :mobile and only files named with the ".mobile.haml" extension are served to mobile requests.
 
 To do this in our application in conjunction with Mobvious we add the following to application_controller.rb:
 

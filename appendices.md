@@ -196,7 +196,7 @@ Appendix 4
 
 ### Mobylette and jQuery Mobile
 
-One of the quickest and simplest solutions to deliver mobile views is Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
+One of the quickest and simplest solutions to deliver mobile views is Tiago Scolari's [mobylette][] gem with [jQuery Mobile][jQuery Mobile Home] for our user interface. Here are the steps you will follow to implement this solution:
 
 **Step 1:** Copy all the [base-mobile][] files from the mobylette folder and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application.
 
@@ -890,7 +890,7 @@ Color palette creation and sharing tools.
 
 [base-mobile]:          https://github.com/maxxiimo/base-mobile
 [mobylette]:            https://github.com/tscolari/mobylette
-[jQuery Mobile]:        http://jquerymobile.com/
+[jQuery Mobile Home]:   http://jquerymobile.com/
 [Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
 
 [Awwwards]:             http://www.awwwards.com/
