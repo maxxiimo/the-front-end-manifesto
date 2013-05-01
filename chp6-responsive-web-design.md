@@ -50,146 +50,7 @@ In our CSS we then write:
 
 Now if you were to change the size of *.container*, *.left-side* and *.right-side* would proportionally resize themselves to the new container size. Expand this example out to all grid elements including converting the 960 pixels in *.container* to a percentage, and you have a responsive grid that will resize itself depending upon the context it renders on.
 
-### Using Susy
-
-As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you. There is a pretty comprehensive list of [grid systems][Appendix 2] in the Appendices, but my preference is to use [Susy][] since it is a plug-in of Compass which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in.
-
-#### Set Up
-
-Set up is pretty straightforward:
-
-*Step 1:* Add the following to *config/compass.rb*:
-
-    require "susy"
-
-*Step 2:* Add the Susy gem to your *.gemfile* and bundle install:
-
-    # Compass specific gems.
-    gem 'compass-rails'
-    gem 'oily_png'
-    gem 'susy'
-
-*Step 3:* Import Susy into your project (uncomment):
-
-*app/assets/stylesheets/application.scss*
-
-    /* BASIC STRUCTURE
-      ============================================================================ */
-    @import "susy";
-    @import "desktop/layout";
-
-Don't forget to restart your server, and wallah! You have a powerful responsive grid system ready for implementation in your project.
-
-#### Implementation
-
-To implement Susy into your application follow the following steps:
-
-*Step 1*: Define the [basic settings][] of your grid in *application.scss*:
-
-    /* DEFINITIONS
-      ============================================================================ */
-    @import "define";
-
-    /*  Susy Grid
-      -----------------------
-
-    $total-columns:     12
-    $column-width:      4em
-    $gutter-width:      1em
-    $grid-padding:      $gutter-width
-
-This tells Susy what the basic characteristics of the grid system are. In this case it will span 12 columns; each column has a width of 4em with a gutter and grid padding of 1em.
-
-To calculate the total width of your grid, including its padding, use the following formula:
-
-($total-columns x $column-width) + (($total-columns - 1) x $gutter-width) + ($grid-padding x 2)
-
-(12 x 4em) + ((12 - 1) x 1em) + (1em x 2) = 61em
-
-*Step 2*: Create an [outer grid-containing element][.container] in *application.html.haml* called .container:
-
-    %body
-      .container
-        = chromeframe
-        %header{:role => "banner"}
-          = render :partial => 'shared/logo'
-          = render :partial => 'shared/navigation'
-        #main{:role => "main"}
-          = yield
-        = render :partial => 'shared/footer'
-      = scripts
-
-*Step 3*: Add the corresponding CSS to *_layout.sass*:
-
-    .container
-      +container
-
-*+container* is a Susy mixin that applies the definitions you defined in Step 1 to the outer grid containing element you created in Step 2.
-
-*Step 4*: Remove the following styles from the body tag since we are now replacing these properties with Susy:
-
-      margin: 0 auto
-      width: 960px
-
-And that's it! Refresh your browser. You may see a very slight shift in the content, but otherwise everything should look the same, accept that Susy is now in control oof your grid system. In the Media Queries section of this chapter we will use Susy quite a bit, but first let's quickly learn how it works.
-
-#### Susy in Action
-
-Using Susy is pretty straightforward. Essentially it is a mixin scheme that applies a specified amount of columns to an element, based on the total columns available. In our implementation we specified 12 columns:
-
-    $total-columns:     12
-
-In the previous Flexible Grids section, in our example we used percentages to define grid element widths:
-
-    .left-side, .right-side
-      width: 50%
-
-With Susy instead of using percentages directly, we define grid element widths through the Susy *+span-columns()* mixin:
-
-    .left-side
-      +span-columns(6, 12)
-
-    .right-side
-      +span-columns(6 omega, 12)
-
-What ddoes this do? Since we set the total number of columns in our Susy grid to 12, for the two elements we are targeting we need only set the total number of columns each element will span of the available 12 columns in the grid, i.e. *+span-columns(6, 12)* (half of the available columns).
-
-The "omega" in *.right-side* denotes that the element will be the last column in the grid and therefore will not have a gutter (right margin). With this information Susy calculates your percentages for us (or em's or px's if you would like) and produces the following CSS:
-
-    .container:after {
-      clear: both;
-      content: "";
-      display: table;
-    }
-
-    .container {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 59em;
-      padding-left: 1em;
-      padding-right: 1em;
-    }
-
-    .left-side {
-      display: inline;
-      float: left;
-      margin-right: 1.69492%;
-      width: 49.1525%;
-    }
-
-    .right-side {
-      display: inline;
-      float: right;
-      margin-right: 0;
-      width: 49.1525%;
-    }
-
-And there it is in a nutshell! To really learn how to use Susy – it really packs a lot more punch than what I've demonstrated – the best reference can be found at the [source][]. The following tutorials also demonstrate Susy in action:
-
-- [Responsive Grids With Susy][Susy Grids]
-- [Off-canvas layout with Susy][Off-canvas]
-
-NOTE: You may have noticed the "*max-with: 59em*" property in *.container*. The reason this is generated by Susy is to constrain the maximum width in the largest of screens, while maintaining flexibility within this limit. Doing so ensures that pages do not completely span the widths of very large screens and thereby reduce readability. This setting, and many more, can be overridden in Susy quite easily.
+As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you. There is a pretty comprehensive list of [grid systems][Appendix 2] in the Appendices, but my preference is to use [Susy][] since it is a plug-in of Compass which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in. We will implement Susy into our application in the [next chapter][Chapter 7].
 
 Media Queries
 -------------
@@ -366,6 +227,7 @@ NOTE: IE 6 does not support max-width, you will need to use width: 100% and chec
 
 But still, this isn't the silver bullet I'm looking for. One thing you need to consider is that in a smart phone, although the image will resize to its container, it's still a 600 pixel image and will weigh just the same.
 
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
 [starter CSS]:          https://github.com/maxxiimo/base-css
 
@@ -377,11 +239,6 @@ But still, this isn't the silver bullet I'm looking for. One thing you need to c
 [grid]:                 http://www.subtraction.com/pics/0703/grids_are_good.pdf
 [Susy]:                 http://susy.oddbird.net/
 [Eric Meyer]:           http://meyerweb.com/
-[basic settings]:       http://susy.oddbird.net/guides/reference/#ref-basic-settings
-[.container]:           http://susy.oddbird.net/guides/reference/#ref-basic-mixins
-[source]:               http://susy.oddbird.net/guides/getting-started/
-[Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
-[Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
 
 [media types]:          http://www.w3.org/TR/CSS21/media.html#media-types
 [Media Queries]:        http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/
