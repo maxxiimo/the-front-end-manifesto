@@ -134,7 +134,7 @@ Commit your changes.
 
 The following files should have been modified or added to your repository:
 
-![][New Files]
+<img src="http://chrismaxwell.com/manifesto/chp-1/new-files.gif" alt="" width="640" height="461" />
 
 #### Task 4: Gemfile
 
@@ -263,7 +263,7 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 [Heroku]:               https://id.heroku.com/signup
 [Heroku Set Up]:        https://devcenter.heroku.com/articles/quickstart
 
-[New Files]:            Http://chrismaxwell.com/manifesto/appendices/new-files.gif
+[New Files]:            http://chrismaxwell.com/manifesto/chp-1/new-files.gif
 [Layout]:               http://chrismaxwell.com/manifesto/chp-1/layout-sm.png
 [Basic HTML]:           http://chrismaxwell.com/manifesto/chp-1/basic-html.png
 

@@ -105,13 +105,13 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
         # To compile in the necessary debugging information for FireSass.
         # sass_options = {:debug_info => true}
 
-    If you have problems with subfolders within your *assets/stylesheets* folder, un-comment the additional_import_paths line.
+    If you have problems with subfolders within your *assets/stylesheets* folder, uncomment the additional_import_paths line.
 
-    If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming; from which is extremely helpful when debugging. Un-comment the sass_options line if you plan to use FireSass.
+    If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming; from which is extremely helpful when debugging. Uncomment the *sass_options* line if you plan to use FireSass.
 
 4.  Edit *config/application.rb*:
 
-    Un-comment the following:
+    Uncomment the following:
 
           # If you want your assets lazily compiled in production, use this line
           Bundler.require(:default, :assets, Rails.env)
