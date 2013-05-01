@@ -27,13 +27,17 @@ Fast-forward to today and you can still effectively use device user agents and t
 Mobvious
 --------
 
-For our device detection implementation we will use a gem called [Mobvious][]. It is a rack-based solution, easy to set up, and highly configurable. It is also versatile in on how you detect mobile requests:
+For our device detection implementation we will use a gem called [Mobvious][]. It is a rack-based solution, easy to set up, and highly configurable. It is also versatile in how you can detect mobile requests:
 
 1.  User-Agent sniffing
 2.  URL pattern matching
 3.  Remembering a user's manual choice
 
 In other words it gives us more options.
+
+Before you begin to set up Mobvious clone this books [base-mobile][] files:
+
+    git clone git@github.com:maxxiimo/base-mobile.git
 
 ### Set Up
 
