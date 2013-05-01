@@ -1,7 +1,7 @@
 Visual Design for the Nondesigner
 =================================
 
-In the [last chapter][Chapter 8] our focus was Information Architecture, and in that chapter we really emphasize storytelling. [Design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction in visual design.
+In the [last chapter][Chapter 9] our focus was Information Architecture, and in that chapter we really emphasize storytelling. [Design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction in visual design.
 
 Up until now, we basically have a pretty blank wireframe: Function before form. We need to add some spice to it:
 
@@ -9,7 +9,7 @@ Up until now, we basically have a pretty blank wireframe: Function before form. 
 
 \- [A Dao of Web Design][Dao] by John Allsopp
 
-We learned in [Chapter 8][] that by looking at your site your users should be able to understand what they're looking at. That your website must communicate it's story. In the case of "View Thought" part of the story is:
+We learned in [Chapter 9][] that by looking at your site your users should be able to understand what they're looking at. That your website must communicate it's story. In the case of "View Thought" part of the story is:
 
 > We are a great website **design** [emphasis supplied], development and user experience shop...we pay special attention to what your users will see.
 
@@ -22,7 +22,7 @@ Before we do, I want to mention a paradigm shift I've been noticing in the front
 
 Your job was then to provide a handshake between graphic design and backend code. You understood what kind of code the backend team needed and how they would use it, and you had skills to turn graphic design into front end code. In my own personal experience as a consultant brought into projects, more times than not design mockups had already been completed and I would then slice and dice these mockups and integrate them into the application as pixel perfect and cross browser friendly as possible (pixel perfect used to really matter!).
 
-NOTE: Chapter 10, [Slicing and Dicing Mockups][Chapter 10], will dive into the mechanics of doing exactly that.
+NOTE: Chapter 11, [Slicing and Dicing Mockups][Chapter 11], will dive into the mechanics of doing exactly that.
 
 With the advent of HTML5 and the continuous improvement in W3C CSS3 specifications and implementation by browser vendors, a lot of these image based design elements can now be created through front end code. In other words "graphic design" cannot take place on your IDE and in the browser.
 
@@ -571,8 +571,8 @@ We started this chapter by covering typography. We discussed the basic building 
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
-[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-information-architecting.md
-[Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-slicing-and-dicing-mockups.md
+[Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md
+[Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-7
 [Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-8

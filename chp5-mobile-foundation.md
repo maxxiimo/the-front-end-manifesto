@@ -12,7 +12,7 @@ Fast-forward to today and as a Front End Engineer you cannot help but think abou
 The fact of the matter is end-users are going to consume your work on smartphones or some kind of tablet. I think this is pretty much [common knowledge][] now, so let's deal with it proactively by laying down a mobile foundation. In this chapter we are going to explore the different ways in which we can serve content tailored to the different devices our users are using, and in this process develop our own mobile foundation's best practices. Practices that we will explore in:
 
 - [Chapter 6 - Responsive Web Design][Chapter 6]
-- [Chapter 7 - Device Detection][Chapter 7]
+- [Chapter 8 - Device Detection][Chapter 8]
 
 Mobile First
 ------------
@@ -88,7 +88,7 @@ Whatever approach you decide to take, keep in mind that there are a spectrum of 
 
 \- [Behind the speed: Basecamp mobile][Basecamp Mobile]
 
-Between [Chapter 6][] and [Chapter 7][] we will explore all three plans of attack, and depending on the situation, after finishing these chapters you will have a solution for whatever your projects needs are.
+Through [Chapter 6][] and [Chapter 8][] we will explore all three plans of attack, and depending on the situation, after finishing these chapters you will have a solution for whatever your projects needs are.
 
 > Create a product, don’t re-imagine one for small screens. Great mobile products are created, never ported.
 
@@ -98,7 +98,7 @@ Between [Chapter 6][] and [Chapter 7][] we will explore all three plans of attac
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
 [Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md
-[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-device-detection.md
+[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md
 
 [Better and Worse]:     http://insights.wired.com/profiles/blogs/mobile-browsing-will-get-both-better-and-worse#axzz2IFWc81o0
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/introduction

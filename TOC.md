@@ -69,12 +69,15 @@ Table of Contents
         - Target Devices and Breakpoints
         - Breakpoint Mixin
         - Em's and Media Queries
-        - Susy Breakpoint Set Up
-        - Using Susy Breakpoints
     - Flexible Media
 
 #### Chapter 7
-- [Device Detection][Chapter 7]
+- [Susy Breakpoints][Chapter 7]
+        - Set Up
+        - Using Susy Breakpoints
+
+#### Chapter 8
+- [Device Detection][Chapter 8]
     - Mobylette
     - Mobvious
         - Usage
@@ -89,8 +92,8 @@ Table of Contents
 
 ### [Section III - Look and Feel][Section III]
 
-#### Chapter 8
-- [Information Architecting][Chapter 8]
+#### Chapter 9
+- [Information Architecting][Chapter 9]
     - A Mosaic of Information
     - The Storyline
     - Gathering and Organizing Information
@@ -102,8 +105,8 @@ Table of Contents
     - Feedback and Testing
     - What We've Done
 
-#### Chapter 9
-- [Visual Design for the Nondesigner][Chapter 9]
+#### Chapter 10
+- [Visual Design for the Nondesigner][Chapter 10]
     - Paradigm Shift
     - Typography
         - Font Family
@@ -123,8 +126,8 @@ Table of Contents
     - Other Resources
         - What We've Done
 
-#### Chapter 10
-- [Slicing and Dicing Mockups][Chapter 10]
+#### Chapter 11
+- [Slicing and Dicing Mockups][Chapter 11]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
   - Step 3 - Fonts
@@ -211,12 +214,13 @@ Table of Contents
 [Section II]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-2.md
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md
 [Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md
-[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-device-detection.md
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy-breakpoints.md
+[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md
 
 [Section III]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-3.md
-[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-information-architecting.md
-[Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-visual-design-for-the-nondesigner.md
-[Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-slicing-and-dicing-mockups.md
+[Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md
+[Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md
+[Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md
 
 [Images]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/images.md
 [Forms]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/forms.md
