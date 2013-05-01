@@ -27,7 +27,11 @@ Fast-forward to today and you can still effectively use device user agents and t
 Mobylette
 ---------
 
-To deliver our mobile views lets experiment with one of the quickest and simplest solutions: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
+To deliver our mobile views lets experiment with one of the quickest and simplest solutions: Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface.
+
+### Set Up
+
+Here are the steps you will follow to implement this solution:
 
 *Step 1:* Copy all the [base-mobile][] files from the mobylette folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 
@@ -59,7 +63,7 @@ And that's it!
 
 One thing that you may have noticed is that there certainly does seem to be a lot of repetition in our code, two files for almost everything. One of the key arguments for Responsive Web Design is the elimination of duplication. We will investigate this option thoroughly, but before then let's try one more user agent sniffing solution.
 
-NOTE: I like to use [User Agent Switcher][] to test on my desktop. Give it a try.
+NOTE: If you use Firefox try [User Agent Switcher][] to test on your desktop.
 
 Mobvious
 --------
@@ -70,7 +74,11 @@ For an alternative to Mobylette we will try a gem called [Mobvious][]. It is a r
 2.  URL pattern matching
 3.  Remembering a user's manual choice
 
-In other words it gives us more options, although we will only be experimenting with the first. Here are the steps we will follow to configure Mobvious for our needs:
+In other words it gives us more options.
+
+### Set Up
+
+Here are the steps we will follow to configure Mobvious for our needs:
 
 *Step 1:* Copy all the [base-mobile][] files from the mobvious folder and place them into their corresponding directories, i.e. stylesheets/mobile files go in stylesheets/mobile in your application.
 

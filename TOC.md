@@ -83,7 +83,9 @@ Table of Contents
 #### Chapter 8
 - [Device Detection][Chapter 8]
     - Mobylette
+        - Set Up
     - Mobvious
+        - Set Up
         - Usage
         - Mobile Views
     - A Hybrid Approach
