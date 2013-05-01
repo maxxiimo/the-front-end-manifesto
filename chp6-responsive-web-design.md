@@ -559,9 +559,9 @@ For illustration purposes let's color *.left-side* and *.right-side* red and blu
         +span-columns(5 omega, $break9)
         background-color: blue
 
-In this case we only need to apply the background color to the 9 column breakpoint because it will trickle down to the 12 column layout.
+In this case we only need to apply the background color to the 9 column breakpoint. It will trickle down to the 12 column layout so long as nothing at that breakpoint overrides the setting.
 
-If you're not too sure how this is all working, in addition to the Susy's own [reference][source], the following discussion hits the nail right on the head when it comes to understanding how to use Susy breakpoints:
+If you're not too sure how this all is working, in addition to the Susy's own [reference][source], the following discussion hits the nail right on the head when it comes to understanding how to use Susy breakpoints:
 
 - [Susy and Media Queries (guide for Muppets)][Muppets]
 
