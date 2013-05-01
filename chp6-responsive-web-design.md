@@ -346,11 +346,11 @@ That's a lot to digest, and as usual I'm going to point you to some references t
 
 NOTE: You can convert pixels to em's by dividing the pixels by 16: assumption being that the default screen size is 16 pixels and therefore 1em = 16px.
 
-### Susy Breakpoints
+### Susy Breakpoint Set Up
 
-One of the great features of Susy is that breakpoints are baked right in. We could use the breakpoints we created above, but why not take advantage of the mathematical capabilities of Susy and also be consistent with our grid system at the same time? Sounds like a good idea, and here's how we will use Susy breakpoints in our project.
+One of the great features of Susy is that breakpoints are baked right in. We could use the breakpoints we created above, but why not take advantage of the mathematical capabilities of Susy and also be consistent with our grid system at the same time? Sounds like a good plan, and here's how we will use Susy breakpoints in our project.
 
-First, let's redefine our Susy flexible grid as follows:
+**Step 1**: Redefine our Susy flexible grid in *application.scss* as follows:
 
     $total-columns:     4;
     $column-width:      4em;
@@ -366,7 +366,9 @@ First, let's redefine our Susy flexible grid as follows:
     $break11:           11;
     $break12:           12;
 
-We're starting from a total column size of 4 instead of 12 since we are approaching development from a mobile first perspective. Then I add breakpoints from 5 to 12 column layouts. I do this because I want to test which breakpoints and corresponding grid layouts are best for the devices I'm targeting. To help me identify the breakpoint being utilized I set up and colorcode my breakpoints as follows:
+We're starting from a total column size of 4 instead of 12 since we are approaching development from a mobile first perspective. Then I add breakpoints for 5 to 12 column layouts using variables. I define an additional eight breakpoints on top of the base grid size because I want to test which breakpoints and corresponding layouts are best suited for the devices I'm targeting.
+
+**Step 2**: In *_layout.sass* call the Susy at-breakpoint mixin for each breakpoint defined above as follows:
 
     .container
       +container($total-columns, $break5, $break6, $break7, $break8, $break9, $break10, $break11, $break12)
@@ -404,7 +406,9 @@ We're starting from a total column size of 4 instead of 12 since we are approach
         +susy-grid-background
         background-color: white
 
-This produces the following @media rules:
+NOTE: To help me identify the breakpoint being utilized when testing devices I also included a colorcode for each breakpoint and the Susy susy-grid-background mixin - which outlines each column with a background.
+
+If you're curious, the above code produces the following @media rules:
 
     @media (min-width: 24em) {
       .container {
@@ -446,13 +450,13 @@ This produces the following @media rules:
         *omitted*
       }
 
-As you can see it is very similar to what we created manually except Susy calculates all the breakpoints based on the grid we defined and the following formula:
+As you can see it is very similar to what we created manually except Susy calculates all the breakpoints for us based on the total columns for each breakpoint we defined and the following formula:
 
 ($total-columns x $column-width) + (($total-columns - 1) x $gutter-width)
 
 (12 x 4em) + ((12 - 1) x 1em) = 59em
 
-...and remember that since we're using a base font size of 16px, if you multiply the em's value by that number you will get the equivalent breakpoints in pixels:
+Since we're using a base font size of 16px, if you multiply the em's value by 16 you will get the equivalent breakpoints in pixels:
 
 -  2 columns:  9em x 16px = 144px
 -  3 columns: 14em x 16px = 224px
@@ -466,14 +470,14 @@ As you can see it is very similar to what we created manually except Susy calcul
 - 11 columns: 54em x 16px = 864px
 - 12 columns: 59em x 16px = 944px
 
-After reviewing the grid on several different devices I settle on the following breakpoints:
+**Step 3**: Test your breakpoints. After reviewing the grid on several different devices I settle on the following:
 
 - 4 columns, 19em x 16px = 304px (Samsung, iPhone)
 - 6 columns, 29em x 16px = 464px (Small Tablet)
 - 9 columns, 44em x 16px = 704px (iPad)
 - 12 columns, 59em x 16px = 944px (Desktop)
 
-I then remove the unneeded breakpoints which leaves the following Susy definition:
+**Step 4**: Remove the unneeded breakpoints from *application.scss* which in my case leaves the following definitions:
 
     $total-columns:     4;
     $column-width:      4em;
@@ -484,7 +488,7 @@ I then remove the unneeded breakpoints which leaves the following Susy definitio
     $break9:            9;
     $break12:           12;
 
-...and in our styles:
+**Step 5**: In *_layout.sass* remove the unneeded breakpoints plus the color-coded backgrounds:
 
     .container
       +container($total-columns, $break6, $break9, $break12)
@@ -499,7 +503,9 @@ I then remove the unneeded breakpoints which leaves the following Susy definitio
       +at-breakpoint($break12)
         +susy-grid-background
 
-Now when you need to apply a particular style to a specific screen size use these breakpoints.
+And that's it! Now when you need to apply a particular style to a specific screen size use these breakpoints.
+
+### Using Susy Breakpoints
 
 Here is a practical example using the Flexible Grids section example we've been working with. Since our four column base setting is designed for smaller screen sizes, we might want to stack the .left-side and .right-side div's (rather than have them appear cramped side-by-side), but for the remaining three breakpoints we will apply grid widths that will result in a 50-50 side-by-side placement. For illustration purposes let's color .left-side and .right-side red and blue, but only for our two largest screen sizes: ipad and desktops, i.e. $break9 and $break12.
 
