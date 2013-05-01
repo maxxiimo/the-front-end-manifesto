@@ -96,13 +96,13 @@ To test that Mobvious is working you can add the following helper method in *app
 
 NOTE: For an even simpler solution checkout [Mobylette][Appendix 4] in the Appendices.
 
-### Usage
+### Usage: Mime Types
 
 Now that we have Mobvious set up, here is how we will use it.
 
-To begin we will add a bit of [Ryan Bates mobile solution][Ryan Bates] to our Mobvious implementation. Part of his solution creates a new mime type (:mobile), and uses a before_filter to test if an incoming request is mobile. If true, the before_filter sets the mime type to :mobile and only files named with the ".mobile.haml" extension are served to mobile requests.
+To begin we will add a bit of [Ryan Bates mobile solution][Ryan Bates] to our Mobvious implementation. Part of his solution creates a new mime type, *:mobile*, and uses a *before_filter* to test if an incoming request is mobile. If true, the *before_filter* sets the mime type to *:mobile* and only files named with the "*.mobile.haml*" extension are served to mobile requests.
 
-To do this in our application in conjunction with Mobvious we add the following to application_controller.rb:
+To do this in our application in conjunction with Mobvious, we add the following *before_filter* and private method *prepare_for_mobile* to *application_controller.rb*:
 
     class ApplicationController < ActionController::Base
       protect_from_forgery
@@ -119,15 +119,15 @@ To do this in our application in conjunction with Mobvious we add the following 
       end
     end
 
-...and the following to /config/initializers/mime_types.rb:
+We then register the *:mobile* mime type in *config/initializers/mime_types.rb*:
 
     Mime::Type.register_alias "text/html", :mobile
 
-Just like in the Mobylette solution, requests from mobile devices are detected by Mobvious and served the correct markup and styles. Of course we will need to create all the new .html.mobile views, and again like in the Mobylette solution, I'm feeling like there are way too many files in our app/views folder – some ending with ".html.haml" others with ".mobile.haml".
+Don't forget to restart your server, and with that, requests from mobile devices detected by Mobvious will be served *.html.mobile views*. Only one is included in our base mobile files, but I'm beginning to get concerned that as we move along development, we will find that we have way too many files in our *app/views* folder – some ending with "*.html.haml*" others with "*.mobile.haml*".
 
 NOTE: If you use Firefox try [User Agent Switcher][] to test on your desktop.
 
-### Mobile Views
+### Mobile Views: Organization
 
 To better organize, and reduce clutter and even repetition, let's keep our mobile views separate from our regular views.
 

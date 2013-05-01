@@ -84,8 +84,8 @@ Table of Contents
 - [Device Detection][Chapter 8]
     - Mobvious
         - Set Up
-        - Usage
-        - Mobile Views
+        - Usage: Mime Types
+        - Mobile Views: Organization
     - A Hybrid Approach
         - File Structure
         - Susy-based Mobile RWD
