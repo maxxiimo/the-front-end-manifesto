@@ -134,7 +134,7 @@ Commit your changes.
 
 The following files should have been modified or added to your repository:
 
-<img src="http://chrismaxwell.com/manifesto/chp-1/new-files.gif" alt="" width="640" height="461" />
+![][New Files]
 
 #### Task 4: Gemfile
 

@@ -43,7 +43,7 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
 
 **Step 1:** Copy all the [base-mobile][] files from the mobvious folder and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application. You should be able to clean the merge the files. When you are finished the following files will have been added to your repository:
 
-<img src="http://chrismaxwell.com/manifesto/chp-8/new-files.gif" alt="" width="796" height="392" />
+![][new-files]
 
 **Step 2:** Add the following to your application.rb file:
 
