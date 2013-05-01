@@ -21,6 +21,7 @@ Flexible Grids
 
 The first component of Responsive Web Design is the "flexible, grid-based layout." In layman's terms this means a webpage that proportionally redraws itself to fit inside whatever device it is drawn in.
 
+<br>
 ![][Devices]
 
 Code wise this translates into a layout [grid][] whose dimensions resize proportionately to the screen size or viewport it renders within. For example, if a pages major containing element -- the \<body> tag or containing \<div> -- were defined with a width of 960 pixels, as the screen real estate decreased, let's say when viewed on a tablet, it wouldn't make sense to continue to draw the element at a size greater than the screen real estate available. If you did, content like text might get cut off in unpredictable places by the tablets smaller screen. Users would have to scroll left and right, line after line, to read it. What a pain that would be. It would make better sense to decrease the width of the element to 768 pixels when viewed through a tablet, and by less when viewed on smartphones.
