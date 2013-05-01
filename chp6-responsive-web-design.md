@@ -198,7 +198,7 @@ The goal of Responsive Web Design is to respond to different screen sizes with c
 
 ### Media Types
 
-Media dependent stylesheets were first specified in the HTML4 and CSS2 W3C recommendations, and were designed to allow developers to target different devices through [media types][]: all, braille, embossed, handheld, print, projection, screen, speech, tty, tv. The idea was that through these media types, devices the belonged to a specific type could be targeted using @media or @import rules, or the HTML \<link> element, and served styles that applied to them and not other types. For example:
+Media dependent stylesheets were first specified in the HTML4 and CSS2 W3C recommendations, and they were designed to allow developers to target different devices through [media types][]: all, braille, embossed, handheld, print, projection, screen, speech, tty, tv. The idea was that through these media types, devices that belonged to a specific type could be targeted using *@media* or *@import* rules, or the HTML *\<link>* element, and served styles that applied to them and not other types. For example:
 
     %link{:href => "screen.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "print.css", :media => "print", :rel => "stylesheet", :type => "text/css"}
