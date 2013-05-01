@@ -198,7 +198,7 @@ Appendix 4
 
 One of the quickest and simplest solutions to deliver mobile views is Tiago Scolari's [mobylette][] gem with [jQuery Mobile][jQuery Mobile Home] for our user interface. Here are the steps you will follow to implement this solution:
 
-**Step 1:** Copy all the [base-mobile][] files from the mobylette folder and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application.
+**Step 1:** Copy all the [base-mobile][] files from the default folder followed by the mobylette folder, and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application.
 
 **Step 2:** Add the following to your *application.rb* file:
 
