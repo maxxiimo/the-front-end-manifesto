@@ -148,7 +148,7 @@ Now, in addition to our mime type, we have designated a specific view path as th
 
 More importantly, with a common mime type we can now use the same views for both desktop and mobile devices through Rails [template inheritance][] -- your application will default to regular views when mobile views are not available. This is especially useful when making an existing app mobile friendly; a little bit at a time.
 
-**Step 3**: To complete the mobile views reorganization, delete the mime type we defined in *mime_types.rb*, and remove the *request.format = :mobile* line from the *prepare_for_mobile method*.
+**Step 3**: To complete the mobile views reorganization, delete the mime type we defined from the previous section (it can be found in *mime_types.rb*), and remove the *request.format = :mobile* line from the *prepare_for_mobile method*.
 
 **Step 4**: Finally, don't forget to rename your mobile views extensions from *mobile.haml* back to *.html.haml*.
 
