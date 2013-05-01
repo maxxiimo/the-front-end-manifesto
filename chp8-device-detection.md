@@ -1,7 +1,7 @@
 Device Detection
 ================
 
-The challenges of mobile development in 2007:
+At Fidelity Investments, where I worked in 2007 helping develop their then new mobile offering, we face many challenges with the mobile landscape of that time:
 
 1.  Bandwidth, latency, and CPU issues were significantly worse than what we experience today.
 2.  Screen sizes were much more varied, and smaller than today.
@@ -14,15 +14,15 @@ The challenges of mobile development in 2007:
 9.  Browsers rendered and/or supported languages inconsistently.
 10. There were competing protocols (WAP vs. HTTP) and markup languages (Wireless Markup Language - WML, XHTML Mobile Profile / XHTML Basic, HTML) which meant parsing issues and greater complexity.
 
-At Fidelity Investments where I worked in 2007 helping develop their then new mobile offering, under these challenges, our goal was to cover 99.999% of all web-enabled mobile phones that our customers used. To accomplish this we developed a super dumbed down HTML 1.0 template that would render correctly on 90% of customer devices, and for the remaining edge cases serve an alternative template. We were able to do this by analyzing device HTTP_ACCEPT and HTTP_USER_AGENT headers, i.e. user agent sniffing.
+Under these challenges, our goal was to cover 99.999% of all web-enabled mobile phones that our customers used. To accomplish this we developed a super dumbed down HTML 1.0 template that would render correctly on 90% of customer devices, and for the remaining edge cases serve an alternative template. We were able to do this by analyzing device HTTP_ACCEPT and HTTP_USER_AGENT headers, i.e. user agent sniffing.
 
 > The User-Agent request-header field contains information about the user agent originating the request. This is for statistical purposes, the tracing of protocol violations, and automated recognition of user agents for the sake of tailoring responses to avoid particular user agent limitations.
 
 \- [Hypertext Transfer Protocol -- HTTP/1.1, Section 14.43 User-Agent][User-Agent]
 
-Over time Fidelity developed an extensive database of devices their global customer base used which included information about the devices screen size, operating system, browser, and other pertinent information. Armed with this Fidelity could then serve markup depending on the request and the information it contained.
+Over time Fidelity developed an extensive database of devices their customers used which included information about the devices screen size, OS, browser, protocol support, and more. Armed with this information Fidelity could then serve markup depending on the device request and the information it contained.
 
-Fast-forward to today, and you can still effectively use device user agents and third-party databases to identify device characteristics and based on this information serve appropriate markup and styles. Doing this in Rails is not too difficult. Take a look at the [Mobile Solutions Roundup][Appendix 3] in the Appendices to get an idea of what's available.
+Fast-forward to today and you can still effectively use device user agents and third-party databases to serve device appropriate markup and styles to your users. In fact in Rails this is not difficult. Take a look at the [Mobile Solutions Roundup][Appendix 3] in the Appendices to get an idea of what you can do in Rails. In this chapter we will cover a few of these.
 
 Mobylette
 ---------
