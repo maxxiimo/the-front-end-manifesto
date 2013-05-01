@@ -100,7 +100,7 @@ NOTE: For an even simpler solution checkout [Mobylette][Appendix 4] in the Appen
 
 Now that we have Mobvious set up, here is how we will use it.
 
-To begin we will add a bit of [Ryan Bates mobile solution][Ryan Bates] to our Mobvious implementation. Part of his solution creates a new mime type, *:mobile*, and uses a *before_filter* to test if an incoming request is mobile. If true, the *before_filter* sets the mime type to *:mobile* and only files named with the "*.mobile.haml*" extension are served to mobile requests.
+To begin we will add a bit of [Ryan Bates mobile solution][Ryan Bates] to our Mobvious implementation. Part of his solution creates a new mime type, *:mobile*, and uses a *before_filter* to test if an incoming request is mobile. If true, the *before_filter* sets the mime type to *:mobile* and only files named with the *.mobile.haml* extension are served.
 
 To do this in our application in conjunction with Mobvious, we add the following *before_filter* and private method *prepare_for_mobile* to *application_controller.rb*:
 
@@ -123,15 +123,15 @@ We then register the *:mobile* mime type in *config/initializers/mime_types.rb*:
 
     Mime::Type.register_alias "text/html", :mobile
 
-Don't forget to restart your server, and with that, requests from mobile devices detected by Mobvious will be served *.html.mobile views*. Only one is included in our base mobile files, but I'm beginning to get concerned that as we move along development, we will find that we have way too many files in our *app/views* folder – some ending with "*.html.haml*" others with "*.mobile.haml*".
+Don't forget to restart your server, and with that, requests from mobile devices detected by Mobvious will be served *.html.mobile views*. Only one is included in our base mobile files, but I'm beginning to get concerned that as we move along development, we will find that we have way too many files in our *app/views* folder – some ending with *.html.haml* others with *.mobile.haml*.
 
 NOTE: If you use Firefox try [User Agent Switcher][] to test on your desktop.
 
-### Mobile Views: Organization
+### Mobile Views: Reorganization
 
-To better organize, and reduce clutter and even repetition, let's keep our mobile views separate from our regular views.
+To better organize, and reduce clutter, let's keep our mobile views separate from our regular views.
 
-Create a new app/views/mobile folder and move all mobile views there. We tell Rails that our mobile views are located here by adding the following to the prepare_for_mobile method in application_controller.rb:
+Create a new *app/views/mobile* folder and move all mobile views there. We tell Rails that our mobile views are now located in this directory by adding the *prepend_view_path* to the *prepare_for_mobile* method in *application_controller.rb*:
 
     def prepare_for_mobile
       if request.env['mobvious.device_type'] == :mobile
@@ -140,18 +140,17 @@ Create a new app/views/mobile folder and move all mobile views there. We tell Ra
       end
     end
 
-Now in addition to our mime type, we have designated a specific view path as the location to organize our mobile views.
+With this, in addition to our mime type, we have designated a specific view path as the location to organize our mobile views.
 
-With this new folder structure in place there really no longer is a need for a mobile mime type, plus with a common mime type you can use the same partials for both desktop and mobile devices. Through Rails [template inheritance][] your application will default to regular views when mobile views in the new mobile folder are not available – which is especially useful when making an existing app mobile friendly a little bit at a time.
+With this new folder structure in place there really no longer is a need for a mobile mime type, plus with a common mime type you can use the same partials for both desktop and mobile devices through Rails [template inheritance][] -- your application will default to regular views when mobile views are not available.
 
-Remove:
+NOTE: This is especially useful when making an existing app mobile friendly; a little bit at a time.
 
-- the mime type we defined in mime_types.rb
-- request.format = :mobile in application_controller.rb in the preparer_for_mobile method
+To complete the mobile views reorganization delete the mime type we defined in *mime_types.rb*, and removed the *request.format = :mobile* line from the *prepare_for_mobile method*.  Finally, don't forget to rename your mobile views back to *.html.haml* from * mobile.haml*.
 
-If you prefer to organize your mobile views outside of the regular app/views path, for example in app/views_mobile, swap the prepend_view_path with:
+If you prefer to organize your mobile views outside of the regular *app/views* path, for example in *app/views_mobile*, swap the *prepend_view_path* with:
 
-         prepend_view_path Rails.root + 'app' + 'views_mobile'
+    prepend_view_path Rails.root + 'app' + 'views_mobile'
 
 A Hybrid Approach
 -----------------

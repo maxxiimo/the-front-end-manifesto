@@ -85,7 +85,7 @@ Table of Contents
     - Mobvious
         - Set Up
         - Usage: Mime Types
-        - Mobile Views: Organization
+        - Mobile Views: Reorganization
     - A Hybrid Approach
         - File Structure
         - Susy-based Mobile RWD
