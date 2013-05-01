@@ -65,12 +65,10 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
 
 **Step 5:** Add the following includes:
 
-    *application_controller.rb*:
-
+    application_controller.rb:
     include Mobvious::Rails::Controller
 
-    *application_helper.rb*
-
+    application_helper.rb:
     include Mobvious::Rails::Helper
 
 **Step 6:** Create an initializer file *config/initializers/mobvious.rb* and configure it as follows:
