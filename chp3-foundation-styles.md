@@ -122,6 +122,8 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
         # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
         config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
+    \- [Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work]
+
 Commit your changes and that's it! You now have Compass and all that it brings available to you.
 
 Some additional resources for working with Compass include:
