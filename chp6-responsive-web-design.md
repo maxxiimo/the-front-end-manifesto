@@ -209,19 +209,19 @@ Sounds good right? The problem, however was that in practice its implementation 
 
 #### Media Queries to the Rescue
 
-With inconsistent browser implementation and so many screen sizes and new devices coming to market, developers found that using media types alone to serve up styles for specific devices was impractical. On June 19, 2012, although in practice well before this, an official W3C recommendation was released that greatly expanded the capabilities of media types through media queries:
+With inconsistent browser implementation and so many screen sizes and new devices coming to market, developers found that using media types alone to serve up styles for specific devices was impractical. On June 19, 2012, although in practice well before this, an official W3C recommendation was released that greatly expanded the capabilities of media types:
 
 > A media query consists of a media type and zero or more expressions that check for the conditions of particular media features. Among the media features that can be used in media queries are ‘width’, ‘height’, and ‘color’. By using media queries, presentations can be tailored to a specific range of output devices without changing the content itself.
 
 \- [Media Queries - W3C Recommendation 19 June 2012][Media Queries]
 
-Unlike media types, media queries, do not solely rely on just a handful of predefined types. Media queries are much more flexible in that they allow developers to test a media type with a logical expression that evaluates to true or false. For example:
+Unlike media types, media queries, do not rely only on a handful of predefined types. Media queries are much more flexible in that they allow developers to test a media type with a logical expression that evaluates to true or false. For example:
 
     @media (max-width: 480px) { color: red }
 
-In this case, the media type "All" (implied by shorthand syntax) is matched against a devices user agent. If it evaluates to trueBeen the device is then tested for a maximum width of 480px. If it passes the second test the specified styles, the color red, is applied. If false it is not, and the device continues to use the default font color. A smart phone in portrait and landscape mode would pass this test, a desktop computer would not.
+In this case, the media type "All" (implied by shorthand syntax) is matched against a devices user agent. If it evaluates to true the device is then tested for a maximum width of 480 pixels. If it passes the second test, the specified styles, a red font color, is applied. If false, it is not, and the device continues to use the default font color. A smart phone in portrait and landscape mode would pass this test, a desktop computer would not.
 
-In addition to max-width, media queries allow you to test for a broader range of conditions including minimum widths, heights, screen orientation, [and more][]. Perfect for serving up device sensitive styles and content to a wide range of devices.
+In addition to *max-width*, media queries allow you to test for a broader range of conditions including minimum widths, heights, screen orientation, [and more][]. Perfect for serving up device sensitive styles and content to a wide range of devices and screen sizes.
 
 ### Target Devices
 
