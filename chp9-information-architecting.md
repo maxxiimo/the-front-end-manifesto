@@ -157,6 +157,7 @@ Here are some device mockup resources that will help you sketch:
 - [Generated Paper][]
 - [Interface Sketch][]
 - [Responsive Sketchsheets][]
+- [UX Sketching And Wireframing Templates For Mobile Projects][Mobile Sketching]
 
 To begin just simply translate what you indexed in the previous section into what it might look like on a screen. Here's what my paper prototype process looks like starting with a blank sheet of paper next to my index cards and ending with a paper prototype:
 
@@ -271,6 +272,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Generated Paper]:      http://generatedpaper.com/en/wireframing
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
+[Mobile Sketching]:     http://uxdesign.smashingmagazine.com/2012/09/18/free-download-ux-sketching-wireframing-templates-mobile/
 
 [Chapter 5 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#using-susy
 [Compass offers]:       http://compass-style.org/reference/compass/layout/grid_background/
