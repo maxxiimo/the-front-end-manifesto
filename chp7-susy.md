@@ -43,7 +43,7 @@ Implementation
 
 To implement Susy into your application follow these steps:
 
-*Step 1*: Define the [basic settings][] of your grid in *application.scss*:
+*Step 1*: Define the [basic settings][] for your Susy grid in *application.scss*:
 
     /* DEFINITIONS
       ============================================================================ */
@@ -65,7 +65,7 @@ To calculate the total width of your grid, including its padding, use the follow
 
 (12 x 4em) + ((12 - 1) x 1em) + (1em x 2) = 61em
 
-*Step 2*: Create an [outer grid-containing element][.container] in *application.html.haml* called .container:
+*Step 2*: Create an [outer grid-containing element][.container] in *application.html.haml* called *.container*:
 
     %body
       .container
