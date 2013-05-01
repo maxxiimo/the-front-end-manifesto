@@ -203,9 +203,9 @@ Media dependent stylesheets were first specified in the HTML4 and CSS2 W3C recom
     %link{:href => "screen.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "print.css", :media => "print", :rel => "stylesheet", :type => "text/css"}
 
-In this example screen.css would be served only to devices that were of the "screen" type, and print.css was served to devices of the "print" type.
+In this example *screen.css* would be served only to devices that were of the "screen" type, and *print.css* was served to devices of the "print" type.
 
-The problem with this specification in practice for mobile was inconsistent implementation across mobile browsers, plus the list of media types did not accommodate the wide range of device types, especially in regards to different screen sizes. And that's essentially where media queries come in and save the day.
+Sounds good right? The problem, however was that in practice its implementation was inconsistent across mobile browsers, plus the list of media types did not accommodate the wide range of device types, especially in regards to different screen sizes. And that's essentially where media queries come in to save the day.
 
 #### Media Queries to the Rescue
 
