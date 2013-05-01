@@ -96,7 +96,7 @@ To test that Mobvious is working you can add the following helper method in *app
 
 NOTE: For an even simpler solution checkout [Mobylette][Appendix 4] in the Appendices.
 
-### Usage: Mime Types
+### Mime Types
 
 Now that we have Mobvious set up, here is how we will use it.
 
@@ -127,7 +127,7 @@ Don't forget to restart your server, and with that, requests from mobile devices
 
 NOTE: If you use Firefox try [User Agent Switcher][] to test on your desktop.
 
-### Mobile Views: Reorganization
+### Reorganization
 
 To better organize and reduce clutter in our views, let's store our mobile views in a separate folder than our regular views.
 
