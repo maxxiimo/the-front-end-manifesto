@@ -270,7 +270,7 @@ Having defined our target devices, and to drill a point home, I want to quote Ha
 
 \- [Browser screen resolution stats rile devs][Happy Cog]
 
-### A Breakpoints Mixin
+### Breakpoint Mixin
 
 Our [starter CSS][] includes a breakpoint mixin called [_media_queries.sass][] that looks like this:
 

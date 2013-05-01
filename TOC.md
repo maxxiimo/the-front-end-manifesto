@@ -66,8 +66,8 @@ Table of Contents
         - Using Susy
     - Media Queries
         - Media Types
-        - Target Devices
-        - Breakpoints
+        - Target Devices and Breakpoints
+        - Breakpoint Mixin
         - Em's and Media Queries
         - Susy Breakpoints
     - Flexible Media
