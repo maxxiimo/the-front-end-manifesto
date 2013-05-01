@@ -1,7 +1,7 @@
 Device Detection
 ================
 
-At Fidelity Investments, where I worked in 2007 helping develop their then new mobile offering, we face many challenges with the mobile landscape of that time:
+At Fidelity Investments, where I worked in 2007 - helping develop their then new mobile offering, we faced many challenges developing for the mobile landscape that existed back then:
 
 1.  Bandwidth, latency, and CPU issues were significantly worse than what we experience today.
 2.  Screen sizes were much more varied, and smaller than today.
