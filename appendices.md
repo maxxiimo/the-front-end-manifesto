@@ -198,9 +198,9 @@ Appendix 4
 
 One of the quickest and simplest solutions to deliver mobile views is Tiago Scolari's [mobylette][] gem with [jQuery Mobile][] for our user interface. Here are the steps you will follow to implement this solution:
 
-*Step 1:* Copy all the [base-mobile][] files from the mobylette folder and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application.
+**Step 1:** Copy all the [base-mobile][] files from the mobylette folder and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application.
 
-*Step 2:* Add the following to your *application.rb* file:
+**Step 2:** Add the following to your *application.rb* file:
 
     # Precompile *all* assets, except those that start with underscore per:
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
@@ -208,18 +208,18 @@ One of the quickest and simplest solutions to deliver mobile views is Tiago Scol
 
 \- [Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work]
 
-*Step 3:* Add the following gem to your *Gemfile* and then bundle install:
+**Step 3:** Add the following gem to your *Gemfile* and then bundle install:
 
     gem 'mobylette'
 
-*Step 4:* Add the following to *application_controller.rb*:
+**Step 4:** Add the following to *application_controller.rb*:
 
     include Mobylette::RespondToMobileRequests
     mobylette_config do |config|
       config[:skip_xhr_requests] = false
     end
 
-*Step 5:* Add the following to *config/environments/production.rb*:
+**Step 5:** Add the following to *config/environments/production.rb*:
 
     # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
     config.assets.precompile += %w( modernizr-2.6.2.min.js, jquery.mobile-1.2.0.css )
@@ -888,7 +888,10 @@ Color palette creation and sharing tools.
 [WURFL]:                http://wurfl.sourceforge.net/
 [Mobile Strings]:       http://www.zytrax.com/tech/web/mobile_ids.html
 
-
+[base-mobile]:          https://github.com/maxxiimo/base-mobile
+[mobylette]:            https://github.com/tscolari/mobylette
+[jQuery Mobile]:        http://jquerymobile.com/
+[Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
 
 [Awwwards]:             http://www.awwwards.com/
 [Pattern Tap]:          http://patterntap.com/

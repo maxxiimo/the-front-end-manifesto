@@ -41,7 +41,7 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
 
 ### Set Up
 
-**Step 1:** Copy all the [base-mobile][] files from the mobvious folder and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application. You should be able to clean the merge the files. When you are finished the following files will have been added to your repository:
+**Step 1:** Copy all the [base-mobile][] files from the mobvious folder and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application. You should be able to cleanly merge the files in one sweep into your project. When you are finished the following files will have been added to your repository:
 
 ![][new-files]
 
@@ -63,9 +63,14 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
     # Tell your app to use Mobvious::Manager as Rack middleware.
     config.middleware.use Mobvious::Manager
 
-**Step 5:** Add the following includes to *application_controller.rb* and *application_helper.rb*:
+**Step 5:** Add the following includes:
+
+    *application_controller.rb*:
 
     include Mobvious::Rails::Controller
+
+    *application_helper.rb*
+
     include Mobvious::Rails::Helper
 
 **Step 6:** Create an initializer file *config/initializers/mobvious.rb* and configure it as follows:
@@ -74,18 +79,21 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
       config.strategies = [ Mobvious::Strategies::MobileESP.new(:mobile_desktop) ]
     end
 
-Don't forget to restart your application, and wallah! You have a detection strategy that will detect user agents and return a variable of :mobile or :desktop depending on the device type of the request. Tablets as configured here will return :desktop as well, although you can change this.
+Don't forget to restart your application, and wallah! You have a detection strategy that will return a variable of *:mobile* or *:desktop* depending on the device type of the request. What you do that information is up to you.
+
+NOTE: Tablet devices as configured here will return :desktop as well, although you can change this.
 
 To test that Mobvious is working you can add the following helper method in *application_helper.rb*:
 
     def device_test
-        # Drop in controller: @device = request.env['mobvious.device_type']
-        no_device = "What!? That's nil bro."
-        if @device.nil?
-          no_device
-        else
-          "#{@device}"
-        end
+      # Drop in pages_controller#home: @device = request.env['mobvious.device_type']
+      # Drop in pages/home.html.haml: = device_test
+      no_device = "What!? That's nil bro."
+      if @device.nil?
+        no_device
+      else
+        "#{@device}"
+      end
     end
 
 NOTE: For an even simpler solution checkout [Mobylette][Appendix 4] in the Appendices.
@@ -328,17 +336,14 @@ To learn more visit:
 
 [Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-3
 [Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
+[base-mobile]:          https://github.com/maxxiimo/base-mobile
 
 [User-Agent]:           http://tools.ietf.org/html/rfc2616#section-14.43
 
-[mobylette]:            https://github.com/tscolari/mobylette
-[jQuery Mobile]:        http://jquerymobile.com/
-[base-mobile]:          https://github.com/maxxiimo/base-mobile
-[Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
-[User Agent Switcher]:  http://chrispederick.com/work/user-agent-switcher/
-
 [Mobvious]:             https://github.com/jistr/mobvious
+[Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
 [Ryan Bates]:           http://railscasts.com/episodes/199-mobile-devices
+[User Agent Switcher]:  http://chrispederick.com/work/user-agent-switcher/
 [template inheritance]: http://railscasts.com/episodes/269-template-inheritance
 
 [RWD Book]:             http://www.abookapart.com/products/responsive-web-design
