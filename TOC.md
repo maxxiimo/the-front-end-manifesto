@@ -72,7 +72,11 @@ Table of Contents
     - Flexible Media
 
 #### Chapter 7
-- [Susy Breakpoints][Chapter 7]
+- [Susy][Chapter 7]
+    - Set Up
+    - Implementation
+    - Susy in Action
+    - Susy Breakpoints
         - Set Up
         - Using Susy Breakpoints
 
@@ -214,7 +218,7 @@ Table of Contents
 [Section II]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-2.md
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md
 [Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md
-[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy-breakpoints.md
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md
 [Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md
 
 [Section III]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-3.md
