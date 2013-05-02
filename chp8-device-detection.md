@@ -204,7 +204,7 @@ With a few arrows let me explain:
 
 *application.scss* is served in all other cases.
 
-**(2)** Partials common to both **mobile.scss** and **application.scss**.
+**(2)** Partials common to both *mobile.scss* and *application.scss*.
 
 **(3)** All mobile related views are organized under the *mobile* folder. Desktop views are organized under the default Rails file structure.
 
