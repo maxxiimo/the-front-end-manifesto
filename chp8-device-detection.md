@@ -208,13 +208,13 @@ With a few arrows let me explain:
 
 **(3)** All mobile related views are organized under the *mobile* folder. Desktop views are organized under the default Rails file structure.
 
-**(4)** When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the *mobile* folder. When those views are not available in the *mobile* folder, through template inheritance, Rails will look for the view with the same name in the regular default location. For example, the *_logo.html.haml* partial is common to both website versions, so there is no reason repeat it.
+**(4)** When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the *mobile* folder. When those views are not available, through template inheritance, Rails will look for a view with the same name in the regular default location. For example, the *_logo.html.haml* partial is common to both website versions, so there is no reason repeat it, however, *_footer.html.haml* is unique for mobile devices and the mobile version of this file supersedes the default version.
 
-This means that we can create a second implementation of RWD under the *mobile.scss* stylesheet branch. Doing so will not affect our first implementation.
+What this all means is that we can create a second implementation of RWD under the *mobile.scss* stylesheet branch, and by doing so will not affect our first default RWD implementation.
 
 ### Susy-based Mobile RWD
 
-Now that we have reviewed where everything belongs, let's set up the mobile version of our website.
+With this knowledge let's set up the mobile RWD version of our website.
 
 First, import Susy into app/assets/stylesheets/mobile.scss:
 
