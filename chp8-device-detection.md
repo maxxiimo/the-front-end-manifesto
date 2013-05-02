@@ -267,19 +267,17 @@ That's it! How will this work?
 
 It all starts with the question, "is the request coming from a mobile device?" (Does Mobvious return *:desktop* or *:mobile*?)
 
-**If true**, *views/mobile/layout/application.html.haml* will be served and through:
+**If true**, *views/mobile/layouts/application.html.haml* will be served and through:
 
     = stylesheet_link_tag "mobile"
 
-...*mobile.scss* , the mobile stylesheet will be included.
+... *mobile.scss* , the mobile stylesheet will be included.
 
 NOTE: *views/mobile/layouts/application.html.haml* is coded with mobile in mind only. Compare the desktop and mobile versions of *head.html.haml* and you will see that they are significantly different from one another. One draws from regular [HTML5 Boilerplate][] and the other from [Mobile Boilerplate][].
 
-**If false**, application.scss along with of the mobile version of application.html.haml will be served.
+**If false**, *views/layouts/application.html.haml* will be served along with the desktop optimized stylesheet *application.scss*.
 
-NOTE: *views/layouts/application.scss* is designed to take advantage of the greater capabilities of devices with > 9 columns (704 pixels) screen widths.
-
-If a false positive squeaks by, the desktop version of *application.scss* is coded to handle the < 6 columns cases as well (although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized).
+NOTE: *views/layouts/application.scss* is designed to take advantage of the greater capabilities of devices with > 9 columns (704 pixels) screen widths. If a false positive squeaks by, the desktop version of *application.scss* is coded to handle the < 6 columns cases as well (although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized).
 
 I personally really like this approach. To see how I have organized this in a live application, feel free to clone or poke around https://github.com/maxxiimo/viewthought.
 
