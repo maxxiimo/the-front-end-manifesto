@@ -242,10 +242,9 @@ To start our mobile implementation we will do the same in *mobile.scss*, but onl
 
 NOTE: *mobile.scss* is coded to optimally handle devices with column widths of < 6 columns (464 pixels).
 
-Then, create the outer grid-containing element in *app/views/mobile/layouts/application.html.haml*:
+Then, add the *.container* outer grid-containing element in *app/views/mobile/layouts/application.html.haml*:
 
     %body
-      .container
         = chromeframe
         %header{:role => "banner"}
           = render :partial => 'shared/logo'
@@ -258,7 +257,11 @@ Then, create the outer grid-containing element in *app/views/mobile/layouts/appl
 ...and add the corresponding Susy mixins in *app/assets/stylesheets/mobile/_layout.sass*:
 
     .container
-      +container
+      +container($total-columns, $break6)
+      // +susy-grid-background
+
+      +at-breakpoint($break6)
+        // +susy-grid-background
 
 That's it! How will this work?
 
