@@ -216,7 +216,7 @@ What this all means is that we can create a second implementation of RWD under t
 
 With this knowledge let's set up the mobile RWD version of our website.
 
-In our previous implementation of [Susy][] we defined the following Susy grid system in *application.scss*:
+In our [Chapter 7][] implementation of [Susy][] we defined the following Susy grid system in *application.scss*:
 
     // Susy Grid
 
