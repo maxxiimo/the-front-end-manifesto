@@ -87,6 +87,7 @@ Table of Contents
         - Mime Types
         - Reorganization
     - A Hybrid Approach
+        - How It Works
         - File Structure
         - Susy-based Mobile RWD
     - Using JavaScript

@@ -161,23 +161,27 @@ NOTE: If you prefer to organize your mobile views outside of the regular *app/vi
 A Hybrid Approach
 -----------------
 
+User agent sniffing might not be the silver bullet we seek to deliver different device optimized versions of a website. Things are happening in mobile so fast that it might be difficult to keep up with the speed of change with user agent sniffing and device databases, plus some devices might not register as *:mobile* and slip through the cracks and receive the desktop version of the website.
+
 > That’s not to say that mobile websites are inherently flawed, or that there aren’t valid business cases for creating them. But I do think fragmenting our content across different "device-optimized" experiences is a losing proposition, or at least an unsustainable one. As the past few years have shown us, we simply can’t compete with the pace of technology.
 
 \- Ethan Marcotte, [Responsive Web Design][RWD Book], p.96
 
-But what about a hybrid approach? What Ethan says here is true, things are happening so fast it might be difficult to keep up with the speed of change using User Agent Sniffing to deliver different optimized mobile version of a website, plus some devices might not register as mobile and slip through the cracks and receive the desktop version of the website.
+On the other hand, a purely responsive web design may deliver too much bloat for smaller devices with lower connection speeds, higher latency, and smaller CPUs. The idea of context sensitivity also comes into play. Perhaps your user needs are different on mobile than they are on a desktop because of the context in which they are viewing and using your application. On top of that, smaller devices require a lot more tweaks between device capabilities (from dumb phones to smart phones), and require developers to contend with a greater amount of screen size increments.
 
-On the other hand, a purely responsive web design may deliver too much bloat for smaller devices with lower connection speeds, higher latency, and smaller CPUs. The idea of context sensitivity also comes into play. Perhaps your user needs are different on mobile than they are on a desktop because of the context in which they are viewing and using your application. A hybrid approach allows you to address these needs. On top of that, smaller devices may require a lot more tweaks between device capabilities (from dumb phones to smart phones), and require developers to contend with a greater amount of screen size increments found with smaller devices. All of these factors might be good reason to keep code organized separately, not just in a separate stylesheet or in hidden and conditionally loaded elements, but as a separate system entirely.
+All of these factors might be good reason to keep code organized separately, not just in a separate stylesheet, or in hidden and conditionally loaded elements, but as a separate system entirely. A hybrid approach can meet these challenges.
 
-If we took this hybrid approach, we might do so by providing responsive web design for larger screens and tablets, and a responsive web design for small screen devices that register as mobile via our user agent detection scheme. The smaller devices then would not receive any of the bloat that may be associated to desktop and tablet versions of our website. We could also use the information available in user agent strings for even greater levels adaptation and tweaking.
+### How It Works
 
-For small screen devices that slip through the cracks, our desktop version of the site could provide a small screen responsive design backup for those devices the slip through the cracks.
+If we take a hybrid approach, we might do so by providing responsive web design for larger screens and tablets, and a separate responsive web design for small screen devices that register as mobile via our user agent detection scheme. The smaller devices then would not receive any of the bloat that may be associated with the desktop and tablet versions of our website. We could also use the information available in user agent strings for even greater levels of adaptation and tweaking.
 
-Will this be too much work? That remains to be discovered, I personally don't think so, but if we should choose to use this type of approach here is how we would do it:
+For small screen devices that slip through the cracks, our desktop version of the site then would provide a more general small screen responsive design backup for those devices.
 
-1. Leave the User Agent Sniffing solution in place.
+Will this be too much work? That remains to be discovered, I personally don't think so, but if you choose to use a hybrid approach here is how we would do it:
 
-2. Leave the Susy-based Responsive Web Design in place as is.
+1. Leave the Mobvious solution in place.
+
+2. Leave the Susy-based responsive web design implementation from [Chapter 7][] as is.
 
 3. Create a second Susy-based Responsive Web Design specifically for small devices.
 
@@ -337,6 +341,7 @@ To learn more visit:
 - [Zepto.js][]
 - [The Essentials of Zepto.js][Zepto]
 
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md
 [Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-3
 [Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
 [base-mobile]:          https://github.com/maxxiimo/base-mobile
