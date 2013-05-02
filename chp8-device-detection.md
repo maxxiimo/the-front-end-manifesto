@@ -216,14 +216,7 @@ What this all means is that we can create a second implementation of RWD under t
 
 With this knowledge let's set up the mobile RWD version of our website.
 
-First, import Susy into app/assets/stylesheets/mobile.scss:
-
-    /* BASIC STRUCTURE
-      ============================================================================ */
-    @import "susy";
-    @import "mobile/layout";
-
-In our previous implementation of Susy breakpoints we defined the following in application.scss:
+In our previous implementation of Susy breakpoints we defined the following Susy grid system in *application.scss*:
 
     // Susy Grid
 
@@ -236,7 +229,7 @@ In our previous implementation of Susy breakpoints we defined the following in a
     $break9:            9;
     $break12:           12;
 
-To start our mobile implementation we will do the same in mobile.scss, but focus only on the first two breakpoints as follows:
+To start our mobile implementation we will do the same in *mobile.scss*, but only focus on the first two breakpoints:
 
     // Susy Grid
 
@@ -247,7 +240,9 @@ To start our mobile implementation we will do the same in mobile.scss, but focus
 
     $break6:            6;
 
-Finally, create the outer grid-containing element in app/views/mobile/layouts/application.html.haml:
+NOTE: *mobile.scss* is coded to optimally handle devices with column widths of < 6 columns (464 pixels).
+
+Then, create the outer grid-containing element in *app/views/mobile/layouts/application.html.haml*:
 
     %body
       .container
@@ -260,24 +255,28 @@ Finally, create the outer grid-containing element in app/views/mobile/layouts/ap
         = render :partial => 'shared/footer'
       = scripts
 
-...and add the corresponding CSS to app/assets/stylesheets/mobile/_layout.sass:
+...and add the corresponding Susy mixins in *app/assets/stylesheets/mobile/_layout.sass*:
 
     .container
       +container
 
 That's it! How will this work?
 
-It all starts with the question, "is the request coming from a mobile device?"
+It all starts with the question, "is the request coming from a mobile device?" (Does Mobvious return *:desktop* or *:mobile*?)
 
-If true, mobile.scss along with of the mobile version of application.html.haml will be served.
+**If true**, *views/mobile/layout/application.html.haml* will be served and through:
 
-NOTE: mobile.scss is coded to optimally handle devices with column widths of < 6 columns (464px), and application.html.haml is coded with mobile in mind only. Compare the _head.html.haml files for both and you will see that they are significantly different from one another. One draws from regular [HTML5 Boilerplate][] and the other from [Mobile Boilerplate][].
+    = stylesheet_link_tag "mobile"
 
-If false, application.scss along with of the mobile version of application.html.haml will be served.
+...*mobile.scss* , the mobile stylesheet will be included.
 
-NOTE: application.scss is designed to take advantage of the greater capabilities of devices with > 9 columns (704px) screen widths.
+NOTE: *views/mobile/layouts/application.html.haml* is coded with mobile in mind only. Compare the desktop and mobile versions of *head.html.haml* and you will see that they are significantly different from one another. One draws from regular [HTML5 Boilerplate][] and the other from [Mobile Boilerplate][].
 
-If a false positive squeaks by, application.scss is coded to handle the < 6 columns cases as well (although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized).
+**If false**, application.scss along with of the mobile version of application.html.haml will be served.
+
+NOTE: *views/layouts/application.scss* is designed to take advantage of the greater capabilities of devices with > 9 columns (704 pixels) screen widths.
+
+If a false positive squeaks by, the desktop version of *application.scss* is coded to handle the < 6 columns cases as well (although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized).
 
 I personally really like this approach. To see how I have organized this in a live application, feel free to clone or poke around https://github.com/maxxiimo/viewthought.
 
