@@ -216,7 +216,7 @@ What this all means is that we can create a second implementation of RWD under t
 
 With this knowledge let's set up the mobile RWD version of our website.
 
-In our previous implementation of Susy breakpoints we defined the following Susy grid system in *application.scss*:
+In our previous implementation of [Susy][] we defined the following Susy grid system in *application.scss*:
 
     // Susy Grid
 
@@ -357,6 +357,7 @@ To learn more visit:
 [template inheritance]: http://railscasts.com/episodes/269-template-inheritance
 
 [RWD Book]:             http://www.abookapart.com/products/responsive-web-design
+[Susy]:                 http://susy.oddbird.net/
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [Mobile Boilerplate]:   http://html5boilerplate.com/html5boilerplate.com/dist/mobile/
 
