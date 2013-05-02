@@ -53,7 +53,7 @@ In our CSS we then write:
 
 Now if you were to change the size of *.container*, *.left-side* and *.right-side* would proportionally resize themselves to the new container size. Expand this example out to all grid elements including converting the 960 pixels in *.container* to a percentage, and you have a responsive grid that will resize itself depending upon the context it renders on.
 
-As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you. There is a pretty comprehensive list of [grid systems][Appendix 2] in the Appendices, but my preference is to use [Susy][] since it is a plug-in of Compass which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in. We will implement Susy into our application in the [next chapter][Chapter 7].
+As you can imagine there's quite a lot of math involved, so rather than calculate all the different percentage for your flexible grid, you can use a grid system that does this for you. There is a pretty comprehensive list of [grid systems][Appendix 2] in the Appendices, but my preference is to use [Susy][] since it is Compass plug-in, which we are already using, and more importantly it is authored by [Eric Meyer][] whom I have a great deal of confidence in. We will implement Susy into our application in [Chapter 7][].
 
 Media Queries
 -------------
