@@ -187,7 +187,7 @@ Will this be too much work? That remains to be discovered, I personally don't th
 
 ### File Structure
 
-To create a second Susy-based responsive web design specifically for small devices we are literally going to take all of the techniques we learned in [Chapter 7][], and repeat them for mobile. First let's understand where everything will belong by reviewing our current file structure:
+To create a second Susy-based responsive web design specifically for small devices we are literally going to take all of the techniques we learned in [Chapter 7][], and repeat them for mobile. First let's understand where this second RWD implementation will belong by reviewing our current file structure:
 
 ![][file-structure]
 
@@ -209,6 +209,8 @@ With a few arrows let me explain:
 **(3)** All mobile related views are organized under the *mobile* folder. Desktop views are organized under the default Rails file structure.
 
 **(4)** When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the *mobile* folder. When those views are not available in the *mobile* folder, through template inheritance, Rails will look for the view with the same name in the regular default location. For example, the *_logo.html.haml* partial is common to both website versions, so there is no reason repeat it.
+
+This means that we can create a second implementation of RWD under the *mobile.scss* stylesheet branch. Doing so will not affect our first implementation.
 
 ### Susy-based Mobile RWD
 
