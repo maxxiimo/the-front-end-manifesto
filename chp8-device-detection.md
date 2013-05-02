@@ -200,9 +200,9 @@ With a few arrows let me explain:
 - **mobile.scss** which organizes and pulls together all the partials under the *mobile* folder.
 - **application.scss** which organizes and pulls together all the partials under the *desktop* folder.
 
-**mobile.scss** is called through the mobile version of **application.html.haml** (*mobile/layouts/application.html.haml*) and served only when Mobvious detects that the device is a mobile device.
+*mobile.scss* is called through the mobile version of *application.html.haml* (*mobile/layouts/application.html.haml*) and served only when Mobvious detects that the device is a mobile device.
 
-**application.scss** is served in all other cases.
+*application.scss* is served in all other cases.
 
 **(2)** Partials common to both **mobile.scss** and **application.scss**.
 
