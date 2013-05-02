@@ -146,7 +146,7 @@ To better organize and reduce clutter in our views, let's store our mobile views
 
 Now, in addition to our mime type, we have designated a specific view path as the location to find our mobile views, but with  this new folder structure in place there really no longer is a need for a mobile mime type.
 
-More importantly, with a common mime type we can now use the same views for both desktop and mobile devices through Rails [template inheritance][] -- your application will default to regular views when mobile views are not available. This is especially useful when making an existing app mobile friendly; a little bit at a time.
+More importantly, with a common mime type we can now use the same views for both desktop and mobile devices through Rails [template inheritance][] – your application will default to regular views when mobile views are not available. This is especially useful when making an existing app mobile friendly; a little bit at a time.
 
 **Step 3**: To complete the mobile views reorganization, delete the mime type we defined from the previous section (it can be found in *mime_types.rb*), and remove the *request.format = :mobile* line from the *prepare_for_mobile method*.
 
@@ -187,28 +187,28 @@ Will this be too much work? That remains to be discovered, I personally don't th
 
 ### File Structure
 
-To create a second Susy-based responsive web design specifically for small devices we are literally going to take all of the techniques we learned in the previous section, and repeat them for mobile. First let's understand where everything will belong by revisiting the lay of the land, i.e. our file organization:
+To create a second Susy-based responsive web design specifically for small devices we are literally going to take all of the techniques we learned in [Chapter 7][], and repeat them for mobile. First let's understand where everything will belong by reviewing our current file structure:
 
 ![][file-structure]
 
-What you see is our project as it is organized up until now. To understand how this relates with a hybrid approach allow me to draw a couple arrows and explain:
+With a few arrows let me explain:
 
 ![][file-structure-w-lines]
 
 **(1)** There are two main stylesheets:
 
-- **mobile.scss** which organizes and pulls together all the partials under the mobile folder.
-- **application.scss** which organizes and pulls together all the partials under the desktop folder.
+- **mobile.scss** which organizes and pulls together all the partials under the *mobile* folder.
+- **application.scss** which organizes and pulls together all the partials under the *desktop* folder.
 
-**mobile.scss** is called through the mobile version of **application.html.haml** (mobile/layouts/application.html.haml) – served only when Mobvious detects that the device is a mobile device.
+**mobile.scss** is called through the mobile version of **application.html.haml** (*mobile/layouts/application.html.haml*) and served only when Mobvious detects that the device is a mobile device.
 
 **application.scss** is served in all other cases.
 
 **(2)** Partials common to both **mobile.scss** and **application.scss**.
 
-**(3)** All mobile related views are organized under the "mobile" folder. Desktop views are organized under the default Rails file structure.
+**(3)** All mobile related views are organized under the *mobile* folder. Desktop views are organized under the default Rails file structure.
 
-**(4)** When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the mobile folder. When those views are not available in the mobile folder, through template inheritance, Rails will look for the view with the same name in its regular default location. For example, the _logo.html.haml partial is common to both website versions, so there is no reason repeat it.
+**(4)** When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the *mobile* folder. When those views are not available in the *mobile* folder, through template inheritance, Rails will look for the view with the same name in the regular default location. For example, the *_logo.html.haml* partial is common to both website versions, so there is no reason repeat it.
 
 ### Susy-based Mobile RWD
 
