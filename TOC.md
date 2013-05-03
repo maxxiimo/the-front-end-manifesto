@@ -174,21 +174,21 @@ Table of Contents
   - Standardize Your Links
   - Use ARIA Roles
 
-### APPENDICES
+### [APPENDICES][Appendices]
 
-- [Appendices Index][Appendices]
-  - Appendix 1: Frameworks
-  - Appendix 2: Grid Systems
-  - Appendix 3: Mobile Solutions Roundup
-  - Appendix 4: Mobylette and jQuery Mobile
-  - Appendix 5: Inspirational Sites
-  - Appendix 6: Placeholder Services
-  - Appendix 7: Feedback Services and Device Testing
-  - Appendix 8: Font Stack Roundup
-  - Appendix 9: Font Services and Tools
-  - Appendix 10: Choosing Typefaces
-  - Appendix 11: A Brief History of Web Font Sizes
-  - Appendix 12: Color Palettes, Tools and Collections
+- [Index][Appendices]
+- Appendix 1: Frameworks
+- Appendix 2: Grid Systems
+- Appendix 3: Mobile Solutions Roundup
+- Appendix 4: Mobylette and jQuery Mobile
+- Appendix 5: Inspirational Sites
+- Appendix 6: Placeholder Services
+- Appendix 7: Feedback Services and Device Testing
+- Appendix 8: Font Stack Roundup
+- Appendix 9: Font Services and Tools
+- Appendix 10: Choosing Typefaces
+- Appendix 11: A Brief History of Web Font Sizes
+- Appendix 12: Color Palettes, Tools and Collections
 
 [Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/COVER.md
 [The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
