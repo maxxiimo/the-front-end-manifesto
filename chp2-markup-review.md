@@ -155,7 +155,7 @@ Our [.gitignore][]. file is borrowed from [HTML 5 Boilerplate][H5BP .gitignore])
 
 You may use these files or folders to save things within the application, but only on your local machine:
 
-- __scratch.*__ - A code scratchpad and graveyard; snippets of code I may use, or I am no longer using but not yet ready to completely get rid of. Examples: scratch.rb, scratch.html.haml, scratch.sass.
+- __scratch.*__ - A code scratchpad and graveyard; snippets of code I may use, or I am no longer using but not yet ready to completely get rid of. Examples: scratch.rb, scratch.html.haml, scratch.sass, scratch.txt.
 
 - __graveyard.sass__ - A graveyard for CSS.
 
