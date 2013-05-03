@@ -57,9 +57,9 @@ To implement Susy into your application follow these steps:
     $gutter-width:      1em
     $grid-padding:      $gutter-width
 
-This tells Susy what the basic characteristics of the grid system are. In this case it will span 12 columns; each column has a width of 4em with a gutter and grid padding of 1em.
+This tells Susy what the basic characteristics of the grid system are. In this case it will span 12 columns; each column has a width of 4em with a gutter and grid padding of 1em. With this information Susy will dynamically calculate all the properties of your grid system.
 
-To calculate the total width of your grid, including its padding, use the following formula:
+NOTE: Internally Susy calculates the total width of your grid, including its padding, using the following formula:
 
 ($total-columns x $column-width) + (($total-columns - 1) x $gutter-width) + ($grid-padding x 2)
 
