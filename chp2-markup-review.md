@@ -149,12 +149,15 @@ Our [.gitignore][]. file is borrowed from [HTML 5 Boilerplate][H5BP .gitignore])
 
     # Local
     scratch.*
+    graveyard.sass
     public/source
     vendor/source
 
 You may use these files or folders to save things within the application, but only on your local machine:
 
-- __scratch.*__ - A code graveyard; snippets of code I am no longer using but not yet ready to completely get rid of.
+- __scratch.*__ - A code scratchpad and graveyard; snippets of code I may use, or I am no longer using but not yet ready to completely get rid of. Examples: scratch.rb, scratch.html.haml, scratch.sass.
+
+- __graveyard.sass__ - A graveyard for CSS.
 
 - __public/source__ and __vendor/source__ - Folders for original third-party files or source code integrated into the application; Photoshop files; original images; basically the original copies of where things came from.
 

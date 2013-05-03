@@ -411,7 +411,7 @@ Within individual stylesheets, as described in the "Use a Labeling System" secti
 
 #### Removal of Legacy Code
 
-Old code tends to clutter stylesheets. Rather than delete obsolete/legacy styles, or leave them within working stylesheets, it might be useful to create a graveyard stylesheet; graveyard.sass, where such styles are accessible (just in case) until ultimately disposed of.
+Old code tends to clutter stylesheets. Rather than delete obsolete/legacy styles, or leave them within working stylesheets, I graveyard them in a file called *graveyard.sass* or *scratch.sass*, where these styles are accessible (just in case) until they are ultimately disposed of.
 
 #### Group Styles
 
