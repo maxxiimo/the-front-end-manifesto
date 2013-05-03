@@ -4,135 +4,124 @@ Table of Contents
 - [Cover][]
 - [The Manifesto][]
 
-### [Section I - Setting up a Foundation][Section I]
+### Section I - [Setting up a Foundation][Section I]
 
-#### Chapter 1
-- [Foundation Markup][Chapter 1]
-    - Views
-        - The Code
-    - Set Up
-        - Groundwork Tasks
-        - Prep and Launch
+#### Chapter 1 - [Foundation Markup][Chapter 1]
+  - Views
+      - The Code
+  - Set Up
+      - Groundwork Tasks
+  - Prep and Launch
 
-#### Chapter 2
-- [Markup Review][Chapter 2]
-    - Organization
-        - Partials
-        - JavaScript
-        - What to Put in \<head>
-        - The Title
-        - .gitignore
-    - Moving Forward
-        - Naming Conventions
-        - Using Partials
-        - IE 6
+#### Chapter 2 - [Markup Review][Chapter 2]
+  - Organization
+      - Partials
+      - JavaScript
+      - What to Put in \<head>
+      - The Title
+      - .gitignore
+  - Moving Forward
+      - Naming Conventions
+      - Using Partials
+      - IE 6
 
-#### Chapter 3
-- [Foundation Styles][Chapter 3]
-    - Preprocessors
-    - Compass
-    - CSS Frameworks and Grid Systems
-    - Our Foundation
-        - Compass Set Up
-        - Stylesheet Set Up
+#### Chapter 3 - [Foundation Styles][Chapter 3]
+  - Preprocessors
+  - Compass
+  - CSS Frameworks and Grid Systems
+  - Our Foundation
+      - Compass Set Up
+      - Stylesheet Set Up
 
-#### Chapter 4
-- [Stylesheet Review][Chapter 4]
-    - Organization
-        - Heart and Soul
-    - Detailed Explanation
-    - Moving Forward
-        - Modularize Styles
-        - Use a Labeling System
-        - Naming Conventions
-    - Keep it DRY!
-        - Consolidate
-        - Variables
-        - Mixins
-    - Stylesheet Tips
+#### Chapter 4 - [Stylesheet Review][Chapter 4]
+  - Organization
+      - Heart and Soul
+  - Detailed Explanation
+  - Moving Forward
+      - Modularize Styles
+      - Use a Labeling System
+      - Naming Conventions
+  - Keep it DRY!
+      - Consolidate
+      - Variables
+      - Mixins
+  - Stylesheet Tips
 
-### [Section II - Mobile on Rails][Section II]
+### Section II - [Mobile on Rails][Section II]
 
-#### Chapter 5
-- [Mobile on Rails][Chapter 5]
-    - Mobile First
-    - Plan of Attack
-        - Best Choice
-        - Holy Wars
+#### Chapter 5 - [Mobile on Rails][Chapter 5]
+  - Mobile First
+  - Plan of Attack
+      - Best Choice
+      - Holy Wars
 
-#### Chapter 6
-- [Responsive Web Design][Chapter 6]
-    - Flexible Grids
-        - Using Susy
-    - Media Queries
-        - Media Types
-        - Target Devices and Breakpoints
-        - Breakpoint Mixin
-        - Em's and Media Queries
-    - Flexible Media
+#### Chapter 6 - [Responsive Web Design][Chapter 6]
+  - Flexible Grids
+      - Using Susy
+  - Media Queries
+      - Media Types
+      - Target Devices and Breakpoints
+      - Breakpoint Mixin
+      - Em's and Media Queries
+  - Flexible Media
 
-#### Chapter 7
-- [Susy][Chapter 7]
-    - Set Up
-    - Implementation
-    - Susy in Action
-    - Susy Breakpoints
-        - Set Up
-        - Using Susy Breakpoints
+#### Chapter 7 - [Susy][Chapter 7]
+  - Set Up
+  - Implementation
+  - Susy in Action
+  - Susy Breakpoints
+      - Set Up
+      - Using Susy Breakpoints
 
-#### Chapter 8
-- [Device Detection][Chapter 8]
-    - Mobvious
-        - Set Up
-        - Mime Types
-        - Reorganization
-    - A Hybrid Approach
-        - How It Works
-        - File Structure
-        - Susy-based Mobile RWD
-    - Using JavaScript
-        - Media Query Polyfills
-        - Conditional Loading
-        - Zepto
+#### Chapter 8 - [Device Detection][Chapter 8]
+  - Mobvious
+      - Set Up
+      - Mime Types
+      - Reorganization
+  - A Hybrid Approach
+      - How It Works
+      - File Structure
+      - Susy-based Mobile RWD
+  - Using JavaScript
+      - Media Query Polyfills
+      - Conditional Loading
+      - Zepto
 
-### [Section III - Look and Feel][Section III]
+### Section III - [Look and Feel][Section III]
 
-#### Chapter 9
-- [Information Architecting][Chapter 9]
-    - A Mosaic of Information
-    - The Storyline
-    - Gathering and Organizing Information
-        - Index Card Exercise
-        - Prototyping on Paper
-    - Wireframing
-        - Wireframing with Susy
-        - Content
-    - Feedback and Testing
-    - What We've Done
+#### Chapter 9 - [Information Architecting][Chapter 9]
+  - A Mosaic of Information
+  - The Storyline
+  - Gathering and Organizing Information
+      - Index Card Exercise
+      - Prototyping on Paper
+  - Wireframing
+      - Wireframing with Susy
+      - Content
+  - Feedback and Testing
+  - What We've Done
 
-#### Chapter 10
-- [Visual Design for the Nondesigner][Chapter 10]
-    - Paradigm Shift
-    - Typography
-        - Font Family
-        - Font Size
-        - Modular Scales
-        - Readability
-    - Color
-        - Step 1: Base Color Selection
-        - Step 2: Color Wheel Experimentation
-        - Step 3: Finishing Touches
-        - Step 4: Where to Apply
-    - Branding
-    - Images
-    - Icons
-        - Icon Fonts
-        - Icon Sprites
-    - Other Resources
-        - What We've Done
+#### Chapter 10 - [Visual Design for the Nondesigner][Chapter 10]
+  - Paradigm Shift
+  - Typography
+      - Font Family
+      - Font Size
+      - Modular Scales
+      - Readability
+  - Color
+      - Step 1: Base Color Selection
+      - Step 2: Color Wheel Experimentation
+      - Step 3: Finishing Touches
+      - Step 4: Where to Apply
+  - Branding
+  - Images
+  - Icons
+      - Icon Fonts
+      - Icon Sprites
+  - Other Resources
+      - What We've Done
 
-#### Chapter 11
-- [Slicing and Dicing Mockups][Chapter 11]
+#### Chapter 11 - [Slicing and Dicing Mockups][Chapter 11]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
   - Step 3 - Fonts
@@ -145,52 +134,45 @@ Table of Contents
 
 ### Section IV
 
-#### Chapter
-- [Images][]
-    - Organization
-    - Choosing an Image Format
-    - Spriting
-    - Responsive Resizing
-    - Retina Displays
+#### Chapter - [Images][]
+  - Organization
+  - Choosing an Image Format
+  - Spriting
+  - Responsive Resizing
+  - Retina Displays
 
-#### Chapter
-- [Forms][]
-    - Basic Form Structure
-    - Ordered List or Paragraphs?
-    - Fieldsets and Legends
-    - Extras
-    - FormHelpers
-    - Fancy/Sassy Buttons
+#### Chapter - [Forms][]
+  - Basic Form Structure
+  - Ordered List or Paragraphs?
+  - Fieldsets and Legends
+  - Extras
+  - FormHelpers
+  - Fancy/Sassy Buttons
 
-#### Chapter
-- [Navigation][]
-    - Types
-    - CSS
-    - Context Awareness Patterns
+#### Chapter - [Navigation][]
+  - Types
+  - CSS
+  - Context Awareness Patterns
 
-#### Chapter
-- [Gradients][]
+#### Chapter - [Gradients][]
 
-#### Chapter
-- [Email Coding][]
+#### Chapter - [Email Coding][]
 
 ### Section IV
 
-#### Chapter
-- [Optimization][]
-    - Gzipping
-    - Caching
-        - Client-Side
-        - Server-Side
-    - Image Optimization
-    - Compressing and the Asset Pipeline
-    - Spriting
-    - What We've Done
+#### Chapter - [Optimization][]
+  - Gzipping
+  - Caching
+      - Client-Side
+      - Server-Side
+  - Image Optimization
+  - Compressing and the Asset Pipeline
+  - Spriting
+  - What We've Done
 
-#### Chapter
-- [Accessibility][]
-    - Standardize Your Links
-    - Use ARIA Roles
+#### Chapter - [Accessibility][]
+  - Standardize Your Links
+  - Use ARIA Roles
 
 ### APPENDICES
 
