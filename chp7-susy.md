@@ -180,7 +180,6 @@ We're starting from a total column size of 4 instead of 12 since we are approach
 
     .container
       +container($total-columns, $break5, $break6, $break7, $break8, $break9, $break10, $break11, $break12)
-      +susy-grid-background
 
       +at-breakpoint($break5)
         +susy-grid-background
