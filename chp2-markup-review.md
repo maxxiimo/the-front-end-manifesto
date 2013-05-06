@@ -98,21 +98,25 @@ I don't think I have found a more comprehensive overview of JavaScript in Rails 
 
 In so far as our *application.html.haml* organization goes, generally it is best to put JavaScript at the very bottom of your markup. Doing so will allow pages to render before scripts are loaded. In other words, they won't hold up the show.
 
-Some scripts though, such as modernizr, need to load before your HTML does and therefore are called through a Rails JavaScript include tag in [_head.html.haml][_head]:
+The [_scripts.html.haml][_scripts] partial is designed exactly for this and additional scripts. It is located at the bottom of *application.html.haml*, after all our markup.
 
-    = javascript_include_tag "application"
+The JavaScript include tag found their specifies a manifest file called [application.js][], which in turn requires your scripts:
 
-The JavaScript include tag specifies a manifest file called [application.js][], which in turn requires the modernizer script:
-
-    //= require modernizr-2.6.2.min
-    //= require jquery-1.8.3.min
+    //= require jquery
+    //= require jquery_ujs
     //= require site
 
 > Sprockets uses manifest files to determine which assets to include and serve. These manifest files contain directives — instructions that tell Sprockets which files to require in order to build a single CSS or JavaScript file. With these directives, Sprockets loads the files specified, processes them if necessary, concatenates them into one single file and then compresses them.
 
 \- [Asset Pipeline - Manifest Files and Directives][Manifest Files]
 
-The [_scripts.html.haml][_scripts] partial is designed for additional scripts, and located at the bottom of *application.html.haml*, after all our markup.
+Some scripts though, such as modernizr, need to load before your HTML does and therefore are called before the body of your markup through a Rails JavaScript include tag in [_head.html.haml][_head]:
+
+    = javascript_include_tag "modernizr-2.6.2.min"
+
+To get this to precompile you will need to add the following to *production.rb*:
+
+    config.assets.precompile += %w( modernizr-2.6.2.min )
 
 ### What to Put in \<head>
 
