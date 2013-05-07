@@ -108,10 +108,10 @@ Use the "typography" section to style major typographical elements such as parag
 
     /* MISCELLANEOUS
     ============================================================================ */
-    @import "desktop/misc";
+    @import "misc";
     @import "sprites";
 
-"Miscellaneous" is a catchall for miscellaneous partials and styles that should appear earlier on in the stylesheet. "desktop/misc" has an assortment of general helper styles; "sprites" obviously is for sprites, whether using Compass' built in sprite engine, or building them on my own.
+"Miscellaneous" is a catchall for miscellaneous partials and styles that should appear earlier on in the stylesheet. "misc" has an assortment of general helper styles; "sprites" obviously is for sprites, whether using Compass' built in sprite engine, or building them on my own.
 
     /* NAVIGATION
     ============================================================================ */
