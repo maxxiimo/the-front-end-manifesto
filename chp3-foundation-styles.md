@@ -219,7 +219,6 @@ It's pretty basic, but much better than [before][]. More importantly and much li
 [_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_forms.sass
 [_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_grids.sass
 [_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_layout.sass
-[_misc.sass]:           https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_misc.sass
 [_navigation.sass]:     https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_navigation.sass
 [_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_pages.sass
 [_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_staging.sass
@@ -227,6 +226,7 @@ It's pretty basic, but much better than [before][]. More importantly and much li
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_define.sass
 [_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_media_queries.sass
 [_media_queries_px.sass]: https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_media_queries_px.sass
+[_misc.sass]:           https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_misc.sass
 [_mixins.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_mixins.sass
 [_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_sprites.sass
 [application.css.scss]: https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/application.css.scss
