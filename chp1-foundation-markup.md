@@ -204,27 +204,27 @@ Commit your changes.
 
 **Step 3**: Add the following to `production.rb`:
 
-      config.assets.precompile += %w( modernizr-2.6.2.min )
+    config.assets.precompile += %w( modernizr-2.6.2.min )
 
 **Step 4**: Finally, we'll need to do a little housekeeping. If you open `views/layouts/_head.html.haml` you'll notice quite a lot of commented out code. You can safely delete all of this. It's there to give you options, things you could use but are not entirely necessary.
 
 Also, replace the "XXX" with whatever title and description you would like to use.
 
-        %title= content_for?(:title) ? yield(:title) : "XXX"
-        -# alternative title format.
-        -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
+    %title= content_for?(:title) ? yield(:title) : "XXX"
+    -# alternative title format.
+    -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
 
-        %meta{:name => "description", :content => "XXX"}
+    %meta{:name => "description", :content => "XXX"}
 
 NOTE: For title formats you have two choices. Choose one and delete the other. To yield a title from a page add the following code to the top of your views:
 
-        - content_for :title do
-          Some Title Here
+    - content_for :title do
+      Some Title Here
 
 For example, at the top of `views/pages/home.html.haml`:
 
-        - content_for :title do
-          Home
+    - content_for :title do
+      Home
 
 Commit your changes.
 
