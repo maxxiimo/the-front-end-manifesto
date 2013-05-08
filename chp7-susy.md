@@ -95,6 +95,8 @@ NOTE: Internally Susy calculates the total width of your grid, including its pad
 
 And that's it! Refresh your browser and here is what you should see:
 
+<br>
+
 ![][Susy Layout]
 
 Aside from the grid lines everything looks the same, accept now Susy is in control oof your grid system. In the Media Queries section of this chapter we will use Susy quite a bit, but first let's quickly learn how it works.
