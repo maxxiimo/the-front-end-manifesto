@@ -175,6 +175,18 @@ For faster asset precompiles check out:
     $ git push heroku master
     $ heroku rename <new name>
 
+IMPORTANT: You will have problems precompiling `modernizr-2.6.2.min.js`. It's not part of your manifest, therefore you will need to tell Heroku to precompile this file:
+
+Add the following to `application.rb`:
+
+    # Precompile *all* assets, except those that start with underscore per:
+    # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+    config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+
+Alternatively, add the following to `production.rb`:
+
+    config.assets.precompile += %w( modernizr-2.6.2.min )
+
 And that's it! Now it's time to Prep and Launch your application.
 
 ### Prep and Launch
@@ -202,11 +214,7 @@ Commit your changes.
 
 Commit your changes.
 
-**Step 3**: Add the following to `production.rb`:
-
-    config.assets.precompile += %w( modernizr-2.6.2.min )
-
-**Step 4**: Finally, we'll need to do a little housekeeping. If you open `views/layouts/_head.html.haml` you'll notice quite a lot of commented out code. You can safely delete all of this. It's there to give you options, things you could use but are not entirely necessary.
+**Step 3**: Finally, we'll need to do a little housekeeping. If you open `views/layouts/_head.html.haml` you'll notice quite a lot of commented out code. You can safely delete all of this. It's there to give you options, things you could use but are not entirely necessary.
 
 Also, replace the "XXX" with whatever title and description you would like to use.
 
@@ -228,7 +236,7 @@ For example, at the top of `views/pages/home.html.haml`:
 
 Commit your changes.
 
-**Step 5**: It's time to launch! If you run WEBrick, your application should now just work with the following command:
+**Step 4**: It's time to launch! If you run WEBrick, your application should now just work with the following command:
 
     $ rails server
 
