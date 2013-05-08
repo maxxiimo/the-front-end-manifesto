@@ -492,28 +492,27 @@ The following reference will give you some great ideas:
 
 [starter CSS]:          https://github.com/maxxiimo/base-css
 
-[application.css.scss]: https://github.com/maxxiimo/base-css/blob/master/application.css.scss
-[_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
-[_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
-[h5bp_normalize_v101.sass]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v111.scss
-[_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/desktop/_layout.sass
-[_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_grids.sass
-[_mixins.sass]:         https://github.com/maxxiimo/base-css/blob/master/_mixins.sass
-[_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/desktop/_typography.sass
-[_misc.sass]:           https://github.com/maxxiimo/base-css/blob/master/desktop/_misc.sass
-[_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/_sprites.sass
-[_navigation.sass]:     https://github.com/maxxiimo/base-css/blob/master/desktop/_navigation.sass
-[_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_forms.sass
-[_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_pages.sass
-[_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/desktop/_staging.sass
-[h5bp_helpers.sass]:    https://github.com/maxxiimo/base-css/tree/master/_h5bp_helpers.scss
-[h5bp_print.sass]:      https://github.com/maxxiimo/base-css/tree/master/_h5bp_print.scss
+[application.css.scss]: https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/application.css.scss
+[_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_define.sass
+[_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_media_queries.sass
+[_h5bp_normalize_v111.scss]: https://github.com/maxxiimo/base-css/blob/master/vendor/assets/stylesheets/boilerplate/_h5bp_normalize_v111.scss
+[_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_layout.sass
+[_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_grids.sass
+[_mixins.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_mixins.sass
+[_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_typography.sass
+[_misc.sass]:           https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_misc.sass
+[_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_sprites.sass
+[_navigation.sass]:     https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_navigation.sass
+[_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_forms.sass
+[_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_pages.sass
+[_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_staging.sass
+[_h5bp_helpers.scss]:   https://github.com/maxxiimo/base-css/blob/master/vendor/assets/stylesheets/boilerplate/_h5bp_helpers.scss
+[_h5bp_print.scss]:     https://github.com/maxxiimo/base-css/blob/master/vendor/assets/stylesheets/boilerplate/_h5bp_print.scss
 
 [Media Queries]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#3-media-queries
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
 [reset utilities]:      http://compass-style.org/reference/compass/reset/utilities/
 [Normalize.css]:        https://github.com/necolas/normalize.css/
-[H5BP's normalize]:     https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v101.sass
 [HTML5 Resets]:         http://html5doctor.com/html-5-reset-stylesheet/
 [Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#using-susy
 
@@ -526,7 +525,6 @@ The following reference will give you some great ideas:
 [aB vs. a_b]:           http://stackoverflow.com/questions/1437527/css-camelcase-vs-under-score
 [Identifiers]:          http://stackoverflow.com/questions/1686337/hyphens-or-underscores-in-css-and-html-identifiers
 [Sucks]:                http://csswizardry.com/2010/12/css-camel-case-seriously-sucks/
-
 
 [Mixins in SASS]:       http://thecodingdesigner.com/tutorials/mixins-sass
 [Sass documentation]:   http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html

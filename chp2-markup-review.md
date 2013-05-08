@@ -262,11 +262,11 @@ In the [next chapter][Chapter 3], we will begin to set up our foundation styles.
 
 [starter code]:         https://github.com/maxxiimo/base-haml
 
-[_head]:                https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
-[_scripts]:             https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_scripts.html.haml
-[_logo]:                https://github.com/maxxiimo/base-haml/blob/master/views/shared/_logo.html.haml
-[_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/views/shared/_navigation.html.haml
-[_footer]:              https://github.com/maxxiimo/base-haml/blob/master/views/shared/_footer.html.haml
+[_head]:                https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_head.html.haml
+[_scripts]:             https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_scripts.html.haml
+[_logo]:                https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_logo.html.haml
+[_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_navigation.html.haml
+[_footer]:              https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_footer.html.haml
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
 
 [Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html
@@ -282,6 +282,6 @@ In the [next chapter][Chapter 3], we will begin to set up our foundation styles.
 [Templates]:            https://github.com/github/gitignore
 
 [Chrome Frame]:         https://developers.google.com/chrome/chrome-frame/
-[_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_chromeframe.html.haml
+[_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_chromeframe.html.haml
 [Waste of Time]:        http://www.sitepoint.com/is-internet-explorer-development-really-a-waste-of-time/
 [RWD for IE]:           http://www.sitepoint.com/support-old-browsers-responsive-web-design/
