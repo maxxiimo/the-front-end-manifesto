@@ -216,21 +216,20 @@ It's pretty basic, but much better than [before][]. More importantly and much li
 [_h5bp_normalize_v102.scss]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v102.scss
 [_h5bp_normalize_v111.scss]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v111.scss
 [_h5bp_print.scss]:     https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_print.scss
-[_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_forms.sass
-[_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_grids.sass
-[_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/desktop/_layout.sass
-[_misc.sass]:           https://github.com/maxxiimo/base-css/blob/master/desktop/_misc.sass
-[_navigation.sass]:     https://github.com/maxxiimo/base-css/blob/master/desktop/_navigation.sass
-[_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/desktop/_pages.sass
-[_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/desktop/_staging.sass
-[_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/desktop/_typography.sass
-[_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
-[_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
-[_media_queries_px.sass]: https://github.com/maxxiimo/base-css/blob/master/_media_queries_px.sass
-[_mixins.sass]:         https://github.com/maxxiimo/base-css/blob/master/_mixins.sass
-[_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/_sprites.sass
-[application.css.scss]: https://github.com/maxxiimo/base-css/blob/master/application.css.scss
-
+[_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_forms.sass
+[_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_grids.sass
+[_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_layout.sass
+[_misc.sass]:           https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_misc.sass
+[_navigation.sass]:     https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_navigation.sass
+[_pages.sass]:          https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_pages.sass
+[_staging.sass]:        https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_staging.sass
+[_typography.sass]:     https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_typography.sass
+[_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_define.sass
+[_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_media_queries.sass
+[_media_queries_px.sass]: https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_media_queries_px.sass
+[_mixins.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_mixins.sass
+[_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_sprites.sass
+[application.css.scss]: https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/application.css.scss
 [before]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#end-result
 
 [Basic Styles]:         http://chrismaxwell.com/manifesto/chp-3/basic-styles.png
