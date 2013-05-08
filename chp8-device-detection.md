@@ -198,13 +198,13 @@ With a few arrows let me explain:
 **(1)** There are two main stylesheets:
 
 - **mobile.scss** which organizes and pulls together all the partials under the *mobile* folder.
-- **application.scss** which organizes and pulls together all the partials under the *desktop* folder.
+- **application.css.scss** which organizes and pulls together all the partials under the *desktop* folder.
 
 *mobile.scss* is called through the mobile version of *application.html.haml* (*mobile/layouts/application.html.haml*) and served only when Mobvious detects that the device is a mobile device.
 
-*application.scss* is served in all other cases.
+*application.css.scss* is served in all other cases.
 
-**(2)** Partials common to both *mobile.scss* and *application.scss*.
+**(2)** Partials common to both *mobile.scss* and *application.css.scss*.
 
 **(3)** All mobile related views are organized under the *mobile* folder. Desktop views are organized under the default Rails file structure.
 
@@ -216,7 +216,7 @@ What this all means is that we can create a second implementation of RWD under t
 
 With this knowledge let's set up the mobile RWD version of our website.
 
-In our [Chapter 7][] implementation of [Susy][] we defined the following Susy grid system in *application.scss*:
+In our [Chapter 7][] implementation of [Susy][] we defined the following Susy grid system in *application.css.scss*:
 
     // Susy Grid
 
@@ -275,9 +275,9 @@ It all starts with the question, "is the request coming from a mobile device?" (
 
 NOTE: *views/mobile/layouts/application.html.haml* is coded with mobile in mind only. Compare the desktop and mobile versions of *head.html.haml* and you will see that they are significantly different from one another. One draws from regular [HTML5 Boilerplate][] and the other from [Mobile Boilerplate][].
 
-**If false**, *views/layouts/application.html.haml* will be served along with the desktop optimized stylesheet *application.scss*.
+**If false**, *views/layouts/application.html.haml* will be served along with the desktop optimized stylesheet *application.css.scss*.
 
-NOTE: *views/layouts/application.scss* is designed to take advantage of the greater capabilities of devices with > 9 columns (704 pixels) screen widths. If a false positive squeaks by, the desktop version of *application.scss* is coded to handle the < 6 columns cases as well (although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized).
+NOTE: *views/layouts/application.css.scss* is designed to take advantage of the greater capabilities of devices with > 9 columns (704 pixels) screen widths. If a false positive squeaks by, the desktop version of *application.css.scss* is coded to handle the < 6 columns cases as well (although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized).
 
 I personally really like this approach. To see how I have organized this in a live application, feel free to clone or poke around https://github.com/maxxiimo/viewthought.
 

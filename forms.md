@@ -72,7 +72,7 @@ Here are some of your most common field types:
     = f.password_field :<name>
     = f.select :<name>, %(<items>)
     = f.submit "<text>"
-  
+
 Rather than regurgitate what's already out there, check out [Ruby on Rails FormHelper API][FormHelper API]
 
 ### Fancy/Sassy Buttons
@@ -87,7 +87,7 @@ Add the gem 'fancy-buttons' or gem 'sassy-buttons' to assets group of your gemfi
       gem 'sass-rails',   '~> 3.2.3'
       gem 'coffee-rails', '~> 3.2.1'
       gem 'uglifier', '>= 1.0.3'
-    
+
       # Compass specific gems.
       gem 'compass-rails'
       gem 'fancy-buttons'
@@ -97,7 +97,7 @@ Add the gem 'fancy-buttons' or gem 'sassy-buttons' to assets group of your gemfi
 
 **Step 2**
 
-Import it, preferably from application.scss per the CSS Organization chapter:
+Import it, preferably from application.css.scss per the CSS Organization chapter:
 
     /* FORMS
       ============================================================================ */
@@ -116,9 +116,9 @@ bundle install
 Install button assets:
 
     bundle exec compass install fancy-buttons
-    
+
     or
-    
+
     bundle exec compass install sassy-buttons
 
 **Step 5**
@@ -127,9 +127,9 @@ Include the most basic mixin and expand from there:
 
     button
       +fancy-button or +sassy-button
-    
+
     alternatively (syntax)...
-    
+
     button
       @include fancy-button or @include +sassy-button
 

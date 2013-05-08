@@ -29,7 +29,7 @@ Set up is pretty straightforward:
 
 *Step 3:* Import Susy into your project (uncomment):
 
-*app/assets/stylesheets/application.scss*
+*app/assets/stylesheets/application.css.scss*
 
     /* BASIC STRUCTURE
       ============================================================================ */
@@ -43,7 +43,7 @@ Implementation
 
 To implement Susy into your application follow these steps:
 
-*Step 1*: Define the [basic settings][] for your Susy grid in *application.scss*:
+*Step 1*: Define the [basic settings][] for your Susy grid in *application.css.scss*:
 
     /* DEFINITIONS
       ============================================================================ */
@@ -158,7 +158,7 @@ One of the great features of Susy is that breakpoints are baked right in. We cou
 
 ### Set Up
 
-**Step 1**: Redefine our Susy flexible grid in *application.scss* as follows:
+**Step 1**: Redefine our Susy flexible grid in *application.css.scss* as follows:
 
     $total-columns:     4;
     $column-width:      4em;
@@ -284,7 +284,7 @@ Since we're using a base font size of 16px, if you multiply the em's value by 16
 - 9 columns, 44em x 16px = 704px (iPad)
 - 12 columns, 59em x 16px = 944px (Desktop)
 
-**Step 4**: Remove the unneeded breakpoints from *application.scss* which in my case leaves the following definitions:
+**Step 4**: Remove the unneeded breakpoints from *application.css.scss* which in my case leaves the following definitions:
 
     $total-columns:     4;
     $column-width:      4em;

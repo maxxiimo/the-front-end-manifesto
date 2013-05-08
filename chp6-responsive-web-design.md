@@ -169,7 +169,7 @@ Our [starter CSS][] includes a breakpoint mixin called [_media_queries.sass][] t
 
 What we've done here is applied our media definitions to our mixin. We use variables so that we can easily make changes in one location. We use generic variables starting with xxs (extra extra small) to xl (extra large) to avoid marrying a specific device name, things change.
 
-To activate this mixin uncomment *@import "media_queries";* in *application.scss*:
+To activate this mixin uncomment *@import "media_queries";* in *application.css.scss*:
 
     /* MIXINS
       ============================================================================ */

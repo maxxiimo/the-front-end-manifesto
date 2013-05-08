@@ -92,7 +92,7 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
 
     NOTE: For more explicit directions take a look at the [compass-rails][] gem source.
 
-2.  Delete your `application.css` file and replace it with a blank `application.scss`.
+2.  Delete your `application.css` file and replace it with a blank `application.css.scss`.
 
     IMPORTANT: When using Compass always use @import to organize styles rather than Sprockets. You can use Sprockets require syntax, however per the explanation found at the [compass-rails][] gem source, this is not a good idea.
 
@@ -138,7 +138,7 @@ Now that Compass is set up, let's set up our stylesheets. Clone this books [star
 
     git clone git@github.com:maxxiimo/base-css.git
 
-Setting up our CSS is pretty straightforward. Basically, all you have to do is copy and merge into your project the cloned files and subfolders exactly as they are laid out, in their entirety. If you followed the Compass set up the only file that will be replaced is `application.scss`.
+Setting up our CSS is pretty straightforward. Basically, all you have to do is copy and merge into your project the cloned files and subfolders exactly as they are laid out, in their entirety. If you followed the Compass set up the only file that will be replaced is `application.css.scss`.
 
 Your stylesheet file structure should now look like this:
 
@@ -164,7 +164,7 @@ app<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_misc.sass][]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_mixins.sass][]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_sprites.sass][]<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [application.scss][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [application.css.scss][]<br>
 
 NOTE: You may have noticed that the base application file uses the .scss syntax, and other other partials use the .sass syntax. This is perfectly fine and done so in part because Rails needs this file to end in .scss, and with the boilerplate files to keep abreast of boilerplate changes is easier to use this syntax. Everything else and whenever possible I use the .sass syntax because of my own personal preference for it.
 
@@ -229,7 +229,7 @@ It's pretty basic, but much better than [before][]. More importantly and much li
 [_media_queries_px.sass]: https://github.com/maxxiimo/base-css/blob/master/_media_queries_px.sass
 [_mixins.sass]:         https://github.com/maxxiimo/base-css/blob/master/_mixins.sass
 [_sprites.sass]:        https://github.com/maxxiimo/base-css/blob/master/_sprites.sass
-[application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss
+[application.css.scss]: https://github.com/maxxiimo/base-css/blob/master/application.css.scss
 
 [before]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#end-result
 

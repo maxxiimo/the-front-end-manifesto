@@ -16,7 +16,7 @@ I can't stress enough how important it is to start a project with some kind of o
 
 ### Heart and Soul
 
-The heart of our organizational structure is [application.scss][]. This file reminds me of a table of contents for partials. In addition to indexing your partials, it layers in styles based on precedents. Styles in the last partial listed override styles in partials listed above it – so long as the styles preceding it have the same class or ID and specificity (and/or tag).
+The heart of our organizational structure is [application.css.scss][]. This file reminds me of a table of contents for partials. In addition to indexing your partials, it layers in styles based on precedents. Styles in the last partial listed override styles in partials listed above it – so long as the styles preceding it have the same class or ID and specificity (and/or tag).
 
 Our hierarchy looks like this:
 
@@ -51,7 +51,7 @@ Our hierarchy looks like this:
 Detailed Explanation
 --------------------
 
-What follows is a snippet of each section of *application.scss* followed by a description of what the section should be used for:
+What follows is a snippet of each section of *application.css.scss* followed by a description of what the section should be used for:
 
     /* DEFINITIONS
     ============================================================================ */
@@ -90,7 +90,7 @@ The following article briefly outlines the changes in resets moving into HTML 5:
 
 - [HTML5 Reset Stylesheet][HTML5 Resets]
 
-NOTE: Notice the ad hoc code following the import above? Feel free to add code anywhere throughout *application.scss*. Rules of CSS precedence apply here.
+NOTE: Notice the ad hoc code following the import above? Feel free to add code anywhere throughout *application.css.scss*. Rules of CSS precedence apply here.
 
 
     /* BASIC STRUCTURE
@@ -345,7 +345,7 @@ In a word, mixins are shortcuts.
 > They’re shortcuts that allow you to apply a lot of css to a selector from only one line of Sass.
 \- [Mixins in SASS][]
 
-When you Notice a a bunch of lines of CSS that keep on appearing throughout your stylesheet, through mixins you can write it once and pull it in via a single line of sass; a shortcut. Our [starter CSS][] gives you two areas to include mixins, as a partial brought in through the MIXINS section of [application.scss][] or a snippet of code within [_define.sass][].
+When you Notice a a bunch of lines of CSS that keep on appearing throughout your stylesheet, through mixins you can write it once and pull it in via a single line of sass; a shortcut. Our [starter CSS][] gives you two areas to include mixins, as a partial brought in through the MIXINS section of [application.css.scss][] or a snippet of code within [_define.sass][].
 
 To best understand how to use variables and mixins check out the [Sass documentation][].
 
@@ -492,7 +492,7 @@ The following reference will give you some great ideas:
 
 [starter CSS]:          https://github.com/maxxiimo/base-css
 
-[application.scss]:     https://github.com/maxxiimo/base-css/blob/master/application.scss
+[application.css.scss]: https://github.com/maxxiimo/base-css/blob/master/application.css.scss
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
 [_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
 [h5bp_normalize_v101.sass]: https://github.com/maxxiimo/base-css/blob/master/boilerplate/_h5bp_normalize_v111.scss
