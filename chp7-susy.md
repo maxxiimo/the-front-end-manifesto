@@ -316,7 +316,7 @@ And that's it! Now when you need to apply a particular style to a specific scree
 
 Let's revisit the `.left-side` and `.right-side` div's example, but this time using our newly defined Susy breakpoints. As mobile first developers we'll start with our base 4 column layout, and move our way to the 12 column layout.
 
-Since our four column base setting is designed for smaller screen sizes, we might want to stack the .left-side and .right-side div's (rather than have them appear cramped side-by-side):
+Since our four column base setting is designed for smaller screen sizes, we might want to stack the `.left-side` and `.right-side` div's (rather than have them appear cramped side-by-side):
 
     .left-side
       +span-columns(4 omega, 4)
