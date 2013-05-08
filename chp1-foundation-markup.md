@@ -18,7 +18,7 @@ Views
 
 As much as Rails is a framework, within it lives a smaller templating framework made up of predominantly HTML. These are our views and where we will work in Chapter 1.
 
-View code can be found in two high-level folders within a Rails application: the *helpers* and the *views* folders. Here is where you'll find these folders by default in any Rails 3.0 or greater project:
+View code can be found in two high-level folders within a Rails application: the `helpers` and the `views` folders. Here is where you'll find these folders by default in any Rails 3.0 or greater project:
 
 app<br>
 |-- assets<br>
@@ -31,9 +31,9 @@ app<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- application.html.haml<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|-- **shared**
 
-The *views* folder is where most of the action takes place and can be further subdivided into of the *layout* and *shared* folders, which as you will soon discover are home to the majority of your foundation front end code.
+The `views` folder is where most of the action takes place and can be further subdivided into of the `layout` and `shared` folders, which as you will soon discover are home to the majority of your foundation front end code.
 
-The heart of this view framework is *application.html.haml*. Most view code from other parts of an application pass through and become framed by *application.html.haml* before being served to browsers.
+The heart of this view framework is `application.html.haml`. Most view code from other parts of an application pass through and become framed by `application.html.haml` before being served to browsers.
 
 ### The Code
 
@@ -93,9 +93,9 @@ Before we begin to explore the code that make up our views, there are a few thin
 
     NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
 
-3. Complete the groundwork tasks.
+3. Complete the groundwork tasks below.
 
-4. Prep and launch your application
+4. Prep and launch your application.
 
 ### Groundwork Tasks
 
@@ -109,8 +109,8 @@ In the Rails world [Git][] and [Github][] are the versioning sytem and service o
     $ git init
     $ git add .
     $ git commit -am "Initial commit."
-    $ git remote add origin git@github.com:<Github username>/<application name>.git
     Create a new repo at Github.
+    $ git remote add origin git@github.com:<Github username>/<application name>.git
     $ git push -u origin master
 
 #### Task 2: Remove Unnecessary Files
@@ -122,13 +122,15 @@ Out-of-the-box Rails comes with a few files that should be deleted. After testin
 - app/views/layouts/application.html.erb
 - README.rdoc
 
-The last two deletions will be replaced in the next task by files from our [starter code][]: *application.html.haml* and *README.md*.
+The last two deletions will be replaced in the next task by files from our [starter code][]: `application.html.haml` and `README.md`.
 
 Commit your changes.
 
 #### Task 3: Add Starter Code
 
 Go ahead and copy all the files and folders from your cloned starter code repository into your existing application structure.
+
+NOTE: You should be able to copy/merge the files into your application in one action. They will fall into place or replace existing files correctly.
 
 Commit your changes.
 
@@ -138,27 +140,18 @@ The following files should have been modified or added to your repository:
 
 #### Task 4: Gemfile
 
-With every new application Rails generates a Gemfile with a lot of commented out lines. You don't need all of these comments, they take up a lot of space and clutter things up. For our [Gemfile][] we will start with Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]" Gemfile example and add a few additional gems we will use like Compass:
-
-      # Compass specific gems.
-      gem 'compass-rails'
-      gem 'oily_png'
-      gem 'susy'
-
-Or some better error testing gems, which you may uncomment if you plan to use them:
+Our starter code [Gemfile][] includes better error testing gems, which you may uncomment if you plan to use them:
 
       # http://railscasts.com/episodes/402-better-errors-railspanel
       # gem 'better_errors'
       # gem 'binding_of_caller'
       # gem 'meta_request'
 
-After replacing the default Gemfile with the one found in the cloned starter code, bundle install these gems.
-
-IMPORTANT: Michael Hartl [recommends][] using the following flag on your first bundle:
+Install these gems:
 
     $ bundle install --without production
 
-Doing so installs your Gemfile gems, but prevents the installation of the production gems. You only have to do this once.
+IMPORTANT: Michael Hartl [recommends][] using the '--without production' flag on your first bundle. Doing so installs your Gemfile gems, but prevents the installation of production gems. You only have to do this once.
 
 Commit your changes.
 
@@ -192,24 +185,20 @@ Prep and the launch your app by following these steps:
 
     $ rails generate controller Pages home about site_map terms privacy contact
 
-Make sure to delete the *assets/stylesheets/pages.css.scss* file generated by Rails, we won't be using it. You can also delete *assets/javascripts/pages.js.coffee* if you do not plan to use it.
+Make sure to delete the `assets/stylesheets/pages.css.scss` file generated by Rails, we won't be using it. You can also delete `assets/javascripts/pages.js.coffee` if you do not plan to use it.
 
 Commit your changes.
 
-NOTE: If you're not sure what I just did there you should really consider getting Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
-
 **Step 2** - Change your default route to whatever you want your application to default to, and swap out your get routes with match routes:
 
-    # You can have the root of your site routed with "root"
-    # just remember to delete public/index.html.
     root :to => 'pages#home'
 
-    match 'home'    => 'pages#home'
-    match 'about'   => 'pages#about'
-    match 'team'    => 'pages#site_map'
-    match 'terms'   => 'pages#terms'
-    match 'privacy' => 'pages#privacy'
-    match 'contact' => 'pages#contact'
+    match 'home'     => 'pages#home'
+    match 'about'    => 'pages#about'
+    match 'site_map' => 'pages#site_map'
+    match 'terms'    => 'pages#terms'
+    match 'privacy'  => 'pages#privacy'
+    match 'contact'  => 'pages#contact'
 
 Commit your changes.
 
@@ -254,7 +243,6 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
-
 [Git]:                  http://git-scm.com/
 [Github]:               https://github.com/
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
