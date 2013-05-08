@@ -78,7 +78,7 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
 
 ### Compass Set Up
 
-1.  If you have not done so already per [Chapter 1][], add "compass-rails" to your gemfile and run:
+1.  If you have not done so already per [Chapter 1][], add `gem 'compass-rails'` to your gemfile and run:
 
         $ bundle exec compass init
 
