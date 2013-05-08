@@ -41,11 +41,11 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
 
 ### Set Up
 
-**Step 1:** Copy all the [base-mobile][] files from the default folder and place them into their corresponding directories, i.e. *stylesheets/mobile* files go in *stylesheets/mobile* in your application. You should be able to cleanly merge the files in one sweep into your project. When you are finished, the following files will have been added to your repository:
+**Step 1**: Copy all the [base-mobile][] files from the default folder and place them into their corresponding directories, i.e. `stylesheets/mobile` files go in `stylesheets/mobile` in your application. You should be able to cleanly merge the files in one sweep into your project. When you are finished, the following files will have been added to your repository:
 
 ![][new-files]
 
-**Step 2:** Add the following to your application.rb file:
+**Step 2**: Add the following to your application.rb file:
 
     # Precompile *all* assets, except those that start with underscore per:
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
@@ -53,17 +53,17 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
 
 \- [Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work]
 
-**Step 3:** Add the following gems to your *Gemfile* and then bundle install:
+**Step 3**: Add the following gems to your `Gemfile` and then bundle install:
 
     gem 'mobvious'
     gem 'mobvious-rails'
 
-**Step 4:** Add the following to *application.rb*:
+**Step 4**: Add the following to `application.rb`:
 
     # Tell your app to use Mobvious::Manager as Rack middleware.
     config.middleware.use Mobvious::Manager
 
-**Step 5:** Add the following includes:
+**Step 5**: Add the following includes:
 
     application_controller.rb:
     include Mobvious::Rails::Controller
@@ -71,17 +71,17 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
     application_helper.rb:
     include Mobvious::Rails::Helper
 
-**Step 6:** Create an initializer file *config/initializers/mobvious.rb* and configure it as follows:
+**Step 6**: Create an initializer file `config/initializers/mobvious.rb` and configure it as follows:
 
     Mobvious.configure do |config|
       config.strategies = [ Mobvious::Strategies::MobileESP.new(:mobile_desktop) ]
     end
 
-Don't forget to restart your application, and wallah! You have a detection strategy that will return a variable of *:mobile* or *:desktop* depending on the device type of the request. What you do with that information is entirely up to you. In the next section we will start you off on the right foot.
+Don't forget to restart your application, and wallah! You have a detection strategy that will return a variable of `:mobile` or `:desktop` depending on the device type of the request. What you do with that information is entirely up to you. In the next section we will start you off on the right foot.
 
 NOTE: Tablet devices as configured here will return :desktop as well, although you can change this.
 
-To test that Mobvious is working you can add the following helper method in *application_helper.rb*:
+To test that Mobvious is working you can add the following helper method in `application_helper.rb`:
 
     def device_test
       # Drop in pages_controller#home: @device = request.env['mobvious.device_type']
@@ -100,9 +100,9 @@ NOTE: For an even simpler solution checkout [Mobylette][Appendix 4] in the Appen
 
 Now that we have Mobvious set up, here is how we will use it.
 
-To begin we will add a bit of [Ryan Bates mobile solution][Ryan Bates] to our Mobvious implementation. Part of his solution creates a new mime type, *:mobile*, and uses a *before_filter* to test if an incoming request is mobile. If true, the *before_filter* sets the mime type to *:mobile* and only files named with the *.mobile.haml* extension are served.
+To begin we will add a bit of [Ryan Bates mobile solution][Ryan Bates] to our Mobvious implementation. Part of his solution creates a new mime type, `:mobile`, and uses a `before_filter` to test if an incoming request is mobile. If true, the `before_filter` sets the mime type to `:mobile` and only files named with the `.mobile.haml` extension are served.
 
-To do this in our application in conjunction with Mobvious, we add the following *before_filter* and private method *prepare_for_mobile* to *application_controller.rb*:
+To do this in our application in conjunction with Mobvious, we add the following `before_filter` and private method `prepare_for_mobile` to `application_controller.rb`:
 
     class ApplicationController < ActionController::Base
       protect_from_forgery
@@ -119,11 +119,11 @@ To do this in our application in conjunction with Mobvious, we add the following
       end
     end
 
-We then register the *:mobile* mime type in *config/initializers/mime_types.rb*:
+We then register the `:mobile` mime type in `config/initializers/mime_types.rb`:
 
     Mime::Type.register_alias "text/html", :mobile
 
-Don't forget to restart your server, and with that, requests from mobile devices detected by Mobvious will be served *.html.mobile views*. Only one is included in our base mobile files, but I'm beginning to get concerned that as we move along development, we will find that we have way too many files in our *app/views* folder – some ending with *.html.haml* others with *.mobile.haml*.
+Don't forget to restart your server, and with that, requests from mobile devices detected by Mobvious will be served `.html.mobile views`. Only one is included in our base mobile files, but I'm beginning to get concerned that as we move along development, we will find that we have way too many files in our `app/views` folder – some ending with `.html.haml` others with `.mobile.haml`.
 
 NOTE: If you use Firefox try [User Agent Switcher][] to test on your desktop.
 
@@ -131,11 +131,11 @@ NOTE: If you use Firefox try [User Agent Switcher][] to test on your desktop.
 
 To better organize and reduce clutter in our views, let's store our mobile views in a separate folder than our regular views.
 
-**Step 1**: Create a new *app/views/mobile* folder and move all mobile views there.
+**Step 1**: Create a new `app/views/mobile` folder and move all mobile views there.
 
-**Step 2**: We tell Rails that our mobile views are now located in this directory by adding the following *prepend_view_path* to our *prepare_for_mobile* method:
+**Step 2**: We tell Rails that our mobile views are now located in this directory by adding the following `prepend_view_path` to our `prepare_for_mobile` method:
 
-    *application_controller.rb*:
+    `application_controller.rb`:
 
     def prepare_for_mobile
       if request.env['mobvious.device_type'] == :mobile
@@ -148,20 +148,20 @@ Now, in addition to our mime type, we have designated a specific view path as th
 
 More importantly, with a common mime type we can now use the same views for both desktop and mobile devices through Rails [template inheritance][] – your application will default to regular views when mobile views are not available. This is especially useful when making an existing app mobile friendly; a little bit at a time.
 
-**Step 3**: To complete the mobile views reorganization, delete the mime type we defined from the previous section (it can be found in *mime_types.rb*), and remove the *request.format = :mobile* line from the *prepare_for_mobile method*.
+**Step 3**: To complete the mobile views reorganization, delete the mime type we defined from the previous section (it can be found in `mime_types.rb`), and remove the `request.format = :mobile` line from the `prepare_for_mobile method`.
 
-**Step 4**: Finally, don't forget to rename your mobile views extensions from *mobile.haml* back to *.html.haml*.
+**Step 4**: Finally, don't forget to rename your mobile views extensions from `mobile.haml` back to `.html.haml`.
 
 Restart your server and you're done!
 
-NOTE: If you prefer to organize your mobile views outside of the regular *app/views* path, for example in *app/views_mobile*, swap the *prepend_view_path* with:
+NOTE: If you prefer to organize your mobile views outside of the regular `app/views` path, for example in `app/views_mobile`, swap the `prepend_view_path` with:
 
     prepend_view_path Rails.root + 'app' + 'views_mobile'
 
 A Hybrid Approach
 -----------------
 
-User agent sniffing might not be the silver bullet we seek to deliver different device optimized versions of a website. Things are happening in mobile so fast that it might be difficult to keep up with the speed of change with user agent sniffing and device databases, plus some devices might not register as *:mobile* and slip through the cracks and receive the desktop version of the website.
+User agent sniffing might not be the silver bullet we seek to deliver different device optimized versions of a website. Things are happening in mobile so fast that it might be difficult to keep up with the speed of change with user agent sniffing and device databases, plus some devices might not register as `:mobile` and slip through the cracks and receive the desktop version of the website.
 
 > That’s not to say that mobile websites are inherently flawed, or that there aren’t valid business cases for creating them. But I do think fragmenting our content across different "device-optimized" experiences is a losing proposition, or at least an unsustainable one. As the past few years have shown us, we simply can’t compete with the pace of technology.
 
@@ -197,26 +197,26 @@ With a few arrows let me explain:
 
 **(1)** There are two main stylesheets:
 
-- **mobile.scss** which organizes and pulls together all the partials under the *mobile* folder.
-- **application.css.scss** which organizes and pulls together all the partials under the *desktop* folder.
+- **mobile.scss** which organizes and pulls together all the partials under the `mobile` folder.
+- **application.css.scss** which organizes and pulls together all the partials under the `desktop` folder.
 
-*mobile.scss* is called through the mobile version of *application.html.haml* (*mobile/layouts/application.html.haml*) and served only when Mobvious detects that the device is a mobile device.
+`mobile.scss` is called through the mobile version of `application.html.haml` (`mobile/layouts/application.html.haml`) and served only when Mobvious detects that the device is a mobile device.
 
-*application.css.scss* is served in all other cases.
+`application.css.scss` is served in all other cases.
 
-**(2)** Partials common to both *mobile.scss* and *application.css.scss*.
+**(2)** Partials common to both `mobile.scss` and `application.css.scss`.
 
-**(3)** All mobile related views are organized under the *mobile* folder. Desktop views are organized under the default Rails file structure.
+**(3)** All mobile related views are organized under the `mobile` folder. Desktop views are organized under the default Rails file structure.
 
-**(4)** When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the *mobile* folder. When those views are not available, through template inheritance, Rails will look for a view with the same name in the regular default location. For example, the *_logo.html.haml* partial is common to both website versions, so there is no reason repeat it, however, *_footer.html.haml* is unique for mobile devices and the mobile version of this file supersedes the default version.
+**(4)** When Mobvious detects that a request is coming from a mobile device, Rails will serve mobile views from the `mobile` folder. When those views are not available, through template inheritance, Rails will look for a view with the same name in the regular default location. For example, the `_logo.html.haml` partial is common to both website versions, so there is no reason repeat it, however, `_footer.html.haml` is unique for mobile devices and the mobile version of this file supersedes the default version.
 
-What this all means is that we can create a second implementation of RWD under the *mobile.scss* stylesheet branch, and by doing so will not affect our first default RWD implementation.
+What this all means is that we can create a second implementation of RWD under the `mobile.scss` stylesheet branch, and by doing so will not affect our first default RWD implementation.
 
 ### Susy-based Mobile RWD
 
 With this knowledge let's set up the mobile RWD version of our website.
 
-In our [Chapter 7][] implementation of [Susy][] we defined the following Susy grid system in *application.css.scss*:
+In our [Chapter 7][] implementation of [Susy][] we defined the following Susy grid system in `application.css.scss`:
 
     // Susy Grid
 
@@ -229,7 +229,7 @@ In our [Chapter 7][] implementation of [Susy][] we defined the following Susy gr
     $break9:            9;
     $break12:           12;
 
-To start our mobile implementation we will do the same in *mobile.scss*, but only focus on the first two breakpoints:
+To start our mobile implementation we will do the same in `mobile.scss`, but only focus on the first two breakpoints:
 
     // Susy Grid
 
@@ -240,9 +240,9 @@ To start our mobile implementation we will do the same in *mobile.scss*, but onl
 
     $break6:            6;
 
-NOTE: *mobile.scss* is coded to optimally handle devices with column widths of < 6 columns (464 pixels).
+NOTE: `mobile.scss` is coded to optimally handle devices with column widths of < 6 columns (464 pixels).
 
-Then, add the *.container* outer grid-containing element in *app/views/mobile/layouts/application.html.haml*:
+Then, add the `.container` outer grid-containing element in `app/views/mobile/layouts/application.html.haml`:
 
     %body
         = chromeframe
@@ -254,7 +254,7 @@ Then, add the *.container* outer grid-containing element in *app/views/mobile/la
         = render :partial => 'shared/footer'
       = scripts
 
-...and add the corresponding Susy mixins in *app/assets/stylesheets/mobile/_layout.sass*:
+...and add the corresponding Susy mixins in `app/assets/stylesheets/mobile/_layout.sass`:
 
     .container
       +container($total-columns, $break6)
@@ -265,19 +265,19 @@ Then, add the *.container* outer grid-containing element in *app/views/mobile/la
 
 That's it! How will this work?
 
-It all starts with the question, "is the request coming from a mobile device?" (Does Mobvious return *:desktop* or *:mobile*?)
+It all starts with the question, "is the request coming from a mobile device?" (Does Mobvious return `:desktop` or `:mobile`?)
 
-**If true**, *views/mobile/layouts/application.html.haml* will be served and through:
+**If true**, `views/mobile/layouts/application.html.haml` will be served and through:
 
     = stylesheet_link_tag "mobile"
 
-... *mobile.scss* , the mobile stylesheet will be included.
+... `mobile.scss` , the mobile stylesheet will be included.
 
-NOTE: *views/mobile/layouts/application.html.haml* is coded with mobile in mind only. Compare the desktop and mobile versions of *head.html.haml* and you will see that they are significantly different from one another. One draws from regular [HTML5 Boilerplate][] and the other from [Mobile Boilerplate][].
+NOTE: `views/mobile/layouts/application.html.haml` is coded with mobile in mind only. Compare the desktop and mobile versions of `head.html.haml` and you will see that they are significantly different from one another. One draws from regular [HTML5 Boilerplate][] and the other from [Mobile Boilerplate][].
 
-**If false**, *views/layouts/application.html.haml* will be served along with the desktop optimized stylesheet *application.css.scss*.
+**If false**, `views/layouts/application.html.haml` will be served along with the desktop optimized stylesheet `application.css.scss`.
 
-NOTE: *views/layouts/application.css.scss* is designed to take advantage of the greater capabilities of devices with > 9 columns (704 pixels) screen widths. If a false positive squeaks by, the desktop version of *application.css.scss* is coded to handle the < 6 columns cases as well (although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized).
+NOTE: `views/layouts/application.css.scss` is designed to take advantage of the greater capabilities of devices with > 9 columns (704 pixels) screen widths. If a false positive squeaks by, the desktop version of `application.css.scss` is coded to handle the < 6 columns cases as well (although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized).
 
 I personally really like this approach. To see how I have organized this in a live application, feel free to clone or poke around https://github.com/maxxiimo/viewthought.
 
