@@ -268,18 +268,17 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 [_footer]:              https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_footer.html.haml
 [_logo]:                https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_logo.html.haml
 [_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_navigation.html.haml
-[jquery]:               https://github.com/maxxiimo/base-haml/blob/master/app/vendor/assets/javascripts/jquery-1.9.1.min.js
-[modernizer]:           https://github.com/maxxiimo/base-haml/blob/master/app/vendor/assets/javascripts/modernizr-2.6.2.min.js
-[.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/app/.gitignore
-[Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/app/Gemfile
-[README.md]:            https://github.com/maxxiimo/base-haml/blob/master/app/README.md
+[jquery]:               https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/jquery-1.9.1.min.js
+[modernizer]:           https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/modernizr-2.6.2.min.js
+[.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
+[Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
+[README.md]:            https://github.com/maxxiimo/base-haml/blob/master/README.md
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
 [Git]:                  http://git-scm.com/
 [Github]:               https://github.com/
-[Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
 [recommends]:           http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2#sec-heroku_setup
 [Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3
 [Heroku]:               https://id.heroku.com/signup
