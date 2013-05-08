@@ -82,7 +82,7 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
 
         $ bundle exec compass init
 
-    Compass will generate a configuration file and stylesheets. Delete the stylesheets *app/assets/stylesheets*:
+    Compass will generate a configuration file and stylesheets. Delete the stylesheets `app/assets/stylesheets`:
 
         - ie.css.scss
         - print.css.scss
@@ -92,11 +92,11 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
 
     NOTE: For more explicit directions take a look at the [compass-rails][] gem source.
 
-2.  Delete your *application.css* file and replace it with a blank *application.scss*.
+2.  Delete your `application.css` file and replace it with a blank `application.scss`.
 
     IMPORTANT: When using Compass always use @import to organize styles rather than Sprockets. You can use Sprockets require syntax, however per the explanation found at the [compass-rails][] gem source, this is not a good idea.
 
-3.  Add the following commented out code to your *config/compass.rb* file generated in step 1:
+3.  Add the following commented out code to your `config/compass.rb` file generated in step 1:
 
         # To allow compass to import partials from subdirectories per
         # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/.
@@ -105,11 +105,11 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
         # To compile in the necessary debugging information for FireSass.
         # sass_options = {:debug_info => true}
 
-    If you have problems with subfolders within your *assets/stylesheets* folder, uncomment the additional_import_paths line.
+    If you have problems with subfolders within your `assets/stylesheets` folder, uncomment the additional_import_paths line.
 
-    If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming; from which is extremely helpful when debugging. Uncomment the *sass_options* line if you plan to use FireSass.
+    If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming; from which is extremely helpful when debugging. Uncomment the `sass_options` line if you plan to use FireSass.
 
-4.  Edit *config/application.rb*:
+4.  Edit `config/application.rb`:
 
     Uncomment the following:
 
@@ -138,7 +138,7 @@ Now that Compass is set up, let's set up our stylesheets. Clone this books [star
 
     git clone git@github.com:maxxiimo/base-css.git
 
-Setting up our CSS is pretty straightforward. Basically, all you have to do is copy into your project the cloned files and subfolders exactly as they are laid out, in their entirety. You will only need to replace the blank *application.scss* file, otherwise you should have no other files in your stylesheets directory, unless you forgot to delete *application.css* when setting up Compass.
+Setting up our CSS is pretty straightforward. Basically, all you have to do is copy into your project the cloned files and subfolders exactly as they are laid out, in their entirety. You will only need to replace the blank `application.scss` file, otherwise you should have no other files in your stylesheets directory, unless you forgot to delete `application.css` when setting up Compass.
 
 Your stylesheet file structure should now look like this:
 
