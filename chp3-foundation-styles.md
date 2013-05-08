@@ -113,8 +113,8 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
 
     Uncomment the following:
 
-          # If you want your assets lazily compiled in production, use this line
-          Bundler.require(:default, :assets, Rails.env)
+        # If you want your assets lazily compiled in production, use this line
+        Bundler.require(:default, :assets, Rails.env)
 
     If you find your system has a problem with sass partial underscores when precompiling, add the following:
 
@@ -138,7 +138,7 @@ Now that Compass is set up, let's set up our stylesheets. Clone this books [star
 
     git clone git@github.com:maxxiimo/base-css.git
 
-Setting up our CSS is pretty straightforward. Basically, all you have to do is copy into your project the cloned files and subfolders exactly as they are laid out, in their entirety. You will only need to replace the blank `application.scss` file, otherwise you should have no other files in your stylesheets directory, unless you forgot to delete `application.css` when setting up Compass.
+Setting up our CSS is pretty straightforward. Basically, all you have to do is copy and merge into your project the cloned files and subfolders exactly as they are laid out, in their entirety. If you followed the Compass set up the only file that will be replaced is `application.scss`.
 
 Your stylesheet file structure should now look like this:
 
