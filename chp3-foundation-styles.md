@@ -82,7 +82,7 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
 
         $ bundle exec compass init
 
-    Compass will generate a configuration file and stylesheets. Delete the stylesheets `app/assets/stylesheets`:
+    Compass will generate a configuration file and stylesheets. Delete the stylesheets found in `app/assets/stylesheets`:
 
         - ie.css.scss
         - print.css.scss
@@ -105,7 +105,7 @@ We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Ch
         # To compile in the necessary debugging information for FireSass.
         # sass_options = {:debug_info => true}
 
-    If you have problems with subfolders within your `assets/stylesheets` folder, uncomment the additional_import_paths line.
+    If you have problems with subfolders within your `assets/stylesheets` folder, uncomment the `additional_import_paths` line.
 
     If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming; from which is extremely helpful when debugging. Uncomment the `sass_options` line if you plan to use FireSass.
 
