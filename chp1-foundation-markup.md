@@ -258,21 +258,21 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 [Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-information-architecting.md
 
 [starter code]:         https://github.com/maxxiimo/base-haml
-[application.js]:       https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/application.js
-[site]:                 https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/site.js
-[application_helper]:   https://github.com/maxxiimo/base-haml/blob/master/helpers/application_helper.rb
-[_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_chromeframe.html.haml
-[_head]:                https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
-[_scripts]:             https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_scripts.html.haml
-[application]:          https://github.com/maxxiimo/base-haml/blob/master/views/layouts/application.html.haml
-[_footer]:              https://github.com/maxxiimo/base-haml/blob/master/views/shared/_footer.html.haml
-[_logo]:                https://github.com/maxxiimo/base-haml/blob/master/views/shared/_logo.html.haml
-[_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/views/shared/_navigation.html.haml
-[jquery]:               https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/jquery-1.9.1.min.js
-[modernizer]:           https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/modernizr-2.6.2.min.js
-[.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
-[Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
-[README.md]:            https://github.com/maxxiimo/base-haml/blob/master/README.md
+[application.js]:       https://github.com/maxxiimo/base-haml/blob/master/app/assets/javascripts/application.js
+[site]:                 https://github.com/maxxiimo/base-haml/blob/master/app/assets/javascripts/site.js
+[application_helper]:   https://github.com/maxxiimo/base-haml/blob/master/app/helpers/application_helper.rb
+[_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_chromeframe.html.haml
+[_head]:                https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_head.html.haml
+[_scripts]:             https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_scripts.html.haml
+[application]:          https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/application.html.haml
+[_footer]:              https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_footer.html.haml
+[_logo]:                https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_logo.html.haml
+[_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_navigation.html.haml
+[jquery]:               https://github.com/maxxiimo/base-haml/blob/master/app/vendor/assets/javascripts/jquery-1.9.1.min.js
+[modernizer]:           https://github.com/maxxiimo/base-haml/blob/master/app/vendor/assets/javascripts/modernizr-2.6.2.min.js
+[.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/app/.gitignore
+[Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/app/Gemfile
+[README.md]:            https://github.com/maxxiimo/base-haml/blob/master/app/README.md
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
 
