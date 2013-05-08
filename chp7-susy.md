@@ -82,15 +82,22 @@ NOTE: Internally Susy calculates the total width of your grid, including its pad
 
     .container
       +container
+      +susy-grid-background
 
 `+container` is a Susy mixin that applies the definitions you defined in Step 1 to the outer grid containing element you created in Step 2.
+
+`+susy-grid-background` is a Susy mixin that applies a grid background to your grid; useful for layout placement.
 
 **Step 4**: Remove the following styles from the body tag since we are now replacing these properties with Susy:
 
       margin: 0 auto
       width: 960px
 
-And that's it! Refresh your browser. You may see a very slight shift in the content, but otherwise everything should look the same, accept that Susy is now in control oof your grid system. In the Media Queries section of this chapter we will use Susy quite a bit, but first let's quickly learn how it works.
+And that's it! Refresh your browser and here is what you should see:
+
+![][Susy Layout]
+
+Aside from the grid lines everything looks the same, accept now Susy is in control oof your grid system. In the Media Queries section of this chapter we will use Susy quite a bit, but first let's quickly learn how it works.
 
 Susy in Action
 --------------
@@ -382,3 +389,5 @@ To learn more on how Susy breakpoints work, in addition to the Susy's own [refer
 [Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
 [Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
 [Muppets]:              https://groups.google.com/d/topic/compass-users/oXHAtZE4euI/discussion
+
+[Susy Layout]:          http://chrismaxwell.com/manifesto/chp-7/susy-layout.png
