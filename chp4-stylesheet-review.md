@@ -25,7 +25,7 @@ Our hierarchy looks like this:
 - MIXINS
   - [_media_queries.sass][]
 - RESETS
-  - [h5bp_normalize_v111.scss][]
+  - [h5bp_normalize_v112.scss][]
 - BASIC STRUCTURE
   - [_layout.sass][]
   - [_grids.sass][]
@@ -69,7 +69,7 @@ Major mixins such as Compass and homebrewed mixins. Included in our starter CSS 
 
     /* RESETS
     ============================================================================ */
-    @import "boilerplate/h5bp_normalize_v111";
+    @import "boilerplate/h5bp_normalize_v112";
 
     // To counter normalize indentation of lists.
     ol, ul {
@@ -495,7 +495,7 @@ The following reference will give you some great ideas:
 [application.css.scss]: https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/application.css.scss
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_define.sass
 [_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_media_queries.sass
-[_h5bp_normalize_v111.scss]: https://github.com/maxxiimo/base-css/blob/master/vendor/assets/stylesheets/boilerplate/_h5bp_normalize_v111.scss
+[_h5bp_normalize_v112.scss]: https://github.com/maxxiimo/base-css/blob/master/vendor/assets/stylesheets/boilerplate/_h5bp_normalize_v112.scss
 [_layout.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_layout.sass
 [_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_grids.sass
 [_mixins.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_mixins.sass
