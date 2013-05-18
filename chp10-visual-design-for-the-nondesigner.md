@@ -482,34 +482,32 @@ Notice the Unicode value in the `data-icon` attribute? To find your Unicode valu
 
 **Step 5**: Pull your fonts into your project through `_define.sass` through the following:
 
-        // icon fonts...
+    // icon fonts...
 
-        @font-face
-          font-family: 'icon-fonts'
-          font-weight: normal
-          font-style: normal
-          src: font-url('icon-fonts.eot')
-          src: font-url('icon-fonts.eot?#iefix') format("embedded-opentype"), font-url('icon-fonts.svg#icon-fonts') format("svg"), font-url('icon-fonts.woff') format("woff"), font-url('icon-fonts.ttf') format("truetype")
+    @font-face
+      font-family: 'icon-fonts'
+      font-weight: normal
+      font-style: normal
+      src: font-url('icon-fonts.eot')
+      src: font-url('icon-fonts.eot?#iefix') format("embedded-opentype"), font-url('icon-fonts.svg#icon-fonts') format("svg"), font-url('icon-fonts.woff') format("woff"), font-url('icon-fonts.ttf') format("truetype")
 
 **Step 6**: Create the styles necessary to use your new font. Add the following styles mixin to `_mixin.sass`:
 
-        /*  Icon Fonts
-          -----------------------
+    /*  Icon Fonts
+      -----------------------
 
-        @mixin data-icon
-          font-family: 'icon-fonts'
-          content: attr(data-icon)
-          speak: none
-          font-weight: normal
-          line-height: 1
-          -webkit-font-smoothing: antialiased
+    @mixin data-icon
+      font-family: 'icon-fonts'
+      content: attr(data-icon)
+      speak: none
+      font-weight: normal
+      line-height: 1
+      -webkit-font-smoothing: antialiased
 
 Call your new mixin were needed as follows:
 
-        [data-icon]:before
-          +data-icon
-
-
+    [data-icon]:before
+      +data-icon
 
 [The Big List of Flat Icons & Icon Fonts][Big List]
 
