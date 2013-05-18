@@ -470,7 +470,7 @@ NOTE: I generally load all the icon sets and search by keywords to compare acros
 
 NOTE: I generally keep the defaults but change the Preferences -> Font Name to "icon-fonts". You can also change the encoding – depending on the project – to PUA (Private Use Area), Symbols or Latin characters.
 
-**Step 3**: Download your fonts. Copy the fonts folder into your assets folder. Save the original in `vendor/source`.
+**Step 3**: Download your fonts. Copy the zipped folder `fonts` into your `app/asset/images` folder. Save the original in `vendor/source`.
 
 **Step 4**: Create the HTML that will handle your new fonts, for example:
 
