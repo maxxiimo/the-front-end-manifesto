@@ -462,27 +462,25 @@ Icons
 
 ### Icon Fonts
 
+**Step 1**: Visit http://icomoon.io/app/ and select icons you wish to use. You can add more icon sets.
 
+NOTE: I generally load all the icon sets and search by keywords to compare across different sets, e.g. "social" for social icons.
 
-*Step 1:* Visit http://icomoon.io/app/ and select icons you wish to use. You can add more icon sets.
+**Step 2**: Review and configure your selected fonts.
 
-NOTE: I generally load all the icon sets and search by keywords, for example "home", and compare.
+NOTE: I generally keep the defaults but change the Preferences -> Font Name to "icon-fonts". You can also change the encoding – depending on the project – to PUA (Private Use Area), Symbols or Latin characters.
 
-*Step 2:* Review and configure your selected fonts.
+**Step 3**: Download your fonts. Copy the fonts folder into your assets folder. Save the original in `vendor/source`.
 
-NOTE: I generally keep the defaults but change the Preferences -> Font Name to "icon-fonts", and change the encoding depending on the project to PUA (Private Use Area), Symbols or Latin characters.
-
-*Step 3:* Download your fonts. Copy the fonts folder into your assets folder. Save the original download in vendor/source.
-
-*Step 4:* Create the HTML that will handle your new fonts, for example:
+**Step 4**: Create the HTML that will handle your new fonts, for example:
 
     %a{:href => "/", :title => 'Home'}
       %span{"aria-hidden" => "true", "data-icon" => "&#x2616;".html_safe}
       %span.screen-reader-text Home
 
-This is a home link that will use an icon font. Notice the Unicode value in the data-icon attribute? To find your Unicode values go back to your original download and open the index.html in your browser.
+Notice the Unicode value in the `data-icon` attribute? To find your Unicode values go back to your original download and open `index.html` in your browser. Also notice the `.html_safe ` method? This will ensure that the string is inserted unaltered into the output.
 
-*Step 5:* Pull your fonts into your project through *_define.sass*. Add the following:
+**Step 5**: Pull your fonts into your project through `_define.sass` through the following:
 
         // icon fonts...
 
@@ -493,7 +491,7 @@ This is a home link that will use an icon font. Notice the Unicode value in the 
           src: font-url('icon-fonts.eot')
           src: font-url('icon-fonts.eot?#iefix') format("embedded-opentype"), font-url('icon-fonts.svg#icon-fonts') format("svg"), font-url('icon-fonts.woff') format("woff"), font-url('icon-fonts.ttf') format("truetype")
 
-*Step 6:* Create the styles necessary to use your new font. Use a styles mixin and add to _mixin.sass:
+**Step 6**: Create the styles necessary to use your new font. Add the following styles mixin to `_mixin.sass`:
 
         /*  Icon Fonts
           -----------------------
