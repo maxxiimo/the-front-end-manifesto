@@ -509,6 +509,12 @@ Call your new mixin were needed as follows:
     [data-icon]:before
       +data-icon
 
+For example if needed in your footer:
+
+    footer
+      [data-icon]:before
+        +data-icon
+
 [The Big List of Flat Icons & Icon Fonts][Big List]
 
 [HTML for Icon Font Usage][Icon Font HTML]
