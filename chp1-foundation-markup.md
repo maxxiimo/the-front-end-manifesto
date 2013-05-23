@@ -286,4 +286,4 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 
 [Layout]:               http://chrismaxwell.com/manifesto/chp-1/layout-sm.png
 [Basic HTML]:           http://chrismaxwell.com/manifesto/chp-1/basic-html.png
-
+[New Files]:            http://chrismaxwell.com/manifesto/chp-1/new-files.gif
