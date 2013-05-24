@@ -16,18 +16,14 @@ Set Up
 
 Set up is pretty straightforward:
 
-**Step 1**: Add the following to `config/compass.rb`:
-
-    require "susy"
-
-**Step 2**: Add the Susy gem to your `.gemfile` and bundle install:
+**Step 1**: Add the Susy gem to your `.gemfile` and bundle install:
 
     # Compass specific gems.
     gem 'compass-rails'
     gem 'oily_png'
     gem 'susy'
 
-**Step 3**: Import Susy into your project (uncomment):
+**Step 2**: Import Susy into your project (uncomment):
 
 `app/assets/stylesheets/application.css.scss`
 
