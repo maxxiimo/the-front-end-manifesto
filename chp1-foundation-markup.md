@@ -177,15 +177,9 @@ For faster asset precompiles check out:
 
 IMPORTANT: You will have problems precompiling `modernizr-2.6.2.min.js`. It's not part of your manifest, therefore you will need to tell Heroku to precompile this file:
 
-Add the following to `application.rb`:
+Aadd the following to `production.rb`:
 
-    # Precompile *all* assets, except those that start with underscore per:
-    # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
-    config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
-
-Alternatively, add the following to `production.rb`:
-
-    config.assets.precompile += %w( modernizr-2.6.2.min )
+    config.assets.precompile += %w( modernizr-2.6.2.min.js )
 
 And that's it! Now it's time to Prep and Launch your application.
 
