@@ -156,6 +156,7 @@ Our [.gitignore][]. file is borrowed from [HTML 5 Boilerplate][H5BP .gitignore])
     graveyard.sass
     public/source
     vendor/source
+    local_env.yml
 
 You may use these files or folders to save things within the application, but only on your local machine:
 
@@ -164,6 +165,8 @@ You may use these files or folders to save things within the application, but on
 - __graveyard.sass__ - A graveyard for CSS.
 
 - __public/source__ and __vendor/source__ - Folders for original third-party files or source code integrated into the application; Photoshop files; original images; basically the original copies of where things came from.
+
+- __local_env.yml__ - ignore file to place ENV variables into.
 
 Replace the default .gitignore with the one found in your cloned starter code. Commit your changes.
 
