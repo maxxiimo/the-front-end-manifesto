@@ -48,11 +48,11 @@ Start with the lowest hanging fruit, the background. This manifesto is not a cou
 - A repeating pattern
 - A color with a horizontal gradient
 
-Backgrounds are rarely a single large image because of bandwidth costs.
+Backgrounds are rarely a single large image because of bandwidth cost.
 
-To implement your background, set your body background-color property either to a specific color, or to a repeating image. If a gradient is involved you can use CSS3, or an image to achieve the effect. Whatever images you do use for the background, make it as small and optimized as possible without losing the look you are after. If you're using my CSS organization structure put your styles in _layout.sass file.
+To implement your background, set your `<body>` tags background-color property either to a specific color, or to a repeating image. If a gradient is involved you can use CSS3, or an image to achieve the effect. Whatever images you do use for the background, make it as small and optimized as possible without losing the look you are after. If you're using my CSS organization structure, put your styles in `_layout.sass`.
 
-NOTE: When using Compass use image-url("") instead of url():
+NOTE: When using Compass use `image-url("")` instead of `url()`:
 
     background: image-url("fixtures/bg-texture.gif") 0 0 repeat-x
 
