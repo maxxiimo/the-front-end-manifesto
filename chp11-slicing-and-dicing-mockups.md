@@ -75,7 +75,13 @@ NOTE: When using Compass use `image-url("")` instead of `url()`:
 
     background: image-url("fixtures/bg-texture.gif") 0 0 repeat-x
 
-### Step 3 - Fonts
+### Step 3 - Grab Images
+
+
+
+
+
+### Step 4 - Fonts
 
 Start sampling fonts to determine font-family, font-size, and color. Organize what you find in your _define.sass file. The names you use to define these colors can be very specific, but as you move along you'll begin to notice groupings and can reorganize and rename things as you work.
 
@@ -95,9 +101,6 @@ NOTE: As you're moving along there'll be times that you will need to add a note 
     // TODO ccm: the note goes in here.
 
 This way I can grep for "FIXME ccm", where ccm are my initials, and find my notes.
-
-### Step 4 - Grab Images
-
 
 ### Step 5 - Sectioning Content (layout/application.html.haml)
 
