@@ -84,10 +84,10 @@ When grabbing images here is the structure I use to organize them:
 app<br>
 |-- assets<br>
 |&nbsp;&nbsp;&nbsp;|-- images<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- fixtures<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- icons<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- logos<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- pics<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **fixtures**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **icons**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **logos**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **pics**
 
 Fixtures are things like shims or other structural components of a website. The other three folders are self-explanatory.
 
