@@ -40,7 +40,24 @@ As the underlying structure comes together in your mind, your coding vision, you
 
 The truth of a matter is that slicing mockups is pretty straightforward. There are only so many ways you can organize a page layout, and most components within a page layout are pretty standard: I mean you have paragraphs, and headers, and links, a way to get around through navigation, and so forth. On the other hand though a designer's artistic expression and the look and feel of the site are very subjective; mockup to mockup. Making a mockup come to life per the designers vision, consistently across devices and browsers, requires a certain amount of HTML/CSS art (based on trial and error and experience). There is no formula for doing it, just basic guidelines which I will layout here as steps, and use a demo project to illustrate.
 
-### Step 1 - Backgrounds
+### Step 1 - Set Major Widths
+
+Start with the lowest hanging fruit; major widths. Pretty straightforward, but doing so early on will provide the structure you will work with and within moving forward.
+
+What are major widths? This is the main body or area of any website. It's what holds everything together and frames your content. In our example our major widths can be found in two places:
+
+1. The blue header which expands the entire width of the browser, but also has an inner width for its content (the inner width is aligned with the main bodies width).
+
+2. The main body: the white tabbed area.
+
+How you define these widths is up to you, but I highly recommend using a [grid system][]. My tool of choice for creating a grid system is [Susy][].
+
+Note: You can use <body> or <div> as a containing element:
+
+[Why should I use a container div in HTML?][Containing DIV]
+[Using the <body> element as a wrapper][Containing BODY]
+
+### Step 2 - Backgrounds
 
 Start with the lowest hanging fruit, the background. This manifesto is not a course on CSS so I won't get too into the details, but backgrounds are typically:
 
@@ -50,20 +67,13 @@ Start with the lowest hanging fruit, the background. This manifesto is not a cou
 
 Backgrounds are rarely a single large image because of bandwidth cost.
 
-To implement your background, set your `<body>` tags background-color property either to a specific color, or to a repeating image. If a gradient is involved you can use CSS3, or an image to achieve the effect. Whatever images you do use for the background, make it as small and optimized as possible without losing the look you are after. If you're using my CSS organization structure, put your styles in `_layout.sass`.
+To implement your background, set your `<body>` tags background-color property either to a specific color, or to a repeating image. If a gradient is involved you can use CSS3 or an image to achieve the effect. Whatever images you do use for the background, make it as small and optimized as possible without losing the look you are after.
+
+If you're using my CSS organization structure, put your background styles in `_layout.sass`. It's a layout component.
 
 NOTE: When using Compass use `image-url("")` instead of `url()`:
 
     background: image-url("fixtures/bg-texture.gif") 0 0 repeat-x
-
-### Step 2 - Set Widths
-
-Pretty straightforward, but doing so early on will lead into step 3.
-
-Note: You can use <body> or <div> as a containing element:
-
-[Why should I use a container div in HTML?][Containing DIV]
-[Using the <body> element as a wrapper][Containing BODY]
 
 ### Step 3 - Fonts
 
@@ -276,6 +286,9 @@ Why do this from the get-go? Well you know you will have icons and you already h
 
 [grid system]:          http://www.subtraction.com/pics/0703/grids_are_good.pdf
 [grid-background]:      http://compass-style.org/reference/compass/layout/grid_background/
+
+[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
+
 [application]:          https://github.com/maxxiimo/base-haml/blob/master/views/layouts/application.html.haml
 [Containing DIV]:       http://stackoverflow.com/questions/354739/why-should-i-use-a-container-div-in-html
 [Containing BODY]:      http://csswizardry.com/2011/01/using-the-body-element-as-a-wrapper/
