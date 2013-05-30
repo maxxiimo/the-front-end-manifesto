@@ -1,13 +1,13 @@
 Slicing and Dicing Mockups
 ==========================
 
-Unlike in the last chapter, often times I find myself in situations where all of the information architect thing has been thought out, the look and feel is in place, and the designer has put it all together in a mockup. In this chapter we're going to go through the exercise of slicing and dicing an example mockup to learn one approach to turning mockups into front end code. Here is the mockup we will use:
+Unlike in previous chapters, often times I find myself in situations where all of the information architecting has been thought out, the look and feel is in place, and the designer has put it all together in a mockup. In this chapter we're going to go through the exercise of slicing and dicing an example mockup to learn one approach to turning mockups into front end code. Here is the mockup we will use:
 
 ![][mockup]
 
 To begin, use Adobe Photoshop to work with mockups. You will need it. Start off by taking a look at the mockup for a few minutes. Think of yourself as a sculptor looking at a marble block for the first time. You have a vision in your head and your getting ready to chisel. In other words just absorb it, understand it. Look at the major layout elements, i.e. the framework of the site, and begin to ask yourself some basic high-level questions like:
 
-1.  How wide should it be? 960px, 980px, 1040px?
+1.  How wide is it designed to be? 960px, 980px, 1040px?
 
 2.  Is the width fluid or static?
 
@@ -19,24 +19,26 @@ To begin, use Adobe Photoshop to work with mockups. You will need it. Start off 
 
 6.  Does the designer use a [grid system][]? (FYI - Compass has a great [grid-background][] mixin for this.)
 
-7.  Is the header the same width as the main body?
+7.  Is the header the same width as the main body or does it expand the entire page?
 
-8.  Are gradients usedand where? Are there any on the header and outer sides of the main body?
+8.  Are gradients used and where? Are gradients used in the header and outer sides of the main body?
 
-9.  Where's the logo? Is it standard or does it overlap and need special attention?
+9.  Are corners rounded? Double check them all.
 
-10. Anything interesting going on with the background?
+10. Where's the logo? Is it standard or does it overlap and need special attention?
 
-These are just a few questions to get you to start to think about how you will implement, and at the highest or strategic level - what will hold these elements and what will the base layout look like. Constructing the base HTML layout is the most important step in the process. Take your time, think about:
+11. Anything interesting going on with the background?
+
+These are just a few questions to get you to start to think about how you will implement, and at the highest or strategic level - what will hold these elements, and what will the base layout look like. Constructing the base HTML layout is the most important step in the process. Take your time, think about:
 
 - Semantics.
 - How sections will interrelate and in some cases interact.
 - How will the base layout be affected by future changes.
 - Try to imagine how you will compartmentalize things in such a way that your code is efficient, organized, and less likely to require repetition (as in DRY).
 
-As the underlying structure comes together in your mind and even on your editor, you can start to look at content within the body, the overall look and feel, images, colors and fonts, and you can begin to start to think about whether you will use CSS or JavaScript to create various effects.
+As the underlying structure comes together in your mind, your coding vision, you can then start to look at content within the body, the overall look and feel, images, colors and fonts, and you can begin to start to think about whether you will use CSS or JavaScript to create various effects.
 
-The truth of a matter is that slicing mockups is pretty straightforward. There are only so many ways you can organize a page layout, and most components within a page layout are pretty standard: I mean you have paragraphs, and headers, and links, a way to get around through navigation, and so forth. On the other hand though a designer's artistic expression and the look and feel of the site are very subjective, mockup to mockup. Making a mockup come to life per the designers vision, consistently across devices and browsers, requires a certain amount of HTML/CSS art (based on trial and error and experience). There is no formula for doing it, just basic guidelines which I will layout here as steps and use a demo project to illustrate.
+The truth of a matter is that slicing mockups is pretty straightforward. There are only so many ways you can organize a page layout, and most components within a page layout are pretty standard: I mean you have paragraphs, and headers, and links, a way to get around through navigation, and so forth. On the other hand though a designer's artistic expression and the look and feel of the site are very subjective; mockup to mockup. Making a mockup come to life per the designers vision, consistently across devices and browsers, requires a certain amount of HTML/CSS art (based on trial and error and experience). There is no formula for doing it, just basic guidelines which I will layout here as steps, and use a demo project to illustrate.
 
 ### Step 1 - Backgrounds
 
