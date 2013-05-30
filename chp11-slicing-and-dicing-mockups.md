@@ -77,7 +77,7 @@ NOTE: When using Compass use `image-url("")` instead of `url()`:
 
 ### Step 3 - Grab Images
 
-The next task I like to do is grab all the images I will need for the website, and that I can't re-create using CSS3. For example, in the mockup above I will need the ABC logo, a sample profile picture, some icons, but I can re-create the header gradients and rounded corners with CSS. I'm not yet sure about the company logo, but the point is grab the images you will need at the beginning of the project. This forces you to at least think about it and what you can do with CSS3.
+Grab all the images you will need for the website, and that can't be re-created using CSS3. For example, in the mockup above I will need the ABC logo, a sample profile picture, some icons, but I can re-create the header gradients and rounded corners with CSS. I'm not yet sure about the company logo, but the point is grab the images you will need at the beginning of the project.
 
 It's not absolutely necessary to grab every single image before you begin coding, but in the very least set up a file structure to drop images into. Here is the structure I use to keep things organized:
 
@@ -90,6 +90,8 @@ app<br>
 |&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **pics**
 
 Fixtures are things like shims or other structural components of a website. The other three folders are self-explanatory.
+
+NOTE: When grabbing images it's a good practice to optimize them before you drop them into application folders. I also keep all the originals in a source folder that is [ignored][] by git.
 
 ### Step 4 - Fonts
 
@@ -301,15 +303,19 @@ Why do this from the get-go? Well you know you will have icons and you already h
 [grid-background]:      http://compass-style.org/reference/compass/layout/grid_background/
 
 [Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
-
-[application]:          https://github.com/maxxiimo/base-haml/blob/master/views/layouts/application.html.haml
 [Containing DIV]:       http://stackoverflow.com/questions/354739/why-should-i-use-a-container-div-in-html
 [Containing BODY]:      http://csswizardry.com/2011/01/using-the-body-element-as-a-wrapper/
+
+[iignore]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#gitignore
+
 [CSS Font Stack]:       http://cssfontstack.com/
 [Better Stacks]:        http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
 [Revised Stack]:        http://www.awayback.com/revised-font-stack/
 [Nice Fonts]:           http://aversionfour.petercolesdc.com/web-fonts-nice-honest/
 [Complete Font Guide]:  http://www.apaddedcell.com/web-fonts
+
+[application]:          https://github.com/maxxiimo/base-haml/blob/master/views/layouts/application.html.haml
+
 [Flowchart]:            http://html5doctor.com/downloads/h5d-sectioning-flowchart.png
 [Structural Tags]:      http://orderedlist.com/resources/html-css/structural-tags-in-html5/
 [Not Obvious]:          http://www.anthonycalzadilla.com/2010/08/html5-section-aside-header-nav-footer-elements-not-as-obvious-as-they-sound/
