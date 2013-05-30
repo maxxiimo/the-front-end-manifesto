@@ -59,7 +59,7 @@ Note: You can use `<body>` or `<div>` as a containing element:
 
 ### Step 2 - Backgrounds
 
-Start with the lowest hanging fruit, the background. This manifesto is not a course on CSS so I won't get too into the details, but backgrounds are typically:
+The next lowest hanging fruit is the background. By defining backgrounds right off the bat your major widths suddenly become apparent. This manifesto is not a course on CSS so I won't get into styling details, but backgrounds are typically:
 
 - Single colors like eggshell white
 - A repeating pattern
