@@ -306,7 +306,7 @@ Why do this from the get-go? Well you know you will have icons and you already h
 [Containing DIV]:       http://stackoverflow.com/questions/354739/why-should-i-use-a-container-div-in-html
 [Containing BODY]:      http://csswizardry.com/2011/01/using-the-body-element-as-a-wrapper/
 
-[iignore]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#gitignore
+[ignored]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#gitignore
 
 [CSS Font Stack]:       http://cssfontstack.com/
 [Better Stacks]:        http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
