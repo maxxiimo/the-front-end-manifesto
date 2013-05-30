@@ -52,10 +52,10 @@ What are major widths? This is the main body or area of any website. It's what h
 
 How you define these widths is up to you, but I highly recommend using a [grid system][]. My tool of choice for creating a grid system is [Susy][].
 
-Note: You can use <body> or <div> as a containing element:
+Note: You can use `<body>` or `<div>` as a containing element:
 
-[Why should I use a container div in HTML?][Containing DIV]
-[Using the <body> element as a wrapper][Containing BODY]
+- [Why should I use a container div in HTML?][Containing DIV]
+- [Using the <body> element as a wrapper][Containing BODY]
 
 ### Step 2 - Backgrounds
 
