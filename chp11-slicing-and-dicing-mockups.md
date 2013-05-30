@@ -77,9 +77,19 @@ NOTE: When using Compass use `image-url("")` instead of `url()`:
 
 ### Step 3 - Grab Images
 
+The next not like to do is grab all the images I will need for the website, and that I can't re-create using CSS3. For example, in the mockup above I will need the ABC logo, a sample profile picture, some icons, but I can re-create the header gradients and rounded corners with CSS. I'm not yet sure about the company logo, but the point is grabbed the images you will need at the beginning of the project so that they are there for you when you need them.
 
+When grabbing images here is the structure I use to organize them:
 
+app<br>
+|-- assets<br>
+|&nbsp;&nbsp;&nbsp;|-- images<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- fixtures<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- icons<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- logos<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- pics<br>
 
+Fixtures are things like shims or other structural components of a website. The other three folders are self-explanatory.
 
 ### Step 4 - Fonts
 
