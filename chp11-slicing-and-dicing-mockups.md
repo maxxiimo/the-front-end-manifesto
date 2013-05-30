@@ -77,9 +77,9 @@ NOTE: When using Compass use `image-url("")` instead of `url()`:
 
 ### Step 3 - Grab Images
 
-The next not like to do is grab all the images I will need for the website, and that I can't re-create using CSS3. For example, in the mockup above I will need the ABC logo, a sample profile picture, some icons, but I can re-create the header gradients and rounded corners with CSS. I'm not yet sure about the company logo, but the point is grabbed the images you will need at the beginning of the project so that they are there for you when you need them.
+The next task I like to do is grab all the images I will need for the website, and that I can't re-create using CSS3. For example, in the mockup above I will need the ABC logo, a sample profile picture, some icons, but I can re-create the header gradients and rounded corners with CSS. I'm not yet sure about the company logo, but the point is grab the images you will need at the beginning of the project. This forces you to at least think about it and what you can do with CSS3.
 
-When grabbing images here is the structure I use to organize them:
+It's not absolutely necessary to grab every single image before you begin coding, but in the very least set up a file structure to drop images into. Here is the structure I use to keep things organized:
 
 app<br>
 |-- assets<br>
