@@ -76,10 +76,9 @@ NOTE: When using Compass use `image-url("")` instead of `url()`:
     background: image-url("fixtures/bg-texture.gif") 0 0 repeat-x
 
 ### Step 3 - Grab Images
+It's a good idea to isolate, optimize and save all the images from your mockup you will need for the website (and that can't be re-created using CSS3). For example, in the mockup above I will need the ABC logo, a sample profile picture, some icons, but I can re-create the header gradients and rounded corners with CSS. I'm not yet sure about the company logo, but the point is grab the images you will need at the beginning of the project.
 
-Grab all the images you will need for the website, and that can't be re-created using CSS3. For example, in the mockup above I will need the ABC logo, a sample profile picture, some icons, but I can re-create the header gradients and rounded corners with CSS. I'm not yet sure about the company logo, but the point is grab the images you will need at the beginning of the project.
-
-It's not absolutely necessary to grab every single image before you begin coding, but in the very least set up a file structure to drop images into. Here is the structure I use to keep things organized:
+It's also good practice set up a file structure to drop images into. Here is the structure I use to keep things organized:
 
 app<br>
 |-- assets<br>
@@ -91,7 +90,7 @@ app<br>
 
 Fixtures are things like shims or other structural components of a website. The other three folders are self-explanatory.
 
-NOTE: When grabbing images it's a good practice to optimize them before you drop them into application folders. I also keep all the originals in a source folder that is [ignored][] by git.
+NOTE: Keep original files in a source folder within your application that is [ignored][] by git.
 
 ### Step 4 - Fonts
 
