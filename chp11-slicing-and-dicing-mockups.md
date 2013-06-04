@@ -94,14 +94,9 @@ NOTE: Keep original files in a source folder within your application that is [ig
 
 ### Step 4 - Fonts
 
-Start sampling fonts to determine font-family, font-size, and color. Organize what you find in your _define.sass file. The names you use to define these colors can be very specific, but as you move along you'll begin to notice groupings and can reorganize and rename things as you work.
+Start sampling fonts to determine font-family, font-size, and color. Organize what you find in [_define.sass][]. As you move along you will begin to notice groupings and can reorganize and rename things as you work.
 
-The overall font-family is probably the most important thing you'll define right now. I use [CSS Font Stack][] to help me define the font-family. Some additional resources for you include:
-
-- [Better CSS Font Stacks][Better Stacks]
-- [Revised Font Stack][Revised Stack]
-- [Web Fonts Can Be Nice (Honest)][Nice Fonts]
-- [Complete Guide to Pre-Installed Fonts in Linux, Mac, and Windows][Complete Font Guide]
+The overall font-family is probably the most important thing you'll define right now. I use [CSS Font Stack][] to help me define the font-family. You will find a whole boatload of resources to help you in [Appendix 8][].
 
 NOTE: As you're moving along there'll be times that you will need to add a note for yourself so that you can revisit something. When adding notes in your code I like to use something like this:
 
@@ -307,11 +302,8 @@ Why do this from the get-go? Well you know you will have icons and you already h
 
 [ignored]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#gitignore
 
-[CSS Font Stack]:       http://cssfontstack.com/
-[Better Stacks]:        http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
-[Revised Stack]:        http://www.awayback.com/revised-font-stack/
-[Nice Fonts]:           http://aversionfour.petercolesdc.com/web-fonts-nice-honest/
-[Complete Font Guide]:  http://www.apaddedcell.com/web-fonts
+[_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_define.sass
+[Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-8
 
 [application]:          https://github.com/maxxiimo/base-haml/blob/master/views/layouts/application.html.haml
 

@@ -460,15 +460,11 @@ Appendix 8
 
     > Web fonts are gaining in popularity now, but they can still be a bit of a challenge to use. Copyright issues often require the use of a third-party font service, which can be risky and expensive.The good news is that all major operating systems come with a variety of fonts that you can use to create your font stacks.
 
-6.  [Build better CSS font stacks][Build Better Stacks]
-
-    > The font stack builder will help you build a better font stack from scratch, but what if you need a jump start, inspiration, or want to build on tried and trusted CSS font stacks? Start with this selection of pre-built font stacks and customise with your own preferred fonts.
-
-7.  [TYPECHART][]
+6.  [TYPECHART][]
 
     > Browse web type, grab CSS. TYPECHART lets you flip through, preview and compare web typography while retrieving the CSS.
 
-8.  [Revised Font Stack][]
+7.  [Revised Font Stack][]
 
     > Serious efforts are being made to get more typeface choices on the web to enhance web typography. Still, most of us prefer web-safe fonts like: Verdana, Georgia, Times New Roman and Arial. Though choices are limited, yet the number can be increased by exploring other pre-installed fonts.
 
@@ -967,7 +963,6 @@ Color palette creation and sharing tools.
 [Definitive]:           http://www.sitepoint.com/eight-definitive-font-stacks/
 [Google Scripts]:       http://designshack.net/articles/css/the-10-best-script-and-handwritten-google-web-fonts/
 [Complete Guide]:       http://www.apaddedcell.com/web-fonts
-[Build Better Stacks]:  http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml
 [TYPECHART]:            http://www.typechart.com/
 [Revised Font Stack]:   http://www.awayback.com/revised-font-stack/
 
