@@ -318,9 +318,11 @@ The following links deal specifically with mobile:
 
 Because responsive will play a big part in your design the following two links may help you think through your navigation:
 
-1. [Responsive Navigation Patterns][Responsive Nav]
+1. [70 Stunning Responsive Sites for Your Inspiration][70 Sites]
 
-2. [Complex Navigation Patterns for Responsive Design][Complex Navigation]
+2. [Responsive Navigation Patterns][Responsive Nav]
+
+3. [Complex Navigation Patterns for Responsive Design][Complex Navigation]
 
 
 
@@ -915,6 +917,7 @@ Color palette creation and sharing tools.
 [WAPReview]:            http://wapreview.com/?id=0
 [Higher Ed]:            http://www.dmolsen.com/mobile-in-higher-ed/higher-ed-mobile-sites/
 [WTF]:                  http://wtfmobileweb.com/
+[70 Sites]:             http://www.mobify.com/blog/70-stunning-responsive-sites-for-your-inspiration/
 [Responsive Nav]:       http://bradfrostweb.com/blog/web/responsive-nav-patterns/
 [Complex Navigation]:   http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/
 
