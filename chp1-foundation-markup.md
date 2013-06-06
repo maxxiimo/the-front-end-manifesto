@@ -21,17 +21,6 @@ As much as Rails is a framework, within it lives a smaller templating framework 
 View code can be found in two high-level folders within a Rails application: the `helpers` and the `views` folders. Here is where you'll find these folders by default in any Rails 3.0 or greater project:
 
 app<br>
-|-- assets<br>
-|-- controllers<br>
-|-- **helpers**<br>
-|-- mailers<br>
-|-- models<br>
-|-- **views**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;|-- **layout**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- application.html.haml<br>
-&nbsp;&nbsp;&nbsp;&nbsp;|-- **shared**
-
-app<br>
 ├─ assets<br>
 ├─ controllers<br>
 ├─ **helpers**<br>
@@ -39,7 +28,7 @@ app<br>
 ├─ models<br>
 └─ **views**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ **layout**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;└─ application.html.haml<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;└─ application.html.haml<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ **shared**<br>
 
 The `views` folder is where most of the action takes place and can be further subdivided into of the `layout` and `shared` folders, which as you will soon discover are home to the majority of your foundation front end code.
@@ -53,32 +42,32 @@ To help you along I will provide links to [starter code][] we will use or refere
 Structurally in a Rails application, our starter code files and folders fall into place as follows:
 
 app<br>
-|-- assets<br>
-|&nbsp;&nbsp;&nbsp;|-- images<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **fixtures**<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **icons**<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **logos**<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- **pics**<br>
-|&nbsp;&nbsp;&nbsp;|-- javascripts<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [application.js][]<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [site.js][site]<br>
-|-- helpers<br>
-|&nbsp;&nbsp;&nbsp;|-- [application_helper.rb][application_helper]<br>
-|-- views<br>
-|&nbsp;&nbsp;&nbsp;|-- layout<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_chromeframe.html.haml][_chromeframe]<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_head.html.haml][_head]<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [_scripts.html.haml][_scripts]<br>
-|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|-- [application.html.haml][application]<br>
-|&nbsp;&nbsp;&nbsp;|-- shared<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_footer.html.haml][_footer]<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_logo.html.haml][_logo]<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [_navigation.html.haml][_navigation]<br>
-|-- vendor<br>
-&nbsp;&nbsp;&nbsp;&nbsp;|-- assets<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- javascripts<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [jquery-1.9.1.min.js][jquery]<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- [modernizr-2.6.2.min][modernizer]<br>
+├─ assets<br>
+|&nbsp;&nbsp;&nbsp;├─ images<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;├─ **fixtures**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;├─ **icons**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;├─ **logos**<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;└─ **pics**<br>
+|&nbsp;&nbsp;&nbsp;└─ javascripts<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [application.js][]<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [site.js][site]<br>
+├─ helpers<br>
+|&nbsp;&nbsp;&nbsp;└─ [application_helper.rb][application_helper]<br>
+├─ views<br>
+|&nbsp;&nbsp;&nbsp;├─ layout<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;├─ [_chromeframe.html.haml][_chromeframe]<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;├─ [_head.html.haml][_head]<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;├─ [_scripts.html.haml][_scripts]<br>
+|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;└─ [application.html.haml][application]<br>
+|&nbsp;&nbsp;&nbsp;└─ shared<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_footer.html.haml][_footer]<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_logo.html.haml][_logo]<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [_navigation.html.haml][_navigation]<br>
+└─ vendor<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└─ assets<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ javascripts<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [jquery-1.9.1.min.js][jquery]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [modernizr-2.6.2.min][modernizer]<br>
 [.gitignore][]<br>
 [Gemfile][]<br>
 [README.md][]
