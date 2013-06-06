@@ -36,7 +36,7 @@ app<br>
 └
 │
 
-app<br>
+app
 ├── assets
 ├── controllers
 ├── **helpers**
@@ -46,6 +46,25 @@ app<br>
     ├── **layout**
     │   └── application.html.haml
     └── **shared**
+
+
+  app/assets/
+  ├── javascripts
+  │   ├── application.js
+  │   ├── space_app.js.coffee
+  │   ├── collections
+  │   │   └── planets.js.coffee
+  │   ├── models
+  │   │   └── planet.js.coffee
+  │   ├── routers
+  │   │   └── planets_router.js.coffee
+  │   └── views
+  │       └── planets
+  │           └── planets_index.js.coffee
+  └── templates
+      └── planets
+          └── index.jst.eco
+
 
 The `views` folder is where most of the action takes place and can be further subdivided into of the `layout` and `shared` folders, which as you will soon discover are home to the majority of your foundation front end code.
 
