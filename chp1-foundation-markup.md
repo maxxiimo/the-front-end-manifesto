@@ -34,6 +34,7 @@ app<br>
 ├
 ─
 └
+│
 
 app<br>
 ├── assets
@@ -42,8 +43,8 @@ app<br>
 ├── mailers
 ├── models
 └── **views**
-    └── **layout**
-    |   └── application.html.haml
+    ├── **layout**
+    │   └── application.html.haml
     └── **shared**
 
 The `views` folder is where most of the action takes place and can be further subdivided into of the `layout` and `shared` folders, which as you will soon discover are home to the majority of your foundation front end code.
