@@ -63,14 +63,14 @@ app<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_footer.html.haml][_footer]<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_logo.html.haml][_logo]<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [_navigation.html.haml][_navigation]<br>
-└─ vendor<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ assets<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ javascripts<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [jquery-1.9.1.min.js][jquery]<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [modernizr-2.6.2.min][modernizer]<br>
-[.gitignore][]<br>
-[Gemfile][]<br>
-[README.md][]
+├─ vendor<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ assets<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ javascripts<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [jquery-1.9.1.min.js][jquery]<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [modernizr-2.6.2.min][modernizer]<br>
+├─ [.gitignore][]<br>
+├─ [Gemfile][]<br>
+└─ [README.md][]
 
 The default Rails file structure and application files are pretty much identical. In the next section we will replace some existing files that come out of the box by default with our starter code, and add a few new files and folders (new folders depicted above in bold, new or replacement files are links).
 
