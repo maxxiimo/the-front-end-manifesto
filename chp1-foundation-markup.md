@@ -43,12 +43,12 @@ Structurally in a Rails application, our starter code files and folders fall int
 
 app<br>
 ├─ assets<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;├─ images<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;├─ **fixtures**<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;├─ **icons**<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;├─ **logos**<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;└─ **pics**<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;└─ javascripts<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;├─ images<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;├─ **fixtures**<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;├─ **icons**<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;├─ **logos**<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;└─ **pics**<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ javascripts<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [application.js][]<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [site.js][site]<br>
 ├─ helpers<br>
