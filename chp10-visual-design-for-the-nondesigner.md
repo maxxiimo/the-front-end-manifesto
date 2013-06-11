@@ -525,6 +525,7 @@ For example if needed in your footer:
 
 [Testing @font-face Support on Mobile and Tablet][Icon Font Support]
 
+[We Love Icon Fonts][Love]
 
 #### @font-face
 
@@ -637,6 +638,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Pipeline]:             http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
 [DIY Icon Fonts]:       http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/
 [Icon Font Support]:    http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
+[Love]:                 http://weloveiconfonts.com/
 
 [Premium Pixels]:       http://www.premiumpixels.com/
 [Typographic Style]:    http://webtypography.net/
