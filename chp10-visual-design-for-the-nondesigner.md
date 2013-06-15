@@ -1,38 +1,39 @@
 Visual Design for the Nondesigner
 =================================
 
-In the [last chapter][Chapter 9] our focus was Information Architecture, and in that chapter we really emphasize storytelling. [Design is part of storytelling][Story Design] so let's see if we can in the very least point you in the right direction in visual design.
-
-Up until now, we basically have a pretty blank wireframe: Function before form. We need to add some spice to it:
+In the [last chapter][Chapter 9] our focus was Information Architecture, and in that chapter I really emphasized storytelling and deemphasized design. I did so purposefully, and borrowing from the article, "A Dao of Web Design" here is why:
 
 > Firstly, think about what your pages do, not what they look like. Let your design flow from the services which they will provide to your users, rather than from some overarching idea of what you want pages to look like. Let form follow function, rather than trying to take a particular design and make it "work".
 
 \- [A Dao of Web Design][Dao] by John Allsopp
 
-We learned in [Chapter 9][] that by looking at your site your users should be able to understand what they're looking at. That your website must communicate it's story. In the case of "View Thought" part of the story is:
-
-> We are a great website **design** [emphasis supplied], development and user experience shop...we pay special attention to what your users will see.
-
-If this is part of our story we better deliver some great graphic design on top of our information architecture, layout, and content, that will help communicate our story! To do so we will use a combination of typography, color, branding, images, icons, and anything else I can think of to help View Thought tell it's story, and in such a way that the user just gets it. The combination of these elements are the cornerstones of a sites look and feel. Let's explore each.
+So here we are, our information architecture is complete, now it's time to design.
 
 Paradigm Shift
 --------------
 
-Before we do, I want to mention a paradigm shift I've been noticing in the front end world. It used to be for really great design you absolutely needed a graphic designer. Unless you could work Photoshop or Illustrator like it was no tomorrow, graphic designers were the ones who would give you rounded corners, images of cool header fonts or hero text, gradients for your backgrounds and headers, icons an icon sprites, and the like. Because of this oftentimes entire design process had already been completed by the time you got it.
+Over the last several years I've noticed a paradigm shift in where design is coming from. Back in the day for really great design you absolutely needed a graphic designer; unless you could work Photoshop or Illustrator like there was no tomorrow. Graphic designers were the ones who produced rounded corners, cool fonts, gradients, translucent images, buttons, icons, icon sprites, and so on. Consequently, it was more efficient to mockup a website before coding, and naturally decision-makers would gravitate towards what they could see and so usability, architecting, and design were occurring at a point in the development process that began and oftentimes ended before front-end engineers were really involved.
 
-Your job was then to provide a handshake between graphic design and backend code. You understood what kind of code the backend team needed and how they would use it, and you had skills to turn graphic design into front end code. In my own personal experience as a consultant brought into projects, more times than not design mockups had already been completed and I would then slice and dice these mockups and integrate them into the application as pixel perfect and cross browser friendly as possible (pixel perfect used to really matter!).
+Back then that kind of made sense, it was a simpler world, one design could almost fit all, and most things that happened in the browser could be replicated in a mockup, and so front end developers found most of their effort consumed by taking completed mockups and implementing them into an application. They were in essence the handshake between graphic design and backend code. They understood what kind of code the backend team needed and how they would use it, and they had the skills necessary to turn graphic design into pixel perfect (the standard of excellence back then) cross browser friendly code.
 
 NOTE: Chapter 11, [Slicing and Dicing Mockups][Chapter 11], will dive into the mechanics of doing exactly that.
 
-With the advent of HTML5 and the continuous improvement in W3C CSS3 specifications and implementation by browser vendors, a lot of these image based design elements can now be created through front end code. In other words "graphic design" cannot take place on your IDE and in the browser.
+Fast-forward to today and everything has changed. HTML5 and CSS3 have made it possible – preferable – to produce much of what graphic designers were once the only ones capable of producing. In fact much of what is happening on the front end cannot be easily replicated in a static mockup, nor as efficient and flexible as prototyping, i.e. front end coding, which is more representative of how a webpage will ultimately look across different devices, and allows for a more rapid, iterative and agile design process.
 
-As a view coder I'm really excited about this! One of the things I used to not like about the old paradigm is that a lot of decisions about information architecture and design had already taken place by the time mockups reached my hands (keep in mind that I've been a consultant for most of my career, brought in to do exactly this). This left me with very little say in these areas because often times internal bureaucracies, review committees, whatever you want to call them, were difficult to reconvene for the iteration at hand, and these iterations once implemented became the law of the land so to speak.
+Today, technology and devices are changing rapidly. Understanding the full capabilities and/or limitations of the medium used is a necessity and so now the absence of a good front end developer in the design process is no longer an option. Today it is increasingly more efficient and makes more sense to produce dynamic and responsive prototypes with the benefits of CSS3, rather than static mockups. As a result usability, architecting and design decisions are beginning to convalesce around the point in which front end code is written, prototyping.
 
-A glaring problem with this old process was that often times those making decisions didn't understand the full capabilities or limitations of the medium used. Photoshop and mockups are inherently limited. More important than this though is that a really important resource in the process was not being fully utilized.
-
-Fast-forward to today and this has all changed. Design and the design process can now include, if not occur, at the point of front end coding. In fact I think it should be this way. Doing so provides for very rapid prototyping, experimenting, and iterations in the actual medium/s. The turnaround in relation to this chapter is that in order to participate in the process,, as front-end coders today, we need to really understand design – more so than ever before.
+As a front end engineer I'm glad, but on the flip side, I also understand that as coders we are not trained in the elements of design; the art. The turnaround in relation to this chapter is that in order to participate in the process, as front-end engineer today, we need to really understand design, more so than ever before, and that's what this chapter is about.
 
 With that lets get started...
+
+Storytelling in Design
+----------------------
+
+One thing we learned in the last chapter along the lines of storytelling is that your users should be able to understand what they're looking at when they visit your website. [Design is part of storytelling][Story Design] and so like the actual blocks of information on a page, the visual design must also communicate the websites story. In the case of "View Thought" part of the story is:
+
+> We are a great website **design** [emphasis supplied], development and user experience shop...we pay special attention to what your users will see.
+
+That's a tall order! We better deliver a compelling visual design, and to do so we will use a combination of typography, color, branding, images, icons, and anything else I can think of to help View Thought tell it's story and in such a way that the user just gets it. The combination of these elements are the cornerstones of a sites look and feel. Let's explore each.
 
 Typography
 ----------

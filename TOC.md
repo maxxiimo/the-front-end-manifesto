@@ -103,6 +103,7 @@ Table of Contents
 
 #### Chapter 10 - [Visual Design for the Nondesigner][Chapter 10]
   - Paradigm Shift
+  - Storytelling in Design
   - Typography
       - Font Family
       - Font Size
