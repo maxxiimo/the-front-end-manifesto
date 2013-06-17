@@ -72,40 +72,9 @@ Since we have already predefined font stack variables, let's pick one for View T
 
 3.  Typefaces that go well together, say one font for your headers and another contrasting font for your body.
 
-#### Pairing Typefaces
+The following four steps to find the process I follow when deciding on a font family for a project:
 
-> You might have already heard this; successful pairing relies on concord, or contrast, but not conflict. That is to say your selected fonts can work well together by sharing certain qualities, or by being completely different from one another. However, font pairs can conflict in a number of ways – being too similar being just one.
-
-\- [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
-
-When selecting font families for my projects I like to go straight to the Font Stacks Roundup's "[Combinations][Appendix 8 Combos]" section. Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and more often than not provide samples for you to review and choose from.
-
-I have left a few font stacks and Google Web Fonts pairing ideas for you in our starter styles:
-
-- [_define.sass][]
-- [_head.html.haml][]
-
-Once you choose your fonts it's good practice to also define fallback fonts. Together your chosen font and its fallbacks are a font stack.
-
-#### Font Stacks
-
-In essence a font stack is a listing of several different fonts, and the reason we define a font stack is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use. For example:
-
-    Arial, "Helvetica Neue", Helvetica, sans-serif
-
-If your device does not have the first font in the stack, Arial, your browser will look for the second one and so forth until the very last one: which is a generic font and the most broadly available across different operating systems. All the fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used (at least that is the goal).
-
-#### Font Services
-
-Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 9]" appendix.
-
-I use [Typekit][]. Fortunately for us, Typekit provides an excellent [series of articles][articles] on implementing Typekit, so [I'll][] [spare][] [you][] [the][] [details][].
-
-Typekit is a paid service, [Google Web Fonts][] on the other hand is a free service:
-
-- [A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
-
-#### Choosing Typefaces
+#### Step 1: Choose a Typeface
 
 Here are some screenshots of different font ideas for View Thought:
 
@@ -113,23 +82,23 @@ Here are some screenshots of different font ideas for View Thought:
 
 As you can see, choosing fonts is a practice in trial and error. In Appendix 10 in the section entitled "[Choosing Typeface Articles][Appendix 10]," I list different articles that might help you frame the context of your decision making process.
 
-I also think the following idea is worth noting by itself: In a presentation by Tim Brown, the Type Manager for Adobe Typekit, he quotes Jason Santa Maria as saying:
+I also think the following idea is worth noting by itself:
 
 > Write down a general description of the qualities of the message you are trying to convey, and then look for typefaces that embody those qualities.
 
-\- [More Perfect Typography][Perfect Typography]
+\- [More Perfect Typography][Perfect Typography] (Quoting Jason Santa Maria.)
 
-...and states that now, this is how he always begins a project. He then goes on to describe that he starts with body text, which gives tone for a piece, then moves on to markers like headers, that give it personality and character. Food for thought.
+According to Tim Brown, the Type Manager for Adobe Typekit, he always begins a project this way. He starts with body text, "which gives tone for a piece," then moves on to markers like headers, "that give it personality and character."
 
 The article, "[A Brief Primer on Typeface Selection][Brief Primer]" echoes the same idea:
 
 > Read your content to determine the mood it conveys. Describe this mood using a list of adjectives. Find typefaces that you feel are accurately described by these adjectives. Essentially, you want to ensure that your typeface conveys the appropriate feeling.
 
-What adjectives describe View Thought? To start, let's revisit our storyline:
+What adjectives describe View Thought? To start, I revisited the storyline:
 
 > We are a great website design, development and user experience shop. We have tons of experience, have worked with a bunch of different clients who are all happy with our work, and we really care about what we do. We specialize in Ruby on Rails, and we pay special attention to what your users will see. You should hire us! ...or give us a call and learn more.
 
-That is our message, and here are some adjectives that help communicate the mood and qualities of the message we're trying to convey:
+That is the message, and here are some adjectives that help communicate the mood and qualities of the message:
 
 1.  Clean
 2.  Reliable
@@ -144,7 +113,40 @@ That is our message, and here are some adjectives that help communicate the mood
 11. Fun
 12. Steadfast
 
-A final note on selecting typefaces, Jason Santa Maria in a presentation called [On Web Typography][] gives advice on picking typefaces. Besides being a master on the subject, his recommendations (starting at 31:45) are excellent. You can find them transcribed in [Appendix 10][Appendix 10].
+NOTE: Jason Santa Maria, a master on the subject, in a presentation called [On Web Typography][] gives excellent advice on picking typefaces starting at 31:45. You can find this advice transcribed in [Appendix 10][Appendix 10].
+
+#### Step 2: Pairing Typefaces
+
+> You might have already heard this; successful pairing relies on concord, or contrast, but not conflict. That is to say your selected fonts can work well together by sharing certain qualities, or by being completely different from one another. However, font pairs can conflict in a number of ways – being too similar being just one.
+
+\- [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
+
+When selecting font families for my projects I like to go straight to the Font Stacks Roundup's "[Combinations][Appendix 8 Combos]" section. Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and more often than not provide samples for you to review and choose from.
+
+I have left a few font stacks and Google Web Fonts pairing ideas for you in our starter styles:
+
+- [_define.sass][]
+- [_head.html.haml][]
+
+Once you choose your fonts it's good practice to also define fallback fonts. Together your chosen font and its fallbacks are a font stack.
+
+#### Step 3: Define Fallbacks (Font Stacks)
+
+In essence a font stack is a listing of several different fonts, and the reason we define a font stack is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use. For example:
+
+    Arial, "Helvetica Neue", Helvetica, sans-serif
+
+If your device does not have the first font in the stack, Arial, your browser will look for the second one and so forth until the very last one: which is a generic font and the most broadly available across different operating systems. All the fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used (at least that is the goal).
+
+#### Step 4: Use a Font Service
+
+Once I have chosen my pairing I use a font service to deliver them (without licensing headaches and through their CDN). Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 9]" appendix.
+
+I use [Typekit][]. Fortunately for us, Typekit provides an excellent [series of articles][articles] on implementing Typekit, so [I'll][] [spare][] [you][] [the][] [details][].
+
+Typekit is a paid service, [Google Web Fonts][] on the other hand is a free service:
+
+- [A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
 
 ### Font Size
 
