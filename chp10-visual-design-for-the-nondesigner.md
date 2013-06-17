@@ -7,7 +7,7 @@ In the [last chapter][Chapter 9] our focus was Information Architecture, and in 
 
 \- [A Dao of Web Design][Dao] by John Allsopp
 
-#### Storytelling in Design
+### Storytelling in Design
 
 [Design is part of storytelling][Story Design] and so like the actual blocks of information on a page, the visual design must also communicate the websites story.
 
