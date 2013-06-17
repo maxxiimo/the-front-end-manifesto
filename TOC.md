@@ -102,7 +102,7 @@ Table of Contents
   - What We've Done
 
 #### Chapter 10 - [Visual Design for the Nondesigner][Chapter 10]
-      - Storytelling in Design
+    - Storytelling in Design
   - Paradigm Shift
   - Typography
       - Font Family
