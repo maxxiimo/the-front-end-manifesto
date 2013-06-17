@@ -12,22 +12,24 @@ With our information architecture now complete, it's time to design, but first l
 Paradigm Shift
 --------------
 
-Over the last several years I've noticed a paradigm shift in where design is coming from. Back in the day for really great design you absolutely needed a graphic designer; unless you could work Adobe Photoshop or Adobe Illustrator like there was no tomorrow. Graphic designers used to be the ones who produced rounded corners, cool fonts, gradients, translucent images, buttons, icons, icon sprites. Consequently, it was more efficient to mockup a website before coding, and naturally decision-makers would gravitate towards discussing/brainstorming  on usability, architecting, and design at the graphic design point in the development process that began and oftentimes ended before front-end engineers were really involved.
+Over the last several years I've noticed a paradigm shift in the role front end engineers have in the design process. Back in the day for really great design you absolutely needed a Graphic Designer; unless you could work Adobe Photoshop or Adobe Illustrator like there was no tomorrow. Graphic Designers were the ones who produced rounded corners, cool fonts, gradients, translucent images, buttons, icons, icon sprites, etc.. Developers needed these to implement the design. More importantly Graphic Designers produced visual mockups of a website that stakeholders could "touch and feel", i.e. actually see what a website would look like. Discussion and changes could be made around these mockups before any engineering costs were incurred. Consequently, it was more efficient to mockup a website before coding, and naturally decision-makers would gravitate towards brainstorming on usability, architecting, and design at the graphic design point in the development process: that began and oftentimes ended before front end engineers were really involved.
 
-Back then that kind of made sense, it was a simpler world, one design could almost fit all, and most things that happened in the browser could be replicated in a mockup, and so front end developers found most of their effort consumed by taking completed mockups and implementing them into an application. They were in essence the handshake between graphic design and backend code. They understood what kind of code the backend team needed and how they would use it, and they had the skills necessary to turn graphic design into pixel perfect (the standard of excellence back then) cross browser friendly code.
+Back then that kind of made sense, it was a simpler world, one design could almost fit all, and most things that happened in the browser could be replicated in a mockup, and so front end developers found the bulk of their contribution to a project in implementing completed mockups. They were in essence the handshake between graphic design and backend code. They understood what kind of code the backend team needed and how they would use it, and they had the skills necessary to turn graphic design into pixel perfect – the standard of excellence back then – cross browser friendly code.
 
 NOTE: Chapter 11, [Slicing and Dicing Mockups][Chapter 11], will dive into the mechanics of doing exactly that.
 
 Fast-forward to today and everything has changed:
 
-- HTML5 and CSS3 have made it possible – preferable – to produce much of what graphic designers were once the only ones capable of producing, through code and directly in the browser.
-- Much of what is happening on the front end cannot be easily replicated in a static mockup, nor as efficient and flexible as prototyping, i.e. front end coding.
-- Prototyping is more representative of how a webpage will ultimately look and behave across different devices, and allows for a more rapid, iterative, interactive, and agile design process.
-- Understanding the full capabilities and/or limitations of the medium used in a constantly evolving landscape is a necessity, and an area of expertise belonging to front-end engineers.
+- HTML5 and CSS3 have made it possible – preferable – to produce directly in the browser much of what graphic designers were once the only ones capable of producing.
+- A lot of what is happening on the front end cannot be easily replicated in a static mockup.
+- It is increasingly more efficient to produce dynamic and responsive prototypes with the benefits of CSS3, rather than static mockups.
+- Prototyping by nature is more representative of how a webpage will ultimately look and behave across different devices.
+- Prototyping allows for a more rapid, iterative, interactive, and agile design process.
+- One size no longer fits all. Technologies and devices are rapidly changing. Understanding the resulting capabilities and/or limitations of browsers and devices used by end-users in a constantly evolving landscape is a necessity, not a luxury and an area of expertise belonging to front end engineers.
 
-With these changes, the absence of a good front end developer in the design process is no longer an option. Nowadays it is increasingly more efficient to produce dynamic and responsive prototypes with the benefits of CSS3, rather than static mockups. As a result usability, architecting and design decisions are beginning to convalesce around the point in which front end code is written, prototyping, as opposed to the way it used to be: graphic design mockups.
+As a result of these changes; usability, architecting and design decisions are beginning to convalesce around the point in which front end code is written, prototyping, as opposed to the way it used to be: graphic design mockups. The absence of front and developers in the design process is no longer an option.
 
-As front end engineers we need to understand that as "coders" we are not trained in the elements of design; the art. The takeaway in relation to this chapter is that in order to participate in the application design and development process as it is evolving today, we need to really understand design more so than ever before.
+The takeaway in relation to this chapter is that as front end engineers we need to understand that our roles are changing. In addition to coding prowess, understanding the elements of a good design, the art, is essential to the success of projects we participate in.
 
 This chapter is written to help developers along this path. With that lets get started...
 
