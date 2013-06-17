@@ -46,45 +46,19 @@ This chapter is written to help developers along this path. With that lets get s
 Typography
 ----------
 
-After I have finished all of my information architecture stuff, the first visual design component I like to tackle is [typography][].
-
 > 95% of the information on the web is written language. It is only logical to say that a web designer should get good training in the main discipline of shaping written information, in other words: Typography.
 
 \- [Web Design Is 95% Typography][95% typography]
 
-So let's get started. In my opinion the lowest hanging fruit in typography are typefaces:
+The first visual design component I like to tackle is [typography][]. The lowest hanging fruit in typography are typefaces:
 
 - Font Family
 - Font Size
 - Readability
 
-If you have implemented the base style sheets from Chapter 3, [Foundation Styles][Chapter 3], these typographic elements are predefined and available to you out-of-the-box in [_define.sass][] – a sass partial reserved for defining global stylesheet variables:
+Using the base styles from [Chapter 3][] these typographic elements are predefined and available to you through the [_define.sass][] sass partial – reserved for defining global stylesheet variables.
 
-    /*  Fonts
-      -----------------------
-
-    // stacks...
-
-    // http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
-
-    $arial:             Arial, "Helvetica Neue", Helvetica, sans-serif
-    $verdana:           Verdana, Geneva, Tahoma, sans-serif
-    $geneva:            Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif
-    $georgia:           Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif
-
-    // base definitions...
-
-    $base-font-family:  $arial       !default
-    $base-font-size:    100%         !default
-    $base-font-color:   #444         !default
-    $base-line-height:  1.4          !default
-
-    $base-font-header:  $georgia     !default
-    $base-color-header: #222         !default
-
-I recommend setting up something like this if you are not using ours. From this partial we can effect typography throughout the site through Sass's ability to set up variables.
-
-For example, our definitions above begin with variables set to different font stacks. Variables can also be set to other variables, and in our case to the $base-font-family variable, the key to our application fonts. This variable is referenced by our \<body> tags font-family property, and will propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
+NOTE: Our font definitions begin with variables set to different font stacks. Variables can also be set to other variables, and in our case to the $base-font-family variable, the key to our application fonts, references the different font stack variables, which in turn is referenced by our `<body>` tags font-family property and will propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
 
 ### Font Family
 
