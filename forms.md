@@ -136,3 +136,7 @@ Include the most basic mixin and expand from there:
 [FormHelper API]:       http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html
 [Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/
 [Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
+
+
+[Making Infield Form Labels Suck Less][Form Labels]
+[Form Labels]:          http://viget.com/inspire/making-infield-form-labels-suck-less

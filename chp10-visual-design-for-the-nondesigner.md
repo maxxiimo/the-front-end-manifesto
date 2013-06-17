@@ -1,13 +1,13 @@
 Visual Design for the Nondesigner
 =================================
 
-In the [last chapter][Chapter 9] our focus was Information Architecture, and in that chapter I really emphasized storytelling and deemphasized design. I did so purposefully, and borrowing from the article, "A Dao of Web Design" here is why:
+In the [last chapter][Chapter 9] our focus was Information Architecture, and in that chapter I emphasized storytelling and deemphasized design. I did so purposefully and borrowing from the article, "A Dao of Web Design," here is why:
 
 > Firstly, think about what your pages do, not what they look like. Let your design flow from the services which they will provide to your users, rather than from some overarching idea of what you want pages to look like. Let form follow function, rather than trying to take a particular design and make it "work".
 
 \- [A Dao of Web Design][Dao] by John Allsopp
 
-So here we are, our information architecture is complete, now it's time to design.
+With our information architecture now complete, it's time to design, but first let me make an observation that suggests that as front end developer's, knowing the components of good design is now a necessity.
 
 Paradigm Shift
 --------------
