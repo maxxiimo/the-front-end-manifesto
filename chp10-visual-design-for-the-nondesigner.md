@@ -85,15 +85,15 @@ I have left a few font stacks and Google Web Fonts pairing ideas for you in our 
 - [_define.sass][]
 - [_head.html.haml][]
 
-Once you choose your fonts it's good practice to also define fallback font stacks.
+Once you choose your fonts it's good practice to also define fallback fonts. Together your chosen font and its fallbacks are a font stack.
 
 #### Font Stacks
 
-The reason we use font stacks in the first place, i.e. a listing of several different fonts, is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use. For example:
+In essence a font stack is a listing of several different fonts, and the reason we define a font stack is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use. For example:
 
     Arial, "Helvetica Neue", Helvetica, sans-serif
 
-If your device does not have the first font in the stack, Arial, your browser will look for the second one and so forth until the very last one: which is a generic font and the most broadly available across different operating systems. The fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used: at least that is the goal.
+If your device does not have the first font in the stack, Arial, your browser will look for the second one and so forth until the very last one: which is a generic font and the most broadly available across different operating systems. All the fonts in the stack are all similar enough that they can be interchanged with minimal differences between fonts used (at least that is the goal).
 
 #### Font Services
 
