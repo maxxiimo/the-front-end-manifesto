@@ -561,6 +561,10 @@ We started this chapter by covering typography. We discussed the basic building 
 [95% typography]:       http://informationarchitects.net/blog/the-web-is-all-about-typography-period/
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_define.sass
 
+[Perfect Typography]:   http://vimeo.com/17079380
+[Brief Primer]:         http://blog.8thlight.com/billy-whited/2011/08/25/a-brief-primer-on-typeface-selection.html
+[On Web Typography]:    http://vimeo.com/34178417
+
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
 [_head.html.haml]:      https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_head.html.haml
 
@@ -573,10 +577,6 @@ We started this chapter by covering typography. We discussed the basic building 
 [details]:              https://github.com/maxxiimo/viewthought/blob/master/app/assets/stylesheets/desktop/_typography.sass
 [Google Web Fonts]:     http://www.google.com/webfonts#
 [Beginners Guide]:      http://designshack.net/articles/css/a-beginners-guide-to-using-google-web-fonts/
-
-[Perfect Typography]:   http://vimeo.com/17079380
-[Brief Primer]:         http://blog.8thlight.com/billy-whited/2011/08/25/a-brief-primer-on-typeface-selection.html
-[On Web Typography]:    http://vimeo.com/34178417
 
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
