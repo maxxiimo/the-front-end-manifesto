@@ -566,12 +566,12 @@ We started this chapter by covering typography. We discussed the basic building 
 [Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-11
 [Appendix 12]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-12
 
-[Story Design]:         http://24ways.org/2011/design-the-invisible/
 [Dao]:                  http://www.alistapart.com/articles/dao
+[Story Design]:         http://24ways.org/2011/design-the-invisible/
 
 [typography]:           http://blog.8thlight.com/billy-whited/2011/07/26/what-is-typography.html
 [95% typography]:       http://informationarchitects.net/blog/the-web-is-all-about-typography-period/
-[_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/_define.sass
+[_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_define.sass
 
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
 [_head.html.haml]:      https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
