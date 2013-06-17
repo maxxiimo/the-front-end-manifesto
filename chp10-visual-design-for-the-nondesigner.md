@@ -74,33 +74,18 @@ Since we have already predefined font stack variables, let's pick one for View T
 
 #### Pairing Typefaces
 
-When selecting font families for my projects I like to go straight for the "[Font Stacks Roundup][Appendix 8]" Appendix, in the section entitled "Combinations". Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and more often than not provide samples for you to review and choose from.
-
 > You might have already heard this; successful pairing relies on concord, or contrast, but not conflict. That is to say your selected fonts can work well together by sharing certain qualities, or by being completely different from one another. However, font pairs can conflict in a number of ways – being too similar being just one.
 
 \- [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
+
+When selecting font families for my projects I like to go straight to the Font Stacks Roundup's "[Combinations][Appendix 8 Combos]" section. Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and more often than not provide samples for you to review and choose from.
 
 I have left a few font stacks and Google Web Fonts pairing ideas for you in our starter styles:
 
 - [_define.sass][]
 - [_head.html.haml][]
 
-    // google web fonts...
-
-    // http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/
-    // http://designshack.net/articles/typography/10-more-great-google-font-combinations-you-can-copy/
-
-    $cantata:           "Cantata One", Georgia, serif
-    $imprima:           Imprima, Verdana, Helvetica, sans-serif
-
-    $allerta:           Allerta, Helvetica, Arial, sans-serif
-    $crimson:           Crimson Text, Georgia, Times, serif
-
-    $arvo:              Arvo, Georgia, Times, serif
-    $pt-sans:           "PT Sans", Helvetica, Arial, sans-serif
-
-    $droid-serif:       "Droid Serif", Georgia, Times, serif
-    $droid-sans:        "Droid Sans", Helvetica, Arial, sans-serif
+Once you choose your fonts it's good practice to also define fallback font stacks.
 
 #### Font Stacks
 
@@ -561,6 +546,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
 [Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-8
+[Appendix 8 Combos]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#combinations
 [Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-9
 [Appendix 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-10
 [Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-11
@@ -574,7 +560,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_define.sass
 
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
-[_head.html.haml]:      https://github.com/maxxiimo/base-haml/blob/master/views/layouts/_head.html.haml
+[_head.html.haml]:      https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_head.html.haml
 
 [Typekit]:              https://typekit.com/
 [articles]:             http://blog.typekit.com/category/font-events/
