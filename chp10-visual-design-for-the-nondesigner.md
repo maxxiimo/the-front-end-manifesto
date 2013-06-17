@@ -58,7 +58,7 @@ The first visual design component I like to tackle is [typography][]. The lowest
 
 Using the base styles from [Chapter 3][] these typographic elements are predefined and available to you through the [_define.sass][] sass partial – reserved for defining global stylesheet variables.
 
-NOTE: Our font definitions begin with variables set to different font stacks. Variables can also be set to other variables, and in our case to the $base-font-family variable, the key to our application fonts, references the different font stack variables, which in turn is referenced by our `<body>` tags font-family property and will propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
+NOTE: Our font definitions begin with variables set to different font stacks. In Sass variables can also be set to other variables. In our case to the `$base-font-family` variable, the key to our application fonts, references one of the different font stack variables and is in turn is referenced by our `<body>` tags `font-family` property and will propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
 
 ### Font Family
 
