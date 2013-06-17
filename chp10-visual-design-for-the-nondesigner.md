@@ -62,7 +62,7 @@ NOTE: Our font definitions begin with variables set to different font stacks. In
 
 ### Font Family
 
-Since we have already predefined font stack variables, let's pick one for View Thought. If you don't like what is predefined for your site, to help you select an alternative without having to earn a PhD in typeface, I created a quick reference "[Font Stacks Roundup][Appendix 8]" located in the Appendices of this book. Here you will find recommendations for:
+Since we have already predefined font stack variables, let's pick one for View Thought. If you don't like what is predefined, to help you select an alternative without having to earn a PhD in typeface I created a quick reference "[Font Stacks Roundup][Appendix 8]" located in the Appendices of this book. Here you will find recommendations for:
 
 1.  Font stacks that you can copy and use in your project.
 
@@ -70,7 +70,7 @@ Since we have already predefined font stack variables, let's pick one for View T
 
     You can copy these and feel confident using them as your overall default font stack, or as a fallback font stack for a more interesting typeface.
 
-3.  Typefaces that go well together, say one font for your headers, and another contrasting font for your body.
+3.  Typefaces that go well together, say one font for your headers and another contrasting font for your body.
 
 #### Pairing Typefaces
 
