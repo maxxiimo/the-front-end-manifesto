@@ -7,12 +7,22 @@ In the [last chapter][Chapter 9] our focus was Information Architecture, and in 
 
 \- [A Dao of Web Design][Dao] by John Allsopp
 
-With our information architecture now complete, it's time to design, but first let me make an observation that suggests that as front end developer's, knowing the components of good design is now a necessity.
+#### Storytelling in Design
+
+[Design is part of storytelling][Story Design] and so like the actual blocks of information on a page, the visual design must also communicate the websites story.
+
+In the case of "View Thought" part of the story is:
+
+> We are a great website **design** [emphasis supplied], development and user experience shop...we pay special attention to what your users will see.
+
+That's a tall order in so far as design goes so we better deliver a compelling visual design, something that helps convey the stories thesis in such a way that the user just gets it.
+
+To do so we will use a combination of typography, color, branding, images, and icons to help View Thought tell it's story. The combination of these elements are the cornerstones of a sites look and feel, and so with our information architecture now complete, it's time to explore each of these components and design, but first let me make an observation...
 
 Paradigm Shift
 --------------
 
-Over the last several years I've noticed a paradigm shift in the role front end engineers have in the design process. Back in the day for really great design you absolutely needed a Graphic Designer; unless you could work Adobe Photoshop or Adobe Illustrator like there was no tomorrow. Graphic Designers were the ones who produced rounded corners, cool fonts, gradients, translucent images, buttons, icons, icon sprites, etc.. Developers needed these to implement the design. More importantly Graphic Designers produced visual mockups of a website that stakeholders could "touch and feel", i.e. actually see what a website would look like. Discussion and changes could be made around these mockups before any engineering costs were incurred. Consequently, it was more efficient to mockup a website before coding, and naturally decision-makers would gravitate towards brainstorming on usability, architecting, and design at the graphic design point in the development process: that began and oftentimes ended before front end engineers were really involved.
+Over the last several years I've noticed a paradigm shift in the role front end engineers have in the design process. Back in the day for really great design you absolutely needed a Graphic Designer; unless you could work Adobe Photoshop or Adobe Illustrator like there was no tomorrow. Graphic Designers were the ones who produced rounded corners, cool fonts, gradients, translucent images, buttons, icons, icon sprites, etc.. In addition to required design elements, Graphic Designers produced visual mockups of a website that non-coding stakeholders could "touch and feel", i.e. actually see and understand. Discussion and changes could be made around these mockups before any engineering costs were incurred, consequently, it was more efficient to mock up a website before coding. Naturally decision-makers would gravitate towards brainstorming on usability, architecting, and design at the graphic design point in the development process: that began and oftentimes ended before front end engineers were really involved.
 
 Back then that kind of made sense, it was a simpler world, one design could almost fit all, and most things that happened in the browser could be replicated in a mockup, and so front end developers found the bulk of their contribution to a project in implementing completed mockups. They were in essence the handshake between graphic design and backend code. They understood what kind of code the backend team needed and how they would use it, and they had the skills necessary to turn graphic design into pixel perfect – the standard of excellence back then – cross browser friendly code.
 
@@ -31,16 +41,7 @@ As a result of these changes; usability, architecting and design decisions are b
 
 The takeaway in relation to this chapter is that as front end engineers we need to understand that our roles are changing. In addition to coding prowess, understanding the elements of a good design, the art, is essential to the success of projects we participate in.
 
-This chapter is written to help developers along this path. With that lets get started...
-
-Storytelling in Design
-----------------------
-
-One thing we learned in the last chapter along the lines of storytelling is that your users should be able to understand what they're looking at when they visit your website. [Design is part of storytelling][Story Design] and so like the actual blocks of information on a page, the visual design must also communicate the websites story. In the case of "View Thought" part of the story is:
-
-> We are a great website **design** [emphasis supplied], development and user experience shop...we pay special attention to what your users will see.
-
-That's a tall order! We better deliver a compelling visual design, and to do so we will use a combination of typography, color, branding, images, icons, and anything else I can think of to help View Thought tell it's story and in such a way that the user just gets it. The combination of these elements are the cornerstones of a sites look and feel. Let's explore each.
+This chapter is written to help developers along this path. With that lets get started.
 
 Typography
 ----------
