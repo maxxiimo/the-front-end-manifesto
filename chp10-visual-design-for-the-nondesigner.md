@@ -1,23 +1,15 @@
 Visual Design for the Nondesigner
 =================================
 
-In the [last chapter][Chapter 9] our focus was Information Architecture, and in that chapter I emphasized storytelling and deemphasized design. I did so purposefully and borrowing from the article, "A Dao of Web Design," here is why:
+In the [last chapter][Chapter 9] our focus was Information Architecture, and in that chapter I emphasized storytelling while purposefully deemphasizing design. Here is why:
 
 > Firstly, think about what your pages do, not what they look like. Let your design flow from the services which they will provide to your users, rather than from some overarching idea of what you want pages to look like. Let form follow function, rather than trying to take a particular design and make it "work".
 
 \- [A Dao of Web Design][Dao] by John Allsopp
 
-### Storytelling in Design
+[Design is part of storytelling][Story Design] and like blocks of information in the previous chapter, the visual design must also communicate the websites story, and do so in such a way that the user just gets it.
 
-[Design is part of storytelling][Story Design] and so like the actual blocks of information on a page, the visual design must also communicate the websites story.
-
-In the case of "View Thought" part of the story is:
-
-> We are a great website **design** [emphasis supplied], development and user experience shop...we pay special attention to what your users will see.
-
-That's a tall order in so far as design goes so we better deliver a compelling visual design, something that helps convey the stories thesis in such a way that the user just gets it.
-
-To do so we will use a combination of typography, color, branding, images, and icons to help View Thought tell it's story. The combination of these elements are the cornerstones of a sites look and feel, and so with our information architecture now complete, it's time to explore each of these components and design, but first let me make an observation...
+The combination of typography, color, branding, images, and icons will help communicate a storyline, and are a major contributor to a sites look and feel. We will explore each of these elements in this chapter, but first let me make an observation relevant to your role as a front end engineer and design.
 
 Paradigm Shift
 --------------
