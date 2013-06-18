@@ -97,11 +97,11 @@ Using the base styles from [Chapter 3][] these typographic elements are predefin
     // $base-font-header: $georgia !default
     // $base-font-nav: $georgia !default
 
-NOTE: Our font definitions begin with variables set to different font stacks. In Sass variables can also be set to other variables. In our case the `$base-font-family` variable, the key to our application fonts, references one of the different predefined font stack variables and is in turn is referenced by our `<body>` tags `font-family` property and will propagate throughout the entire application by virtue of the CSS written and the concept of CSS inheritance. You can experiment with the predefined fonts by changing the variable `$base-font-family` points to.
+NOTE: Our font definitions begin with variables set to different font stacks. In Sass, variables can also be set to other variables. In our case the `$base-font-family` variable, the key to our application fonts, references one of the different predefined font stack variables and is in turn is referenced by our `<body>` tags `font-family` property and will propagate throughout the entire application by virtue of the CSS written and the concept of CSS inheritance. You can experiment with the predefined fonts by changing the variable that `$base-font-family` points to.
 
 ### Font Family
 
-Since we have already predefined font stack variables, let's pick one for View Thought. If you don't like what is predefined, to help you select an alternative without having to earn a PhD in typeface I created a quick reference "[Font Stacks Roundup][Appendix 8]" located in the Appendices of this book. Here you will find recommendations for:
+Since we have predefined fonts, let's experiment and pick one for View Thought. You do not have to use what is predefined. To help you select an alternative I created a quick reference "[Font Stacks Roundup][Appendix 8]" located in the Appendices of this book. Here you will find recommendations for:
 
 1.  Font stacks that you can copy and use in your project.
 
@@ -111,7 +111,7 @@ Since we have already predefined font stack variables, let's pick one for View T
 
 3.  Typefaces that go well together, say one font for your headers and another contrasting font for your body.
 
-The following four steps to find the process I follow when deciding on a font family for a project:
+When deciding on a font family for a project I follow the following steps:
 
 #### Step 1: Choose a Typeface
 
