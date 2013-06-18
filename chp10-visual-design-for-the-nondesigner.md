@@ -99,7 +99,8 @@ Using the base styles from [Chapter 3][] these typographic elements are predefin
 
 NOTE: Our font definitions begin with variables set to different font stacks. In Sass, variables can also be set to other variables. In our case the `$base-font-family` variable, the key to our application fonts, references one of the different predefined font stack variables and is in turn is referenced by our `<body>` tags `font-family` property and will propagate throughout the entire application by virtue of the CSS written and the concept of CSS inheritance. You can experiment with the predefined fonts by changing the variable that `$base-font-family` points to.
 
-### Font Family
+Font Family
+-----------
 
 Since we have predefined fonts, let's experiment and pick one for View Thought. You do not have to use what is predefined. To help you select an alternative I created a quick reference "[Font Stacks Roundup][Appendix 8]" located in the Appendices of this book. Here you will find recommendations for:
 
@@ -113,7 +114,7 @@ Since we have predefined fonts, let's experiment and pick one for View Thought. 
 
 When deciding on a font family for a project I follow the following steps:
 
-#### Step 1: Define Adjectives
+### Step 1: Define Adjectives
 
 > Write down a general description of the qualities of the message you are trying to convey, and then look for typefaces that embody those qualities.
 
@@ -146,17 +147,17 @@ That is the message, and here are some adjectives that help communicate the mood
 
 NOTE: Jason Santa Maria, a master on the subject, in a presentation called [On Web Typography][] gives excellent advice on picking typefaces starting at 31:45. You can find this advice transcribed in [Appendix 10][Appendix 10].
 
-#### Step 2: Use a Font Service
+### Step 2: Use a Font Service
 
 I like to use a font service to browse and deliver fonts. Using a fonts service eliminates the licensing headaches one might encounter using other people's works, and also provides a CDN to serve fonts from. Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 9]" appendix.
 
-My preferred service is [Typekit][]. They provides an excellent [series of articles][articles] on implementing Typekit, so [I'll][] [spare][] [you][] [the][] [details][].
+My preferred service is [Typekit][]. They provides an excellent [series of articles][articles] on implementing Typekit, so [[I'll][I'll] [[spare]][spare] [[you]][you] [[the]][the] [[details]][details].
 
 Typekit is a paid service, [Google Web Fonts][] on the other hand is a free service:
 
 - [A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
 
-#### Step 3: Pairing Typefaces
+### Step 3: Pairing Typefaces
 
 > You might have already heard this; successful pairing relies on concord, or contrast, but not conflict. That is to say your selected fonts can work well together by sharing certain qualities, or by being completely different from one another. However, font pairs can conflict in a number of ways – being too similar being just one.
 
@@ -169,7 +170,7 @@ There are a few Google Web Fonts pairing ideas in the starter styles to try:
 - [_define.sass][]
 - [_head.html.haml][]
 
-#### Step 4: Choose a Typeface
+### Step 4: Choose a Typeface
 
 With Step 1 through 3 behind us, and the predefined fonts in our starter styles, the next step in the process is to actually choose something, and give it a test drive. Here are some screenshots of different font ideas for View Thought:
 
@@ -177,7 +178,7 @@ With Step 1 through 3 behind us, and the predefined fonts in our starter styles,
 
 As you can see, choosing fonts is a practice in trial and error. In Appendix 10 in the section entitled "[Choosing Typeface Articles][Appendix 10]," I list different articles that might help you frame the context of your decision making process.
 
-#### Step 5: Define Fallbacks (Font Stacks)
+### Step 5: Define Fallbacks (Font Stacks)
 
 Finally, once you choose your fonts it's good practice to also define fallback fonts. Together your chosen font and its fallbacks are a font stack; a listing of several different fonts.
 
@@ -604,9 +605,6 @@ We started this chapter by covering typography. We discussed the basic building 
 [Brief Primer]:         http://blog.8thlight.com/billy-whited/2011/08/25/a-brief-primer-on-typeface-selection.html
 [On Web Typography]:    http://vimeo.com/34178417
 
-[Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
-[_head.html.haml]:      https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_head.html.haml
-
 [Typekit]:              https://typekit.com/
 [articles]:             http://blog.typekit.com/category/font-events/
 [I'll]:                 https://github.com/maxxiimo/viewthought/blob/master/app/views/layouts/_head.html.haml
@@ -616,6 +614,9 @@ We started this chapter by covering typography. We discussed the basic building 
 [details]:              https://github.com/maxxiimo/viewthought/blob/master/app/assets/stylesheets/desktop/_typography.sass
 [Google Web Fonts]:     http://www.google.com/webfonts#
 [Beginners Guide]:      http://designshack.net/articles/css/a-beginners-guide-to-using-google-web-fonts/
+
+[Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
+[_head.html.haml]:      https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_head.html.haml
 
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
