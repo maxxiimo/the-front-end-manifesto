@@ -173,7 +173,8 @@ There are a few Google Web Fonts pairing ideas in the starter styles to try:
 ### Step 4: Choose a Typeface
 
 With Step 1 through 3 behind us, and the predefined fonts in our starter styles, the next step in the process is to actually choose something, and give it a test drive. Here are some screenshots of different font ideas for View Thought:
-
+<br>
+<br>
 ![][fonts]
 
 As you can see, choosing fonts is a practice in trial and error. In Appendix 10 in the section entitled "[Choosing Typeface Articles][Appendix 10]," I list different articles that might help you frame the context of your decision making process.
