@@ -151,7 +151,7 @@ NOTE: Jason Santa Maria, a master on the subject, in a presentation called [On W
 
 I like to use a font service to browse and deliver fonts. Using a fonts service eliminates the licensing headaches one might encounter using other people's works, and also provides a CDN to serve fonts from. Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 9]" appendix.
 
-My preferred service is [Typekit][]. They provides an excellent [series of articles][articles] on implementing Typekit, so [\[I'll][I'll] [\[spare]][spare] [\[you]][you] [\[the]][the] [\[details]][details].
+My preferred service is [Typekit][]. They provides an excellent [series of articles][articles] on implementing Typekit, so [/[I'll/]][I'll] [/[spare/]][spare] [/[you/]][you] [/[the/]][the] [/[details/]][details].
 
 Typekit is a paid service, [Google Web Fonts][] on the other hand is a free service:
 
