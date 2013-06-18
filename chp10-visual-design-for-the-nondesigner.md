@@ -83,7 +83,6 @@ Using the base styles from [Chapter 3][] these typographic elements are predefin
     $droid-serif: "Droid Serif", Georgia, Times, serif
     $droid-sans: "Droid Sans", Helvetica, Arial, sans-serif
 
-
     // base definitions...
 
     $base-font-family: $droid-sans !default
@@ -98,7 +97,7 @@ Using the base styles from [Chapter 3][] these typographic elements are predefin
     // $base-font-header: $georgia !default
     // $base-font-nav: $georgia !default
 
-NOTE: Our font definitions begin with variables set to different font stacks. In Sass variables can also be set to other variables. In our case to the `$base-font-family` variable, the key to our application fonts, references one of the different font stack variables and is in turn is referenced by our `<body>` tags `font-family` property and will propagate throughout the entire application by virtue of the CSS we have written and the concept of CSS inheritance.
+NOTE: Our font definitions begin with variables set to different font stacks. In Sass variables can also be set to other variables. In our case the `$base-font-family` variable, the key to our application fonts, references one of the different predefined font stack variables and is in turn is referenced by our `<body>` tags `font-family` property and will propagate throughout the entire application by virtue of the CSS written and the concept of CSS inheritance. You can experiment with the predefined fonts by changing the variable `$base-font-family` points to.
 
 ### Font Family
 
