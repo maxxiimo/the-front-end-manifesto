@@ -113,38 +113,7 @@ Since we have predefined fonts, let's experiment and pick one for View Thought. 
 
 When deciding on a font family for a project I follow the following steps:
 
-#### Step 1: Use a Font Service
-
-I like to use a font service to browse and deliver fonts. Using a fonts service eliminates the licensing headaches one might encounter using other people's works, and also provides a CDN to serve fonts from. Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 9]" appendix.
-
-My preferred service is [Typekit][]. They provides an excellent [series of articles][articles] on implementing Typekit, so [I'll][] [spare][] [you][] [the][] [details][].
-
-Typekit is a paid service, [Google Web Fonts][] on the other hand is a free service:
-
-- [A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
-
-#### Step 2: Pairing Typefaces
-
-> You might have already heard this; successful pairing relies on concord, or contrast, but not conflict. That is to say your selected fonts can work well together by sharing certain qualities, or by being completely different from one another. However, font pairs can conflict in a number of ways – being too similar being just one.
-
-\- [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
-
-When selecting font families for my projects it's helpful for me to go straight to the Font Stacks Roundup's "[Combinations][Appendix 8 Combos]" section. Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and more often than not provide samples for you to review and choose from.
-
-There are a few Google Web Fonts pairing ideas in the starter styles to try:
-
-- [_define.sass][]
-- [_head.html.haml][]
-
-#### Step 3: Choose a Typeface (Adjectives)
-
-With Step 1 and Step 2 behind us, and the predefined fonts in our starter styles, the next step in the process is to actually choose something, and give it a spin. Here are some screenshots of different font ideas for View Thought:
-
-![][fonts]
-
-As you can see, choosing fonts is a practice in trial and error. In Appendix 10 in the section entitled "[Choosing Typeface Articles][Appendix 10]," I list different articles that might help you frame the context of your decision making process.
-
-I also think the following idea is worth noting by itself:
+#### Step 1: Define Adjectives
 
 > Write down a general description of the qualities of the message you are trying to convey, and then look for typefaces that embody those qualities.
 
@@ -177,9 +146,40 @@ That is the message, and here are some adjectives that help communicate the mood
 
 NOTE: Jason Santa Maria, a master on the subject, in a presentation called [On Web Typography][] gives excellent advice on picking typefaces starting at 31:45. You can find this advice transcribed in [Appendix 10][Appendix 10].
 
-#### Step 4: Define Fallbacks (Font Stacks)
+#### Step 2: Use a Font Service
 
-Once you choose your fonts it's good practice to also define fallback fonts. Together your chosen font and its fallbacks are a font stack; a listing of several different fonts.
+I like to use a font service to browse and deliver fonts. Using a fonts service eliminates the licensing headaches one might encounter using other people's works, and also provides a CDN to serve fonts from. Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 9]" appendix.
+
+My preferred service is [Typekit][]. They provides an excellent [series of articles][articles] on implementing Typekit, so [I'll][] [spare][] [you][] [the][] [details][].
+
+Typekit is a paid service, [Google Web Fonts][] on the other hand is a free service:
+
+- [A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
+
+#### Step 3: Pairing Typefaces
+
+> You might have already heard this; successful pairing relies on concord, or contrast, but not conflict. That is to say your selected fonts can work well together by sharing certain qualities, or by being completely different from one another. However, font pairs can conflict in a number of ways – being too similar being just one.
+
+\- [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
+
+When selecting font families it's helpful for me to go straight to the Font Stacks Roundup's "[Combinations][Appendix 8 Combos]" section. Here designers with typographic knowledge and experience well beyond my own have paired fonts, describe their personality or feel, and more often than not provide samples for you to review and choose from.
+
+There are a few Google Web Fonts pairing ideas in the starter styles to try:
+
+- [_define.sass][]
+- [_head.html.haml][]
+
+#### Step 4: Choose a Typeface
+
+With Step 1 through 3 behind us, and the predefined fonts in our starter styles, the next step in the process is to actually choose something, and give it a test drive. Here are some screenshots of different font ideas for View Thought:
+
+![][fonts]
+
+As you can see, choosing fonts is a practice in trial and error. In Appendix 10 in the section entitled "[Choosing Typeface Articles][Appendix 10]," I list different articles that might help you frame the context of your decision making process.
+
+#### Step 5: Define Fallbacks (Font Stacks)
+
+Finally, once you choose your fonts it's good practice to also define fallback fonts. Together your chosen font and its fallbacks are a font stack; a listing of several different fonts.
 
 The reason we define a font stack is to make sure similar substitute fonts are available for devices that do not carry the font family you wish to use. For example:
 
