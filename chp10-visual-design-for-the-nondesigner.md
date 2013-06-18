@@ -151,7 +151,7 @@ NOTE: Jason Santa Maria, a master on the subject, in a presentation called [On W
 
 I like to use a font service to browse and deliver fonts. Using a fonts service eliminates the licensing headaches one might encounter using other people's works, and also provides a CDN to serve fonts from. Some services are subscription based and others are free. I have listed a few in the "[Font Services and Tools][Appendix 9]" appendix.
 
-My preferred service is [Typekit][]. They provides an excellent [series of articles][articles] on implementing Typekit, so [[I'll][I'll] [[spare]][spare] [[you]][you] [[the]][the] [[details]][details].
+My preferred service is [Typekit][]. They provides an excellent [series of articles][articles] on implementing Typekit, so [\[I'll][I'll] [\[spare]][spare] [\[you]][you] [\[the]][the] [\[details]][details].
 
 Typekit is a paid service, [Google Web Fonts][] on the other hand is a free service:
 
@@ -188,7 +188,8 @@ The reason we define a font stack is to make sure similar substitute fonts are a
 
 If your device does not have the first font in the stack, Arial, your browser will look for the second one and so forth until the very last one: which is a generic font and the most broadly available across different operating systems. All the fonts in the stack are similar enough that they can be interchanged with minimal differences between fonts used (at least that is the goal).
 
-### Font Size
+Font Size
+---------
 
 Now that we have selected a font family, we need to set a base font size. Choosing font size is actually an important decision. At the very basic level you will choose between a measurement types such as px's vs. em's vs. % vs. pt's vs rem's, and from a more complex perspective you need to consider that your choice might also be the measurement from which your entire site is responsive to, and in our case it is.
 
@@ -224,7 +225,7 @@ app\assets\stylesheets\desktop\_layout.sass
 
 Again, we're going to use the browser's default setting. I include 100% here, but could also omit the reference completely.
 
-#### Using Em's
+### Using Em's
 
 Throughout our application moving forward if we would like to affect font size for let's say headers or a specific element, we will use em's. We use em's because there are a scalable unit relative to the parent font size. In our case, 1em = default browser font size = typically 16px. If we would like to double in size we use 2em = 32px.
 
@@ -238,7 +239,8 @@ For more details on using em's take a look at:
 - [CSS Font-Size: em vs. px vs. pt vs. percent][CSS Font-Size]
 - [How we learned to leave default font-size alone and embrace the em][Embracing em's]
 
-### Modular Scales
+Modular Scales
+--------------
 
 A modular scale is a scale based on ratios derived from harmonic intervals or the golden ratio and key measure/s in your application (such as the base font size). Yowza! What? Well in layman's terms it's a bunch of measurements used for key measurements in your application, a scale, that are related to one another in some artistic/design awesome way; versus randomly picking numbers. You use numbers from the scale throughout your application for things like line length, column widths, line heights, etc., and by doing so your design will be better, or in the very least you are making a design informed decision!
 
@@ -266,11 +268,12 @@ Now that we have a scale, let's apply it. For the more adventurous take a look a
 
 [Sassy Modular Scale][]
 
-### Readability
+Readability
+-----------
 
 Readability is the perfect place to begin applying our brand-new Modular Scale. Font choice, size, line length (measure), line height (leading), and font color and contrast are the main components of [readability][]. We've covered font choice and size, now let's look at the rest.
 
-#### Line Length (Measure)
+### Line Length (Measure)
 
 For line length the following character ranges seem to be the best ones to use:
 
@@ -322,7 +325,7 @@ Need them to be even closer? You can add and subtract up to two numbers from the
 
 Moving forward in my design I now have constraints I can keep an eye on when sizing columns in my layout.
 
-#### Line Heigt (Leading)
+### Line Heigt (Leading)
 
 For line height there are a couple key things to keep in mind: You will need more line height when your lines are longer – otherwise your readers might get lost, and/or when you use a darker font color – so that you do not to overwhelm the rest of the site.
 
@@ -336,7 +339,7 @@ The next natural step down in our scale is 1.159, which seems to be too much of 
     // 1.618 - 0.236 = 1.382
     // 1.618 - 0.382 = 1.236
 
-#### Color
+### Color
 
 I read [somewhere][] that to make your text appear softer and still maintain a good contrast you shouldn't use pure black for your font color but something slightly lighter. The idea made a lot of sense to me so we use the following defaults in our starter styles:
 
@@ -345,8 +348,8 @@ I read [somewhere][] that to make your text appear softer and still maintain a g
 
 Of course, black on white does not have to be the default color and contrast.
 
-Color
------
+Color Palette
+-------------
 
 > There are many contributing factors that go into making a good visual design, but one of the simplest ways to do this is through the use of colour. The colour palette used in a design can have such a profound effect on a visual design that it almost feels like you’re cheating. It’s easy to add more and more subtle shades of colour to add a sense of sophistication and complexity to a design, but it dilutes the overall visual impact. When I design, I almost have a rule that only allows me to use a very limited colour palette.
 

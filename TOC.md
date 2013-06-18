@@ -111,9 +111,13 @@ Table of Contents
       - Step 4: Choose a Typeface
       - Step 5: Define Fallbacks (Font Stacks)
   - Font Size
+      - Using Em's
   - Modular Scales
   - Readability
-  - Color
+      - Line Length (Measure)
+      - Line Heigt (Leading)
+      - Color
+  - Color Palette
       - Step 1: Base Color Selection
       - Step 2: Color Wheel Experimentation
       - Step 3: Finishing Touches
