@@ -633,7 +633,7 @@ We started this chapter by covering typography. We discussed the basic building 
 
 [Quatro Sans]:          http://cargocollective.com/pstype/Quatro-Sans
 [Rooney Web]:           http://www.janfromm.de/typefaces/rooney/overview/
-[CamingoDos]:           http://www.janfromm.de/typefaces/camingodos/overview/
+[CamingoDos Web]:       http://www.janfromm.de/typefaces/camingodos/overview/
 
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
