@@ -50,54 +50,56 @@ The first visual design component I like to tackle is [typography][]. The lowest
 - Font Size
 - Readability
 
-Using the base styles from [Chapter 3][] these typographic elements are predefined and available to you to experiment with through the [_define.sass][] sass partial – reserved for defining global stylesheet variables:
+Using the base styles from [Chapter 3][] these typographic elements are predefined and available to you to experiment with through the [_define.sass][] sass partial:
 
-    /* Fonts
+    /*  Fonts
       -----------------------
 
     // stacks...
 
     // http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
 
-    $arial: Arial, "Helvetica Neue", Helvetica, sans-serif
-    $verdana: Verdana, Geneva, Tahoma, sans-serif
-    $geneva: Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif
-    $georgia: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif
+    $arial:             Arial, "Helvetica Neue", Helvetica, sans-serif
+    $verdana:           Verdana, Geneva, Tahoma, sans-serif
+    $geneva:            Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif
+    $georgia:           Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif
 
     // google web fonts...
 
     // http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/
     // http://designshack.net/articles/typography/10-more-great-google-font-combinations-you-can-copy/
 
-    $cantata: "Cantata One", Georgia, serif
-    $imprima: Imprima, Verdana, Helvetica, sans-serif
+    $cantata:           "Cantata One", Georgia, serif
+    $imprima:           Imprima, Verdana, Helvetica, sans-serif
 
-    $allerta: Allerta, Helvetica, Arial, sans-serif
-    $crimson: Crimson Text, Georgia, Times, serif
+    $allerta:           Allerta, Helvetica, Arial, sans-serif
+    $crimson:           Crimson Text, Georgia, Times, serif
 
-    $arvo: Arvo, Georgia, Times, serif
-    $pt-sans: "PT Sans", Helvetica, Arial, sans-serif
+    $arvo:              Arvo, Georgia, Times, serif
+    $pt-sans:           "PT Sans", Helvetica, Arial, sans-serif
 
-    $pt-serif: "PT Serif", serif
+    $pt-serif:          "PT Serif", serif
 
-    $droid-serif: "Droid Serif", Georgia, Times, serif
-    $droid-sans: "Droid Sans", Helvetica, Arial, sans-serif
+    $droid-serif:       "Droid Serif", Georgia, Times, serif
+    $droid-sans:        "Droid Sans", Helvetica, Arial, sans-serif
 
     // base definitions...
 
-    $base-font-family: $droid-sans !default
-    $base-font-size: 100% !default
-    $base-line-height: 1.4 !default
+    $base-font-family:  $droid-sans       !default
+    $base-font-size:    100%              !default
+    $base-line-height:  1.4               !default
 
-    $base-font-header: $droid-serif !default
-    $base-font-nav: $droid-serif !default
+    $base-font-header:  $droid-serif      !default
+    $base-font-nav:     $droid-serif      !default
 
     // non-google web fonts alternativ:
-    // $base-font-header: $arial !default
-    // $base-font-header: $georgia !default
-    // $base-font-nav: $georgia !default
+    // $base-font-header:  $arial         !default
+    // $base-font-header:  $georgia       !default
+    // $base-font-nav:     $georgia       !default
 
-NOTE: Our font definitions begin with variables set to different font stacks. In Sass, variables can also be set to other variables. In our case the `$base-font-family` variable, the key to our application fonts, references one of the different predefined font stack variables and is in turn is referenced by our `<body>` tags `font-family` property and will propagate throughout the entire application by virtue of the CSS written and the concept of CSS inheritance. You can experiment with the predefined fonts by changing the variable that `$base-font-family` points to.
+This partial is reserved for defining global stylesheet variables, and begins with variables set to different font stacks. In Sass, variables can also be set to other variables and so the base definitions variables, the key to our application fonts, reference one of the different predefined font stack variables. For example, `$base-font-family` which in turn is referenced by the `<body>` tags `font-family` property and will propagate throughout the entire application by virtue of CSS inheritance.
+
+You can experiment with the predefined fonts by changing the variable that the base definitions point to.
 
 Font Family
 -----------
