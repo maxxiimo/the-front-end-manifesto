@@ -104,23 +104,23 @@ You can experiment with the predefined fonts by changing the variable that the b
 Font Family
 -----------
 
-Since we have predefined fonts, let's experiment and pick one for View Thought. Obviously, you do not have to use what is predefined in [_define.sass][]. To help you select an alternative I created a quick reference "[Font Stacks Roundup][Appendix 8]" located in the Appendices of this book.
+When choosing a font family for a project you can try some of the fonts predefined in [_define.sass][] or try something else. To help you select an alternative I created a quick reference "[Font Stacks Roundup][Appendix 8]" located in the Appendices of this book.
 
-When deciding on a font family for a project try following these steps:
+When choosing a font family for a project try following these steps:
 
 ### Step 1: Define Adjectives
 
 > Write down a general description of the qualities of the message you are trying to convey, and then look for typefaces that embody those qualities.
 
-\- [More Perfect Typography][Perfect Typography] (Tim Brown quoting Jason Santa Maria.)
+\- Tim Brown, the Type Manager for Adobe Typekit, quoting Jason Santa Maria in the presentation [More Perfect Typography][Perfect Typography]
 
-...According to Tim Brown, the Type Manager for Adobe Typekit, he always begins a project this way. He starts with body text, "which gives tone for a piece," then moves on to markers like headers, "that give it personality and character."
+...According to Tim Brown he always begins a project this way. He starts with body text, "which gives tone for a piece," then moves on to markers like headers, "that give it personality and character."
 
 The article, "[A Brief Primer on Typeface Selection][Brief Primer]," echoes the same idea:
 
 > Read your content to determine the mood it conveys. Describe this mood using a list of adjectives. Find typefaces that you feel are accurately described by these adjectives. Essentially, you want to ensure that your typeface conveys the appropriate feeling.
 
-What adjectives describe View Thought? To start, I revisited the storyline:
+What adjectives describe View Thought? To start, let's revisit the storyline:
 
 > We are a great website design, development and user experience shop. We have tons of experience, have worked with a bunch of different clients who are all happy with our work, and we really care about what we do. We specialize in Ruby on Rails, and we pay special attention to what your users will see. You should hire us! ...or give us a call and learn more.
 
@@ -139,7 +139,7 @@ That is the message, and here are some adjectives that help communicate the mood
 11. Fun
 12. Steadfast
 
-NOTE: I recommend listening to Jason Santa Maria''s, a master on the subject of typography, presentation called [On Web Typography][]. He gives excellent advice on picking typefaces (starting at minute 31:45). You can find this advice transcribed in [Appendix 10][Appendix 10].
+NOTE: I recommend listening to Jason Santa Maria's presentation "[On Web Typography][]". He gives excellent advice on picking typefaces (starting at minute 31:45). You can find this advice transcribed in [Appendix 10][Appendix 10].
 
 ### Step 2: Use a Font Service
 
