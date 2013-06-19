@@ -117,7 +117,7 @@ Table of Contents
       - Line Length (Measure)
       - Line Heigt (Leading)
       - Color
-  - Color Palette
+  - The Color Palette
       - Step 1: Base Color Selection
       - Step 2: Color Wheel Experimentation
       - Step 3: Finishing Touches

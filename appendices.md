@@ -440,6 +440,20 @@ A roundup of feedback services and device testing articles.
 Appendix 8
 ----------
 
+Here you will find recommendations for:
+
+1.  Font stacks that you can copy and use in your project.
+
+2.  Web safe fonts, i.e. fonts that are most common on most versions of Windows, Mac, and Linux.
+
+    You can copy these and feel confident using them as your overall default font stack, or as a fallback font stack for a more interesting typeface.
+
+3.  Typefaces that go well together, say one font for your headers and another contrasting font for your body.
+
+4.  Mobile fonts.
+
+5.  Font classifications and definitions.
+
 ### Font Stack Roundup
 
 1.  *06/26/08* - [Better CSS Font Stacks][Better Stacks]

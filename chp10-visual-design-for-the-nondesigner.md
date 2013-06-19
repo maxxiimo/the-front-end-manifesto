@@ -102,17 +102,9 @@ NOTE: Our font definitions begin with variables set to different font stacks. In
 Font Family
 -----------
 
-Since we have predefined fonts, let's experiment and pick one for View Thought. You do not have to use what is predefined. To help you select an alternative I created a quick reference "[Font Stacks Roundup][Appendix 8]" located in the Appendices of this book. Here you will find recommendations for:
+Since we have predefined fonts, let's experiment and pick one for View Thought. You do not have to use what is predefined. To help you select an alternative I created a quick reference "[Font Stacks Roundup][Appendix 8]" located in the Appendices of this book.
 
-1.  Font stacks that you can copy and use in your project.
-
-2.  Web safe fonts, i.e. fonts that are most common on most versions of Windows, Mac, and Linux.
-
-    You can copy these and feel confident using them as your overall default font stack, or as a fallback font stack for a more interesting typeface.
-
-3.  Typefaces that go well together, say one font for your headers and another contrasting font for your body.
-
-When deciding on a font family for a project I follow the following steps:
+When deciding on a font family for a project try following these steps:
 
 ### Step 1: Define Adjectives
 
