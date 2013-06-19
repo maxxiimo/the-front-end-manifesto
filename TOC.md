@@ -107,7 +107,7 @@ Table of Contents
   - Font Family
       - Step 1: Define Adjectives
       - Step 2: Use a Font Service
-      - Step 3: Pairing Typefaces
+      - Step 3: Pair Typefaces
       - Step 4: Choose a Typeface
       - Step 5: Define Fallbacks (Font Stacks)
   - Font Size

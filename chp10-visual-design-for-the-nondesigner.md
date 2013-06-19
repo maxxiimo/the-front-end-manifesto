@@ -149,7 +149,7 @@ Typekit is a paid service, [Google Web Fonts][] on the other hand is a free serv
 
 - [A Beginner’s Guide to Using Google Web Fonts][Beginners Guide]
 
-### Step 3: Pairing Typefaces
+### Step 3: Pair Typefaces
 
 > You might have already heard this; successful pairing relies on concord, or contrast, but not conflict. That is to say your selected fonts can work well together by sharing certain qualities, or by being completely different from one another. However, font pairs can conflict in a number of ways – being too similar being just one.
 
