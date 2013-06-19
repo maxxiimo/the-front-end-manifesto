@@ -138,6 +138,7 @@ That is the message, and here are some adjectives that help communicate the mood
 10. Innovative
 11. Fun
 12. Steadfast
+13. Friendly
 
 NOTE: I recommend listening to Jason Santa Maria's presentation "[On Web Typography][]". He gives excellent advice on picking typefaces (starting at minute 31:45). You can find this advice transcribed in [Appendix 10][Appendix 10].
 
@@ -157,7 +158,7 @@ Typekit is a paid service, [Google Web Fonts][] on the other hand is a free serv
 
 \- [A Beginner’s Guide to Pairing Fonts][Beginners Guide]
 
-When selecting font families it's helpful to review the Font Stacks Roundup's "[Combinations][Appendix 8 Combos]" section. Here designers with substantial typographic knowledge and experience have paired fonts, described their personalities or feel, and provide samples to review and choose from.
+When selecting font families I recommend reviewing the [Combinations][Appendix 8 Combos] section of Appendix 8. Here designers with substantial typographic knowledge and experience have paired fonts, described their personalities or feel, and provide samples to review and choose from.
 
 A few Google Web Fonts pairing ideas derived from articles in Appendix 8 can be found in the starter styles:
 
@@ -173,7 +174,21 @@ Finally, choose a typeface and give it a test drive. Here are some screenshots o
 ![][fonts]
 <br>
 <br>
-As you can see, choosing fonts is a practice in trial and error. In Appendix 10, in the section entitled "[Choosing Typeface Articles][Appendix 10]," I list different articles that might help you frame the context of your decision making process.
+As you can see, choosing fonts is a practice in trial and error. To help you frame the context of your decision making process take a look at the section entitled "[Choosing Typeface Articles][Appendix 10]" in Appendix 10.
+
+For View Thought I chose three fonts from Typekit:
+
+- [Quatro Sans][] for the logo. We're building things at View Thought in this font captures that feeling.
+
+  > We are pleased to introduce you to Quatro Sans. An undeniably modern typeface with construction principles that attempt to find the balance between machine and hand.
+
+- [Rooney Web][] for the body text. I wanted to use a serif font and Rooney seemed to embody the right combination of serious and fun that I was looking for.
+
+  > Rooney feels serious yet its rounded shapes and soft curves make for an overall impression of warmth and smoothness.
+
+- [CamingoDos Web][] for our headers and navigation. Oftentimes choosing fonts from the same foundry produces the best combinations. I wanted to use a sans-serif and Rooney Sans Web was nice, but CamingoDos felt right.
+
+  > CamingoDos Web is tailored for use on websites. The fonts are manually hinted for optimal on-screen reading, providing a good performance across different operating systems and browsers.
 
 ### Step 5: Define Fallbacks (Font Stacks)
 
@@ -615,6 +630,10 @@ We started this chapter by covering typography. We discussed the basic building 
 
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
 [_head.html.haml]:      https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_head.html.haml
+
+[Quatro Sans]:          http://cargocollective.com/pstype/Quatro-Sans
+[Rooney Web]:           http://www.janfromm.de/typefaces/rooney/overview/
+[CamingoDos]:           http://www.janfromm.de/typefaces/camingodos/overview/
 
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss

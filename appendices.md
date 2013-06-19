@@ -536,7 +536,11 @@ Here you will find recommendations for:
 
     > Pairing fonts can be a challenge. Selecting two or more fonts which work well is one thing – selecting two which work together to achieve your typographic aims may have you reaching for the aspirin. Let’s see if we can alleviate any headaches. This guide will help you get started with font pairing for the web.
 
-7.  [Typeface Combinations][]
+7.  [Combining Typefaces][]
+
+    > Combining typefaces is challenging and fun, but it takes practice. Successful combinations are partly a matter of good taste, which can be tough to develop.
+
+8.  [Typeface Combinations][]
 
     > Although the idea of typeface combining revolves around contrast, the best serif and sans serif combinations have similar characteristics.
 
@@ -996,6 +1000,7 @@ Color palette creation and sharing tools.
 [More Google Fonts]:    http://designshack.net/articles/typography/10-more-great-google-font-combinations-you-can-copy/
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
 [25 Combinations]:      http://tympanus.net/codrops/2011/11/12/25-fresh-examples-of-beautiful-typeface-combinations-in-web-design/
+[Combining Typefaces]:  http://www.fivesimplesteps.com/products/combining-typefaces
 [Typeface Combinations]: http://www.peatah.org/combinations2.html
 
 [5 Tips]:               http://wixmobile.com/5-tips-for-excellent-mobile-typography
