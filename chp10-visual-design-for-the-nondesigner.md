@@ -112,7 +112,7 @@ When choosing a font family for a project try following these steps:
 
 > Write down a general description of the qualities of the message you are trying to convey, and then look for typefaces that embody those qualities.
 
-\- Tim Brown, the Type Manager for Adobe Typekit, quoting Jason Santa Maria in the presentation [More Perfect Typography][Perfect Typography]
+\- Tim Brown, the Type Manager for Adobe Typekit, quoting Jason Santa Maria ([More Perfect Typography][Perfect Typography])
 
 ...According to Tim Brown he always begins a project this way. He starts with body text, "which gives tone for a piece," then moves on to markers like headers, "that give it personality and character."
 
