@@ -311,13 +311,16 @@ Readability is the perfect place to begin applying our brand-new Modular Scale. 
 
 For line length the following character ranges seem to be the best ones to use:
 
-> ...anywhere from 45–75 characters is considered acceptable.
+1. 45 to 75 characters.
 
-\- [Readability][readability] by Billy Whited
+  > ...anywhere from 45–75 characters is considered acceptable.
 
-> A general good rule of thumb is 2-3 alphabets in length, or 52-78 characters (including spaces).
+  \- [Readability][readability] by Billy Whited
 
-\- [Five simple steps to better typography][Better Typography] by Mark Boulton
+2. 52 to 78 characters.
+  > A general good rule of thumb is 2-3 alphabets in length, or 52-78 characters (including spaces).
+
+  \- [Five simple steps to better typography][Better Typography] by Mark Boulton
 
 For View Thought I'll take a sample of text directly off of our wireframe:
 
