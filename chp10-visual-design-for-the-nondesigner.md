@@ -219,7 +219,7 @@ NOTE: If you're interested in the research for this basis to start from take a l
 
 ### Base Font Size
 
-In Chapter 3 we [implemented Normalize.css][Resets]. If you look at the [Normalize][implementation] file you will notice that the base font size is set to 100%:
+In Chapter 3 we [implemented Normalize.css][Resets]. In [Normalize][implementation] the base font size is set to 100%:
 
     /*
     * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
