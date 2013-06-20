@@ -211,13 +211,15 @@ Font Size
 
 Now that we have selected a font family, we need to set a base font size. Choosing font size is actually an important decision. At the very basic level you will choose between a unit of measurement such as `px` vs. `em` vs. `%` vs. `pt` vs `rem`, and from a more complex perspective you need to consider that your choice might also be the measurement from which your entire site is responsive to.
 
-To me this seems like a lot of thinking and research, so I'm just going to give you a very opinionated basis to start from. The sources for my research can be found in "[A Brief History of Web Font Sizes][Appendix 11]" found in the appendices.
+NOTE: The research sources for my opinionated basis to start from can be found in "[A Brief History of Web Font Sizes][Appendix 11]" in the appendices.
 
-In Chapter 3 we implemented [Normalize.css][]. If you look at our [implementation][] you will notice that we reset our base font size to 100%:
+In Chapter 3 we [implemented Normalize.css][Resets]. If you look at the [Normalize][implementation] file you will notice that the base font size is set to 100%:
 
     /*
-    * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using `em` units.
-    * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom.
+    * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+    * `em` units.
+    * 2. Prevents iOS text size adjust after orientation change, without disabling
+    * user zoom.
     */
 
     html {
@@ -226,7 +228,7 @@ In Chapter 3 we implemented [Normalize.css][]. If you look at our [implementatio
         -ms-text-size-adjust: 100%; /* 2 */
     }
 
-As a rule of thumb, browsers typically default to a font size of 16px. We're going to accept this default font size for our project, so setting a font size of 100% through normalize is fine and dandy. Through the body tag we also provide a way in which we may affect font sizes globally:
+As a rule of thumb, browsers typically default to a font size of 16 pixels. We're going to accept this default font size and will not override normalize, however, through the `<body>` tag we also provide a way in which we may override the setting and affect font sizes globally:
 
 app\assets\stylesheets\_define.sass
 
@@ -241,7 +243,7 @@ app\assets\stylesheets\desktop\_layout.sass
       line-height: $base-line-height
       background-color: $bg-body
 
-Again, we're going to use the browser's default setting. I include 100% here, but could also omit the reference completely.
+Again, we're going to use Normalize and the browser's default setting. I include 100% here, but could also omit the reference completely.
 
 ### Using Em's
 
@@ -647,7 +649,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Font Stack Roundup]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#font-stack-roundup
 [Complete Guide]:       http://www.apaddedcell.com/web-fonts
 
-[Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#resets
+[Resets]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
 
 [using em's]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#ems-and-media-queries
