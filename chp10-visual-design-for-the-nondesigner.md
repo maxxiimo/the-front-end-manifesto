@@ -309,6 +309,12 @@ Readability is the perfect place to begin applying our brand-new Modular Scale. 
 
 ### Line Length (Measure)
 
+> Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
+
+\- [More Meaningful Typography][Meaningful Typography] by Tim Brown
+
+**Step 1**: Decide on an optimal character range.
+
 For line length the following character ranges seem to be the best ones to use:
 
 1. 45 to 75 characters.
@@ -322,11 +328,13 @@ For line length the following character ranges seem to be the best ones to use:
 
   \- [Five simple steps to better typography][Better Typography] by Mark Boulton
 
+**Step 2**: Take a sample and find the cutoff points.
+
 For View Thought I'll take a sample of text directly off of our wireframe:
 
 > Nothing beats the involvement of a well-seasoned, front-end developer that understands the semantics of what you're trying to pull off.
 
-There are 116 characters in that sample, so what I need to do is find the 45 to 75 character cutoff points (without spaces) in it. To do so I'll use a word processor to count characters.
+There are 116 characters in that sample, so what I need to do is find its 45 to 75 character cutoff points (without spaces). To do so I'll use a word processor to count characters.
 
 ~45 characters:
 
@@ -336,17 +344,19 @@ There are 116 characters in that sample, so what I need to do is find the 45 to 
 
 > Nothing beats the involvement of a well-seasoned, front-end developer that understands
 
-With the fonts and font size I have chosen and implemented, for this particular piece of text my measure should not cause the text to span shorter than the "," after seasoned or longer than "understands". Well great, how does that help me with the rest of my content?
+**Step 3**: Translate the cutoff points to widths in em's.
 
-Knowing this about our sample we can translate this information into measurable units by marginally decreasing the texts containing elements width until we reach the cutoff points. I use Firebug to easily decrease the width of my containing element and come up with the following two measurements:
+With the fonts and font size I have chosen and implemented, for this particular piece of text my measure should not cause the text to span shorter than the "," after seasoned or longer than "understands".
 
-    28em
-    42em
+Nothing beats the involvement of a well-seasoned,*-->* front-end developer that understands*<--* the semantics of what you're trying to pull off.
 
-...my minimum and maximum line lengths. But neither measure is in my scale. No problem, find the closest numbers:
+**Step 4**: Find the new widths in your scale.
 
-    29.03em
-    46.971em
+Well great, how does that help me with the rest of my content?
+
+Knowing this about our sample we can translate this information into measurable units by marginally decreasing the texts containing elements width until we reach the cutoff points. I use Firebug to easily decrease the width of my containing element and come up with the following two ranges: `28em` and `42em`, my minimum and maximum line lengths.
+
+Since neither measure is in my scale, I find the closest numbers: `29.03em` and `46.971em`
 
 Need them to be even closer? You can add and subtract up to two numbers from the same scale, just comment your math:
 
@@ -355,10 +365,6 @@ Need them to be even closer? You can add and subtract up to two numbers from the
 
     // 46.971 - 4.909
     42.062em
-
-> Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
-
-\- [More Meaningful Typography][Meaningful Typography] by Tim Brown
 
 Moving forward in my design I now have constraints I can keep an eye on when sizing columns in my layout.
 
