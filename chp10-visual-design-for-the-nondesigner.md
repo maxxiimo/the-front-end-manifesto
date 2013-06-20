@@ -309,10 +309,6 @@ Readability is the perfect place to begin applying our brand-new Modular Scale. 
 
 ### Line Length (Measure)
 
-> Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
-
-\- [More Meaningful Typography][Meaningful Typography] by Tim Brown
-
 **Step 1**: Decide on an optimal character range.
 
 For line length the following character ranges seem to be the best ones to use:
@@ -365,6 +361,13 @@ Need them to be even closer? You can add and subtract up to two numbers from the
 
     // 46.971 - 4.909
     42.062em
+
+
+> Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
+
+\- [More Meaningful Typography][Meaningful Typography] by Tim Brown
+
+**Step 5**: Apply to your design.
 
 Moving forward in my design I now have constraints I can keep an eye on when sizing columns in my layout.
 
