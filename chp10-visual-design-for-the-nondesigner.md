@@ -415,19 +415,19 @@ The Color Palette
 
 \- Mike Kus, "[Nine Things I've Learned][9 Things]"
 
-So how do we begin to develop our own color palette? The articles:
+So how do we begin to develop our own color palette? First, some background (for your reference). The following articles do an excellent job of defining the fundamentals of color theory, and the basic steps and components in building a color scheme:
 
 - [Build a Color Scheme: The Fundamentals][Color Fundamentals]
 - [Basic color schemes - Introduction to Color Theory][Color Theory]
 - [Color Matters - Basic Color Theory][Color Matters]
 
-...do an excellent job of **defining** the fundamentals of color theory and the basic steps and components in building a color scheme:
+The basic steps and components include:
 
 1.  Selecting a base color while taking into account the effect colors have on our perceptions and feelings.
 2.  Choosing color harmonies from the color wheel, i.e. what colors will work well together.
 3.  Selecting the right tones, shades and tints for each color in the color scheme.
 
-Read the article and you'll understand what these steps entail, but it still begs the question, practically speaking, how do I begin?
+...But practically speaking, how do you begin?
 
 ### Step 1: Base Color Selection
 
@@ -449,6 +449,7 @@ Wow, that quote certainly says something. Obviously a color scheme is powerful s
 10. Innovative
 11. Fun
 12. Steadfast
+13. Friendly
 
 Are there any colors that may help convey this? Reviewing the color descriptions in the following references:
 
