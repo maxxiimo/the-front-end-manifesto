@@ -213,9 +213,9 @@ Now that we have selected a font family, we need to set a base font size. Choosi
 
 First, choose a unit of measurement: `px` vs. `em` vs. `%` vs. `pt` vs `rem`.
 
-In our starter code we use `%` to establish a baseline, and `em`'s to set font sizes for elements throughout the project.
+In our starter code we use `%` to establish a baseline, and `em` to set font sizes for elements throughout the project.
 
-NOTE: The research for my opinionated basis to start from can be found in "[A Brief History of Web Font Sizes][Appendix 11]" in the appendices.
+NOTE: If you're interested in the research for this basis to start from take a look at "[A Brief History of Web Font Sizes][Appendix 11]" in the appendices.
 
 ### Base Font Size
 
