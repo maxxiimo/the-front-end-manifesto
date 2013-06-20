@@ -334,11 +334,11 @@ There are 116 characters in that sample, so what I need to do is find its 45 to 
 
 ~45 characters:
 
-> Nothing beats the involvement of a well-seasoned,
+Nothing beats the involvement of a well-seasoned,
 
 ~75 characters:
 
-> Nothing beats the involvement of a well-seasoned, front-end developer that understands
+Nothing beats the involvement of a well-seasoned, front-end developer that understands
 
 **Step 3**: Translate the cutoff points to widths in em's.
 
