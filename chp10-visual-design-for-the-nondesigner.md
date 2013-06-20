@@ -202,6 +202,10 @@ A good source for font stacks can be found in the appendices:
 
 - [Font Stack Roundup][]
 
+For a list of preinstalled fonts checkkout:
+
+- [Complete Guide to Pre-Installed Fonts in Linux, Mac, and Windows][Complete Guide]
+
 Font Size
 ---------
 
@@ -641,6 +645,7 @@ We started this chapter by covering typography. We discussed the basic building 
 
 [generic font]:         http://www.w3.org/TR/CSS2/fonts.html#generic-font-families
 [Font Stack Roundup]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#font-stack-roundup
+[Complete Guide]:       http://www.apaddedcell.com/web-fonts
 
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
