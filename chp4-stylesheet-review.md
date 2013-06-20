@@ -53,11 +53,17 @@ Detailed Explanation
 
 What follows is a snippet of each section of *application.css.scss* followed by a description of what the section should be used for:
 
+#### Definitions
+
+Use the "Definitions" section to set global variables for the entire project such as $base-font or $base-font-size.
+
     /* DEFINITIONS
     ============================================================================ */
     @import "define";
 
-Use the "definitions" section to set global variables for the entire project such as $base-font or $base-font-size.
+#### Mixins
+
+Major mixins such as Compass and homebrewed mixins. Included in our starter CSS is a base set of media queries (to be discussed in [Chapter 5 - Media Queries][Media Queries]) and a blank file to place mixins into.
 
     /* MIXINS
     ============================================================================ */
@@ -65,16 +71,7 @@ Use the "definitions" section to set global variables for the entire project suc
     @import "media_queries";
     @import "mixins";
 
-Major mixins such as Compass and homebrewed mixins. Included in our starter CSS is a base set of media queries (to be discussed in [Chapter 5 - Media Queries][Media Queries]) and a blank file to place mixins into.
-
-    /* RESETS
-    ============================================================================ */
-    @import "boilerplate/h5bp_normalize_v112";
-
-    // To counter normalize indentation of lists.
-    ol, ul {
-      padding-left: 0;
-    }
+#### Resets
 
 The granddaddy of all resets is Eric Meyer's "[Reset CSS][]".
 
@@ -92,64 +89,90 @@ The following article briefly outlines the changes in resets moving into HTML 5:
 
 NOTE: Notice the ad hoc code following the import above? Feel free to add code anywhere throughout *application.css.scss*. Rules of CSS precedence apply here.
 
+    /* RESETS
+    ============================================================================ */
+    @import "boilerplate/h5bp_normalize_v112";
+
+    // To counter normalize indentation of lists.
+    ol, ul {
+      padding-left: 0;
+    }
+
+#### Basic Structure
+
+Use the "Basic Structure" section to style major elements and component areas such as html and body tags, or header and footer areas. The compass plug-in Susy is included by default and will be discussed in[Chapter 5 - Susy][Susy].
 
     /* BASIC STRUCTURE
     ============================================================================ */
     // @import "susy";
     @import "desktop/layout";
 
-Use "basic structure" section to style major elements and component areas such as html and body tags, or header and footer areas. The compass plug-in Susy is included by default and will be discussed in[Chapter 5 - Susy][Susy].
+#### Typography
+
+Use the "Typography" section to style major typographical elements such as paragraphs, fonts, links, etc. These typographical styles are standard across all pages unless redefined in subsequent partials.
 
     /* TYPOGRAPHY
     ============================================================================ */
     @import "desktop/typography";
 
-Use the "typography" section to style major typographical elements such as paragraphs, fonts, links, etc. These typographical styles are standard across all pages unless redefined in subsequent partials.
+#### Miscellaneous
+
+"Miscellaneous" is a catchall for miscellaneous partials and styles that should appear earlier on in the stylesheet. "misc" has an assortment of general helper styles; "sprites" obviously is for sprites, whether using Compass' built in sprite engine, or building them on my own.
 
     /* MISCELLANEOUS
     ============================================================================ */
     @import "misc";
     @import "sprites";
 
-"Miscellaneous" is a catchall for miscellaneous partials and styles that should appear earlier on in the stylesheet. "misc" has an assortment of general helper styles; "sprites" obviously is for sprites, whether using Compass' built in sprite engine, or building them on my own.
+#### Navigation
+
+"Navigation" could be part of another section, or even contained within another partial, however, experiences has proven that a lot of things can happen in navigation. Styles can become quite large, and there can be more than one navigation design or user driven type.
 
     /* NAVIGATION
     ============================================================================ */
     @import "desktop/navigation";
 
-"Navigation" could be part of another section, or even contained within another partial, however, experiences has proven that a lot of things can happen in navigation. Styles can become quite large, and there can be more than one navigation design or user driven type.
+#### Forms
+
+"Forms" is self-evident.
+
+TIP: I dislike any form generator that do not easily allow you to change its underlying HTML, or not that obvious where the underlying HTML lives. I have consulted for numerous companies who started with these kinds of plug-ins only to realize how boxed in they were later on. Just a word of caution.
 
     /* FORMS
     ============================================================================ */
     @import "desktop/forms";
 
-"Forms" is self-evident. One comment about forms.
+#### Pages
 
-TIP: I dislike any form generator that do not easily allow you to change its underlying HTML, or not that obvious where the underlying HTML lives. I have consulted for numerous companies who started with these kinds of plug-ins only to realize how boxed in they were later on. Just a word of caution.
+"Pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, separate them into their own partials, or a combination of this, depending on your needs.
 
     /* PAGES
     ============================================================================ */
     @import "desktop/pages";
 
-"Pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, separate them into their own partials, or a combination of this, depending on your needs.
+#### Staging
+
+The "staging" section is a staging area for code and allows an individual or team to be the gatekeeper to code entering stylesheets. This ensures that stylesheets remain organized, DRY, follow the stylesheet standards, and at a bare minimum provide a form of quality control.
 
     /* STAGING - new styles belong here !!!DO NOT INTEGRATE!!!
     ============================================================================ */
     @import "staging";
 
-The "staging" section is a staging area for code and allows an individual or team to be the gatekeeper to code entering stylesheets. This ensures that stylesheets remain organized, DRY, follow the stylesheet standards, and at a bare minimum provide a form of quality control.
+#### Application
+
+"Application" could be a place for anything that did not fit in anywhere else and doesn't need to take precedence.
 
     /* APPLICATION - ad hoc code under this line
     ============================================================================ */
 
-"Application" could be a place for anything that did not fit in anywhere else and doesn't need to take precedence.
+#### Last
+
+"Last" is a reminder that those styles need to appear last.
 
     /* LAST
     ============================================================================ */
     @import "boilerplate/h5bp_helpers";
     @import "boilerplate/h5bp_print";
-
-"Last" is a reminder that those styles need to appear last.
 
 Moving Forward
 --------------
