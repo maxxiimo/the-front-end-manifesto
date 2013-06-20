@@ -344,7 +344,7 @@ There are 116 characters in that sample, so what I need to do is find its 45 to 
 
 With the fonts and font size I have chosen and implemented, for this particular piece of text my measure should not cause the text to span shorter than the "," after seasoned or longer than "understands":
 
-Nothing beats the involvement of a well-seasoned, **-->** front-end developer that understands **<--** the semantics of what you're trying to pull off.
+Nothing beats the involvement of a well-seasoned, **&#124;** front-end developer that understands **&#124;** the semantics of what you're trying to pull off.
 
 **Step 4**: Find the new widths in your scale.
 
