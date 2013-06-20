@@ -468,19 +468,25 @@ Here you will find recommendations for:
 
     > The font stacks listed here are grouped together by the universal font that forms the base of that stack. A designer can therefore decide on a typographical look for their site, grab the appropriate font stack, and tweak it to suit their needs.
 
-4.  *06/18/12* - [The 10 Best Script and Handwritten Google Web Fonts][Google Scripts]
+4.  *09/22/09* - [Guide to CSS Font Stacks: Techniques and Resources][Techniques]
 
-    > A good script is hard to find. I’m extremely picky when it comes to this particular area of typefaces and tend to hate most of what I see. With this post, you can skip the work of sorting through the crap and cut straight to the awesome scripts that are readable, attractive and perfect for your site.
+    > CSS Font stacks are one of those things that elude a lot of designers. Many stick to the basic stacks Dreamweaver auto-recommends or go even more basic by just specifying a single web-safe font.
 
 5.  *03/19/12* - [Complete Guide to Pre-Installed Fonts in Linux, Mac, and Windows][Complete Guide]
 
     > Web fonts are gaining in popularity now, but they can still be a bit of a challenge to use. Copyright issues often require the use of a third-party font service, which can be risky and expensive.The good news is that all major operating systems come with a variety of fonts that you can use to create your font stacks.
 
-6.  [TYPECHART][]
+6.  *04/21/12* - [Font Stacks][]
+
+7.  *06/18/12* - [The 10 Best Script and Handwritten Google Web Fonts][Google Scripts]
+
+    > A good script is hard to find. I’m extremely picky when it comes to this particular area of typefaces and tend to hate most of what I see. With this post, you can skip the work of sorting through the crap and cut straight to the awesome scripts that are readable, attractive and perfect for your site.
+
+8.  [TYPECHART][]
 
     > Browse web type, grab CSS. TYPECHART lets you flip through, preview and compare web typography while retrieving the CSS.
 
-7.  [Revised Font Stack][]
+9.  [Revised Font Stack][]
 
     > Serious efforts are being made to get more typeface choices on the web to enhance web typography. Still, most of us prefer web-safe fonts like: Verdana, Georgia, Times New Roman and Arial. Though choices are limited, yet the number can be increased by exploring other pre-installed fonts.
 
@@ -982,8 +988,10 @@ Color palette creation and sharing tools.
 [Better Stacks]:        http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
 [Honest]:               http://aversionfour.petercolesdc.com/web-fonts-nice-honest/
 [Definitive]:           http://www.sitepoint.com/eight-definitive-font-stacks/
-[Google Scripts]:       http://designshack.net/articles/css/the-10-best-script-and-handwritten-google-web-fonts/
+[Techniques]:           http://coding.smashingmagazine.com/2009/09/22/complete-guide-to-css-font-stacks/
 [Complete Guide]:       http://www.apaddedcell.com/web-fonts
+[Font Stacks]:          http://css-tricks.com/snippets/css/font-stacks/
+[Google Scripts]:       http://designshack.net/articles/css/the-10-best-script-and-handwritten-google-web-fonts/
 [TYPECHART]:            http://www.typechart.com/
 [Revised Font Stack]:   http://www.awayback.com/revised-font-stack/
 

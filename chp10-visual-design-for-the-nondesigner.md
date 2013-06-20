@@ -196,7 +196,7 @@ Finally, once you choose your fonts it's good practice to also define fallback f
 
     "rooney-web", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif
 
-The desired font is rooney-web, but if it is not available on the system the website is served to, the browser will try to use the next font in the stack, and so forth until the very last font: which is a generic font and the most broadly available across different operating systems. All the fonts in the stack are similar enough that they can be interchanged with minimal differences between fonts used (at least that is the goal).
+The desired font is rooney-web, but if it is not available on the system the website is served to, the browser will try to use the next font in the stack, and so forth until the very last font: which is a [generic font][] and the most broadly available across different operating systems. All the fonts in the stack are similar enough that they can be interchanged with minimal differences between fonts used (at least that is the goal).
 
 A good source for font stacks can be found in the appendices:
 
@@ -639,6 +639,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Rooney Web]:           http://www.janfromm.de/typefaces/rooney/overview/
 [CamingoDos Web]:       http://www.janfromm.de/typefaces/camingodos/overview/
 
+[generic font]:         http://www.w3.org/TR/CSS2/fonts.html#generic-font-families
 [Font Stack Roundup]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#font-stack-roundup
 
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md#resets
