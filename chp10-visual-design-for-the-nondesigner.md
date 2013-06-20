@@ -211,7 +211,7 @@ Font Size
 
 Now that we have selected a font family, we need to set a base font size. Choosing font size is actually an important decision. At the very basic level you will choose between a unit of measurement such as `px` vs. `em` vs. `%` vs. `pt` vs `rem`, and from a more complex perspective you need to consider that your choice might also be the measurement from which your entire site is responsive to.
 
-NOTE: The research sources for my opinionated basis to start from can be found in "[A Brief History of Web Font Sizes][Appendix 11]" in the appendices.
+NOTE: The research for my opinionated basis to start from can be found in "[A Brief History of Web Font Sizes][Appendix 11]" in the appendices.
 
 In Chapter 3 we [implemented Normalize.css][Resets]. If you look at the [Normalize][implementation] file you will notice that the base font size is set to 100%:
 
@@ -247,9 +247,13 @@ Again, we're going to use Normalize and the browser's default setting. I include
 
 ### Using Em's
 
-Throughout our application moving forward if we would like to affect font size for let's say headers or a specific element, we will use em's. We use em's because there are a scalable unit relative to the parent font size. In our case, 1em = default browser font size = typically 16px. If we would like to double in size we use 2em = 32px.
+Throughout our application moving forward if we would like to affect font size we will use em's. We use em's because they are a scalable unit relative to the parent font size. In our case:
 
-NOTE: It's important to keep in mind that em's are relative to the parent, and not the browser or \<body> font size.
+1em = default browser font size = typically 16px
+
+So for a given element, if we would like to double it's size we would set its `font-size` property to 2em (or 32px).
+
+NOTE: It's important to keep in mind that em's are relative to the parent, and not the browser or `<body>` font size.
 
 In Chapter 3 we learned about the benefits of [using em's][] in our media querries, and that using em's goes hand-in-hand with our Susy grid system.
 
