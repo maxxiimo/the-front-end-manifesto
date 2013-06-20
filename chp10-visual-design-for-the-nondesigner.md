@@ -305,7 +305,7 @@ Now that we have a scale, let's apply it.
 Readability
 -----------
 
-Readability is the perfect place to begin applying our brand-new Modular Scale. Font choice, size, line length (measure), line height (leading), and font color and contrast are the main components of [readability][]. We've covered font choice and size, now let's look at the rest.
+Readability is the perfect place to begin applying our brand-new Modular Scale. Font family and size, line length and height (measure and leading), and font color and contrast are the main components of [readability][]. We've covered font family and size, now let's look at the rest.
 
 ### Line Length (Measure)
 
@@ -323,7 +323,7 @@ For View Thought I'll take a sample of text directly off of our wireframe:
 
 > Nothing beats the involvement of a well-seasoned, front-end developer that understands the semantics of what you're trying to pull off.
 
-There are 116 characters in that sample, so what I need to do is find the 45 to 75 character cutoff points (without spaces) in it. To do so I'll use a word processors word count capabilities.
+There are 116 characters in that sample, so what I need to do is find the 45 to 75 character cutoff points (without spaces) in it. To do so I'll use a word processor to count characters.
 
 ~45 characters:
 
