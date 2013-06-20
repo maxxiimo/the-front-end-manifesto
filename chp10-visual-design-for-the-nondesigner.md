@@ -435,7 +435,7 @@ The basic steps and components include:
 
 \- [Basic color schemes - Introduction to Color Theory][Color Theory]
 
-Wow, that quote certainly says something. Obviously a color scheme is powerful so to start let's choose a base color, and to do so I'm going to borrow from the techniques we used in the "[Choosing Typefaces][]" section of this chapter. Here is the list of adjectives I came up with:
+Wow, that quote certainly says something. Obviously a color scheme is powerful so to start let's choose a base color, and to do so I'm going to borrow from a [technique][Adjectives] we used in the Font Family section of this chapter. Here is the list of adjectives used to choose a typeface:
 
 1.  Clean
 2.  Reliable
@@ -460,7 +460,7 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 
 ...I do come up with a few:
 
-- **White** - This makes a lot of sense to me since we start our adjectives list with the word "Clean"
+- **White** - This makes a lot of sense to me since we start our adjectives list with the word "Clean".
 
   > A white color scheme can represent cleanliness, purity, perfection and space...If you are looking for a clean design with plenty of negative space, play around with white more. - BaCS
 
@@ -470,7 +470,7 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 
   > Red is the color of extremes. It’s the color of passionate love, seduction, violence, danger, anger, and adventure...Red captures attention. It is one of the most visible colors, second only to yellow... - MoC
 
-- **Orange** - This might be the one. Aside from the fact that the parent company of View Thought uses it, it's feeling seems to touch on a lot of adjectives I have listed, plus it could be an alternative to read for our callouts.
+- **Orange** - This might be the one. Aside from the fact that the parent company of View Thought uses it, it's feel seems to touch on a lot of the adjectives I have listed, plus it could be an alternative to red for callouts.
 
   > An orange color scheme speaks happiness...Orange is a very friendly color, a warm color that is inviting and can be another very effective color for call-to-actions. - BaCS
 
@@ -487,6 +487,8 @@ Are there any colors that may help convey this? Reviewing the color descriptions
   > Blue means stability and depth and is a great color for creating a calm clean environment. Blue symbolizes confidence, faith, hope, wisdom, knowledge and trust. - BaCS
 
   > Blue is the favorite color of all people...Most blues convey a sense of trust, loyalty, cleanliness, and understanding. On the other hand, blue evolved as symbol of depression in American culture...Blue is the most commonly used color in corporate identity. - MoC
+
+So based on this preliminary research, white, orange and blue are looking like very strong contenders for View Thought. Let's bring these colors over to the color wheel.
 
 ### Step 2: Color Wheel Experimentation
 
@@ -713,7 +715,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Color Matters]:        http://colormatters.com/color-and-design/basic-color-theory
 
 [The Meanings of Colors]: http://colormatters.com/color-symbolism/the-meanings-of-colors
-[Choosing Typefaces]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-visual-design-for-the-nondesigner.md#choosing-typefaces
+[Adjectives]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#step-1-define-adjectives
 [Color Meaning]:        http://lmgtfy.com/?q=What+do+colors+mean%3F
 [Color in Motion]:      http://www.mariaclaudiacortes.com/colors/Colors.html
 
