@@ -192,11 +192,15 @@ For View Thought I chose three fonts from Typekit:
 
 ### Step 5: Define Fallbacks (Font Stacks)
 
-Finally, once you choose your fonts it's good practice to also define fallback fonts. Together your chosen font and its fallbacks are a "font stack"; a listing of several different fonts. Font stacks  provide substitute fonts for devices that do not carry the font family you wish to use. For example:
+Finally, once you choose your fonts it's good practice to also define fallback fonts. Together your chosen font and its fallbacks are a "font stack". For example:
 
-    Arial, "Helvetica Neue", Helvetica, sans-serif
+    "rooney-web", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif
 
-If your device does not have the first font in the stack, Arial, your browser will look for the second one and so forth until the very last one: which is a generic font and the most broadly available across different operating systems. All the fonts in the stack are similar enough that they can be interchanged with minimal differences between fonts used (at least that is the goal).
+The desired font is rooney-web, but if this is not available on the system the website is serve to, the next font in the stack becomes the fallback, and so on until the very last font: which is a generic font and the most broadly available across different operating systems. All the fonts in the stack are similar enough that they can be interchanged with minimal differences between fonts used (at least that is the goal).
+
+A good source for font stacks can be found in the appendices:
+
+- [Font Stack Roundup][]
 
 Font Size
 ---------
@@ -634,6 +638,8 @@ We started this chapter by covering typography. We discussed the basic building 
 [Quatro Sans]:          http://cargocollective.com/pstype/Quatro-Sans
 [Rooney Web]:           http://www.janfromm.de/typefaces/rooney/overview/
 [CamingoDos Web]:       http://www.janfromm.de/typefaces/camingodos/overview/
+
+[Font Stack Roundup]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#font-stack-roundup
 
 [Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
