@@ -251,13 +251,13 @@ app\assets\stylesheets\_define.sass
 
 ### Using Em's
 
-To affect font size for individual elements use em's. Em's are a scalable unit relative to the parent font size: if the parent font size changes all child element font sizes will change proportionally.
+To affect font size for individual elements use em's. Em's are a scalable unit relative to the parent font size. In other words, if the parents font size changes, the children's font sizes will also change, proportionally.
 
 With our settings:
 
 1em = default browser font size = typically 16px
 
-Here's a practical example. If you would like to double an elements size compared to the base font, let's say for a header, set its `font-size` property to 2em (2 x 16px = 32px).
+Here's a practical example. If you would like to double an elements size compared to the base font, let's say for a header, set its `font-size` property to `2em` (2 x 16px = 32px).
 
 NOTE: It's important to keep in mind that em's are relative to the parent, and not the browser or `<body>` font size.
 
