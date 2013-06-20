@@ -270,19 +270,26 @@ For more details on using em's take a look at:
 Modular Scales
 --------------
 
-A modular scale is a scale based on ratios derived from harmonic intervals or the golden ratio and key measure/s in your application (such as the base font size). Yowza! What? Well in layman's terms it's a bunch of measurements used for key measurements in your application, a scale, that are related to one another in some artistic/design awesome way; versus randomly picking numbers. You use numbers from the scale throughout your application for things like line length, column widths, line heights, etc., and by doing so your design will be better, or in the very least you are making a design informed decision!
+A modular scale is a scale based on ratios derived from harmonic intervals or the [golden ratio][]. In layman's terms it's a scale used for key measurements in your application, but the important characteristic of the scale is that the measurements in it are related to one another in an artistic/design awesome way.
 
-So how is this modular scale created? Fortunately there are some great references out there that will do a much better job of explaining the what's and how's of modular scales:
+The scale in turn is used to define line length, column widths, line heights, and pretty much anything in your application that requires a measurement; versus picking random unrelated numbers.
+
+The argument for using a modular scale is that in doing so your design will be better, or in the very least you are making a design informed decision!
+
+So how is a modular scale created? There are some great references out there that will do a much better job of explaining the what's and how's of modular scales than I will:
 
 - [Tim Brown - More Perfect Typography][Perfect Typography] (Go to minute 15:00, great talk.)
 - Articles 10, 11, and 12 in Appendix 11, [A Brief History of Web Font Sizes][Appendix 11]
-- The [Modular Scale][] tool
 
- Using the Modular Scale tool here is the scale we will use for View Thought:
+For View Thought I use a [Modular Scale][] tool and input the variables it asks for:
 
-- http://modularscale.com/scale/?px1=16&px2=30&ra1=1.618&ra2=0
+- Our base font size of 16 pixels
+- Our logo font size of 30 pixels
+- The Golden ratio
 
-Our scale is based on the golden ratio and two important numbers, our base font size of 16px and our logo font size of 30px. In our [_define.sass][] partial we take note of this as follows:
+...and [here is the scale][scale] the tool calculates for us based on these inputs.
+
+In [_define.sass][] partial we take note of this as follows:
 
     /*  Modular Scale
       -----------------------
@@ -292,7 +299,9 @@ Our scale is based on the golden ratio and two important numbers, our base font 
     // 16px  @ 1:1.618 - base font size
     // 30px  @ 1:1.618 - logo font size
 
-Now that we have a scale, let's apply it. For the more adventurous take a look at:
+Now that we have a scale, let's apply it.
+
+NOTE: For the more adventurous take a look at:
 
 [Sassy Modular Scale][]
 
@@ -664,8 +673,10 @@ We started this chapter by covering typography. We discussed the basic building 
 [CSS Font-Size]:        http://kyleschaeffer.com/user-experience/css-font-size-em-vs-px-vs-pt-vs/
 [Embracing em's]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
 
+[golden ratio]:         http://en.wikipedia.org/wiki/Golden_ratio
 [Modular Scale]:        http://modularscale.com/
-[Sassy Modular Scale]:  https://github.com/scottkellum/modular-scale
+[scale]:                http://modularscale.com/scale/?px1=16&px2=30&ra1=1.618&ra2=0
+[Sassy Modular Scale]:  https://github.com/Team-Sass/modular-scale
 
 [readability]:          http://blog.8thlight.com/billy-whited/2011/08/23/readability.html
 [Better Typography]:    http://www.markboulton.co.uk/journal/five-simple-steps-to-better-typography
