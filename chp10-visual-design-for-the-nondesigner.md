@@ -209,11 +209,11 @@ For a list of preinstalled fonts checkkout:
 Font Size
 ---------
 
-Now that we have selected a font family, we need to set a base font size. Choosing font size is actually an important decision. At the very basic level you will choose between a measurement types such as px's vs. em's vs. % vs. pt's vs rem's, and from a more complex perspective you need to consider that your choice might also be the measurement from which your entire site is responsive to, and in our case it is.
+Now that we have selected a font family, we need to set a base font size. Choosing font size is actually an important decision. At the very basic level you will choose between a unit of measurement such as `px` vs. `em` vs. `%` vs. `pt` vs `rem`, and from a more complex perspective you need to consider that your choice might also be the measurement from which your entire site is responsive to.
 
-Quite frankly to me it seemed like a whole heck of a lot of thinking and research that I would love to spare you from, so I'm just going to give you a very opinionated basis to start from. At the same time I will also provide you with the source of my thinking in "[A Brief History of Web Font Sizes][Appendix 11]" found in the appendices.
+To me this seems like a lot of thinking and research, so I'm just going to give you a very opinionated basis to start from. The sources for my research can be found in "[A Brief History of Web Font Sizes][Appendix 11]" found in the appendices.
 
-In [Chapter 3][] we implemented [Normalize.css][]. If you look at our [implementation][] you will notice that we reset our base font size to 100%:
+In Chapter 3 we implemented [Normalize.css][]. If you look at our [implementation][] you will notice that we reset our base font size to 100%:
 
     /*
     * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using `em` units.
@@ -647,7 +647,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Font Stack Roundup]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#font-stack-roundup
 [Complete Guide]:       http://www.apaddedcell.com/web-fonts
 
-[Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-foundation-styles.md#resets
+[Normalize.css]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
 
 [using em's]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#ems-and-media-queries
