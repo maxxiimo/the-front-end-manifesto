@@ -234,13 +234,7 @@ In Chapter 3 we [implemented Normalize.css][Resets]. In [Normalize][implementati
         -ms-text-size-adjust: 100%; /* 2 */
     }
 
-As a rule of thumb, browsers typically default to a font size of 16 pixels. We're going to accept this default font size and will not override normalize, however, through the `<body>` tag we also provide a way in which we may override Normalize and affect font sizes globally:
-
-app\assets\stylesheets\_define.sass
-
-    $base-font-size:    100%         !default
-
-NOTE: I include 100% here, but could also omit the reference completely.
+As a rule of thumb, browsers typically default to a font size of 16 pixels. We're going to accept this default font size, and will not override Normalize, however, through the `<body>` tag we can:
 
 app\assets\stylesheets\desktop\_layout.sass
 
@@ -250,6 +244,10 @@ app\assets\stylesheets\desktop\_layout.sass
       font-size: $base-font-size
       line-height: $base-line-height
       background-color: $bg-body
+
+app\assets\stylesheets\_define.sass
+
+    $base-font-size:    100%         !default
 
 ### Using Em's
 
