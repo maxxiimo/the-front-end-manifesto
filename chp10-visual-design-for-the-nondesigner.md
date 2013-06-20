@@ -362,24 +362,36 @@ Need them to be even closer? You can add and subtract up to two numbers from the
     // 46.971 - 4.909
     42.062em
 
-
 > Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
 
 \- [More Meaningful Typography][Meaningful Typography] by Tim Brown
 
 **Step 5**: Apply to your design.
 
-Moving forward in my design I now have constraints I can keep an eye on when sizing columns in my layout.
+Moving forward in my design I now have constraints I can keep an eye on when sizing columns in my layout. To ensure that I don't forget these constraint I had the following to my [_define.sass][] file:
+
+    // line widths...
+
+    // Minimum
+    // 28em
+    // 29.03-1 = 28.03em
+
+    // Maximum
+    // 42em
+    // 46.971 - 4.909 = 42.062em
 
 ### Line Heigt (Leading)
 
-For line height there are a couple key things to keep in mind: You will need more line height when your lines are longer – otherwise your readers might get lost, and/or when you use a darker font color – so that you do not to overwhelm the rest of the site.
+For line height there are a couple key things to keep in mind. You will need more line height when:
+
+1. Your lines are longer – otherwise your readers might get lost
+2. When you use a darker font color – so that you do not to overwhelm the rest of the site
 
 For our site we're going to pick a number from our scale. After some trial and error, 1.618 seems to be the best line height:
 
     $base-line-height:  1.618         !default
 
-The next natural step down in our scale is 1.159, which seems to be too much of a step down, so using another figure in our scale I calculate an alternative in case I need it:
+The next natural step down in our scale is 1.159, which seems to be too much of a step down, so using another figure in our scale I calculate alternatives in case I need one:
 
     // 1.618 - 0.105 = 1.513
     // 1.618 - 0.236 = 1.382
@@ -387,12 +399,12 @@ The next natural step down in our scale is 1.159, which seems to be too much of 
 
 ### Color
 
-I read [somewhere][] that to make your text appear softer and still maintain a good contrast you shouldn't use pure black for your font color but something slightly lighter. The idea made a lot of sense to me so we use the following defaults in our starter styles:
+I read [somewhere][] that to make your text appear softer and still maintain a good contrast you shouldn't use pure black for your font color. Use something slightly lighter. The idea makes a lot of sense to me so we use the following defaults in our starter styles:
 
     $base-font-color:   #444         !default
     $base-header-color: #222         !default
 
-Of course, black on white does not have to be the default color and contrast.
+Obviously, color is a significant factor in your design and not just in readability. Let's move on to the color palette.
 
 The Color Palette
 -----------------
