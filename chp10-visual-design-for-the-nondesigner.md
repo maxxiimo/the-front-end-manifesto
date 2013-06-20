@@ -247,15 +247,13 @@ Again, we're going to use Normalize and the browser's default setting. I include
 
 ### Using Em's
 
-Throughout our application moving forward if we would like to affect font size we will use em's. We use em's because they are a scalable unit relative to the parent font size. In our case:
+Throughout our application moving forward, if we would like to affect font size we will use em's. Em's are a scalable unit relative to the parent font size, so with our settings:
 
 1em = default browser font size = typically 16px
 
-So for a given element, if we would like to double it's size we would set its `font-size` property to 2em (or 32px).
+For a given element, if we would like to double it's size we would set its `font-size` property to 2em (2 x 16px = 32px).
 
 NOTE: It's important to keep in mind that em's are relative to the parent, and not the browser or `<body>` font size.
-
-In Chapter 3 we learned about the benefits of [using em's][] in our media querries, and that using em's goes hand-in-hand with our Susy grid system.
 
 For more details on using em's take a look at:
 
@@ -656,7 +654,6 @@ We started this chapter by covering typography. We discussed the basic building 
 [Resets]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
 
-[using em's]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#ems-and-media-queries
 [Ideal Line Length]:    http://www.maxdesign.com.au/articles/em/
 [CSS Font-Size]:        http://kyleschaeffer.com/user-experience/css-font-size-em-vs-px-vs-pt-vs/
 [Embracing em's]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
