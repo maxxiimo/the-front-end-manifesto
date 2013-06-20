@@ -464,25 +464,25 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 
   > A white color scheme can represent cleanliness, purity, perfection and space...If you are looking for a clean design with plenty of negative space, play around with white more. - BaCS
 
-- **<span style="color:red;">Red</span>** - As an overall base color I'm not sold on it for my purposes, but I do have some callout buttons so will keep this color in mind if it fits in my color wheel choice.
+- **Red** - As an overall base color I'm not sold on it for my purposes, but I do have some callout buttons so will keep this color in mind if it fits in my color wheel choice.
 
   > A red color scheme is bold, fiery, aggressive and screams for your attention...Red is a really powerful marketing color that can be used to grab the user’s attention and get them to click on an ad or register for a product. - BaCS
 
   > Red is the color of extremes. It’s the color of passionate love, seduction, violence, danger, anger, and adventure...Red captures attention. It is one of the most visible colors, second only to yellow... - MoC
 
-- **<span>Orange</span>** - This might be the one. Aside from the fact that the parent company of View Thought uses it, it's feel seems to touch on a lot of the adjectives I have listed, plus it could be an alternative to red for callouts.
+- **Orange** - This might be the one. Aside from the fact that the parent company of View Thought uses it, it's feel seems to touch on a lot of the adjectives I have listed, plus it could be an alternative to red for callouts.
 
   > An orange color scheme speaks happiness...Orange is a very friendly color, a warm color that is inviting and can be another very effective color for call-to-actions. - BaCS
 
   > Orange is vibrant. It’s hot, healthy, fruity and engaging – but it can be abrasive and crass. It’s a polarizing color. People either love it or detest it. - MoC
 
-- **<span style="color:green;">Green</span>** - I'm liking this one insofar as it touches on trust and stability.
+- **Green** - I'm liking this one insofar as it touches on trust and stability.
 
   > A green color scheme is peaceful and natural and is usually associated with growth, harmony, peace, strength and stability....it portrays a feeling of safety and trust... - BaCS
 
   > Green is no longer just a color. It's now the symbol of ecology and a verb. - MoC
 
-- **<span style="color:blue;">Blue</span>** - Well if this isn't the cats meow.
+- **Blue** - Well if this isn't the cats meow.
 
   > Blue means stability and depth and is a great color for creating a calm clean environment. Blue symbolizes confidence, faith, hope, wisdom, knowledge and trust. - BaCS
 
