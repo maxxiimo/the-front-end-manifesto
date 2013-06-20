@@ -196,7 +196,7 @@ Finally, once you choose your fonts it's good practice to also define fallback f
 
     "rooney-web", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif
 
-The desired font is rooney-web, but if this is not available on the system the website is serve to, the next font in the stack becomes the fallback, and so on until the very last font: which is a generic font and the most broadly available across different operating systems. All the fonts in the stack are similar enough that they can be interchanged with minimal differences between fonts used (at least that is the goal).
+The desired font is rooney-web, but if it is not available on the system the website is served to, the browser will try to use the next font in the stack, and so forth until the very last font: which is a generic font and the most broadly available across different operating systems. All the fonts in the stack are similar enough that they can be interchanged with minimal differences between fonts used (at least that is the goal).
 
 A good source for font stacks can be found in the appendices:
 
