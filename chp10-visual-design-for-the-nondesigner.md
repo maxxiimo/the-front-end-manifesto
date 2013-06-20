@@ -488,7 +488,7 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 
   > Blue is the favorite color of all people...Most blues convey a sense of trust, loyalty, cleanliness, and understanding. On the other hand, blue evolved as symbol of depression in American culture...Blue is the most commonly used color in corporate identity. - MoC
 
-So based on this preliminary research, white, orange and blue are looking like very strong contenders for View Thought. Let's bring these colors over to the color wheel.
+So based on this preliminary research, white, orange and blue are looking like very strong candidates for View Thought's color palette. Let's bring these colors over to the color wheel.
 
 ### Step 2: Color Wheel Experimentation
 
