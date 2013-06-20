@@ -211,7 +211,11 @@ Font Size
 
 Now that we have selected a font family, we need to set a base font size. Choosing font size is actually an important decision. At the very basic level you will choose between a unit of measurement such as `px` vs. `em` vs. `%` vs. `pt` vs `rem`, and from a more complex perspective you need to consider that your choice might also be the measurement from which your entire site is responsive to.
 
+We will use `%` to establish a baseline, and `em`'s' to set font sizes for elements throughout the project.
+
 NOTE: The research for my opinionated basis to start from can be found in "[A Brief History of Web Font Sizes][Appendix 11]" in the appendices.
+
+### Base Font Size
 
 In Chapter 3 we [implemented Normalize.css][Resets]. If you look at the [Normalize][implementation] file you will notice that the base font size is set to 100%:
 
@@ -228,11 +232,13 @@ In Chapter 3 we [implemented Normalize.css][Resets]. If you look at the [Normali
         -ms-text-size-adjust: 100%; /* 2 */
     }
 
-As a rule of thumb, browsers typically default to a font size of 16 pixels. We're going to accept this default font size and will not override normalize, however, through the `<body>` tag we also provide a way in which we may override the setting and affect font sizes globally:
+As a rule of thumb, browsers typically default to a font size of 16 pixels. We're going to accept this default font size and will not override normalize, however, through the `<body>` tag we also provide a way in which we may override Normalize and affect font sizes globally:
 
 app\assets\stylesheets\_define.sass
 
     $base-font-size:    100%         !default
+
+NOTE: I include 100% here, but could also omit the reference completely.
 
 app\assets\stylesheets\desktop\_layout.sass
 
@@ -243,15 +249,15 @@ app\assets\stylesheets\desktop\_layout.sass
       line-height: $base-line-height
       background-color: $bg-body
 
-Again, we're going to use Normalize and the browser's default setting. I include 100% here, but could also omit the reference completely.
-
 ### Using Em's
 
-Throughout our application moving forward, if we would like to affect font size we will use em's. Em's are a scalable unit relative to the parent font size, so with our settings:
+To affect font size for individual elements use em's. Em's are a scalable unit relative to the parent font size: if the parent font size changes all child element font sizes will also change proportionally. This is a good thing.
+
+With our settings:
 
 1em = default browser font size = typically 16px
 
-For a given element, if we would like to double it's size we would set its `font-size` property to 2em (2 x 16px = 32px).
+Here's a practical example. If you would like to double an elements size compared to the base font, let's say for a header, set its `font-size` property to 2em (2 x 16px = 32px).
 
 NOTE: It's important to keep in mind that em's are relative to the parent, and not the browser or `<body>` font size.
 

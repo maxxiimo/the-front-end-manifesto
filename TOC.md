@@ -111,6 +111,7 @@ Table of Contents
       - Step 4: Choose a Typeface
       - Step 5: Define Fallbacks (Font Stacks)
   - Font Size
+      - Base Font Size
       - Using Em's
   - Modular Scales
   - Readability
