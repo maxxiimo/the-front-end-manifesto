@@ -470,7 +470,7 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 
   > Red is the color of extremes. It’s the color of passionate love, seduction, violence, danger, anger, and adventure...Red captures attention. It is one of the most visible colors, second only to yellow... - MoC
 
-- **<span style="color:orange;">Orange</span>** - This might be the one. Aside from the fact that the parent company of View Thought uses it, it's feel seems to touch on a lot of the adjectives I have listed, plus it could be an alternative to red for callouts.
+- <span style="color:orange;">Orange</span> - This might be the one. Aside from the fact that the parent company of View Thought uses it, it's feel seems to touch on a lot of the adjectives I have listed, plus it could be an alternative to red for callouts.
 
   > An orange color scheme speaks happiness...Orange is a very friendly color, a warm color that is inviting and can be another very effective color for call-to-actions. - BaCS
 
