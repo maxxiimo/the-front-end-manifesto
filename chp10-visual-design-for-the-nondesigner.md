@@ -211,7 +211,9 @@ Font Size
 
 Now that we have selected a font family, we need to set a base font size. Choosing font size is actually an important decision. Your choice will become the measurement from which the entire site is responsive to.
 
-Of the first thing you'll need to do is choose a unit of measurement: `px` vs. `em` vs. `%` vs. `pt` vs `rem`. In our starter code we use `%` to establish a baseline, and `em`'s to set font sizes for elements throughout the project.
+First, choose a unit of measurement: `px` vs. `em` vs. `%` vs. `pt` vs `rem`.
+
+In our starter code we use `%` to establish a baseline, and `em`'s to set font sizes for elements throughout the project.
 
 NOTE: The research for my opinionated basis to start from can be found in "[A Brief History of Web Font Sizes][Appendix 11]" in the appendices.
 
