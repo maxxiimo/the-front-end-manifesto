@@ -270,26 +270,20 @@ For more details on using em's take a look at:
 Modular Scales
 --------------
 
-A modular scale is a scale based on ratios derived from harmonic intervals or the [golden ratio][]. In layman's terms it's a scale used for key measurements in your application, but the important characteristic of the scale is that the measurements in it are related to one another in an artistic/design awesome way.
+A modular scale is a scale based on ratios derived from harmonic intervals or the [golden ratio][]. In layman's terms this means that the measurements of the scale are related to one another in an artistic/design awesome way, and when you use numbers from the scale for line length, column widths, line heights, and pretty much anything in your website that requires a measurement, you pass on this design awesomeness (versus picking random unrelated numbers), or in the very least you are making a design informed decision!
 
-The scale in turn is used to define line length, column widths, line heights, and pretty much anything in your application that requires a measurement; versus picking random unrelated numbers.
+What does a modular skill look like? Here is an example:
 
-The argument for using a modular scale is that in doing so your design will be better, or in the very least you are making a design informed decision!
+- [View Thought's Modular Scale][scale]
 
-So how is a modular scale created? There are some great references out there that will do a much better job of explaining the what's and how's of modular scales than I will:
 
-- [Tim Brown - More Perfect Typography][Perfect Typography] (Go to minute 15:00, great talk.)
-- Articles 10, 11, and 12 in Appendix 11, [A Brief History of Web Font Sizes][Appendix 11]
-
-For View Thought I use a [Modular Scale][] tool and input the variables it asks for:
+For View Thought I used a [Modular Scale][] tool, and input the following:
 
 - Our base font size of 16 pixels
 - Our logo font size of 30 pixels
 - The Golden ratio
 
-...and [here is the scale][scale] the tool calculates for us based on these inputs.
-
-In [_define.sass][] partial we take note of this as follows:
+Once created, in the [_define.sass][] partial take note of the source of your scale as follows:
 
     /*  Modular Scale
       -----------------------
@@ -299,11 +293,14 @@ In [_define.sass][] partial we take note of this as follows:
     // 16px  @ 1:1.618 - base font size
     // 30px  @ 1:1.618 - logo font size
 
+There are some great references out there that will do a much better job of explaining the what's and how's of modular scales in case you're interested:
+
+- [Tim Brown - More Perfect Typography][Perfect Typography] (Go to minute 15:00, great talk.)
+- Articles 10, 11, and 12 in Appendix 11, [A Brief History of Web Font Sizes][Appendix 11]
+
+For the more adventurous take a look at [Sassy Modular Scale][].
+
 Now that we have a scale, let's apply it.
-
-NOTE: For the more adventurous take a look at:
-
-[Sassy Modular Scale][]
 
 Readability
 -----------
