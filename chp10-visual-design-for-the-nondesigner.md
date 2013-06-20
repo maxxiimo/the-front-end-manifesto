@@ -391,7 +391,9 @@ For our site we're going to pick a number from our scale. After some trial and e
 
     $base-line-height:  1.618         !default
 
-The next natural step down in our scale is 1.159, which seems to be too much of a step down, so using another figure in our scale I calculate alternatives in case I need one:
+The next natural step down in our scale is 1.159, which seems to be too much of a step down, so using another figure in our scale I calculate alternatives in case I need one, and include them in [_define.sass][]:
+
+    $base-line-height:  1.618         !default
 
     // 1.618 - 0.105 = 1.513
     // 1.618 - 0.236 = 1.382
