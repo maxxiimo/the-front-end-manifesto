@@ -116,8 +116,8 @@ Table of Contents
   - Modular Scales
   - Readability
       - Line Length (Measure)
-      - Line Heigt (Leading)
-      - Color
+      - Line Height (Leading)
+      - Color and Contrast
   - The Color Palette
       - Step 1: Base Color Selection
       - Step 2: Color Wheel Experimentation

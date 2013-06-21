@@ -276,7 +276,6 @@ What does a modular skill look like? Here is an example:
 
 - [View Thought's Modular Scale][scale]
 
-
 For View Thought I used a [Modular Scale][] tool, and input the following:
 
 - Our base font size of 16 pixels
@@ -300,37 +299,61 @@ There are some great references out there that will do a much better job of expl
 
 For the more adventurous take a look at [Sassy Modular Scale][].
 
-Now that we have a scale, let's apply it.
+Now that we have a scale we will use it throughout our design, but before applying it its important to keep this in mind:
+
+> Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
+
+\- [More Meaningful Typography][Meaningful Typography] by Tim Brown
 
 Readability
 -----------
 
-Readability is the perfect place to begin applying our brand-new Modular Scale. Font family and size, line length and height (measure and leading), and font color and contrast are the main components of [readability][]. We've covered font family and size, now let's look at the rest.
+Font family and size, line length and height (measure and leading), and font color and contrast are the main components of [readability][]. We've covered font family and size, now let's look at the rest.
 
 ### Line Length (Measure)
 
-**Step 1**: Decide on an optimal character range.
+> Having the right amount of characters on each line is key to the readability of your text. It shouldn’t merely be your design that dictates the width of your text, it should also be a matter of legibility.
 
-For line length the following character ranges seem to be the best ones to use:
+\- [Readability: the Optimal Line Length][Optimal] by Christian Holst
 
-1. 45 to 75 characters.
+Good point! So what is the optimal character range for legibility? Christian Holst suggests 50 to 75 characters per line. Others recommend:
 
-  > ...anywhere from 45–75 characters is considered acceptable.
+- > ...anywhere from 45–75 characters is considered acceptable.
 
   \- [Readability][readability] by Billy Whited
 
-2. 52 to 78 characters.
-  > A general good rule of thumb is 2-3 alphabets in length, or 52-78 characters (including spaces).
+- > A general good rule of thumb is 2-3 alphabets in length, or 52-78 characters (including spaces).
 
   \- [Five simple steps to better typography][Better Typography] by Mark Boulton
 
-**Step 2**: Take a sample and find the cutoff points.
+For View Thought we will use 45 to 75 characters per line, and now need to figure out the minimum and maximum number of columns that our text should flow on since we are using [Susy][Chapter 7]. There are two ways to do this, the easy way and the hard way.
+
+Which reminds me, before we move forward we should apply our new modular scale to our Susy columns:
+
+    $total-columns:     4;
+    $column-width:      4.236em;
+    $gutter-width:      1em;
+    $grid-padding:      $gutter-width;
+
+#### The Easy Way
+
+The easy way is basic trial and error: count the characters flowing across sections of your content. If the line length falls outside the characters per line range you have chosen, change the number of columns for that section until the line length falls within your range. Simple as that.
+
+Fortunately, there's a tool that will make counting characters super easy:
+
+- [Count - an improved WC bookmarklet][Count]
+
+#### The Hard Way
+
+And now for the hard way, figuring out exactly what 45 to 75 characters means in em's and susy columns. To do so follow these steps:
+
+**Step 1**: Take a sample and find the cutoff points.
 
 For View Thought I'll take a sample of text directly off of our wireframe:
 
 > Nothing beats the involvement of a well-seasoned, front-end developer that understands the semantics of what you're trying to pull off.
 
-There are 116 characters in that sample, so what I need to do is find its 45 to 75 character cutoff points (without spaces). To do so I'll use a word processor to count characters.
+There are 116 characters in that sample, so what I need to do is find its 45 to 75 character cutoff points (excluding spaces). You can count characters manually, with a word processor, or use the count bookmarklet.
 
 ~45 characters:
 
@@ -340,17 +363,15 @@ Nothing beats the involvement of a well-seasoned,
 
 Nothing beats the involvement of a well-seasoned, front-end developer that understands
 
-**Step 3**: Translate the cutoff points to widths in em's.
+**Step 2**: Translate the cutoff points to widths in em's.
 
-With the fonts and font size I have chosen and implemented, for this particular piece of text my measure should not cause the text to span shorter than the "," after seasoned or longer than "understands":
+With the fonts and font size I have chosen and implemented, for this particular piece of text my measure should not cause the text to wrap before the "," after seasoned, or span longer than "understands":
 
 Nothing beats the involvement of a well-seasoned, **&#124; 45 &#124;** front-end developer that understands **&#124; 75 &#124;** the semantics of what you're trying to pull off.
 
-**Step 4**: Find the new widths in your scale.
+Knowing this about our sample we can translate this information into measurable units by manually increasing and decreasing the sample texts containing elements width until we reach the cutoff points. I use Firebug to easily increase and decrease the width of my containing element and come up with the following two ranges: `28em` and `42em` – my minimum and maximum line lengths.
 
-Well great, how does that help me with the rest of my content?
-
-Knowing this about our sample we can translate this information into measurable units by marginally decreasing the texts containing elements width until we reach the cutoff points. I use Firebug to easily decrease the width of my containing element and come up with the following two ranges: `28em` and `42em`, my minimum and maximum line lengths.
+**Step 3**: Find the new widths in your scale.
 
 Since neither measure is in my scale, I find the closest numbers: `29.03em` and `46.971em`
 
@@ -362,23 +383,30 @@ Need them to be even closer? You can add and subtract up to two numbers from the
     // 46.971 - 4.909
     42.062em
 
-> Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
+Finally, translate these to the Minimum and maximum number of columns in our Susy grid. Keep in mind that a single column measures `4.236em` with a `1em` right margin on all columns except the last column. So in effect each call them you define is `5.236em` wide. Doing some simple math we figure out our column ranges:
 
-\- [More Meaningful Typography][Meaningful Typography] by Tim Brown
+28 / 5.236 = 5.348
+42 / 5.236 = 8.021
 
-**Step 5**: Apply to your design.
+Ther optimal number of columns for text in our design should never be less than 5 columns or more than 8 columns.
 
-Moving forward in my design I now have constraints I can keep an eye on when sizing columns in my layout. To ensure that I don't forget these constraint I had the following to my [_define.sass][] file:
+**Step 4**: Apply to your design.
+
+Moving forward in my design I now have constraints I can keep an eye on when sizing columns in my layout. To ensure that I don't forget these constraint I add the following commented out note to [_define.sass][]:
 
     // line widths...
 
     // Minimum
     // 28em
     // 29.03-1 = 28.03em
+    // 5 columns
+    // 28 / 5.236 = 5.348
 
     // Maximum
     // 42em
     // 46.971 - 4.909 = 42.062em
+    // 8 columns
+    // 42 / 5.236 = 8.021
 
 ### Line Heigt (Leading)
 
@@ -399,7 +427,7 @@ The next natural step down in our scale is 1.159, which seems to be too much of 
     // 1.618 - 0.236 = 1.382
     // 1.618 - 0.382 = 1.236
 
-### Color
+### Color and Contrast
 
 I read [somewhere][] that to make your text appear softer and still maintain a good contrast you shouldn't use pure black for your font color. Use something slightly lighter. The idea makes a lot of sense to me so we use the following defaults in our starter styles:
 
@@ -650,6 +678,7 @@ We started this chapter by covering typography. We discussed the basic building 
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md
 [Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
@@ -705,6 +734,8 @@ We started this chapter by covering typography. We discussed the basic building 
 [Sassy Modular Scale]:  https://github.com/Team-Sass/modular-scale
 
 [readability]:          http://blog.8thlight.com/billy-whited/2011/08/23/readability.html
+[Count]:                http://www.gbsheli.com/2009/05/count-improved-wc-bookmarklet.html
+[Optimal]:              http://baymard.com/blog/line-length-readability
 [Better Typography]:    http://www.markboulton.co.uk/journal/five-simple-steps-to-better-typography
 [Meaningful Typography]: http://alistapart.com/article/more-meaningful-typography
 [somewhere]:            http://www.kaikkonendesign.fi/typography/section/11
