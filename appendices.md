@@ -788,25 +788,29 @@ Appendix 12
 
 #### Tools
 
-1.  [0to255][T1]
+1.  [0to255][]
 
     > 0to255 is a simple tool that helps web designers find variations of any color.
 
-2.  [Color Blender][T2]
+2.  [Color Blender][]
 
     > Pick a color value format, input two valid CSS color values in the format you chose, and pick the number of midpoints you'd like to see. The palette will show the colors you input as well as the requested number of midpoint colors, and the values of those colors.
 
-3.  [ColorTo.me][T3]
+3.  [Color Schemer][]
+
+4.  [Colorspire][]
+
+  > Create Color Schemes, Test Color Combinations
+
+5.  [ColorTo.me][]
 
     > Create an image, share a pallet.
 
-4.  [Contrast Analyser][T4]
+6.  [Contrast Analyser][]
 
     > It is primarily a tool for checking foreground Code &amp; background colour combinations to determine if they provide good colour visibility. It also contains functionality to create simulations of certain visual conditions such as colour blindness.
 
-5.  [Mother-effing hsl][T5]
-
-6.  [Color Schemer][T6]
+7.  [Mother-effing hsl][]
 
 #### Palettes
 
@@ -816,7 +820,7 @@ Color palette creation and sharing tools.
 
     > ColRD: Create and share color inspiration with the world.
 
-2.  [][P2]
+2.  [ColorExplorer][P2]
 
     > Simply put, ColorExplorer is an online toolbox for working with color palettes.
 
@@ -1078,13 +1082,13 @@ Color palette creation and sharing tools.
 [BH15]:                 http://css-tricks.com/why-ems/
 
 
-
-[T1]:                   http://0to255.com/
-[T2]:                   http://meyerweb.com/eric/tools/color-blend/
-[T3]:                   http://colorto.me/
-[T4]:                   http://www.paciellogroup.com/resources/contrast-analyser.html
-[T5]:                   http://mothereffinghsl.com/
-[T6]:                   http://www.colorschemer.com/online.html
+[0to255]:               http://0to255.com/
+[Color Blender]:        http://meyerweb.com/eric/tools/color-blend/
+[Color Schemer]:        http://www.colorschemer.com/online.html
+[Colorspire]:           http://www.colorspire.com/
+[ColorTo.me]:           http://colorto.me/
+[Contrast Analyser]:    http://www.paciellogroup.com/resources/contrast-analyser.html
+[Mother-effing hsl]:    http://mothereffinghsl.com/
 
 [P1]:                   http://colrd.com/
 [P2]:                   http://colorexplorer.com/

@@ -483,8 +483,8 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 
 - [The Meanings of Colors][] (MoC)
 - [Build a Color Scheme: The Fundamentals][Color Fundamentals] (BaCS)
-- [What do colors mean?][Color Meaning]
 - [Color in Motion][] (CiM)
+- [What do colors mean?][Color Meaning]
 
 ...I do come up with a few:
 
