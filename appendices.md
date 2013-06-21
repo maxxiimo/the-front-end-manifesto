@@ -34,8 +34,8 @@ Appendices
 11. [A Brief History of Web Font Sizes][Appendix 11]
     :: Different articles from my archives over the last 12 years regarding web font sizes.
 
-12. [Color Palettes, Tools and Collections][Appendix 12]
-    :: A roundup of different color palette creation and sharing services, color tools and collections of colors.
+12. [Color Tools, Palettes and Collections][Appendix 12]
+    :: A roundup of different color tools, color palette creation and sharing services, and color collections.
 
 
 
@@ -783,8 +783,30 @@ Over the years I've referred to different articles when determining font size fo
 Appendix 12
 -----------
 
-### Color Palettes, Tools and Collections
+### Color Tools, Palettes and Collections
 
+
+#### Tools
+
+1.  [0to255][T1]
+
+    > 0to255 is a simple tool that helps web designers find variations of any color.
+
+2.  [Color Blender][T2]
+
+    > Pick a color value format, input two valid CSS color values in the format you chose, and pick the number of midpoints you'd like to see. The palette will show the colors you input as well as the requested number of midpoint colors, and the values of those colors.
+
+3.  [ColorTo.me][T3]
+
+    > Create an image, share a pallet.
+
+4.  [Contrast Analyser][T4]
+
+    > It is primarily a tool for checking foreground Code &amp; background colour combinations to determine if they provide good colour visibility. It also contains functionality to create simulations of certain visual conditions such as colour blindness.
+
+5.  [Mother-effing hsl][T5]
+
+6.  [Color Schemer][T6]
 
 #### Palettes
 
@@ -823,28 +845,6 @@ Color palette creation and sharing tools.
 9.  [Kuler][P9]
 
     > Adobe Kuler is a web-hosted application for generating color themes that can inspire any project. No matter what you're creating, with Kuler you can experiment quickly with color variations and browse thousands of themes from the Kuler community.
-
-#### Tools
-
-1.  [0to255][TI]
-
-    > 0to255 is a simple tool that helps web designers find variations of any color.
-
-2.  [Color Blender][T2]
-
-    > Pick a color value format, input two valid CSS color values in the format you chose, and pick the number of midpoints you'd like to see. The palette will show the colors you input as well as the requested number of midpoint colors, and the values of those colors.
-
-3.  [ColorTo.me][T3]
-
-    > Create an image, share a pallet.
-
-4.  [Contrast Analyser][T4]
-
-    > It is primarily a tool for checking foreground Code &amp; background colour combinations to determine if they provide good colour visibility. It also contains functionality to create simulations of certain visual conditions such as colour blindness.
-
-5.  [Mother-effing hsl][T5]
-
-6.  [Color Schemer][T6]
 
 #### Collections
 
@@ -1079,6 +1079,13 @@ Color palette creation and sharing tools.
 
 
 
+[T1]:                   http://0to255.com/
+[T2]:                   http://meyerweb.com/eric/tools/color-blend/
+[T3]:                   http://colorto.me/
+[T4]:                   http://www.paciellogroup.com/resources/contrast-analyser.html
+[T5]:                   http://mothereffinghsl.com/
+[T6]:                   http://www.colorschemer.com/online.html
+
 [P1]:                   http://colrd.com/
 [P2]:                   http://colorexplorer.com/
 [P3]:                   http://www.palettefx.com/
@@ -1088,13 +1095,6 @@ Color palette creation and sharing tools.
 [P7]:                   http://www.colr.org/
 [P8]:                   http://www.genopal.com/
 [P9]:                   https://kuler.adobe.com/#
-
-[T1]:                   http://0to255.com/
-[T2]:                   http://meyerweb.com/eric/tools/color-blend/
-[T3]:                   http://colorto.me/
-[T4]:                   http://www.paciellogroup.com/resources/contrast-analyser.html
-[T5]:                   http://mothereffinghsl.com/
-[T6]:                   http://www.colorschemer.com/online.html
 
 [C1]:                   http://brandcolors.net/
 [C2]:                   http://visualidiot.com/articles/fifty-shades

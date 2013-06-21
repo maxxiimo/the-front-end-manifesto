@@ -524,26 +524,25 @@ So based on this preliminary research, white, orange and blue are looking like v
 
 \- [Color Matters - Basic Color Theory][Color Matters]
 
-If you read the three articles referenced in the introduction of this section, especially:
+The color wheel is the basis from which our color choices will flow. It's important to get to know this tool.
 
-- [Basic color schemes - Introduction to Color Theory][Color Theory]
+![][Color Wheel]
 
-...
+Fortunately for us, there are a number of online color wheels we can use.
+
+
 
 Colors on the color wheel can be:
 
-- Analogous
-- Complementary
+- [Analogous][]
+- [Complementary][]
+- [Triadic][]
+- [Split-Complementary][]
+- [Rectangle (Tetradic)][]
+- [Square][]
+
+
 - Monochromatic
-- Triadic
-- Split-Complementary
-- Rectangle (Tetradic)
-- Square
-
-
-
-
-
 - Based on nature
 
 ### Step 3: Finishing Touches
@@ -750,6 +749,13 @@ We started this chapter by covering typography. We discussed the basic building 
 [Color Meaning]:        http://lmgtfy.com/?q=What+do+colors+mean%3F
 [Color in Motion]:      http://www.mariaclaudiacortes.com/colors/Colors.html
 
+[Analogous]:            http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#analogous
+[Complementary]:        http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#complementary
+[Triadic]:              http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#triadic
+[Split-Complementary]:  http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#split-complementary
+[Rectangle (Tetradic)]: http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#rectangle
+[Square]:               http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#square
+
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
 [Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/
 [Pipeline]:             http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
@@ -761,3 +767,4 @@ We started this chapter by covering typography. We discussed the basic building 
 [Typographic Style]:    http://webtypography.net/
 
 [fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
+[Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-10/pocket-color-wheel.jpg
