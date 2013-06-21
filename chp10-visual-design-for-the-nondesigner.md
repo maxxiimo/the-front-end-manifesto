@@ -524,7 +524,7 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 
   > Technical, deep, free, educated, protective, lonely, peaceful, cold, clean, authoritative, and formal. - CiM
 
-- **Yellow** - Creative is good, young, but coward... not liking that.
+- **Yellow** - Creative is good, so is young, but coward... not liking that.
 
   > Creative, young, visible, right, cheerful, lightweight, curious, coward, playful, nutritious, ill, and expanding. - CiM
 
@@ -532,7 +532,15 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 
   > Intelligent, artistic, aloof, luxurious, loyal, vain, fantastic, melancholic, feminine, fragrant, and solemn. - CiM
 
-So based on this preliminary research, white, orange and blue are looking like very strong candidates for View Thought's color palette. Let's bring these colors over to the color wheel.
+So based on this preliminary research, white, orange and blue are looking like very strong candidates for View Thought's color palette.
+
+Once you have an idea about the colors you want to use, find their hex values. I like to use the tool [0to255][]. It gives you a lot of options in terms of shades. Possible candidate hex values for View Thought are:
+
+- White: #ffffff
+- Orange: #eb7e28
+- Blue: #4b99f9
+
+Let's bring these colors over to the color wheel.
 
 ### Step 2: Color Wheel Experimentation
 
@@ -764,6 +772,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Adjectives]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#step-1-define-adjectives
 [Color Meaning]:        http://lmgtfy.com/?q=What+do+colors+mean%3F
 [Color in Motion]:      http://www.mariaclaudiacortes.com/colors/Colors.html
+[0to255]:               http://0to255.com/
 
 [Analogous]:            http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#analogous
 [Complementary]:        http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#complementary
