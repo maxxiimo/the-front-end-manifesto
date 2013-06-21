@@ -484,7 +484,7 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 - [The Meanings of Colors][] (MoC)
 - [Build a Color Scheme: The Fundamentals][Color Fundamentals] (BaCS)
 - [What do colors mean?][Color Meaning]
-- [Color in Motion][]
+- [Color in Motion][] (CiM)
 
 ...I do come up with a few:
 
@@ -498,11 +498,15 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 
   > Red is the color of extremes. It’s the color of passionate love, seduction, violence, danger, anger, and adventure...Red captures attention. It is one of the most visible colors, second only to yellow... - MoC
 
+  > Dynamic, vital, romantic, commanding, alert, rebellious, complementary, joyful, visible, hot, and fun. - CiM
+
 - **Orange** - This might be the one. Aside from the fact that the parent company of View Thought uses it, it's feel seems to touch on a lot of the adjectives I have listed, plus it could be an alternative to red for callouts.
 
   > An orange color scheme speaks happiness...Orange is a very friendly color, a warm color that is inviting and can be another very effective color for call-to-actions. - BaCS
 
   > Orange is vibrant. It’s hot, healthy, fruity and engaging – but it can be abrasive and crass. It’s a polarizing color. People either love it or detest it. - MoC
+
+  > Helpful, burning, cozy, abundant, warning, flavorful, festive, active, excited, communicative, and inspiring. - CiM
 
 - **Green** - I'm liking this one insofar as it touches on trust and stability.
 
@@ -510,11 +514,23 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 
   > Green is no longer just a color. It's now the symbol of ecology and a verb. - MoC
 
+  > Patient, natural, adventurous, relaxed, athletic, unfortunate, lucky, balanced, safe, and sharing. - CiM
+
 - **Blue** - Well if this isn't the cats meow.
 
   > Blue means stability and depth and is a great color for creating a calm clean environment. Blue symbolizes confidence, faith, hope, wisdom, knowledge and trust. - BaCS
 
   > Blue is the favorite color of all people...Most blues convey a sense of trust, loyalty, cleanliness, and understanding. On the other hand, blue evolved as symbol of depression in American culture...Blue is the most commonly used color in corporate identity. - MoC
+
+  > Technical, deep, free, educated, protective, lonely, peaceful, cold, clean, authoritative, and formal. - CiM
+
+- **Yellow** - Creative is good, young, but coward... not liking that.
+
+  > Creative, young, visible, right, cheerful, lightweight, curious, coward, playful, nutritious, ill, and expanding. - CiM
+
+- **Purple** - Not quite the look I'm looking for.
+
+  > Intelligent, artistic, aloof, luxurious, loyal, vain, fantastic, melancholic, feminine, fragrant, and solemn. - CiM
 
 So based on this preliminary research, white, orange and blue are looking like very strong candidates for View Thought's color palette. Let's bring these colors over to the color wheel.
 
