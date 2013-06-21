@@ -798,6 +798,8 @@ Appendix 12
 
 3.  [Color Schemer][]
 
+  > Online Color Scheme Generator
+
 4.  [Colorspire][]
 
   > Create Color Schemes, Test Color Combinations
