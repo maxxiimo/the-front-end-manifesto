@@ -899,7 +899,7 @@ Appendix 12
 
 2.  [BrandColors][]
 
-    > A collection of major brand color codes curated by Galen Gidman.
+    > A collection of major brand color codes...
 
 3.  [Fifty Shades of Grey: A Review][Gray Shades]
 
