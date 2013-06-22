@@ -801,31 +801,35 @@ Appendix 12
 
     > Simply put, ColorExplorer is an online toolbox for working with color palettes.
 
-5.  [Color Schemer][]
+5.  [Color Palette Creator][Palette Creator]
+
+  > This tool was inspired directly by the excellent Creating Color Palettes article by Andy Clarke. It will create 10 shades of the base color, located top-left, at varying degrees of opacity.
+
+6.  [Color Schemer][]
 
   > Online Color Scheme Generator
 
-6.  [Colorspire][]
+7.  [Colorspire][]
 
   > Create Color Schemes, Test Color Combinations
 
-7.  [ColorTo.me][]
+8.  [ColorTo.me][]
 
     > Create an image, share a pallet.
 
-8.  [Contrast-A][]
+9.  [Contrast-A][]
 
     > Contrast-A checks color combinations for sufficient contrast and displays the results according to WCAG 2.0 (Luminance Ratio) as well as the results according to older accessibility guidelines, WCAG 1.0 (Difference in Brightness and Color).
 
-9.  [Grab Website Colors - Color Scheme Extraction Tool][Grab Colors]
+10. [Grab Website Colors - Color Scheme Extraction Tool][Grab Colors]
 
     > The website color extraction tool is used to grab colors from a website.
 
-10. [Infohound Color Schemer][Infohound]
+11. [Infohound Color Schemer][Infohound]
 
     > This color schemer is a simple tool to help you experiment with various color schemes for your next web or print project.
 
-11. [Mother-effing hsl][]
+12. [Mother-effing hsl][]
 
 #### Color Wheels
 
@@ -1130,6 +1134,7 @@ Appendix 12
 [Color Blender]:        http://meyerweb.com/eric/tools/color-blend/
 [ColorBlender]:         http://www.colorblender.com/
 [ColorExplorer]:        http://colorexplorer.com/
+[Palette Creator]:      http://slayeroffice.com/tools/color_palette/
 [Color Schemer]:        http://www.colorschemer.com/online.html
 [Colorspire]:           http://www.colorspire.com/
 [ColorTo.me]:           http://colorto.me/

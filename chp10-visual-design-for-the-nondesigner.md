@@ -580,8 +580,15 @@ I like to play around with a couple different color wheels:
 
   ![][Wizard]
 
-### Step 3: Finishing Touches
+With these tools you have a lot of color harmonies to play with.
 
+### Step 3: Look at Alternatives
+
+It's a good idea not to just rely on the color wheel. For example, there's a tool I like to use for finding different shades of a color:
+
+[Color Palette Creator][Palette Creator]
+
+![][Shades]
 
 ### Step 4: Where to Apply
 
@@ -799,6 +806,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Adobe Kuler]:          https://kuler.adobe.com/#
 [Color Calculator]:     http://www.sessions.edu/color-calculator
 [Color Wizard]:         http://www.colorsontheweb.com/colorwizard.asp
+[Palette Creator]:      http://slayeroffice.com/tools/color_palette/
 
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
 [Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/
@@ -817,3 +825,4 @@ We started this chapter by covering typography. We discussed the basic building 
 [Kuler]:                http://www.chrismaxwell.com/manifesto/chp-10/kuler.gif
 [Calculator]:           http://www.chrismaxwell.com/manifesto/chp-10/color-calculator.gif
 [Wizard]:               http://www.chrismaxwell.com/manifesto/chp-10/color-wizard.gif
+[Shades]:               http://www.chrismaxwell.com/manifesto/chp-10/shades.gif
