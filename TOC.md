@@ -103,6 +103,7 @@ Table of Contents
 
 #### Chapter 10 - [Visual Design for the Nondesigner][Chapter 10]
   - Paradigm Shift
+  - Branding
   - Typography
   - Font Family
       - Step 1: Define Adjectives
@@ -123,7 +124,6 @@ Table of Contents
       - Step 2: Use the Color Wheel
       - Step 3: Look at Alternatives
       - Step 4: Apply
-  - Branding
   - Images
   - Icons
       - Icon Fonts

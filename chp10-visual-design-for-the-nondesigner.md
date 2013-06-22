@@ -37,6 +37,11 @@ The takeaway in relation to this chapter is that as front end engineers we need 
 
 This chapter is written to help developers along this path. With that lets get started.
 
+Branding
+--------
+
+
+
 Typography
 ----------
 
@@ -634,10 +639,6 @@ The last palette is a good example of finding inspiration from community palette
 
 
 
-Branding
---------
-
-
 Images
 ------
 
@@ -712,15 +713,8 @@ For example if needed in your footer:
 
 [We Love Icon Fonts][Love]
 
-#### @font-face
-
-
 ### Icon Sprites
 
-
-
-Images
-------
 
 
 Other Resources
