@@ -572,10 +572,6 @@ I like to play around with a couple different color wheels:
 
   ![][Kuler]
 
-- [Color Calculator][]
-
-  ![][Calculator]
-
 - [Color Wizard][]
 
   ![][Wizard]
@@ -842,7 +838,6 @@ We started this chapter by covering typography. We discussed the basic building 
 [Orange]:               http://www.chrismaxwell.com/manifesto/chp-10/orange.gif
 [Blue]:                 http://www.chrismaxwell.com/manifesto/chp-10/blue.gif
 [Kuler]:                http://www.chrismaxwell.com/manifesto/chp-10/kuler.gif
-[Calculator]:           http://www.chrismaxwell.com/manifesto/chp-10/color-calculator.gif
 [Wizard]:               http://www.chrismaxwell.com/manifesto/chp-10/color-wizard.gif
 [Shades]:               http://www.chrismaxwell.com/manifesto/chp-10/shades.gif
 [Favorites]:            http://www.chrismaxwell.com/manifesto/chp-10/palettes.gif
