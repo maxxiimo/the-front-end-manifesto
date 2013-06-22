@@ -586,9 +586,15 @@ It's a good idea not to just rely on the color wheel. For example, there's a too
 
 ![][Shades]
 
-I've also been considering using a hero image on our homepage. A color palette that matches that hero image might not be a bad idea. There are a [number of tools][] that will create a color palette based off of an image.
+I've also been considering using a hero image on our homepage. A color palette that matches that hero image might not be a bad idea. There are a [number of tools][] that will create a color palette based off of an image:
 
+[Color Palette Generator][]
 
+![][Generator]
+
+[Pictaculous][]
+
+![][Pictaculous Image]
 
 Finally, look at [color palettes created by the design community][Palettes]. You never know what you will find or be inspired by. My favorite site for this is [Adobe Kuler][Kuler]. Here are some of the palettes I have added to My Favorites:
 
@@ -821,6 +827,8 @@ We started this chapter by covering typography. We discussed the basic building 
 [Color Calculator]:     http://www.sessions.edu/color-calculator
 [Color Wizard]:         http://www.colorsontheweb.com/colorwizard.asp
 [Palette Creator]:      http://slayeroffice.com/tools/color_palette/
+[Color Palette Generator]: http://jrm.cc/color-palette-generator/
+[Pictaculous]:          http://pictaculous.com/
 [Kuler]:                https://kuler.adobe.com/explore/
 
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
@@ -840,4 +848,6 @@ We started this chapter by covering typography. We discussed the basic building 
 [Kuler]:                http://www.chrismaxwell.com/manifesto/chp-10/kuler.gif
 [Wizard]:               http://www.chrismaxwell.com/manifesto/chp-10/color-wizard.gif
 [Shades]:               http://www.chrismaxwell.com/manifesto/chp-10/shades.gif
+[Generator]:            http://www.chrismaxwell.com/manifesto/chp-10/generator.gif
+[Pictaculous Image]:    http://www.chrismaxwell.com/manifesto/chp-10/pictaculous.gif
 [Favorites]:            http://www.chrismaxwell.com/manifesto/chp-10/palettes.gif
