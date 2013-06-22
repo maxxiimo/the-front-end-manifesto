@@ -121,8 +121,8 @@ Table of Contents
   - The Color Palette
       - Step 1: Pick a Color
       - Step 2: Use the Color Wheel
-      - Step 3: Finishing Touches
-      - Step 4: Where to Apply
+      - Step 3: Look at Alternatives
+      - Step 4: Apply
   - Branding
   - Images
   - Icons
