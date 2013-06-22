@@ -594,11 +594,11 @@ For example, there's a tool I like to use for finding different shades of a colo
 
 I've also been considering using a hero image on our homepage. A color palette that matches that hero image might not be a bad idea. There are a [number of tools][] that will create a color palette based off of an image:
 
-[Color Palette Generator][]
+[Color Palette Generator][]...
 
 ![][Generator]
 
-[Pictaculous][]
+[Pictaculous][]...
 
 ![][Pictaculous Image]
 
