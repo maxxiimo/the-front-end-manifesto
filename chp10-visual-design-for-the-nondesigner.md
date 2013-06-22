@@ -171,7 +171,7 @@ Finally, choose a typeface and give it a test drive. Here are some screenshots o
 <br>
 <br>
 <br>
-![][fonts]
+![][Fonts]
 <br>
 <br>
 As you can see, choosing fonts is a practice in trial and error. To help you frame the context of your decision making process take a look at the section entitled "[Choosing Typeface Articles][Appendix 10]" in Appendix 10.
@@ -533,7 +533,12 @@ Once you have an idea about the colors you want to use, find their hex values. I
 
 - White: #ffffff
 - Orange: #eb7e28
+
+  ![][Orange]
+
 - Blue: #4b99f9
+
+  ![][Blue]
 
 Let's bring these colors over to the color wheel.
 
@@ -788,5 +793,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Premium Pixels]:       http://www.premiumpixels.com/
 [Typographic Style]:    http://webtypography.net/
 
-[fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
+[Fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
+[Orange]:               http://www.chrismaxwell.com/manifesto/chp-10/orange.gif
+[Blue]:                 http://www.chrismaxwell.com/manifesto/chp-10/blue.gif
 [Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-10/pocket-color-wheel.jpg
