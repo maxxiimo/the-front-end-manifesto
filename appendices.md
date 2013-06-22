@@ -895,13 +895,13 @@ Appendix 12
 
 #### Collections
 
-1.  [BrandColors][]
+1.  [216 Web Safe Colors][Web Safe]
+
+2.  [BrandColors][]
 
     > A collection of major brand color codes curated by Galen Gidman.
 
-2.  [Fifty Shades of Grey: A Review][Gray Shades]
-
-3.  [216 Web Safe Colors][Web Safe]
+3.  [Fifty Shades of Grey: A Review][Gray Shades]
 
 
 
@@ -1157,6 +1157,6 @@ Appendix 12
 [colr.org]:             http://www.colr.org/
 [Kuler]:                https://kuler.adobe.com/explore/
 
+[Web Safe]:             http://websafecolors.info/
 [BrandColors]:          http://brandcolors.net/
 [Gray Shades]:          http://visualidiot.com/articles/fifty-shades
-[Web Safe]:             http://websafecolors.info/
