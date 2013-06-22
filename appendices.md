@@ -827,7 +827,7 @@ Appendix 12
 
 11. [Mother-effing hsl][]
 
-#### Color Wheel
+#### Color Wheels
 
 1.  [Adobe Kuler][]
 
@@ -1134,7 +1134,7 @@ Appendix 12
 [Colorspire]:           http://www.colorspire.com/
 [ColorTo.me]:           http://colorto.me/
 [Contrast-A]:           http://www.dasplankton.de/ContrastA/
-[Grabbed Colors]:       http://www.colorcombos.com/grabcolors.html
+[Grab Colors]:          http://www.colorcombos.com/grabcolors.html
 [Infohound]:            http://infohound.net/colour/
 [Mother-effing hsl]:    http://mothereffinghsl.com/
 
