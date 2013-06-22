@@ -459,11 +459,7 @@ The basic steps and components include:
 
 ### Step 1: Base Color Selection
 
-> With colors you can set a mood, attract attention, or make a statement. You can use color to energize, or to cool down. By selecting the right color scheme, you can create an ambiance of elegance, warmth or tranquility, or you can convey an image of playful youthfulness. Color can be your most powerful design element if you learn to use it effectively.
-
-\- [Basic color schemes - Introduction to Color Theory][Color Theory]
-
-Wow, that quote certainly says something. Obviously a color scheme is powerful so to start let's choose a base color, and to do so I'm going to borrow from a [technique][Adjectives] we used in the Font Family section of this chapter. Here is the list of adjectives used to choose a typeface:
+Of the first step in creating a color palette is to choose a base color, and to do so I'm going to borrow from a [technique][Adjectives] we used in the Font Family section of this chapter. Here is the list of adjectives used to choose a typeface:
 
 1.  Clean
 2.  Reliable
@@ -568,6 +564,10 @@ Fortunately for us, there are a number of online color wheels we can use. There 
 
 
 ### Step 4: Where to Apply
+
+> With colors you can set a mood, attract attention, or make a statement. You can use color to energize, or to cool down. By selecting the right color scheme, you can create an ambiance of elegance, warmth or tranquility, or you can convey an image of playful youthfulness. Color can be your most powerful design element if you learn to use it effectively.
+
+\- [Basic color schemes - Introduction to Color Theory][Color Theory]
 
 
 
