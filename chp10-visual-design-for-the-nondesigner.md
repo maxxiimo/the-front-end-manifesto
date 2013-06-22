@@ -582,7 +582,7 @@ With these tools you have a lot of color harmonies to play with.
 
 It's a good idea not to rely solely on the color wheel.
 
-#### Find Different Shades of Color
+#### Find different shades of the color...
 
 For example, there's a tool I like to use for finding different shades of a color:
 
@@ -590,7 +590,7 @@ For example, there's a tool I like to use for finding different shades of a colo
 
   ![][Shades]
 
-#### Generate Color Palettes from an Image
+#### Generated color palette from an image...
 
 I've also been considering using a hero image on our homepage. A color palette that matches that hero image might not be a bad idea. There are a [number of tools][] that will create a color palette based off of an image:
 
@@ -602,7 +602,7 @@ I've also been considering using a hero image on our homepage. A color palette t
 
   ![][Pictaculous Image]
 
-#### Browse a Color Palette Sharing Service
+#### Browse a color palette sharing service...
 
 Finally, look at [color palettes created by the design community][Palettes]. You never know what you will find or be inspired by. Here are some of the palettes I have added to "My Favorites" in my favorite palette sharing service:
 
