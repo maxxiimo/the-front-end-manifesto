@@ -552,7 +552,7 @@ The color wheel is the basis from which our color choices will flow. It's import
 
 ![][Color Wheel]
 
-Fortunately for us, there are a number of online color wheels we can use.
+Fortunately for us, there are a number of online color wheels we can use. [Color Calculator][]
 
 
 
@@ -774,6 +774,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Color in Motion]:      http://www.mariaclaudiacortes.com/colors/Colors.html
 [0to255]:               http://0to255.com/
 
+[Color Calculator]:     http://www.sessions.edu/color-calculator
 [Analogous]:            http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#analogous
 [Complementary]:        http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#complementary
 [Triadic]:              http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#triadic

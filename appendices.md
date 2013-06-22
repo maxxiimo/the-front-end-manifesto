@@ -34,8 +34,8 @@ Appendices
 11. [A Brief History of Web Font Sizes][Appendix 11]
     :: Different articles from my archives over the last 12 years regarding web font sizes.
 
-12. [Color Tools, Palettes and Collections][Appendix 12]
-    :: A roundup of different color tools, color palette creation and sharing services, and color collections.
+12. [Color Tools, Wheels, Generators, Palettes and Collections][Appendix 12]
+    :: A roundup of different color tools, color wheels, image to color palette generators, community color palettes, and color collections.
 
 
 
@@ -783,10 +783,7 @@ Over the years I've referred to different articles when determining font size fo
 Appendix 12
 -----------
 
-### Color Tools, Palettes and Collections
-
-
-#### Tools
+### Color Tools
 
 1.  [0to255][]
 
@@ -796,59 +793,103 @@ Appendix 12
 
     > Pick a color value format, input two valid CSS color values in the format you chose, and pick the number of midpoints you'd like to see. The palette will show the colors you input as well as the requested number of midpoint colors, and the values of those colors.
 
-3.  [Color Schemer][]
+3.  [ColorBlender][]
 
-  > Online Color Scheme Generator
+    > To get started, choose a preferred color using the color picker below, and a 6-color matching palette (a "blend") will be automatically calculated.
 
-4.  [Colorspire][]
-
-  > Create Color Schemes, Test Color Combinations
-
-5.  [ColorTo.me][]
-
-    > Create an image, share a pallet.
-
-6.  [Contrast Analyser][]
-
-    > It is primarily a tool for checking foreground Code &amp; background colour combinations to determine if they provide good colour visibility. It also contains functionality to create simulations of certain visual conditions such as colour blindness.
-
-7.  [Mother-effing hsl][]
-
-#### Palettes
-
-Color palette creation and sharing tools.
-
-1.  [COLRD][P1]
-
-    > ColRD: Create and share color inspiration with the world.
-
-2.  [ColorExplorer][P2]
+4.  [ColorExplorer][]
 
     > Simply put, ColorExplorer is an online toolbox for working with color palettes.
 
-3.  [Color Palette FX][P3]
+5.  [Color Schemer][]
+
+  > Online Color Scheme Generator
+
+6.  [Colorspire][]
+
+  > Create Color Schemes, Test Color Combinations
+
+7.  [ColorTo.me][]
+
+    > Create an image, share a pallet.
+
+8.  [Contrast-A][]
+
+    > Contrast-A checks color combinations for sufficient contrast and displays the results according to WCAG 2.0 (Luminance Ratio) as well as the results according to older accessibility guidelines, WCAG 1.0 (Difference in Brightness and Color).
+
+9.  [Grab Website Colors - Color Scheme Extraction Tool][Grab Colors]
+
+    > The website color extraction tool is used to grab colors from a website.
+
+10. [Infohound Color Schemer][Infohound]
+
+    > This color schemer is a simple tool to help you experiment with various color schemes for your next web or print project.
+
+11. [Mother-effing hsl][]
+
+#### Color Wheel
+
+1.  [Adobe Kuler][]
+
+    > Adobe Kuler is a web-hosted application for generating color themes that can inspire any project. No matter what you're creating, with Kuler you can experiment quickly with color variations and browse thousands of themes from the Kuler community.
+
+2.  [Color Scheme Designer][]
+
+3.  [Color Calculator][]
+
+    > Use the free Color Calculator to explore creative color options for your design project. Simply pick your base color(s), choose a color harmony, tweak/explore as needed, and see results.
+
+4.  [Color Wizard][]
+
+    > The color wizard lets you submit your own base color, and it automatically returns matching colors for the one you selected.
+
+5.  [Sphere: Color Theory Visualizer][Sphere]
+
+#### Image Based Color Generators
+
+1.  [color hunter][]
+
+    > create and find color palettes made from images
+
+2.  [Color Palette FX][]
 
     > Color Palette FX is a color tool for print and web design that creates color palettes from photos.
 
-4.  [Color Scheme Designer][P4]
+3.  [Color Palette Generator][]
 
-5.  [ColoRotate][P5]
+    > Generate a color palette based on an image.
 
-    > Colors come to life in 3D! Browse color palettes, or create your own. Adjusts, mix and blend to your hearts content.
-
-6.  [COLOURlovers][P6]
-
-    > Share Your Color Ideas & Inspiration. COLOURlovers is a creative community where people from around the world create and share colors, palettes and patterns, discuss the latest trends and explore colorful articles... All in the spirit of love.
-
-7.  [colr.org][P7]
-
-    > Play with colors and color schemes!
-
-8.  [Genopal][P8]
+4.  [Genopal][]
 
     > Create harmonious colour schemes with Genopal
 
-9.  [Kuler][P9]
+5.  [Image to Colors Palette Generator][Image to Colors]
+
+    > Welcome to CSS Drive's Image to Colors Palette Generator! Upload an image to generate a color palette based on the image's primary colors. Useful for quickly grabbing a particular color within an image for inspiration.
+
+6. [Pictaculous][]
+
+    > Ever wonder what colors to use with an image? Upload your image – get a color palette!
+
+#### Palettes
+
+1.  [COLRD][]
+
+    > ColRD: Create and share color inspiration with the world.
+
+2.  [ColoRotate][]
+
+    > Colors come to life in 3D! Browse color palettes, or create your own. Adjusts, mix and blend to your hearts content.
+
+3.  [COLOURlovers][]
+
+    > Share Your Color Ideas & Inspiration. COLOURlovers is a creative community where people from around the world create and share colors, palettes and patterns, discuss the latest trends and explore colorful articles... All in the spirit of love.
+
+4.  [colr.org][]
+
+    > Play with colors and color schemes!
+
+5.  [Kuler][]
 
     > Adobe Kuler is a web-hosted application for generating color themes that can inspire any project. No matter what you're creating, with Kuler you can experiment quickly with color variations and browse thousands of themes from the Kuler community.
 
@@ -1084,23 +1125,37 @@ Color palette creation and sharing tools.
 [BH15]:                 http://css-tricks.com/why-ems/
 
 
+
 [0to255]:               http://0to255.com/
 [Color Blender]:        http://meyerweb.com/eric/tools/color-blend/
+[ColorBlender]:         http://www.colorblender.com/
+[ColorExplorer]:        http://colorexplorer.com/
 [Color Schemer]:        http://www.colorschemer.com/online.html
 [Colorspire]:           http://www.colorspire.com/
 [ColorTo.me]:           http://colorto.me/
-[Contrast Analyser]:    http://www.paciellogroup.com/resources/contrast-analyser.html
+[Contrast-A]:           http://www.dasplankton.de/ContrastA/
+[Grabbed Colors]:       http://www.colorcombos.com/grabcolors.html
+[Infohound]:            http://infohound.net/colour/
 [Mother-effing hsl]:    http://mothereffinghsl.com/
 
-[P1]:                   http://colrd.com/
-[P2]:                   http://colorexplorer.com/
-[P3]:                   http://www.palettefx.com/
-[P4]:                   http://www.colorschemedesigner.com/
-[P5]:                   http://web.colorotate.org/
-[P6]:                   http://www.colourlovers.com/
-[P7]:                   http://www.colr.org/
-[P8]:                   http://www.genopal.com/
-[P9]:                   https://kuler.adobe.com/#
+[Adobe Kuler]:          https://kuler.adobe.com/#
+[Color Scheme Designer]: http://www.colorschemedesigner.com/
+[Color Calculator]:     http://www.sessions.edu/color-calculator
+[Color Wizard]:         http://www.colorsontheweb.com/colorwizard.asp
+[Sphere]:               http://mudcu.be/sphere/
+
+[color hunter]:         http://www.colorhunter.com/
+[Color Palette FX]:     http://www.palettefx.com/
+[Color Palette Generator]: http://jrm.cc/color-palette-generator/
+[Genopal]:              http://www.genopal.com/
+[Image to Colors]:      http://www.cssdrive.com/imagepalette/
+[Pictaculous]:          http://pictaculous.com/
+
+[COLRD]:                http://colrd.com/
+[ColoRotate]:           http://web.colorotate.org/
+[COLOURlovers]:         http://www.colourlovers.com/
+[colr.org]:             http://www.colr.org/
+[Kuler]:                https://kuler.adobe.com/explore/
 
 [C1]:                   http://brandcolors.net/
 [C2]:                   http://visualidiot.com/articles/fifty-shades
