@@ -813,7 +813,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
 [Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-10/pocket-color-wheel.jpg
 [Orange]:               http://www.chrismaxwell.com/manifesto/chp-10/orange.gif
-[Blue]:                 http://www.chrismaxwell.com/manifesto/chp-10/blue.gif
+[Blue]:                 http://www.chrismaxwell.com/manifesto/chp-10/blue-test.gif
 [Kuler]:                http://www.chrismaxwell.com/manifesto/chp-10/kuler.gif
 [Calculator]:           http://www.chrismaxwell.com/manifesto/chp-10/color-calculator.gif
 [Wizard]:               http://www.chrismaxwell.com/manifesto/chp-10/color-wizard.gif
