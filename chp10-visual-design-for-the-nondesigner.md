@@ -536,6 +536,8 @@ Once you have an idea about the colors you want to use, find their hex values. I
 
   ![][Orange]
 
+  Or perhaps the parent companies shhade of orange: #f69233
+
 - Blue: #4b99f9
 
   ![][Blue]
@@ -554,7 +556,7 @@ The color wheel is the basis from which our color choices will flow. It will hel
 <br>
 ![][Color Wheel]
 
-Fortunately for us, there are a number of online color wheels we can use. There is a list of them in the [Color Wheels][] section of Appendix 12. We will use one called [Color Calculator][]. Before we calculate our colors familiarize yourself with the different ways you can derive colors on the color wheel:
+Fortunately for us, there are a number of online color wheels we can use. There is a list of them in the [Color Wheels][] section of Appendix 12, but before we use one familiarize yourself with the different ways you can derive colors on the color wheel:
 
 - [Analogous][]
 - [Complementary][]
@@ -562,8 +564,21 @@ Fortunately for us, there are a number of online color wheels we can use. There 
 - [Split-Complementary][]
 - [Rectangle (Tetradic)][]
 - [Square][]
+- Monochromatic
 
+I like to play around with a couple different color wheels:
 
+- [Adobe Kuler][]
+
+  ![][Kuler]
+
+- [Color Calculator][]
+
+  ![][Calculator]
+
+- [Color Wizard][]
+
+  ![][Wizard]
 
 ### Step 3: Finishing Touches
 
@@ -775,13 +790,15 @@ We started this chapter by covering typography. We discussed the basic building 
 [0to255]:               http://0to255.com/
 [Web Safe]:             http://websafecolors.info/
 
-[Color Calculator]:     http://www.sessions.edu/color-calculator
 [Analogous]:            http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#analogous
 [Complementary]:        http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#complementary
 [Triadic]:              http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#triadic
 [Split-Complementary]:  http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#split-complementary
 [Rectangle (Tetradic)]: http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#rectangle
 [Square]:               http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#square
+[Adobe Kuler]:          https://kuler.adobe.com/#
+[Color Calculator]:     http://www.sessions.edu/color-calculator
+[Color Wizard]:         http://www.colorsontheweb.com/colorwizard.asp
 
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
 [Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/
@@ -794,6 +811,9 @@ We started this chapter by covering typography. We discussed the basic building 
 [Typographic Style]:    http://webtypography.net/
 
 [Fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
+[Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-10/pocket-color-wheel.jpg
 [Orange]:               http://www.chrismaxwell.com/manifesto/chp-10/orange.gif
 [Blue]:                 http://www.chrismaxwell.com/manifesto/chp-10/blue.gif
-[Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-10/pocket-color-wheel.jpg
+[Kuler]:                http://www.chrismaxwell.com/manifesto/chp-10/kuler.gif
+[Calculator]:           http://www.chrismaxwell.com/manifesto/chp-10/color-calculator.gif
+[Wizard]:               http://www.chrismaxwell.com/manifesto/chp-10/color-wizard.gif
