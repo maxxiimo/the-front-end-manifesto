@@ -552,11 +552,7 @@ The color wheel is the basis from which our color choices will flow. It's import
 
 ![][Color Wheel]
 
-Fortunately for us, there are a number of online color wheels we can use. [Color Calculator][]
-
-
-
-Colors on the color wheel can be:
+Fortunately for us, there are a number of online color wheels we can use. There is a great list of them in the [Color Wheels][] section of Appendix 12. We will use one called [Color Calculator][]. Before we calculate our colors it would be a good idea to familiarize yourself with the different ways you can relate colors on the color wheel:
 
 - [Analogous][]
 - [Complementary][]
@@ -566,8 +562,6 @@ Colors on the color wheel can be:
 - [Square][]
 
 
-- Monochromatic
-- Based on nature
 
 ### Step 3: Finishing Touches
 
@@ -711,6 +705,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Appendix 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-10
 [Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-11
 [Appendix 12]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-12
+[Color Wheels]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#color-wheels
 
 [Dao]:                  http://www.alistapart.com/articles/dao
 [Story Design]:         http://24ways.org/2011/design-the-invisible/
