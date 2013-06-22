@@ -582,31 +582,33 @@ With these tools you have a lot of color harmonies to play with.
 
 It's a good idea not to rely solely on the color wheel.
 
-#### Color Shades
+#### Find Different Shades of Color
 
 For example, there's a tool I like to use for finding different shades of a color:
 
-- [Color Palette Creator][Palette Creator]...
+- [Color Palette Creator][Palette Creator]
 
   ![][Shades]
 
-#### Image to Color Palette Generators
+#### Generate Color Palettes from an Image
 
 I've also been considering using a hero image on our homepage. A color palette that matches that hero image might not be a bad idea. There are a [number of tools][] that will create a color palette based off of an image:
 
-- [Color Palette Generator][]...
+- [Color Palette Generator][]
 
   ![][Generator]
 
-- [Pictaculous][]...
+- [Pictaculous][]
 
   ![][Pictaculous Image]
 
-#### Design Community Color Palettes
+#### Browse a Color Palette Sharing Service
 
-Finally, look at [color palettes created by the design community][Palettes]. You never know what you will find or be inspired by. My favorite site for this is [Adobe Kuler][Kuler]. Here are some of the palettes I have added to My Favorites:
+Finally, look at [color palettes created by the design community][Palettes]. You never know what you will find or be inspired by. Here are some of the palettes I have added to "My Favorites" in my favorite palette sharing service:
 
-- ![][Favorites]
+- [Adobe Kuler][Kuler]
+
+  ![][Favorites]
 
 I'm strongly considering the following palettes:
 
