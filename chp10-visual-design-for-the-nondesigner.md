@@ -590,7 +590,23 @@ It's a good idea not to just rely on the color wheel. For example, there's a too
 
 ![][Shades]
 
-### Step 4: Where to Apply
+I've also been considering using a hero image on our homepage. A color palette that matches that hero image might not be a bad idea. There are a [number of tools][] that will create a color palette based off of an image.
+
+
+
+Finally, look at [color palettes created by the design community][Palettes]. You never know what you will find or be inspired by. My favorite site for this is [Adobe Kuler][Kuler]. Here are some of the palettes I have added to My Favorites:
+
+![][Favorites]
+
+I'm strongly considering the following palettes:
+
+- https://kuler.adobe.com/Copy-of-Flat-UI-color-theme-2585872/
+- https://kuler.adobe.com/Black-%26-Orange-color-theme-2251290/
+- https://kuler.adobe.com/Nakamoto-color-theme-2532500/
+
+The last palette is a good example of finding inspiration from community palettes. Green was not at the top of my list, although I liked it.
+
+### Step 4: Apply
 
 > With colors you can set a mood, attract attention, or make a statement. You can use color to energize, or to cool down. By selecting the right color scheme, you can create an ambiance of elegance, warmth or tranquility, or you can convey an image of playful youthfulness. Color can be your most powerful design element if you learn to use it effectively.
 
@@ -734,6 +750,8 @@ We started this chapter by covering typography. We discussed the basic building 
 [Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-11
 [Appendix 12]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-12
 [Color Wheels]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#color-wheels
+[number of tools]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#image-based-color-generators
+[Palettes]:             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#palettes
 
 [Dao]:                  http://www.alistapart.com/articles/dao
 [Story Design]:         http://24ways.org/2011/design-the-invisible/
@@ -807,6 +825,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Color Calculator]:     http://www.sessions.edu/color-calculator
 [Color Wizard]:         http://www.colorsontheweb.com/colorwizard.asp
 [Palette Creator]:      http://slayeroffice.com/tools/color_palette/
+[Kuler]:                https://kuler.adobe.com/explore/
 
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
 [Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/
@@ -826,3 +845,4 @@ We started this chapter by covering typography. We discussed the basic building 
 [Calculator]:           http://www.chrismaxwell.com/manifesto/chp-10/color-calculator.gif
 [Wizard]:               http://www.chrismaxwell.com/manifesto/chp-10/color-wizard.gif
 [Shades]:               http://www.chrismaxwell.com/manifesto/chp-10/shades.gif
+[Favorites]:            http://www.chrismaxwell.com/manifesto/chp-10/palettes.gif
