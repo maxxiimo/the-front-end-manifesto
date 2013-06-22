@@ -459,7 +459,7 @@ The basic steps and components include:
 
 ### Step 1: Base Color Selection
 
-Of the first step in creating a color palette is to choose a base color, and to do so I'm going to borrow from a [technique][Adjectives] we used in the Font Family section of this chapter. Here is the list of adjectives used to choose a typeface:
+The first step in creating a color palette is to choose a base color, and to do so I'm going to borrow from a [technique][Adjectives] we used in the Font Family section of this chapter. Here is the list of adjectives used to choose a typeface:
 
 1.  Clean
 2.  Reliable
