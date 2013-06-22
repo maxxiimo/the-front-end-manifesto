@@ -613,8 +613,16 @@ Finally, look at [color palettes created by the design community][Palettes]. You
 I'm strongly considering the following palettes:
 
 - https://kuler.adobe.com/Copy-of-Flat-UI-color-theme-2585872/
+
+  ![][Palette 1]
+
 - https://kuler.adobe.com/Black-%26-Orange-color-theme-2251290/
+
+  ![][Palette 2]
+
 - https://kuler.adobe.com/Nakamoto-color-theme-2532500/
+
+  ![][Palette 3]
 
 The last palette is a good example of finding inspiration from community palettes. Green was not at the top of my list, although I liked it.
 
@@ -861,3 +869,6 @@ We started this chapter by covering typography. We discussed the basic building 
 [Generator]:            http://www.chrismaxwell.com/manifesto/chp-10/generator.gif
 [Pictaculous Image]:    http://www.chrismaxwell.com/manifesto/chp-10/pictaculous.gif
 [Favorites]:            http://www.chrismaxwell.com/manifesto/chp-10/palettes.gif
+[Palette 1]:            http://www.chrismaxwell.com/manifesto/chp-10/palette-1.gif
+[Palette 2]:            http://www.chrismaxwell.com/manifesto/chp-10/palette-2.gif
+[Palette 3]:            http://www.chrismaxwell.com/manifesto/chp-10/palette-3.gif
