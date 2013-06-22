@@ -604,7 +604,7 @@ I've also been considering using a hero image on our homepage. A color palette t
 
 #### Browse a color palette sharing service...
 
-Finally, look at [color palettes created by the design community][Palettes]. You never know what you will find or be inspired by. Here are some of the palettes I have added to "My Favorites" in my favorite palette sharing service:
+Finally, look at [color palettes created by the design community][Palettes]. You never know what you will find or be inspired by. Here are some of the palettes I have added to a "My Favorites" list in my favorite palette sharing service:
 
 - [Adobe Kuler][Kuler]
 
