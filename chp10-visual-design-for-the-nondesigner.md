@@ -457,7 +457,7 @@ The basic steps and components include:
 
 ...But practically speaking, how do you begin?
 
-### Step 1: Base Color Selection
+### Step 1: Pick a Color
 
 The first step in creating a color palette is to choose a base color, and to do so I'm going to borrow from a [technique][Adjectives] we used in the Font Family section of this chapter. Here is the list of adjectives used to choose a typeface:
 
@@ -529,7 +529,7 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 
 So based on this preliminary research, white, orange and blue are looking like very strong candidates for View Thought's color palette.
 
-Once you have an idea about the colors you want to use, find their hex values. I like to use the tool [0to255][]. It gives you a lot of options in terms of shades. Possible candidate hex values for View Thought are:
+Once you have an idea about the colors you want to use, find their hex values. I like to use the tool [0to255][]. It gives you a lot of options in terms of shades. [216 Web Safe Colors][Web Safe] Possible candidate hex values for View Thought are:
 
 - White: #ffffff
 - Orange: #eb7e28
@@ -537,19 +537,19 @@ Once you have an idea about the colors you want to use, find their hex values. I
 
 Let's bring these colors over to the color wheel.
 
-### Step 2: Color Wheel Experimentation
+### Step 2: Use the Color Wheel
 
 > The human brain will reject under-stimulating information. At the other extreme is a visual experience that is so overdone, so chaotic that the viewer can't stand to look at it. The human brain rejects what it can not organize, what it can not understand. The visual task requires that we present a logical structure. Color harmony delivers visual interest and a sense of order.
 
 \- [Color Matters - Basic Color Theory][Color Matters]
 
-The color wheel is the basis from which our color choices will flow. It's important to get to know this tool.
+The color wheel is the basis from which our color choices will flow. It will help us find color harmonies based on color theory. It's important to get to know this tool.
 <br>
 <br>
 <br>
 ![][Color Wheel]
 
-Fortunately for us, there are a number of online color wheels we can use. There is a great list of them in the [Color Wheels][] section of Appendix 12. We will use one called [Color Calculator][]. Before we calculate our colors familiarize yourself with the different ways you can derive colors on the color wheel:
+Fortunately for us, there are a number of online color wheels we can use. There is a list of them in the [Color Wheels][] section of Appendix 12. We will use one called [Color Calculator][]. Before we calculate our colors familiarize yourself with the different ways you can derive colors on the color wheel:
 
 - [Analogous][]
 - [Complementary][]
@@ -768,6 +768,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [Adjectives]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#step-1-define-adjectives
 [Color in Motion]:      http://www.mariaclaudiacortes.com/colors/Colors.html
 [0to255]:               http://0to255.com/
+[Web Safe]:             http://websafecolors.info/
 
 [Color Calculator]:     http://www.sessions.edu/color-calculator
 [Analogous]:            http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm#analogous

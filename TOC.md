@@ -119,8 +119,8 @@ Table of Contents
       - Line Height (Leading)
       - Color and Contrast
   - The Color Palette
-      - Step 1: Base Color Selection
-      - Step 2: Color Wheel Experimentation
+      - Step 1: Pick a Color
+      - Step 2: Use the Color Wheel
       - Step 3: Finishing Touches
       - Step 4: Where to Apply
   - Branding
