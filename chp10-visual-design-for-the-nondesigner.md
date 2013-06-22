@@ -484,7 +484,6 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 - [The Meanings of Colors][] (MoC)
 - [Build a Color Scheme: The Fundamentals][Color Fundamentals] (BaCS)
 - [Color in Motion][] (CiM)
-- [What do colors mean?][Color Meaning]
 
 ...I do come up with a few:
 
@@ -549,10 +548,12 @@ Let's bring these colors over to the color wheel.
 \- [Color Matters - Basic Color Theory][Color Matters]
 
 The color wheel is the basis from which our color choices will flow. It's important to get to know this tool.
-
+<br>
+<br>
+<br>
 ![][Color Wheel]
 
-Fortunately for us, there are a number of online color wheels we can use. There is a great list of them in the [Color Wheels][] section of Appendix 12. We will use one called [Color Calculator][]. Before we calculate our colors it would be a good idea to familiarize yourself with the different ways you can relate colors on the color wheel:
+Fortunately for us, there are a number of online color wheels we can use. There is a great list of them in the [Color Wheels][] section of Appendix 12. We will use one called [Color Calculator][]. Before we calculate our colors familiarize yourself with the different ways you can derive colors on the color wheel:
 
 - [Analogous][]
 - [Complementary][]
@@ -765,7 +766,6 @@ We started this chapter by covering typography. We discussed the basic building 
 
 [The Meanings of Colors]: http://colormatters.com/color-symbolism/the-meanings-of-colors
 [Adjectives]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#step-1-define-adjectives
-[Color Meaning]:        http://lmgtfy.com/?q=What+do+colors+mean%3F
 [Color in Motion]:      http://www.mariaclaudiacortes.com/colors/Colors.html
 [0to255]:               http://0to255.com/
 
