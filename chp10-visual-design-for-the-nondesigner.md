@@ -18,7 +18,7 @@ Over the last several years I've noticed a paradigm shift in the role that front
 
 Discussion and changes could be made around these mockups before any engineering costs were incurred, consequently, it was more efficient to mock up a website before coding. As a result decision-makers would gravitate towards brainstorming on usability, architecting, and design aspects of a project at the graphic design phase in the development process: that began and oftentimes ended before front end engineers were really involved.
 
-Back then that kind of made sense, it was a simpler world, one design could almost fit all, and most things that happened in the browser could be replicated in a mockup, and so front end developers found the bulk of their contribution to a project in implementing completed mockups. They were in essence the handshake between graphic design and backend code. They understood what kind of code the backend team needed and how they would use it, and they had the skills necessary to turn graphic design into pixel perfect – the standard of excellence back then – cross browser friendly code.
+Back then that kind of made sense, it was a simpler world, one design could almost fit all, and most things that happened in the browser could be replicated in a mockup, and so front end developers found the bulk of their contribution to a project in implementing completed mockups. They understood what kind of code the backend team needed and how they would use it, and they had the skills necessary to turn graphic design into pixel perfect – the standard of excellence back then – cross browser friendly code.
 
 NOTE: Chapter 11, [Slicing and Dicing Mockups][Chapter 11], will dive into the mechanics of doing exactly that.
 
@@ -33,9 +33,9 @@ Fast-forward to today and everything has changed:
 
 As a result of these changes; usability, architecting and design decisions are beginning to convalesce around the point in which front end code is written, prototyping, as opposed to around graphic design mockups. In the very least, the absence of front end developers in the design process is no longer an option.
 
-The takeaway in relation to this chapter is that as front end engineers we need to understand that our roles are changing. In addition to coding prowess, understanding the elements of a good design, the art, is essential to the success of projects we participate in.
+The takeaway in relation to this chapter is that as front end engineers we need to understand that our roles are changing. Don't for a moment think that creative license on the front end belongs only to designers. It does not, in fact with the abilities of CSS3, much of the design work can now occur in the browser straight from our IDE's. Think of yourself as artists of a new age; you are the handshake between design and backend engineering and can work in either realm. With this new role, in addition to coding prowess, understanding the elements of a good design, the art, is essential to the success of projects you will participate in.
 
-This chapter is written to help developers along this path. With that lets get started.
+This chapter is written to help developers along this path. With that lets get started, , But first let me leave you with one final thought: never undervalue the hard earned design talents of graphic designers.
 
 Branding
 --------
@@ -102,9 +102,11 @@ Using the base styles from [Chapter 3][] these typographic elements are predefin
     // $base-font-header:  $georgia       !default
     // $base-font-nav:     $georgia       !default
 
-This partial is reserved for defining global stylesheet variables, and begins with variables set to different font stacks. In Sass, variables can also be set to other variables and so the base definitions variables, the key to our application fonts, reference one of the different predefined font stack variables. For example, `$base-font-family` which in turn is referenced by the `<body>` tags `font-family` property and will propagate throughout the entire application by virtue of CSS inheritance.
+This partial is reserved for defining global stylesheet variables, and begins with variables set to different font stacks. In Sass, variables can also be set to other variables and so variables like `$base-font-family`, the key to our application fonts, references one of the different predefined font stack like `$droid-sans`. `$base-font-family` in turn is referenced by the `<body>` tags `font-family` property and will propagate throughout the entire application by virtue of CSS inheritance. You can experiment with the predefined fonts included in [_define.sass][] by changing the variables that the base definitions point to.
 
-You can experiment with the predefined fonts by changing the variable that the base definitions point to.
+Over the next several sections we will explore the basic building blocks of typography and how it is implemented in our application. As a side note, if you really want to learn more, the most highly acclaimed resource out there is:
+
+- [The Elements of Typographic Style Applied to the Web][Typographic Style]
 
 Font Family
 -----------
@@ -742,15 +744,6 @@ What follows are some ideas and resources to help you create your site's look an
 
 - Read a tutorial.
 
-What We've Done
----------------
-
-Don't for a moment think that creative license belongs only to designers. It does not, in fact with the abilities of CSS3, much of the design work can now occur in the browser straight from our IDE's. Think of yourself as artists of a new age; you are the handshake between design and backend engineering and can work in either realm.
-
-We started this chapter by covering typography. We discussed the basic building blocks of typography and how it is implemented in our application. As a side note, if you really want to learn more, the most highly acclaimed resource out there is:
-
-- [The Elements of Typographic Style Applied to the Web][Typographic Style]
-
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
 [Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md
@@ -773,6 +766,7 @@ We started this chapter by covering typography. We discussed the basic building 
 [typography]:           http://blog.8thlight.com/billy-whited/2011/07/26/what-is-typography.html
 [95% typography]:       http://informationarchitects.net/blog/the-web-is-all-about-typography-period/
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_define.sass
+[Typographic Style]:    http://webtypography.net/
 
 [Perfect Typography]:   http://vimeo.com/17079380
 [Brief Primer]:         http://blog.8thlight.com/billy-whited/2011/08/25/a-brief-primer-on-typeface-selection.html
@@ -851,7 +845,6 @@ We started this chapter by covering typography. We discussed the basic building 
 [Love]:                 http://weloveiconfonts.com/
 
 [Premium Pixels]:       http://www.premiumpixels.com/
-[Typographic Style]:    http://webtypography.net/
 
 [Fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
 [Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-10/pocket-color-wheel.jpg

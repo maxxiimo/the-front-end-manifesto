@@ -129,7 +129,6 @@ Table of Contents
       - Icon Fonts
       - Icon Sprites
   - Other Resources
-      - What We've Done
 
 #### Chapter 11 - [Slicing and Dicing Mockups][Chapter 11]
   - Step 1 - Backgrounds
