@@ -119,15 +119,15 @@ Table of Contents
       - Line Length (Measure)
       - Line Height (Leading)
       - Color and Contrast
+  - Icons
+      - Icon Fonts
+      - Icon Sprites
   - The Color Palette
       - Step 1: Pick a Color
       - Step 2: Use the Color Wheel
       - Step 3: Look at Alternatives
       - Step 4: Apply
   - Images
-  - Icons
-      - Icon Fonts
-      - Icon Sprites
   - Other Resources
 
 #### Chapter 11 - [Slicing and Dicing Mockups][Chapter 11]

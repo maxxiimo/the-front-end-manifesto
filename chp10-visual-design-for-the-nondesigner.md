@@ -519,7 +519,33 @@ For example if needed in your footer:
 
 ### Icon Sprites
 
+Would you mind saving these as .gif's and .png's? Ideally these would be displayed as .PNG's, but because of issues with IE 6 and other older browsers I serve one or the other depending on the browser.
 
+.jpg's are really reserved for photos and not efficient for things like this, plus they do not preserve alpha transparencies which become an issue if backgrounds change in the future (kind of following in a roundabout way the old adage; "measure twice, cut once."). This article gives a good explanation of which to use and when:
+
+http://blogs.sitepoint.com/gif-png-jpg-which-one-to-use/
+
+Thanks also for putting the icons in a sprite, but I do have one request. It actually is better on the implementation side to have icon sprites line up horizontally with the top edge of each icon on an equidistant multiple of five pixel grid line, not picas. For example, the grid line pattern for an icon that was 16px x 16px might be:
+
+0
+20px
+40px
+60px
+
+I in turn in my code would use the following XY values in my positioning styles:
+
+0, 0
+0, -20px
+0, -40px
+0, -60px
+
+The reason for horizontal alignment is that side-by-side requires a specifically sized element to display the icon in, whereas one single horizontal line of icons can use a specific element to display, or background positioning in the greater containing element such as an anchor tag or a list item. This in turn minimizes the amount of code served and provides for better organization and element manipulation on the coding side. It also marginally future proofs any design changes.
+
+Since yours are:
+
+"Icons for Impact area are 28pixels x 28pixels."
+
+35 or even 40px gridlines would be good, but not 30px. Experience has shown me that having extra pixels of blankness between icons can be beneficial.
 
 The Color Palette
 -----------------
