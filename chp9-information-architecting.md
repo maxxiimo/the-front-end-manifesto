@@ -250,18 +250,18 @@ The end result of this chapter's work is a complete wireframe, ready for the nex
 Just remember, less is more and KISS (Keep It Simple Stupid).
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
-[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
-[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md
-[Chapter 10]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md
-[Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md
+[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#foundation-markup
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#foundation-styles
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#mobile-foundation
+[Chapter 10]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#visual-design-for-the-nondesigner
+[Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md#slicing-and-dicing-mockups
 [Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-5
 [Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-6
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-7
 
 [Jason Santa Maria]:    http://jasonsantamaria.com/
 
-[Chapter 1 Quote]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#the-application-layout
+[Chapter 1 Quote]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#foundation-markup#the-application-layout
 [Wikipedia]:            https://en.wikipedia.org/wiki/Mosaic
 
 [Don't Make Me Think]:  http://www.sensible.com/index.html
@@ -274,7 +274,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
 [Mobile Sketching]:     http://uxdesign.smashingmagazine.com/2012/09/18/free-download-ux-sketching-wireframing-templates-mobile/
 
-[Chapter 5 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#using-susy
+[Chapter 5 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#mobile-foundation#using-susy
 [Compass offers]:       http://compass-style.org/reference/compass/layout/grid_background/
 
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first

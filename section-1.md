@@ -1,5 +1,5 @@
-Section I - Setting up the Foundation
--------------------------------------
+Setting up the Foundation
+-------------------------
 
 Section I is comprised of four chapters written to help developers set up and understand the components of a Ruby on Rails front end code base:
 
@@ -29,7 +29,7 @@ Our goals in these chapters are to:
 
 3.  Discuss best practices for foundation markup and styles.
 
-[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
-[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
-[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md
+[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#foundation-markup
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#markup-review
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#foundation-styles
+[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#stylesheet-review

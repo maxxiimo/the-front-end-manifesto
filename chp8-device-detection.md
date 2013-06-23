@@ -343,7 +343,7 @@ To learn more visit:
 - [Zepto.js][]
 - [The Essentials of Zepto.js][Zepto]
 
-[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
 [Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-3
 [Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
 [base-mobile]:          https://github.com/maxxiimo/base-mobile

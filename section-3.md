@@ -1,2 +1,2 @@
-Section III - Look and Feel
----------------------------
+Look and Feel
+-------------

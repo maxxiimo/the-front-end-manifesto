@@ -95,10 +95,10 @@ Through [Chapter 6][] and [Chapter 8][] we will explore all three plans of attac
 \- [Mobile Design and Development ][Brian Fling] by Brian Fling
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
-[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
-[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md
-[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md
+[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#foundation-markup
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#foundation-styles
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md#responsive-web-design
+[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#device-detection
 
 [Better and Worse]:     http://insights.wired.com/profiles/blogs/mobile-browsing-will-get-both-better-and-worse#axzz2IFWc81o0
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/introduction

@@ -247,8 +247,8 @@ And with that you should see something like this:
 Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. What's important here is what's under the hood: an excellent foundation markup base to work with moving forward. In the [next chapter][Chapter 2] we will explore exactly that, what's under the hood.
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
-[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#markup-review
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#foundation-styles
 [Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-information-architecting.md
 
 [starter code]:         https://github.com/maxxiimo/base-haml

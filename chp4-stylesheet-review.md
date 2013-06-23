@@ -511,7 +511,7 @@ The following reference will give you some great ideas:
 - [Front-end Style Guides][Style Guides]
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#foundation-styles
 
 [starter CSS]:          https://github.com/maxxiimo/base-css
 
@@ -532,12 +532,12 @@ The following reference will give you some great ideas:
 [_h5bp_helpers.scss]:   https://github.com/maxxiimo/base-css/blob/master/vendor/assets/stylesheets/boilerplate/_h5bp_helpers.scss
 [_h5bp_print.scss]:     https://github.com/maxxiimo/base-css/blob/master/vendor/assets/stylesheets/boilerplate/_h5bp_print.scss
 
-[Media Queries]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#3-media-queries
+[Media Queries]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#mobile-foundation#3-media-queries
 [Reset CSS]:            http://meyerweb.com/eric/tools/css/reset/index.html
 [reset utilities]:      http://compass-style.org/reference/compass/reset/utilities/
 [Normalize.css]:        https://github.com/necolas/normalize.css/
 [HTML5 Resets]:         http://html5doctor.com/html-5-reset-stylesheet/
-[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#using-susy
+[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#mobile-foundation#using-susy
 
 [resets]:               https://github.com/maxxiimo/base-resets
 

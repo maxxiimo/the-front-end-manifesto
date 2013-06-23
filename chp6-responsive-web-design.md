@@ -230,7 +230,7 @@ NOTE: IE 6 does not support max-width, you will need to use width: 100% and chec
 
 But still, this isn't the silver bullet I'm looking for. One thing you need to consider is that in a smart phone, although the image will resize to its container, it's still a 600 pixel image and will weigh just the same.
 
-[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
 [starter CSS]:          https://github.com/maxxiimo/base-css
 

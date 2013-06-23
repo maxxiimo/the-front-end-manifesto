@@ -745,10 +745,10 @@ What follows are some ideas and resources to help you create your site's look an
 - Read a tutorial.
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
-[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md
-[Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md
-[Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#foundation-styles
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
+[Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
+[Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md#slicing-and-dicing-mockups
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
 [Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-8
 [Appendix 8 Combos]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#combinations
@@ -793,7 +793,7 @@ What follows are some ideas and resources to help you create your site's look an
 [Font Stack Roundup]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#font-stack-roundup
 [Complete Guide]:       http://www.apaddedcell.com/web-fonts
 
-[Resets]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#resets
+[Resets]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#stylesheet-review#resets
 [implementation]:       https://github.com/maxxiimo/base-resets/blob/master/_h5bp_normalize_v102.scss
 
 [Ideal Line Length]:    http://www.maxdesign.com.au/articles/em/
@@ -818,7 +818,7 @@ What follows are some ideas and resources to help you create your site's look an
 [Color Matters]:        http://colormatters.com/color-and-design/basic-color-theory
 
 [The Meanings of Colors]: http://colormatters.com/color-symbolism/the-meanings-of-colors
-[Adjectives]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#step-1-define-adjectives
+[Adjectives]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#visual-design-for-the-nondesigner#step-1-define-adjectives
 [Color in Motion]:      http://www.mariaclaudiacortes.com/colors/Colors.html
 [0to255]:               http://0to255.com/
 [Web Safe]:             http://websafecolors.info/

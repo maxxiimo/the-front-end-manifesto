@@ -203,21 +203,21 @@ Table of Contents
 [The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
 
 [Section I]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-1.md
-[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md
-[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md
-[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md
-[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md
+[Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#foundation-markup
+[Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#markup-review
+[Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#foundation-styles
+[Chapter 4]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#stylesheet-review
 
 [Section II]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-2.md
-[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md
-[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md
-[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md
-[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md
+[Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#mobile-foundation
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md#responsive-web-design
+[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
+[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#device-detection
 
 [Section III]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-3.md
-[Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md
-[Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md
-[Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md
+[Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
+[Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#visual-design-for-the-nondesigner
+[Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md#slicing-and-dicing-mockups
 
 [Images]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/images.md
 [Forms]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/forms.md

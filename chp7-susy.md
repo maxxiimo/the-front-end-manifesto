@@ -377,7 +377,7 @@ To learn more on how Susy breakpoints work, in addition to the Susy's own [refer
 
 - [Susy and Media Queries (guide for Muppets)][Muppets]
 
-[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md
+[Chapter 6]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md#responsive-web-design
 
 [Susy]:                 http://susy.oddbird.net/
 [Compass]:              http://compass-style.org/

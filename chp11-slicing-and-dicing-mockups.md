@@ -296,11 +296,11 @@ Why do this from the get-go? Well you know you will have icons and you already h
 [grid system]:          http://www.subtraction.com/pics/0703/grids_are_good.pdf
 [grid-background]:      http://compass-style.org/reference/compass/layout/grid_background/
 
-[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
+[Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy#susy
 [Containing DIV]:       http://stackoverflow.com/questions/354739/why-should-i-use-a-container-div-in-html
 [Containing BODY]:      http://csswizardry.com/2011/01/using-the-body-element-as-a-wrapper/
 
-[ignored]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#gitignore
+[ignored]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#markup-review#gitignore
 
 [_define.sass]:         https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_define.sass
 [Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-8
