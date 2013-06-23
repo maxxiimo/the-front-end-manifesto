@@ -533,33 +533,35 @@ And that's it! Here is what our site looks like with are new icon fonts, typefac
 
 ### Icon Sprites
 
-Would you mind saving these as .gif's and .png's? Ideally these would be displayed as .PNG's, but because of issues with IE 6 and other older browsers I serve one or the other depending on the browser.
+If you haven't guessed already, like regular fonts, icon fonts are not multicolor, and do not provide the full design possibilities found in image-based icons:
 
-.jpg's are really reserved for photos and not efficient for things like this, plus they do not preserve alpha transparencies which become an issue if backgrounds change in the future (kind of following in a roundabout way the old adage; "measure twice, cut once."). This article gives a good explanation of which to use and when:
+![][Icon Sample]
 
-http://blogs.sitepoint.com/gif-png-jpg-which-one-to-use/
+When using icons, it's best to save them in a single sprite. You can do this manually or you can let [Compass][Compass Sprites] do all the sprite creation work automatically for you.
 
-Thanks also for putting the icons in a sprite, but I do have one request. It actually is better on the implementation side to have icon sprites line up horizontally with the top edge of each icon on an equidistant multiple of five pixel grid line, not picas. For example, the grid line pattern for an icon that was 16px x 16px might be:
+NOTE: Ryan Bates provides an excellent tutorial on [Compass & CSS Sprites][Sprites].
 
-0
+If you do decide to create icon sprites manually, and I'm not sure exactly why you would (hint, hint), when you lay out your icons it's better on the implementation side of things to have them line up horizontally (as opposed to vertically):
+
+![][Icon Slider]
+
+Line up the top edge of each icon on an equidistant grid line whose coordinate is a multiple of 5 pixels. For example, the horizontal grid line coordinates for 4 icons that are 16px x 16px might be:
+
+0 (first image)
 20px
 40px
 60px
 
-I in turn in my code would use the following XY values in my positioning styles:
+Using multiples of five makes it easier to find the Y coordinate in the CSS positioning property later on. The the following XY values for positioning would apply to the above:
 
 0, 0
 0, -20px
 0, -40px
 0, -60px
 
-The reason for horizontal alignment is that side-by-side requires a specifically sized element to display the icon in, whereas one single horizontal line of icons can use a specific element to display, or background positioning in the greater containing element such as an anchor tag or a list item. This in turn minimizes the amount of code served and provides for better organization and element manipulation on the coding side. It also marginally future proofs any design changes.
+Experience has also shown me that having extra pixels of blankness between icons can be beneficial. For example, if icons are 28px x 28px, 35px or even 40px gridlines would be good, but not 30px.
 
-Since yours are:
-
-"Icons for Impact area are 28pixels x 28pixels."
-
-35 or even 40px gridlines would be good, but not 30px. Experience has shown me that having extra pixels of blankness between icons can be beneficial.
+Save your icon sprites as .gif's and .png's. .jpg's are really reserved for photos and not efficient for things like this, plus they do not preserve alpha transparencies which become an issue if backgrounds change in the future (kind of following in a roundabout way the old adage; "measure twice, cut once.").
 
 The Color Palette
 -----------------
@@ -875,6 +877,8 @@ What follows are some ideas and resources to help you create your site's look an
 [Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
 [Pipeline]:             http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
 [Icon Font Support]:    http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
+[Sprites]:              http://railscasts.com/episodes/334-compass-css-sprites
+[Compass Sprites]:      http://compass-style.org/help/tutorials/spriting/
 
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Color Fundamentals]:   http://tympanus.net/codrops/2012/09/17/build-a-color-scheme-the-fundamentals/
@@ -906,8 +910,10 @@ What follows are some ideas and resources to help you create your site's look an
 [Fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
 [Final Three]:          http://www.chrismaxwell.com/manifesto/chp-10/final-three.gif
 [Icon Fonts 1]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-nav.gif
-[Icon Fonts 2]:        http://www.chrismaxwell.com/manifesto/chp-10/icon-font-social.gif
+[Icon Fonts 2]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-social.gif
 [Multidevice]:          http://www.chrismaxwell.com/manifesto/chp-10/multidevice.png
+[Icon Sample]:          http://www.chrismaxwell.com/manifesto/chp-10/30-toolbar-icons.jpg
+[Icon Slider]:          http://www.chrismaxwell.com/manifesto/chp-10/icon-slider.png
 [Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-10/pocket-color-wheel.jpg
 [Orange]:               http://www.chrismaxwell.com/manifesto/chp-10/orange.gif
 [Blue]:                 http://www.chrismaxwell.com/manifesto/chp-10/blue.gif
