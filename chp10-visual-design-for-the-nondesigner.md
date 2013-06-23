@@ -765,11 +765,12 @@ The last palette is a good example of finding inspiration from community palette
 
 \- [Basic color schemes - Introduction to Color Theory][Color Theory]
 
-Applying our colors is a practicing trial and error.
+Like selecting a typeface, applying a color palette is a practice in trial and error. Before you begin, it's helpful to revisit the [Inspirational Sites][] appendix.
 
+I like to create different renditions in different branches. It's okay to move your information blocks around, even reinvent the flow.
 
+After some heavy experimentation here are two ideas I came up with:
 
-Appendix 5, [Inspirational Sites][]
 
 
 Branding
