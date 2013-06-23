@@ -1,5 +1,5 @@
-Mobile on Rails
----------------
+Small Screens
+-------------
 
 [Chapter 5 - Mobile on Rails][Chapter 5]
 

@@ -47,7 +47,7 @@ Table of Contents
       - Mixins
   - Stylesheet Tips
 
-### Section II - [Mobile on Rails][Section II]
+### Section II - [Small Screens][Section II]
 
 #### Chapter 5 - [Mobile on Rails][Chapter 5]
   - Mobile First
