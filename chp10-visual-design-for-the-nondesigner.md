@@ -446,13 +446,17 @@ Obviously, color is a significant factor in your design and not just in readabil
 Icons
 -----
 
-Icons pack a lot of design punch. You've heard the expression, "a picture says 1000 words." Icons instantly explain a great deal, and usually within a 16 pixel by 16 pixel area. Back in the old days we used to use images for icons, but each image would require a trip out to the server which can slow down a pages rendering. Then someone got smart and figured out that putting all the icons on a single image called an "image sprite" would save a website from all those trips to the server.  A front end coder could then move that sprite around a tiny imaginary viewport using CSS and reveal only one of the icons through that space.
+Icons give a website a really nice touch, and they pack a lot of design punch. You've heard the expression, "a picture says 1000 words." Icons instantly explain a great deal, and usually within a 16 pixel by 16 pixel area.
+
+Developers used to use images for icons, but each image would require a trip out to the server which could slow down a pages rendering, especially for mobile. Then someone got smart and figured out that putting all the icons on a single image called an "image sprite" would save a website from all those trips to the server. A front end developer could then move that sprite around a tiny imaginary viewport using CSS and reveal only one of the icons through that space.
 
 ### Icon Fonts
 
-Icon sprites was a great idea, and then came along icon fonts, and took over the world. Fonts or glyphs. A glyph is a shape. A letters glyph is shaped in such a way that we see and interpret it as a letter. Icon fonts use glyphs to create icon imagery, but just like a font, they can be easily rendered on a webpage. Their size can be increased and decreased without affecting their weight, unlike an image. The larger the image, the more it weighs. In fact anything you can do with a font, you can do with an icon font.
+Icon sprites are a great idea, but then something better came along, especially for mobile: icon fonts.
 
-We're going to get right into implementing tthe following icon fonts:
+Regular letter fonts are glyphs. A glyph is a shape. A letters glyph is shaped in such a way that we see and interpret the glyph as a letter. Icon fonts use glyphs in the same way, but to create icon imagery. Just like a letter font, icon fonts can be easily rendered on a webpage, and their size can be increased and decreased without affecting their weight, unlike an image: The larger the image, the more it weighs. In fact, anything you can do with a font, you can do with an icon font.
+
+For View Thought we're going to create the following icon fonts:
 
 - Navigation
 
@@ -462,7 +466,7 @@ We're going to get right into implementing tthe following icon fonts:
 
   ![][Icon Fonts 2]
 
-...but before we begin, here are a few references that may interest you, or in the very least are good to have handy:
+What follows are the steps you should take to create your own fonts, but first here are a few references that may interest you, or in the very least are good to have handy:
 
 - [How to make your own icon webfont][DIY Icon Fonts]
 - [HTML for Icon Font Usage][Icon Font HTML]
@@ -559,7 +563,7 @@ Using multiples of five makes it easier to find the Y coordinate in the CSS posi
 0, -40px<br>
 0, -60px
 
-Experience has also shown me that having extra pixels of blankness between icons can be beneficial. For example, if icons are 32px x 32px, >40 pixel gridlines would be good, but not 35 pixels:
+Experience has also shown me that having extra pixels of blankness between icons can be beneficial. For example, if icons are 32px x 32px, >40 pixel gridlines would be good:
 
 ![][Icon Grid]
 
