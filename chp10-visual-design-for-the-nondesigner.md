@@ -539,7 +539,7 @@ If you haven't guessed already, like regular fonts, icon fonts are not multicolo
 
 When using icons, it's best to save them in a single sprite. You can do this manually or you can let [Compass][Compass Sprites] do all the sprite creation work for you.
 
-NOTE: Ryan Bates provides an excellent tutorial on Compass spreading called [Compass & CSS Sprites][Sprites].
+NOTE: Ryan Bates provides an excellent tutorial on this called [Compass & CSS Sprites][Sprites].
 
 If you do decide to create icon sprites manually, and I'm not sure exactly why you would (hint, hint), when you lay out your icons it's better on the implementation side of things to have them line up horizontally (as opposed to vertically):
 
@@ -559,7 +559,9 @@ Using multiples of five makes it easier to find the Y coordinate in the CSS posi
 0, -40px<br>
 0, -60px
 
-Experience has also shown me that having extra pixels of blankness between icons can be beneficial. For example, if icons are 28px x 28px, 35px or even 40px gridlines would be good, but not 30px.
+Experience has also shown me that having extra pixels of blankness between icons can be beneficial. For example, if icons are 32px x 32px, >40 pixel gridlines would be good, but not 35px:
+
+![][Icon Grid]
 
 Save your icon sprites as .gif's and .png's. .jpg's are really reserved for photos and not efficient for things like this, plus they do not preserve alpha transparencies which become an issue if backgrounds change in the future (kind of following in a roundabout way the old adage; "measure twice, cut once.").
 
@@ -914,6 +916,7 @@ What follows are some ideas and resources to help you create your site's look an
 [Multidevice]:          http://www.chrismaxwell.com/manifesto/chp-10/multidevice.png
 [Icon Sample]:          http://www.chrismaxwell.com/manifesto/chp-10/30-toolbar-icons.jpg
 [Icon Slider]:          http://www.chrismaxwell.com/manifesto/chp-10/icon-slider.png
+[Icon Grid]:            http://www.chrismaxwell.com/manifesto/chp-10/icon-grid.gif
 [Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-10/pocket-color-wheel.jpg
 [Orange]:               http://www.chrismaxwell.com/manifesto/chp-10/orange.gif
 [Blue]:                 http://www.chrismaxwell.com/manifesto/chp-10/blue.gif
