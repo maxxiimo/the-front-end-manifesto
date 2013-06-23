@@ -545,21 +545,21 @@ If you do decide to create icon sprites manually, and I'm not sure exactly why y
 
 ![][Icon Slider]
 
-Line up the top edge of each icon on an equidistant grid line whose coordinate is a multiple of 5 pixels. For example, the horizontal grid line coordinates for 4 icons that are 16px x 16px might be:
+Right align your icons and place each icons top edge on an equidistant grid line whose coordinate is a multiple of 5 pixels. For example, the horizontal grid line coordinates for 4 icons that are 16px x 16px might be:
 
 0 (first image)<br>
 20px<br>
 40px<br>
 60px
 
-Using multiples of five makes it easier to find the Y coordinate in the CSS positioning property later on. The the following XY values for positioning would apply to the above:
+Using multiples of five makes it easier to find the Y coordinate in the CSS positioning property later on. The CSS positioning XY values for the above are:
 
 0, 0<br>
 0, -20px<br>
 0, -40px<br>
 0, -60px
 
-Experience has also shown me that having extra pixels of blankness between icons can be beneficial. For example, if icons are 32px x 32px, >40 pixel gridlines would be good, but not 35px:
+Experience has also shown me that having extra pixels of blankness between icons can be beneficial. For example, if icons are 32px x 32px, >40 pixel gridlines would be good, but not 35 pixels:
 
 ![][Icon Grid]
 
