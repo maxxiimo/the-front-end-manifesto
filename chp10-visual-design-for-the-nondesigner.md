@@ -169,7 +169,7 @@ A few Google Web Fonts pairing ideas derived from articles in Appendix 8 can be 
 
 ### Step 4: Choose a Typeface
 
-Finally, choose a typeface and give it a test drive. Here are some screenshots of different font ideas for View Thought:
+Finally, choose a typeface and give it a test drive. Here are some different ideas for View Thought found in our starter styles, the logo style came from Typekit:
 <br>
 <br>
 <br>
@@ -178,9 +178,9 @@ Finally, choose a typeface and give it a test drive. Here are some screenshots o
 <br>
 As you can see, choosing fonts is a practice in trial and error. To help you frame the context of your decision making process take a look at the section entitled "[Choosing Typeface Articles][Appendix 10]" in Appendix 10.
 
-For View Thought I chose three fonts from Typekit:
+For View Thought I wasn't too crazy about any of the default combinations and ended up choosing three fonts from Typekit:
 
-- [Quatro Sans][] for the logo. We're building things at View Thought in this font captures that feeling.
+- [Quatro Sans][] for the logo. We're building things at View Thought and this font captures that feeling.
 
   > We are pleased to introduce you to Quatro Sans. An undeniably modern typeface with construction principles that attempt to find the balance between machine and hand.
 
@@ -188,9 +188,11 @@ For View Thought I chose three fonts from Typekit:
 
   > Rooney feels serious yet its rounded shapes and soft curves make for an overall impression of warmth and smoothness.
 
-- [CamingoDos Web][] for our headers and navigation. Oftentimes choosing fonts from the same foundry produces the best combinations. I wanted to use a sans-serif and Rooney Sans Web was nice, but CamingoDos felt right.
+- [CamingoDos Web][] for our headers and navigation. Oftentimes choosing fonts from the same foundry produces the best combinations. I wanted to use a sans-serif and Rooney Web's bbrother Rooney Sans Web was nice, but CamingoDos felt right.
 
   > CamingoDos Web is tailored for use on websites. The fonts are manually hinted for optimal on-screen reading, providing a good performance across different operating systems and browsers.
+
+![][Final Three]
 
 ### Step 5: Define Fallbacks (Font Stacks)
 
@@ -899,6 +901,7 @@ What follows are some ideas and resources to help you create your site's look an
 [Premium Pixels]:       http://www.premiumpixels.com/
 
 [Fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
+[Final Three]:          http://www.chrismaxwell.com/manifesto/chp-10/final-three.gif
 [Icon Fonts 1]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-nav.gif
 [Icon Fonts 2]:        http://www.chrismaxwell.com/manifesto/chp-10/icon-font-social.gif
 [Multidevice]:          http://www.chrismaxwell.com/manifesto/chp-10/multidevice.png
