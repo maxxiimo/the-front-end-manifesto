@@ -179,7 +179,11 @@ Finally, choose a typeface and give it a test drive. Here are some different ide
 As you can see, choosing fonts is a practice in trial and error. To help you frame the context of your decision making process take a look at the section entitled "[Choosing Typeface Articles][Appendix 10]" in Appendix 10.
 
 For View Thought I wasn't too crazy about any of the default combinations and ended up choosing three fonts from Typekit:
-
+<br>
+<br>
+![][Final Three]
+<br>
+<br>
 - [Quatro Sans][] for the logo. We're building things at View Thought and this font captures that feeling.
 
   > We are pleased to introduce you to Quatro Sans. An undeniably modern typeface with construction principles that attempt to find the balance between machine and hand.
@@ -191,8 +195,6 @@ For View Thought I wasn't too crazy about any of the default combinations and en
 - [CamingoDos Web][] for our headers and navigation. Oftentimes choosing fonts from the same foundry produces the best combinations. I wanted to use a sans-serif and Rooney Web's bbrother Rooney Sans Web was nice, but CamingoDos felt right.
 
   > CamingoDos Web is tailored for use on websites. The fonts are manually hinted for optimal on-screen reading, providing a good performance across different operating systems and browsers.
-
-![][Final Three]
 
 ### Step 5: Define Fallbacks (Font Stacks)
 
