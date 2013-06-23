@@ -181,6 +181,7 @@ As you can see, choosing fonts is a practice in trial and error. To help you fra
 For View Thought I wasn't too crazy about any of the default combinations and ended up choosing three fonts from Typekit:
 <br>
 <br>
+<br>
 ![][Final Three]
 <br>
 <br>
