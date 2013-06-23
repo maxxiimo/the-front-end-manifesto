@@ -537,9 +537,9 @@ If you haven't guessed already, like regular fonts, icon fonts are not multicolo
 
 ![][Icon Sample]
 
-When using icons, it's best to save them in a single sprite. You can do this manually or you can let [Compass][Compass Sprites] do all the sprite creation work automatically for you.
+When using icons, it's best to save them in a single sprite. You can do this manually or you can let [Compass][Compass Sprites] do all the sprite creation work for you.
 
-NOTE: Ryan Bates provides an excellent tutorial on [Compass & CSS Sprites][Sprites].
+NOTE: Ryan Bates provides an excellent tutorial on Compass spreading called [Compass & CSS Sprites][Sprites].
 
 If you do decide to create icon sprites manually, and I'm not sure exactly why you would (hint, hint), when you lay out your icons it's better on the implementation side of things to have them line up horizontally (as opposed to vertically):
 
@@ -547,16 +547,16 @@ If you do decide to create icon sprites manually, and I'm not sure exactly why y
 
 Line up the top edge of each icon on an equidistant grid line whose coordinate is a multiple of 5 pixels. For example, the horizontal grid line coordinates for 4 icons that are 16px x 16px might be:
 
-0 (first image)
-20px
-40px
+0 (first image)<br>
+20px<br>
+40px<br>
 60px
 
 Using multiples of five makes it easier to find the Y coordinate in the CSS positioning property later on. The the following XY values for positioning would apply to the above:
 
-0, 0
-0, -20px
-0, -40px
+0, 0<br>
+0, -20px<br>
+0, -40px<br>
 0, -60px
 
 Experience has also shown me that having extra pixels of blankness between icons can be beneficial. For example, if icons are 28px x 28px, 35px or even 40px gridlines would be good, but not 30px.
