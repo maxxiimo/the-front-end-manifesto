@@ -143,7 +143,6 @@ Table of Contents
 
 ### [APPENDICES][Appendices]
 
-- [Index][Appendices]
 - Appendix 1: Frameworks
 - Appendix 2: Grid Systems
 - Appendix 3: Mobile Solutions Roundup
