@@ -452,13 +452,17 @@ Icons pack a lot of design punch. You've heard the expression, "a picture says 1
 
 Icon sprites was a great idea, and then came along icon fonts, and took over the world. Fonts or glyphs. A glyph is a shape. A letters glyph is shaped in such a way that we see and interpret it as a letter. Icon fonts use glyphs to create icon imagery, but just like a font, they can be easily rendered on a webpage. Their size can be increased and decreased without affecting their weight, unlike an image. The larger the image, the more it weighs. In fact anything you can do with a font, you can do with an icon font.
 
-We're going to get right into creating icon fonts, but before we begin, if you're interested in learning more about icon fonts here are a few references:
+We're going to get right into implementing icon fonts, but before we begin, here are a few references that may interest you, or in the very least are good to have handy:
 
-- [][]
-- [][]
-- [][]
+- [How to make your own icon webfont][DIY Icon Fonts]
+- [HTML for Icon Font Usage][Icon Font HTML]
+- [The Big List of Flat Icons & Icon Fonts][Big List]
+- [Icomoon][]
+- [We Love Icon Fonts][Love]
+- [Getting Font-Face to work with the Asset Pipeline][Pipeline]
+- [Testing @font-face Support on Mobile and Tablet][Icon Font Support]
 
-#### Creating Icon Fonts
+#### Implementing Icon Fonts
 
 **Step 1**: Visit http://icomoon.io/app/ and select icons you wish to use. You can add more icon sets.
 
@@ -512,18 +516,6 @@ For example if needed in your footer:
     footer
       [data-icon]:before
         +data-icon
-
-[The Big List of Flat Icons & Icon Fonts][Big List]
-
-[HTML for Icon Font Usage][Icon Font HTML]
-
-[Getting Font-Face to work with the Asset Pipeline][Pipeline]
-
-[How to make your own icon webfont][DIY Icon Fonts]
-
-[Testing @font-face Support on Mobile and Tablet][Icon Font Support]
-
-[We Love Icon Fonts][Love]
 
 ### Icon Sprites
 
@@ -828,12 +820,13 @@ What follows are some ideas and resources to help you create your site's look an
 [Meaningful Typography]: http://alistapart.com/article/more-meaningful-typography
 [somewhere]:            http://www.kaikkonendesign.fi/typography/section/11
 
-[Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
-[Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/
-[Pipeline]:             http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
 [DIY Icon Fonts]:       http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/
-[Icon Font Support]:    http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
+[Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/
+[Icomoon]:              http://icomoon.io
 [Love]:                 http://weloveiconfonts.com/
+[Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
+[Pipeline]:             http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
+[Icon Font Support]:    http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
 
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Color Fundamentals]:   http://tympanus.net/codrops/2012/09/17/build-a-color-scheme-the-fundamentals/
