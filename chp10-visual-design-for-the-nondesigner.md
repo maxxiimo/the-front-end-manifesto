@@ -37,11 +37,6 @@ The takeaway in relation to this chapter is that as front end engineers we need 
 
 This chapter is written to help developers along this path. With that lets get started, but first let me leave you with one final thought: never undervalue the hard earned design talents of graphic designers.
 
-Branding
---------
-
-
-
 Typography
 ----------
 
@@ -745,6 +740,11 @@ The last palette is a good example of finding inspiration from community palette
 
 
 Appendix 5, [Inspirational Sites][]
+
+
+Branding
+--------
+
 
 
 Images
