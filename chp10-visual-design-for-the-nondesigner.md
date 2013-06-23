@@ -35,7 +35,7 @@ As a result of these changes; usability, architecting and design decisions are b
 
 The takeaway in relation to this chapter is that as front end engineers we need to understand that our roles are changing. Don't for a moment think that creative license on the front end belongs only to designers. It does not, in fact with the abilities of CSS3, much of the design work can now occur in the browser straight from our IDE's. Think of yourself as artists of a new age; you are the handshake between design and backend engineering and can work in either realm. With this new role, in addition to coding prowess, understanding the elements of a good design, the art, is essential to the success of projects you will participate in.
 
-This chapter is written to help developers along this path. With that lets get started, , But first let me leave you with one final thought: never undervalue the hard earned design talents of graphic designers.
+This chapter is written to help developers along this path. With that lets get started, but first let me leave you with one final thought: never undervalue the hard earned design talents of graphic designers.
 
 Branding
 --------
@@ -441,7 +441,93 @@ I read [somewhere][] that to make your text appear softer and still maintain a g
     $base-font-color:   #444         !default
     $base-header-color: #222         !default
 
-Obviously, color is a significant factor in your design and not just in readability. Let's move on to the color palette.
+Obviously, color is a significant factor in your design and not just in readability. Before we move on to the color palette, were going to take a quick detour to icons with an emphasis in icon fonts.
+
+Icons
+-----
+
+Icons pack a lot of design punch. You've heard the expression, "a picture says 1000 words." Icons instantly explain a great deal, and usually within a 16 pixel by 16 pixel area. Back in the old days we used to use images for icons, but each image would require a trip out to the server which can slow down a pages rendering. Then someone got smart and figured out that putting all the icons on a single image called an "image sprite" would save a website from all those trips to the server.  A front end coder could then move that sprite around a tiny imaginary viewport using CSS and reveal only one of the icons through that space.
+
+### Icon Fonts
+
+Icon sprites was a great idea, and then came along icon fonts, and took over the world. Fonts or glyphs. A glyph is a shape. A letters glyph is shaped in such a way that we see and interpret it as a letter. Icon fonts use glyphs to create icon imagery, but just like a font, they can be easily rendered on a webpage. Their size can be increased and decreased without affecting their weight, unlike an image. The larger the image, the more it weighs. In fact anything you can do with a font, you can do with an icon font.
+
+We're going to get right into creating icon fonts, but before we begin, if you're interested in learning more about icon fonts here are a few references:
+
+- [][]
+- [][]
+- [][]
+
+#### Creating Icon Fonts
+
+**Step 1**: Visit http://icomoon.io/app/ and select icons you wish to use. You can add more icon sets.
+
+NOTE: I generally load all the icon sets and search by keywords to compare across different sets, e.g. "social" for social icons.
+
+**Step 2**: Review and configure your selected fonts.
+
+NOTE: I generally keep the defaults but change the Preferences -> Font Name to "icon-fonts". You can also change the encoding – depending on the project – to PUA (Private Use Area), Symbols or Latin characters.
+
+**Step 3**: Download your fonts. Copy the zipped folder `fonts` into your `app/asset/images` folder. Save the original in `vendor/source`.
+
+**Step 4**: Create the HTML that will handle your new fonts, for example:
+
+    %a{:href => "/", :title => 'Home'}
+      %span{"aria-hidden" => "true", "data-icon" => "&#x2616;".html_safe}
+      %span.screen-reader-text Home
+
+Notice the Unicode value in the `data-icon` attribute? To find your Unicode values go back to your original download and open `index.html` in your browser. Also notice the `.html_safe ` method? This will ensure that the string is inserted unaltered into the output.
+
+**Step 5**: Pull your fonts into your project through `_define.sass` through the following:
+
+    // icon fonts...
+
+    @font-face
+      font-family: 'icon-fonts'
+      font-weight: normal
+      font-style: normal
+      src: font-url('icon-fonts.eot')
+      src: font-url('icon-fonts.eot?#iefix') format("embedded-opentype"), font-url('icon-fonts.svg#icon-fonts') format("svg"), font-url('icon-fonts.woff') format("woff"), font-url('icon-fonts.ttf') format("truetype")
+
+**Step 6**: Create the styles necessary to use your new font. Add the following styles mixin to `_mixin.sass`:
+
+    /*  Icon Fonts
+      -----------------------
+
+    @mixin data-icon
+      font-family: 'icon-fonts'
+      content: attr(data-icon)
+      speak: none
+      font-weight: normal
+      line-height: 1
+      -webkit-font-smoothing: antialiased
+
+Call your new mixin were needed as follows:
+
+    [data-icon]:before
+      +data-icon
+
+For example if needed in your footer:
+
+    footer
+      [data-icon]:before
+        +data-icon
+
+[The Big List of Flat Icons & Icon Fonts][Big List]
+
+[HTML for Icon Font Usage][Icon Font HTML]
+
+[Getting Font-Face to work with the Asset Pipeline][Pipeline]
+
+[How to make your own icon webfont][DIY Icon Fonts]
+
+[Testing @font-face Support on Mobile and Tablet][Icon Font Support]
+
+[We Love Icon Fonts][Love]
+
+### Icon Sprites
+
+
 
 The Color Palette
 -----------------
@@ -647,79 +733,6 @@ Images
 ------
 
 
-Icons
------
-
-### Icon Fonts
-
-**Step 1**: Visit http://icomoon.io/app/ and select icons you wish to use. You can add more icon sets.
-
-NOTE: I generally load all the icon sets and search by keywords to compare across different sets, e.g. "social" for social icons.
-
-**Step 2**: Review and configure your selected fonts.
-
-NOTE: I generally keep the defaults but change the Preferences -> Font Name to "icon-fonts". You can also change the encoding – depending on the project – to PUA (Private Use Area), Symbols or Latin characters.
-
-**Step 3**: Download your fonts. Copy the zipped folder `fonts` into your `app/asset/images` folder. Save the original in `vendor/source`.
-
-**Step 4**: Create the HTML that will handle your new fonts, for example:
-
-    %a{:href => "/", :title => 'Home'}
-      %span{"aria-hidden" => "true", "data-icon" => "&#x2616;".html_safe}
-      %span.screen-reader-text Home
-
-Notice the Unicode value in the `data-icon` attribute? To find your Unicode values go back to your original download and open `index.html` in your browser. Also notice the `.html_safe ` method? This will ensure that the string is inserted unaltered into the output.
-
-**Step 5**: Pull your fonts into your project through `_define.sass` through the following:
-
-    // icon fonts...
-
-    @font-face
-      font-family: 'icon-fonts'
-      font-weight: normal
-      font-style: normal
-      src: font-url('icon-fonts.eot')
-      src: font-url('icon-fonts.eot?#iefix') format("embedded-opentype"), font-url('icon-fonts.svg#icon-fonts') format("svg"), font-url('icon-fonts.woff') format("woff"), font-url('icon-fonts.ttf') format("truetype")
-
-**Step 6**: Create the styles necessary to use your new font. Add the following styles mixin to `_mixin.sass`:
-
-    /*  Icon Fonts
-      -----------------------
-
-    @mixin data-icon
-      font-family: 'icon-fonts'
-      content: attr(data-icon)
-      speak: none
-      font-weight: normal
-      line-height: 1
-      -webkit-font-smoothing: antialiased
-
-Call your new mixin were needed as follows:
-
-    [data-icon]:before
-      +data-icon
-
-For example if needed in your footer:
-
-    footer
-      [data-icon]:before
-        +data-icon
-
-[The Big List of Flat Icons & Icon Fonts][Big List]
-
-[HTML for Icon Font Usage][Icon Font HTML]
-
-[Getting Font-Face to work with the Asset Pipeline][Pipeline]
-
-[How to make your own icon webfont][DIY Icon Fonts]
-
-[Testing @font-face Support on Mobile and Tablet][Icon Font Support]
-
-[We Love Icon Fonts][Love]
-
-### Icon Sprites
-
-
 
 Other Resources
 ---------------
@@ -815,6 +828,13 @@ What follows are some ideas and resources to help you create your site's look an
 [Meaningful Typography]: http://alistapart.com/article/more-meaningful-typography
 [somewhere]:            http://www.kaikkonendesign.fi/typography/section/11
 
+[Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
+[Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/
+[Pipeline]:             http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
+[DIY Icon Fonts]:       http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/
+[Icon Font Support]:    http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
+[Love]:                 http://weloveiconfonts.com/
+
 [9 Things]:             http://24ways.org/2011/nine-things-ive-learned/
 [Color Fundamentals]:   http://tympanus.net/codrops/2012/09/17/build-a-color-scheme-the-fundamentals/
 [Color Theory]:         http://www.tigercolor.com/color-lab/color-theory/color-theory-intro.htm
@@ -839,13 +859,6 @@ What follows are some ideas and resources to help you create your site's look an
 [Color Palette Generator]: http://jrm.cc/color-palette-generator/
 [Pictaculous]:          http://pictaculous.com/
 [Kuler]:                https://kuler.adobe.com/explore/
-
-[Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
-[Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/
-[Pipeline]:             http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
-[DIY Icon Fonts]:       http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/
-[Icon Font Support]:    http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
-[Love]:                 http://weloveiconfonts.com/
 
 [Premium Pixels]:       http://www.premiumpixels.com/
 
