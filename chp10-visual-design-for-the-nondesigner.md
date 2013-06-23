@@ -640,6 +640,8 @@ The last palette is a good example of finding inspiration from community palette
 \- [Basic color schemes - Introduction to Color Theory][Color Theory]
 
 
+Appendix 5, [Inspirational Sites][]
+
 
 Images
 ------
@@ -750,10 +752,11 @@ What follows are some ideas and resources to help you create your site's look an
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
 [Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md#slicing-and-dicing-mockups
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
+[Inspirational Sites]:  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-5
 [Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-8
 [Appendix 8 Combos]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#combinations
 [Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-9
-[Appendix 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-10
+[Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-10
 [Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-11
 [Appendix 12]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-12
 [Color Wheels]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#color-wheels
