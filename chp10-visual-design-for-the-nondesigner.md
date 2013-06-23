@@ -899,8 +899,8 @@ What follows are some ideas and resources to help you create your site's look an
 [Premium Pixels]:       http://www.premiumpixels.com/
 
 [Fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
-[Icon Fonts 1]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-fonts-nav.gif
-[Icon Fonts  2]:        http://www.chrismaxwell.com/manifesto/chp-10/icon-fonts-social.gif
+[Icon Fonts 1]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-nav.gif
+[Icon Fonts 2]:        http://www.chrismaxwell.com/manifesto/chp-10/icon-font-social.gif
 [Multidevice]:          http://www.chrismaxwell.com/manifesto/chp-10/multidevice.png
 [Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-10/pocket-color-wheel.jpg
 [Orange]:               http://www.chrismaxwell.com/manifesto/chp-10/orange.gif
