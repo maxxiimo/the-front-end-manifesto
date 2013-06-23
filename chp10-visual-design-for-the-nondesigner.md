@@ -447,7 +447,17 @@ Icons pack a lot of design punch. You've heard the expression, "a picture says 1
 
 Icon sprites was a great idea, and then came along icon fonts, and took over the world. Fonts or glyphs. A glyph is a shape. A letters glyph is shaped in such a way that we see and interpret it as a letter. Icon fonts use glyphs to create icon imagery, but just like a font, they can be easily rendered on a webpage. Their size can be increased and decreased without affecting their weight, unlike an image. The larger the image, the more it weighs. In fact anything you can do with a font, you can do with an icon font.
 
-We're going to get right into implementing icon fonts, but before we begin, here are a few references that may interest you, or in the very least are good to have handy:
+We're going to get right into implementing tthe following icon fonts:
+
+- Navigation
+
+  ![][Icon Fonts 1]
+
+- Social
+
+  ![][Icon Fonts 2]
+
+...but before we begin, here are a few references that may interest you, or in the very least are good to have handy:
 
 - [How to make your own icon webfont][DIY Icon Fonts]
 - [HTML for Icon Font Usage][Icon Font HTML]
@@ -511,6 +521,10 @@ For example if needed in your footer:
     footer
       [data-icon]:before
         +data-icon
+
+And that's it! Here is what our site looks like with are new icon fonts, typefaces and applied modular scale:
+
+![][Multidevice]
 
 ### Icon Sprites
 
@@ -738,6 +752,9 @@ The last palette is a good example of finding inspiration from community palette
 
 \- [Basic color schemes - Introduction to Color Theory][Color Theory]
 
+Applying our colors is a practicing trial and error.
+
+
 
 Appendix 5, [Inspirational Sites][]
 
@@ -882,6 +899,9 @@ What follows are some ideas and resources to help you create your site's look an
 [Premium Pixels]:       http://www.premiumpixels.com/
 
 [Fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
+[Icon Fonts 1]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-fonts-nav.gif
+[Icon Fonts  2]:        http://www.chrismaxwell.com/manifesto/chp-10/icon-fonts-social.gif
+[Multidevice]:          http://www.chrismaxwell.com/manifesto/chp-10/multidevice.png
 [Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-10/pocket-color-wheel.jpg
 [Orange]:               http://www.chrismaxwell.com/manifesto/chp-10/orange.gif
 [Blue]:                 http://www.chrismaxwell.com/manifesto/chp-10/blue.gif
