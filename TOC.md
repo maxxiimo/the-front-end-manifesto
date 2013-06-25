@@ -292,10 +292,10 @@ Table of Contents
 [Line Height (Leading)]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#line-height-leading
 [Color and Contrast]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#color-and-contrast
 
-[Step 1: Pick a Color]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-1---pick-a-color
-[Step 2: Use the Color Wheel]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-2---use-the-color-wheel
-[Step 3: Look at Alternatives]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-3---look-at-alternatives
-[Step 4: Apply]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-4---apply
+[Step 1: Pick a Color]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-1-pick-a-color
+[Step 2: Use the Color Wheel]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-2-use-the-color-wheel
+[Step 3: Look at Alternatives]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-3-look-at-alternatives
+[Step 4: Apply]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-4-apply
 
 [Step 1 - Set Major Widths]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-1---set-major-widths
 [Step 2 - Backgrounds]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-2---backgrounds
