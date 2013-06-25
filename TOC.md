@@ -1,19 +1,20 @@
 Table of Contents
------------------
+=================
 
 - [Cover][]
 - [The Manifesto][]
 
-### Section I - [Setting up a Foundation][Section I]
+Section I - [Setting up a Foundation][Section I]
+------------------------------------------------
 
-#### Chapter 1 - [Foundation Markup][Chapter 1]
+### Chapter 1 - [Foundation Markup][Chapter 1]
   - Views
       - The Code
   - Set Up
       - Groundwork Tasks
   - Prep and Launch
 
-#### Chapter 2 - [Markup Review][Chapter 2]
+### Chapter 2 - [Markup Review][Chapter 2]
   - Organization
       - Partials
       - JavaScript
@@ -25,7 +26,7 @@ Table of Contents
       - Using Partials
       - IE 6
 
-#### Chapter 3 - [Foundation Styles][Chapter 3]
+### Chapter 3 - [Foundation Styles][Chapter 3]
   - Preprocessors
   - Compass
   - CSS Frameworks and Grid Systems
@@ -33,7 +34,7 @@ Table of Contents
       - Compass Set Up
       - Stylesheet Set Up
 
-#### Chapter 4 - [Stylesheet Review][Chapter 4]
+### Chapter 4 - [Stylesheet Review][Chapter 4]
   - Organization
       - Heart and Soul
   - Detailed Explanation
@@ -47,15 +48,16 @@ Table of Contents
       - Mixins
   - Stylesheet Tips
 
-### Section II - [Small Screens][Section II]
+Section II - [Small Screens][Section II]
+----------------------------------------
 
-#### Chapter 5 - [Mobile on Rails][Chapter 5]
+### Chapter 5 - [Mobile on Rails][Chapter 5]
   - Mobile First
   - Plan of Attack
       - Best Choice
       - Holy Wars
 
-#### Chapter 6 - [Responsive Web Design][Chapter 6]
+### Chapter 6 - [Responsive Web Design][Chapter 6]
   - Flexible Grids
       - Using Susy
   - Media Queries
@@ -65,7 +67,7 @@ Table of Contents
       - Em's and Media Queries
   - Flexible Media
 
-#### Chapter 7 - [Susy][Chapter 7]
+### Chapter 7 - [Susy][Chapter 7]
   - Set Up
   - Implementation
   - Susy in Action
@@ -73,7 +75,7 @@ Table of Contents
       - Set Up
       - Using Susy Breakpoints
 
-#### Chapter 8 - [Device Detection][Chapter 8]
+### Chapter 8 - [Device Detection][Chapter 8]
   - Mobvious
       - Set Up
       - Mime Types
@@ -87,9 +89,10 @@ Table of Contents
       - Conditional Loading
       - Zepto
 
-### Section III - [Look and Feel][Section III]
+Section III - [Look and Feel][Section III]
+------------------------------------------
 
-#### Chapter 9 - [Information Architecting][Chapter 9]
+### Chapter 9 - [Information Architecting][Chapter 9]
   - A Mosaic of Information
   - The Storyline
   - Gathering and Organizing Information
@@ -101,7 +104,7 @@ Table of Contents
   - Feedback and Testing
   - What We've Done
 
-#### Chapter 10 - [Visual Design for the Nondesigner][Chapter 10]
+### Chapter 10 - [Visual Design for the Nondesigner][Chapter 10]
   - Paradigm Shift
   - Branding
   - Modular Scales
@@ -112,7 +115,7 @@ Table of Contents
   - Embellishments
   - Other Resources
 
-#### Chapter 11 - [Typography][Chapter 11]
+### Chapter 11 - [Typography][Chapter 11]
   - Font Family
       - Step 1: Define Adjectives
       - Step 2: Use a Font Service
@@ -127,13 +130,13 @@ Table of Contents
       - Line Height (Leading)
       - Color and Contrast
 
-#### Chapter 12 - [The Color Palette][Chapter 12]
+### Chapter 12 - [The Color Palette][Chapter 12]
   - Step 1: Pick a Color
   - Step 2: Use the Color Wheel
   - Step 3: Look at Alternatives
   - Step 4: Apply
 
-#### Chapter 13 - [Slicing and Dicing Mockups][Chapter 13]
+### Chapter 13 - [Slicing and Dicing Mockups][Chapter 13]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
   - Step 3 - Fonts
@@ -144,7 +147,8 @@ Table of Contents
   - Step 9 - HTML for the Main Content
   - Step 10 - Sprites and CSS3 for Images
 
-### [APPENDICES][Appendices]
+[APPENDICES][Appendices]
+------------------------
 
 - Appendix 1: Frameworks
 - Appendix 2: Grid Systems
