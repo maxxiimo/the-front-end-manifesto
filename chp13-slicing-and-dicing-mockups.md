@@ -40,7 +40,7 @@ As the underlying structure comes together in your mind, your coding vision, you
 
 The truth of a matter is that slicing mockups is pretty straightforward. There are only so many ways you can organize a page layout, and most components within a page layout are pretty standard: I mean you have paragraphs, and headers, and links, a way to get around through navigation, and so forth. On the other hand though a designer's artistic expression and the look and feel of the site are very subjective; mockup to mockup. Making a mockup come to life per the designers vision, consistently across devices and browsers, requires a certain amount of HTML/CSS art (based on trial and error and experience). There is no formula for doing it, just basic guidelines which I will layout here as steps, and use a demo project to illustrate.
 
-### Step 1 - Set Major Widths
+### Step 1: Set Major Widths
 
 Start with the lowest hanging fruit; major widths. Pretty straightforward, but doing so early on will provide the structure you will work with and within moving forward.
 
@@ -57,7 +57,7 @@ Note: You can use `<body>` or `<div>` as a containing element:
 - [Why should I use a container div in HTML?][Containing DIV]
 - [Using the <body> element as a wrapper][Containing BODY]
 
-### Step 2 - Backgrounds
+### Step 2: Backgrounds
 
 The next lowest hanging fruit is the background. By defining backgrounds right off the bat your major widths suddenly become apparent. This manifesto is not a course on CSS so I won't get into styling details, but backgrounds are typically:
 
@@ -75,7 +75,7 @@ NOTE: When using Compass use `image-url("")` instead of `url()`:
 
     background: image-url("fixtures/bg-texture.gif") 0 0 repeat-x
 
-### Step 3 - Grab Images
+### Step 3: Grab Images
 It's a good idea to isolate, optimize and save all the images from your mockup you will need for the website (and that can't be re-created using CSS3). For example, in the mockup above I will need the ABC logo, a sample profile picture, some icons, but I can re-create the header gradients and rounded corners with CSS. I'm not yet sure about the company logo, but the point is grab the images you will need at the beginning of the project.
 
 It's also good practice set up a file structure to drop images into. Here is the structure I use to keep things organized:
@@ -92,7 +92,7 @@ Fixtures are things like shims or other structural components of a website. The 
 
 NOTE: Keep original files in a source folder within your application that is [ignored][] by git.
 
-### Step 4 - Fonts
+### Step 4: Fonts
 
 Start sampling fonts to determine font-family, font-size, and color. Organize what you find in [_define.sass][]. As you move along you will begin to notice groupings and can reorganize and rename things as you work.
 
@@ -108,7 +108,7 @@ NOTE: As you're moving along there'll be times that you will need to add a note 
 
 This way I can grep for "FIXME ccm", where ccm are my initials, and find my notes.
 
-### Step 5 - Sectioning Content (layout/application.html.haml)
+### Step 5: Sectioning Content (layout/application.html.haml)
 
 Here's where we really begin to code the basic high-level questions above. At the highest level, sectioning content is the same as building your base layout template in a Rails project (layout/application.html.haml). I typically start a project using the base template described in the HTML Organization section of this manifesto. From this starting point you can add or remove things from _head.html.haml and _scripts.html.haml because they include everything plus the kitchen sink. Adjust the HTML, class names, and incorporate new elements as the project requires.
 
@@ -147,7 +147,7 @@ A slight variation in our foundation [layout file][application] to accommodate t
 
 ![][step-5]
 
-### Step 6 - Start with %header and %footer
+### Step 6: Start with %header and %footer
 
 Once your application layout is in place, begin coding the header and footer. I find these two sections to be the most straightforward. Headers typically contain a logo, maybe a tagline or slogan, a navigational element, and sometimes a utility element. Footers usually have a pretty standard set of links like: about, contact, terms, and then a copyright notice and some social networking icons. I don't mean to say that sites should be this way, many are not, but the fact of the matter is that most are. Because of this I just like to get these sections out of the way. Like the background, they are the lowest hanging fruit, they will frame most of the pages in your application, and when you first see the coded header section all shiny and new, you will feel like and know you're getting somewhere!
 
@@ -213,7 +213,7 @@ So here's what the project is looking like so far:
 
 ![][step-6]
 
-### Step 7 - Navigation
+### Step 7: Navigation
 
 Now that the header and footer are complete it's time to code the navigation. Definitely check out the Navigation chapter, and here are some useful resources:
 
@@ -223,7 +223,7 @@ Now that the header and footer are complete it's time to code the navigation. De
 
 - Since we are using the Rails stack and jQuery, might as well check those sources out too. I'm not a huge fan of [jQuery UI][] but it is tried and true.
 
-### Step 8 - HTML for the Main Content
+### Step 8: HTML for the Main Content
 
 Now we get down to the nitty-gritty, tactical vs strategic work. If your mockup were a newspaper layout, what would the sections be? How is it organized? Keep this in mind. Here are some references that might help you hone your skills in this:
 
@@ -251,7 +251,7 @@ Here's what I have up until now:
 
 You might need to readjust your application layout file as you move along, that's okay, this is the time to do that. You may also find that you initially placed something in your _layout.sass styles, only to realize later that really belongs in _pages.sass. That happens to me all of the time, half the time with anticipation. In those cases I usually add a little // FIXME ccm: note.
 
-### Step 9 - Adding Styles
+### Step 9: Adding Styles
 
 Like in the previous step we'll take it section by section, image by image, font by font, etc. First, I like to get the layout positioning out-of-the-way. Here we're mostly dealing with widths, margin and padding, and borders. Next, I go from section to section, making each section look exactly like the mockup. As I move along, and since all my font colors are defined in _define.sass, I begin to see patterns emerging and can consolidate and reorganize fonts into logical groups.
 
@@ -282,7 +282,7 @@ Step nine is really the place where everything happens stylewise. We started sli
 
 A styled webpage almost completely identical to the mockup, however, created through HTML5 and CSS3 with a minimal amount of imagery.
 
-### Step 10 - Sprites and CSS3 for Images
+### Step 10: Sprites and CSS3 for Images
 
 Save your sprite and CSS3 for image work – like replacing image gradients – for the tail end of slicing and dicing mockups. Doing so will give you enough material to work with in terms of images that can be grouped together in a sprite, and will not greatly affect other team members who may already be using your work.
 
