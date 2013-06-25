@@ -20,4 +20,4 @@ Personal views and direction on front end coding from a Ruby on Rails perspectiv
 
 [Table of Contents][TOC]
 
-[TOC]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/TOC.md
+[TOC]:                  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/TOC.md#table-of-contents
