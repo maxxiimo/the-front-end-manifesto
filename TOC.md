@@ -279,11 +279,11 @@ Table of Contents
 [Other Resources]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#other-resources
 
 [Font Family]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#font-family
-[Step 1: Define Adjectives]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#step-1---define-adjectives
-[Step 2: Use a Font Service]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#step-2---use-a-font-service
-[Step 3: Pair Typefaces]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#step-3---pair-typefaces
-[Step 4: Choose a Typeface]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#step-4---choose-a-typeface
-[Step 5: Define Fallbacks (Font Stacks)]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#step-5---define-fallbacks-font-stacks
+[Step 1: Define Adjectives]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#step-1-define-adjectives
+[Step 2: Use a Font Service]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#step-2-use-a-font-service
+[Step 3: Pair Typefaces]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#step-3-pair-typefaces
+[Step 4: Choose a Typeface]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#step-4-choose-a-typeface
+[Step 5: Define Fallbacks (Font Stacks)]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#step-5-define-fallbacks-font-stacks
 [Font Size]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#font-size
 [Base Font Size]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#base-font-size
 [Using Em's]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#using-ems
