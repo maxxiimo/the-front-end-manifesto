@@ -263,7 +263,7 @@ Table of Contents
 [Index Card Exercise]:  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#index-card-exercise
 [Prototyping on Paper]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#prototyping-on-paper
 [Wireframing]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#wireframing
-[Wireframing with Susy]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#wireframing-with-Susy
+[Wireframing with Susy]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#wireframing-with-susy
 [Content]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#content
 [Feedback and Testing]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#feedback-and-testing
 [What We've Done]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#what-weve-done
