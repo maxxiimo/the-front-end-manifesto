@@ -10,7 +10,7 @@ Table of Contents
 ### Chapter 1 - [Foundation Markup][Chapter 1]
   - [Views][]
       - [The Code][]
-  - [Set Up][]
+  - [Laying down the Foundation][]
       - [Groundwork Tasks][]
   - [Prep and Launch][]
 
@@ -21,7 +21,7 @@ Table of Contents
       - [What to Put in \<head>][]
       - [The Title][]
       - [.gitignore][]
-  - [Moving Forward][]
+  - [Moving Forward with Markup][]
       - [Using Partials][]
       - [Naming Conventions][]
       - [IE 6][]
@@ -38,7 +38,7 @@ Table of Contents
   - [Organization][]
       - [Heart and Soul][]
   - [Detailed Explanation][]
-  - [Moving Forward][]
+  - [Moving Forward with Stylesheets][]
       - [Modularize Styles][]
       - [Use a Labeling System][]
       - [Naming Conventions][]
@@ -76,7 +76,7 @@ Table of Contents
 
 ### Chapter 8 - [Device Detection][Chapter 8]
   - [Mobvious][]
-      - [Set Up][]
+      - [Mobvious Set Up][]
       - [Mime Types][]
       - [Reorganization][]
   - [A Hybrid Approach][]
@@ -189,7 +189,7 @@ Table of Contents
 
 [Views]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#views
 [The Code]:             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#the-code
-[Set Up]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#set-up
+[Laying down the Foundation]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#laying-down-the-foundation
 [Groundwork Tasks]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#groundwork-tasks
 [Prep and Launch]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#prep-and-launch
 
@@ -199,7 +199,7 @@ Table of Contents
 [What to Put in \<head>]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#what-to-put-in-head
 [The Title]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#the-title
 [.gitignore]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#gitignore
-[Moving Forward]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#moving-forward
+[Moving Forward with Markup]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#moving-forward-with-markup
 [Using Partials]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#using-partials
 [Naming Conventions]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#naming-conventions
 [IE 6]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#ie-6
@@ -214,7 +214,7 @@ Table of Contents
 [Organization]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#organization
 [Heart and Soul]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#heart-and-soul
 [Detailed Explanation]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#detailed-explanation
-[Moving Forward]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#moving-forward
+[Moving Forward with Stylesheets]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#moving-forward-with-stylesheets
 [Modularize Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#modularize-styles
 [Use a Labeling System]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#use-a-labeling-system
 [Naming Conventions]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#naming-conventions
@@ -245,7 +245,7 @@ Table of Contents
 [Using Susy Breakpoints]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#using-susy-breakpoints
 
 [Mobvious]:             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#mobvious
-[Set Up]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#set-up
+[Mobvious Set Up]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#mobvious-set-up
 [Mime Types]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#mime-types
 [Reorganization]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#reorganization
 [A Hybrid Approach]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#a-hybrid-approach

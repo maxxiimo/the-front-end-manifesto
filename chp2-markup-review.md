@@ -176,8 +176,8 @@ Here are some additional useful .gitignore ideas:
 - [A Collection of Useful .gitignore Templates][Templates]
 
 
-Moving Forward
---------------
+Moving Forward with Markup
+--------------------------
 
 Before we move on to styles, there are a few things we need to consider when adding files and organizing code within our framework moving forward.
 

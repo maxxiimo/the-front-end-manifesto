@@ -174,8 +174,8 @@ The "staging" section is a staging area for code and allows an individual or tea
     @import "boilerplate/h5bp_helpers";
     @import "boilerplate/h5bp_print";
 
-Moving Forward
---------------
+Moving Forward with Stylesheets
+-------------------------------
 
 You will add a lot more to the structure outline above. As you do, here are some organizational tips to keep in mind.
 

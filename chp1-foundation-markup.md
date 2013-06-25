@@ -78,8 +78,8 @@ NOTE: Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.2
 
 - [Guide to HTML5 Boilerplate for Rails Developers][H5BP for Rails]
 
-Set Up
-------
+Laying down the Foundation
+--------------------------
 
 Before we begin to explore the code that make up our views, there are a few things you will need to do to follow along with this book:
 

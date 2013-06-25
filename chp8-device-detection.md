@@ -39,7 +39,7 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
 
     git clone git@github.com:maxxiimo/base-mobile.git
 
-### Set Up
+### Mobvious Set Up
 
 **Step 1**: Copy all the [base-mobile][] files from the default folder and place them into their corresponding directories, i.e. `stylesheets/mobile` files go in `stylesheets/mobile` in your application. You should be able to cleanly merge the files in one sweep into your project. When you are finished, the following files will have been added to your repository:
 
