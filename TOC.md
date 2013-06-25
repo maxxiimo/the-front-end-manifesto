@@ -136,14 +136,15 @@ Table of Contents
   - [Step 4: Apply][]
 
 ### Chapter 13 - [Slicing and Dicing Mockups][Chapter 13]
-  - [Step 1 - Backgrounds][]
-  - [Step 2 - Set Widths][]
-  - [Step 3 - Fonts][]
-  - [Step 4 - Images][]
+  - [Step 1 - Set Major Widths][]
+  - [Step 2 - Backgrounds][]
+  - [Step 3 - Grab Images][]
+  - [Step 4 - Fonts][]
   - [Step 5 - Sectioning Content (layout/application.html.haml)][]
   - [Step 6 - Start with %header and %footer][]
-  - [Step 8 - Navigation][]
-  - [Step 9 - HTML for the Main Content][]
+  - [Step 7 - Navigation][]
+  - [Step 8 - HTML for the Main Content][]
+  - [Step 9 - Adding Styles][]
   - [Step 10 - Sprites and CSS3 for Images][]
 
 [APPENDICES][Appendices]
@@ -296,12 +297,13 @@ Table of Contents
 [Step 3: Look at Alternatives]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-3---look-at-alternatives
 [Step 4: Apply]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-4---apply
 
-[Step 1 - Backgrounds]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-1---backgrounds
-[Step 2 - Set Widths]:  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-2---set-widths
-[Step 3 - Fonts]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-3---fonts
-[Step 4 - Images]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-4---images
+[Step 1 - Set Major Widths]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-1---set-major-widths
+[Step 2 - Backgrounds]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-2---backgrounds
+[Step 3 - Grab Images]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-3---grab-images
+[Step 4 - Fonts]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-4---fonts
 [Step 5 - Sectioning Content (layout/application.html.haml)]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-5---sectioning-content-layoutapplicationhtmlhaml
 [Step 6 - Start with %header and %footer]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-6---start-with-header-and-footer
-[Step 8 - Navigation]:  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-8---navigation
-[Step 9 - HTML for the Main Content]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-9---html-for-the-main-content
+[Step 7 - Navigation]:  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-7---navigation
+[Step 8 - HTML for the Main Content]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-8---html-for-the-main-content
+[Step 9 - Adding Styles]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-9---adding-styles
 [Step 10 - Sprites and CSS3 for Images]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-10---sprites-and-css3-for-images
