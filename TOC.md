@@ -4,8 +4,8 @@ Table of Contents
 - [Cover][]
 - [The Manifesto][]
 
-Section I - [Setting up a Foundation][Section I]
-------------------------------------------------
+[Setting up a Foundation][Section I]
+------------------------------------
 
 ### Chapter 1 - [Foundation Markup][Chapter 1]
   - Views
@@ -48,8 +48,8 @@ Section I - [Setting up a Foundation][Section I]
       - Mixins
   - Stylesheet Tips
 
-Section II - [Small Screens][Section II]
-----------------------------------------
+[Small Screens][Section II]
+---------------------------
 
 ### Chapter 5 - [Mobile on Rails][Chapter 5]
   - Mobile First
@@ -89,8 +89,8 @@ Section II - [Small Screens][Section II]
       - Conditional Loading
       - Zepto
 
-Section III - [Look and Feel][Section III]
-------------------------------------------
+[Look and Feel][Section III]
+----------------------------
 
 ### Chapter 9 - [Information Architecting][Chapter 9]
   - A Mosaic of Information
