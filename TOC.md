@@ -103,6 +103,13 @@ Table of Contents
 
 #### Chapter 10 - [Visual Design for the Nondesigner][Chapter 10]
   - Paradigm Shift
+  - Branding
+  - Modular Scales
+  - Icons
+      - Icon Fonts
+      - Icon Sprites
+  - Images
+  - Embellishments
   - Other Resources
 
 #### Chapter 11 - [Typography][Chapter 11]
@@ -115,24 +122,16 @@ Table of Contents
   - Font Size
       - Base Font Size
       - Using Em's
-  - Modular Scales
   - Readability
       - Line Length (Measure)
       - Line Height (Leading)
       - Color and Contrast
-  - Icons
-      - Icon Fonts
-      - Icon Sprites
 
 #### Chapter 12 - [The Color Palette][Chapter 12]
-  -
-      - Step 1: Pick a Color
-      - Step 2: Use the Color Wheel
-      - Step 3: Look at Alternatives
-      - Step 4: Apply
-  - Branding
-  - Images
-  - Embellishments
+  - Step 1: Pick a Color
+  - Step 2: Use the Color Wheel
+  - Step 3: Look at Alternatives
+  - Step 4: Apply
 
 #### Chapter 13 - [Slicing and Dicing Mockups][Chapter 13]
   - Step 1 - Backgrounds

@@ -235,44 +235,6 @@ For more details on using em's take a look at:
 - [CSS Font-Size: em vs. px vs. pt vs. percent][CSS Font-Size]
 - [How we learned to leave default font-size alone and embrace the em][Embracing em's]
 
-Modular Scales
---------------
-
-A modular scale is a scale based on ratios derived from harmonic intervals or the [golden ratio][]. In layman's terms this means that the measurements of the scale are related to one another in an artistic/design awesome way, and when you use numbers from the scale for line length, column widths, line heights, and pretty much anything in your website that requires a measurement, you pass on this design awesomeness (versus picking random unrelated numbers), or in the very least you are making a design informed decision!
-
-What does a modular skill look like? Here is an example:
-
-- [View Thought's Modular Scale][scale]
-
-For View Thought I used a [Modular Scale][] tool, and input the following:
-
-- Our base font size of 16 pixels
-- Our logo font size of 30 pixels
-- The Golden ratio
-
-Once created, in the [_define.sass][] partial take note of the source of your scale as follows:
-
-    /*  Modular Scale
-      -----------------------
-
-    // http://modularscale.com/scale/?px1=16&px2=30&ra1=1.618&ra2=0
-
-    // 16px  @ 1:1.618 - base font size
-    // 30px  @ 1:1.618 - logo font size
-
-There are some great references out there that will do a much better job of explaining the what's and how's of modular scales in case you're interested:
-
-- [Tim Brown - More Perfect Typography][Perfect Typography] (Go to minute 15:00, great talk.)
-- Articles 10, 11, and 12 in Appendix 11, [A Brief History of Web Font Sizes][Appendix 11]
-
-For the more adventurous take a look at [Sassy Modular Scale][].
-
-Now that we have a scale we will use it throughout our design, but before applying it its important to keep this in mind:
-
-> Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
-
-\- [More Meaningful Typography][Meaningful Typography] by Tim Brown
-
 Readability
 -----------
 
@@ -402,143 +364,19 @@ I read [somewhere][] that to make your text appear softer and still maintain a g
     $base-font-color:   #444         !default
     $base-header-color: #222         !default
 
-Obviously, color is a significant factor in your design and not just in readability. Before we move on to the color palette, were going to take a quick detour to icons with an emphasis in icon fonts.
-
-Icons
------
-
-Icons give a website a really nice touch, and they pack a lot of design punch. You've heard the expression, "a picture says 1000 words." Icons instantly explain a great deal, and usually within a 16 pixel by 16 pixel area.
-
-Developers used to use images for icons, but each image would require a trip out to the server which could slow down a pages rendering, especially for mobile. Then someone got smart and figured out that putting all the icons on a single image called an "image sprite" would save a website from all those trips to the server. A front end developer could then move that sprite around a tiny imaginary viewport using CSS and reveal only one of the icons through that space.
-
-### Icon Fonts
-
-Icon sprites are a great idea, but then something better came along, especially for mobile: icon fonts.
-
-Regular letter fonts are glyphs. A glyph is a shape. A letters glyph is shaped in such a way that we see and interpret the glyph as a letter. Icon fonts use glyphs in the same way, but to create icon imagery. Just like a letter font, icon fonts can be easily rendered on a webpage, and their size can be increased and decreased without affecting their weight, unlike an image: The larger the image, the more it weighs. In fact, anything you can do with a font, you can do with an icon font.
-
-For View Thought we're going to create the following icon fonts:
-
-- Navigation
-
-  ![][Icon Fonts 1]
-
-- Social
-
-  ![][Icon Fonts 2]
-
-What follows are the steps you should take to create your own fonts, but first here are a few references that may interest you, or in the very least are good to have handy:
-
-- [How to make your own icon webfont][DIY Icon Fonts]
-- [HTML for Icon Font Usage][Icon Font HTML]
-- [The Big List of Flat Icons & Icon Fonts][Big List]
-- [Icomoon][]
-- [We Love Icon Fonts][Love]
-- [Getting Font-Face to work with the Asset Pipeline][Pipeline]
-- [Testing @font-face Support on Mobile and Tablet][Icon Font Support]
-
-#### Implementing Icon Fonts
-
-**Step 1**: Visit http://icomoon.io/app/ and select icons you wish to use. You can add more icon sets.
-
-NOTE: I generally load all the icon sets and search by keywords to compare across different sets, e.g. "social" for social icons.
-
-**Step 2**: Review and configure your selected fonts.
-
-NOTE: I generally keep the defaults but change the Preferences -> Font Name to "icon-fonts". You can also change the encoding – depending on the project – to PUA (Private Use Area), Symbols or Latin characters.
-
-**Step 3**: Download your fonts. Copy the zipped folder `fonts` into your `app/asset/images` folder. Save the original in `vendor/source`.
-
-**Step 4**: Create the HTML that will handle your new fonts, for example:
-
-    %a{:href => "/", :title => 'Home'}
-      %span{"aria-hidden" => "true", "data-icon" => "&#x2616;".html_safe}
-      %span.screen-reader-text Home
-
-Notice the Unicode value in the `data-icon` attribute? To find your Unicode values go back to your original download and open `index.html` in your browser. Also notice the `.html_safe ` method? This will ensure that the string is inserted unaltered into the output.
-
-**Step 5**: Pull your fonts into your project through `_define.sass` through the following:
-
-    // icon fonts...
-
-    @font-face
-      font-family: 'icon-fonts'
-      font-weight: normal
-      font-style: normal
-      src: font-url('icon-fonts.eot')
-      src: font-url('icon-fonts.eot?#iefix') format("embedded-opentype"), font-url('icon-fonts.svg#icon-fonts') format("svg"), font-url('icon-fonts.woff') format("woff"), font-url('icon-fonts.ttf') format("truetype")
-
-**Step 6**: Create the styles necessary to use your new font. Add the following styles mixin to `_mixin.sass`:
-
-    /*  Icon Fonts
-      -----------------------
-
-    @mixin data-icon
-      font-family: 'icon-fonts'
-      content: attr(data-icon)
-      speak: none
-      font-weight: normal
-      line-height: 1
-      -webkit-font-smoothing: antialiased
-
-Call your new mixin were needed as follows:
-
-    [data-icon]:before
-      +data-icon
-
-For example if needed in your footer:
-
-    footer
-      [data-icon]:before
-        +data-icon
+Obviously, color is a significant factor in your design and not just in readability.
 
 And that's it! Here is what our site looks like with are new icon fonts, typefaces and applied modular scale:
 
 ![][Multidevice]
 
-### Icon Sprites
-
-If you haven't guessed already, like regular fonts, icon fonts are not multicolor, and do not provide the full design possibilities found in image-based icons:
-
-![][Icon Sample]
-
-When using icons, it's best to save them in a single sprite. You can do this manually or you can let [Compass][Compass Sprites] do all the sprite creation work for you.
-
-NOTE: Ryan Bates provides an excellent tutorial on this called [Compass & CSS Sprites][Sprites].
-
-If you do decide to create icon sprites manually, and I'm not sure exactly why you would (hint, hint), when you lay out your icons it's better on the implementation side of things to have them line up horizontally (as opposed to vertically):
-
-![][Icon Slider]
-
-Right align your icons and place each icons top edge on an equidistant grid line whose coordinate is a multiple of 5 pixels. For example, the horizontal grid line coordinates for 4 icons that are 16px x 16px might be:
-
-0 (first image)<br>
-20px<br>
-40px<br>
-60px
-
-Using multiples of five makes it easier to find the Y coordinate in the CSS positioning property later on. The CSS positioning XY values for the above are:
-
-0, 0<br>
-0, -20px<br>
-0, -40px<br>
-0, -60px
-
-Experience has also shown me that having extra pixels of blankness between icons can be beneficial. For example, if icons are 32px x 32px, >40 pixel gridlines would be good:
-
-![][Icon Grid]
-
-Save your icon sprites as .gif's and .png's. .jpg's are really reserved for photos and not efficient for things like this, plus they do not preserve alpha transparencies which become an issue if backgrounds change in the future (kind of following in a roundabout way the old adage; "measure twice, cut once.").
-
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#foundation-styles
 [Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
-[Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
 [Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-8
 [Appendix 8 Combos]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#combinations
 [Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-9
 [Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-10
-[Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-11
 [Appendix 12]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-12
 
 [typography]:           http://blog.8thlight.com/billy-whited/2011/07/26/what-is-typography.html
@@ -578,11 +416,6 @@ Save your icon sprites as .gif's and .png's. .jpg's are really reserved for phot
 [CSS Font-Size]:        http://kyleschaeffer.com/user-experience/css-font-size-em-vs-px-vs-pt-vs/
 [Embracing em's]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
 
-[golden ratio]:         http://en.wikipedia.org/wiki/Golden_ratio
-[Modular Scale]:        http://modularscale.com/
-[scale]:                http://modularscale.com/scale/?px1=16&px2=30&ra1=1.618&ra2=0
-[Sassy Modular Scale]:  https://github.com/Team-Sass/modular-scale
-
 [readability]:          http://blog.8thlight.com/billy-whited/2011/08/23/readability.html
 [Count]:                http://www.gbsheli.com/2009/05/count-improved-wc-bookmarklet.html
 [Optimal]:              http://baymard.com/blog/line-length-readability
@@ -590,21 +423,8 @@ Save your icon sprites as .gif's and .png's. .jpg's are really reserved for phot
 [Meaningful Typography]: http://alistapart.com/article/more-meaningful-typography
 [somewhere]:            http://www.kaikkonendesign.fi/typography/section/11
 
-[DIY Icon Fonts]:       http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/
-[Icon Font HTML]:       http://css-tricks.com/html-for-icon-font-usage/
-[Icomoon]:              http://icomoon.io
-[Love]:                 http://weloveiconfonts.com/
-[Big List]:             http://css-tricks.com/flat-icons-icon-fonts/
-[Pipeline]:             http://myrailslearnings.wordpress.com/2012/05/01/getting-font-face-to-work-with-the-asset-pipeline/
-[Icon Font Support]:    http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet
-[Sprites]:              http://railscasts.com/episodes/334-compass-css-sprites
-[Compass Sprites]:      http://compass-style.org/help/tutorials/spriting/
-
 [Fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
 [Final Three]:          http://www.chrismaxwell.com/manifesto/chp-10/final-three.gif
 [Icon Fonts 1]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-nav.gif
 [Icon Fonts 2]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-social.gif
 [Multidevice]:          http://www.chrismaxwell.com/manifesto/chp-10/multidevice.png
-[Icon Sample]:          http://www.chrismaxwell.com/manifesto/chp-10/30-toolbar-icons.jpg
-[Icon Slider]:          http://www.chrismaxwell.com/manifesto/chp-10/icon-slider.png
-[Icon Grid]:            http://www.chrismaxwell.com/manifesto/chp-10/icon-grid.gif

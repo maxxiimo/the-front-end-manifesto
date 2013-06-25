@@ -19,7 +19,8 @@ The basic steps and components include:
 
 ...But practically speaking, how do you begin?
 
-### Step 1: Pick a Color
+Step 1: Pick a Color
+--------------------
 
 The first step in creating a color palette is to choose a base color. If you already have a logo to work with, the colors in the logo are good place to start from. Since I don't have a logo yet I'm going to borrow from a technique we used in the Font Family section of [Chapter 11][Adjectives]. Here is the list of adjectives used to choose a typeface:
 
@@ -106,7 +107,8 @@ Once you have an idea about the colors you want to use, find their hex values. I
 
 Let's bring these colors over to the color wheel.
 
-### Step 2: Use the Color Wheel
+Step 2: Use the Color Wheel
+---------------------------
 
 > The human brain will reject under-stimulating information. At the other extreme is a visual experience that is so overdone, so chaotic that the viewer can't stand to look at it. The human brain rejects what it can not organize, what it can not understand. The visual task requires that we present a logical structure. Color harmony delivers visual interest and a sense of order.
 
@@ -140,7 +142,8 @@ I like to play around with a couple different color wheels:
 
 With these tools you have a lot of color harmonies to play with.
 
-### Step 3: Look at Alternatives
+Step 3: Look at Alternatives
+----------------------------
 
 It's a good idea not to rely solely on the color wheel.
 
@@ -188,7 +191,8 @@ I'm strongly considering the following palettes:
 
 The last palette is a good example of finding inspiration from community palettes. Green was not at the top of my list, although I liked it.
 
-### Step 4: Apply
+Step 4: Apply
+-------------
 
 > With colors you can set a mood, attract attention, or make a statement. You can use color to energize, or to cool down. By selecting the right color scheme, you can create an ambiance of elegance, warmth or tranquility, or you can convey an image of playful youthfulness. Color can be your most powerful design element if you learn to use it effectively.
 
@@ -199,25 +203,6 @@ Like selecting a typeface, applying a color palette is a practice in trial and e
 I like to create different renditions of my color experimentation in different branches. It's okay to move your information blocks around, even reinvent the flow.
 
 After some heavy experimentation here are two ideas I came up with:
-
-
-
-Branding
---------
-
-
-
-Images
-------
-
-[jQuery Anystretch][]
-[Backstretch][]
-
-Embellishments
---------------
-
-[Sassy Buttons][]
-[Fancy Buttons][]
 
 [Color Wheels]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#color-wheels
 [number of tools]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#image-based-color-generators
@@ -248,12 +233,6 @@ Embellishments
 [Color Palette Generator]: http://jrm.cc/color-palette-generator/
 [Pictaculous]:          http://pictaculous.com/
 [Kuler]:                https://kuler.adobe.com/explore/
-
-[jQuery Anystretch]:    https://github.com/danmillar/jquery-anystretch
-[Backstretch]:          http://srobbin.com/jquery-plugins/backstretch/
-
-[Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
-[Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/
 
 [Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-10/pocket-color-wheel.jpg
 [Orange]:               http://www.chrismaxwell.com/manifesto/chp-10/orange.gif
