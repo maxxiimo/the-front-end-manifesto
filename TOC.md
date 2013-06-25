@@ -10,7 +10,7 @@ Table of Contents
 ### Chapter 1 - [Foundation Markup][Chapter 1]
   - [Views][]
       - [The Code][]
-  - [Laying down the Foundation][]
+  - [Foundation Set Up][]
       - [Groundwork Tasks][]
   - [Prep and Launch][]
 
@@ -189,7 +189,7 @@ Table of Contents
 
 [Views]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#views
 [The Code]:             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#the-code
-[Laying down the Foundation]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#laying-down-the-foundation
+[Foundation Set Up]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#foundation-set-up
 [Groundwork Tasks]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#groundwork-tasks
 [Prep and Launch]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#prep-and-launch
 
