@@ -67,11 +67,11 @@ Table of Contents
   - [Flexible Media][]
 
 ### Chapter 7 - [Susy][Chapter 7]
-  - [Set Up][]
+  - [Susy Set Up][]
   - [Implementation][]
   - [Susy in Action][]
   - [Susy Breakpoints][]
-      - [Set Up][]
+      - [Breakpoint Set Up][]
       - [Using Susy Breakpoints][]
 
 ### Chapter 8 - [Device Detection][Chapter 8]
@@ -237,12 +237,12 @@ Table of Contents
 [Em's and Media Queries]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md#ems-and-media-queries
 [Flexible Media]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md#flexible-media
 
-[Set Up]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#set-up
+[Susy Set Up]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy-set-up
 [Implementation]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#implementation
 [Susy in Action]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy-in-action
 [Susy Breakpoints]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#using-susy-breakpoints
-[Set Up]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#set-up-1
-[Using Susy Breakpoints]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#using-Susy-breakpoints
+[Breakpoint Set Up]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#breakpoint-set-up
+[Using Susy Breakpoints]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#using-susy-breakpoints
 
 [Mobvious]:             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#mobvious
 [Set Up]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#set-up

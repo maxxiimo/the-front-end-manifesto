@@ -11,8 +11,8 @@ In [Chapter 6][] we introduced the first component of Responsive Web Design, fle
 
 In this chapter we will implement Susy.
 
-Set Up
-------
+Susy Set Up
+-----------
 
 Set up is pretty straightforward:
 
@@ -161,7 +161,7 @@ Susy Breakpoints
 
 One of the great features of Susy is that breakpoints are baked right in. We could use the breakpoints we created in the [last chapter][Chapter 6], but why not take advantage of the mathematical capabilities of Susy and also be consistent with our grid system at the same time? Sounds like a good plan, and here's how we will use Susy breakpoints in our project.
 
-### Set Up
+### Breakpoint Set Up
 
 **Step 1**: Redefine our Susy flexible grid in `application.css.scss` as follows:
 
