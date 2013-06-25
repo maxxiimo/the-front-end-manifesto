@@ -163,8 +163,8 @@ Table of Contents
 - Appendix 11: [A Brief History of Web Font Sizes][Appendix 11]
 - Appendix 12: [Color Palettes, Tools and Collections][Appendix 12]
 
-[Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/COVER.md
-[The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
+[Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/COVER.md#the-front-end-manifesto
+[The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md#the-manifesto
 
 [Section I]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/section-1.md#setting-up-the-foundation
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#foundation-markup
