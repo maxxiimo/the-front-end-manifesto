@@ -150,18 +150,18 @@ Table of Contents
 [APPENDICES][Appendices]
 ------------------------
 
-- Appendix 1: [Frameworks][]
-- Appendix 2: [Grid Systems][]
-- Appendix 3: [Mobile Solutions Roundup][]
-- Appendix 4: [Mobylette and jQuery Mobile][]
-- Appendix 5: [Inspirational Sites][]
-- Appendix 6: [Placeholder Services][]
-- Appendix 7: [Feedback Services and Device Testing][]
-- Appendix 8: [Font Stack Roundup][]
-- Appendix 9: [Font Services and Tools][]
-- Appendix 10: [Choosing Typefaces][]
-- Appendix 11: [A Brief History of Web Font Sizes][]
-- Appendix 12: [Color Palettes, Tools and Collections][]
+- Appendix 1: [Frameworks][Appendix 1]
+- Appendix 2: [Grid Systems][Appendix 2]
+- Appendix 3: [Mobile Solutions Roundup][Appendix 3]
+- Appendix 4: [Mobylette and jQuery Mobile][Appendix 4]
+- Appendix 5: [Inspirational Sites][Appendix 5]
+- Appendix 6: [Placeholder Services][Appendix 6]
+- Appendix 7: [Feedback Services and Device Testing][Appendix 7]
+- Appendix 8: [Font Stack Roundup][Appendix 8]
+- Appendix 9: [Font Services and Tools][Appendix 9]
+- Appendix 10: [Choosing Typefaces][Appendix 10]
+- Appendix 11: [A Brief History of Web Font Sizes][Appendix 11]
+- Appendix 12: [Color Palettes, Tools and Collections][Appendix 12]
 
 [Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/COVER.md
 [The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
@@ -307,3 +307,17 @@ Table of Contents
 [Step 8: HTML for the Main Content]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-8-html-for-the-main-content
 [Step 9: Adding Styles]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-9-adding-styles
 [Step 10: Sprites and CSS3 for Images]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-10-sprites-and-css3-for-images
+
+[Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
+[Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
+[Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-3
+[Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
+[Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-5
+[Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-6
+[Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-7
+[Appendix 8]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-8
+[Appendix 9]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-9
+[Appendix 10]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-10
+[Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-11
+[Appendix 12]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-12
+
