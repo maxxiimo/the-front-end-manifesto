@@ -240,8 +240,8 @@ Table of Contents
 [Set Up]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#set-up
 [Implementation]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#implementation
 [Susy in Action]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy-in-action
-[Susy Breakpoints]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy-breakpoints
-[Set Up]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#set-up
+[Using Susy Breakpoints]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#using-susy-breakpoints
+[Set Up]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#set-up-1
 [Using Susy Breakpoints]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#using-Susy-breakpoints
 
 [Mobvious]:             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#mobvious
