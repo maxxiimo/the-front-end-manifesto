@@ -338,7 +338,7 @@ Moving forward in my design I now have constraints I can keep an eye on when siz
     // 8 columns
     // 42 / 5.236 = 8.021
 
-### Line Heigt (Leading)
+### Line Height (Leading)
 
 For line height there are a couple key things to keep in mind. You will need more line height when:
 
