@@ -103,7 +103,9 @@ Table of Contents
 
 #### Chapter 10 - [Visual Design for the Nondesigner][Chapter 10]
   - Paradigm Shift
-  - Typography
+  - Other Resources
+
+#### Chapter 11 - [Typography][Chapter 11]
   - Font Family
       - Step 1: Define Adjectives
       - Step 2: Use a Font Service
@@ -121,16 +123,18 @@ Table of Contents
   - Icons
       - Icon Fonts
       - Icon Sprites
-  - The Color Palette
+
+#### Chapter 12 - [The Color Palette][Chapter 12]
+  -
       - Step 1: Pick a Color
       - Step 2: Use the Color Wheel
       - Step 3: Look at Alternatives
       - Step 4: Apply
   - Branding
   - Images
-  - Other Resources
+  - Embellishments
 
-#### Chapter 11 - [Slicing and Dicing Mockups][Chapter 11]
+#### Chapter 13 - [Slicing and Dicing Mockups][Chapter 13]
   - Step 1 - Backgrounds
   - Step 2 - Set Widths
   - Step 3 - Fonts
@@ -175,5 +179,7 @@ Table of Contents
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
 [Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#visual-design-for-the-nondesigner
 [Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-slicing-and-dicing-mockups.md#slicing-and-dicing-mockups
+[Chapter 12]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-typography.md#typography
+[Chapter 13]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-the-color-palette.md#the-color-palette
 
 [Appendices]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendices
