@@ -236,7 +236,11 @@ Appendix 5
 
 ### Inspirational Sites
 
-In addition to reviewing competitor sites or similar services to help generate ideas, the following sites may also inspire or provide you with best practices/design patterns:
+In addition to reviewing competitor sites or similar services to help generate ideas, the following sites may also inspire or provide you with best practices/design patterns.
+
+Of the sites, there is one site that stands above the rest and belongs to no single category:
+
+[Inspiration | Web Design Ledger][WDL]
 
 #### Desktop
 
@@ -971,6 +975,7 @@ Appendix 12
 [jQuery Mobile Home]:   http://jquerymobile.com/
 [Get Compass to Work]:  http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
 
+[WDL]:                  http://webdesignledger.com/category/inspiration
 [Awwwards]:             http://www.awwwards.com/
 [Pattern Tap]:          http://patterntap.com/
 [UI Patterns]:          http://ui-patterns.com/
