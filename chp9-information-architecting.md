@@ -167,6 +167,10 @@ The end result: a well-defined user interface layout for my entire application.
 
 TIP: As you prototype always have an eye on your bookmarked reference websites, and/or some of the [inspirational sites][Appendix 5] listed in the Appendices. Revise and release often.
 
+Here are some inspirational examples of prototyping on paper:
+
+[UI & Wireframe Sketches for your Inspiration][Inspirational]
+
 Wireframing
 -----------
 
@@ -273,6 +277,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Interface Sketch]:     http://interfacesketch.tumblr.com/
 [Responsive Sketchsheets]: http://zurb.com/playground/responsive-sketchsheets
 [Mobile Sketching]:     http://uxdesign.smashingmagazine.com/2012/09/18/free-download-ux-sketching-wireframing-templates-mobile/
+[Inspirational]:        http://webdesignledger.com/inspiration/ui-wireframe-sketches-for-your-inspiration
 
 [Chapter 5 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#mobile-foundation#using-susy
 [Compass offers]:       http://compass-style.org/reference/compass/layout/grid_background/
