@@ -167,7 +167,7 @@ The end result: a well-defined user interface layout for my entire application.
 
 TIP: As you prototype always have an eye on your bookmarked reference websites, and/or some of the [inspirational sites][Appendix 5] listed in the Appendices. Revise and release often.
 
-Here are some inspirational examples of prototyping on paper:
+Here are some inspirational examples of prototyping on paper for your review:
 
 [UI & Wireframe Sketches for your Inspiration][Inspirational]
 
