@@ -139,16 +139,13 @@ Finally, choose a typeface and give it a test drive. Here are some different ide
 <br>
 As you can see, choosing fonts is a practice in trial and error. To help you frame the context of your decision making process take a look at the section entitled "[Choosing Typeface Articles][Appendix 10]" in Appendix 10.
 
-For View Thought I wasn't too crazy about any of the default combinations and ended up choosing three fonts from Typekit:
+For View Thought I wasn't too crazy about any of the default combinations and ended up choosing the following combination from Typekit:
 <br>
 <br>
 <br>
 ![][Final Three]
 <br>
 <br>
-- [Quatro Sans][] for the logo. We're building things at View Thought and this font captures that feeling.
-
-  > We are pleased to introduce you to Quatro Sans. An undeniably modern typeface with construction principles that attempt to find the balance between machine and hand.
 
 - [Rooney Web][] for the body text. I wanted to use a serif font and Rooney seemed to embody the right combination of serious and fun that I was looking for.
 
@@ -401,7 +398,6 @@ And that's it! Here is what our site looks like with are new icon fonts, typefac
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
 [_head.html.haml]:      https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_head.html.haml
 
-[Quatro Sans]:          http://cargocollective.com/pstype/Quatro-Sans
 [Rooney Web]:           http://www.janfromm.de/typefaces/rooney/overview/
 [CamingoDos Web]:       http://www.janfromm.de/typefaces/camingodos/overview/
 

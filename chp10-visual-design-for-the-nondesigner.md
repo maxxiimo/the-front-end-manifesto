@@ -41,6 +41,10 @@ The next two chapters are written to help developers along this path, but before
 Branding
 --------
 
+- [Quatro Sans][] for the logo. We're building things at View Thought and this font captures that feeling.
+
+  > We are pleased to introduce you to Quatro Sans. An undeniably modern typeface with construction principles that attempt to find the balance between machine and hand.
+
 [Beautiful and Simple Logos for your Delight][Inspiring Logos]
 
 Modular Scales
@@ -269,6 +273,7 @@ What follows are some ideas and resources to help you create your site's look an
 
 [agile design process]: http://webdesignledger.com/tips/applying-agile-principles-to-design
 
+[Quatro Sans]:          http://cargocollective.com/pstype/Quatro-Sans
 [Inspiring Logos]:      http://webdesignledger.com/inspiration/beautiful-and-simple-logos-for-your-delight
 
 [golden ratio]:         http://en.wikipedia.org/wiki/Golden_ratio
