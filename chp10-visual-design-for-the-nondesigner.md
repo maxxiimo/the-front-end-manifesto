@@ -18,7 +18,7 @@ Over the last several years I've noticed a paradigm shift in the role that front
 
 Discussion and changes could then be made around these mockups before any engineering costs were incurred; it was more efficient and cost-effective to do it this way. As a result decision-makers would gravitate towards brainstorming on usability, architecting, and the design aspects of a project at the graphic design phase in the development process: that began and oftentimes ended before front end engineers were really involved.
 
-Back then that kind of made sense, it was a simpler world, one design could almost fit all, and most things that happened in the browser could be replicated in a mockup. Consequently, front end developers found the bulk of their contribution to a project in implementing completed mockups: They understood what kind of code the backend team needed and how they would use it, and they had the skills necessary to turn graphic design into pixel perfect – the standard of excellence back then – cross browser friendly code.
+Back then that kind of made sense, it was a simpler world, one design could almost fit all, and things happening in the browser were not as super interactive as they are today. Consequently, front end developers found the bulk of their contribution to a project in implementing completed mockups: They understood what kind of code the backend team needed and how they would use it, and they had the skills necessary to turn graphic design into pixel perfect – the standard of excellence back then – cross browser friendly code.
 
 Fast-forward to today and everything has changed:
 
@@ -26,20 +26,22 @@ Fast-forward to today and everything has changed:
 - It is increasingly more efficient to produce dynamic and responsive prototypes with the benefits of CSS3, rather than static mockups.
 - Much of what is happening on the front end cannot be easily replicated in a static mockup.
 - Prototyping by nature is more representative of how a webpage will ultimately look and behave across different devices.
-- Prototyping allows for a more rapid, iterative, interactive, and agile design process.
+- Users can instantly access and interact with a prototype, not with a mockup.
 - One size no longer fits all. Technologies and devices are rapidly changing.
-- Understanding the resulting capabilities and/or limitations of browsers and devices used by end-users in a constantly evolving landscape is not a luxury but a necessity, and an area of expertise more often than not found with front end engineers.
+- Understanding the resulting capabilities and/or limitations of browsers and devices in a constantly evolving landscape is not a luxury but a necessity, and an area of expertise more often than not found with front end engineers.
 
 As a result of these changes; usability, architecting and design decisions are beginning to convalesce around the point in which front end code is written, prototyping, as opposed to around graphic design mockups. Design elements feed into prototyping, and are necessary, but today, the absence of front end developers in the design process is no longer an option.
 
-The takeaway in relation to this chapter is that as front end engineers we need to understand that our roles are changing. With the abilities of CSS3, think of yourself as artists of a new age. You are the handshake between design and backend engineering and can work in either realm. With this new role, in addition to coding prowess, understanding the elements of a good design, the art, is essential to the success of projects you will participate in.
+The end result of the paradigm shift for the design and development process is a more rapid, iterative, interactive, and [agile design process][].
+
+The takeaway in relation to this chapter is that as front end engineers you need to understand that your role is changing. With the abilities of CSS3, think of yourself as a coder and an artist. You are the handshake between design and backend engineering and can work in either realm. With this new role, in addition to coding prowess, understanding the elements of good design, the art, is essential to the success of projects you will participate in.
 
 The next two chapters are written to help developers along this path, but before exploring this art let me leave you with one final thought: never undervalue the hard earned design talents of graphic designers. Beautiful design is not easy.
 
 Branding
 --------
 
-
+[Beautiful and Simple Logos for your Delight][Inspiring Logos]
 
 Modular Scales
 --------------
@@ -204,8 +206,20 @@ Save your icon sprites as .gif's and .png's. .jpg's are really reserved for phot
 Images
 ------
 
+Just like with icons, images pack a lot of design punch. People are also much more responsive to pictures, especially of faces. Every time I've ever participated in eye tracking studies of users browsing a website, their eyes always gravitate towards people's faces.
+
+
+
+
+[20 Examples of Effective Image Usage in Web Design][Effective Image Use]
+
+
 [jQuery Anystretch][]
 [Backstretch][]
+
+
+[19 Inspiring Examples of Text Over Images in Web Design][Text Over Images]
+
 
 Embellishments
 --------------
@@ -213,8 +227,13 @@ Embellishments
 [Sassy Buttons][]
 [Fancy Buttons][]
 
+
+[6 jQuery Plugins for Scrolling Effects][6 Plugins]
+
 Other Resources
 ---------------
+
+[20 Single Page Web Designs to Inspire You][Single Page]
 
 What follows are some ideas and resources to help you create your site's look and feel:
 
@@ -248,6 +267,10 @@ What follows are some ideas and resources to help you create your site's look an
 [Dao]:                  http://www.alistapart.com/articles/dao
 [Story Design]:         http://24ways.org/2011/design-the-invisible/
 
+[agile design process]: http://webdesignledger.com/tips/applying-agile-principles-to-design
+
+[Inspiring Logos]:      http://webdesignledger.com/inspiration/beautiful-and-simple-logos-for-your-delight
+
 [golden ratio]:         http://en.wikipedia.org/wiki/Golden_ratio
 [scale]:                http://modularscale.com/scale/?px1=16&px2=30&ra1=1.618&ra2=0
 [Modular Scale]:        http://modularscale.com/
@@ -266,12 +289,16 @@ What follows are some ideas and resources to help you create your site's look an
 [Sprites]:              http://railscasts.com/episodes/334-compass-css-sprites
 [Compass Sprites]:      http://compass-style.org/help/tutorials/spriting/
 
+[Effective Image Use]:  http://webdesignledger.com/inspiration/20-examples-of-effective-image-usage-in-web-design
 [jQuery Anystretch]:    https://github.com/danmillar/jquery-anystretch
 [Backstretch]:          http://srobbin.com/jquery-plugins/backstretch/
+[Text Over Images]:     http://webdesignledger.com/inspiration/19-inspiring-examples-of-text-over-images-in-web-design
 
 [Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
 [Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/
+[6 Plugins]:            http://webdesignledger.com/tools/6-jquery-plugins-for-scrolling-effects
 
+[Single Page]:          http://webdesignledger.com/inspiration/20-single-page-designs-to-inspire-you
 [Premium Pixels]:       http://www.premiumpixels.com/
 [Designmodo]:                     http://designmodo.com/shop/
 [Flat Design]:          http://psd.fanextra.com/articles/flat-design-trend/
