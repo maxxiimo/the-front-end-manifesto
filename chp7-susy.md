@@ -188,37 +188,98 @@ We're starting from a total column size of 4 instead of 12 since we are approach
 
       +at-breakpoint($break5)
         +susy-grid-background
-        background-color: red
 
       +at-breakpoint($break6)
         +susy-grid-background
-        background-color: blue
 
       +at-breakpoint($break7)
         +susy-grid-background
-        background-color: green
 
       +at-breakpoint($break8)
         +susy-grid-background
-        background-color: yellow
 
       +at-breakpoint($break9)
         +susy-grid-background
-        background-color: aqua
 
       +at-breakpoint($break10)
         +susy-grid-background
-        background-color: brown
 
       +at-breakpoint($break11)
         +susy-grid-background
-        background-color: violet
 
       +at-breakpoint($break12)
         +susy-grid-background
+
+NOTE: To help me identify the breakpoint being utilized when testing devices I included the susy-grid-background mixin - which outlines each column in the grid with a background.
+
+You may also add the div `.rwd-marker` directly under the `<body>` tag for a numerical color-coded identifier. To activate it you will need the following styles:
+
+    /* RWD Marker
+      -----------------------
+
+    .rwd-marker
+      position: absolute
+      top: 100px
+      right: 100px
+      width: 100px
+      height: 100px
+      text-align: center
+      background-color: red
+      z-index: 1000
+      +border-radius(5px)
+      +opacity(.50)
+
+      +at-breakpoint($break5)
+        background-color: red
+
+      +at-breakpoint($break6)
+        background-color: blue
+
+      +at-breakpoint($break7)
+        background-color: green
+
+      +at-breakpoint($break8)
+        background-color: yellow
+
+      +at-breakpoint($break9)
+        background-color: aqua
+
+      +at-breakpoint($break10)
+        background-color: brown
+
+      +at-breakpoint($break11)
+        background-color: violet
+
+      +at-breakpoint($break12)
         background-color: white
 
-NOTE: To help me identify the breakpoint being utilized when testing devices I also included a colorcode for each breakpoint and the Susy susy-grid-background mixin - which outlines each column with a background.
+    .rwd-marker:before
+      content: "4"
+      font-size: 3.5em
+
+      +at-breakpoint($break5)
+        content: "5"
+
+      +at-breakpoint($break6)
+        content: "6"
+
+      +at-breakpoint($break7)
+        content: "7"
+
+      +at-breakpoint($break8)
+        content: "8"
+
+      +at-breakpoint($break9)
+        content: "9"
+
+      +at-breakpoint($break10)
+        content: "10"
+
+      +at-breakpoint($break11)
+        content: "11"
+
+      +at-breakpoint($break12)
+        content: "12"
 
 If you're curious, the above code produces the following @media rules:
 
@@ -300,7 +361,7 @@ Since we're using a base font size of 16px, if you multiply the em's value by 16
     $break9:            9;
     $break12:           12;
 
-**Step 5**: In `_layout.sass` remove the unneeded breakpoints plus the color-coded backgrounds:
+**Step 5**: In `_layout.sass` remove the unneeded breakpoints:
 
     .container
       +container($total-columns, $break6, $break9, $break12)
