@@ -135,7 +135,7 @@ To better organize and reduce clutter in our views, let's store our mobile views
 
 **Step 2**: We tell Rails that our mobile views are now located in this directory by adding the following `prepend_view_path` to our `prepare_for_mobile` method:
 
-    `application_controller.rb`:
+`application_controller.rb`:
 
     def prepare_for_mobile
       if request.env['mobvious.device_type'] == :mobile
