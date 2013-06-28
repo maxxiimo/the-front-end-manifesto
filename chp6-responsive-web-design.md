@@ -225,7 +225,7 @@ Here it is on an iPad:
 <br>
 ![][Image 2]
 
-I added a dotted red border to the both containing boxes to illustrate what happens when an image is rendered within a smaller containing element. One solution to this problem is to use:
+I added a dotted red border to the both containing boxes to illustrate what happens when an image is rendered within a smaller containing element. It bleeds through its borders. One solution to this problem is to use:
 
     overflow: hidden
 
@@ -239,14 +239,14 @@ As you can see part of the image is clipped. Fortunately, there is a simple solu
     img, embed, object, video
       max-width: 100%
 
-And just like that, in all modern browsers, your image will proportionally shrink to fit in its containing element, and you've covered several media types at the same time.
+And just like that, in all modern browsers, your image will proportionally shrink to fit in its containing element, and with this code you've covered several media types with the same effect.
 
 The end result:
 <br>
 <br>
 ![][Image 4]
 
-Of course to be completely responsive we will need to address font sizes and the space between the image and the text for this breakpoint.
+Of course to be completely responsive we should address font sizes and the space between the image and the text for this breakpoint.
 
 NOTE: IE 6 does not support max-width, you will need to use `width: 100%` and follow the directions [in this article][article].
 
