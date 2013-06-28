@@ -215,20 +215,38 @@ Flexible Media
 
 Now that we have a flexible grid system and understand media queries, it's time to look at the final ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a 320 pixel wide screen. It just doesn't make any sense?
 
-One thing you can do is use:
+Here's a practical example. Using breakpoints the following image looks fine on a desktop:
+<br>
+<br>
+![][Image 1]
+
+Here it is on an iPad:
+<br>
+<br>
+![][Image 2]
+
+I added a dotted red line around the images containing box to illustrate what happens to an image larger than its containing element. One solution to this problem is to use:
 
     overflow: hidden
+<br>
+<br>
+![][Image 3]
 
-Then 280 pixels of the image will be clipped, not really a responsive image. Using CSS you could add:
+As you can see, part of the image is clipped, not really a responsive image. Fortunately, there is a simple solution. Using CSS you could add:
 
     img, embed, object, video
       max-width: 100%
 
-And just like that, in all modern browsers, you've covered several media types.
+And just like that, in all modern browsers, you've covered several media types including our images `<img>` tag:
+<br>
+<br>
+![][Image 4]
 
-NOTE: IE 6 does not support max-width, you will need to use width: 100% and check out this [article][].
+Of course to be effectively responsive we will need to address font sizes and the space between the image and the text.
 
-But still, this isn't the silver bullet I'm looking for. One thing you need to consider is that in a smart phone, although the image will resize to its container, it's still a 600 pixel image and will weigh just the same.
+NOTE: IE 6 does not support max-width, you will need to use `width: 100%` and follow the directions [in this article][article].
+
+But still, this isn't the silver bullet I'm looking for. One thing you need to consider is that in a smart phone, although the image will resize to its container, it's still larger than necessary and consume unnecessary bandwidth. In mobile bandwidth is at a premium so wherever we can save on bandwidth we improve the user experience.
 
 [Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
@@ -263,3 +281,7 @@ But still, this isn't the silver bullet I'm looking for. One thing you need to c
 
 [Devices]:              http://chrismaxwell.com/manifesto/chp-6/devices.png
 [@media Definitions]:   http://chrismaxwell.com/manifesto/chp-6/media-queries.gif
+[Images 1]:             http://chrismaxwell.com/manifesto/chp-6/images-1.gif
+[Images 2]:             http://chrismaxwell.com/manifesto/chp-6/images-2.gif
+[Images 3]:             http://chrismaxwell.com/manifesto/chp-6/images-3.gif
+[Images 4]:             http://chrismaxwell.com/manifesto/chp-6/images-4.gif
