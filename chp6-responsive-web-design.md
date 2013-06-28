@@ -213,7 +213,7 @@ NOTE: You can convert pixels to em's by dividing the pixels by 16: assumption be
 Flexible Media
 --------------
 
-Now that we have a flexible grid system and understand media queries, it's time to look at the final ingredient in RWD; flexible media. Why flexible media? Imagine loading a 600 pixel wide image into a 320 pixel wide screen. It just doesn't make any sense?
+Now that we have a flexible grid system and understand media queries, it's time to look at the final ingredient in RWD: Flexible Media. Why flexible media? Imagine loading a 600 pixel wide image into a 320 pixel wide screen. What would happen?
 
 Here's a practical example. Using breakpoints the following image looks fine on a desktop:
 <br>
@@ -225,24 +225,28 @@ Here it is on an iPad:
 <br>
 ![][Image 2]
 
-I added a dotted red line around the images containing box to illustrate what happens to an image larger than its containing element. One solution to this problem is to use:
+I added a dotted red border to the both containing boxes to illustrate what happens when an image is rendered within a smaller containing element. One solution to this problem is to use:
 
     overflow: hidden
+
+The result:
 <br>
 <br>
 ![][Image 3]
 
-As you can see, part of the image is clipped, not really a responsive image. Fortunately, there is a simple solution. Using CSS you could add:
+As you can see part of the image is clipped. Fortunately, there is a simple solution to this problem. Add the following CSS:
 
     img, embed, object, video
       max-width: 100%
 
-And just like that, in all modern browsers, you've covered several media types including our images `<img>` tag:
+And just like that, in all modern browsers, your image will proportionally shrink to fit in its containing element, and you've covered several media types at the same time.
+
+The end result:
 <br>
 <br>
 ![][Image 4]
 
-Of course to be effectively responsive we will need to address font sizes and the space between the image and the text.
+Of course to be completely responsive we will need to address font sizes and the space between the image and the text for this breakpoint.
 
 NOTE: IE 6 does not support max-width, you will need to use `width: 100%` and follow the directions [in this article][article].
 
