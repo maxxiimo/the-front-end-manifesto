@@ -390,7 +390,8 @@ Add the following styles to your project stylesheets and delete or comment out t
         content: "12"
 
 
-### Using Susy Breakpoints
+Using Susy Breakpoints
+----------------------
 
 Let's revisit the `.left-side` and `.right-side` div's example, but this time using our newly defined Susy breakpoints. As mobile first developers we'll start with our base 4 column layout, and move our way to the 12 column layout.
 
