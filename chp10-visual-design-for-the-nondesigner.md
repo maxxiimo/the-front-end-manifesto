@@ -245,11 +245,16 @@ What follows are some ideas and resources to help you create your site's look an
 
 - Reverse engineer pieces of things you already like.
 
+http://patterntap.com/?sort_by=created&type=23047&style=All&platform=All&page=1
+http://patterntap.com/pattern/quote-sumail
+
 - Hire a graphic designer. With your layout organized via our wireframe work in the last chapter, half of the designers work is done. Now he or she needs to pull it all together with a stellar look and feel. When hiring a designer, make sure you let them know that the layout you have in place is not set in stone, this way your designer can add their experience to the project.
 
   Here are some resources for finding graphic designers:
 
   - XXX
+
+[PSD Freebies][]
 
 - Get a freebie and port it over to your application.
 
@@ -258,10 +263,12 @@ What follows are some ideas and resources to help you create your site's look an
 - Buy a template. Templates are significantly less expensive than hiring a graphic designer. As a front end coder implementing them into your layout should be a breeze. Here are some template resources:
 
   - [Premium Web UI Kits][Designmodo]
+  - [ThemeTrust][]
 
 - Read a tutorial.
 
   - [How to Nail the Coveted Flat Design Look (9 Actionable Tips)][Flat Design]
+  - [Jazz up a Static Webpage with Subtle Parallax][Jazzy Parallax]
   - [Web 2.0 Tutorials Round-Up][Web 2.0]
 
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
@@ -304,9 +311,12 @@ What follows are some ideas and resources to help you create your site's look an
 [6 Plugins]:            http://webdesignledger.com/tools/6-jquery-plugins-for-scrolling-effects
 
 [Single Page]:          http://webdesignledger.com/inspiration/20-single-page-designs-to-inspire-you
+[PSD Freebies]:         http://www.bestpsdfreebies.com/
 [Premium Pixels]:       http://www.premiumpixels.com/
-[Designmodo]:                     http://designmodo.com/shop/
+[Designmodo]:           http://designmodo.com/shop/
+[ThemeTrust]:           http://themetrust.com/themes
 [Flat Design]:          http://psd.fanextra.com/articles/flat-design-trend/
+[Jazzy Parallax]:       http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/jazz-up-a-static-webpage-with-subtle-parallax/
 [Web 2.0]:              http://www.smashingmagazine.com/2007/03/10/web-20-tutorials-round-up/
 
 [Icon Sample]:          http://www.chrismaxwell.com/manifesto/chp-10/30-toolbar-icons.jpg
