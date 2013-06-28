@@ -1,7 +1,7 @@
 Susy
 ====
 
-In [Chapter 6][] we introduced the first component of Responsive Web Design, flexible grids, and in that introduction I mentioned [Susy][], a [Compass][]-based grid system that could handle all the heavy lifting of math calculations for you:
+In [Chapter 6][] we introduced the first component of Responsive Web Design, flexible grids, and in that introduction I mentioned [Susy][], a [Compass][]-based grid system that could handle the heavy lifting of math calculations for you:
 
 > Your markup. Your design. Our math.
 >
