@@ -210,76 +210,44 @@ We're starting from a total column size of 4 instead of 12 since we are approach
       +at-breakpoint($break12)
         +susy-grid-background
 
-NOTE: To help me identify the breakpoint being utilized when testing devices I included the susy-grid-background mixin - which outlines each column in the grid with a background.
+NOTE: To help me identify the breakpoint being utilized when testing devices I included the `+susy-grid-background` mixin - which outlines each column in the grid with a background.
 
-You may also add the div `.rwd-marker` directly under the `<body>` tag for a numerical color-coded identifier. To activate it you will need the following styles:
+**Step 3**: Test your breakpoints. After reviewing the grid on several different devices I settle on the following:
 
-    /* RWD Marker
-      -----------------------
+- 4 columns, 19em x 16px = 304px (Samsung, iPhone)
+- 6 columns, 29em x 16px = 464px (Small Tablet)
+- 9 columns, 44em x 16px = 704px (iPad)
+- 12 columns, 59em x 16px = 944px (Desktop)
 
-    .rwd-marker
-      position: absolute
-      top: 100px
-      right: 100px
-      width: 100px
-      height: 100px
-      text-align: center
-      background-color: red
-      z-index: 1000
-      +border-radius(5px)
-      +opacity(.50)
+**Step 4**: Remove the unneeded breakpoints from `application.css.scss` which in my case leaves the following definitions:
 
-      +at-breakpoint($break5)
-        background-color: red
+    $total-columns:     4;
+    $column-width:      4em;
+    $gutter-width:      1em;
+    $grid-padding:      $gutter-width;
 
-      +at-breakpoint($break6)
-        background-color: blue
+    $break6:            6;
+    $break9:            9;
+    $break12:           12;
 
-      +at-breakpoint($break7)
-        background-color: green
+**Step 5**: In `_layout.sass` remove the unneeded breakpoints:
 
-      +at-breakpoint($break8)
-        background-color: yellow
-
-      +at-breakpoint($break9)
-        background-color: aqua
-
-      +at-breakpoint($break10)
-        background-color: brown
-
-      +at-breakpoint($break11)
-        background-color: violet
-
-      +at-breakpoint($break12)
-        background-color: white
-
-    .rwd-marker:before
-      content: "4"
-      font-size: 3.5em
-
-      +at-breakpoint($break5)
-        content: "5"
+    .container
+      +container($total-columns, $break6, $break9, $break12)
+      +susy-grid-background
 
       +at-breakpoint($break6)
-        content: "6"
-
-      +at-breakpoint($break7)
-        content: "7"
-
-      +at-breakpoint($break8)
-        content: "8"
+        +susy-grid-background
 
       +at-breakpoint($break9)
-        content: "9"
-
-      +at-breakpoint($break10)
-        content: "10"
-
-      +at-breakpoint($break11)
-        content: "11"
+        +susy-grid-background
 
       +at-breakpoint($break12)
-        content: "12"
+        +susy-grid-background
+
+And that's it! Now when you need to apply a particular style to a specific screen size use these breakpoints.
+
+### Output
 
 If you're curious, the above code produces the following @media rules:
 
@@ -343,40 +311,83 @@ Since we're using a base font size of 16px, if you multiply the em's value by 16
 - 11 columns: 54em x 16px = 864px
 - 12 columns: 59em x 16px = 944px
 
-**Step 3**: Test your breakpoints. After reviewing the grid on several different devices I settle on the following:
+### Grid Helper
 
-- 4 columns, 19em x 16px = 304px (Samsung, iPhone)
-- 6 columns, 29em x 16px = 464px (Small Tablet)
-- 9 columns, 44em x 16px = 704px (iPad)
-- 12 columns, 59em x 16px = 944px (Desktop)
+In addition to the `+susy-grid-background` mixin you may also add the div `.rwd-marker` directly under the `<body>` tag to help identify breakpoints. This helper produces a numerical color-coded identifier:
+<br>
+<br>
+![][RWD Marker]
+<br>
+<br>
+To activate it you will need to add the following styles to your project and delete or comment out the breakpoints you are not using:
 
-**Step 4**: Remove the unneeded breakpoints from `application.css.scss` which in my case leaves the following definitions:
+    /* RWD Marker
+      -----------------------
 
-    $total-columns:     4;
-    $column-width:      4em;
-    $gutter-width:      1em;
-    $grid-padding:      $gutter-width;
+    .rwd-marker
+      position: absolute
+      top: 100px
+      right: 100px
+      width: 100px
+      height: 100px
+      text-align: center
+      background-color: red
+      z-index: 1000
+      +border-radius(5px)
+      +opacity(.50)
 
-    $break6:            6;
-    $break9:            9;
-    $break12:           12;
-
-**Step 5**: In `_layout.sass` remove the unneeded breakpoints:
-
-    .container
-      +container($total-columns, $break6, $break9, $break12)
-      +susy-grid-background
+      +at-breakpoint($break5)
+        background-color: purple
 
       +at-breakpoint($break6)
-        +susy-grid-background
+        background-color: blue
+
+      +at-breakpoint($break7)
+        background-color: green
+
+      +at-breakpoint($break8)
+        background-color: yellow
 
       +at-breakpoint($break9)
-        +susy-grid-background
+        background-color: aqua
+
+      +at-breakpoint($break10)
+        background-color: brown
+
+      +at-breakpoint($break11)
+        background-color: violet
 
       +at-breakpoint($break12)
-        +susy-grid-background
+        background-color: orange
 
-And that's it! Now when you need to apply a particular style to a specific screen size use these breakpoints.
+    .rwd-marker:before
+      content: "4"
+      font-size: 3.5em
+
+      +at-breakpoint($break5)
+        content: "5"
+
+      +at-breakpoint($break6)
+        content: "6"
+
+      +at-breakpoint($break7)
+        content: "7"
+
+      +at-breakpoint($break8)
+        content: "8"
+
+      +at-breakpoint($break9)
+        content: "9"
+
+      +at-breakpoint($break10)
+        content: "10"
+
+      +at-breakpoint($break11)
+        content: "11"
+
+      +at-breakpoint($break12)
+        content: "12"
+
 
 ### Using Susy Breakpoints
 
@@ -450,3 +461,4 @@ To learn more on how Susy breakpoints work, in addition to the Susy's own [refer
 [Muppets]:              https://groups.google.com/d/topic/compass-users/oXHAtZE4euI/discussion
 
 [Susy Layout]:          http://chrismaxwell.com/manifesto/chp-7/susy-layout.png
+[RWD Marker]:           http://chrismaxwell.com/manifesto/chp-7/rwd-marker.gif
