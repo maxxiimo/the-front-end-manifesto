@@ -313,7 +313,7 @@ Since we're using a base font size of 16px, if you multiply the em's value by 16
 
 ### Grid Helper
 
-To help you identify the breakpoint you are working in add the div `.rwd-marker` directly under the `<body>` tag along with the styles below. This helper produces a numerical color-coded identifier:
+To help you identify which breakpoints are being utilized and when add the div `.rwd-marker` directly under the `<body>` tag along with the styles below. This helper produces a numerical color-coded identifier:
 <br>
 <br>
 <br>
