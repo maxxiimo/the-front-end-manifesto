@@ -210,7 +210,7 @@ We're starting from a total column size of 4 instead of 12 since we are approach
       +at-breakpoint($break12)
         +susy-grid-background
 
-NOTE: To help me identify the breakpoint being utilized when testing devices I included the `+susy-grid-background` mixin - which outlines each column in the grid with a background.
+NOTE: To help identify columns and the breakpoint being utilized when testing devices I include the `+susy-grid-background` mixin - which outlines each column in the grid with a background. The [Grid Helper][] below is also useful for this purpose.
 
 **Step 3**: Test your breakpoints. After reviewing the grid on several different devices I settle on the following:
 
@@ -313,13 +313,14 @@ Since we're using a base font size of 16px, if you multiply the em's value by 16
 
 ### Grid Helper
 
-In addition to the `+susy-grid-background` mixin you may also add the div `.rwd-marker` directly under the `<body>` tag to help identify breakpoints. This helper produces a numerical color-coded identifier:
+To help you identify the breakpoint you are working in add the div `.rwd-marker` directly under the `<body>` tag along with the styles below. This helper produces a numerical color-coded identifier:
+<br>
 <br>
 <br>
 ![][RWD Marker]
 <br>
 <br>
-To activate it you will need to add the following styles to your project and delete or comment out the breakpoints you are not using:
+Add the following styles to your project stylesheets and delete or comment out the breakpoints you are not using:
 
     /* RWD Marker
       -----------------------
@@ -456,6 +457,7 @@ To learn more on how Susy breakpoints work, in addition to the Susy's own [refer
 [basic settings]:       http://susy.oddbird.net/guides/reference/#ref-basic-settings
 [.container]:           http://susy.oddbird.net/guides/reference/#ref-basic-mixins
 [source]:               http://susy.oddbird.net/guides/getting-started/
+[Grid Helper]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#grid-helper
 [Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
 [Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
 [Muppets]:              https://groups.google.com/d/topic/compass-users/oXHAtZE4euI/discussion
