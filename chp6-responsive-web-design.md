@@ -281,7 +281,7 @@ But still, this isn't the silver bullet I'm looking for. One thing you need to c
 
 [Devices]:              http://chrismaxwell.com/manifesto/chp-6/devices.png
 [@media Definitions]:   http://chrismaxwell.com/manifesto/chp-6/media-queries.gif
-[Images 1]:             http://chrismaxwell.com/manifesto/chp-6/images-1.gif
-[Images 2]:             http://chrismaxwell.com/manifesto/chp-6/images-2.gif
-[Images 3]:             http://chrismaxwell.com/manifesto/chp-6/images-3.gif
-[Images 4]:             http://chrismaxwell.com/manifesto/chp-6/images-4.gif
+[Image 1]:              http://chrismaxwell.com/manifesto/chp-6/images-1.gif
+[Image 2]:              http://chrismaxwell.com/manifesto/chp-6/images-2.gif
+[Image 3]:              http://chrismaxwell.com/manifesto/chp-6/images-3.gif
+[Image 4]:              http://chrismaxwell.com/manifesto/chp-6/images-4.gif
