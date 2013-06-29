@@ -84,7 +84,7 @@ Other than all the Internet Explorer conditions, it's concise and simple. If you
 
     %header{:role => "banner"}
 
-It's good practice to always consider users that require assistive technology.
+It's good practice to always [consider][] users that require assistive technology.
 
 > Think in terms of all use cases including and especially accessibility.
 
@@ -271,6 +271,7 @@ In the [next chapter][Chapter 3], we will begin to set up our foundation styles.
 [_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_navigation.html.haml
 [_footer]:              https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_footer.html.haml
 [ARIA roles]:           http://www.w3.org/TR/wai-aria/roles#landmark_roles
+[consider]:             http://a11yproject.com/checklist.html
 
 [Unholy Rails]:         http://railsapps.github.com/rails-javascript-include-external.html
 [application.js]:       https://github.com/maxxiimo/base-haml/blob/master/assets/javascripts/application.js
