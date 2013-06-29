@@ -313,24 +313,19 @@ Since we're using a base font size of 16px, if you multiply the em's value by 16
 
 ### Grid Helper
 
-To help you identify which breakpoints are being utilized and when add the div `.rwd-marker` directly under the `<body>` tag along with the styles below. This helper produces a numerical color-coded identifier:
-<br>
-<br>
-<br>
-![][RWD Marker]
-<br>
-<br>
-Add the following styles to your project stylesheets and delete or comment out the breakpoints you are not using:
+To help you identify which breakpoints are being utilized and when add the following styles to your project stylesheets, and delete or comment out the breakpoints you are not using:
 
     /* RWD Marker
       -----------------------
 
-    .rwd-marker
+    body:after
+      content: "4"
       position: absolute
       top: 100px
       right: 100px
       width: 100px
       height: 100px
+      font-size: 3.5em
       text-align: center
       background-color: red
       z-index: 1000
@@ -339,56 +334,41 @@ Add the following styles to your project stylesheets and delete or comment out t
 
       +at-breakpoint($break5)
         background-color: purple
-
-      +at-breakpoint($break6)
-        background-color: blue
-
-      +at-breakpoint($break7)
-        background-color: green
-
-      +at-breakpoint($break8)
-        background-color: yellow
-
-      +at-breakpoint($break9)
-        background-color: aqua
-
-      +at-breakpoint($break10)
-        background-color: brown
-
-      +at-breakpoint($break11)
-        background-color: violet
-
-      +at-breakpoint($break12)
-        background-color: orange
-
-    .rwd-marker:before
-      content: "4"
-      font-size: 3.5em
-
-      +at-breakpoint($break5)
         content: "5"
 
       +at-breakpoint($break6)
+        background-color: blue
         content: "6"
 
       +at-breakpoint($break7)
+        background-color: green
         content: "7"
 
       +at-breakpoint($break8)
+        background-color: yellow
         content: "8"
 
       +at-breakpoint($break9)
+        background-color: aqua
         content: "9"
 
       +at-breakpoint($break10)
+        background-color: brown
         content: "10"
 
       +at-breakpoint($break11)
+        background-color: violet
         content: "11"
 
       +at-breakpoint($break12)
+        background-color: orange
         content: "12"
 
+This helper produces a numerical color-coded identifier:
+<br>
+<br>
+<br>
+![][RWD Marker]
 
 Using Susy Breakpoints
 ----------------------
