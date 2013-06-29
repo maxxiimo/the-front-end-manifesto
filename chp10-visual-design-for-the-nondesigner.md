@@ -267,6 +267,8 @@ http://patterntap.com/pattern/quote-sumail
 
 - Read a tutorial.
 
+http://css-tricks.com/triangle-with-shadow/
+
   - [How to Nail the Coveted Flat Design Look (9 Actionable Tips)][Flat Design]
   - [Jazz up a Static Webpage with Subtle Parallax][Jazzy Parallax]
   - [Web 2.0 Tutorials Round-Up][Web 2.0]

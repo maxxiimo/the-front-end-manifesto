@@ -367,7 +367,6 @@ To help you identify which breakpoints are being utilized and when add the follo
 This helper produces a numerical color-coded identifier:
 <br>
 <br>
-<br>
 ![][RWD Marker]
 
 Using Susy Breakpoints
