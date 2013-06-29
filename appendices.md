@@ -801,39 +801,45 @@ Appendix 12
 
     > To get started, choose a preferred color using the color picker below, and a 6-color matching palette (a "blend") will be automatically calculated.
 
-4.  [ColorExplorer][]
+4.  [Colorblind Web Page Filter][Colorblind]
+
+5.  [ColorExplorer][]
 
     > Simply put, ColorExplorer is an online toolbox for working with color palettes.
 
-5.  [Color Palette Creator][Palette Creator]
+6.  [Color Palette Creator][Palette Creator]
 
   > This tool was inspired directly by the excellent Creating Color Palettes article by Andy Clarke. It will create 10 shades of the base color, located top-left, at varying degrees of opacity.
 
-6.  [Color Schemer][]
+7.  [Color Schemer][]
 
   > Online Color Scheme Generator
 
-7.  [Colorspire][]
+8.  [Colorspire][]
 
   > Create Color Schemes, Test Color Combinations
 
-8.  [ColorTo.me][]
+9.  [ColorTo.me][]
 
     > Create an image, share a pallet.
 
-9.  [Contrast-A][]
+10. [Contrast Ratio[]
+
+    > Easily calculate color contrast ratios. Passing WCAG was never this easy!
+
+11. [Contrast-A][]
 
     > Contrast-A checks color combinations for sufficient contrast and displays the results according to WCAG 2.0 (Luminance Ratio) as well as the results according to older accessibility guidelines, WCAG 1.0 (Difference in Brightness and Color).
 
-10. [Grab Website Colors - Color Scheme Extraction Tool][Grab Colors]
+12. [Grab Website Colors - Color Scheme Extraction Tool][Grab Colors]
 
     > The website color extraction tool is used to grab colors from a website.
 
-11. [Infohound Color Schemer][Infohound]
+13. [Infohound Color Schemer][Infohound]
 
     > This color schemer is a simple tool to help you experiment with various color schemes for your next web or print project.
 
-12. [Mother-effing hsl][]
+14. [Mother-effing hsl][]
 
 #### Color Wheels
 
@@ -1138,11 +1144,13 @@ Appendix 12
 [0to255]:               http://0to255.com/
 [Color Blender]:        http://meyerweb.com/eric/tools/color-blend/
 [ColorBlender]:         http://www.colorblender.com/
+[Colorblind]:           http://colorfilter.wickline.org/
 [ColorExplorer]:        http://colorexplorer.com/
 [Palette Creator]:      http://slayeroffice.com/tools/color_palette/
 [Color Schemer]:        http://www.colorschemer.com/online.html
 [Colorspire]:           http://www.colorspire.com/
 [ColorTo.me]:           http://colorto.me/
+[Contrast Ratio]:       http://leaverou.github.io/contrast-ratio/
 [Contrast-A]:           http://www.dasplankton.de/ContrastA/
 [Grab Colors]:          http://www.colorcombos.com/grabcolors.html
 [Infohound]:            http://infohound.net/colour/
