@@ -204,6 +204,15 @@ I like to create different renditions of my color experimentation in different b
 
 After some heavy experimentation here are two ideas I came up with:
 
+
+
+[Gradients][]
+[Gradients]:           http://compass-style.org/examples/compass/css3/gradient/
+
+[Opacity][]
+[Opacity]:             http://compass-style.org/examples/compass/css3/opacity/
+
+
 [Color Wheels]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#color-wheels
 [number of tools]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#image-based-color-generators
 [Palettes]:             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#palettes
