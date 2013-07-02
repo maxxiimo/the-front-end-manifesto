@@ -215,7 +215,7 @@ Flexible Media
 
 Now that we have a flexible grid system and understand media queries, it's time to look at the final ingredient in RWD: Flexible Media. Why flexible media? Imagine loading a 600 pixel wide image into a 320 pixel wide screen. What would happen?
 
-Here's a practical example. Using breakpoints the following image looks fine on a desktop:
+Here's a practical example; using breakpoints the following image looks fine on a desktop:
 <br>
 <br>
 ![][Image 1]
@@ -234,12 +234,12 @@ The result:
 <br>
 ![][Image 3]
 
-As you can see part of the image is clipped. Fortunately, there is a simple solution to this problem. Add the following CSS:
+As you can see part of the image is clipped. Although this solution prevents the bleeding image issue, it's not the silver bullet we're looking for. We need the image to shrink relative to its containing element. Fortunately, there is a simple CSS technique that will accomplish this. Add the following style:
 
     img, embed, object, video
       max-width: 100%
 
-And just like that, in all modern browsers, your image will proportionally shrink to fit in its containing element, and with this code you've covered several media types with the same effect.
+And just like that, in all modern browsers, your image will proportionally shrink to fit in its containing element. With this code you've also covered several other media types.
 
 The end result:
 <br>
@@ -250,7 +250,20 @@ Of course to be completely responsive we should address font sizes and the space
 
 NOTE: IE 6 does not support max-width, you will need to use `width: 100%` and follow the directions [in this article][article].
 
-But still, this isn't the silver bullet I'm looking for. One thing you need to consider is that in a smart phone, although the image will resize to its container, it's still larger than necessary and consume unnecessary bandwidth. In mobile bandwidth is at a premium so wherever we can save on bandwidth we improve the user experience.
+But still, this isn't the silver bullet I'm looking for. One thing you need to consider is that in a smart phone, although the image will resize to its container, it's still larger than necessary and will consume bandwidth. In mobile bandwidth comes at a premium so wherever we can save on bandwidth we improve the user experience.
+
+One possible solution is to serve a completely different lighter image for smaller screens using the CSS background property:
+
+    .images-container
+      background: image-url("icons/devices-100px.png") 0 0 no-repeat
+
+      @include breakpoint(m)
+        background: image-url("icons/devices-200px.png") 0 0 no-repeat
+
+      @include breakpoint(l)
+      background: image-url("icons/devices-350px.png") 0 0 no-repeat
+
+The beauty of this method comes in the bandwidth savings, but the drawback is the need to create multiple images.
 
 [Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
