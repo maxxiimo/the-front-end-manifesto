@@ -225,7 +225,12 @@ Here it is on an iPad:
 <br>
 ![][Image 2]
 
-I added a dotted red border to the both containing boxes to illustrate what happens when an image is rendered within a smaller containing element. It bleeds through its borders. One solution to this problem is to use:
+I added a dotted red border to the both containing boxes to illustrate what happens when an image is rendered within a smaller containing element. It bleeds through its borders.
+
+
+### Overflow and Maximum Widths
+
+One solution to this problem is to use:
 
     overflow: hidden
 
@@ -239,7 +244,7 @@ As you can see part of the image is clipped. Although this solution prevents the
     img, embed, object, video
       max-width: 100%
 
-And just like that, in all modern browsers, your image will proportionally shrink to fit in its containing element. With this code you've also covered several other media types.
+And just like that, in all modern browsers, your image will proportionally shrink to fit in its containing element, and with this technique you've also covered several other media types.
 
 The end result:
 <br>
@@ -251,6 +256,8 @@ Of course to be completely responsive we should address font sizes and the space
 NOTE: IE 6 does not support max-width, you will need to use `width: 100%` and follow the directions [in this article][article].
 
 But still, this isn't the silver bullet I'm looking for. One thing you need to consider is that in a smart phone, although the image will resize to its container, it's still larger than necessary and will consume bandwidth. In mobile bandwidth comes at a premium so wherever we can save on bandwidth we improve the user experience.
+
+### CSS Background Property
 
 One possible solution is to serve a completely different lighter image for smaller screens using the CSS background property:
 

@@ -65,6 +65,8 @@ Table of Contents
       - [Breakpoint Mixin][]
       - [Em's and Media Queries][]
   - [Flexible Media][]
+    - [Overflow and Maximum Widths][]
+    - [CSS Background Property][]
 
 ### Chapter 7 - [Susy][Chapter 7]
   - [Susy Set Up][]
@@ -238,6 +240,8 @@ Table of Contents
 [Breakpoint Mixin]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md#breakpoint-mixin
 [Em's and Media Queries]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md#ems-and-media-queries
 [Flexible Media]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md#flexible-media
+[Overflow and Maximum Widths]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md#overflow-and-maximum-widths
+[CSS Background Property]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp6-responsive-web-design.md#css-background-property
 
 [Susy Set Up]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy-set-up
 [Implementation]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#implementation
