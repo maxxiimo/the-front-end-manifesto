@@ -313,12 +313,16 @@ Since we're using a base font size of 16px, if you multiply the em's value by 16
 
 ### Grid Helper
 
-To help you identify which breakpoints are being utilized and when add the following styles to your project stylesheets, and delete or comment out the breakpoints you are not using:
+To help you identify which breakpoints are being utilized and when add the following mixin to your `_mixins.sass` partial. Delete or comment out the breakpoints you are not using:
 
     /* RWD Marker
       -----------------------
 
-    body:after
+
+/* RWD Marker
+  -----------------------
+
+    @mixin rwd-marker
       content: "4"
       position: absolute
       top: 100px
@@ -364,7 +368,21 @@ To help you identify which breakpoints are being utilized and when add the follo
         background-color: orange
         content: "12"
 
-This helper produces a numerical color-coded identifier:
+Then add the following property below any element you wish to mark:
+
+    &:after
+      +rwd-marker
+
+For example:
+
+body
+  font-size: $base-font-size
+  line-height: $base-line-height
+  background-color: $bg-body
+    &:after
+      +rwd-marker
+
+This helper produces a numerical color-coded identifier that makes it easy to see what break point you are currently viewing without the use of the Susy grid line mixin:
 <br>
 <br>
 ![][RWD Marker]
