@@ -223,6 +223,9 @@ Just like with icons, images pack a lot of design punch. People are also much mo
 
 
 [19 Inspiring Examples of Text Over Images in Web Design][Text Over Images]
+[21 Inspiring Examples of Big Images in Web Design][Big Images]
+
+
 
 
 Embellishments
@@ -264,6 +267,8 @@ http://patterntap.com/pattern/quote-sumail
 
   - [Premium Web UI Kits][Designmodo]
   - [ThemeTrust][]
+
+http://www.squarespace.com/templates/
 
 - Read a tutorial.
 
@@ -307,6 +312,7 @@ http://css-tricks.com/triangle-with-shadow/
 [jQuery Anystretch]:    https://github.com/danmillar/jquery-anystretch
 [Backstretch]:          http://srobbin.com/jquery-plugins/backstretch/
 [Text Over Images]:     http://webdesignledger.com/inspiration/19-inspiring-examples-of-text-over-images-in-web-design
+[Big Images]:           http://webdesignledger.com/inspiration/21-inspiring-examples-of-big-images-in-web-design
 
 [Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
 [Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/

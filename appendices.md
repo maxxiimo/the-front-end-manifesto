@@ -351,6 +351,7 @@ There are a lot of Lorem Ipsum generator services out there (some of them are ki
 7. [Cupcake Ipsum][]
 8. [Bacon Ipsum][]
 9. [T'lipsum][]
+10 [Picksum Ipsum][]
 
 Image placeholders in different sizes and styles are also plentiful. The second link will give you a pretty comprehensive list to choose from, followed by two that are not included in the list that I list separately for thoroughness:
 
@@ -1019,6 +1020,7 @@ Appendix 12
 [Cupcake Ipsum]:        http://cupcakeipsum.com/
 [Bacon Ipsum]:          http://baconipsum.com/
 [T'lipsum]:             http://tlipsum.appspot.com/
+[Picksum Ipsum]:        http://www.picksumipsum.co.uk/
 
 [Toolbox 2]:            https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=image+placeholders
 [Image Generators]:     http://www.russellheimlich.com/blog/list-of-dummy-image-generators/
