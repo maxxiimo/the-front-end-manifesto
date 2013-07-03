@@ -318,14 +318,15 @@ To help you identify which breakpoints are being utilized and when add the follo
     /* RWD Marker
       -----------------------
 
-    @mixin rwd-marker
+    @mixin rwd-marker($box: 75px, $font: 50px)
       content: "4"
       position: absolute
-      top: 100px
-      right: 100px
-      width: 100px
-      height: 100px
-      font-size: 3.5em
+      top: $box
+      right: $box
+      width: $box
+      height: $box
+      line-height: $box * .90
+      font-size: $font
       text-align: center
       background-color: red
       z-index: 1000
@@ -371,14 +372,14 @@ Then add the following property below any element you wish to mark:
 
 For example:
 
-body
-  font-size: $base-font-size
-  line-height: $base-line-height
-  background-color: $bg-body
-    &:after
-      +rwd-marker
+    body
+      font-size: $base-font-size
+      line-height: $base-line-height
+      background-color: $bg-body
+      &:after
+        +rwd-marker
 
-This helper produces a numerical color-coded identifier that makes it easy to see what break point you are currently viewing without the use of the Susy grid line mixin:
+This helper produces a numerical color-coded identifier that makes it easy to see what break point you are currently viewing:
 <br>
 <br>
 ![][Marker]
