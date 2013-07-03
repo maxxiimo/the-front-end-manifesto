@@ -381,7 +381,7 @@ body
 This helper produces a numerical color-coded identifier that makes it easy to see what break point you are currently viewing without the use of the Susy grid line mixin:
 <br>
 <br>
-![][RWD Marker]
+![][Marker]
 
 Using Susy Breakpoints
 ----------------------
@@ -457,4 +457,4 @@ To learn more on how Susy breakpoints work, in addition to the Susy's own [refer
 [Muppets]:              https://groups.google.com/d/topic/compass-users/oXHAtZE4euI/discussion
 
 [Susy Layout]:          http://chrismaxwell.com/manifesto/chp-7/susy-layout.png
-[RWD Marker]:           http://chrismaxwell.com/manifesto/chp-7/rwd-marker.gif
+[Marker]:               http://chrismaxwell.com/manifesto/chp-7/rwd-marker.gif
