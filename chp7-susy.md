@@ -313,10 +313,10 @@ Since we're using a base font size of 16px, if you multiply the em's value by 16
 
 ### RWD Marker
 
-To help you identify which breakpoints are being utilized and when add the following mixin to your `_mixins.sass` partial. Delete or comment out the breakpoints you are not using:
+To help you identify which breakpoints are being utilized and when, your `_mixins.sass` partial includes the following mixin. Uncomment the breakpoints you are using:
 
-    /* RWD Marker
-      -----------------------
+/* RWD Marker
+  -----------------------
 
     @mixin rwd-marker($box: 75px, $font: 50px)
       content: "4"
@@ -333,39 +333,39 @@ To help you identify which breakpoints are being utilized and when add the follo
       +border-radius(5px)
       +opacity(.50)
 
-      +at-breakpoint($break5)
-        background-color: purple
-        content: "5"
+      // +at-breakpoint($break5)
+      //   background-color: purple
+      //   content: "5"
 
-      +at-breakpoint($break6)
-        background-color: blue
-        content: "6"
+      // +at-breakpoint($break6)
+      //   background-color: blue
+      //   content: "6"
 
-      +at-breakpoint($break7)
-        background-color: green
-        content: "7"
+      // +at-breakpoint($break7)
+      //   background-color: green
+      //   content: "7"
 
-      +at-breakpoint($break8)
-        background-color: yellow
-        content: "8"
+      // +at-breakpoint($break8)
+      //   background-color: yellow
+      //   content: "8"
 
-      +at-breakpoint($break9)
-        background-color: aqua
-        content: "9"
+      // +at-breakpoint($break9)
+      //   background-color: aqua
+      //   content: "9"
 
-      +at-breakpoint($break10)
-        background-color: brown
-        content: "10"
+      // +at-breakpoint($break10)
+      //   background-color: brown
+      //   content: "10"
 
-      +at-breakpoint($break11)
-        background-color: violet
-        content: "11"
+      // +at-breakpoint($break11)
+      //   background-color: violet
+      //   content: "11"
 
-      +at-breakpoint($break12)
-        background-color: orange
-        content: "12"
+      // +at-breakpoint($break12)
+      //   background-color: orange
+      //   content: "12"
 
-Then add the following property below any element you wish to mark:
+Then add the following property to any element you wish to mark:
 
     &:after
       +rwd-marker
@@ -379,7 +379,7 @@ For example:
       &:after
         +rwd-marker
 
-This helper produces a numerical color-coded identifier that makes it easy to see what break point you are currently viewing:
+This helper produces a numerical color-coded identifier that makes it easy to see what breakpoints you are using:
 <br>
 <br>
 ![][Marker]
