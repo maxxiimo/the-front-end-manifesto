@@ -277,7 +277,7 @@ NOTE: `views/mobile/layouts/application.html.haml` is coded with mobile in mind 
 
 NOTE: `views/layouts/application.css.scss` is designed to take advantage of the greater capabilities of devices with > 9 columns (704 pixels) screen widths. If a false positive squeaks by, the desktop version of `application.css.scss` is coded to handle the < 6 columns cases as well (although > 9 columns assets and elements might be received by the smaller device and therefore the experience is not optimized).
 
-I personally really like this approach. To see how I have organized this in a live application, feel free to clone or poke around https://github.com/maxxiimo/viewthought.
+I personally really like this approach, but a word of caution, doing so creates a significant amount of code duplication and you are more likely to forget to do something you did in one code base in the other. To see how I have organized this in a live application, feel free to clone or poke around https://github.com/maxxiimo/viewthought.
 
 Using JavaScript
 ----------------
