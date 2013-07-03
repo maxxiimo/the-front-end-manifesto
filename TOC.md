@@ -75,7 +75,7 @@ Table of Contents
   - [Susy Breakpoints][]
       - [Breakpoint Set Up][]
       - [Output][]
-      - [Grid Helper][]
+      - [RWD Marker][]
   - [Using Susy Breakpoints][]
 
 ### Chapter 8 - [Device Detection][Chapter 8]
@@ -249,7 +249,7 @@ Table of Contents
 [Susy Breakpoints]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#using-susy-breakpoints
 [Breakpoint Set Up]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#breakpoint-set-up
 [Output]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#output
-[Grid Helper]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#grid-helper
+[RWD Marker]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#rwd-marker
 [Using Susy Breakpoints]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#using-susy-breakpoints
 
 [Mobvious]:             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#mobvious

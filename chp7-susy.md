@@ -210,7 +210,7 @@ We're starting from a total column size of 4 instead of 12 since we are approach
       +at-breakpoint($break12)
         +susy-grid-background
 
-NOTE: To help identify columns and the breakpoint being utilized when testing devices I include the `+susy-grid-background` mixin - which outlines each column in the grid with a background. The [Grid Helper][] below is also useful for this purpose.
+NOTE: To help identify columns and the breakpoint being utilized when testing devices I include the `+susy-grid-background` mixin - which outlines each column in the grid with a background. The [RWD Marker][] below is also useful for this purpose.
 
 **Step 3**: Test your breakpoints. After reviewing the grid on several different devices I settle on the following:
 
@@ -311,16 +311,12 @@ Since we're using a base font size of 16px, if you multiply the em's value by 16
 - 11 columns: 54em x 16px = 864px
 - 12 columns: 59em x 16px = 944px
 
-### Grid Helper
+### RWD Marker
 
 To help you identify which breakpoints are being utilized and when add the following mixin to your `_mixins.sass` partial. Delete or comment out the breakpoints you are not using:
 
     /* RWD Marker
       -----------------------
-
-
-/* RWD Marker
-  -----------------------
 
     @mixin rwd-marker
       content: "4"
@@ -455,7 +451,7 @@ To learn more on how Susy breakpoints work, in addition to the Susy's own [refer
 [basic settings]:       http://susy.oddbird.net/guides/reference/#ref-basic-settings
 [.container]:           http://susy.oddbird.net/guides/reference/#ref-basic-mixins
 [source]:               http://susy.oddbird.net/guides/getting-started/
-[Grid Helper]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#grid-helper
+[RWD Marker]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#rwd-marker
 [Susy Grids]:           http://net.tutsplus.com/tutorials/html-css-techniques/responsive-grids-with-susy/
 [Off-canvas]:           http://oddbird.net/2012/11/27/susy-off-canvas/
 [Muppets]:              https://groups.google.com/d/topic/compass-users/oXHAtZE4euI/discussion
