@@ -210,21 +210,16 @@ Save your icon sprites as .gif's and .png's. .jpg's are really reserved for phot
 Images
 ------
 
-Just like with icons, images pack a lot of design punch. People are also much more responsive to pictures, especially of faces. Every time I've ever participated in eye tracking studies of users browsing a website, their eyes always gravitate towards people's faces.
-
-
+Just like with icons, images pack a lot of design punch. People are also much more responsive to pictures, especially of faces. In eye tracking studies I have participated in, users gravitated  heaviest on people's faces.
 
 
 [20 Examples of Effective Image Usage in Web Design][Effective Image Use]
+[21 Inspiring Examples of Big Images in Web Design][Big Images]
+[19 Inspiring Examples of Text Over Images in Web Design][Text Over Images]
 
 
 [jQuery Anystretch][]
 [Backstretch][]
-
-
-[19 Inspiring Examples of Text Over Images in Web Design][Text Over Images]
-[21 Inspiring Examples of Big Images in Web Design][Big Images]
-
 
 
 
@@ -237,19 +232,30 @@ Embellishments
 
 [6 jQuery Plugins for Scrolling Effects][6 Plugins]
 
+
+[CSS Triangle][]
+[The Shapes of CSS][CSS Shapes]
+[Triangle With Shadow][]
+
+
 Other Resources
 ---------------
 
+The devil is in the details. It's the little things, the details, that make a design come to life. What kind of things? Maybe a gradient between panels, or a simple border. The best way to find design detail inspiration is by visiting websites you like or are renowned for good design. Look at the underlying code and learn the techniques used to implement the design detail. Once you understand the technique, you can apply it to your own creation in a new and unique way.
+
+One thing I like to do is browse websites that have inspired me, and when I see an element that I like I snap a screenshot of it and name the file the domain name I snapped it from. Later on I can review all of my snapshots and decide if I'm interested in applying a similar technique to my design.
+
 [20 Single Page Web Designs to Inspire You][Single Page]
-
-What follows are some ideas and resources to help you create your site's look and feel:
-
-- Use a framework. We listed several frameworks you can use in the [Frameworks][Appendix 1] section of the Appendices.
 
 - Reverse engineer pieces of things you already like.
 
 http://patterntap.com/?sort_by=created&type=23047&style=All&platform=All&page=1
 http://patterntap.com/pattern/quote-sumail
+
+What follows are some ideas and resources to help you create your site's look and feel:
+
+- Use a framework. We listed several frameworks you can use in the [Frameworks][Appendix 1] section of the Appendices.
+
 
 - Hire a graphic designer. With your layout organized via our wireframe work in the last chapter, half of the designers work is done. Now he or she needs to pull it all together with a stellar look and feel. When hiring a designer, make sure you let them know that the layout you have in place is not set in stone, this way your designer can add their experience to the project.
 
@@ -309,14 +315,17 @@ http://css-tricks.com/triangle-with-shadow/
 [Compass Sprites]:      http://compass-style.org/help/tutorials/spriting/
 
 [Effective Image Use]:  http://webdesignledger.com/inspiration/20-examples-of-effective-image-usage-in-web-design
+[Big Images]:           http://webdesignledger.com/inspiration/21-inspiring-examples-of-big-images-in-web-design
+[Text Over Images]:     http://webdesignledger.com/inspiration/19-inspiring-examples-of-text-over-images-in-web-design
 [jQuery Anystretch]:    https://github.com/danmillar/jquery-anystretch
 [Backstretch]:          http://srobbin.com/jquery-plugins/backstretch/
-[Text Over Images]:     http://webdesignledger.com/inspiration/19-inspiring-examples-of-text-over-images-in-web-design
-[Big Images]:           http://webdesignledger.com/inspiration/21-inspiring-examples-of-big-images-in-web-design
 
 [Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
 [Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/
 [6 Plugins]:            http://webdesignledger.com/tools/6-jquery-plugins-for-scrolling-effects
+[CSS Triangle]:         http://css-tricks.com/snippets/css/css-triangle/
+[CSS Shapes]:           http://css-tricks.com/examples/ShapesOfCSS/
+[Triangle With Shadow]: http://css-tricks.com/triangle-with-shadow/
 
 [Single Page]:          http://webdesignledger.com/inspiration/20-single-page-designs-to-inspire-you
 [PSD Freebies]:         http://www.bestpsdfreebies.com/
