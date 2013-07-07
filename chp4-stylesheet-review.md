@@ -357,9 +357,25 @@ To keep the code DRY we consolidate common code between the two:
 
 While variables do not explicitly DRY up your code, they kind of do and here's how:
 
-In the code above I specify a variable for the background-color of "$white". At first glance you might think why not just use #FFF or "white", as if in this case "six in one hand, half a dozen in the other" holds true, but what if later in the applications lifecycle I want to use a different shade of white? For example #fcfcfc. I would have to find every single instance of either #fff or "white" and swap it out with the new value.
+In the code above I specify a variable for the background-color of `$white`. At first glance you might think why not just use `#FFF` or `white`, as if in this case "six in one hand, half a dozen in the other" holds true, but what if later in the applications lifecycle I want to use a different shade of white? For example `#fcfcfc`. I would have to find every single instance of either `#FFF` or `white` and swap it out with the new value.
 
-By using variables, which I always locate in my *_define.sass* style partial, I can make the change in one instance and affect styles everywhere the variable is used. Not quite DRY, but kinda'.
+By using variables, which I always locate in my `_define.sass` style partial, I can make the change in one instance and affect styles everywhere the variable is used. Not quite DRY, but kinda'.
+
+When I name variables I typically namespace them by a common function:
+
+// background...
+
+    $bg-body:           $whitesmoke
+    $bg-container:      $whitesmoke
+    $bg-header:         $white
+    $bg-hero:           $navy-blue
+    $bg-manifesto:      $blue-gray
+    $bg-quote:          $white
+    $bg-footer:         $gray
+
+Doing so keeps my code organized and easy to search and auto complete in my text editor. The following article gives a great write up on namespacing variables:
+
+[Quick Tip: Name Your SASS Variables Modularly][Namespace]
 
 ### Mixins
 
@@ -548,6 +564,8 @@ The following reference will give you some great ideas:
 [aB vs. a_b]:           http://stackoverflow.com/questions/1437527/css-camelcase-vs-under-score
 [Identifiers]:          http://stackoverflow.com/questions/1686337/hyphens-or-underscores-in-css-and-html-identifiers
 [Sucks]:                http://csswizardry.com/2010/12/css-camel-case-seriously-sucks/
+
+[Namespace]:            http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-name-your-sass-variables-modularly/
 
 [Mixins in SASS]:       http://thecodingdesigner.com/tutorials/mixins-sass
 [Sass documentation]:   http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
