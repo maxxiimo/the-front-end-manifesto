@@ -547,11 +547,15 @@ Here you will find recommendations for:
 
     > Pairing fonts can be a challenge. Selecting two or more fonts which work well is one thing – selecting two which work together to achieve your typographic aims may have you reaching for the aspirin. Let’s see if we can alleviate any headaches. This guide will help you get started with font pairing for the web.
 
-7.  [Combining Typefaces][]
+7.  [Pairing Fonts is Like Feeding Children..][Pairing Fonts]
+
+    > When starting a web design project there are a lot of difficult decisions to make, including the classic: selecting fonts. Well executed typography can engage visitors, when they’d otherwise perhaps skim over the main body of content.
+
+8.  [Combining Typefaces][]
 
     > Combining typefaces is challenging and fun, but it takes practice. Successful combinations are partly a matter of good taste, which can be tough to develop.
 
-8.  [Typeface Combinations][]
+9.  [Typeface Combinations][]
 
     > Although the idea of typeface combining revolves around contrast, the best serif and sans serif combinations have similar characteristics.
 
@@ -1069,9 +1073,10 @@ Appendix 12
 [19 Combinations]:      http://bonfx.com/19-top-fonts-in-19-top-combinations/
 [Four Techniques]:      http://www.typography.com/email/2010_03/index_tw.htm
 [Google Fonts]:         http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/
+[25 Combinations]:      http://tympanus.net/codrops/2011/11/12/25-fresh-examples-of-beautiful-typeface-combinations-in-web-design/
 [More Google Fonts]:    http://designshack.net/articles/typography/10-more-great-google-font-combinations-you-can-copy/
 [Beginners Guide]:      http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/
-[25 Combinations]:      http://tympanus.net/codrops/2011/11/12/25-fresh-examples-of-beautiful-typeface-combinations-in-web-design/
+[Pairing Fonts]:        http://webdesign.tutsplus.com/articles/typography-articles/pairing-fonts-is-like-feeding-children/
 [Combining Typefaces]:  http://www.fivesimplesteps.com/products/combining-typefaces
 [Typeface Combinations]: http://www.peatah.org/combinations2.html
 
