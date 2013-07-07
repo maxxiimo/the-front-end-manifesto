@@ -23,7 +23,7 @@ Appendices
     :: A roundup of UX feedback services, and articles on device testing.
 
 8.  [Font Stack Roundup][Appendix 8]
-    :: Different font stack combinations, fallbacks, surveys and code.
+    :: Different Web safe fonts, font stack combinations and fallbacks, typeface pairings, mobile fonts and typography classifications and definitions.
 
 9.  [Font Services and Tools][Appendix 9]
     :: A jackpot listing of font services and tools to help you deliver a great typographic experience.
