@@ -248,19 +248,23 @@ Of the sites, there is one site that stands above the rest and belongs to no sin
 
     > Awwwards are the awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.
 
-2.  [Pattern Tap][]
+2.  [One Page Love][]
+
+    > One Page Love showcases the best one page website designs on the internet.
+
+3.  [Pattern Tap][]
 
     > ...It's a living classroom, where designers learn what is working well on the Web and why.
 
-3.  [UI Patterns][]
+4.  [UI Patterns][]
 
     > User Interface Design patterns are recurring solutions that solve common design problems. Design patterns are standard reference points for the experienced user interface designer.
 
-4.  [siteInspire][]
+5.  [siteInspire][]
 
     > siteInspire is showcase and CSS gallery featuring the best web design today.
 
-5.  [Codrops][]
+6.  [Codrops][]
 
     > Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.
 
@@ -270,7 +274,7 @@ Of the sites, there is one site that stands above the rest and belongs to no sin
     - [Creative Background Styles and Trends in Web Design][Codrops 3]
     - [Dashboard Design Elements for the Win][Codrops 4]
 
-6.  [Favourite Website Awards (FWA)][FWA]
+7.  [Favourite Website Awards (FWA)][FWA]
 
     >  FWA stands for Favourite Website Awards, an industry recognised internet award program and inspirational portal, established in May 2000.
 
@@ -988,6 +992,7 @@ Appendix 12
 
 [WDL]:                  http://webdesignledger.com/category/inspiration
 [Awwwards]:             http://www.awwwards.com/
+[One Page Love]:        http://onepagelove.com/
 [Pattern Tap]:          http://patterntap.com/
 [UI Patterns]:          http://ui-patterns.com/
 [siteInspire]:          http://siteinspire.com/showcase
