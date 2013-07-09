@@ -9,7 +9,11 @@ Fast-forward to today and as a Front End Engineer you cannot help but think abou
 
 \- [Mobile Browsing: It Will Get Better and Worse][Better and Worse] by Chris Kelly of New Relic
 
-The fact of the matter is end-users are going to consume your work on smartphones or some kind of tablet. I think this is pretty much [common knowledge][] now, so let's deal with it proactively by laying down a mobile foundation. In this chapter we are going to explore the different ways in which we can serve content tailored to the different devices our users are using, and in this process develop our own mobile foundation's best practices. Practices that we will explore in:
+The fact of the matter is end-users are going to consume your work on smartphones or some kind of tablet. I think this is pretty much [common knowledge][] now, so let's deal with it proactively by laying down a mobile foundation. Still need more convincing?
+
+- [13 Stats to Convince Your Boss to Invest in Mobile in 2013][13 Stats]
+
+In this chapter we are going to explore the different ways in which we can serve content tailored to the different devices our users are using, and in this process develop our own mobile foundation's best practices. Practices that we will explore in:
 
 - [Chapter 6 - Responsive Web Design][Chapter 6]
 - [Chapter 8 - Device Detection][Chapter 8]
@@ -102,6 +106,7 @@ Through [Chapter 6][] and [Chapter 8][] we will explore all three plans of attac
 
 [Better and Worse]:     http://insights.wired.com/profiles/blogs/mobile-browsing-will-get-both-better-and-worse#axzz2IFWc81o0
 [common knowledge]:     http://www.themobileplaybook.com/en-us/#/introduction
+[13 Stats]:             http://www.mobify.com/blog/13-stats-to-convince-your-boss-to-invest-in-mobile-in-2013/
 
 [LukeW]:                http://www.lukew.com/ff/entry.asp?933
 [Mobile First]:         http://www.abookapart.com/products/mobile-first
