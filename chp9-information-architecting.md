@@ -98,7 +98,7 @@ NOTE: Color coding is helpful.
 
 \- [Manifesto][]
 
-Here's a practical example and a proof of concept. I need a new website for my practice "ViewThought". My storyline goes something like this:
+Here's a practical example and a proof of concept. I need a new website for my practice "View Thought". My storyline goes something like this:
 
 > We are a great website design, development and user experience shop. We have tons of experience, have worked with a bunch of different clients who are all happy with our work, and we really care about what we do. We specialize in Ruby on Rails, and we pay special attention to what your users will see. You should hire us! ...or give us a call and learn more.
 

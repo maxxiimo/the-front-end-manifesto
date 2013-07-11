@@ -6,7 +6,7 @@ Embellishments
 Example Workflow
 ----------------
 
-In this example we have our basic content, somewhat refined since we first architected ViewThought in [Chapter 9][]:
+In this example we have our basic content, somewhat refined since we first architected View Thought in [Chapter 9][]:
 <br>
 <br>
 <br>

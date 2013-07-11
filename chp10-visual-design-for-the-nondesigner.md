@@ -185,7 +185,7 @@ After completing the creation steps I now have the following fonts to play with:
 
 ![][Collection]
 
-This is a nice collection to work with and these icons will definitely add a needed design touch to ViewThought. When I finalize on the design, I'll remove the icons I didn't use to save bandwidth. You can do this by regenerating your font library following the steps above.
+This is a nice collection to work with and these icons will definitely add a needed design touch to View Thought. When I finalize on the design, I'll remove the icons I didn't use to save bandwidth. You can do this by regenerating your font library following the steps above.
 
 ### Icon Sprites
 
