@@ -7,9 +7,12 @@ Example Workflow
 ----------------
 
 In this example we have our basic content, somewhat refined since we first architected ViewThought in [Chapter 9][]:
-
+<br>
+<br>
+<br>
 ![][Design 1]
-
+<br>
+<br>
 It's code is pretty straightforward:
 
     %section#process
@@ -79,9 +82,12 @@ CSS:
         +sassy-button
 
 The result:
-
+<br>
+<br>
+<br>
 ![][Design 2]
-
+<br>
+<br>
 That was easy, and I have an idea in my head about how I would like to organize this section. Using Susy I arrange each of the information components along the pattern I'm imagining, In doing so I also need to account for responsiveness. For brevity, here is a small section of the CSS that accomplishes this for the three steps:
 
     .discovery
@@ -114,13 +120,19 @@ That was easy, and I have an idea in my head about how I would like to organize 
         +squish(3.5, 3.5)
 
 Result:
-
+<br>
+<br>
+<br>
 ![][Design 3]
-
+<br>
+<br>
 It's coming together, and the key to my design will be how the icons interplay with the text. I would really like them to stand out and help organize and direct the visual flow. To do this I will increase their size:
-
+<br>
+<br>
+<br>
 ![][Design 4]
-
+<br>
+<br>
 Wow, that really pops out. The great thing about icon fonts is that they're very easy to resize, and they won't lose their sharpness.
 
 Standalone the icon fonts look pretty good, but I'm also thinking about framing them in a circle, kind of like a portal hole. I saw something like this in a couple of my inspirational sites; team member portraits were framed by circles. I think this might be a good look here and can be easily accomplished with CSS:
@@ -145,9 +157,12 @@ Standalone the icon fonts look pretty good, but I'm also thinking about framing 
         font-size: 3.034em
 
 The result:
-
+<br>
+<br>
+<br>
 ![][Design 5]
-
+<br>
+<br>
 That makes a really nice difference, but something about the century is off to me and I'm not quite sure what it is. I've experimented with centering the headers, the paragraphs, left aligning everything, but I'm just not finding that right balance. This is a great reason to never design in isolation. Get feedback!
 
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
