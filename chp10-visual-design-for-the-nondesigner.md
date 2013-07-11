@@ -41,6 +41,10 @@ The next two chapters are written to help developers along this path, but before
 Branding
 --------
 
+[Fresh Tilled Soil][]
+
+![][Fresh]
+
 - [Quatro Sans][] for the logo. We're building things at View Thought and this font captures that feeling.
 
   > We are pleased to introduce you to Quatro Sans. An undeniably modern typeface with construction principles that attempt to find the balance between machine and hand.
@@ -303,6 +307,7 @@ http://css-tricks.com/triangle-with-shadow/
 
 [agile design process]: http://webdesignledger.com/tips/applying-agile-principles-to-design
 
+[Fresh Tilled Soil]:    http://www.freshtilledsoil.com
 [Quatro Sans]:          http://cargocollective.com/pstype/Quatro-Sans
 [Inspiring Logos]:      http://webdesignledger.com/inspiration/beautiful-and-simple-logos-for-your-delight
 
@@ -347,6 +352,7 @@ http://css-tricks.com/triangle-with-shadow/
 [Jazzy Parallax]:       http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/jazz-up-a-static-webpage-with-subtle-parallax/
 [Web 2.0]:              http://www.smashingmagazine.com/2007/03/10/web-20-tutorials-round-up/
 
+[Fresh]:                http://www.chrismaxwell.com/manifesto/chp-10/fresh-tilled-soil.gif
 [Icon Fonts 1]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-nav.gif
 [Icon Fonts 2]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-social.gif
 [Icon Sample]:          http://www.chrismaxwell.com/manifesto/chp-10/30-toolbar-icons.jpg
