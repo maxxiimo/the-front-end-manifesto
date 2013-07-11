@@ -122,11 +122,13 @@ What follows are the steps you should take to create your own fonts, but first h
 
 **Step 1**: Visit http://icomoon.io/app/ and select icons you wish to use. You can add more icon sets.
 
-NOTE: I generally load all the icon sets and search by keywords to compare across different sets, e.g. "social" for social icons.
+TIP: Load all the icon sets and search by keywords to compare across different sets, e.g. "social" for social icons.
 
 **Step 2**: Review and configure your selected fonts.
 
-NOTE: I generally keep the defaults but change the Preferences -> Font Name to "icon-fonts". You can also change the encoding – depending on the project – to PUA (Private Use Area), Symbols or Latin characters.
+NOTE: I generally keep the defaults but change the Preferences -> Font Name to "icon-fonts". Depending on the project needs you can change the encoding to: PUA (Private Use Area), Symbols, or Latin characters. My preference is for symbols. For my navigation font set, if for any reason the icons are not available, symbols will yield the following:
+
+![][Symbols]
 
 **Step 3**: Download your fonts. Copy the zipped folder `fonts` into your `app/asset/images` folder. Save the original in `vendor/source`.
 
@@ -342,3 +344,4 @@ http://css-tricks.com/triangle-with-shadow/
 [Icon Sample]:          http://www.chrismaxwell.com/manifesto/chp-10/30-toolbar-icons.jpg
 [Icon Slider]:          http://www.chrismaxwell.com/manifesto/chp-10/icon-slider.png
 [Icon Grid]:            http://www.chrismaxwell.com/manifesto/chp-10/icon-grid.gif
+[Symbols]:              http://www.chrismaxwell.com/manifesto/chp-10/symbols.gif
