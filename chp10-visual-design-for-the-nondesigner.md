@@ -175,7 +175,7 @@ For example if needed in your footer:
       [data-icon]:before
         +data-icon
 
-#### Icon Fonts To Play With
+### Icon Fonts To Play With
 
 After completing the creation steps I now have the following fonts to play with:
 
