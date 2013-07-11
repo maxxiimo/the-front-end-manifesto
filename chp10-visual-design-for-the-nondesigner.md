@@ -337,6 +337,8 @@ http://css-tricks.com/triangle-with-shadow/
 [Jazzy Parallax]:       http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/jazz-up-a-static-webpage-with-subtle-parallax/
 [Web 2.0]:              http://www.smashingmagazine.com/2007/03/10/web-20-tutorials-round-up/
 
+[Icon Fonts 1]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-nav.gif
+[Icon Fonts 2]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-social.gif
 [Icon Sample]:          http://www.chrismaxwell.com/manifesto/chp-10/30-toolbar-icons.jpg
 [Icon Slider]:          http://www.chrismaxwell.com/manifesto/chp-10/icon-slider.png
 [Icon Grid]:            http://www.chrismaxwell.com/manifesto/chp-10/icon-grid.gif

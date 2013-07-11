@@ -421,6 +421,4 @@ And that's it! Here is what our site looks like with are new icon fonts, typefac
 
 [Fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
 [Final Three]:          http://www.chrismaxwell.com/manifesto/chp-10/final-three.gif
-[Icon Fonts 1]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-nav.gif
-[Icon Fonts 2]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-social.gif
 [Multidevice]:          http://www.chrismaxwell.com/manifesto/chp-10/multidevice.png
