@@ -118,7 +118,7 @@ What follows are the steps you should take to create your own fonts, but first h
 - [Getting Font-Face to work with the Asset Pipeline][Pipeline]
 - [Testing @font-face Support on Mobile and Tablet][Icon Font Support]
 
-#### Creating Your Own Set
+### Creating Your Own Set
 
 **Step 1**: Visit http://icomoon.io/app/ and select icons you wish to use. You can add more icon sets.
 
@@ -174,6 +174,14 @@ For example if needed in your footer:
     footer
       [data-icon]:before
         +data-icon
+
+#### Icon Fonts To Play With
+
+After completing the creation steps I now have the following fonts to play with:
+
+![][Collection]
+
+This is a nice collection to work with and these icons will definitely add a needed design touch to ViewThought. When I finalize on the design, I'll remove the icons I didn't use to save bandwidth. You can do this by regenerating your font library following the steps above.
 
 ### Icon Sprites
 
@@ -345,3 +353,4 @@ http://css-tricks.com/triangle-with-shadow/
 [Icon Slider]:          http://www.chrismaxwell.com/manifesto/chp-10/icon-slider.png
 [Icon Grid]:            http://www.chrismaxwell.com/manifesto/chp-10/icon-grid.gif
 [Symbols]:              http://www.chrismaxwell.com/manifesto/chp-10/symbols.gif
+[Collection]:           http://www.chrismaxwell.com/manifesto/chp-10/collection.gif

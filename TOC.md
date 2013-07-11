@@ -113,6 +113,8 @@ Table of Contents
   - [Modular Scales][]
   - [Icons][]
       - [Icon Fonts][]
+        - [Creating Your Own Set][Icon Font Creating]
+        - [Icon Fonts To Play With][Icon Font Playing]
       - [Icon Sprites][]
   - [Images][]
   - [Embellishments][]
@@ -281,6 +283,8 @@ Table of Contents
 [Modular Scales]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#modular-scales
 [Icons]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#icons
 [Icon Fonts]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#icon-fonts
+[Icon Font Creating]:   https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#creating-your-own-set
+[Icon Font Playing]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#icon-fonts-to-play-with
 [Icon Sprites]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#icon-sprites
 [Images]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#images
 [Embellishments]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#embellishments
