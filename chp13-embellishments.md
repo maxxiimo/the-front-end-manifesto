@@ -6,7 +6,7 @@ Embellishments
 Example Workflow
 ----------------
 
-In this example we have our basic content for what will become the process panel in our design, somewhat refined since we first architected ViewThought in [Chapter 9][]:
+In this example we have our basic content, somewhat refined since we first architected ViewThought in [Chapter 9][]:
 
 ![][Design 1]
 
@@ -16,20 +16,20 @@ It's code is pretty straightforward:
       .container
         .process
           %h2 Our Process
-          %p We bring together great design and great code to make mobile and Web applications work and look amazing across any device no matter how big or small.
+          %p We bring together great design and great code...
         .discovery
           %h3 1. Discovery
-          %p Through discovery we get to know you, your company, project, market, target audience, goals, key business requirements, and so forth. We come to an understanding, a plan, and an agreement. From discovery we get to work!
+          %p Through discovery we get to know you, your company...
         .development
           %h3 2. Development
-          %p We believe in an iterative approach, where all stakeholders are involved in producing your project&ndash;from start to finish and in a manner that makes sense. We like to deploy often and frequently, iteratively, and with the goal of reaching perfection.
+          %p We believe in an iterative approach, where all...
         .repeat
           %h3 3. Repeat
-          %p The discovery process never ends, but rather continuously feeds into the development of your application. We value feedback.
+          %p The discovery process never ends, but rather...
         .hire-button
           %button Want to Hire Us?
 
-...With some basic padding to give it some separation:
+CSS:
 
     /* Process
       -----------------------
@@ -47,76 +47,42 @@ It's code is pretty straightforward:
       +at-breakpoint($break12)
         padding: $padding-12 0
 
-NOTE: Since every panel will use the same amount of padding depending on its breakpoint, I've moved the padding amount into a variable located at `_define.sass`. This way I can change the setting site wide in one location.
+NOTE: Since every panel in the design will use the same amount of padding depending on its breakpoint, I've moved the padding into a variable located at `_define.sass`. This way I can change the setting site-wide in one location.
 
-The first embellishments I will add will be icon fonts and Sassy button styling:
-
-![][Design 2]
-
-That was easy:
+To begin the design process I will grab some of the design code already in place, icon fonts and Sassy button styling:
 
     %section#process
       .container
         .process
           %h2 Our Process
-          %p We bring together great design and great code to make mobile and Web applications work and look amazing across any device no matter how big or small.
+          %p We bring together great design and great code...
         .discovery
           %span{"aria-hidden" => "true", "data-icon" => "&#x2691;".html_safe}
           %h3 1. Discovery
-          %p Through discovery we get to know you, your company, project, market, target audience, goals, key business requirements, and so forth. We come to an understanding, a plan, and an agreement. From discovery we get to work!
+          %p Through discovery we get to know you, your company...
         .development
           %span{"aria-hidden" => "true", "data-icon" => "&#x2692;".html_safe}
           %h3 2. Development
-          %p We believe in an iterative approach, where all stakeholders are involved in producing your project&ndash;from start to finish and in a manner that makes sense. We like to deploy often and frequently, iteratively, and with the goal of reaching perfection.
+          %p We believe in an iterative approach, where all...
         .repeat
           %span{"aria-hidden" => "true", "data-icon" => "&#x27f3;".html_safe}
           %h3 3. Repeat
-          %p The discovery process never ends, but rather continuously feeds into the development of your application. We value feedback.
+          %p The discovery process never ends, but rather...
         .hire-button
           %button Want to Hire Us?
 
-...And I added this style:
+CSS:
 
     .hire-button
       text-align: center
       button
         +sassy-button
 
-I have an idea in my head about how I would like to convey ViewThought's process. Using Susy I arrange each of the information components along the pattern I'm imagining:
+The result:
 
-![][Design 3]
+![][Design 2]
 
-In doing so I also need to account for responsiveness. Here is the CSS that accomplishes all of this:
-
-    /* Process
-      -----------------------
-
-    #process
-      padding: $padding-4 0
-      background-color: $white
-
-      +at-breakpoint($break6)
-        padding: $padding-6 0
-
-      +at-breakpoint($break9)
-        padding: $padding-9 0
-
-      +at-breakpoint($break12)
-        padding-bottom: $padding-12 0
-
-    .process
-      +at-breakpoint($break6)
-        h2
-          text-align: center
-
-      +at-breakpoint($break9)
-        +span-columns(8, $break9)
-        +squish(.5, .5)
-        margin-bottom: 1.875em
-
-      +at-breakpoint($break12)
-        +span-columns(10, $break12)
-        +squish(1, 1)
+That was easy, and I have an idea in my head about how I would like to organize this section. Using Susy I arrange each of the information components along the pattern I'm imagining, In doing so I also need to account for responsiveness. For brevity, here is a small section of the CSS that accomplishes this for the three steps:
 
     .discovery
       +at-breakpoint($break9)
@@ -147,29 +113,11 @@ In doing so I also need to account for responsiveness. Here is the CSS that acco
         +span-columns(5, $break12)
         +squish(3.5, 3.5)
 
-    .hire-button
-      text-align: center
-      button
-        +sassy-button
-        margin-top: 1.618em
-        font-size: 1.159em
+Result:
 
-      +at-breakpoint($break6)
-        button
-          margin-top: 1.875em
-          // 1 + .274
-          font-size: 1.274em
+![][Design 3]
 
-      +at-breakpoint($break9)
-        button
-          // 1 + .443
-          font-size: 1.443em
-
-      +at-breakpoint($break12)
-        button
-          font-size: 1.618em
-
-The key to my design will be how the icons interplay with the text. I would really like them to stand out and help direct the visual flow. To do this I will increase their size:
+It's coming together, and the key to my design will be how the icons interplay with the text. I would really like them to stand out and help organize and direct the visual flow. To do this I will increase their size:
 
 ![][Design 4]
 
@@ -202,7 +150,7 @@ The result:
 
 That makes a really nice difference, but something about the century is off to me and I'm not quite sure what it is. I've experimented with centering the headers, the paragraphs, left aligning everything, but I'm just not finding that right balance. This is a great reason to never design in isolation. Get feedback!
 
-[Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
+[Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
 
 [Design 1]:             http://www.chrismaxwell.com/manifesto/chp-13/design-1.gif
 [Design 2]:             http://www.chrismaxwell.com/manifesto/chp-13/design-2.gif
