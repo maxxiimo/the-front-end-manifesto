@@ -166,7 +166,7 @@ The result:
 <br>
 <br>
 <br>
-![][Design 5]
+![][Design 6]
 <br>
 <br>
 That makes a really nice difference, but something about the century is off to me and I'm not quite sure what it is. I've experimented with centering the headers, the paragraphs, left aligning everything, but I'm just not finding that right balance. This is a great reason to never design in isolation. Get feedback!
@@ -177,4 +177,4 @@ That makes a really nice difference, but something about the century is off to m
 [Design 2]:             http://www.chrismaxwell.com/manifesto/chp-13/design-2.png
 [Design 3]:             http://www.chrismaxwell.com/manifesto/chp-13/design-3.png
 [Design 4]:             http://www.chrismaxwell.com/manifesto/chp-13/design-4.png
-[Design 5]:             http://www.chrismaxwell.com/manifesto/chp-13/design-5.png
+[Design 6]:             http://www.chrismaxwell.com/manifesto/chp-13/design-6.png
