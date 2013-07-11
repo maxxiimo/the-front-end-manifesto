@@ -162,6 +162,8 @@ Standalone the icon fonts look pretty good, but I'm also thinking about framing 
         line-height: (3.034em * .63)
         font-size: 3.034em
 
+I also think the larger fonts for the opening header and paragraph would give the section a better hierarchy. Finally, using `@mixin panel-shadow` I'll add a thin line above the header to separated it from the content directly before the section.
+
 The result:
 <br>
 <br>
@@ -169,7 +171,7 @@ The result:
 ![][Design 6]
 <br>
 <br>
-That makes a really nice difference, but something about the century is off to me and I'm not quite sure what it is. I've experimented with centering the headers, the paragraphs, left aligning everything, but I'm just not finding that right balance. This is a great reason to never design in isolation. Get feedback!
+That makes a really nice difference, but something about the centering of each paragraph is off to me and I'm not quite sure what it is. I've experimented with centering the headers, center aligning the paragraphs, left aligning everything, but I'm just not finding that right balance. This is a great reason to never design in isolation. Get feedback!
 
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
 
