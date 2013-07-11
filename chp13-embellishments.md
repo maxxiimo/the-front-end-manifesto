@@ -152,8 +152,8 @@ That makes a really nice difference, but something about the century is off to m
 
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
 
-[Design 1]:             http://www.chrismaxwell.com/manifesto/chp-13/design-1.gif
-[Design 2]:             http://www.chrismaxwell.com/manifesto/chp-13/design-2.gif
-[Design 3]:             http://www.chrismaxwell.com/manifesto/chp-13/design-3.gif
-[Design 4]:             http://www.chrismaxwell.com/manifesto/chp-13/design-4.gif
-[Design 5]:             http://www.chrismaxwell.com/manifesto/chp-13/design-5.gif
+[Design 1]:             http://www.chrismaxwell.com/manifesto/chp-13/design-1.png
+[Design 2]:             http://www.chrismaxwell.com/manifesto/chp-13/design-2.png
+[Design 3]:             http://www.chrismaxwell.com/manifesto/chp-13/design-3.png
+[Design 4]:             http://www.chrismaxwell.com/manifesto/chp-13/design-4.png
+[Design 5]:             http://www.chrismaxwell.com/manifesto/chp-13/design-5.png
