@@ -220,7 +220,7 @@ Just like with icons, images pack a lot of design punch. People are also much mo
 
 [jQuery Anystretch][]
 [Backstretch][]
-
+[Vegas Background jQuery Plugin][Vegas]
 
 
 Embellishments
@@ -319,6 +319,7 @@ http://css-tricks.com/triangle-with-shadow/
 [Text Over Images]:     http://webdesignledger.com/inspiration/19-inspiring-examples-of-text-over-images-in-web-design
 [jQuery Anystretch]:    https://github.com/danmillar/jquery-anystretch
 [Backstretch]:          http://srobbin.com/jquery-plugins/backstretch/
+[Vegas]:                http://vegas.jaysalvat.com/
 
 [Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
 [Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/
