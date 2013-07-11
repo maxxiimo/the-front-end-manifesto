@@ -118,7 +118,7 @@ What follows are the steps you should take to create your own fonts, but first h
 - [Getting Font-Face to work with the Asset Pipeline][Pipeline]
 - [Testing @font-face Support on Mobile and Tablet][Icon Font Support]
 
-#### Implementing Icon Fonts
+#### Creating Your Own Set
 
 **Step 1**: Visit http://icomoon.io/app/ and select icons you wish to use. You can add more icon sets.
 
