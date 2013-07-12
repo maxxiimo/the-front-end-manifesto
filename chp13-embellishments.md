@@ -173,7 +173,13 @@ The result:
 ![][Design 6]
 <br>
 <br>
-That makes a really nice difference, but something about the centering of each paragraph is off to me and I'm not quite sure what it is. I've experimented with centering the headers, center aligning the paragraphs, left aligning everything, but I'm just not finding that right balance. This is a great reason to never design in isolation. Get feedback!
+That makes a really nice difference, but something about the centering of each paragraph is off to me and I'm not quite sure what it is. I've experimented with centering the headers, center aligning the paragraphs, left aligning everything, but I'm just not finding that right balance. I'm also thinking that I could save some vertical space. After some reshuffling, here is the result:
+<br>
+<br>
+<br>
+![][Design 7]
+<br>
+<br>
 
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
 
@@ -183,3 +189,4 @@ That makes a really nice difference, but something about the centering of each p
 [Design 3]:             http://www.chrismaxwell.com/manifesto/chp-13/design-3.png
 [Design 4]:             http://www.chrismaxwell.com/manifesto/chp-13/design-4.png
 [Design 6]:             http://www.chrismaxwell.com/manifesto/chp-13/design-6.png
+[Design 7]:             http://www.chrismaxwell.com/manifesto/chp-13/design-7.png
