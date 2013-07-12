@@ -2,6 +2,8 @@ Embellishments
 ==============
 
 
+![][Quotes]
+
 
 Example Workflow
 ----------------
@@ -175,6 +177,7 @@ That makes a really nice difference, but something about the centering of each p
 
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
 
+[Quotes]:               http://www.chrismaxwell.com/manifesto/chp-13/quotes.jpg
 [Design 1]:             http://www.chrismaxwell.com/manifesto/chp-13/design-1.png
 [Design 2]:             http://www.chrismaxwell.com/manifesto/chp-13/design-2.png
 [Design 3]:             http://www.chrismaxwell.com/manifesto/chp-13/design-3.png
