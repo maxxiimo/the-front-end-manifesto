@@ -2,6 +2,33 @@ Embellishments
 ==============
 
 
+
+Design Details
+--------------
+
+It's the little things that sometimes can make a big difference. Take for example quotes. We could always use regular quote characters: `&#147;` and `&#148;`, or the equivalent HTML entities: `&ldquo;` and `&rdquo;`, but why not create one of those giant curly quotes you see on some websites? It's easy.
+
+The technique I used to compass this is to use icon fonts. I included a few different types in my font library. Here's how it works:
+
+First, add the font icon span to the `%blockquote` you would like to include the icon font in. Remember, icon fonts a regular characters:
+
+    %blockquote
+      %span{"aria-hidden" => "true", "data-icon" => "&#x275d;".html_safe, :class => 'giant-quote'}
+      A website should give its visitors immediate value, the moment they land on your...
+    %p Chris Maxwell, founder of ViewThought
+
+Next, style the character:
+
+    .giant-quote
+      display: block
+      float: left
+      line-height: 1.2
+      padding-right: .443em
+      // 1 + .274
+      font-size: 1.274em
+
+And that's it. I experimented a little, and like the second one from the end best:
+
 ![][Quotes]
 
 
@@ -92,9 +119,10 @@ The result:
 ![][Design 2]
 <br>
 <br>
-### Arrange Components
 
-That was easy, and I have an idea in my head about how I would like to organize this section so my next step is to use Susy to arrange each element along the pattern I'm imagining. In doing so I also need to account for responsiveness. Here is a small section of the CSS that accomplishes this for the three process steps:
+### Arrange Components Responsively
+
+With a little help from my inspirational sites, I have an idea in my head about how I would like to organize this section. With this in mind my next step is to use Susy to arrange each element along the pattern I'm imagining. In doing so I also need to account for responsiveness. Here is a small section of the CSS that accomplishes this for the three process steps in this section:
 
     .discovery
       +at-breakpoint($break9)
@@ -134,7 +162,7 @@ Result:
 <br>
 ### Experimenting
 
-It's coming together, and the key to my design will be how the icons interplay with the text. I would really like them to stand out and help organize and direct the visual flow. To do this I will increase their size:
+It's coming together, and the key to my design will be how the icons interplay with the text. I would really like them to stand out and help organize and direct the visual flow. To do this I increase their size:
 <br>
 <br>
 <br>
@@ -143,7 +171,7 @@ It's coming together, and the key to my design will be how the icons interplay w
 <br>
 Wow, that really pops out. The great thing about icon fonts is that they're very easy to resize, and they won't lose their sharpness.
 
-Standalone the icon fonts look pretty good, but I'm also thinking about framing them in a circle, kind of like a portal hole. I saw something like this in a couple of my inspirational sites; team member portraits were framed by circles. I think this might be a good look here and can be easily accomplished with CSS:
+Standalone, the icon fonts look pretty good, but I'm also thinking about framing them in a circle, kind of like a portal hole. I saw something like this in a couple of my inspirational sites; team member portraits were framed by circles. I think this might be a good look here and can be easily accomplished with CSS:
 
     .circle
       %span{"aria-hidden" => "true", "data-icon" => "&#x2691;".html_safe}
@@ -164,7 +192,7 @@ Standalone the icon fonts look pretty good, but I'm also thinking about framing 
         line-height: (3.034em * .63)
         font-size: 3.034em
 
-I also think the larger fonts for the opening header and paragraph would give the section a better hierarchy. Finally, using `@mixin panel-shadow` I'll add a thin line above the header to separated it from the content directly before the section.
+I also think the larger fonts for the opening header and paragraph would give the section a better hierarchy. Finally, using `@mixin panel-shadow`, I'll add a thin line above the header to provide a visual cue separating this content from the content directly before it.
 
 The result:
 <br>
@@ -173,7 +201,7 @@ The result:
 ![][Design 6]
 <br>
 <br>
-That makes a really nice difference, but something about the centering of each paragraph is off to me and I'm not quite sure what it is. I've experimented with centering the headers, center aligning the paragraphs, left aligning everything, but I'm just not finding that right balance. I'm also thinking that I could save some vertical space. After some reshuffling, here is the result:
+That makes a really nice difference, but something about the centering of each paragraph is off to me and I'm not quite sure what it is. I've experimented with centering the headers, center aligning the paragraphs, left aligning everything, but I'm just not finding the right balance. I'm also thinking that I could save some vertical space, and after some reshuffling, here is the result:
 <br>
 <br>
 <br>
