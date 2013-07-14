@@ -49,6 +49,8 @@ Branding
 
   > We are pleased to introduce you to Quatro Sans. An undeniably modern typeface with construction principles that attempt to find the balance between machine and hand.
 
+![][Logo]
+
 [Beautiful and Simple Logos for your Delight][Inspiring Logos]
 
 Modular Scales
@@ -236,6 +238,7 @@ Just like with icons, images pack a lot of design punch. People are also much mo
 [Backstretch][]
 [Vegas Background jQuery Plugin][Vegas]
 
+![][Silhouette]
 
 Embellishments
 --------------
@@ -357,10 +360,12 @@ http://css-tricks.com/triangle-with-shadow/
 [Web 2.0]:              http://www.smashingmagazine.com/2007/03/10/web-20-tutorials-round-up/
 
 [Fresh]:                http://www.chrismaxwell.com/manifesto/chp-10/fresh-tilled-soil.gif
+[Logo]:                 http://www.chrismaxwell.com/manifesto/chp-10/viewthought-logo.gif
 [Icon Fonts 1]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-nav.gif
 [Icon Fonts 2]:         http://www.chrismaxwell.com/manifesto/chp-10/icon-font-social.gif
+[Symbols]:              http://www.chrismaxwell.com/manifesto/chp-10/symbols.gif
+[Collection]:           http://www.chrismaxwell.com/manifesto/chp-10/collection.gif
 [Icon Sample]:          http://www.chrismaxwell.com/manifesto/chp-10/30-toolbar-icons.jpg
 [Icon Slider]:          http://www.chrismaxwell.com/manifesto/chp-10/icon-slider.png
 [Icon Grid]:            http://www.chrismaxwell.com/manifesto/chp-10/icon-grid.gif
-[Symbols]:              http://www.chrismaxwell.com/manifesto/chp-10/symbols.gif
-[Collection]:           http://www.chrismaxwell.com/manifesto/chp-10/collection.gif
+[Silhouette]:           http://www.chrismaxwell.com/manifesto/chp-10/silhouette-files-icons.gif
