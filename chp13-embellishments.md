@@ -7,6 +7,42 @@ The Power of CSS
 
 Adobe Photoshop is a graphic designers design tool. CSS and your browser are a front-end developers design tools. With CSS you can do almost anything for just a few short years ago  belong squarely in the realm of Photoshop design work.
 
+### Gradients
+
+<br>
+<br>
+![][Gradient 1]
+<br>
+<br>
+
+<br>
+<br>
+![][Gradient 2]
+<br>
+<br>
+
+<br>
+<br>
+![][Panel Gradient]
+<br>
+<br>
+
+<br>
+<br>
+![][Photo Gradient]
+<br>
+<br>
+
+### Shadows
+
+<br>
+<br>
+![][Box Shadow]
+<br>
+<br>
+
+### Pseudo-classes
+
 Navigation
 ----------
 <br>
@@ -20,6 +56,13 @@ Navigation
 ![][Navigation 2]
 <br>
 <br>
+
+<br>
+<br>
+![][Navigation 3]
+<br>
+<br>
+
 
 Design Details
 --------------
@@ -415,8 +458,14 @@ NOTE: The `+shadow-3` mixin is included in the [starter styles][].
 [Numbering In Style]:   http://css-tricks.com/numbering-in-style/
 [CSS3 OL]:              http://www.red-team-design.com/css3-ordered-list-styles
 
+[Box Shadows]:          http://www.chrismaxwell.com/manifesto/chp-13/shadows-w-numbers.gif
+[Gradient 1]:           http://www.chrismaxwell.com/manifesto/chp-13/gradient-line-1.gif
+[Gradient 2]:           http://www.chrismaxwell.com/manifesto/chp-13/gradient-line-2.gif
+[Panel Gradient]:       http://www.chrismaxwell.com/manifesto/chp-13/panel-gradient.gif
+[Photo Gradient]:       http://www.chrismaxwell.com/manifesto/chp-13/photo-gradient.gif
 [Navigation 1]:         http://www.chrismaxwell.com/manifesto/chp-13/navigation-1.gif
 [Navigation 2]:         http://www.chrismaxwell.com/manifesto/chp-13/navigation-2.gif
+[Navigation 3]:         http://www.chrismaxwell.com/manifesto/chp-13/shadow-header.gif
 [Quote Examples]:       http://www.chrismaxwell.com/manifesto/chp-13/quote-examples.gif
 [Quotes]:               http://www.chrismaxwell.com/manifesto/chp-13/quotes.jpg
 [Design 1]:             http://www.chrismaxwell.com/manifesto/chp-13/design-1.png

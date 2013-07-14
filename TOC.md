@@ -143,6 +143,9 @@ Table of Contents
 
 ### Chapter 13 - [Embellishments][Chapter 13]
   - [The Power of CSS][]
+      - [Gradients][]
+      - [Shadows][]
+      - [Pseudo-Classes][]
   - [Navigation][]
   - [Design Details][]
   - [Example Design Workflow][]
@@ -321,6 +324,9 @@ Table of Contents
 [Step 4: Apply]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-4-apply
 
 [The Power of CSS]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#the-power-of-css
+[Gradients]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#gradients
+[Shadows]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#shadows
+[Pseudo-Classes]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#pseudo---classes
 [Navigation]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#navigation
 [Design Details]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#design-details
 [Example Design Workflow]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#example-design-workflow
