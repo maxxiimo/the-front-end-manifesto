@@ -241,13 +241,13 @@ Let's take another example from our View Thought project and answer this questio
             %li
               %span Address device constraints and opportunities while delivering...
 
-It's a simple list that unstyled looks like this:
+It's a simple ordered list that unstyled looks like this:
 <br>
 <br>
 ![][Values 1]
 <br>
 <br>
-Obviously, we need to add some style. The good thing is we now have a frame of reference; an ordered list. This answers the "what" part of our question. Ordered lists have been styled a thousand times over, so I guarantee you that there will be a lot tutorials out there that will answer the "how", and there is:
+Obviously, we need to add some style. The good thing is we now have a frame of reference; an ordered list. This answers the "what" part of our question. Ordered lists have been styled a thousand times over, so I guarantee you that there will be a lot of tutorials out there that will answer the "how" part of our question, and there is:
 
 - [CSS Design: Taming Lists][Taming Lists]
 - [CSS Swag: Multi-Column Lists][Multicolumn]
@@ -256,41 +256,46 @@ Obviously, we need to add some style. The good thing is we now have a frame of r
 - [Numbering In Style][]
 - [CSS3 ordered list styles][CSS3 OL]
 
-TIP: It's good practice to start curating an organized bookmark list of CSS how to's. Every time I find an article that I think I may use or want to reference, I bookmark it under a category the defines it and similar articles. I always rename the bookmark with the articles date beginning with the year. This way I can decide what is more relevant today since standards change (old articles have pearls of wisdom too). Here is an example related to our how to links above:
+TIP: It's good practice to curate a bookmark list of CSS how to's. Every time I find an article that I think I may use someday or want to reference, I bookmark it under a category the defines it and similar articles. I always rename the bookmark with the articles date; beginning with the year and followed by the month and day (13-0131). This way I can decide what is more relevant since standards change (old articles have pearls of wisdom too though). Here is an example related to the how to links above:
 
 ![][Lists]
 
-After reviewing the articles I come up with an idea. I like how some of the articles use an ordered lists numbers as a design element. Using this concept and adding a `box-shadow` I style my list:
+After reviewing my reference articles I come up with an idea. I like how some of the tutorials use an ordered lists number as a design element. Using this concept with a color from our color palette, and adding a `box-shadow` I style my list:
 <br>
 <br>
 <br>
 ![][Values 2]
 <br>
 <br>
-<br>
-Nice, I like how it's looking. Are starters CSS includes a pretty cool set of box shadow mixins. If I apply these mixins to our list items I can experiment with the mixins available and see how they might look:
+Nice, I like how it's looking. In fact I might just be done, but since our starter CSS includes a pretty cool set of box shadow mixins, I'm going to apply them to our list items to see what's available and how they might look:
 <br>
 <br>
 ![][Values 3]
 <br>
 <br>
 <br>
-I'm liking it even more, particularly the last one. All this is been accomplished with CSS, quickly. With a little bit more CSS I can even make it look like the corners are turned up:
+I'm liking it even more, particularly the last one, and what I find amazing is that all of this has been accomplished with CSS only, quickly. With a little bit more CSS I can even make it look like the corners are turned up:
 <br>
 <br>
 ![][Values 4]
 <br>
 <br>
-That some powerful stuff. Our initial question was what and how. By defining what we were going to style it was easy to find how we were going to do it. Without the teachings and examples of the front end developer community, I probably would not have come up with this on my own. As front-end developers we learn from one another, take advantage of this in your design process.
+That some powerful stuff, and I accomplish this by asking the question:
 
-With the new CSS styles I decided to flow my list item boxes horizontally rather than vertically to save space. The result:
+What and how?
+
+By defining "what" we were going to style it was easy to find "how" we were going to do it. Without the teachings and examples of the front end developer community, I probably would not have come up with this on my own, at least not so quickly. As front-end developers we learn from one another, take advantage of this in your design process and asked the question what am I going to design, then search online for how or review your bookmarks.
+
+With the new CSS styles in place I decided to flow my list item boxes horizontally rather than vertically to save space. The result:
 <br>
 <br>
 <br>
 ![][Values 5]
 <br>
 <br>
-Pretty nice, and with the horizontal flow the content from the previous section fits into the viewport. Here are the styles that accomplished this look:
+Pretty nice, and with the horizontal flow the content from the previous section fits into the viewport.
+
+Here are the styles that accomplished this look:
 
     /* Core Values
       -----------------------
