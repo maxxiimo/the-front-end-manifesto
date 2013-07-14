@@ -246,6 +246,8 @@ Embellishments
 [Sassy Buttons][]
 [Fancy Buttons][]
 
+![][Button 1]
+![][Button 2]
 
 [6 jQuery Plugins for Scrolling Effects][6 Plugins]
 
@@ -369,3 +371,5 @@ http://css-tricks.com/triangle-with-shadow/
 [Icon Slider]:          http://www.chrismaxwell.com/manifesto/chp-10/icon-slider.png
 [Icon Grid]:            http://www.chrismaxwell.com/manifesto/chp-10/icon-grid.gif
 [Silhouette]:           http://www.chrismaxwell.com/manifesto/chp-10/silhouette-files-icons.gif
+[Button 1]:             http://www.chrismaxwell.com/manifesto/chp-10/button-3.gif
+[Button 2]:             http://www.chrismaxwell.com/manifesto/chp-10/button-4.gif
