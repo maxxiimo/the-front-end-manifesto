@@ -180,7 +180,7 @@ Result:
 ![][Design 3]
 <br>
 <br>
-### Experimenting
+### Experiment
 
 It's coming together, and the key to my design will be how the icons interplay with the text. I would really like them to stand out and help organize and direct the visual flow. To do this I increase their size:
 <br>

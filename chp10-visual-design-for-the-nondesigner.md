@@ -9,7 +9,7 @@ In the [last chapter][Chapter 9] our focus was Information Architecture, and in 
 
 [Design is part of storytelling][Story Design] and like blocks of information in the previous chapter, the visual design must also communicate the websites story, and do so in such a way that the user just gets it.
 
-The combination of typography, color, branding, images, and icons will help communicate a storyline, and are a major contributor to a sites look and feel. We will explore each of these elements in this chapter, but first let me make an observation relevant to your role as a front end engineer and design.
+The combination of branding, modular scale harmony, icons, images, typography and color are the largest contributors to a sites look and feel. We will explore each of these elements in this and the next couple of chapters: [Chapter 11][] is devoted to typography, [Chapter 12][] to the color palette, and in [Chapter 13][] we will pull it all together. In this chapter we explore branding, icons, and images, but first let me make an observation relevant to your role as a front end engineer and design.
 
 Paradigm Shift
 --------------
@@ -299,6 +299,10 @@ http://css-tricks.com/triangle-with-shadow/
   - [Web 2.0 Tutorials Round-Up][Web 2.0]
 
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
+[Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#visual-design-for-the-nondesigner
+[Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#typography
+[Chapter 12]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#the-color-palette
+[Chapter 13]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
 [Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-11
 

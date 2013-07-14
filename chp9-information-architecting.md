@@ -10,12 +10,12 @@ Now it's time to build a user experience on this foundation: how your users will
 
 Back in 2008, at "An Event Apart: Boston," I listened to [Jason Santa Maria][] – then the Creative Director of Happy Cog Studios – give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
 
-These talks have stuck with me over the years, and they have become the way I view information architecting and visual design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code, and in the [next chapter][Chapter 10] we will begin to explore creating the sites look and feel (visual design) from the same perspective.
+These talks have stuck with me over the years, and they have become the way I view information architecting and visual design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code, and beginning with the [next chapter][Chapter 10] we will begin to explore creating the sites look and feel (visual design) from the same perspective.
 
 As a front end developer, without getting super complex or requiring a gazillion dollars, there are three basic ways to go about designing a website:
 
 1. Start from scratch and architect and design everything yourself.
-2. Work with a graphic designer from the get-go and implement a design mockup into your foundation work ([Chapter 11 - Slicing and Dicing Mockups][Chapter 13]).
+2. Work with a graphic designer from the get-go and implement a design mockup into your foundation work ([Chapter 14 - Slicing and Dicing Mockups][Chapter 14]).
 3. Start from scratch and architect yourself, then get help from a graphic designer on the look and feel.
 
 In this chapter we're going to mostly focus on option 1. Hiring a graphic designer from the get-go is not a bad idea, but perhaps there isn't money in the budget, or this responsibility falls on your lap, or maybe you just want to do it yourself. To illustrate how simple option 1 can be take a look at this 2007 website concept:
@@ -258,7 +258,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#foundation-styles
 [Chapter 5]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#mobile-foundation
 [Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#visual-design-for-the-nondesigner
-[Chapter 13]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#slicing-and-dicing-mockups
+[Chapter 14]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#slicing-and-dicing-mockups
 [Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-5
 [Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-6
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-7

@@ -141,7 +141,16 @@ Table of Contents
   - [Step 3: Look at Alternatives][]
   - [Step 4: Apply][]
 
-### Chapter 13 - [Slicing and Dicing Mockups][Chapter 13]
+### Chapter 13 - [Embellishments][Chapter 13]
+  - [The Power of CSS][]
+  - [Design Details][]
+  - [Example Design Workflow][]
+      - [Apply Styles That Already Exist][]
+      - [Arrange Components Responsively][]
+      - [Experiment][]
+  - [The What and How Approach to Design][]
+
+### Chapter 14 - [Slicing and Dicing Mockups][Chapter 13]
   - [Step 1: Set Major Widths][]
   - [Step 2: Backgrounds][]
   - [Step 3: Grab Images][]
@@ -189,7 +198,8 @@ Table of Contents
 [Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#visual-design-for-the-nondesigner
 [Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#typography
 [Chapter 12]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#the-color-palette
-[Chapter 13]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#slicing-and-dicing-mockups
+[Chapter 13]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments
+[Chapter 14]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#slicing-and-dicing-mockups
 
 [Appendices]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendices
 
@@ -309,16 +319,24 @@ Table of Contents
 [Step 3: Look at Alternatives]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-3-look-at-alternatives
 [Step 4: Apply]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-4-apply
 
-[Step 1: Set Major Widths]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-1-set-major-widths
-[Step 2: Backgrounds]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-2-backgrounds
-[Step 3: Grab Images]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-3-grab-images
-[Step 4: Fonts]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-4-fonts
-[Step 5: Sectioning Content (layout/application.html.haml)]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-5-sectioning-content-layoutapplicationhtmlhaml
-[Step 6: Start with %header and %footer]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-6-start-with-header-and-footer
-[Step 7: Navigation]:  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-7-navigation
-[Step 8: HTML for the Main Content]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-8-html-for-the-main-content
-[Step 9: Adding Styles]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-9-adding-styles
-[Step 10: Sprites and CSS3 for Images]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-slicing-and-dicing-mockups.md#step-10-sprites-and-css3-for-images
+[The Power of CSS]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#the-power-of-css
+[Design Details]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#design-details
+[Example Design Workflow]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#example-design-workflow
+[Apply Styles That Already Exist]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#apply-styles-that-already-exist
+[Arrange Components Responsively]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#arrange-components-responsively
+[Experiment]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#experiment
+[The What and How Approach to Design]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#the-what-and-how-approach-to-design
+
+[Step 1: Set Major Widths]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#step-1-set-major-widths
+[Step 2: Backgrounds]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#step-2-backgrounds
+[Step 3: Grab Images]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#step-3-grab-images
+[Step 4: Fonts]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#step-4-fonts
+[Step 5: Sectioning Content (layout/application.html.haml)]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#step-5-sectioning-content-layoutapplicationhtmlhaml
+[Step 6: Start with %header and %footer]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#step-6-start-with-header-and-footer
+[Step 7: Navigation]:  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#step-7-navigation
+[Step 8: HTML for the Main Content]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#step-8-html-for-the-main-content
+[Step 9: Adding Styles]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#step-9-adding-styles
+[Step 10: Sprites and CSS3 for Images]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#step-10-sprites-and-css3-for-images
 
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
