@@ -302,7 +302,7 @@ http://css-tricks.com/triangle-with-shadow/
 [Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#visual-design-for-the-nondesigner
 [Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#typography
 [Chapter 12]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#the-color-palette
-[Chapter 13]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments
+[Chapter 13]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#embellishments
 [Appendix 1]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-1
 [Appendix 11]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-11
 

@@ -198,7 +198,7 @@ Table of Contents
 [Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#visual-design-for-the-nondesigner
 [Chapter 11]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#typography
 [Chapter 12]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#the-color-palette
-[Chapter 13]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments
+[Chapter 13]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#embellishments
 [Chapter 14]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#slicing-and-dicing-mockups
 
 [Appendices]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendices
@@ -319,13 +319,13 @@ Table of Contents
 [Step 3: Look at Alternatives]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-3-look-at-alternatives
 [Step 4: Apply]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp12-the-color-palette.md#step-4-apply
 
-[The Power of CSS]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#the-power-of-css
-[Design Details]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#design-details
-[Example Design Workflow]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#example-design-workflow
-[Apply Styles That Already Exist]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#apply-styles-that-already-exist
-[Arrange Components Responsively]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#arrange-components-responsively
-[Experiment]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#experiment
-[The What and How Approach to Design]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments#the-what-and-how-approach-to-design
+[The Power of CSS]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#the-power-of-css
+[Design Details]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#design-details
+[Example Design Workflow]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#example-design-workflow
+[Apply Styles That Already Exist]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#apply-styles-that-already-exist
+[Arrange Components Responsively]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#arrange-components-responsively
+[Experiment]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#experiment
+[The What and How Approach to Design]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#the-what-and-how-approach-to-design
 
 [Step 1: Set Major Widths]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#step-1-set-major-widths
 [Step 2: Backgrounds]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp14-slicing-and-dicing-mockups.md#step-2-backgrounds
