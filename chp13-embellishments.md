@@ -247,7 +247,7 @@ It's a simple list that unstyled looks like this:
 ![][Values 1]
 <br>
 <br>
-Obviously we need to add some style. The good thing is we now have a frame of reference; an ordered list. This answers the "what" part of our question. Ordered lists have been styled a thousand times over, so I guarantee you that there will be a lot tutorials out there that will answer the "how" part of our question, and there is:
+Obviously, we need to add some style. The good thing is we now have a frame of reference; an ordered list. This answers the "what" part of our question. Ordered lists have been styled a thousand times over, so I guarantee you that there will be a lot tutorials out there that will answer the "how", and there is:
 
 - [CSS Design: Taming Lists][Taming Lists]
 - [CSS Swag: Multi-Column Lists][Multicolumn]
@@ -256,11 +256,11 @@ Obviously we need to add some style. The good thing is we now have a frame of re
 - [Numbering In Style][]
 - [CSS3 ordered list styles][CSS3 OL]
 
-TIP: It's good practice to start developing an organized bookmark list of CSS how to's. Every time I find an article that I think I may use I bookmark it under a category the defines it. I always rename the bookmark to include  the articles date beginning with the year. This way I can decide what is more relevant today since standards change, but old articles have pearls of wisdom too. Here is an example related to lists:
+TIP: It's good practice to start curating an organized bookmark list of CSS how to's. Every time I find an article that I think I may use or want to reference, I bookmark it under a category the defines it and similar articles. I always rename the bookmark with the articles date beginning with the year. This way I can decide what is more relevant today since standards change (old articles have pearls of wisdom too). Here is an example related to our how to links above:
 
 ![][Lists]
 
-With some styles:
+After reviewing the articles I come up with an idea. I like how some of the articles use an ordered lists numbers as a design element. Using this concept and adding a `box-shadow` I style my list:
 <br>
 <br>
 <br>
@@ -268,26 +268,110 @@ With some styles:
 <br>
 <br>
 <br>
-Add some mixins:
+Nice, I like how it's looking. Are starters CSS includes a pretty cool set of box shadow mixins. If I apply these mixins to our list items I can experiment with the mixins available and see how they might look:
 <br>
 <br>
 ![][Values 3]
 <br>
 <br>
 <br>
-Slight variation:
+I'm liking it even more, particularly the last one. All this is been accomplished with CSS, quickly. With a little bit more CSS I can even make it look like the corners are turned up:
 <br>
 <br>
 ![][Values 4]
 <br>
 <br>
-Result:
+That some powerful stuff. Our initial question was what and how. By defining what we were going to style it was easy to find how we were going to do it. Without the teachings and examples of the front end developer community, I probably would not have come up with this on my own. As front-end developers we learn from one another, take advantage of this in your design process.
+
+With the new CSS styles I decided to flow my list item boxes horizontally rather than vertically to save space. The result:
 <br>
 <br>
 <br>
 ![][Values 5]
 <br>
 <br>
+Pretty nice, and with the horizontal flow the content from the previous section fits into the viewport. Here are the styles that accomplished this look:
+
+    /* Core Values
+      -----------------------
+
+    #core-values
+      position: relative
+      padding: $padding-4 0
+      background-color: $white
+      z-index: -2
+
+      +at-breakpoint($break6)
+        padding-top: 0
+        padding-bottom: $padding-6
+
+      +at-breakpoint($break9)
+        padding-bottom: $padding-9
+
+      +at-breakpoint($break12)
+        padding-bottom: $padding-12
+
+    .core-values
+      position: relative
+      h2
+        text-align: center
+      li
+        position: relative
+        margin-bottom: 1.618em
+        padding: 1em 1em 1em 3.034em
+        font-size: 1em
+        counter-increment: step
+        list-style: none
+        +box-shadow(0 0 10px rgba(0, 0, 0, 0.2))
+        +shadow-3
+        &:nth-child(3)
+          margin-bottom: 0
+        span:before
+          content: counter(step, upper-roman)
+          position: absolute
+          top: 0
+          left: 0
+          width: 1.875em
+          line-height: 1.875em
+          text-align: center
+          color: $white
+          background-color: $orange
+          // background-color: rgba(242, 101, 19, .7)
+          +border-top-left-radius(4px)
+
+      +at-breakpoint($break6)
+        li
+          // 1 + .169
+          font-size: 1.169em
+
+      +at-breakpoint($break9)
+        +span-columns(9 omega, $break9)
+        h2
+          margin-top: 2.618em
+          margin-bottom: 1.618em
+        ol
+          text-align: center
+        li
+          display: inline-block
+          width: 7.942em
+          margin: 0 .618em 0 0
+          text-align: left
+          vertical-align: top
+          &:nth-child(3)
+            margin-right: 0
+        &:before
+          +squish(.5, .5)
+          +panel-shadow
+
+      +at-breakpoint($break12)
+        +span-columns(12 omega, $break12)
+        li
+          margin-right: 1em
+          width: 11.089em
+          // 1 + .236
+          font-size: 1.236em
+
+NOTE: The `+shadow-3` mixin is included in the [starter styles][].
 
 
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
@@ -299,6 +383,7 @@ Result:
 [Curly Quotes]:         http://www.nealgrosskopf.com/tech/thread.php?pid=21
 [Block Quotes]:         http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/
 [Font Library]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#icon-fonts-to-play-with
+[starter styles]:       https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_mixins.sass
 
 [Taming Lists]:         http://alistapart.com/article/taminglists
 [Multicolumn]:          http://alistapart.com/article/multicolumnlists
