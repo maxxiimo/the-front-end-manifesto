@@ -225,7 +225,7 @@ That makes a really nice difference, but something about the centering of each p
 The Power of CSS
 ----------------
 
-Adobe Photoshop is a graphic designers design tool. CSS and your browser are your design tools. There is quite a bit you can do with CSS, the question is what and how?
+Adobe Photoshop is a graphic designers design tool. CSS and your browser are a front-end developers design tools. There is quite a bit you can do with CSS, the question is what and how?
 
 Let's take another example from our View Thought project and answer this question. We start with raw content:
 
@@ -247,6 +247,19 @@ It's a simple list that unstyled looks like this:
 ![][Values 1]
 <br>
 <br>
+Obviously we need to add some style. The good thing is we now have a frame of reference; an ordered list. This answers the "what" part of our question. Ordered lists have been styled a thousand times over, so I guarantee you that there will be a lot tutorials out there that will answer the "how" part of our question, and there is:
+
+- [CSS Design: Taming Lists][Taming Lists]
+- [CSS Swag: Multi-Column Lists][Multicolumn]
+- [Hover on “Everything But”][Everything But]
+- [Styling ordered list numbers][Styling OL]
+- [Numbering In Style][]
+- [CSS3 ordered list styles][CSS3 OL]
+
+TIP: It's good practice to start developing an organized bookmark list of CSS how to's. Every time I find an article that I think I may use I bookmark it under a category the defines it. I always rename the bookmark to include  the articles date beginning with the year. This way I can decide what is more relevant today since standards change, but old articles have pearls of wisdom too. Here is an example related to lists:
+
+![][Lists]
+
 With some styles:
 <br>
 <br>
@@ -287,6 +300,13 @@ Result:
 [Block Quotes]:         http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/
 [Font Library]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#icon-fonts-to-play-with
 
+[Taming Lists]:         http://alistapart.com/article/taminglists
+[Multicolumn]:          http://alistapart.com/article/multicolumnlists
+[Everything But]:       http://css-tricks.com/hover-on-everything-but/
+[Styling OL]:           http://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/
+[Numbering In Style]:   http://css-tricks.com/numbering-in-style/
+[CSS3 OL]:              http://www.red-team-design.com/css3-ordered-list-styles
+
 [Quote Examples]:       http://www.chrismaxwell.com/manifesto/chp-13/quote-examples.gif
 [Quotes]:               http://www.chrismaxwell.com/manifesto/chp-13/quotes.jpg
 [Design 1]:             http://www.chrismaxwell.com/manifesto/chp-13/design-1.png
@@ -295,6 +315,7 @@ Result:
 [Design 4]:             http://www.chrismaxwell.com/manifesto/chp-13/design-4.png
 [Design 6]:             http://www.chrismaxwell.com/manifesto/chp-13/design-6.png
 [Design 7]:             http://www.chrismaxwell.com/manifesto/chp-13/design-7.png
+[Lists]:                http://www.chrismaxwell.com/manifesto/chp-13/bookmarks.gif
 [Values 1]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-1a.gif
 [Values 2]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-mac-1.png
 [Values 3]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-3.gif
