@@ -10,6 +10,20 @@ Adobe Photoshop is a graphic designers design tool. CSS and your browser are a f
 
 
 
+Navigation
+----------
+<br>
+<br>
+![][Navigation 1]
+<br>
+<br>
+
+<br>
+<br>
+![][Navigation 2]
+<br>
+<br>
+
 Design Details
 --------------
 
@@ -404,6 +418,8 @@ NOTE: The `+shadow-3` mixin is included in the [starter styles][].
 [Numbering In Style]:   http://css-tricks.com/numbering-in-style/
 [CSS3 OL]:              http://www.red-team-design.com/css3-ordered-list-styles
 
+[Navigation 1]:         http://www.chrismaxwell.com/manifesto/chp-13/navigation-1.gif
+[Navigation 2]:         http://www.chrismaxwell.com/manifesto/chp-13/navigation-2.gif
 [Quote Examples]:       http://www.chrismaxwell.com/manifesto/chp-13/quote-examples.gif
 [Quotes]:               http://www.chrismaxwell.com/manifesto/chp-13/quotes.jpg
 [Design 1]:             http://www.chrismaxwell.com/manifesto/chp-13/design-1.png
