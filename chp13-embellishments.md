@@ -37,7 +37,7 @@ Adobe Photoshop is a graphic designers design tool. CSS and your browser are a f
 
 <br>
 <br>
-![][Box Shadow]
+![][Box Shadows]
 <br>
 <br>
 
@@ -458,11 +458,11 @@ NOTE: The `+shadow-3` mixin is included in the [starter styles][].
 [Numbering In Style]:   http://css-tricks.com/numbering-in-style/
 [CSS3 OL]:              http://www.red-team-design.com/css3-ordered-list-styles
 
-[Box Shadows]:          http://www.chrismaxwell.com/manifesto/chp-13/shadows-w-numbers.gif
 [Gradient 1]:           http://www.chrismaxwell.com/manifesto/chp-13/gradient-line-1.gif
 [Gradient 2]:           http://www.chrismaxwell.com/manifesto/chp-13/gradient-line-2.gif
 [Panel Gradient]:       http://www.chrismaxwell.com/manifesto/chp-13/panel-gradient.gif
 [Photo Gradient]:       http://www.chrismaxwell.com/manifesto/chp-13/photo-gradient.gif
+[Box Shadows]:          http://www.chrismaxwell.com/manifesto/chp-13/shadows-w-numbers.gif
 [Navigation 1]:         http://www.chrismaxwell.com/manifesto/chp-13/navigation-1.gif
 [Navigation 2]:         http://www.chrismaxwell.com/manifesto/chp-13/navigation-2.gif
 [Navigation 3]:         http://www.chrismaxwell.com/manifesto/chp-13/shadow-header.gif
