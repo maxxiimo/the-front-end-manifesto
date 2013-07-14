@@ -150,7 +150,7 @@ Table of Contents
       - [Experiment][]
   - [The What and How Approach to Design][]
 
-### Chapter 14 - [Slicing and Dicing Mockups][Chapter 13]
+### Chapter 14 - [Slicing and Dicing Mockups][Chapter 14]
   - [Step 1: Set Major Widths][]
   - [Step 2: Backgrounds][]
   - [Step 3: Grab Images][]
