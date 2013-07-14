@@ -2,6 +2,13 @@ Embellishments
 ==============
 
 
+The Power of CSS
+----------------
+
+Adobe Photoshop is a graphic designers design tool. CSS and your browser are a front-end developers design tools. With CSS you can do almost anything for just a few short years ago  belong squarely in the realm of Photoshop design work.
+
+
+
 
 Design Details
 --------------
@@ -222,12 +229,12 @@ That makes a really nice difference, but something about the centering of each p
 <br>
 <br>
 
-The Power of CSS
-----------------
+The What and How Approach to Design
+-----------------------------------
 
-Adobe Photoshop is a graphic designers design tool. CSS and your browser are a front-end developers design tools. There is quite a bit you can do with CSS, the question is what and how?
+There is quite a bit you can do with CSS, the question is what and how? Let's take another example from our View Thought project and answer this question and at the same time explore what I'm going to call the "what and how approach to design."
 
-Let's take another example from our View Thought project and answer this question. We start with raw content:
+Start with coded raw content:
 
     %section#core-values
       .container
