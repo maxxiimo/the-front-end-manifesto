@@ -9,14 +9,19 @@ Design Details
 It's the little things that sometimes can make a big difference. Take for example quotes. We could always use regular quote characters: `&#147;` and `&#148;`, or the equivalent HTML entities: `&ldquo;` and `&rdquo;`, but That's a little bit too plain Jane for me. I have an idea on what I want, those giant quotes I see on some sites, but before I head down that path, I'm going to first check my [inspiration resources][Appendix 5].  Whenever designing it's a good idea to check your inspirational resources see how others might have implemented your idea, or possibly find something better suited for your projects content or use case. I did a quick search on [Pattern Tap][]:
 <br>
 <br>
-<br>
 ![][Quote examples]
+<br>
 <br>
 <br>
 There are some good ideas there, including my giant curly quotes. I'm going to stick with that idea.
 
+The technique I use to accomplish giant curly quotes is pretty straightforward. I reviewed a few how-to articles:
 
-The technique I use to accomplish giant curly quotes is pretty straightforward. I will add an icon font quote to my passage and style it so that it stands out. I included a few different types of quote characters in [my font library][Font Library] to experiment with.
+- [Swooshy Curly Quotes Without Images][Swooshy]
+- [Create CSS Curly Quotes Without Images][Curly Quotes]
+- [Modern Block Quote Styles][Block Quotes]
+
+...to see how others implement this design idea. For View Thought I will add an icon font quote to my passage and use the techniques in the [24 Ways][Swooshy] article style it so that it stands out. I included a few different types of quote characters in [my font library][Font Library] to experiment with.
 
 NOTE: Make sure you complete the Chapter 10 icon font [set up steps][Icon Fonts].
 
@@ -37,7 +42,7 @@ Icon fonts are regular characters, and will behave like regular characters. I ga
       // 1 + .274
       font-size: 1.274em
 
-And that's it. I experimented a little and from my experimental set I like the second one from the end best:
+And that's it. I experimented a little and from my experimental set I like the second one from the left best:
 
 ![][Quotes]
 
@@ -252,6 +257,9 @@ Let's take another example from our View Thought project. Again we start with ra
 [Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-5
 
 [Pattern Tap]:          http://patterntap.com/
+[Swooshy]:              http://24ways.org/2005/swooshy-curly-quotes-without-images/
+[Curly Quotes]:         http://www.nealgrosskopf.com/tech/thread.php?pid=21
+[Block Quotes]:         http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/
 [Font Library]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#icon-fonts-to-play-with
 
 [Quote Examples]:       http://www.chrismaxwell.com/manifesto/chp-13/quote-examples.gif
