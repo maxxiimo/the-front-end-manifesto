@@ -6,23 +6,28 @@ Embellishments
 Design Details
 --------------
 
-It's the little things that sometimes can make a big difference. Take for example quotes. We could always use regular quote characters: `&#147;` and `&#148;`, or the equivalent HTML entities: `&ldquo;` and `&rdquo;`, but That's a little bit too plain Jane for me. I have an idea on what I want, those giant quotes I see on some sites, but before I head down that path it's always a good idea to check on your inspirational resources to see if there's something new or maybe better suited for your design. I did a quick search on [Pattern Tap][]:
+It's the little things that sometimes can make a big difference. Take for example quotes. We could always use regular quote characters: `&#147;` and `&#148;`, or the equivalent HTML entities: `&ldquo;` and `&rdquo;`, but That's a little bit too plain Jane for me. I have an idea on what I want, those giant quotes I see on some sites, but before I head down that path, I'm going to first check my [inspiration resources][Appendix 5].  Whenever designing it's a good idea to check your inspirational resources see how others might have implemented your idea, or possibly find something better suited for your projects content or use case. I did a quick search on [Pattern Tap][]:
 <br>
 <br>
 <br>
 ![][Quote examples]
 <br>
 <br>
-There some good ideas there, including my giant curly quotes. I'm going to stick with that idea. The technique I use to accomplish my idea is pretty straightforward. I will add a curly quote icon fonts to my passage and style it so that it stands out. I include a few different types of quote characters in my font library to experiment with.
+There are some good ideas there, including my giant curly quotes. I'm going to stick with that idea.
 
-To begin, first add the font icon span to the `%blockquote` you would like to include the quote character in:
+
+The technique I use to accomplish giant curly quotes is pretty straightforward. I will add an icon font quote to my passage and style it so that it stands out. I included a few different types of quote characters in [my font library][Font Library] to experiment with.
+
+NOTE: Make sure you complete the Chapter 10 icon font [set up steps][Icon Fonts].
+
+To begin, first add the following icon font `%span` to the `%blockquote` you would like to include the quote character in:
 
     %blockquote
       %span{"aria-hidden" => "true", "data-icon" => "&#x275d;".html_safe, :class => 'giant-quote'}
       A website should give its visitors immediate value, the moment they land on your...
     %p Chris Maxwell, founder of ViewThought
 
-Icon fonts are regular characters, and will behave like regular characters. I gave mine a class of `giant-quote`, then style the character through that class:
+Icon fonts are regular characters, and will behave like regular characters. I gave mine a class of `giant-quote`, and will style the character through that class:
 
     .giant-quote
       display: block
@@ -243,8 +248,11 @@ Let's take another example from our View Thought project. Again we start with ra
 
 
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
+[Icon Fonts]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#creating-your-own-set
+[Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-5
 
 [Pattern Tap]:          http://patterntap.com/
+[Font Library]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#icon-fonts-to-play-with
 
 [Quote Examples]:       http://www.chrismaxwell.com/manifesto/chp-13/quote-examples.gif
 [Quotes]:               http://www.chrismaxwell.com/manifesto/chp-13/quotes.jpg
