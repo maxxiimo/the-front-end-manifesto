@@ -6,18 +6,23 @@ Embellishments
 Design Details
 --------------
 
-It's the little things that sometimes can make a big difference. Take for example quotes. We could always use regular quote characters: `&#147;` and `&#148;`, or the equivalent HTML entities: `&ldquo;` and `&rdquo;`, but why not create one of those giant curly quotes you see on some websites? It's easy.
+It's the little things that sometimes can make a big difference. Take for example quotes. We could always use regular quote characters: `&#147;` and `&#148;`, or the equivalent HTML entities: `&ldquo;` and `&rdquo;`, but That's a little bit too plain Jane for me. I have an idea on what I want, those giant quotes I see on some sites, but before I head down that path it's always a good idea to check on your inspirational resources to see if there's something new or maybe better suited for your design. I did a quick search on [Pattern Tap][]:
+<br>
+<br>
+<br>
+![][Quote examples]
+<br>
+<br>
+There some good ideas there, including my giant curly quotes. I'm going to stick with that idea. The technique I use to accomplish my idea is pretty straightforward. I will add a curly quote icon fonts to my passage and style it so that it stands out. I include a few different types of quote characters in my font library to experiment with.
 
-The technique I used to compass this is to use icon fonts. I included a few different types in my font library. Here's how it works:
-
-First, add the font icon span to the `%blockquote` you would like to include the icon font in. Remember, icon fonts a regular characters:
+To begin, first add the font icon span to the `%blockquote` you would like to include the quote character in:
 
     %blockquote
       %span{"aria-hidden" => "true", "data-icon" => "&#x275d;".html_safe, :class => 'giant-quote'}
       A website should give its visitors immediate value, the moment they land on your...
     %p Chris Maxwell, founder of ViewThought
 
-Next, style the character:
+Icon fonts are regular characters, and will behave like regular characters. I gave mine a class of `giant-quote`, then style the character through that class:
 
     .giant-quote
       display: block
@@ -27,13 +32,13 @@ Next, style the character:
       // 1 + .274
       font-size: 1.274em
 
-And that's it. I experimented a little, and like the second one from the end best:
+And that's it. I experimented a little and from my experimental set I like the second one from the end best:
 
 ![][Quotes]
 
 
-Example Workflow
-----------------
+Example Design Workflow
+-----------------------
 
 In this example we have our basic content, somewhat refined since we first architected it in [Chapter 9][]:
 <br>
@@ -209,8 +214,39 @@ That makes a really nice difference, but something about the centering of each p
 <br>
 <br>
 
+The Power of CSS
+----------------
+
+Adobe Photoshop is a graphic designers design tool. CSS and your browser are your design tools. There is quite a bit you can do with CSS, the question is what can you do, or how do you find out what you can do, and how do you do it?
+
+Let's take another example from our View Thought project. Again we start with raw content:
+
+<br>
+<br>
+<br>
+![][Competencies 1]
+<br>
+<br>
+<br>
+<br>
+<br>
+![][Competencies 2]
+<br>
+<br>
+<br>
+<br>
+<br>
+![][Competencies 3]
+<br>
+<br>
+
+
+
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
 
+[Pattern Tap]:          http://patterntap.com/
+
+[Quote Examples]:       http://www.chrismaxwell.com/manifesto/chp-13/quote-examples.gif
 [Quotes]:               http://www.chrismaxwell.com/manifesto/chp-13/quotes.jpg
 [Design 1]:             http://www.chrismaxwell.com/manifesto/chp-13/design-1.png
 [Design 2]:             http://www.chrismaxwell.com/manifesto/chp-13/design-2.png
@@ -218,3 +254,6 @@ That makes a really nice difference, but something about the centering of each p
 [Design 4]:             http://www.chrismaxwell.com/manifesto/chp-13/design-4.png
 [Design 6]:             http://www.chrismaxwell.com/manifesto/chp-13/design-6.png
 [Design 7]:             http://www.chrismaxwell.com/manifesto/chp-13/design-7.png
+[Competencies 1]:       http://www.chrismaxwell.com/manifesto/chp-13/core-competencies-1.gif
+[Competencies 2]:       http://www.chrismaxwell.com/manifesto/chp-13/core-competencies-2.gif
+[Competencies 3]:       http://www.chrismaxwell.com/manifesto/chp-13/core-competencies-3.gif
