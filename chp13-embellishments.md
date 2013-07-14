@@ -13,19 +13,17 @@ It's the little things that sometimes can make a big difference. Take for exampl
 <br>
 <br>
 <br>
-There are some good ideas there, including my giant curly quotes. I'm going to stick with that idea.
-
-The technique I use to accomplish giant curly quotes is pretty straightforward. I reviewed a few how-to articles:
+There are some good ideas there, including my giant curly quotes. I'm going to stick with that idea. The technique I use to accomplish this is pretty straightforward. I reviewed a few how-to articles to see how others implement giant curly quotes:
 
 - [Swooshy Curly Quotes Without Images][Swooshy]
 - [Create CSS Curly Quotes Without Images][Curly Quotes]
 - [Modern Block Quote Styles][Block Quotes]
 
-...to see how others implement this design idea. For View Thought I will add an icon font quote to my passage and use the techniques in the [24 Ways][Swooshy] article style it so that it stands out. I included a few different types of quote characters in [my font library][Font Library] to experiment with.
+For View Thought I will add an icon font quote to my passage and use the techniques in the [24 Ways][Swooshy] article to style it so that it stands out. I included a few different types of quote characters in [my font library][Font Library] to experiment with.
 
 NOTE: Make sure you complete the Chapter 10 icon font [set up steps][Icon Fonts].
 
-To begin, first add the following icon font `%span` to the `%blockquote` you would like to include the quote character in:
+To begin, add the following icon font `%span` within the `%blockquote` you would like to include the quote character in:
 
     %blockquote
       %span{"aria-hidden" => "true", "data-icon" => "&#x275d;".html_safe, :class => 'giant-quote'}
