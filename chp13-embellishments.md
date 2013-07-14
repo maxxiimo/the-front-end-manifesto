@@ -225,26 +225,43 @@ That makes a really nice difference, but something about the centering of each p
 The Power of CSS
 ----------------
 
-Adobe Photoshop is a graphic designers design tool. CSS and your browser are your design tools. There is quite a bit you can do with CSS, the question is what can you do, or how do you find out what you can do, and how do you do it?
+Adobe Photoshop is a graphic designers design tool. CSS and your browser are your design tools. There is quite a bit you can do with CSS, the question is what and how?
 
-Let's take another example from our View Thought project. Again we start with raw content:
+Let's take another example from our View Thought project and answer this question. We start with raw content:
+
+    %section#core-values
+      .container
+        .core-values
+          %h2 Core Values
+          %ol
+            %li
+              %span Build technology solutions that enhance the value proposition of our customers &ndash; add value to customer business.
+            %li
+              %span Integrate beauty, design and optimal user experience in application development.
+            %li
+              %span Address device constraints and opportunities while delivering consistent visual design.
+
+It's a simple list that unstyled looks like this:
+
+![][Values 1]
+
 
 <br>
 <br>
 <br>
-![][Competencies 1]
+![][Values 2]
 <br>
 <br>
 <br>
 <br>
 <br>
-![][Competencies 2]
+![][Values 3]
 <br>
 <br>
 <br>
 <br>
 <br>
-![][Competencies 3]
+![][Values 4]
 <br>
 <br>
 
@@ -268,6 +285,7 @@ Let's take another example from our View Thought project. Again we start with ra
 [Design 4]:             http://www.chrismaxwell.com/manifesto/chp-13/design-4.png
 [Design 6]:             http://www.chrismaxwell.com/manifesto/chp-13/design-6.png
 [Design 7]:             http://www.chrismaxwell.com/manifesto/chp-13/design-7.png
-[Competencies 1]:       http://www.chrismaxwell.com/manifesto/chp-13/core-competencies-1.gif
-[Competencies 2]:       http://www.chrismaxwell.com/manifesto/chp-13/core-competencies-2.gif
-[Competencies 3]:       http://www.chrismaxwell.com/manifesto/chp-13/core-competencies-3.gif
+[Values 1]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-1a.gif
+[Values 2]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-2.gif
+[Values 3]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-3.gif
+[Values 4]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-4.gif
