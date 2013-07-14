@@ -242,10 +242,13 @@ Let's take another example from our View Thought project and answer this questio
               %span Address device constraints and opportunities while delivering consistent visual design.
 
 It's a simple list that unstyled looks like this:
-
+<br>
+<br>
+<br>
 ![][Values 1]
-
-
+<br>
+<br>
+With some styles:
 <br>
 <br>
 <br>
@@ -253,18 +256,26 @@ It's a simple list that unstyled looks like this:
 <br>
 <br>
 <br>
+Add some mixins:
 <br>
 <br>
 ![][Values 3]
 <br>
 <br>
 <br>
+Slight variation:
 <br>
 <br>
 ![][Values 4]
 <br>
 <br>
-
+Result:
+<br>
+<br>
+<br>
+![][Values 5]
+<br>
+<br>
 
 
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
@@ -289,3 +300,4 @@ It's a simple list that unstyled looks like this:
 [Values 2]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-2.gif
 [Values 3]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-3.gif
 [Values 4]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-4.gif
+[Values 5]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-5.gif
