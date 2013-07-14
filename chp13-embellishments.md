@@ -235,14 +235,13 @@ Let's take another example from our View Thought project and answer this questio
           %h2 Core Values
           %ol
             %li
-              %span Build technology solutions that enhance the value proposition of our customers &ndash; add value to customer business.
+              %span Build technology solutions that enhance the value proposition...
             %li
-              %span Integrate beauty, design and optimal user experience in application development.
+              %span Integrate beauty, design and optimal user experience in application...
             %li
-              %span Address device constraints and opportunities while delivering consistent visual design.
+              %span Address device constraints and opportunities while delivering...
 
 It's a simple list that unstyled looks like this:
-<br>
 <br>
 <br>
 ![][Values 1]
@@ -297,7 +296,7 @@ Result:
 [Design 6]:             http://www.chrismaxwell.com/manifesto/chp-13/design-6.png
 [Design 7]:             http://www.chrismaxwell.com/manifesto/chp-13/design-7.png
 [Values 1]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-1a.gif
-[Values 2]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-2.gif
+[Values 2]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-mac-1.png
 [Values 3]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-3.gif
 [Values 4]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-4.gif
-[Values 5]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-5.gif
+[Values 5]:             http://www.chrismaxwell.com/manifesto/chp-13/core-values-mac-2.png
