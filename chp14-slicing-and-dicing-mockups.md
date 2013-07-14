@@ -332,13 +332,13 @@ Why do this from the get-go? Well you know you will have icons and you already h
 
 [Railscasts]:           http://railscasts.com/episodes/334-compass-css-sprites
 
-[mockup]:               http://chrismaxwell.com/manifesto/chp-11/mockup-700px.jpg
-[step-5]:               http://chrismaxwell.com/manifesto/chp-11/grids.gif
-[auto-select]:          http://chrismaxwell.com/manifesto/chp-11/auto-select.gif
-[eyedropper]:           http://chrismaxwell.com/manifesto/chp-11/eyedropper.gif
-[step-6]:               http://chrismaxwell.com/manifesto/chp-11/finished-footer.gif
-[step-8]:               http://chrismaxwell.com/manifesto/chp-11/HTML-no-styles-sm.gif
-[step-9]:               http://chrismaxwell.com/manifesto/chp-11/job-details-700px.jpg
+[mockup]:               http://chrismaxwell.com/manifesto/chp-14/mockup-700px.jpg
+[step-5]:               http://chrismaxwell.com/manifesto/chp-14/grids.gif
+[auto-select]:          http://chrismaxwell.com/manifesto/chp-14/auto-select.gif
+[eyedropper]:           http://chrismaxwell.com/manifesto/chp-14/eyedropper.gif
+[step-6]:               http://chrismaxwell.com/manifesto/chp-14/finished-footer.gif
+[step-8]:               http://chrismaxwell.com/manifesto/chp-14/HTML-no-styles-sm.gif
+[step-9]:               http://chrismaxwell.com/manifesto/chp-14/job-details-700px.jpg
 
 ## TODO / write:
 

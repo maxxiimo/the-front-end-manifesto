@@ -419,6 +419,6 @@ And that's it! Here is what our site looks like with are new icon fonts, typefac
 [Meaningful Typography]: http://alistapart.com/article/more-meaningful-typography
 [somewhere]:            http://www.kaikkonendesign.fi/typography/section/11
 
-[Fonts]:                http://www.chrismaxwell.com/manifesto/chp-10/fonts.gif
-[Final Three]:          http://www.chrismaxwell.com/manifesto/chp-10/final-three.gif
-[Multidevice]:          http://www.chrismaxwell.com/manifesto/chp-10/multidevice.png
+[Fonts]:                http://www.chrismaxwell.com/manifesto/chp-11/fonts.gif
+[Final Three]:          http://www.chrismaxwell.com/manifesto/chp-11/final-three.gif
+[Multidevice]:          http://www.chrismaxwell.com/manifesto/chp-11/multidevice.png

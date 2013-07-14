@@ -243,15 +243,15 @@ After some heavy experimentation here are two ideas I came up with:
 [Pictaculous]:          http://pictaculous.com/
 [Kuler]:                https://kuler.adobe.com/explore/
 
-[Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-10/pocket-color-wheel.jpg
-[Orange]:               http://www.chrismaxwell.com/manifesto/chp-10/orange.gif
-[Blue]:                 http://www.chrismaxwell.com/manifesto/chp-10/blue.gif
-[Kuler]:                http://www.chrismaxwell.com/manifesto/chp-10/kuler.gif
-[Wizard]:               http://www.chrismaxwell.com/manifesto/chp-10/color-wizard.gif
-[Shades]:               http://www.chrismaxwell.com/manifesto/chp-10/shades.gif
-[Generator]:            http://www.chrismaxwell.com/manifesto/chp-10/generator.gif
-[Pictaculous Image]:    http://www.chrismaxwell.com/manifesto/chp-10/pictaculous.gif
-[Favorites]:            http://www.chrismaxwell.com/manifesto/chp-10/palettes.gif
-[Palette 1]:            http://www.chrismaxwell.com/manifesto/chp-10/palette-1.gif
-[Palette 2]:            http://www.chrismaxwell.com/manifesto/chp-10/palette-2.gif
-[Palette 3]:            http://www.chrismaxwell.com/manifesto/chp-10/palette-3.gif
+[Color Wheel]:          http://www.chrismaxwell.com/manifesto/chp-12/pocket-color-wheel.jpg
+[Orange]:               http://www.chrismaxwell.com/manifesto/chp-12/orange.gif
+[Blue]:                 http://www.chrismaxwell.com/manifesto/chp-12/blue.gif
+[Kuler]:                http://www.chrismaxwell.com/manifesto/chp-12/kuler.gif
+[Wizard]:               http://www.chrismaxwell.com/manifesto/chp-12/color-wizard.gif
+[Shades]:               http://www.chrismaxwell.com/manifesto/chp-12/shades.gif
+[Generator]:            http://www.chrismaxwell.com/manifesto/chp-12/generator.gif
+[Pictaculous Image]:    http://www.chrismaxwell.com/manifesto/chp-12/pictaculous.gif
+[Favorites]:            http://www.chrismaxwell.com/manifesto/chp-12/palettes.gif
+[Palette 1]:            http://www.chrismaxwell.com/manifesto/chp-12/palette-1.gif
+[Palette 2]:            http://www.chrismaxwell.com/manifesto/chp-12/palette-2.gif
+[Palette 3]:            http://www.chrismaxwell.com/manifesto/chp-12/palette-3.gif

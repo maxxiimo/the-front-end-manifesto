@@ -7,9 +7,6 @@ The Power of CSS
 
 Adobe Photoshop is a graphic designers design tool. CSS and your browser are a front-end developers design tools. With CSS you can do almost anything for just a few short years ago  belong squarely in the realm of Photoshop design work.
 
-
-
-
 Navigation
 ----------
 <br>
