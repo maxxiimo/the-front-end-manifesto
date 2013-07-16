@@ -146,6 +146,7 @@ Table of Contents
       - [Gradients][]
       - [Shadows][]
       - [Pseudo-Classes][]
+      - [Shapes][]
   - [Navigation][]
   - [Design Details][]
   - [Example Design Workflow][]
@@ -327,6 +328,7 @@ Table of Contents
 [Gradients]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#gradients
 [Shadows]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#shadows
 [Pseudo-Classes]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#pseudo---classes
+[Shapes]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#shapes
 [Navigation]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#navigation
 [Design Details]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#design-details
 [Example Design Workflow]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp13-embellishments.md#example-design-workflow

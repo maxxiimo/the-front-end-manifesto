@@ -5,7 +5,7 @@ Embellishments
 The Power of CSS
 ----------------
 
-Adobe Photoshop is a graphic designers design tool. CSS and your browser are a front-end developers design tools. With CSS you can do almost anything for just a few short years ago  belong squarely in the realm of Photoshop design work.
+Adobe Photoshop is a graphic designers design tool. CSS and a browser are a front-end developers design tools. With CSS you can do almost anything that just a few short years ago belonged squarely in the realm of Photoshop design work.
 
 ### Gradients
 
@@ -42,6 +42,16 @@ Adobe Photoshop is a graphic designers design tool. CSS and your browser are a f
 <br>
 
 ### Pseudo-classes
+
+### Shapes
+
+![][Arrow Outline]
+
+![][Arrow Down]
+
+![][Scroll Up]
+
+![][Scroll Down]
 
 Navigation
 ----------
@@ -463,6 +473,10 @@ NOTE: The `+shadow-3` mixin is included in the [starter styles][].
 [Panel Gradient]:       http://www.chrismaxwell.com/manifesto/chp-13/panel-gradient.gif
 [Photo Gradient]:       http://www.chrismaxwell.com/manifesto/chp-13/photo-gradient.gif
 [Box Shadows]:          http://www.chrismaxwell.com/manifesto/chp-13/shadows-w-numbers.gif
+[Arrow Outline]:        http://www.chrismaxwell.com/manifesto/chp-13/arrow-outline.gif
+[Arrow Down]:           http://www.chrismaxwell.com/manifesto/chp-13/arrow-down.gif
+[Scroll Up]:            http://www.chrismaxwell.com/manifesto/chp-13/scroll-up.gif
+[Scroll Down]:          http://www.chrismaxwell.com/manifesto/chp-13/scroll-down.gif
 [Navigation 1]:         http://www.chrismaxwell.com/manifesto/chp-13/navigation-1.gif
 [Navigation 2]:         http://www.chrismaxwell.com/manifesto/chp-13/navigation-2.gif
 [Navigation 3]:         http://www.chrismaxwell.com/manifesto/chp-13/shadow-header.gif
