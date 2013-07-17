@@ -479,7 +479,7 @@ NOTE: The `+shadow-3` mixin is included in the [starter styles][].
 [Arrow Down]:           http://www.chrismaxwell.com/manifesto/chp-13/arrow-down.gif
 [Scroll Up]:            http://www.chrismaxwell.com/manifesto/chp-13/scroll-up.gif
 [Scroll Down]:          http://www.chrismaxwell.com/manifesto/chp-13/scroll-down.gif
-[Icon Arrow]:           http://www.chrismaxwell.com/manifesto/chp-13/icon-arrow.gif
+[Icon Arrow]:           http://www.chrismaxwell.com/manifesto/chp-13/arrow-icon.gif
 [Navigation 1]:         http://www.chrismaxwell.com/manifesto/chp-13/navigation-1.gif
 [Navigation 2]:         http://www.chrismaxwell.com/manifesto/chp-13/navigation-2.gif
 [Navigation 3]:         http://www.chrismaxwell.com/manifesto/chp-13/shadow-header.gif
