@@ -170,6 +170,13 @@ Notice the Unicode value in the `data-icon` attribute? To find your Unicode valu
       line-height: 1
       -webkit-font-smoothing: antialiased
 
+Already defined in `_misc.sass`:
+
+    .screen-reader-text
+      position: absolute
+      top: -9999px
+      left: -9999px
+
 Call your new mixin were needed as follows:
 
     [data-icon]:before
