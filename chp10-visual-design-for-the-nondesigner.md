@@ -19,7 +19,7 @@ The combination of:
 - color ([Chapter 12][])
 - embellishments ([Chapter 13][])
 
- ...are the largest contributors to a sites look and feel. In this chapter we explore the first four items on the list, but first let me make an observation relevant to your role as a front end engineer and design.
+...are the largest contributors to a sites look and feel. In this chapter we explore the first four items on the list, but first let me make an observation relevant to your role as a front end engineer and design.
 
 Paradigm Shift
 --------------
@@ -53,44 +53,66 @@ Branding
 
 If ever there were an area in your design that could really use the help of a graphic designer, it's branding. A companies identity can radiate from a [brand][], and brands can become so well-known that they become [memes][].
 
-A company's logo is more often than not of the pinnacle of a company's brand, and as you probably guessed, prominent on a webpage. 9 times out of 10 the companies you work for already have a brand, but in the other case, like developing a brand for View Thought, you, and I, will need to create something.
+A company's logo is more often than not of the pinnacle of a company's brand, and as you probably guessed, prominent on a webpage.
 
-The approach I recommend is to keep it really simple. Take for example the following UI design companies brand/logo:
+- [Beautiful and Simple Logos for your Delight][Inspiring Logos]
 
+9 times out of 10 the companies you work for already have a brand, but in the other case, like developing a logo for View Thought, I will need to create something.
+
+If you find yourself in this situation, the approach I recommend is to keep it really simple. Take for example the following [companies][Fresh Tilled Soil] brand/logo:
+<br>
+<br>
 ![][Fresh]
-
-- [Fresh Tilled Soil][]
-
-It's just stylized text, and I like it. In in the next chapter we're going to thoroughly explore typography, and based on the teachings of that chapter I chose the following typeface for View Thoughts logo:
+<br>
+<br>
+<br>
+It's just stylized text, and I like it. Now all I need to do is find the right typeface for View Thought? In in the next chapter we're going to thoroughly explore typography, and jumping ahead, based on the teachings of that chapter I chose the following typeface for View Thoughts logo:
 
 - [Quatro Sans][]
 
   > We are pleased to introduce you to Quatro Sans. An undeniably modern typeface with construction principles that attempt to find the balance between machine and hand.
 
-I chose this typeface because we're building things at View Thought, and to me this font captures that feeling. With that typeface in hand, I created the following simple logo:
+I chose this typeface because we're building things at View Thought, and to me this font captures that feeling. My inspiration for this logo came from an [article][] I read. With that typeface in hand, and using the techniques in the article, I created the following simple logo:
 
 ![][Logo]
 
-My inspiration for this logo came from an [article][] I read. Here's an article that might inspire you:
-
-- [Beautiful and Simple Logos for your Delight][Inspiring Logos]
+Nice!
 
 Modular Scales
 --------------
 
-A modular scale is a scale based on ratios derived from harmonic intervals or the [golden ratio][]. In layman's terms this means that the measurements of the scale are related to one another in an artistic/design awesome way, and when you use numbers from the scale for line length, column widths, line heights, and pretty much anything in your website that requires a measurement, you pass on this design awesomeness (versus picking random unrelated numbers), or in the very least you are making a design informed decision!
+With a logo out of the way, the next major design element I recommend you tackle before doing anything else is define the sites harmony. A modular scale is the perfect tool for doing exactly this.
 
-What does a modular skill look like? Here is an example:
+What is it? A modular scale is a scale based on ratios derived from harmonic intervals or the [golden ratio][]. In layman's terms this means that the measurements of the scale are related to one another in an artistic/design awesome way, and when you use numbers from the scale for line length, column widths, line heights, and pretty much anything in your website that requires a measurement, you pass on this design awesomeness (versus picking random unrelated numbers). In the very least you are making a design informed decision!
+
+*What does a modular skill look like?*
+
+Here is the modular scale I will use for all measurements moving forward:
 
 - [View Thought's Modular Scale][scale]
 
-For View Thought I used a [Modular Scale][] tool, and input the following:
+*How do you create one?*
+
+To create this I used a [Modular Scale][] tool, and input the following into the tool:
 
 - Our base font size of 16 pixels
 - Our logo font size of 30 pixels
-- The Golden ratio
+- The Golden ratio – I decided to go with a classic base ratio
 
-Once created, in the [_define.sass][] partial take note of the source of your scale as follows:
+Modular skills the subject worth researching. If you're interested, take a look at the following resources:
+
+- [Tim Brown - More Perfect Typography][Perfect Typography] (Go to minute 15:00, great talk.)
+- Articles 10, 11, and 12 in Appendix 11, [A Brief History of Web Font Sizes][Appendix 11]
+
+*What you do with them?*
+
+Once created, use only the numbers defined in your modular scale for measurements throughout your application, but before applying it its important to keep this in mind:
+
+> Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
+
+\- [More Meaningful Typography][Meaningful Typography] by Tim Brown
+
+NOTE: In the [_define.sass][] partial it's a good idea to comment on the source of your scale:
 
     /*  Modular Scale
       -----------------------
@@ -99,19 +121,6 @@ Once created, in the [_define.sass][] partial take note of the source of your sc
 
     // 16px  @ 1:1.618 - base font size
     // 30px  @ 1:1.618 - logo font size
-
-There are some great references out there that will do a much better job of explaining the what's and how's of modular scales in case you're interested:
-
-- [Tim Brown - More Perfect Typography][Perfect Typography] (Go to minute 15:00, great talk.)
-- Articles 10, 11, and 12 in Appendix 11, [A Brief History of Web Font Sizes][Appendix 11]
-
-For the more adventurous take a look at [Sassy Modular Scale][].
-
-Now that we have a scale we will use it throughout our design, but before applying it its important to keep this in mind:
-
-> Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
-
-\- [More Meaningful Typography][Meaningful Typography] by Tim Brown
 
 Icons
 -----
