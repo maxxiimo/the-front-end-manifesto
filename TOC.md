@@ -117,7 +117,8 @@ Table of Contents
       - [Icon Fonts To Play With][Icon Font Playing]
       - [Icon Sprites][]
   - [Images][]
-  - [Embellishments][]
+  - [Buttons][]
+      - [Button Set Up][]
   - [Other Resources][]
 
 ### Chapter 11 - [Typography][Chapter 11]
@@ -302,7 +303,8 @@ Table of Contents
 [Icon Font Playing]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#icon-fonts-to-play-with
 [Icon Sprites]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#icon-sprites
 [Images]:               https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#images
-[Embellishments]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#embellishments
+[Buttons]:              https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#buttons
+[Button Set Up]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#button-set-up
 [Other Resources]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#other-resources
 
 [Font Family]:          https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#font-family

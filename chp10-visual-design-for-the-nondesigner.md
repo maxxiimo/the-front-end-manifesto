@@ -247,14 +247,74 @@ Just like with icons, images pack a lot of design punch. People are also much mo
 
 ![][Silhouette]
 
-Embellishments
---------------
+Buttons
+-------
 
-[Sassy Buttons][]
-[Fancy Buttons][]
+A good-looking button adds a lot of pizzazz to a website, and can scream; "click me!" It's a look and feel element that I know will be needed in almost any project I'm a part of. Basically, if it has a form it has a button. Knowing this I like to get the mechanics of my buttons of the way from the get-go, not necessarily the button style, but how I will create the buttons.
+
+There are two great compass plug-in resources available for creating good-looking cross browser buttons:
+
+- [Sassy Buttons][]
+- [Fancy Buttons][]
+
+### Button Set Up
+
+ I have no particular preference between the two, so whichever you choose to use, this is how to install either:
+
+**Step 1**: Add the gem 'fancy-buttons' or gem 'sassy-buttons' to the assets group of your gemfile:
+
+    group :assets do
+      gem 'sass-rails', '3.2.5'
+      gem 'coffee-rails', '3.2.2'
+      gem 'uglifier', '1.2.3'
+
+      # Compass specific gems.
+      gem 'compass-rails'
+      gem 'oily_png'
+      gem 'susy'
+      gem 'fancy-buttons'
+      gem 'sassy-buttons'
+    end
+
+**Step 2**: Import it, preferably from application.css.scss per the CSS Organization chapter:
+
+    /* FORMS
+      ============================================================================ */
+    @import "fancy-buttons";
+    @import "sassy-buttons";
+    @import "desktop/forms";
+
+IMPORTANT: Make sure your import appears before wherever you include the button mixin, otherwise you will get an error. In my case the mixin was found in "forms", and I made the mistake of placing my import below @import "forms". I was scratching my head for an hour before I realized the stupid mistake!
+
+**Step 3**: `bundle install`
+
+**Step 4**: Install your button plug-ins assets:
+
+    bundle exec compass install fancy-buttons
+
+    or
+
+    bundle exec compass install sassy-buttons
+
+**Step 5**: Include the most basic mixin and expand from there:
+
+    button
+      +fancy-button or
+      +sassy-button
+
+    alternatively (syntax)...
+
+    button
+      @include fancy-button or
+      @include +sassy-button
+
+I used sassy buttons for View Thought, and here is what they look like:
 
 ![][Button 1]
 ![][Button 2]
+
+Other Resources
+---------------
 
 [6 jQuery Plugins for Scrolling Effects][6 Plugins]
 
@@ -263,9 +323,6 @@ Embellishments
 [The Shapes of CSS][CSS Shapes]
 [Triangle With Shadow][]
 
-
-Other Resources
----------------
 
 The devil is in the details. It's the little things, the details, that make a design come to life. What kind of things? Maybe a gradient between panels, or a simple border. The best way to find design detail inspiration is by visiting websites you like or are renowned for good design. Look at the underlying code and learn the techniques used to implement the design detail. Once you understand the technique, you can apply it to your own creation in a new and unique way.
 
