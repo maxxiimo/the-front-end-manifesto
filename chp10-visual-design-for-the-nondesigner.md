@@ -66,19 +66,19 @@ If you find yourself in this situation, like I am right now, the approach I reco
 <br>
 <br>
 <br>
-It's just stylized text, and I like it. If I do this for View Thought all that's really left for me to do is find the right typeface for my logo.
+It's just stylized text, and I like it. If I do this for View Thought all that's really left for me to do is find the right typeface for my logo. In the next chapter we're going to thoroughly explore typography, but jumping ahead, based on the teachings of that Chapter 11 I created the following simple logo:
 
-In the next chapter we're going to thoroughly explore typography, and jumping ahead, based on the teachings of that Chapter 11 I chose the following typeface for View Thoughts logo:
+![][Logo]
+
+Nice!
+
+The typeface I chose for the logo is:
 
 - [Quatro Sans][]
 
   > We are pleased to introduce you to Quatro Sans. An undeniably modern typeface with construction principles that attempt to find the balance between machine and hand.
 
-I chose this typeface because we're building things at View Thought, and to me this font captures that feeling. My inspiration for this logo came from an [article][] I read. With that typeface in hand, and using the techniques in the article, I created the following simple logo:
-
-![][Logo]
-
-Nice!
+I chose this typeface because we're building things at View Thought, and to me this font captures that feeling. My inspiration for this logo came from an [article][] I read. With that typeface in hand, and using the techniques in the article, View Thought's logo was born.
 
 Modular Scales
 --------------
