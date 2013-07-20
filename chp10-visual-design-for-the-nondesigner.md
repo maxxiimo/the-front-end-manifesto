@@ -7,9 +7,19 @@ In the [last chapter][Chapter 9] our focus was Information Architecture, and in 
 
 \- [A Dao of Web Design][Dao] by John Allsopp
 
-[Design is part of storytelling][Story Design] and like blocks of information in the previous chapter, the visual design must also communicate the websites story, and do so in such a way that the user just gets it.
+By starting with information architecture before design we put functionality and content first, as it should be, and now it's time to design. Like blocks of information in the previous chapter, [design is part of storytelling][Story Design], and must communicate the websites story.
 
-The combination of branding, modular scale harmony, icons, images, typography and color are the largest contributors to a sites look and feel. We will explore each of these elements in this and the next couple of chapters: [Chapter 11][] is devoted to typography, [Chapter 12][] to the color palette, and in [Chapter 13][] we will pull it all together. In this chapter we explore branding, icons, and images, but first let me make an observation relevant to your role as a front end engineer and design.
+The combination of:
+
+- branding
+- harmony
+- icons
+- images
+- typography ([Chapter 11][])
+- color ([Chapter 12][])
+- embellishments ([Chapter 13][])
+
+ ...are the largest contributors to a sites look and feel. In this chapter we explore the first four items on the list, but first let me make an observation relevant to your role as a front end engineer and design.
 
 Paradigm Shift
 --------------
@@ -36,22 +46,34 @@ The end result of the paradigm shift for the design and development process is a
 
 The takeaway in relation to this chapter is that as front end engineers you need to understand that your role is changing. With the abilities of CSS3, think of yourself as a coder and an artist. You are the handshake between design and backend engineering and can work in either realm. With this new role, in addition to coding prowess, understanding the elements of good design, the art, is essential to the success of projects you will participate in.
 
-The next two chapters are written to help developers along this path, but before exploring this art let me leave you with one final thought: never undervalue the hard earned design talents of graphic designers. Beautiful design is not easy.
+This and the next three chapters are written to help developers along this path, but before exploring this art let me leave you with one final thought: never undervalue the hard earned design talents of graphic designers. Beautiful design is not easy.
 
 Branding
 --------
 
-[Fresh Tilled Soil][]
+If ever there were an area in your design that could really use the help of a graphic designer, it's branding. A companies identity can radiate from a [brand][], and brands can become so well-known that they become [memes][].
+
+A company's logo is more often than not of the pinnacle of a company's brand, and as you probably guessed, prominent on a webpage. 9 times out of 10 the companies you work for already have a brand, but in the other case, like developing a brand for View Thought, you, and I, will need to create something.
+
+The approach I recommend is to keep it really simple. Take for example the following UI design companies brand/logo:
 
 ![][Fresh]
 
-- [Quatro Sans][] for the logo. We're building things at View Thought and this font captures that feeling.
+- [Fresh Tilled Soil][]
+
+It's just stylized text, and I like it. In in the next chapter we're going to thoroughly explore typography, and based on the teachings of that chapter I chose the following typeface for View Thoughts logo:
+
+- [Quatro Sans][]
 
   > We are pleased to introduce you to Quatro Sans. An undeniably modern typeface with construction principles that attempt to find the balance between machine and hand.
 
+I chose this typeface because we're building things at View Thought, and to me this font captures that feeling. With that typeface in hand, I created the following simple logo:
+
 ![][Logo]
 
-[Beautiful and Simple Logos for your Delight][Inspiring Logos]
+My inspiration for this logo came from an [article][] I read. Here's an article that might inspire you:
+
+- [Beautiful and Simple Logos for your Delight][Inspiring Logos]
 
 Modular Scales
 --------------
@@ -380,8 +402,11 @@ http://css-tricks.com/triangle-with-shadow/
 
 [agile design process]: http://webdesignledger.com/tips/applying-agile-principles-to-design
 
+[brand]:                http://en.wikipedia.org/wiki/Brand
+[memes]:                http://en.wikipedia.org/wiki/Meme
 [Fresh Tilled Soil]:    http://www.freshtilledsoil.com
 [Quatro Sans]:          http://cargocollective.com/pstype/Quatro-Sans
+[article]:              http://blog.typekit.com/2011/03/24/type-study-choosing-fallback-fonts/
 [Inspiring Logos]:      http://webdesignledger.com/inspiration/beautiful-and-simple-logos-for-your-delight
 
 [golden ratio]:         http://en.wikipedia.org/wiki/Golden_ratio
