@@ -85,19 +85,19 @@ Modular Scales
 
 With a logo out of the way, the next major design element I recommend you tackle before doing anything else is create a modular scale.
 
-*What is it?*
+***What is it?***
 
 A modular scale is a scale based on ratios derived from harmonic intervals or the proportions of the [golden ratio][].
 
 In layman's terms this means that the measurements of the scale are related to one another in an artistic/design awesome way, and when you use numbers from the scale for line length, column widths, line heights, and pretty much anything in your website that requires a measurement, you pass on this design awesomeness (versus picking random unrelated numbers). In the very least, you are making a design informed decision!
 
-*What does a modular scale look like?*
+***What does a modular scale look like?***
 
 Here is the modular scale I will use for all measurements moving forward:
 
 - [View Thought's Modular Scale][scale]
 
-*How do you create one?*
+***How do you create one?***
 
 To create this I used a [Modular Scale][] tool. The tool requests three variables. Here is what I input into it to generate my scale:
 
@@ -110,7 +110,7 @@ Modular skills is a subject worth researching. I think it makes a huge differenc
 - [Tim Brown - More Perfect Typography][Perfect Typography] (Go to minute 15:00, great talk.)
 - Articles 10, 11, and 12 in Appendix 11, [A Brief History of Web Font Sizes][Appendix 11]
 
-*Now what I do with my scale?*
+***Now what I do with my scale?***
 
 Once created, use only the numbers defined in the scale for measurements throughout your application, like font sizes, margins, paddings, column widths, etc..
 
