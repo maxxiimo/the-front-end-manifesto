@@ -206,13 +206,22 @@ These grid guides are very similar to what [Compass offers][], and can be activa
 
 ### Content
 
-A word on content. If you have it great! If not, the following article gives a nice overview of how content blocks can be used in situations where content is not known, perhaps a client has not yet delivered it:
+Two words on content:
+
+Content First
+
+I highly recommend getting real content early on in the development process, preferably before visual design. If you do not have a website's content while architecting, the following article gives a nice overview of how content blocks can be used in situations where content is not known, perhaps a client has not yet delivered it:
 
 - [Content, First?][Content First]
 
-I for one don't mind using Lorem Ipsum or images as content placeholders, but nothing can really truly substitute for actual content so if you can find it or create it, do so. I've put together a pretty comprehensive list of [placeholder services][Appendix 6] for your benefit in the Appendices. It includes text and image placeholder services.
+It's best to get your content though, and the following articles will help you do just that:
 
-Although I like to use [Dummy Image][], I also keep a 1px x 1px transparent gif, sometimes referred to as a shim, in our assets/images/fixtures folder. It can be used as follows to create image placeholders:
+- [Using Content Templates to Get Your Clients Thinking Content-First][Client Content]
+- [Content Templates to the Rescue][Content Templates]
+
+As a last resort you can use Lorem Ipsum or images as content placeholders, but it's important to stress that nothing can truly substitute for actual content so if you can find it, or create it, do so. I've put together a pretty comprehensive list of [placeholder services][Appendix 6] for your benefit in the Appendices. It includes text and image placeholder services.
+
+Although I like to use [Dummy Image][]'s as placeholders, I also keep a 1px x 1px transparent gif, sometimes referred to as a shim, in of the `assets/images/fixtures` folder. It can be used as follows to create image placeholders:
 
     = link_to image_tag('fixtures/shim.gif', :alt => '', :width => '75', :height => '75'), root_path, :title => ''
 
@@ -283,6 +292,8 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Compass offers]:       http://compass-style.org/reference/compass/layout/grid_background/
 
 [Content First]:        http://alwaystwisted.com/post.php?s=2012-10-13-content-first
+[Client Content]:       http://webdesign.tutsplus.com/articles/workflow/using-content-templates-to-get-your-clients-thinking-content-first/
+[Content Templates]:    http://alistapart.com/article/content-templates-to-the-rescue
 [Dummy Image]:          http://dummyimage.com
 
 [Susy]:                 https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-mobile-on-rails.md#susy-breakpoints
