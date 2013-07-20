@@ -112,9 +112,9 @@ Modular skills is a subject worth researching. I think it makes a huge differenc
 
 ***Now what I do with my scale?***
 
-Once created, use only the numbers defined in the scale for measurements throughout your application, like font sizes, margins, paddings, column widths, etc..
+Once created, use only the numbers defined in the scale for measurements throughout your application, like font sizes, margins, paddings, column widths, etc.. After creating mine I went through the application and converted every single number to a number in the scale. Every single number!
 
-Before applying your scale its important to keep this in mind:
+Having said that, before applying your scale to your project its important to keep this in mind:
 
 > Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
 
