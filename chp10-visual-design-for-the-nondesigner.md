@@ -51,22 +51,24 @@ This and the next three chapters are written to help developers along this path,
 Branding
 --------
 
-If ever there were an area in your design that could really use the help of a graphic designer, it's branding. A companies identity can radiate from a [brand][], and brands can become so well-known that they become [memes][].
+If ever there were an area in your design that could really use the help of a graphic designer, it's branding. A companies identity can radiate from it's [brand][], and brands can become so well-known that they become [memes][].
 
-A company's logo is more often than not of the pinnacle of a company's brand, and as you probably guessed, prominent on a webpage.
+A company's logo is more often than not the cornerstone of a company's brand, and as you probably guessed, prominent on a webpage.
 
 - [Beautiful and Simple Logos for your Delight][Inspiring Logos]
 
-9 times out of 10 the companies you work for already have a brand, but in the other case, like developing a logo for View Thought, I will need to create something.
+9 times out of 10 the companies you work for already have a logo, but in the 10th case, like developing a logo for View Thought, you will need to create something.
 
-If you find yourself in this situation, the approach I recommend is to keep it really simple. Take for example the following [companies][Fresh Tilled Soil] brand/logo:
+If you find yourself in this situation, like I am right now, the approach I recommend is to keep it really simple. Take for example the following [companies][Fresh Tilled Soil] brand/logo:
 <br>
 <br>
 ![][Fresh]
 <br>
 <br>
 <br>
-It's just stylized text, and I like it. Now all I need to do is find the right typeface for View Thought? In in the next chapter we're going to thoroughly explore typography, and jumping ahead, based on the teachings of that chapter I chose the following typeface for View Thoughts logo:
+It's just stylized text, and I like it. If I do this for View Thought all that's really left for me to do is find the right typeface for my logo.
+
+In the next chapter we're going to thoroughly explore typography, and jumping ahead, based on the teachings of that Chapter 11 I chose the following typeface for View Thoughts logo:
 
 - [Quatro Sans][]
 
@@ -81,11 +83,15 @@ Nice!
 Modular Scales
 --------------
 
-With a logo out of the way, the next major design element I recommend you tackle before doing anything else is define the sites harmony. A modular scale is the perfect tool for doing exactly this.
+With a logo out of the way, the next major design element I recommend you tackle before doing anything else is create a modular scale.
 
-What is it? A modular scale is a scale based on ratios derived from harmonic intervals or the [golden ratio][]. In layman's terms this means that the measurements of the scale are related to one another in an artistic/design awesome way, and when you use numbers from the scale for line length, column widths, line heights, and pretty much anything in your website that requires a measurement, you pass on this design awesomeness (versus picking random unrelated numbers). In the very least you are making a design informed decision!
+*What is it?*
 
-*What does a modular skill look like?*
+A modular scale is a scale based on ratios derived from harmonic intervals or the proportions of the [golden ratio][].
+
+In layman's terms this means that the measurements of the scale are related to one another in an artistic/design awesome way, and when you use numbers from the scale for line length, column widths, line heights, and pretty much anything in your website that requires a measurement, you pass on this design awesomeness (versus picking random unrelated numbers). In the very least, you are making a design informed decision!
+
+*What does a modular scale look like?*
 
 Here is the modular scale I will use for all measurements moving forward:
 
@@ -93,20 +99,22 @@ Here is the modular scale I will use for all measurements moving forward:
 
 *How do you create one?*
 
-To create this I used a [Modular Scale][] tool, and input the following into the tool:
+To create this I used a [Modular Scale][] tool. The tool requests three variables. Here is what I input into it to generate my scale:
 
 - Our base font size of 16 pixels
 - Our logo font size of 30 pixels
 - The Golden ratio – I decided to go with a classic base ratio
 
-Modular skills the subject worth researching. If you're interested, take a look at the following resources:
+Modular skills is a subject worth researching. I think it makes a huge difference in your design, as a whole harmonious creation. If you're interested in learning more, take a look at the following resources:
 
 - [Tim Brown - More Perfect Typography][Perfect Typography] (Go to minute 15:00, great talk.)
 - Articles 10, 11, and 12 in Appendix 11, [A Brief History of Web Font Sizes][Appendix 11]
 
-*What you do with them?*
+*Now what I do with my scale?*
 
-Once created, use only the numbers defined in your modular scale for measurements throughout your application, but before applying it its important to keep this in mind:
+Once created, use only the numbers defined in the scale for measurements throughout your application, like font sizes, margins, paddings, column widths, etc..
+
+Before applying your scale its important to keep this in mind:
 
 > Modular scales are a tool, they’re not magic. They’re not going to work for every measurement, and that’s okay. Math is no substitute for an experienced designer’s eye, but it can provide both hints and constraints for decision making. Consider the scale’s numbers educated suggestions. Round them if you like (22.162 becomes 22). Combine them (3.56 + 16 = 19.56). Or as we saw me do here, break from the scale entirely.
 
