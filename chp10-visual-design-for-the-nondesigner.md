@@ -402,9 +402,18 @@ http://www.squarespace.com/templates/
 
 http://css-tricks.com/triangle-with-shadow/
 
+I'm going to have a contact us form on the site and thought this would be  a great place to implement this article I once read:
+
+[Making Infield Form Labels Suck Less II][Infield]
+[Infield]:                     http://viget.com/inspire/making-infield-form-labels-suck-less-2
+
   - [How to Nail the Coveted Flat Design Look (9 Actionable Tips)][Flat Design]
   - [Jazz up a Static Webpage with Subtle Parallax][Jazzy Parallax]
   - [Web 2.0 Tutorials Round-Up][Web 2.0]
+
+[Can I use...][]
+
+[Can I use...]:                     http://caniuse.com/
 
 [Chapter 9]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#information-architecting
 [Chapter 10]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp10-visual-design-for-the-nondesigner.md#visual-design-for-the-nondesigner
