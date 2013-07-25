@@ -96,6 +96,7 @@ Table of Contents
 ------------------------------------
 
 ### Chapter 9 - [Information Architecting][Chapter 9]
+  - [Storytelling in Web Design][]
   - [A Mosaic of Information][]
   - [The Storyline][]
   - [Gathering and Organizing Information][]
@@ -283,6 +284,7 @@ Table of Contents
 [Conditional Loading]:  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#conditional-loading
 [Zepto]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-device-detection.md#zepto
 
+[Storytelling in Web Design]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#storytelling-in-web-design
 [A Mosaic of Information]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#a-mosaic-of-information
 [The Storyline]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#the-storyline
 [Gathering and Organizing Information]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp9-information-architecting.md#gathering-and-organizing-information

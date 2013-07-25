@@ -8,6 +8,12 @@ In the first section of this book we laid down the foundation of our application
 
 Now it's time to build a user experience on this foundation: how your users will understand your [whatever your building] and how they will [whatever they will do]. The key to being successful in building your applications user experience can be summed up in one word: **Storytelling**.
 
+> The other way to persuade people—and ultimately a much more powerful way—is by uniting an idea with an emotion. The best way to do that is by telling a compelling story. In a story, you not only weave a lot of information into the telling but you also arouse your listener's emotions and energy.
+
+\- [Storytelling That Moves People][Move People] by Robert McKee and Bronwyn Fryer
+
+### Storytelling in Web Design
+
 Back in 2008, at "An Event Apart: Boston," I listened to [Jason Santa Maria][] – then the Creative Director of Happy Cog Studios – give a presentation called "Good Design Ain't Easy." He described how stories were being told by design, with the designer in effect becoming the narrator. Another presenter at Fidelity Investments that same year also talked about storytelling and its importance in design. Although I no longer remember his name, I do remember his talks thesis: people understand and remember stories.
 
 These talks have stuck with me over the years, and they have become the way I view information architecting and visual design; as storytelling. What follows is an explanation of how to build a story for your website and translate that into code, and beginning with the [next chapter][Chapter 10] we will begin to explore creating the sites look and feel (visual design) from the same perspective.
@@ -272,6 +278,7 @@ Just remember, less is more and KISS (Keep It Simple Stupid).
 [Appendix 6]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-6
 [Appendix 7]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-7
 
+[Move People]:          http://hbr.org/web/special-collections/insight/communication/storytelling-that-moves-people
 [Jason Santa Maria]:    http://jasonsantamaria.com/
 
 [Chapter 1 Quote]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#foundation-markup#the-application-layout
