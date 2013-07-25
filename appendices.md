@@ -399,16 +399,21 @@ A roundup of feedback services and device testing articles.
 
     > Loop11 is a remote usability testing tool that enables you to test the user-experience of any website and identify navigational and usability issues. Get the hard facts about your website quickly and cost effectively!
 
-5.  [Silverback][]
+5.  [Optimizely][]
+
+    > A/B testing you'll actually use.
+    > Website optimization made easy.
+
+6.  [Silverback][]
 
     > Guerrilla usability testing software for designers and developers
 
-6.  [UserTesting.com][]
+7.  [UserTesting.com][]
 
     > Usability Testing Has Never Been Easier
     > The fastest, cheapest way to find out why users leave your website.
 
-7.  Steve Krug wrote a second book on usability testing, and gives a basic demo of it on YouTube:
+8.  Steve Krug wrote a second book on usability testing, and gives a basic demo of it on YouTube:
     - [Rocket Surgery Made Easy by Steve Krug: Usability Demo][Rocket Surgery]
 
 #### Device Testing
@@ -1051,6 +1056,7 @@ Appendix 12
 [Concept Feedback]:     http://www.conceptfeedback.com/
 [IntuitHQ]:             http://www.intuitionhq.com/
 [Loop11]:               http://www.loop11.com/
+[Optimizely]:           https://www.optimizely.com/
 [Silverback]:           http://silverbackapp.com/
 [UserTesting.com]:      http://www.usertesting.com/
 [Rocket Surgery]:       http://www.youtube.com/watch?v=QckIzHC99Xc&feature=player_embedded
