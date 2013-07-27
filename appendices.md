@@ -817,41 +817,43 @@ Appendix 12
 
     > Pick a color value format, input two valid CSS color values in the format you chose, and pick the number of midpoints you'd like to see. The palette will show the colors you input as well as the requested number of midpoint colors, and the values of those colors.
 
-3.  [ColorBlender][]
-
-    > To get started, choose a preferred color using the color picker below, and a 6-color matching palette (a "blend") will be automatically calculated.
-
-4.  [Colorblind Web Page Filter][Colorblind]
-
-5.  [ColorExplorer][]
+3.  [ColorExplorer][]
 
     > Simply put, ColorExplorer is an online toolbox for working with color palettes.
 
-6.  [Color Palette Creator][Palette Creator]
+4.  [Color Palette Creator][Palette Creator]
 
   > This tool was inspired directly by the excellent Creating Color Palettes article by Andy Clarke. It will create 10 shades of the base color, located top-left, at varying degrees of opacity.
 
-7.  [Color Schemer][]
+5.  [color.hailpixel][]
+
+6.  [ColorBlender][]
+
+    > To get started, choose a preferred color using the color picker below, and a 6-color matching palette (a "blend") will be automatically calculated.
+
+7.  [Colorblind Web Page Filter][Colorblind]
+
+8.  [Color Schemer][]
 
   > Online Color Scheme Generator
 
-8.  [Colorspire][]
+9.  [Colorspire][]
 
   > Create Color Schemes, Test Color Combinations
 
-9.  [ColorTo.me][]
+10. [ColorTo.me][]
 
     > Create an image, share a pallet.
 
-10. [Contrast Ratio[]
+11. [Contrast Ratio][]
 
     > Easily calculate color contrast ratios. Passing WCAG was never this easy!
 
-11. [Contrast-A][]
+12. [Contrast-A][]
 
     > Contrast-A checks color combinations for sufficient contrast and displays the results according to WCAG 2.0 (Luminance Ratio) as well as the results according to older accessibility guidelines, WCAG 1.0 (Difference in Brightness and Color).
 
-12. [Grab Website Colors - Color Scheme Extraction Tool][Grab Colors]
+13. [Grab Website Colors - Color Scheme Extraction Tool][Grab Colors]
 
     > The website color extraction tool is used to grab colors from a website.
 
@@ -859,7 +861,7 @@ Appendix 12
 
     > This color schemer is a simple tool to help you experiment with various color schemes for your next web or print project.
 
-14. [Mother-effing hsl][]
+15. [Mother-effing hsl][]
 
 #### Color Wheels
 
@@ -935,7 +937,9 @@ Appendix 12
 
     > A collection of major brand color codes...
 
-3.  [Fifty Shades of Grey: A Review][Gray Shades]
+3.  [Flat UI Colors][]
+
+4.  [Fifty Shades of Grey: A Review][Gray Shades]
 
 
 
@@ -1170,10 +1174,11 @@ Appendix 12
 
 [0to255]:               http://0to255.com/
 [Color Blender]:        http://meyerweb.com/eric/tools/color-blend/
-[ColorBlender]:         http://www.colorblender.com/
-[Colorblind]:           http://colorfilter.wickline.org/
 [ColorExplorer]:        http://colorexplorer.com/
 [Palette Creator]:      http://slayeroffice.com/tools/color_palette/
+[color.hailpixel]:      http://color.hailpixel.com/
+[ColorBlender]:         http://www.colorblender.com/
+[Colorblind]:           http://colorfilter.wickline.org/
 [Color Schemer]:        http://www.colorschemer.com/online.html
 [Colorspire]:           http://www.colorspire.com/
 [ColorTo.me]:           http://colorto.me/
@@ -1204,4 +1209,5 @@ Appendix 12
 
 [Web Safe]:             http://websafecolors.info/
 [BrandColors]:          http://brandcolors.net/
+[Flat UI Colors]:       http://flatuicolors.com/
 [Gray Shades]:          http://visualidiot.com/articles/fifty-shades
