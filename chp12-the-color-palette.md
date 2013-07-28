@@ -43,6 +43,7 @@ Are there any colors that may help convey this? Reviewing the color descriptions
 - [The Meanings of Colors][] (MoC)
 - [Build a Color Scheme: The Fundamentals][Color Fundamentals] (BaCS)
 - [Color in Motion][] (CiM)
+- [The Psychology of Color][Color Psychology]
 
 ...I do come up with a few:
 
@@ -226,6 +227,7 @@ After some heavy experimentation here are two ideas I came up with:
 [The Meanings of Colors]: http://colormatters.com/color-symbolism/the-meanings-of-colors
 [Adjectives]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp11-typography.md#step-1-define-adjectives
 [Color in Motion]:      http://www.mariaclaudiacortes.com/colors/Colors.html
+[Color Psychology]:     http://careyjolliffe.files.wordpress.com/2013/02/cjga-color-theory-3.jpg
 [0to255]:               http://0to255.com/
 [Web Safe]:             http://websafecolors.info/
 

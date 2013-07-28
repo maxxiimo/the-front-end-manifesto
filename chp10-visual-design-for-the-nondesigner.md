@@ -269,6 +269,26 @@ Experience has also shown me that having extra pixels of blankness between icons
 
 Save your icon sprites as .gif's and .png's. .jpg's are really reserved for photos and not efficient for things like this, plus they do not preserve alpha transparencies which become an issue if backgrounds change in the future (kind of following in a roundabout way the old adage; "measure twice, cut once.").
 
+### Icon Roundups
+
+1.  03/06/08 - [35 (Really) Incredible Free Icon Sets][Icon 1]
+2.  05/26/08 - [40+ Extremely Beautiful Icon Sets Hand-picked from deviantART][Icon 2]
+3.  09/16/08 - [40+ Beautiful Icon Sets Hand-picked from deviantART- Part 2][Icon 3]
+4.  11/13/08 - [Free Weather Icons Collection][Icon 4]
+5.  07/28/09 - [E-Commerce Icons Collection][Icon 5]
+6.  07/09/12 - [30 Toolbar Icons for User Interface Design][Icon 6]
+7.  06/18/13 - [13 Free Flat Icon Sets][Icon 7]
+8.  07/25/13 - [Free Icons for Your Designs][Icon 8]
+
+[Icon 1]:                     http://www.smashingmagazine.com/2008/03/06/35-really-incredible-free-icon-sets/
+[Icon 2]:                     http://www.noupe.com/freebie/40-extremely-beautifull-icon-sets-hand-picked-from-deviantart.html
+[Icon 3]:                     http://www.noupe.com/icons/40-beautiful-icon-sets-hand-picked-from-deviantart-part-2.html
+[Icon 4]:                     http://www.webresourcesdepot.com/free-weather-icons-collection/
+[Icon 5]:                     http://www.webresourcesdepot.com/e-commerce-icons-collection/
+[Icon 6]:                     http://www.webappers.com/2012/07/09/30-toolbar-icons-for-user-interface-design/
+[Icon 7]:                     http://webdesignledger.com/freebies/13-free-flat-icon-sets
+[Icon 8]:                     http://webdesignledger.com/freebies/free-icons-for-your-designs
+
 Images
 ------
 
@@ -337,13 +357,13 @@ IMPORTANT: Make sure your import appears before wherever you include the button 
 
 **Step 5**: Include the most basic mixin and expand from there:
 
-    button
+    .button
       +fancy-button or
       +sassy-button
 
     alternatively (syntax)...
 
-    button
+    .button
       @include fancy-button or
       @include +sassy-button
 
@@ -351,6 +371,8 @@ I used sassy buttons for View Thought, and here is what they look like:
 
 ![][Button 1]
 ![][Button 2]
+
+NOTE: Views an anchor tag for your buttons, they degrade well.
 
 Other Resources
 ---------------
