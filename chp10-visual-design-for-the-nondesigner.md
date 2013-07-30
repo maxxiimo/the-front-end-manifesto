@@ -372,7 +372,7 @@ I used sassy buttons for View Thought, and here is what they look like:
 ![][Button 1]
 ![][Button 2]
 
-NOTE: Views an anchor tag for your buttons, they degrade well.
+NOTE: Use an anchor tag for your buttons with a class of `.button`; they degrade well and do not require JavaScript.
 
 Other Resources
 ---------------
