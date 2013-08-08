@@ -334,13 +334,13 @@ JavaScript Libraries:
 
   This is an interesting library. There is a Ruby script which is used to redirect your user to a mobile URL, much like how Mobvious could be employed. There are also jQuery script which returns true for `jQuery.browser.mobile` if the browser is a mobile device, and can be used like this:
 
-      if (jQuery.browser.mobile) {
-          // Do something.
-      }
+        if (jQuery.browser.mobile) {
+            // Do something.
+        }
 
-      or
+        or
 
-      if (!jQuery.browser.mobile) { // For non-mobile browsers
+        if (!jQuery.browser.mobile) { // For non-mobile browsers
 
 ### Zepto
 
