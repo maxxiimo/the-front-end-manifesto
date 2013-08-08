@@ -226,16 +226,21 @@ Here is the labeling system used in our starter CSS:
 I like the above sequence, but some other examples include:
 
     /* =============================================================================
-       Major Section
+       Title
        ========================================================================== */
 
-    or
 
     /* =============================================================================
-     * Major Section
+     * Title
      * ========================================================================== */
 
-For descriptions:
+
+    /*
+    ==============================================
+    Title
+    ==============================================
+    */
+
 
     /* -----------------------------------------------------------------------
 
@@ -243,13 +248,29 @@ For descriptions:
 
     ----------------------------------------------------------------------- */
 
+
     /*
      * Comment in here, title, description, etc.
      */
 
+
     /* Comment in here, title, description, etc.
      * Yada yada yada.
      * And a 3rd line maybe. */
+
+
+    /*
+    ==============================================
+    TITLE
+    ==============================================
+
+    Something, something, something
+
+    Source: http://www.justinaguilar.com
+
+    More something, something, and something.
+    ==============================================
+    */
 
 Whatever you decide to use is up to you, but be consistent within a project.
 

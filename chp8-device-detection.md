@@ -298,7 +298,9 @@ Media queries are a cornerstone of responsive web design, however, as a front en
 
   > This library adds media queries support to browsers that don't support it (like Internet Explorer 5.5-8).
 
-The key for these JavaScript-based fixes is that JavaScript must be available or enabled, but unfortunately this is not always the case. Fortunately for our end-users, we approached development from a mobile first perspective. If media queries or JavaScript are not available, breakpoints will not take affect, and our users will be served our four column layout, which is not a bad fallback since the site will still look great and be readable: Another perk of the mobile first approach!
+The key for these JavaScript-based fixes is that JavaScript must be available or enabled, but unfortunately this is not always the case.
+
+Since we approached development from a mobile first perspective, if media queries or JavaScript are not available, breakpoints will not take affect, and our users will be served our four column layout, which is not a bad fallback since the site will still look great and be readable: Another perk of the mobile first approach!
 
 > Employ progressive enhancements and graceful degradation.
 
@@ -328,6 +330,18 @@ JavaScript Libraries:
 
   > Adapt.js is a lightweight (848 bytes minified) JavaScript file that determines which CSS file to load before the browser renders a page. If the browser tilts or resizes, Adapt.js simply checks its width, and serves only the CSS that is needed, when it is needed.
 
+- [Detect Mobile Browsers][]
+
+This is an interesting library. There is a Ruby script which is used to redirect your user to a mobile URL, much like how Mobvious could be employed. There are also jQuery script which returns true for `jQuery.browser.mobile` if the browser is a mobile device, and can be used like this:
+
+    if (jQuery.browser.mobile) {
+        // Do something.
+    }
+
+    or
+
+    if (!jQuery.browser.mobile) { // For non-mobile browsers
+
 ### Zepto
 
 One of the major issues with mobile browsing is CPU and bandwidth limitations. Zepto is a JavaScript library developed for speed, or it could be said to reduce the type of bloat found in libraries such as jQuery:
@@ -341,6 +355,7 @@ To learn more visit:
 - [Zepto.js][]
 - [The Essentials of Zepto.js][Zepto]
 
+[Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
 [Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
 [Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-3
 [Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
@@ -372,6 +387,7 @@ To learn more visit:
 [Callbacks]:            http://css-tricks.com/enquire-js-media-query-callbacks-in-javascript/
 [enquire.js]:           http://wicky.nillia.ms/enquire.js/
 [Adapt.js]:             http://adapt.960.gs/
+[Detect Mobile Browsers]: http://detectmobilebrowsers.com/
 
 [Github Zepto]:         https://github.com/madrobby/zepto
 [Zepto.js]:             http://zeptojs.com/
