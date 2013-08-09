@@ -310,7 +310,7 @@ Since we approached development from a mobile first perspective, if media querie
 
 The idea behind conditional loading is to use JavaScript to test if there is enough screen real estate to display certain pieces of content, say for example a sidebar or a large image. If there is enough room then load the content, if not, don't.
 
-A great idea, but beyond the scope of this chapter and the section it belongs to: Setting up a Foundation. To help you explore this idea though, here is a list of articles iin publication order that will more than set you on the right path:
+A great idea, but beyond the scope of this chapter and the section it belongs to: Setting up a Foundation. To help you explore this idea though, here is a list of articles that will more than set you on the right path:
 
 - *12/18/10* [Speed Up Your Site with Delayed Content][24 Ways Speed]
 - *02/12/11* [Conditional Loading for Responsive Designs][24 Ways Loading]
@@ -342,7 +342,9 @@ JavaScript Libraries:
 
         if (!jQuery.browser.mobile) { // For non-mobile browsers
 
-  NOTE: There is a way to do this with Mobvious as well. For example, to turn JavaScript on and off for different device types add the following to `application.js`:
+  NOTE: There is a way to do this with Mobvious as well.
+
+  For example, to turn JavaScript on and off depending on device type add the following to `application.js`:
 
         //= require mobvious-rails
 
@@ -350,7 +352,7 @@ JavaScript Libraries:
 
         = mobvious_javascript
 
-  Now you can detect for device type within your JavaScript code:
+  With those two lines of code you can now detect for device type within your JavaScript code:
 
         Mobvious.for_device_type('desktop', function() {
 
