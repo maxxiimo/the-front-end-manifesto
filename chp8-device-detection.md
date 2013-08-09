@@ -332,7 +332,7 @@ JavaScript Libraries:
 
 - [Detect Mobile Browsers][]
 
-  This is an interesting library. There is a Ruby script which is used to redirect your user to a mobile URL, much like how Mobvious could be employed. There are also jQuery script which returns true for `jQuery.browser.mobile` if the browser is a mobile device, and can be used like this:
+  This library has a Ruby script which is used to redirect your user to a mobile URL, much like how Mobvious [could be employed][URL Pattern Matching]. It also has a jQuery script that returns true for `jQuery.browser.mobile` if the browser is a mobile device:
 
         if (jQuery.browser.mobile) {
             // Do something.
@@ -341,6 +341,22 @@ JavaScript Libraries:
         or
 
         if (!jQuery.browser.mobile) { // For non-mobile browsers
+
+  NOTE: There is a way to do this with Mobvious as well. For example, to turn JavaScript on and off for different device types add the following to `application.js`:
+
+        //= require mobvious-rails
+
+  Add the following to `_script.js`:
+
+        = mobvious_javascript
+
+  Now you can detect for device type within your JavaScript code:
+
+        Mobvious.for_device_type('desktop', function() {
+
+            // Do something.
+
+        });
 
 ### Zepto
 
@@ -388,6 +404,7 @@ To learn more visit:
 [enquire.js]:           http://wicky.nillia.ms/enquire.js/
 [Adapt.js]:             http://adapt.960.gs/
 [Detect Mobile Browsers]: http://detectmobilebrowsers.com/
+[URL Pattern Matching]: https://github.com/jistr/mobvious#url-url-pattern-matching
 
 [Github Zepto]:         https://github.com/madrobby/zepto
 [Zepto.js]:             http://zeptojs.com/
