@@ -9,7 +9,7 @@ As an Information Architect (IA), when I think about an applications layout I li
 
 When I switch hats, as a Rails developer, I look at layout as the Rails templating framework in which all of my front end code lives, and from where it will interact via Rails with the outside world.
 
-As a Rails Front End Engineer, you will wear both hats. In [Chapter 8][] we dive deeply into information architecting, but for now our focus will be strictly on laying out our foundation markup, and getting it right per our front end coding [manifesto][Manifesto].
+As a Rails Front End Engineer, you will wear both hats. In [Chapter 1 - Coding Design][] we dive deeply into information architecting, but for now our focus will be strictly on laying out our foundation markup, and getting it right per our front end coding [manifesto][Manifesto].
 
 Let's get started.
 
@@ -249,7 +249,7 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
 [Chapter 2]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#markup-review
 [Chapter 3]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#foundation-styles
-[Chapter 8]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp8-information-architecting.md
+[Chapter 1 - Coding Design]: https://github.com/maxxiimo/coding-design/blob/master/chp1-information-architecting.md#information-architecting
 
 [starter code]:         https://github.com/maxxiimo/base-haml
 [application.js]:       https://github.com/maxxiimo/base-haml/blob/master/app/assets/javascripts/application.js
