@@ -320,7 +320,7 @@ A great idea, but beyond the scope of this chapter and the section it belongs to
 - *04/24/12* [Conditionally loading content][Conditional Content]
 - *09/04/12* [Enquire.js – Media Query Callbacks in JavaScript][Callbacks]
 
-JavaScript Libraries:
+JavaScript Libraries and Plug-ins:
 
 - [enquire.js][]
 
@@ -329,6 +329,14 @@ JavaScript Libraries:
 - [Adapt.js - Adaptive CSS ][Adapt.js]
 
   > Adapt.js is a lightweight (848 bytes minified) JavaScript file that determines which CSS file to load before the browser renders a page. If the browser tilts or resizes, Adapt.js simply checks its width, and serves only the CSS that is needed, when it is needed.
+
+- [Conditionizr][]
+
+  > Conditionizr is a fast and lightweight (3KB) javascript utility that detects browser vendor - touch features and retina displays - allowing you to serve conditional JavaScript and CSS files. MIT Licensed.
+
+- [JQuery Lazy Load][]
+
+  > Lazy Load is a jQuery plugin written in JavaScript. It delays loading of images in long web pages. Images outside of viewport (visible part of web page) wont be loaded before user scrolls to them. This is opposite of image preloading.
 
 - [Detect Mobile Browsers][]
 
@@ -405,6 +413,8 @@ To learn more visit:
 [Callbacks]:            http://css-tricks.com/enquire-js-media-query-callbacks-in-javascript/
 [enquire.js]:           http://wicky.nillia.ms/enquire.js/
 [Adapt.js]:             http://adapt.960.gs/
+[Conditionizr]:         http://conditionizr.com/
+[JQuery Lazy Load]:     http://www.appelsiini.net/projects/lazyload
 [Detect Mobile Browsers]: http://detectmobilebrowsers.com/
 [URL Pattern Matching]: https://github.com/jistr/mobvious#url-url-pattern-matching
 
