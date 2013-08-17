@@ -330,6 +330,11 @@ JavaScript Libraries and Plug-ins:
 
   > Adapt.js is a lightweight (848 bytes minified) JavaScript file that determines which CSS file to load before the browser renders a page. If the browser tilts or resizes, Adapt.js simply checks its width, and serves only the CSS that is needed, when it is needed.
 
+- [Modernizr and YepNope][YepNope]
+
+  >  yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.
+  >  yepnope.js is integrated into Modernizr.
+
 - [Conditionizr][]
 
   > Conditionizr is a fast and lightweight (3KB) javascript utility that detects browser vendor - touch features and retina displays - allowing you to serve conditional JavaScript and CSS files. MIT Licensed.
@@ -413,6 +418,7 @@ To learn more visit:
 [Callbacks]:            http://css-tricks.com/enquire-js-media-query-callbacks-in-javascript/
 [enquire.js]:           http://wicky.nillia.ms/enquire.js/
 [Adapt.js]:             http://adapt.960.gs/
+[YepNope]:              http://yepnopejs.com/
 [Conditionizr]:         http://conditionizr.com/
 [JQuery Lazy Load]:     http://www.appelsiini.net/projects/lazyload
 [Detect Mobile Browsers]: http://detectmobilebrowsers.com/
