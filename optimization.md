@@ -48,6 +48,17 @@ Versioning stylesheets breaks the cache.
 Script loaders. Asynchronously or in parallel.
 
 
+**Step 1**: Add
+
+https://github.com/rumblelabs/asset_sync
+https://devcenter.heroku.com/articles/cdn-asset-host-rails31
+http://blog.firmhouse.com/complete-guide-to-serving-your-rails-assets-over-s3-with-asset_sync
+
+http://stackoverflow.com/questions/11261805/rails-3-font-face-failing-in-production-with-firefox
+http://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html#how-do-i-enable-cors
+
+http://thisbythem.com/blog/rails-heroku-cloudfront-font-assets/
+
 ### Image Optimization
 
 Mac

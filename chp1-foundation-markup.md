@@ -93,9 +93,8 @@ Before we begin to explore the code that make up our views, there are a few thin
 
     NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
 
-3. Complete the groundwork tasks below.
-
-4. Prep and launch your application.
+With that you are ready to begin building your foundation by completing the groundwork tasks, and by prepping and launching your application
+ as outlined in the [Prep and Launch][] steps below.
 
 ### Groundwork Tasks
 
@@ -271,6 +270,7 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
+[Prep and Launch]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#prep-and-launch
 [Git]:                  http://git-scm.com/
 [Github]:               https://github.com/
 [recommends]:           http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2#sec-heroku_setup
