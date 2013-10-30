@@ -74,26 +74,25 @@ NOTE: Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.2
 Foundation Set Up
 -----------------
 
-Before we begin to explore the code that make up our views, there are a few things you will need to do in order to follow along with this book:
-
-1.  Clone this books [starter code][]:
-
-        git clone git@github.com:maxxiimo/base-haml.git
-
-2.  Create a brand-new Rails 3.2 4.0 application.
-
-        $ rails new <name>
-
-    NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
-
-With that you are ready to begin building your foundation by completing the groundwork tasks, and by prepping and launching your application
- as outlined in the [Prep and Launch][] steps below.
+To begin our foundation set up there are some very basic groundwork tasks that will be required and can be used at the start of any project.
 
 ### Groundwork Tasks
 
-With any new Rails application their are some very basic groundwork tasks that should be completed.
+#### Task 1: Clone Starter Code
 
-#### Task 1: Version Control
+Clone this books [starter code][]:
+
+    git clone git@github.com:maxxiimo/base-haml.git
+
+#### Task 2: Create a Rails Application
+
+Create a brand-new Rails application:
+
+    $ rails new <name>
+
+NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's "[Ruby on Rails Tutorial][RoR Tutorial]".
+
+#### Task 2: Version Control
 
 In the Rails world [Git][] and [Github][] are the versioning sytem and service of choice. Here are the steps to follow when creating a new Rails application:
 
@@ -105,7 +104,7 @@ In the Rails world [Git][] and [Github][] are the versioning sytem and service o
     $ git remote add origin git@github.com:<Github username>/<application name>.git
     $ git push -u origin master
 
-#### Task 2: Remove Unnecessary Files
+#### Task 3: Remove Unnecessary Files
 
 Out-of-the-box Rails comes with a few files that should be deleted. After testing that your application works, delete:
 
@@ -118,7 +117,7 @@ The last two deletions will be replaced in the next task by files from our [star
 
 Commit your changes.
 
-#### Task 3: Add Starter Code
+#### Task 4: Add Starter Code
 
 Go ahead and copy all the files and folders from your cloned starter code repository into your existing application structure.
 
@@ -130,7 +129,7 @@ The following files should have been modified or added to your repository:
 
 ![][New Files]
 
-#### Task 4: Gemfile
+#### Task 5: Gemfile
 
 Our starter code [Gemfile][] includes better error testing gems, which you may uncomment if you plan to use them:
 
@@ -147,7 +146,7 @@ IMPORTANT: Michael Hartl [recommends][] using the '--without production' flag on
 
 Commit your changes.
 
-#### Task 5: RSpec
+#### Task 6: RSpec
 
 To set up rspec run the following:
 
@@ -159,7 +158,7 @@ For faster asset precompiles check out:
 
 - [Turbo Sprockets for Rails 3.2.x][Turbo Sprockets]
 
-#### Task 6: Deployment
+#### Task 7: Deployment
 
 [Heroku][] is a cloud application platform used by many members of the Rails community. If you do not already have a Heroku account, you will need to open an account with Heroku, and [set up your computer][Heroku Set Up] with that account. Deploy to Heroku by running the following commands:
 
@@ -263,7 +262,6 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
 
 [RoR Tutorial]:         http://ruby.railstutorial.org/ruby-on-rails-tutorial-book
-[Prep and Launch]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#prep-and-launch
 [Git]:                  http://git-scm.com/
 [Github]:               https://github.com/
 [recommends]:           http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2#sec-heroku_setup

@@ -12,7 +12,7 @@ Table of Contents
       - [The Code][]
   - [Foundation Set Up][]
       - [Groundwork Tasks][]
-  - [Prep and Launch][]
+      - [Prep and Launch][]
 
 ### Chapter 2 - [Markup Review][Chapter 2]
   - [Organization][]
