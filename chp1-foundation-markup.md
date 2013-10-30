@@ -98,11 +98,11 @@ NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's
 
 In the Rails world [Git][] and [Github][] are the versioning sytem and service of choice. Here are the steps to follow when creating a new Rails application:
 
-    **switch to the new project folder**
-
+    IMPORTANT: Switch to the new project folder.
     $ git init
     $ git add .
     $ git commit -am "Initial commit."
+
     Create a new repo at Github.
     $ git remote add origin git@github.com:<Github username>/<application name>.git
     $ git push -u origin master
