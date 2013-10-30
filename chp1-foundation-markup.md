@@ -76,7 +76,7 @@ Foundation Set Up
 
 Setting up the foundation markup of a Rails application is super straightforward. In fact if I were you I would just bookmark this page and every time you build a new application follow the Groundwork Tasks and [Prep and Launch][] steps below.
 
-NOTE: The secret sauce comes from the starter code.
+NOTE: The secret sauce comes from the starter code, everything else will be pretty routine from application to application.
 
 ### Groundwork Tasks
 
@@ -98,7 +98,8 @@ NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's
 
 In the Rails world [Git][] and [Github][] are the versioning sytem and service of choice. Here are the steps to follow when creating a new Rails application:
 
-    Switch to new project folder.
+    **switch to the new project folder**
+
     $ git init
     $ git add .
     $ git commit -am "Initial commit."
