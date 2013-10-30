@@ -1,13 +1,7 @@
 Foundation Markup
 =================
 
-As an Information Architect (IA), when I think about an applications layout I literally think about how a site is "laid out" on a screen. I think in terms of the organization of information and function for an end-user's consumption. In this IA role, when speaking about layout I might say something like, "Wow! That's a great layout," or "I don't like the layout of this site, it's too confusing, maybe you should move this over there."
-
-<br>
-
-![][Layout]
-
-As a Rails Front End Engineer I look at layout as the Rails templating system where all of my front end code lives and interacts via Rails with the outside world. My perspective changes from an IA to one of a developer. In this chapter of *The Front End Manifesto*, as fun and developers we will focus on:
+As a Rails Front End Engineer I look at layout as the Rails templating system where all of my front end code lives and interacts via Rails with the outside world. In this chapter of *The Front End Manifesto* we will focus on:
 
 1.  Setting up a basic HTML foundation for an application
 2.  Getting it right per our [manifesto][Manifesto]
@@ -279,6 +273,5 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 [Heroku]:               https://id.heroku.com/signup
 [Heroku Set Up]:        https://devcenter.heroku.com/articles/quickstart
 
-[Layout]:               http://chrismaxwell.com/manifesto/chp-1/layout-sm.png
 [Basic HTML]:           http://chrismaxwell.com/manifesto/chp-1/basic-html.png
 [New Files]:            http://chrismaxwell.com/manifesto/chp-1/new-files.gif
