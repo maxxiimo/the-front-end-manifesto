@@ -74,7 +74,9 @@ NOTE: Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.2
 Foundation Set Up
 -----------------
 
-Setting up your foundation markup is very straightforward. By following the Groundwork Tasks and [Prep and Launch][] steps below your application will be up and running in no time. The secret sauce comes from the starter code.
+Setting up the foundation markup of a Rails application is super straightforward. In fact if I were you I would just bookmark this page and every time you build a new application follow the Groundwork Tasks and [Prep and Launch][] steps below.
+
+NOTE: The secret sauce comes from the starter code.
 
 ### Groundwork Tasks
 
