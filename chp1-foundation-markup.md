@@ -74,7 +74,7 @@ NOTE: Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.2
 Foundation Set Up
 -----------------
 
-To begin our foundation set up there are some very basic groundwork tasks that will be required and can be used at the start of any project.
+Setting up your foundation markup is very straightforward. By following the Groundwork Tasks and [Prep and Launch][] steps below your application will be up and running in no time. The secret sauce comes from the starter code.
 
 ### Groundwork Tasks
 
@@ -176,8 +176,6 @@ And that's it! Now it's time to Prep and Launch your application.
 
 ### Prep and Launch
 
-Prep and the launch your app by following these steps:
-
 **Step 1**: If you do not have a page for your routes to go to, which I'm assuming you don't if this is a brand-new application, create one now. Generate a pages controller with some very basic static pages:
 
     $ rails generate controller Pages home about site_map terms privacy contact
@@ -261,6 +259,7 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
 
+[Prep and Launch]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#prep-and-launch
 [RoR Tutorial]:         http://ruby.railstutorial.org/ruby-on-rails-tutorial-book
 [Git]:                  http://git-scm.com/
 [Github]:               https://github.com/
