@@ -67,7 +67,7 @@ app<br>
 
 The default Rails file and starter code structures are pretty much identical by design. In the next section we will start our own implementation of a rails front-end by creating a new Rails application and replacing out-of-the-box Rails files with our starter code. Folders we add are depicted above in bold. New or replacement files include links to their respective github source for your inspection.
 
-NOTE: Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.2.0) in haml arranged for a Rails project. In my experience the best place to reference when building front-end view templates is HTML5 Boilerplate. This resource is an ongoing collaboration between expert front-end developers and the community. Although slightly dated, to better understand HTML5 Boilerplate as it applies to Rails, the following article is useful:
+NOTE: Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.2.0) in haml arranged for a Rails project. In my experience the best place to reference when building front-end view templates is HTML5 Boilerplate. This resource is an ongoing collaboration between expert front-end developers and the community. Although slightly dated, the following article provides a decent overview of HTML5 Boilerplate as it applies to Rails:
 
 - [Guide to HTML5 Boilerplate for Rails Developers][H5BP for Rails]
 
