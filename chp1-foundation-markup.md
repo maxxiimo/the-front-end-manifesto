@@ -1,7 +1,7 @@
 Foundation Markup
 =================
 
-As a Rails Front End Engineer I look at layout as the Rails templating system where all of my front end code lives and interacts via Rails with the outside world. In this chapter of *The Front End Manifesto* we will focus on:
+As a Rails Front End Engineer I look at layout as the Rails templating system where all of my front end code lives and interacts – via Rails – with the outside world. In this chapter of *The Front End Manifesto* we will focus on:
 
 1.  Setting up a basic HTML foundation for an application
 2.  Getting it right per our [manifesto][Manifesto]
@@ -11,9 +11,7 @@ NOTE: [Chapter 1][Chapter 1 - Coding Design] of the sequel to this book, *Coding
 Views
 -----
 
-As much as Rails is a framework, within it lives a smaller templating framework made up of predominantly HTML. These are our views and where we will work in Chapter 1.
-
-View code can be found in two high-level folders within a Rails application: the `helpers` and the `views` folders. Here is where you'll find these folders by default in any Rails 3.0 or greater project:
+The templating system and associated files and folders used in Rails are known as Views, the V in an MVC. View code is primarily found in two high-level folders within a Rails 3.0 or greater application: the `helpers` and the `views` folders...
 
 app<br>
 ├─ assets<br>
@@ -26,9 +24,9 @@ app<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;└─ application.html.haml<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ **shared**<br>
 
-The `views` folder is where most of the action takes place and can be further subdivided into of the `layout` and `shared` folders, which as you will soon discover are home to the majority of your foundation front end code.
+Most of the action takes place in the `views` folder which can be further subdivided into of the `layout` and `shared` folders – home to the majority of your foundation front end code.
 
-The heart of this view framework is `application.html.haml`. Most view code from other parts of an application pass through and become framed by `application.html.haml` before being served to browsers.
+The heart of The Rails templating system is `application.html.haml`. View code from other parts of an application pass through and become framed by `application.html.haml` before being served to browsers.
 
 ### The Code
 
