@@ -111,20 +111,23 @@ In the Rails world [Git][] is the versioning sytem of choice. Here are the steps
 
 [Bitbucket][] is an alternative service you can use:
 
-    git remote add origin https://<Bitbucket username>@bitbucket.org/<Bitbucket username>/appenetic.git
-    git push -u origin --all   # pushes up the repo and its refs for the first time
-    git push -u origin --tags  # pushes up any tags
+    $ git remote add origin https://<Bitbucket username>@bitbucket.org/<Bitbucket username>/appenetic.git
+    $ git push -u origin --all   # pushes up the repo and its refs for the first time
+    $ git push -u origin --tags  # pushes up any tags
 
 #### Task 3: Remove Unnecessary Files
 
-Out-of-the-box Rails comes with a few files that should be deleted. After testing that your application works, delete:
+Out-of-the-box Rails 3.x comes with a few files that should be deleted. After testing that your application works, delete:
 
 - public/index.html
 - assets/images/rails.png
+
+In Rails 3.x and greater the following two files can be deleted:
+
 - app/views/layouts/application.html.erb
 - README.rdoc
 
-The last two deletions will be replaced in the next task by files from our [starter code][]: `application.html.haml` and `README.md`.
+These files will be replaced in the next task with files from our [starter code][]: `application.html.haml` and `README.md`.
 
 Commit your changes.
 
@@ -132,7 +135,7 @@ Commit your changes.
 
 Go ahead and copy all the files and folders from your cloned starter code repository into your existing application structure.
 
-NOTE: You should be able to copy/merge the files into your application in one action. They will fall into place or replace existing files correctly.
+NOTE: You should be able to copy/merge the files into your application in one action; they will fall into place or replace existing files correctly.
 
 Commit your changes.
 
