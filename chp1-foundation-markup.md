@@ -7,11 +7,12 @@ As an Information Architect (IA), when I think about an applications layout I li
 
 ![][Layout]
 
-When I switch hats, as a Rails developer, I look at layout as the Rails templating framework in which all of my front end code lives, and from where it will interact via Rails with the outside world.
+As a Rails Front End Engineer I look at layout as the Rails templating system where all of my front end code lives and interacts via Rails with the outside world. My perspective changes from an IA to one of a developer. In this chapter of *The Front End Manifesto*, as fun and developers we will focus on:
 
-As a Rails Front End Engineer, you will wear both hats. In [Chapter 1 - Coding Design][] we dive deeply into information architecting, but for now our focus will be strictly on laying out our foundation markup, and getting it right per our front end coding [manifesto][Manifesto].
+1.  Setting up a basic HTML foundation for an application
+2.  Getting it right per our [manifesto][Manifesto]
 
-Let's get started.
+NOTE: [Chapter 1][Chapter 1 - Coding Design] of the sequel to this book, *Coding Design*, provides a great introduction to information architecting in case you're interested.
 
 Views
 -----
@@ -81,13 +82,13 @@ NOTE: Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.2
 Foundation Set Up
 -----------------
 
-Before we begin to explore the code that make up our views, there are a few things you will need to do to follow along with this book:
+Before we begin to explore the code that make up our views, there are a few things you will need to do in order to follow along with this book:
 
 1.  Clone this books [starter code][]:
 
         git clone git@github.com:maxxiimo/base-haml.git
 
-2.  Create a brand-new Rails 3.2 application.
+2.  Create a brand-new Rails 3.2 4.0 application.
 
         $ rails new <name>
 
@@ -269,7 +270,7 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
 [H5BP for Rails]:       http://railsapps.github.com/rails-html5-boilerplate.html
 
-[RoR Tutorial]:         http://ruby.railstutorial.org/book/ruby-on-rails-tutorial?version=3.2
+[RoR Tutorial]:         http://ruby.railstutorial.org/ruby-on-rails-tutorial-book
 [Prep and Launch]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#prep-and-launch
 [Git]:                  http://git-scm.com/
 [Github]:               https://github.com/

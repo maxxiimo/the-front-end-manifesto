@@ -294,7 +294,7 @@ The beauty of this method comes in the bandwidth savings, but the drawback is th
 [Device Diagram]:       http://www.metaltoad.com/blog/simple-device-diagram-responsive-design-planning
 [Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
 [Happy Cog]:            http://www.netmagazine.com/news/browser-screen-resolution-stats-rile-devs-121897
-[_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/_media_queries.sass
+[_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_media_queries.sass
 [Media queries]:        http://alpha.responsivedesign.is/develop/media-queries
 [Sass Media Queries]:   http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
 [Retina Media Queries]: http://css-tricks.com/snippets/css/retina-display-media-query/
