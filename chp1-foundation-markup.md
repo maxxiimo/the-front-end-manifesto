@@ -96,16 +96,24 @@ NOTE: A great reference for doing this correctly is Chapter 1 of Michael Hartl's
 
 #### Task 2: Version Control
 
-In the Rails world [Git][] and [Github][] are the versioning sytem and service of choice. Here are the steps to follow when creating a new Rails application:
+In the Rails world [Git][] is the versioning sytem of choice. Here are the steps to follow when creating a new Rails application:
 
-    IMPORTANT: Switch to the new project folder.
+    $ cd /path/to/my/repo
     $ git init
     $ git add .
     $ git commit -am "Initial commit."
 
+[Github][] is a popular code collaboration, management and repository service I recommend you open an account on if you haven't done so already. To push your new application to github follow these steps:
+
     Create a new repo at Github.
     $ git remote add origin git@github.com:<Github username>/<application name>.git
     $ git push -u origin master
+
+[Bitbucket][] is an alternative service you can use:
+
+    git remote add origin https://<Bitbucket username>@bitbucket.org/<Bitbucket username>/appenetic.git
+    git push -u origin --all   # pushes up the repo and its refs for the first time
+    git push -u origin --tags  # pushes up any tags
 
 #### Task 3: Remove Unnecessary Files
 
@@ -266,6 +274,7 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 [RoR Tutorial]:         http://ruby.railstutorial.org/ruby-on-rails-tutorial-book
 [Git]:                  http://git-scm.com/
 [Github]:               https://github.com/
+[Bitbucket]:            https://bitbucket.org/
 [recommends]:           http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2#sec-heroku_setup
 [Turbo Sprockets]:      https://github.com/ndbroadbent/turbo-sprockets-rails3
 [Heroku]:               https://id.heroku.com/signup
