@@ -30,9 +30,9 @@ The heart of The Rails templating system is `application.html.haml`. View code f
 
 ### The Code
 
-To help you along I will provide links to [starter code][] we will use or reference throughout this book. Feel free to use this code for your own projects.
+To help you build your own foundation markup I will provide links to generic [starter code][]. I will reference this code throughout this book, and feel free to use this code for your own projects.
 
-Structurally in a Rails application, our starter code files and folders fall into place as follows:
+Structurally our starter code files and folders fall into place as follows:
 
 app<br>
 ├─ assets<br>
@@ -65,9 +65,9 @@ app<br>
 ├─ [Gemfile][]<br>
 └─ [README.md][]
 
-The default Rails file structure and application files are pretty much identical. In the next section we will replace some existing files that come out of the box by default with our starter code, and add a few new files and folders (new folders depicted above in bold, new or replacement files are links).
+The default Rails file and starter code structures are pretty much identical by design. In the next section we will start our own implementation of a rails front-end by creating a new Rails application and replacing out-of-the-box Rails files with our starter code. Folders we add are depicted above in bold. New or replacement files include links to their respective github source for your inspection.
 
-NOTE: Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.2.0) in haml and arranged for a Rails project. In my experience the best place to reference when building front end view templates is HTML5 Boilerplate. This resource is an ongoing collaboration between expert front end developers and the community. To better understand HTML5 Boilerplate as it applies to Rails, the following article is helpful:
+NOTE: Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.2.0) in haml arranged for a Rails project. In my experience the best place to reference when building front-end view templates is HTML5 Boilerplate. This resource is an ongoing collaboration between expert front-end developers and the community. Although slightly dated, to better understand HTML5 Boilerplate as it applies to Rails, the following article is useful:
 
 - [Guide to HTML5 Boilerplate for Rails Developers][H5BP for Rails]
 
