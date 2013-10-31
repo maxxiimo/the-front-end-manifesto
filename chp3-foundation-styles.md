@@ -169,7 +169,8 @@ NOTE: You may have noticed that the base application file uses the `.scss` synta
 
 NOTE: Why the "desktop" subfolder? To better organize desktop specific files. In the [Chapter 5][] we will create another subfolder called "mobile". Files outside of these two folders are common to both desktop and mobile device types. This will become clear to you in Chapter 5.
 
-### Foundation Styles Conclusion
+Foundation Styles Conclusion
+----------------------------
 
 And now with everything in place your page should look something like this:
 

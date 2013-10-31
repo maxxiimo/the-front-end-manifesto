@@ -245,7 +245,8 @@ Commit your changes.
 
     localhost:3000
 
-### Foundation Markup Conclusion
+Foundation Markup Conclusion
+----------------------------
 
 And with that you should see something like this:
 
