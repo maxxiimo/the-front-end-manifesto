@@ -173,10 +173,14 @@ Foundation Styles Conclusion
 ----------------------------
 
 And now with everything in place your page should look something like this:
-
+<br>
+<br>
+<br>
 ![][Basic Styles]
 
-It's pretty basic, but much better than [before][]. More importantly, and much like in [Chapter 1][], the greatest benefit of what we have done in this chapter can be found under the hood; the organization and structure of the stylesheets we imported into our project and the tools we're using to help us write styles. In my experience, as you move along in development and your project grows in complexity, as different authors contribute, stylesheets can become behemoths, unmanageable, and downright confusing. Starting with the organizational structure of our foundation styles from the get-go avoids this.
+It's pretty basic, but much better than [before][]. More importantly, and much like in [Chapter 1][], the greatest benefit of what we have done in this chapter can be found under the hood; the organization and structure of the stylesheets we imported into our project and the tools we're using to help us write styles.
+
+In my experience, as you move along in development and your project grows in complexity, as different authors contribute, stylesheets can become behemoths, unmanageable, and downright confusing. Starting with the organizational structure of our startup foundation styles from the get-go will help you avoid these problems.
 
 In the [next chapter][Chapter 4] we will dissect and explain in detail our stylesheet structure and organization as well as explore best practices in stylesheet development and maintenance.
 

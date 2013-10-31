@@ -251,7 +251,7 @@ Foundation Markup Conclusion
 And with our foundation set up work complete your application should now look something like this:
 <br>
 <br>
-
+<br>
 ![][Basic HTML]
 
 Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. What's important here is what's under the hood; an excellent foundation markup base to work with moving forward. In the [next chapter][Chapter 2] we will explore exactly that, what's under the hood.
