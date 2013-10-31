@@ -1,7 +1,11 @@
 Foundation Styles
 =================
 
-HTML and CSS are the rebar of the World Wide Web. In [Chapter 1][] we laid out our HTML, and in this chapter we will build a solid CSS foundation, our foundation styles. To do so I will review some of the tools out there to help us get the job done. For our base styles we then implement this chapters [starter CSS][], and conclude with an overvie of best practices in stylesheet set up and maintenance.
+HTML and CSS are the rebar of the World Wide Web. In [Chapter 1][] we laid out our HTML, and in this chapter we will build a solid CSS foundation to design from. To build our foundation styles we will:
+
+- Review some of the tools out there that can help us get the job done
+- Set up [Compass][] in our application
+- Implement this chapters [starter CSS][]
 
 Lets get started.
 
@@ -183,6 +187,8 @@ It's pretty basic, but much better than [before][]. More importantly and much li
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
 [starter CSS]:          https://github.com/maxxiimo/base-css
 
+[Compass]:              http://compass-style.org/
+
 [Sass]:                 http://sass-lang.com/
 [Less]:                 http://lesscss.org/
 [Haml]:                 http://haml-lang.com/
@@ -194,7 +200,6 @@ It's pretty basic, but much better than [before][]. More importantly and much li
 [Html2Haml]:            http://html2haml.heroku.com/
 [html2haml Gem]:        https://github.com/haml/html2haml
 
-[Compass]:              http://compass-style.org/
 [Susy]:                 http://susy.oddbird.net/
 [Zen Grids]:            http://zengrids.com/
 [Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
