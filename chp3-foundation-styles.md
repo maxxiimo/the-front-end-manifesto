@@ -3,7 +3,7 @@ Foundation Styles
 
 HTML and CSS are the rebar of the World Wide Web. In [Chapter 1][] we laid out our HTML, and in this chapter we will build a solid CSS foundation to design from. To build our foundation styles we will:
 
-- Review some of the tools out there that can help us get the job done
+- Review some of the tools out there that can help get the job done
 - Set up [Compass][] in our application
 - Implement this chapters [starter CSS][]
 
@@ -12,15 +12,9 @@ Lets get started.
 Preprocessors
 -------------
 
-Probably the two most well-known dynamic stylesheet preprocessors in use today are [Sass][] and [Less][]. Sass is the sister of [Haml][], it is my preprocessor of choice, and the default preprocessor in Rails 3.X. As a Rails front end developer you are going to find Sass in many projects you work on – as a consultant or as a new member of an existing team and project – so it would be worth your while to get your head around it if you haven't already.
+Probably the two most well-known dynamic stylesheet preprocessors in use today are [Sass][] and [Less][]. Sass is the sister of [Haml][], my preprocessor of choice, and the default preprocessor in Rails 3.X and greater. As a Rails front end developer you are going to find Sass in use in many of the projects you work on – as a consultant or as a new member of an existing team and project.
 
-NOTE: If your new to preprocessors the following articles give an excellent overview on why Sass is great, and more importantly, an introduction to Sass in Rails:
-
-- [David Walsh on Redesigning with Sass][Redesigning with Sass]
-- [An Introduction to Sass in Rails 1][Sass in Rails 1]
-- [An Introduction to Sass in Rails 2][Sass in Rails 2]
-
-When using Sass you have a choice in syntax: .sass or .scss. I prefer the .sass syntax and throughout this chapter will use it. Most front end developers will probably prefer the .scss syntax because it looks familiar (it is similar to CSS), and because that is what ships out-of-the-box in Rails, however, the .sass syntax is cleaner/terser (IMHO). To help you decide on the best syntax for you, check out the article:
+When using Sass you have a choice in syntax: `.sass` or `.scss`. I prefer the `.sass` syntax and throughout this chapter will use it. Most front end developers will probably prefer the `.scss` syntax because it looks familiar (it is similar to CSS), and because that is what ships out-of-the-box in Rails, however, the `.sass` syntax is cleaner/terser (IMHO). To help you decide on the best syntax for you, check out the article:
 
 - [Sass vs. SCSS: Which Syntax is Better?][Sass vs. SCSS]
 
@@ -31,6 +25,12 @@ TIP: When using Sass or Haml the following resources are absolutely indispensabl
 - [css2sass][]
 - [Html2Haml][]
 - [html2haml Gem][]
+
+NOTE: If you are new to preprocessors the following articles give excellent overviews on why Sass is great, and more importantly, provide an introduction to Sass in Rails:
+
+- [David Walsh on Redesigning with Sass][Redesigning with Sass]
+- [An Introduction to Sass in Rails 1][Sass in Rails 1]
+- [An Introduction to Sass in Rails 2][Sass in Rails 2]
 
 Compass
 -------
