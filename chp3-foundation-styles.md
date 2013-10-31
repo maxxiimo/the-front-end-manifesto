@@ -76,10 +76,6 @@ When working with Compass the following resource might be useful to you:
 Our Foundation
 --------------
 
-With a basic overview of Compass and CSS frameworks and grid systems behind us, it's time to build our foundation styles. As I mentioned previously, our [stylesheets][starter CSS] are written using Sass, but more important than the actual styles themselves – there are really not that many included – is the way that they are organized.
-
-We will cover organization in great detail in [Chapter 4 - Stylesheet Review][Chapter 4], because in my experience, as you move along in developing and the project grows in complexity, as different authors contribute, stylesheets can become behemoths, unmanageable, and downright confusing. To avoid this I highly recommend that you start a project with some kind of organizational structure in place from the get-go. The styles we will use in this chapter do exactly this.
-
 ### Compass Set Up
 
 1.  If you have not done so already per [Chapter 1][], add `gem 'compass-rails'` to your gemfile (bundle install) and run:
@@ -169,15 +165,21 @@ app<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_sprites.sass][]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [application.css.scss][]<br>
 
-NOTE: You may have noticed that the base application file uses the .scss syntax, and other other partials use the .sass syntax. This is perfectly fine and done so in part because Rails needs this file to end in .scss, and with the boilerplate files to keep abreast of boilerplate changes is easier to use this syntax. Everything else and whenever possible I use the .sass syntax because of my own personal preference for it.
+NOTE: You may have noticed that the base application file uses the `.scss` syntax, and other other partials use the `.sass` syntax. This is perfectly fine and done so in part because Rails needs this file to end in .scss, and with the boilerplate files to keep abreast of boilerplate changes is easier to use this syntax. Everything else and whenever possible I use the `.sass` syntax because of my own personal preference for it.
 
 NOTE: Why the "desktop" subfolder? To better organize desktop specific files. In the [Chapter 5][] we will create another subfolder called "mobile". Files outside of these two folders are common to both desktop and mobile device types. This will become clear to you in Chapter 5.
 
-And now with everything in place your page should now look something like this:
+### Foundation Styles Conclusion
+
+And now with everything in place your page should look something like this:
 
 ![][Basic Styles]
 
-It's pretty basic, but much better than [before][]. More importantly and much like in [Chapter 1][], the greatest benefit of what we have done can be found under the hood. In this chapter it is the organization and structure of the stylesheets we imported into our project, a very solid foundation, and the tools we're using to help us write styles. In the [next chapter][Chapter 4] we will dissect and explain in detail our stylesheet structure and organization as well as explore best practices in stylesheet development and maintenance.
+It's pretty basic, but much better than [before][]. More importantly, and much like in [Chapter 1][], the greatest benefit of what we have done in this chapter can be found under the hood; the organization and structure of the stylesheets we imported into our project and the tools we're using to help us write styles. In my experience, as you move along in development and your project grows in complexity, as different authors contribute, stylesheets can become behemoths, unmanageable, and downright confusing. Starting with the organizational structure of our foundation styles from the get-go avoids this.
+
+In the [next chapter][Chapter 4] we will dissect and explain in detail our stylesheet structure and organization as well as explore best practices in stylesheet development and maintenance.
+
+
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
 [Chapter 1]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#foundation-markup

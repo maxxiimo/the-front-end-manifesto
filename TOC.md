@@ -13,6 +13,7 @@ Table of Contents
   - [Foundation Set Up][]
       - [Groundwork Tasks][]
       - [Prep and Launch][]
+  - [Foundation Markup Conclusion][]
 
 ### Chapter 2 - [Markup Review][Chapter 2]
   - [Organization][]
@@ -33,6 +34,7 @@ Table of Contents
   - [Our Foundation][]
       - [Compass Set Up][]
       - [Stylesheet Set Up][]
+  - [Foundation Styles Conclusion][]
 
 ### Chapter 4 - [Stylesheet Review][Chapter 4]
   - [Organization][]
@@ -123,6 +125,7 @@ Table of Contents
 [Foundation Set Up]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#foundation-set-up
 [Groundwork Tasks]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#groundwork-tasks
 [Prep and Launch]:      https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#prep-and-launch
+[Foundation Markup Conclusion]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp1-foundation-markup.md#foundation-markup-conclusion
 
 [Organization]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#organization
 [Partials]:             https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp2-markup-review.md#partials
@@ -141,6 +144,7 @@ Table of Contents
 [Our Foundation]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#our-foundation
 [Compass Set Up]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#compass-set-up
 [Stylesheet Set Up]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#stylesheet-set-up
+[Foundation Styles Conclusion]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-markup.md#foundation-styles-conclusion
 
 [Organization]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#organization
 [Heart and Soul]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#heart-and-soul
