@@ -78,7 +78,7 @@ Our Foundation
 
 ### Compass Set Up
 
-1.  If you have not done so already per [Chapter 1][], add `gem 'compass-rails'` to your gemfile (bundle install) and run:
+1.  In [Chapter 1][] we added `gem 'compass-rails'` to our gemfile through the book starter code. It's now time to initialize this gem through the following command:
 
         $ bundle exec compass init
 
