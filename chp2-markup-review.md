@@ -1,7 +1,7 @@
 Markup Review
 =============
 
-In the [previous chapter][Chapter 1] we discussed what an application layout is, from the front end coders perspective. More importantly, we laid out the groundwork for our foundation markup by integrating our [starter code][] into a new Rails application. Let's dissect that work.
+In the [previous chapter][Chapter 1] we discussed what an application layout is, from the front end coder's perspective. More importantly, we laid out the groundwork for our foundation markup by integrating our [starter code][] into a new Rails application. Let's dissect that work.
 
 Organization
 ------------
@@ -60,13 +60,6 @@ You may have noticed that I separated logo and navigation into their own partial
 The end result of our organizational efforts is a very succinct *application.html.haml* file:
 
     !!!
-    -# Uncomment if you want to address IE browser issues via these classes.
-    -# http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
-    -# /[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
-    -# /[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
-    -# /[if IE 8] <html class="no-js lt-ie9" lang="en">
-    -# :plain
-    -#   <!--[if gt IE 8] -->
     %html{:lang => "en"}
       -# /<![endif]
 
@@ -150,7 +143,7 @@ Add the following to the top of any page you wish to add a unique title to:
 
 Many files in a Rails application are not necessary to track or share. Git allows you to ignore these files through .gitignore.
 
-Our [.gitignore][]. file is borrowed from [HTML 5 Boilerplate][H5BP .gitignore]) with a few additions:
+Our [.gitignore][]. file is borrowed from [HTML 5 Boilerplate][H5BP .gitignore] with a few additions:
 
     # Local
     scratch.*
