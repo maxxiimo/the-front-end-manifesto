@@ -144,7 +144,7 @@ Table of Contents
 [Our Foundation]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#our-foundation
 [Compass Set Up]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#compass-set-up
 [Stylesheet Set Up]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#stylesheet-set-up
-[Foundation Styles Conclusion]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-markup.md#foundation-styles-conclusion
+[Foundation Styles Conclusion]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#foundation-styles-conclusion
 
 [Organization]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#organization
 [Heart and Soul]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#heart-and-soul
