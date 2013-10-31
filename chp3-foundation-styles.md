@@ -20,48 +20,26 @@ When using Sass you have a choice in syntax: `.sass` or `.scss`. I prefer the `.
 
 So what about [Less][]? Well it's the runner-up.
 
-TIP: When using Sass or Haml the following resources are absolutely indispensable:
-
-- [css2sass][]
-- [Html2Haml][]
-- [html2haml Gem][]
-
 NOTE: If you are new to preprocessors the following articles give excellent overviews on why Sass is great, and more importantly, provide an introduction to Sass in Rails:
 
 - [David Walsh on Redesigning with Sass][Redesigning with Sass]
 - [An Introduction to Sass in Rails 1][Sass in Rails 1]
 - [An Introduction to Sass in Rails 2][Sass in Rails 2]
 
-Compass
--------
+TIP: When using Sass or Haml the following resources are absolutely indispensable:
 
-Right off the bat I have to say that I love [Compass][]. It's based on Sass, powerful, well-documented, widely used, there are a ton of extensions for it, and it makes life easier. What's not to love?
-
-> Compass is an open-source CSS Authoring Framework.
-
-\- [Compass][]
-
-All the [starter CSS][] files we will use in our foundation styles incorporate Compass.
-
-In the next section will take a brief look at CSS frameworks and grid systems, but only a brief look because we are not going to use them in our foundation styles. Through Compass you can add all kinds of framework components like:
-
-- [Susy][] or [Zen Grids][]
-- [Sassy Buttons][] or [Fancy Buttons][]
-
-Essentially, you can create your own framework with a unique look and feel. I'm not against using CSS frameworks, but I find at times they can be limiting; if you want to break free it takes some tinkering.
-
-When working with Compass the following resource might be useful to you:
-
-- [35 Great Resources for Compass and Sass][35 Great Resources]
+- [css2sass][]
+- [Html2Haml][]
+- [html2haml Gem][]
 
 CSS Frameworks and Grid Systems
 -------------------------------
 
-Although my preference is to use Compass, I don't want to discourage you from adopting a framework in your project. Frameworks can be extremely helpful, especially when starting a new project. They give you a whole boatload of base styles that are instantly accessible through HTML tags and/or IDs and class names. They include base font sizes and rhythm, default formats for almost every kind of HTML tag, and by simply following the frameworks parameters, or dropping in a specified class name, you can add some great looking styles to your project; that are built to work, with very few hitches, across all browsers. On top of that most CSS frameworks come with prebuilt scripts for commonly used functions like pop-ups, modals and menu systems. The list goes on.
+CSS frameworks and grid systems can be extremely helpful when starting a new project. They give you a whole boatload of base styles that are instantly accessible through HTML tags and/or IDs and class names. They include well-thought-out typographic elements, default formats for almost every kind of HTML tag, and by simply following the frameworks parameters – or dropping in a special framework class names – you can add some great looking styles to your project; that are built to work, with very few hitches, and across all browsers. On top of that most CSS frameworks come with prebuilt scripts for commonly used functions like pop-ups, modals, and menu systems.
 
 You'll find a roundup of the most well-known [frameworks][Appendix 1] in the Appendices.
 
-One thing to note about CSS frameworks is that pretty much all of them include a grid system, and if you don't want to use a CSS framework there are also a number of standalone grid systems that might be useful to you. If you're not 100% sure what a grid system is, take a look at:
+One thing to note about CSS frameworks is that pretty much all of them include a grid system to layout your page with, and if you don't want to use a CSS framework there are also a number of standalone grid systems that might be useful to you for this purpose. If you're not 100% sure what a grid system is, take a look at:
 
 - [Grids Are Good][]
 
@@ -71,7 +49,29 @@ Why use a grid system? The following quote most succinctly answers this question
 
 \- [Fluid Grids by Ethan Marcotte][Fluid Grids]
 
-You'll find a comprehensive roundup of [grid systems][Appendix 2] in the Appendices for you to review and choose from, just keep in mind though that in [Chapter 5][Chapter 5 - Susy] we will learn to use [Susy][].
+You'll find a comprehensive roundup of [grid systems][Appendix 2] in the Appendices for you to review and choose from, just keep in mind though that in [Chapter 5][Chapter 5 - Susy] we will implement a grid system called [Susy][].
+
+Compass
+-------
+
+> Compass is an open-source CSS Authoring Framework.
+
+\- [Compass][]
+
+Right off the bat I have to say that I love [Compass][]. It's based on Sass, powerful, well-documented, widely used, there are a ton of plug-ins for it, and it makes life easier. What's not to love?
+
+All the [starter CSS][] files we will use in our foundation styles incorporate Compass.
+
+In the previous section we took a brief look at CSS frameworks and grid systems, but only a brief look because we are not going to use any of them in our foundation styles. Through Compass we can create our own framework using any number of the different community developed plug-ins available for Compass like:
+
+- [Sassy Buttons][] or [Fancy Buttons][]
+- [Susy][] or [Zen Grids][]
+
+I'm not against using CSS frameworks, but I find at times they can be limiting; if you want to break free it takes some tinkering. With Compass you essentially create your own framework with a unique look and feel.
+
+When working with Compass the following resource might be useful to you:
+
+- [35 Great Resources for Compass and Sass][35 Great Resources]
 
 Our Foundation
 --------------
@@ -200,15 +200,15 @@ It's pretty basic, but much better than [before][]. More importantly and much li
 [Html2Haml]:            http://html2haml.heroku.com/
 [html2haml Gem]:        https://github.com/haml/html2haml
 
-[Susy]:                 http://susy.oddbird.net/
-[Zen Grids]:            http://zengrids.com/
-[Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
-[Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/
-[35 Great Resources]:   http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
-
 [Grids Are Good]:       http://www.subtraction.com/pics/0703/grids_are_good.pdf
 [Fluid Grids]:          http://www.alistapart.com/articles/fluidgrids/
 [Chapter 5 - Susy]:     https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp5-mobile-foundation.md#mobile-foundation#1-flexible-grids
+
+[Sassy Buttons]:        http://jaredhardy.com/sassy-buttons/
+[Fancy Buttons]:        http://brandonmathis.com/projects/fancy-buttons/
+[Susy]:                 http://susy.oddbird.net/
+[Zen Grids]:            http://zengrids.com/
+[35 Great Resources]:   http://fuelyourcoding.com/35-great-resources-for-compass-and-sass/
 
 [compass-rails]:        https://github.com/Compass/compass-rails
 [FireSass]:             https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/

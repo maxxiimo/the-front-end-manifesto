@@ -28,8 +28,8 @@ Table of Contents
 
 ### Chapter 3 - [Foundation Styles][Chapter 3]
   - [Preprocessors][]
-  - [Compass][]
   - [CSS Frameworks and Grid Systems][]
+  - [Compass][]
   - [Our Foundation][]
       - [Compass Set Up][]
       - [Stylesheet Set Up][]
