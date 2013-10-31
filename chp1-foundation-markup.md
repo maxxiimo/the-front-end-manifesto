@@ -248,8 +248,8 @@ Commit your changes.
 Foundation Markup Conclusion
 ----------------------------
 
-And with that you should see something like this:
-
+And with our foundation set up work complete your application should now look something like this:
+<br>
 <br>
 
 ![][Basic HTML]
