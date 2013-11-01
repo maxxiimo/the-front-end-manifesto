@@ -41,11 +41,19 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
 
 ### Mobvious Set Up
 
-**Step 1**: Copy all the [base-mobile][] files from the default folder and place them into their corresponding directories, i.e. `stylesheets/mobile` files go in `stylesheets/mobile` in your application. You should be able to cleanly merge the files in one sweep into your project. When you are finished, the following files will have been added to your repository:
+**Step 1**: Copy and merge into your project the cloned files and subfolders exactly as they are laid out, in their entirety. When you are finished, the following files will have been added to your repository:
 
 ![][new-files]
 
-**Step 2**: Add the following to your application.rb file:
+**Step 2**: Add the following gems to your `Gemfile` and then bundle install:
+
+    gem 'mobvious'
+    gem 'mobvious-rails'
+
+**Step 3**: Add the following to `application.rb`:
+
+    # Tell your app to use Mobvious::Manager as Rack middleware.
+    config.middleware.use Mobvious::Manager
 
     # Precompile *all* assets, except those that start with underscore per:
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
@@ -53,17 +61,7 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
 
 \- [Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work]
 
-**Step 3**: Add the following gems to your `Gemfile` and then bundle install:
-
-    gem 'mobvious'
-    gem 'mobvious-rails'
-
-**Step 4**: Add the following to `application.rb`:
-
-    # Tell your app to use Mobvious::Manager as Rack middleware.
-    config.middleware.use Mobvious::Manager
-
-**Step 5**: Add the following includes:
+**Step 4**: Add the following includes:
 
     application_controller.rb:
     include Mobvious::Rails::Controller
@@ -71,7 +69,7 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
     application_helper.rb:
     include Mobvious::Rails::Helper
 
-**Step 6**: Create an initializer file `config/initializers/mobvious.rb` and configure it as follows:
+**Step 5**: Create an initializer file `config/initializers/mobvious.rb` and configure it as follows:
 
     Mobvious.configure do |config|
       config.strategies = [ Mobvious::Strategies::MobileESP.new(:mobile_desktop) ]
@@ -123,15 +121,17 @@ We then register the `:mobile` mime type in `config/initializers/mime_types.rb`:
 
     Mime::Type.register_alias "text/html", :mobile
 
-Don't forget to restart your server, and with that, requests from mobile devices detected by Mobvious will be served `.html.mobile views`. Only one is included in our base mobile files, but I'm beginning to get concerned that as we move along development, we will find that we have way too many files in our `app/views` folder – some ending with `.html.haml` others with `.mobile.haml`.
+Don't forget to restart your server, and with that, requests from mobile devices detected by Mobvious will be served `.html.mobile` views.
 
 NOTE: If you use Firefox try [User Agent Switcher][] to test on your desktop.
 
+If you look in the `app/views` directory you'll find several `.mobile.haml` files mixed in with your regular `.html.haml`files, which if it hasn't already should concern you. As we move along in development we may find that we have way too many files in our `app/views` folder – some ending with `.html.haml` others with `.mobile.haml`.
+
 ### Reorganization
 
-To better organize and reduce clutter in our views, let's store our mobile views in a separate folder than our regular views.
+To better organize and reduce potential clutter in our views, it's a good idea to store mobile views in a `mobile` folder; separate from our regular views.
 
-**Step 1**: Create a new `app/views/mobile` folder and move all mobile views there.
+**Step 1**: Create a new `app/views/mobile` folder and move all mobile views from the `layout`, `pages` and `shared` folders there. You will need to re-create these folders in the new `mobile`folder.
 
 **Step 2**: We tell Rails that our mobile views are now located in this directory by adding the following `prepend_view_path` to our `prepare_for_mobile` method:
 
@@ -142,9 +142,7 @@ To better organize and reduce clutter in our views, let's store our mobile views
       end
     end
 
-Now, in addition to our mime type, we have designated a specific view path as the location to find our mobile views, but with  this new folder structure in place there really no longer is a need for a mobile mime type.
-
-More importantly, with a common mime type we can now use the same views for both desktop and mobile devices through Rails [template inheritance][] – your application will default to regular views when mobile views are not available. This is especially useful when making an existing app mobile friendly; a little bit at a time.
+Now, in addition to our mime type, we have designated a specific view path as the location to find our mobile views. With this new folder structure in place there really is no need for a mobile mime type. More importantly, with a common mime type we can now use the same views for both desktop and mobile devices through Rails [template inheritance][] – your application will default to regular views when mobile views are not available. This is especially useful when making an existing app mobile friendly; a little bit at a time.
 
 **Step 3**: To complete the mobile views reorganization, delete the mime type we defined from the previous section (it can be found in `mime_types.rb`), and remove the `request.format = :mobile` line from the `prepare_for_mobile method`.
 
