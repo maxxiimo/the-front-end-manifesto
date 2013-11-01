@@ -43,7 +43,13 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
 
 **Step 1**: Copy and merge into your project the cloned `foundation` and `mime` folders content into your project. When you are finished, the following files will have been added to your repository:
 
-![][new-files]
+`foundation` files
+
+![][new-files-foundation]
+
+`mime` files
+
+![][new-files-mime]
 
 **Step 2**: Add the following gems to your `Gemfile` and then bundle install:
 
@@ -426,6 +432,7 @@ To learn more visit:
 [Zepto.js]:             http://zeptojs.com/
 [Zepto]:                http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/
 
-[new-files]:            http://chrismaxwell.com/manifesto/chp-8/new-files.gif
+[new-files-foundation]: http://chrismaxwell.com/manifesto/chp-8/new-files-foundation.gif
+[new-files-mime]:       http://chrismaxwell.com/manifesto/chp-8/new-files-mime.gif
 [file-structure]:       http://chrismaxwell.com/manifesto/chp-8/file-structure.gif
 [file-structure-w-lines]: http://chrismaxwell.com/manifesto/chp-8/file-structure-w-lines.gif
