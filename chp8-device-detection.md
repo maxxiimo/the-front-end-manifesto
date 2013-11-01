@@ -41,7 +41,7 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
 
 ### Mobvious Set Up
 
-**Step 1**: Copy and merge into your project the cloned files and subfolders exactly as they are laid out, in their entirety. When you are finished, the following files will have been added to your repository:
+**Step 1**: Copy and merge into your project the cloned `foundation` and `mime` folders content into your project. When you are finished, the following files will have been added to your repository:
 
 ![][new-files]
 
