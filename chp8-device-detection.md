@@ -131,11 +131,17 @@ Don't forget to restart your server, and with that, requests from mobile devices
 
 ### Reorganization
 
-To better organize and reduce potential clutter in our views, it's a good idea to store mobile views in a `mobile` folder; separate from our regular views.
+To better organize and reduce potential clutter in your views, it's a good idea to store mobile views in a `mobile` folder; separate from regular desktop views. To do so follow these steps:
 
-**Step 1**: Create a new `app/views/mobile` folder and move all mobile views from the `layout`, `pages` and `shared` folders there. You will need to re-create these folders in the new `mobile`folder.
+**Step 1**: Copy and merge into your project the cloned `mobvious` folder content into your project. When you are finished, the following files will have been added to your repository:
 
-**Step 2**: We tell Rails that our mobile views are now located in this directory by adding the following `prepend_view_path` to our `prepare_for_mobile` method:
+![][new-files-mobvious]
+
+Then delete the old `.html.mobile` files from your project. You no longer need these.
+
+Alternatively, you can manually create a new `app/views/mobile` folder and move all mobile views from the `layout`, `pages` and `shared` folders there. Don't forget to re-create these folders in the new `mobile`folder and rename your their extensions to `.html.haml`.
+
+**Step 2**: Tell Rails that our mobile views are now located in the new `mobile` directory by adding the following `prepend_view_path` to your `prepare_for_mobile` method:
 
     def prepare_for_mobile
       if request.env['mobvious.device_type'] == :mobile
@@ -147,8 +153,6 @@ To better organize and reduce potential clutter in our views, it's a good idea t
 Now, in addition to our mime type, we have designated a specific view path as the location to find our mobile views. With this new folder structure in place there really is no need for a mobile mime type. More importantly, with a common mime type we can now use the same views for both desktop and mobile devices through Rails [template inheritance][] – your application will default to regular views when mobile views are not available. This is especially useful when making an existing app mobile friendly; a little bit at a time.
 
 **Step 3**: To complete the mobile views reorganization, delete the mime type we defined from the previous section (it can be found in `mime_types.rb`), and remove the `request.format = :mobile` line from the `prepare_for_mobile method`.
-
-**Step 4**: Finally, don't forget to rename your mobile views extensions from `mobile.haml` back to `.html.haml`.
 
 Restart your server and you're done!
 
@@ -432,5 +436,6 @@ To learn more visit:
 
 [new-files-foundation]: http://chrismaxwell.com/manifesto/chp-8/new-files-foundation.gif
 [new-files-mime]:       http://chrismaxwell.com/manifesto/chp-8/new-files-mime.gif
+[new-files-mobvious]:   http://chrismaxwell.com/manifesto/chp-8/new-files-mobvious.gif
 [file-structure]:       http://chrismaxwell.com/manifesto/chp-8/file-structure.gif
 [file-structure-w-lines]: http://chrismaxwell.com/manifesto/chp-8/file-structure-w-lines.gif
