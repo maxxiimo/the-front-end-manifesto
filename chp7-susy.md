@@ -1,7 +1,7 @@
 Susy
 ====
 
-In [Chapter 6][] we introduced the first component of Responsive Web Design, flexible grids, and in that introduction I mentioned [Susy][], a [Compass][]-based grid system that could handle the heavy lifting of math calculations for you:
+In [Chapter 6][] we introduced the first component of Responsive Web Design; flexible grids, and in that introduction I mentioned [Susy][]...
 
 > Your markup. Your design. Our math.
 >
@@ -9,12 +9,12 @@ In [Chapter 6][] we introduced the first component of Responsive Web Design, fle
 
 \- [Susy][]
 
-In this chapter we will implement Susy.
+In this chapter we will implement Susy, a [Compass][]-based grid system that will handle all the flexible-grid-math-calculation heavy lifting for you.
 
 Susy Set Up
 -----------
 
-Set up is pretty straightforward:
+Set up is pretty straightforward (in fact we already set up Susy in Chapters 1 and 3 when we implemented our foundation):
 
 **Step 1**: Add the Susy gem to your `.gemfile` and bundle install:
 
@@ -48,12 +48,12 @@ To implement Susy into your application follow these steps:
     /*  Susy Grid
       ----------------------- */
 
-    $total-columns:     12
-    $column-width:      4em
-    $gutter-width:      1em
-    $grid-padding:      $gutter-width
+    $total-columns:     12;
+    $column-width:      4em;
+    $gutter-width:      1em;
+    $grid-padding:      $gutter-width;
 
-This tells Susy what the basic characteristics of the grid system are. In this case it will span 12 columns; each column has a width of 4em with a gutter and grid padding of 1em. With this information Susy will dynamically calculate all the properties of your grid system.
+This tells Susy what the basic characteristics of the grid system are. In this case it will span 12 columns; each column has a width of 4em with a gutter and grid padding of 1em. With this information Susy can dynamically calculate all the properties of your grid system.
 
 NOTE: Internally Susy calculates the total width of your grid, including its padding, using the following formula:
 
@@ -65,7 +65,7 @@ NOTE: Internally Susy calculates the total width of your grid, including its pad
 
     %body
       .container
-        = chromeframe
+        = browsehappy
         %header{:role => "banner"}
           = render :partial => 'shared/logo'
           = render :partial => 'shared/navigation'
@@ -95,7 +95,7 @@ And that's it! Refresh your browser and here is what you should see:
 
 ![][Susy Layout]
 
-Aside from the grid lines everything looks the same, accept now Susy is in control oof your grid system. In the Media Queries section of this chapter we will use Susy quite a bit, but first let's quickly learn how it works.
+Aside from the grid lines everything looks the same, accept now Susy is in control of your grid system. In the Media Queries section of this chapter we will use Susy quite a bit, but first let's quickly learn how Susy works.
 
 Susy in Action
 --------------
