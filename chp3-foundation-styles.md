@@ -78,7 +78,11 @@ Our Foundation
 
 ### Compass Set Up
 
-1.  In [Chapter 1][] we added `gem 'compass-rails'` to our gemfile through the book starter code. It's now time to initialize this gem through the following command:
+1.  In [Chapter 1][] we added `gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"` to our gemfile through the book starter code.
+
+    NOTE: For Rails 3.x remove the `, github: "Compass/compass-rails", branch: "rails4-hack"` portion of the gem.
+
+    It's now time to initialize this gem through the following command:
 
         $ bundle exec compass init
 
