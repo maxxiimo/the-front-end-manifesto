@@ -61,8 +61,6 @@ The end result of our organizational efforts is a very succinct *application.htm
 
     !!!
     %html{:lang => "en"}
-      -# /<![endif]
-
       = head
       %body
         = chromeframe
