@@ -82,13 +82,15 @@ Our Foundation
 
         $ bundle exec compass init
 
-    Compass will generate a configuration file and stylesheets. Delete the stylesheets found in `app/assets/stylesheets`:
+    Compass will generate a configuration file and stylesheets. Delete the stylesheets. We're going to use our own.
+
+    In Rails 4.0 delete the `sass` and `stylesheets` folders.
+
+    In Rails 3.x delete the following stylesheets found in `app/assets/stylesheets`:
 
         - ie.css.scss
         - print.css.scss
         - screen.css.scss
-
-    We're going to use our own.
 
     NOTE: For more explicit directions take a look at the [compass-rails][] gem source.
 
@@ -96,7 +98,7 @@ Our Foundation
 
     IMPORTANT: When using Compass always use @import to organize styles rather than Sprockets. You can use Sprockets require syntax, however per the explanation found at the [compass-rails][] gem source, this is not a good idea.
 
-3.  Add the following commented out code to your `config/compass.rb` file generated in step 1:
+3.  In Rails 3.x add the following commented out code to your `config/compass.rb` file generated in step 1:
 
         # To allow compass to import partials from subdirectories per
         # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/.
@@ -109,7 +111,7 @@ Our Foundation
 
     If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming; from which is extremely helpful when debugging. Uncomment the `sass_options` line if you plan to use FireSass.
 
-4.  Edit `config/application.rb`:
+4.  In Rails 3.x edit `config/application.rb`:
 
     Uncomment the following:
 
@@ -134,21 +136,17 @@ Some additional resources for working with Compass include:
 
 ### Stylesheet Set Up
 
-Now that Compass is set up, let's set up our stylesheets. Clone this books [starter CSS][]:
+Now that Compass is set up, let's add our stylesheets. Clone this books [starter CSS][]:
 
     git clone git@github.com:maxxiimo/base-css.git
 
 Setting up our CSS is pretty straightforward. Basically, all you have to do is copy and merge into your project the cloned files and subfolders exactly as they are laid out, in their entirety. If you followed the Compass set up the only file that will be replaced is `application.css.scss`.
 
-Your stylesheet file structure should now look like this:
+Your stylesheet file structure should end up looking like this:
 
 app<br>
 └─ assets<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ stylesheets<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;└─ boilerplate<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;├─ [_h5bp_helpers.scss][]<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;├─ [_h5bp_normalize_v112.scss][]<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;└─ [_h5bp_print.scss][]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;└─ desktop<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_forms.sass][]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_grids.sass][]<br>
@@ -165,9 +163,17 @@ app<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_sprites.sass][]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [application.css.scss][]<br>
 
-NOTE: You may have noticed that the base application file uses the `.scss` syntax, and other other partials use the `.sass` syntax. This is perfectly fine and done so in part because Rails needs this file to end in .scss, and with the boilerplate files to keep abreast of boilerplate changes is easier to use this syntax. Everything else and whenever possible I use the `.sass` syntax because of my own personal preference for it.
+vendor<br>
+└─ assets<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ stylesheets<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;└─ boilerplate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;├─ [_h5bp_helpers.scss][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;├─ [_h5bp_normalize_v112.scss][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;└─ [_h5bp_print.scss][]<br>
 
-NOTE: Why the "desktop" subfolder? To better organize desktop specific files. In the [Chapter 5][] we will create another subfolder called "mobile". Files outside of these two folders are common to both desktop and mobile device types. This will become clear to you in Chapter 5.
+NOTE: You may have noticed that the base application file uses the `.scss` extension, and other other partials use the `.sass` extension. This is perfectly fine. Rails needs this file to end in `.scss`. For the boilerplate files it easier to use this extension to keep abreast of their changes – the source files are compatible with this extension. For everything else I use the `.sass` because of my own personal preference for it's syntax.
+
+NOTE: Why the `desktop` subfolder? To better organize desktop specific files. In the [Chapter 5][] we will create another subfolder called `mobile`. Files outside of these two folders are common to both desktop and mobile device types. This will become clear to you in Chapter 5.
 
 Foundation Styles Conclusion
 ----------------------------
