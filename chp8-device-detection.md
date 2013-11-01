@@ -102,7 +102,7 @@ NOTE: For an even simpler solution checkout [Mobylette][Appendix 4] in the Appen
 
 ### Mime Types
 
-Now that we have Mobvious set up, here is how we will use it.
+Now that we have Mobvious set up, here is how we will use it...
 
 To begin we will add a bit of [Ryan Bates mobile solution][Ryan Bates] to our Mobvious implementation. Part of his solution creates a new mime type, `:mobile`, and uses a `before_filter` to test if an incoming request is mobile. If true, the `before_filter` sets the mime type to `:mobile` and only files named with the `.mobile.haml` extension are served.
 
@@ -127,11 +127,7 @@ We then register the `:mobile` mime type in `config/initializers/mime_types.rb`:
 
     Mime::Type.register_alias "text/html", :mobile
 
-Don't forget to restart your server, and with that, requests from mobile devices detected by Mobvious will be served `.html.mobile` views.
-
-NOTE: If you use Firefox try [User Agent Switcher][] to test on your desktop.
-
-If you look in the `app/views` directory you'll find several `.mobile.haml` files mixed in with your regular `.html.haml`files, which if it hasn't already should concern you. As we move along in development we may find that we have way too many files in our `app/views` folder – some ending with `.html.haml` others with `.mobile.haml`.
+Don't forget to restart your server, and with that, requests from mobile devices detected by Mobvious will be served `.html.mobile` views. It's a pretty simple and straightforward solution, I like it, but there is something to consider about this solution before moving on. If you look in the `app/views` directory you will find several `.mobile.haml` files mixed in with your regular `.html.haml` files. In time, you may find that storing these files side-by-side becomes confusing.
 
 ### Reorganization
 
@@ -159,6 +155,8 @@ Restart your server and you're done!
 NOTE: If you prefer to organize your mobile views outside of the regular `app/views` path, for example in `app/views_mobile`, swap the `prepend_view_path` with:
 
     prepend_view_path Rails.root + 'app' + 'views_mobile'
+
+TIP: If you use Firefox try [User Agent Switcher][] to test on your desktop.
 
 A Hybrid Approach
 -----------------
