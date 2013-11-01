@@ -220,7 +220,14 @@ What this all means is that we can create a second implementation of RWD under t
 
 With this knowledge let's set up the mobile RWD version of our website.
 
-In our [Chapter 7][] implementation of [Susy][] we defined the following Susy grid system in `application.css.scss`:
+**Step 1**: Import Susy into your project:
+
+    /* BASIC STRUCTURE
+      ============================================================================ */
+    @import "susy";
+    @import "mobile/layout";
+
+**Step 2**: In our [Chapter 7][] implementation of [Susy][] we defined the following Susy grid system in `application.css.scss`:
 
     // Susy Grid
 
@@ -233,7 +240,7 @@ In our [Chapter 7][] implementation of [Susy][] we defined the following Susy gr
     $break9:            9;
     $break12:           12;
 
-To start our mobile implementation we will do the same in `mobile.scss`, but only focus on the first two breakpoints:
+For our mobile implementation we will do the same in `mobile.scss`, but only focus on the first two breakpoints:
 
     // Susy Grid
 
@@ -246,19 +253,26 @@ To start our mobile implementation we will do the same in `mobile.scss`, but onl
 
 NOTE: `mobile.scss` is coded to optimally handle devices with column widths of < 6 columns (464 pixels).
 
-Then, add the `.container` outer grid-containing element in `app/views/mobile/layouts/application.html.haml`:
+**Step 3**: Add the `.container` outer grid-containing element in `app/views/mobile/layouts/application.html.haml`:
 
-    %body
-        = chromeframe
-        %header{:role => "banner"}
-          = render :partial => 'shared/logo'
-          = render :partial => 'shared/navigation'
-        #main{:role => "main"}
-          = yield
-        = render :partial => 'shared/footer'
-      = scripts
+    !!!
+    /[if IEMobile 7]><html class="no-js iem7"><![endif]
+    /[if (gt IEMobile 7)|!(IEMobile)]><!-->
+    %html.no-js
+      /<![endif]
 
-...and add the corresponding Susy mixins in `app/assets/stylesheets/mobile/_layout.sass`:
+      = head
+      %body
+        .container
+          %header{:role => "banner"}
+            = render :partial => 'shared/logo'
+            = render :partial => 'shared/navigation'
+          #main{:role => "main"}
+            = yield
+          = render :partial => 'shared/footer'
+        = scripts
+
+**Step 4**: Add the corresponding Susy mixins in `app/assets/stylesheets/mobile/_layout.sass`:
 
     .container
       +container($total-columns, $break6)
