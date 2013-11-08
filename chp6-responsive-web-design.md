@@ -136,7 +136,7 @@ Having defined our target devices, and to drill a point home, I want to quote Ha
 
 ### Breakpoint Mixin
 
-Our [starter CSS][] includes a breakpoint mixin called [\_media_queries.sass][_media_queries.sass] that looks something like this:
+Our [starter CSS][] includes a breakpoint mixin called [\_media\_queries.sass][_media_queries.sass] that looks something like this:
 
     @mixin breakpoint($point)
       @if $point == xxs
