@@ -175,7 +175,11 @@ User agent sniffing might not be the silver bullet we seek to deliver different 
 
 On the other hand, a purely responsive web design may deliver too much bloat for smaller devices with lower connection speeds, higher latency, and smaller CPUs. The idea of context sensitivity also comes into play. Perhaps your user needs are different on mobile than they are on a desktop because of the context in which they are viewing and using your application. On top of that, smaller devices require a lot more tweaks between device capabilities (from dumb phones to smart phones), and require developers to contend with a greater amount of screen size increments.
 
-All of these factors might be good reason to keep code organized separately, not just in a separate stylesheet, or in hidden and conditionally loaded elements, but as a separate system entirely. A hybrid approach can meet these challenges.
+> Ultimately trying to cover all input types and all user postures in a single interface is a daunting challenge. It’s hard enough to cover all the screen sizes and resolutions out there. Couple that with the fact that an interface that tries to be all things to all devices might ultimately not do a good job for any situation.
+
+\- Luke Wroblewski, [Responsive Web Design: Relying Too Much on Screen Size][RWD All Things], p.96
+
+In the final analysis it might be a good idea to keep code separate, not just in a separate stylesheet, or in hidden and conditionally loaded elements, but as a separate system entirely.
 
 ### How It Works
 
@@ -422,6 +426,7 @@ To learn more visit:
 [User Agent Switcher]:  http://chrispederick.com/work/user-agent-switcher/
 [template inheritance]: http://railscasts.com/episodes/269-template-inheritance
 
+[RWD All Things]:       http://www.lukew.com/ff/entry.asp?1816
 [RWD Book]:             http://www.abookapart.com/products/responsive-web-design
 [Susy]:                 http://susy.oddbird.net/
 [HTML5 Boilerplate]:    http://html5boilerplate.com/
