@@ -136,7 +136,7 @@ Having defined our target devices, and to drill a point home, I want to quote Ha
 
 ### Breakpoint Mixin
 
-Our [starter CSS][] includes a breakpoint mixin called [_media_queries.sass][] that looks something like this:
+Our [starter CSS][] includes a breakpoint mixin called [\_media_queries.sass][_media_queries.sass] that looks something like this:
 
     @mixin breakpoint($point)
       @if $point == xxs
@@ -169,7 +169,7 @@ Our [starter CSS][] includes a breakpoint mixin called [_media_queries.sass][] t
 
 What we've done here is applied our media definitions to our mixin. We use variables so that we can easily make changes in one location. We use generic variables starting with xxs (extra extra small) to xl (extra large) to avoid marrying a specific device name, things change.
 
-To activate this mixin uncomment *@import "media_queries";* in *application.css.scss*:
+To activate this mixin uncomment `@import "media_queries";` in `application.css.scss`:
 
     /* MIXINS
       ============================================================================ */
@@ -192,6 +192,7 @@ To learn more check out the following:
 - [Media queries][]
 - [Responsive Web Design in Sass: Using Media Queries in Sass 3.2][Sass Media Queries]
 - [Retina Display Media Query][Retina Media Queries]
+- [Conditional Media Query Mixins][Conditional Media Query]
 
 ### Em's and Media Queries
 
@@ -298,6 +299,7 @@ The beauty of this method comes in the bandwidth savings, but the drawback is th
 [Media queries]:        http://alpha.responsivedesign.is/develop/media-queries
 [Sass Media Queries]:   http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
 [Retina Media Queries]: http://css-tricks.com/snippets/css/retina-display-media-query/
+[Conditional Media Query]: http://css-tricks.com/conditional-media-query-mixins/
 [EMs have it]:          http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
 [Embrace the em]:       http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/
 
