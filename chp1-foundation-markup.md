@@ -113,7 +113,7 @@ In the Rails world [Git][] is the versioning sytem of choice. Here are the steps
 
 [Bitbucket][] is an alternative service you can use:
 
-    $ git remote add origin https://<Bitbucket username>@bitbucket.org/<Bitbucket username>/appenetic.git
+    $ git remote add origin ssh://git@bitbucket.org/maxxiimo/<repository>.git
     $ git push -u origin --all   # pushes up the repo and its refs for the first time
     $ git push -u origin --tags  # pushes up any tags
 
