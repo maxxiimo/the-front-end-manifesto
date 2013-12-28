@@ -104,11 +104,11 @@ The JavaScript include tag found their specifies a manifest file called [applica
 
 Some scripts though, such as modernizr, need to load before your HTML does and therefore are called before the body of your markup through a Rails JavaScript include tag in [_head.html.haml][_head]:
 
-    = javascript_include_tag "modernizr-2.6.2.min"
+    = javascript_include_tag "modernizr-2.7.1.min"
 
 To get this to precompile you will need to add the following to *production.rb*:
 
-    config.assets.precompile += %w( modernizr-2.6.2.min )
+    config.assets.precompile += %w( modernizr-2.7.1.min )
 
 ### What to Put in \<head>
 

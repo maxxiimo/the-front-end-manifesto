@@ -60,7 +60,7 @@ app<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ assets<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ javascripts<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [jquery-1.9.1.min.js][jquery]<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [modernizr-2.6.2.min][modernizer]<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [modernizr-2.7.1.min][modernizer]<br>
 ├─ [.gitignore][]<br>
 ├─ [Gemfile][]<br>
 └─ [README.md][]
@@ -182,11 +182,11 @@ For faster asset precompiles check out:
     $ git push heroku master
     $ heroku rename <new name>
 
-IMPORTANT: You will have problems precompiling `modernizr-2.6.2.min.js`. It's not part of your manifest, therefore you will need to tell Heroku to precompile this file:
+IMPORTANT: You will have problems precompiling `modernizr-2.7.1.min.js`. It's not part of your manifest, therefore you will need to tell Heroku to precompile this file:
 
 Aadd the following to `production.rb`:
 
-    config.assets.precompile += %w( modernizr-2.6.2.min.js )
+    config.assets.precompile += %w( modernizr-2.7.1.min.js )
 
 And that's it! Now it's time to Prep and Launch your application.
 
@@ -273,7 +273,7 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 [_logo]:                https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_logo.html.haml
 [_navigation]:          https://github.com/maxxiimo/base-haml/blob/master/app/views/shared/_navigation.html.haml
 [jquery]:               https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/jquery-1.9.1.min.js
-[modernizer]:           https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/modernizr-2.6.2.min.js
+[modernizer]:           https://github.com/maxxiimo/base-haml/blob/master/vendor/assets/javascripts/modernizr-2.7.1.min.js
 [.gitignore]:           https://github.com/maxxiimo/base-haml/blob/master/.gitignore
 [Gemfile]:              https://github.com/maxxiimo/base-haml/blob/master/Gemfile
 [README.md]:            https://github.com/maxxiimo/base-haml/blob/master/README.md

@@ -198,7 +198,7 @@ One of the quickest and simplest solutions to deliver mobile views is Tiago Scol
 **Step 5:** Add the following to *config/environments/production.rb*:
 
     # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-    config.assets.precompile += %w( modernizr-2.6.2.min.js, jquery.mobile-1.2.0.css )
+    config.assets.precompile += %w( modernizr-2.7.1.min.js, jquery.mobile-1.2.0.css )
 
 And that's it!
 
