@@ -86,9 +86,9 @@ Our Foundation
 
         $ bundle exec compass init
 
-    Compass will generate a configuration file and stylesheets. Delete the stylesheets. We're going to use our own.
+    Compass will generate a configuration file and stylesheets.
 
-    In Rails 4.0 delete the `sass` and `stylesheets` folders.
+    In Rails 4.0 delete the `config.rb` and `sass` and `stylesheets` folders.
 
     In Rails 3.x delete the following stylesheets found in `app/assets/stylesheets`:
 
@@ -102,7 +102,9 @@ Our Foundation
 
     IMPORTANT: When using Compass always use @import to organize styles rather than Sprockets. You can use Sprockets require syntax, however per the explanation found at the [compass-rails][] gem source, this is not a good idea.
 
-3.  In Rails 3.x add the following commented out code to your `config/compass.rb` file generated in step 1:
+In Rails 3.x...
+
+3.  Add the following commented out code to your `config/compass.rb` file generated in step 1:
 
         # To allow compass to import partials from subdirectories per
         # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/.
@@ -115,7 +117,7 @@ Our Foundation
 
     If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming; from which is extremely helpful when debugging. Uncomment the `sass_options` line if you plan to use FireSass.
 
-4.  In Rails 3.x edit `config/application.rb`:
+4.  Edit `config/application.rb`:
 
     Uncomment the following:
 
