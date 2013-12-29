@@ -177,9 +177,9 @@ vendor<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_h5bp_normalize_v112.scss][]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [_h5bp_print.scss][]<br>
 
-NOTE: You may have noticed that the base application file uses the `.scss` extension, and other other partials use the `.sass` extension. This is perfectly fine. Rails needs this file to end in `.scss`. For the boilerplate files it easier to use this extension to keep abreast of their changes – the source files are compatible with this extension. For everything else I use the `.sass` because of my own personal preference for it's syntax.
+One thing you may have noticed In the structure above is  that the base application file uses the `.scss` extension, and other other partials use the `.sass` extension. This is perfectly fine. Rails needs this file to end in `.scss`. For the boilerplate files it easier to use this extension to keep abreast of their changes – the source files are compatible with this extension. For everything else I use the `.sass` extension because of my own personal preference for it's syntax.
 
-NOTE: Why the `desktop` subfolder? To better organize desktop specific files. In the [Chapter 5][] we will create another subfolder called `mobile`. Files outside of these two folders are common to both desktop and mobile device types. This will become clear to you in Chapter 5.
+Another thing you may have noticed above and may be wondering is why the `desktop` subfolder? Its purpose is to better organize desktop specific files. In [Chapter 5][] we will create another subfolder called `mobile`. Files outside of these two folders are common to both desktop and mobile device types. This will become clear to you in Chapter 5.
 
 Foundation Styles Conclusion
 ----------------------------
