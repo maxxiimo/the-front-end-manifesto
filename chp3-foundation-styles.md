@@ -102,9 +102,7 @@ Our Foundation
 
     IMPORTANT: When using Compass always use @import to organize styles rather than Sprockets. You can use Sprockets require syntax, however per the explanation found at the [compass-rails][] gem source, this is not a good idea.
 
-In Rails 3.x...
-
-3.  Add the following commented out code to your `config/compass.rb` file generated in step 1:
+3.  In Rails 3.x add the following commented out code to your `config/compass.rb` file generated in step 1:
 
         # To allow compass to import partials from subdirectories per
         # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/.
@@ -117,7 +115,7 @@ In Rails 3.x...
 
     If you use Firefox I highly recommend using [FireSass][]. It allows you to see exactly where sass partial styles are coming; from which is extremely helpful when debugging. Uncomment the `sass_options` line if you plan to use FireSass.
 
-4.  Edit `config/application.rb`:
+4.  In Rails 3.x edit `config/application.rb`:
 
     Uncomment the following:
 
@@ -132,7 +130,7 @@ In Rails 3.x...
 
     \- [Getting Compass to Work With Rails 3.1 (and 3.2)][Get Compass to Work]
 
-Commit your changes and restart the server. That's it! You now have Compass and all that it brings available to you.
+5.  Commit your changes and restart the server. That's it! You now have Compass and all that it brings available to you.
 
 Some additional resources for working with Compass include:
 
