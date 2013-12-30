@@ -61,7 +61,7 @@ Before you begin to set up Mobvious clone this books [base-mobile][] files:
     # Tell your app to use Mobvious::Manager as Rack middleware.
     config.middleware.use Mobvious::Manager
 
-This as well in Rails 3.x if you haven't done so already per the Compass set up:
+In Rails 3.x, if you haven't done so already per the Compass set up, also add the following to `application.rb`:
 
     # Precompile *all* assets, except those that start with underscore per:
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
