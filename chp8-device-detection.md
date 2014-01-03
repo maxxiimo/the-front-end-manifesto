@@ -365,6 +365,10 @@ JavaScript Libraries and Plug-ins:
 
   > Conditionizr is a fast and lightweight (3KB) javascript utility that detects browser vendor - touch features and retina displays - allowing you to serve conditional JavaScript and CSS files. MIT Licensed.
 
+- [INC][]
+
+  > Javascript framework for conditionally loading javascript files. SYNCHRONOUS
+
 - [JQuery Lazy Load][]
 
   > Lazy Load is a jQuery plugin written in JavaScript. It delays loading of images in long web pages. Images outside of viewport (visible part of web page) wont be loaded before user scrolls to them. This is opposite of image preloading.
@@ -447,6 +451,7 @@ To learn more visit:
 [Adapt.js]:             http://adapt.960.gs/
 [YepNope]:              http://yepnopejs.com/
 [Conditionizr]:         http://conditionizr.com/
+[INC]:                  http://frebsite.nl/projects/incjs/
 [JQuery Lazy Load]:     http://www.appelsiini.net/projects/lazyload
 [Detect Mobile Browsers]: http://detectmobilebrowsers.com/
 [URL Pattern Matching]: https://github.com/jistr/mobvious#url-url-pattern-matching
