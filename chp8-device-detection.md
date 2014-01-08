@@ -348,9 +348,14 @@ A great idea, but beyond the scope of this chapter and the section it belongs to
 
 JavaScript Libraries and Plug-ins:
 
-- [enquire.js][]
+- [Enquire.js][]
 
   > enquire.js is a lightweight, pure javascript library (with no dependencies) for programmatically responding to media queries.
+
+  Nick Warren, the libraries author, when asked what's the difference between Enquire.js and Modernizr.js...
+
+  > At its heart, there’s not much difference, if all you’re doing is matching and unmatching on page load. But enquire goes above and beyond this by allowing you to listen to browser events, calling the appropriate match/unmatch callback *only* when the state has changed, so you don’t need to manage that yourself. It also allows you to run one-time setup routines, either immediately or deferred until the first time a query matches. Finally it allows you to to short-circuit any queries so that if you’re adopting a mobile-first approach you can still deliver desktop experiences to old browsers like IE8.
+  \- [Enquire.js – Media Query Callbacks in JavaScript][Enquire]
 
 - [Adapt.js - Adaptive CSS ][Adapt.js]
 
@@ -448,6 +453,7 @@ To learn more visit:
 [Conditional Content]:  http://adactio.com/journal/5414/
 [Callbacks]:            http://css-tricks.com/enquire-js-media-query-callbacks-in-javascript/
 [enquire.js]:           http://wicky.nillia.ms/enquire.js/
+[Enquire]:              http://css-tricks.com/enquire-js-media-query-callbacks-in-javascript/
 [Adapt.js]:             http://adapt.960.gs/
 [YepNope]:              http://yepnopejs.com/
 [Conditionizr]:         http://conditionizr.com/
