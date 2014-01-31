@@ -77,7 +77,7 @@ With inconsistent browser implementation and so many screen sizes and new device
 
 > A media query consists of a media type and zero or more expressions that check for the conditions of particular media features. Among the media features that can be used in media queries are ‘width’, ‘height’, and ‘color’. By using media queries, presentations can be tailored to a specific range of output devices without changing the content itself.
 
-\- [Media Queries - W3C Recommendation 19 June 2012][Media Queries]
+\- [Media Queries - W3C Recommendation 19 June 2012][W3C Media Queries]
 
 Unlike media types, media queries, do not rely only on a handful of predefined types. Media queries are much more flexible in that they allow developers to test a media type with a logical expression that evaluates to true or false. For example:
 
@@ -184,6 +184,7 @@ With this definition, any device with a screen size less than 130 pixels (as def
 
 To learn more check out the following:
 
+- [CSS Media Queries][]
 - [Media queries][]
 - [Responsive Web Design in Sass: Using Media Queries in Sass 3.2][Sass Media Queries]
 - [Retina Display Media Query][Retina Media Queries]
@@ -281,7 +282,7 @@ The beauty of this method comes in the bandwidth savings, but the drawback is th
 [Susy]:                 http://susy.oddbird.net/
 
 [media types]:          http://www.w3.org/TR/CSS21/media.html#media-types
-[Media Queries]:        http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/
+[W3C Media Queries]:        http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/
 [and more]:             http://www.w3.org/TR/css3-mediaqueries/#media0
 
 [Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
@@ -289,7 +290,8 @@ The beauty of this method comes in the bandwidth savings, but the drawback is th
 
 [Happy Cog]:            http://www.netmagazine.com/news/browser-screen-resolution-stats-rile-devs-121897
 [_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_media_queries.sass
-[Media queries]:        http://alpha.responsivedesign.is/develop/media-queries
+[CSS Media Queries]:    http://cssmediaqueries.com/
+[Media queries]:        http://responsivedesign.is/guidelines/media-queries
 [Sass Media Queries]:   http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
 [Retina Media Queries]: http://css-tricks.com/snippets/css/retina-display-media-query/
 [Conditional Media Query]: http://css-tricks.com/conditional-media-query-mixins/
