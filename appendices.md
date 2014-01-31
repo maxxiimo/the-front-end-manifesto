@@ -7,10 +7,13 @@ Appendices
 2.  [Grid Systems][Appendix 2]
     :: A roundup of the different grid systems available: 320 and Up, Responsive Grid System, etc..
 
-3.  [Mobile Solutions Roundup][Appendix 3]
+3.  [Mobile Screen Sizes][Appendix 3]
+    :: A roundup of mobile screen size matrices/tables.
+
+4.  [Mobile Solutions Roundup][Appendix 4]
     :: Different ways to detect mobile devices and deliver mobile versions of your application.
 
-4.  [Mobylette and jQuery Mobile][Appendix 4]
+5.  [Mobylette and jQuery Mobile][Appendix 5]
     :: A quick and simple solution for delivering mobile views.
 
 
@@ -132,6 +135,25 @@ You just can't believe how many grid system there are out there so here is a rou
 Appendix 3
 ----------
 
+### Mobile Screen Sizes
+
+- [A Simple Device Diagram for Responsive Design Planning][Device Diagram]
+- [2012 Device Map][]
+- [dpilove][]
+- [Mobile device screen width table][Width Table]
+- [Mobile Matrices][]
+- [Common Smartphone and Tablet values][mydevice.io]
+- [screensiz.es][]
+- [StatCounter Global Stats][Stats]
+- [Tired of Hunting][]
+- [Viewport Sizes][]
+
+
+
+<br><hr /><br>
+Appendix 4
+----------
+
 ### Mobile Solutions Roundup
 
 To get started, if you're not sure where to begin or as a review, take a look at this round up of mobile solutions:
@@ -167,7 +189,7 @@ To get started, if you're not sure where to begin or as a review, take a look at
 
 
 <br><hr /><br>
-Appendix 4
+Appendix 5
 ----------
 
 ### Mobylette and jQuery Mobile
@@ -210,6 +232,7 @@ One thing that you may have noticed is that there certainly does seem to be a lo
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
 [Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-3
 [Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
+[Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-5
 
 
 
@@ -236,6 +259,19 @@ One thing that you may have noticed is that there certainly does seem to be a lo
 [SimpleGrid]:           http://simplegrid.info/
 [1140 CSS Grid]:        http://cssgrid.net/
 [Gridiculous]:          http://gridiculo.us/
+
+
+
+[Device Diagram]:       http://www.metaltoad.com/blog/simple-device-diagram-responsive-design-planning
+[2012 Device Map]:      http://viljamis.com/blog/2012/responsive-workflow/device-map-2012.pdf
+[dpilove]:              http://dpi.lv/
+[Width Table]:          http://iamachine.com/blog/mobile-device-screen-width-table
+[Mobile Matrices]:      https://github.com/h5bp/mobile-boilerplate/wiki/Mobile-Matrices
+[mydevice.io]:          http://mydevice.io/devices/
+[screensiz.es]:         http://screensiz.es/phone
+[Stats]:                http://gs.statcounter.com/
+[Tired of Hunting]:     http://www.websitedimensions.com/
+[Viewport Sizes]:       http://viewportsizes.com/
 
 
 

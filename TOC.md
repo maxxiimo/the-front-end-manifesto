@@ -100,8 +100,9 @@ Table of Contents
 
 - Appendix 1: [Frameworks][Appendix 1]
 - Appendix 2: [Grid Systems][Appendix 2]
-- Appendix 3: [Mobile Solutions Roundup][Appendix 3]
-- Appendix 4: [Mobylette and jQuery Mobile][Appendix 4]
+- Appendix 3: [Mobile Screen Sizes][Appendix 3]
+- Appendix 4: [Mobile Solutions Roundup][Appendix 4]
+- Appendix 5: [Mobylette and jQuery Mobile][Appendix 5]
 
 [Cover]:                https://github.com/maxxiimo/the-front-end-manifesto/blob/master/COVER.md#the-front-end-manifesto
 [The Manifesto]:        https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md#the-manifesto
@@ -200,3 +201,4 @@ Table of Contents
 [Appendix 2]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-2
 [Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-3
 [Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
+[Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-5

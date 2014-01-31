@@ -95,12 +95,7 @@ With great power comes great responsibility. Just kidding, but how awesome is th
 
 \- [Defining Breakpoints][]
 
-For our application we're going to base our breakpoints on screen size, which begs the question; what screen sizes do we target, i.e. what devices are my users using? The best source of this information comes from your weblogs. The following references will also give you a good sense of what devices are out there in the wild:
-
-- [StatCounter Global Stats][Stats]
-- [Tired of Hunting][]
-- [2012 Device Map][]
-- [A Simple Device Diagram for Responsive Design Planning][Device Diagram]
+For our application we're going to base our breakpoints on screen size, which begs the question; what screen sizes do we target, i.e. what devices are my users using? The best source of this information comes from your weblogs. [Appendix 3][] will give you a good sense of what devices are out there in the wild and their corresponding screen sizes.
 
 In general, here are the most common screen sizes:
 
@@ -288,12 +283,10 @@ The beauty of this method comes in the bandwidth savings, but the drawback is th
 [media types]:          http://www.w3.org/TR/CSS21/media.html#media-types
 [Media Queries]:        http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/
 [and more]:             http://www.w3.org/TR/css3-mediaqueries/#media0
-[breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
-[Stats]:                http://gs.statcounter.com/
-[Tired of Hunting]:     http://www.websitedimensions.com/
-[2012 Device Map]:      http://viljamis.com/blog/2012/responsive-workflow/device-map-2012.pdf
-[Device Diagram]:       http://www.metaltoad.com/blog/simple-device-diagram-responsive-design-planning
+
 [Defining Breakpoints]: http://alpha.responsivedesign.is/strategy/page-layout/defining-breakpoints
+[breakpoints]:          http://alpha.responsivedesign.is/develop/media-queries/media-queries-for-common-device-breakpoints
+
 [Happy Cog]:            http://www.netmagazine.com/news/browser-screen-resolution-stats-rile-devs-121897
 [_media_queries.sass]:  https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/_media_queries.sass
 [Media queries]:        http://alpha.responsivedesign.is/develop/media-queries

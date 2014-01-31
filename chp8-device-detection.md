@@ -22,7 +22,7 @@ Under these challenges, our goal was to cover 99.999% of all web-enabled mobile 
 
 Over time Fidelity developed an extensive database of devices their customers used which included information about the devices screen size, OS, browser, protocol support, and more. Armed with this information Fidelity could then serve markup depending on the device request and the information it contained.
 
-Fast-forward to today and you can still effectively use device user agents and third-party databases to serve device appropriate markup and styles to your users. In fact in Rails this is not difficult. Take a look at the [Mobile Solutions Roundup][Appendix 3] in the Appendices to get an idea of what you can do in Rails.
+Fast-forward to today and you can still effectively use device user agents and third-party databases to serve device appropriate markup and styles to your users. In fact in Rails this is not difficult. Take a look at the [Mobile Solutions Roundup][Appendix 4] in the Appendices to get an idea of what you can do in Rails.
 
 Mobvious
 --------
@@ -100,7 +100,7 @@ To test that Mobvious is working you can add the following helper method in `app
       end
     end
 
-NOTE: For an even simpler solution checkout [Mobylette][Appendix 4] in the Appendices.
+NOTE: For an even simpler solution checkout [Mobylette][Appendix 5] in the Appendices.
 
 ### Mime Types
 
@@ -423,8 +423,8 @@ To learn more visit:
 
 [Manifesto]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/MANIFESTO.md
 [Chapter 7]:            https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp7-susy.md#susy
-[Appendix 3]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-3
 [Appendix 4]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-4
+[Appendix 5]:           https://github.com/maxxiimo/the-front-end-manifesto/blob/master/appendices.md#appendix-5
 [base-mobile]:          https://github.com/maxxiimo/base-mobile
 
 [User-Agent]:           http://tools.ietf.org/html/rfc2616#section-14.43
