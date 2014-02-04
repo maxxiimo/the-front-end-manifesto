@@ -43,19 +43,19 @@ app<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;└─ **pics**<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;└─ javascripts<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [application.js][]<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [site.js][site]<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [custom.js][custom]<br>
 ├─ helpers<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [application_helper.rb][application_helper]<br>
 ├─ views<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ layout<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;├─ [_chromeframe.html.haml][_chromeframe]<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;├─ [_browsehappy.html.haml][_browsehappy]<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;├─ [_footer.html.haml][_footer]<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;├─ [_head.html.haml][_head]<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;├─ [_logo.html.haml][_logo]<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;├─ [_scripts.html.haml][_scripts]<br>
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;├─ [_navigation.html.haml][_navigation]<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;└─ [application.html.haml][application]<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ shared<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_footer.html.haml][_footer]<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_logo.html.haml][_logo]<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [_navigation.html.haml][_navigation]<br>
 ├─ vendor<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ assets<br>
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ javascripts<br>
@@ -263,7 +263,7 @@ Not very attractive! ...but don't worry we'll address that in [Chapter 3][]. Wha
 
 [starter code]:         https://github.com/maxxiimo/base-haml
 [application.js]:       https://github.com/maxxiimo/base-haml/blob/master/app/assets/javascripts/application.js
-[site]:                 https://github.com/maxxiimo/base-haml/blob/master/app/assets/javascripts/site.js
+[custom]:               https://github.com/maxxiimo/base-haml/blob/master/app/assets/javascripts/custom.js
 [application_helper]:   https://github.com/maxxiimo/base-haml/blob/master/app/helpers/application_helper.rb
 [_chromeframe]:         https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_chromeframe.html.haml
 [_head]:                https://github.com/maxxiimo/base-haml/blob/master/app/views/layouts/_head.html.haml

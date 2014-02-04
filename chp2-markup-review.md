@@ -8,26 +8,23 @@ Organization
 
 ### Partials
 
-All of the files in our layouts and shared folders could be grouped together in one file: *application.html.haml*, but by convention and in keeping with our [manifesto][Manifesto]:
+All of the files in our `layouts` folder could be grouped together in one file: `application.html.haml`, but by convention and in keeping with our [manifesto][Manifesto]:
 
 > Be consistent, keep code well organized, readable and DRY.
 
-...we separate parts of the file into partials that feed back into *application.html.haml*:
+...we separate parts of the file into partials that feed back into `application.html.haml`:
 
 view/layout
 
-1. [_head.html.haml][_head]
-2. [_scripts.html.haml][_scripts]
-
-view/shared
-
+1. [_footer.html.haml][_footer]
+2. [_head.html.haml][_head]
 3. [_logo.html.haml][_logo]
 4. [_navigation.html.haml][_navigation]
-5. [_footer.html.haml][_footer]
+5. [_scripts.html.haml][_scripts]
 
-Partials 1 and 2 are located in the same layout folder as *application.html.haml* – NOT in the shared folder – because they are essentially integral to the *layout/application.html.haml* file. Some developers like to locate these partials in the shared folder, but to me it makes more sense to put them in the layout folder. The files in the shared folder, on the other hand, may be shared by multiple layout files and feel more "markup" like; much like the many more shared partials you will create along the development cycle.
+These partials are located in the same layout folder as `application.html.haml` – NOT in the `shared` folder – because they are essentially integral to the *layout/application.html.haml* file. Some developers like to locate some or all of these partials in a `shared` folder which I have provided for future use, but to me it makes more sense to put them in the `layout` folder. The `shared` folder is reserved for files that are shared across non-layout templates.
 
-To pull these integral partials into *application.html.haml* I like to use helper methods:
+You can pull partials into `application.html.haml` like this:
 
     def head
       render :partial => 'layouts/head'
@@ -43,13 +40,13 @@ It looks cleaner than the render method.
 
     vs.
 
-    = render :partial => 'shared/head'
+    = render :partial => 'layout/head'
 
 > Seek perfection and excellence, write beautiful code.
 
 \- [Manifesto][]
 
-You may have noticed that I separated logo and navigation into their own partials rather than use something like *_banner.html.haml* or *_header.html.haml* to hold both. Often times logos and navigation vary between clients or functional areas within an application. When you start a project you don't necessarily see this coming, but needs do change so you might as well lay them out in such a way that you and backend developers can easily get at them in the future.
+You may have noticed that I separated `logo` and `navigation` into their own partials rather than use something like `_banner.html.haml` or `_header.html.haml` to hold both. Often times logos and navigation vary between clients or functional areas within an application. When you start a project you don't necessarily see this coming, but needs do change so you might as well lay them out in such a way that you and backend developers can easily get at them in the future.
 
 > Future proof code.
 
@@ -57,7 +54,7 @@ You may have noticed that I separated logo and navigation into their own partial
 
 \- [Manifesto][]
 
-The end result of our organizational efforts is a very succinct *application.html.haml* file:
+The end result of our organizational efforts is a very succinct `application.html.haml` file:
 
     !!!
     %html{:lang => "en"}
@@ -65,11 +62,11 @@ The end result of our organizational efforts is a very succinct *application.htm
       %body
         = chromeframe
         %header{:role => "banner"}
-          = render :partial => 'shared/logo'
-          = render :partial => 'shared/navigation'
+          = render :partial => 'layouts/logo'
+          = render :partial => 'layouts/navigation'
         #main{:role => "main"}
           = yield
-        = render :partial => 'shared/footer'
+        = render :partial => 'layouts/footer'
         = scripts
 
 Other than all the Internet Explorer conditions, it's concise and simple. If you plan to use those conditionals just uncomment each line, if not, feel free to delete them. Also note the use of [ARIA roles][]:
@@ -88,9 +85,9 @@ I don't think I have found a more comprehensive overview of JavaScript in Rails 
 
 - [Unholy Rails: External Scripts, jQuery Plugins, and Page-Specific JavaScript][Unholy Rails]
 
-In so far as our *application.html.haml* organization goes, generally it is best to put JavaScript at the very bottom of your markup. Doing so will allow pages to render before scripts are loaded. In other words, they won't hold up the show.
+In so far as our `application.html.haml` organization goes, generally it is best to put JavaScript at the very bottom of your markup. Doing so will allow pages to render before scripts are loaded. In other words, they won't hold up the show.
 
-The [_scripts.html.haml][_scripts] partial is designed exactly for this and additional scripts. It is located at the bottom of *application.html.haml*, after all our markup.
+The [_scripts.html.haml][_scripts] partial is designed exactly for this and additional scripts. It is located at the bottom of `application.html.haml`, after all our markup.
 
 The JavaScript include tag found their specifies a manifest file called [application.js][], which in turn requires your scripts:
 
