@@ -271,11 +271,11 @@ NOTE: `mobile.scss` is coded to optimally handle devices with column widths of <
       %body
         .container
           %header{:role => "banner"}
-            = render :partial => 'shared/logo'
-            = render :partial => 'shared/navigation'
+            = render 'shared/logo'
+            = render 'shared/navigation'
           #main{:role => "main"}
             = yield
-          = render :partial => 'shared/footer'
+          = render 'shared/footer'
         = scripts
 
 **Step 4**: Add the corresponding Susy mixins in `app/assets/stylesheets/mobile/_layout.sass`:

@@ -27,11 +27,7 @@ These partials are located in the same layout folder as `application.html.haml` 
 You can pull partials into `application.html.haml` like this:
 
     def head
-      render :partial => 'layouts/head'
-    end
-
-    def scripts
-      render :partial => 'layouts/scripts'
+      render 'layouts/head'
     end
 
 It looks cleaner than the render method.
@@ -40,7 +36,7 @@ It looks cleaner than the render method.
 
     vs.
 
-    = render :partial => 'layout/head'
+    = render 'layout/head'
 
 > Seek perfection and excellence, write beautiful code.
 
@@ -62,11 +58,11 @@ The end result of our organizational efforts is a very succinct `application.htm
       %body
         = chromeframe
         %header{:role => "banner"}
-          = render :partial => 'layouts/logo'
-          = render :partial => 'layouts/navigation'
+          = render 'layouts/logo'
+          = render 'layouts/navigation'
         #main{:role => "main"}
           = yield
-        = render :partial => 'layouts/footer'
+        = render 'layouts/footer'
         = scripts
 
 Other than all the Internet Explorer conditions, it's concise and simple. If you plan to use those conditionals just uncomment each line, if not, feel free to delete them. Also note the use of [ARIA roles][]:
@@ -230,7 +226,7 @@ So what I propose is a compromise for those of you who don't want to waste your 
 Here is the corresponding helper method:
 
     def chromeframe
-      render :partial => 'layouts/chromeframe'
+      render 'layouts/chromeframe'
     end
 
 > As a web developer, you’re working with IT every day. Upgrading doesn’t worry you; it’s easy and everyone should do it. But are you neglecting to consider:

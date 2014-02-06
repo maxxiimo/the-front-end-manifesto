@@ -67,11 +67,11 @@ NOTE: Internally Susy calculates the total width of your grid, including its pad
       .container
         = browsehappy
         %header{:role => "banner"}
-          = render :partial => 'shared/logo'
-          = render :partial => 'shared/navigation'
+          = render 'shared/logo'
+          = render 'shared/navigation'
         #main{:role => "main"}
           = yield
-        = render :partial => 'shared/footer'
+        = render 'shared/footer'
       = scripts
 
 **Step 3**: Add the corresponding CSS to `_layout.sass`:
