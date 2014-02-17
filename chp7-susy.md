@@ -323,11 +323,9 @@ To help you identify which breakpoints are being utilized and when, your `_mixin
       position: absolute
       top: $box
       right: $box
-      width: $box
-      height: $box
-      line-height: $box * .90
+      padding: $box / 3
+      line-height: $font
       font-size: $font
-      text-align: center
       background-color: red
       z-index: 1000
       +border-radius(5px)
