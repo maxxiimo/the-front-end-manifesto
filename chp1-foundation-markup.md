@@ -208,7 +208,6 @@ In Rails 3.2 swap out your get routes with match routes:
 
     match 'home'     => 'pages#home'
     match 'about'    => 'pages#about'
-    match 'site_map' => 'pages#site_map'
     match 'terms'    => 'pages#terms'
     match 'privacy'  => 'pages#privacy'
     match 'contact'  => 'pages#contact'
