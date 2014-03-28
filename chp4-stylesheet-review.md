@@ -79,7 +79,7 @@ Sometimes I use compass' [reset utilities][] which are based on Eric Meyer's wor
 
 > Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards. We researched the differences between default browser styles in order to precisely target only the styles that need normalizing.
 
-You can find Eric Meyer's, and both the original Normalize.css and HTML 5 Boilerplate's normalize styles here (a few converted to sass for you):
+You can find Eric Meyer's and both the original Normalize.css and HTML 5 Boilerplate's normalize styles here (a few converted to sass for you):
 
 - https://github.com/maxxiimo/base-resets
 
@@ -117,7 +117,7 @@ Use the "Typography" section to style major typographical elements such as parag
 
 #### Miscellaneous
 
-"Miscellaneous" is a catchall for miscellaneous partials and styles that should appear earlier on in the stylesheet. "misc" has an assortment of general helper styles; "sprites" obviously is for sprites, whether using Compass' built in sprite engine, or building them on my own.
+"Miscellaneous" is a catchall for miscellaneous partials and styles that should appear earlier on in the stylesheet. "misc" has an assortment of general helper styles; "sprites" obviously is for sprites, whether using Compass' built in sprite engine, or building them on your own.
 
     /* MISCELLANEOUS
     ============================================================================ */
@@ -126,7 +126,7 @@ Use the "Typography" section to style major typographical elements such as parag
 
 #### Navigation
 
-"Navigation" could be part of another section, or even contained within another partial, however, experiences has proven that a lot of things can happen in navigation. Styles can become quite large, and there can be more than one navigation design or user driven type.
+"Navigation" could be part of another section, or even contained within another partial, however, experiences has proven that a lot of things can happen in navigation. Navigation styles can become quite large, and there can be more than one navigation design or user driven type.
 
     /* NAVIGATION
     ============================================================================ */
@@ -134,7 +134,7 @@ Use the "Typography" section to style major typographical elements such as parag
 
 #### Forms
 
-"Forms" is self-evident.
+Add all your form styles here.
 
 TIP: I dislike any form generator that do not easily allow you to change its underlying HTML, or not that obvious where the underlying HTML lives. I have consulted for numerous companies who started with these kinds of plug-ins only to realize how boxed in they were later on. Just a word of caution.
 
@@ -144,7 +144,7 @@ TIP: I dislike any form generator that do not easily allow you to change its und
 
 #### Pages
 
-"Pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, separate them into their own partials, or a combination of this, depending on your needs.
+"Pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, separate them into their own partials, or a combination of this. I tend to add common functionality between pages in the root _pages.sass partial, then import more specific page partials into _pages.sass.
 
     /* PAGES
     ============================================================================ */
@@ -152,7 +152,7 @@ TIP: I dislike any form generator that do not easily allow you to change its und
 
 #### Staging
 
-The "staging" section is a staging area for code and allows an individual or team to be the gatekeeper to code entering stylesheets. This ensures that stylesheets remain organized, DRY, follow the stylesheet standards, and at a bare minimum provide a form of quality control.
+The "staging" section is a staging area for code that need to be brought into the main stylesheets. It's designed to allow specific individual/s to be gatekeepers for code entering the main body of stylesheets. This ensures that stylesheets remain organized, DRY, follow the stylesheet standards, and at a bare minimum provide a form of quality control.
 
     /* STAGING - new styles belong here !!!DO NOT INTEGRATE!!!
     ============================================================================ */
@@ -181,7 +181,7 @@ You will add a lot more to the structure outline above. As you do, here are some
 
 ### Modularize Styles
 
-Modularizing styles is a great way to keep things organized. The degree of separation/modularization depends on your personal and/or teams preferences and project needs.
+Modularizing is a great way to keep things organized. The degree of modularization depends on your personal and/or teams preferences and project needs.
 
 > Provide intelligent and semantically correct hooks and code snippets for backend teams.
 
@@ -189,7 +189,7 @@ Modularizing styles is a great way to keep things organized. The degree of separ
 
 As you add more styles, and consequently partials, consider the following:
 
-1.  Group related partials together with a common prefix:
+1.  Group related partials together with a common prefix [least favorite]:
 
         _homepage_form.sass
 
@@ -203,11 +203,11 @@ As you add more styles, and consequently partials, consider the following:
 
     Or...
 
-3.  Group related partials in folders. Take for example our [resets][] files. I provide several different flavors of resets, some of which are subdivided into separate files, but all of them fall under the folder "resets".
+3.  Group related partials into folders. Take for example our [resets][] files. I provide several different flavors of resets, some of which are subdivided into separate files, but all of them fall under the folder "resets".
 
 ### Use a Labeling System
 
-A labeling system will help you better organize/manage related styles. Doing so will also help developers, including yourself, locate styles and see the general organization of stylesheets, especially when browsing CSS output.
+A labeling system will help you better organize and manage stylesheets. Doing so will also help developers, including yourself, locate styles, see the general organization of your stylesheets, especially when browsing CSS output, and understand what blocks of CSS are for.
 
 > Be consistent, keep code well organized, readable and DRY.
 
@@ -293,7 +293,7 @@ I have my way of naming classes and IDs, and I've seen things all over the board
 
 #### Semantic
 
-I've never been too crazy for style names that really have no meaning like :class => 'H2603A'...Okay maybe I'm exaggerating, but I think you get the point. Try to use something that has meaning and can be recognized for what it is, like :class => 'header', but by the same token try not to get super specific about the contents. For example it would not be good to use something like, :class => 'johns_comments', because what happens if John gets replaced by Frank?
+I've never been too crazy for style names that really have no meaning like :class => 'H2603A'...Okay maybe I'm exaggerating, but I think you get the point. Try to use something that has meaning and can be recognized for what it is, like :class => 'header', but by the same token try not to get super specific about the contents. For example it would not be good to use something like; :class => 'johns_comments', because what happens if John gets replaced by Frank?
 
 There is no sure hit formula for naming classes and IDs. Here is an article that may help you define your own style:
 
@@ -317,11 +317,11 @@ Here are your choices:
     :id => 'pageHeader'
     :id => 'pageheader'
 
-Obviously, one worders are best, but when nothing fits I personally use hyphens to separate words, and in some cases I concatenate, but not too often. I concatenate only when the words are small and distinguishable from one another. For example, .nowrap.
+Obviously, one worders are best, but when nothing fits I personally use underscores to separate words, and in some cases I concatenate, but not too often. I concatenate only when the words are small and distinguishable from one another. For example, .nowrap.
 
-Some people like to use underscores because when you double-click on one of the words, all the words are selected.
+I like to use underscores because when you double-click on one of the words, all of the words are selected.
 
-Whatever your style is I don't think it's worth a holy war with other developers, but do be consistent, i.e. if you're going to use hyphens, don't use underscores elsewhere and vice versa. Again, I think it's okay to sprinkle in some concatenation like I described above.
+Whatever your style is I don't think it's worth a holy war with other developers, but do be consistent, i.e. if you're going to use hyphens, don't use underscores elsewhere and vice versa, and never use both in the same class in. It's confusing. Again, I think it's okay to sprinkle in some concatenation like I described above.
 
 Here's some more opinions on the matter:
 

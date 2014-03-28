@@ -17,11 +17,12 @@ Now shift over to mobile, and according to "[Early findings: 97% of mobile end-u
 
 [gzipWTF][]
 
-Research this: https://help.heroku.com/search/gzip
-
 ### Caching
 
 [Caching with Rails: An overview][Caching]
+
+    # http://work.stevegrossi.com/2013/05/28/set-far-future-expires-headers-for-assets-on-heroku/
+    config.static_cache_control = "public, max-age=31536000"
 
 #### Client-Side
 

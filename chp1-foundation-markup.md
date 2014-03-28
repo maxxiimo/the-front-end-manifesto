@@ -184,7 +184,7 @@ For faster asset precompiles check out:
 
 IMPORTANT: You will have problems precompiling `modernizr-2.7.1.min.js`. It's not part of your manifest, therefore you will need to tell Heroku to precompile this file:
 
-Aadd the following to `production.rb`:
+Add the following to `production.rb`:
 
     config.assets.precompile += %w( modernizr-2.7.1.min.js )
 
