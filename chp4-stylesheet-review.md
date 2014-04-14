@@ -317,13 +317,11 @@ Here are your choices:
     :id => 'pageHeader'
     :id => 'pageheader'
 
-Obviously, one worders are best, but when nothing fits I personally use underscores to separate words, and in some cases I concatenate, but not too often. I concatenate only when the words are small and distinguishable from one another. For example, .nowrap.
+Obviously, one-worders are best, but when nothing fits I personally use underscores to separate words, and in some cases I concatenate, but not too often. I concatenate only when the words are small and distinguishable from one another. For example, .nowrap. I like to use underscores because when you double-click on one of the words, all of the words are selected.
 
-I like to use underscores because when you double-click on one of the words, all of the words are selected.
+Whatever your style I don't think it's worth a holy war with other developers, but do be consistent, i.e. if you're going to use hyphens, don't use underscores elsewhere and vice versa, and never use both in the same name. It's confusing. Again, I think it's okay to sprinkle in some concatenation like I describe above.
 
-Whatever your style is I don't think it's worth a holy war with other developers, but do be consistent, i.e. if you're going to use hyphens, don't use underscores elsewhere and vice versa, and never use both in the same class in. It's confusing. Again, I think it's okay to sprinkle in some concatenation like I described above.
-
-Here's some more opinions on the matter:
+Here are some more opinions on the matter:
 
 - [CSS: camelCase vs under_score][aB vs. a_b]
 - [Hyphens or underscores in CSS and HTML identifiers?][Identifiers]
@@ -414,14 +412,11 @@ To see some great examples checkout:
 - [Useful SASS Mixins][]
 - [Custom User @mixins][]
 
-Stylesheet Tips
----------------
-
 Over the years I reviewed or worked on a lot of other front end developers work, and have found a lot of recurring issues that I would like to address here as stylesheet tips:
 
-#### Consistent Use of Preprocessors
+#### Consistent Use of Preprocessor Formats
 
-It would be better to pick a format such as .sass and .scss, and stick with it sitewide. Syntax varies slightly between the two, which could be an issue for some developers new to preprocessors, and is prone to errors.
+It would be better to pick a format such as .sass and .scss, and stick with it sitewide. Syntax varies slightly between the two, which could be an issue for some developers new to preprocessors, and is prone to errors. It's okay if you use .sass but keep your  root stylesheet in the .scss format like application.scss.
 
 #### Consistent Use of Indentation
 
@@ -429,7 +424,7 @@ Do not use both spaces and tabs for indentation. Pick one, preferably 2 spaces -
 
 #### Hierarchical Style Formatting
 
-There is no set standard to the order/listing of styles, but adopting something makes it easier to understand and find things.
+There is no set standard to the order/listing of styles, but adopting something makes it easier to understand what the style does.
 
 For example:
 
@@ -449,37 +444,25 @@ For example:
     border: 1px solid #000
     background: url(/images/.png) 0 0 no-repeat
     -------------
+    mixins
 
-    vendor prefixes
-
-Hierarchy Explanation:
-
-The 1st group deals with type definition and positioning of elements.
-
-The 2nd group deals with element size and spacing.
-
-The 3rd and 4th group deal more with look and feel.
-
-The last group deals with vendor prefixes and is preceded with a line space.
+The first group deals with type definition and positioning of elements.The second group deals with element size and spacing. The third and fourth group deal more with look and feel starting with fonts in the third group. The last group deals with mixins or if for some odd reason you are not using compass yet; vendor prefixes.
 
 NOTE: The lines between groups is for demonstration purposes only.
 
-
 #### Use of Labeling
 
-Within individual stylesheets, as described in the "Use a Labeling System" section, it would be helpful to use a labeling system in order to modularize and better organize/manage related styles.
+Within individual stylesheets it would be helpful to use a labeling system in order to modularize and better organize/manage related styles.
 
 #### Removal of Legacy Code
 
 Old code tends to clutter stylesheets. Rather than delete obsolete/legacy styles, or leave them within working stylesheets, I graveyard them in a file called *graveyard.sass* or *scratch.sass*, where these styles are accessible (just in case) until they are ultimately disposed of.
 
-#### Group Styles
+#### Don't Duplicate Styles
 
-Identical styles should be grouped in one stylesheet rather than multiple stylesheets.
+I've seen stuff like this before:
 
-Doing so will reduce duplication, for example:
-
-*advisor/client/something.sass*
+`advisor/client/something.sass`
 
     textarea
       width: 565px
@@ -492,7 +475,7 @@ Doing so will reduce duplication, for example:
       &:focus
         color: #222
 
-*advisor/something.sass*
+`advisor/something.sass`
 
     textarea
       width: 565px
@@ -505,7 +488,7 @@ Doing so will reduce duplication, for example:
       &:focus
         color: #222
 
-Since these thousand are identical it would make sense to add them into a mixin as well, but the point is why separate them out into different stylesheets?
+Since these two styles are identical put them in their own style and import them it's where needed, or add them into a mixin – the point is why duplicate styles?
 
 #### Optimize Specificity
 
@@ -515,11 +498,11 @@ This might be considered too much:
     #advisor_clients_invitations section#invite_clients form li#invitation_first_name_input input[type="text"]
     #advisor_clients_invitations section#invite_clients form li#invitation_last_name_input input[type="text"]
 
+It's better to only use specificity as far as you need, i.e. don't indent everything.
+
 #### Define In-House Styles over Third-Party Styles
 
 Do not use third-party plug-ins that do not allow easy customization and/or change in the underlying HTML or CSS. (Like Formtastic or jQuery UI. I'm just sayin')
-
-Personally I would never use Formtastic, too rigid, but since it is popular I recommend not using its styles. You end up having to override quite a bit.
 
 #### Standardize Styles
 
@@ -527,7 +510,7 @@ For example, all forms should use the same label color, size, and placement.
 
 #### Use Variables
 
-For example, an elements colors could be specified in a variable called "$element-color". Changes then become global, and label colors become consistent, rather than isolated, difficult to find, and inconsistent (see the Variables section above).
+For example, an elements colors could be specified in a variable called `$element-color`. Changes then become global, and label colors become consistent, rather than isolated, difficult to find, and inconsistent.
 
 #### Consistency Pet Peeve
 
