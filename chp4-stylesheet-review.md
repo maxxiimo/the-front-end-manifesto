@@ -8,15 +8,15 @@ Organization
 
 If you dig around our new stylesheets you'll find that they are pretty sparse, and that's fine, they are that way by design. What's important are the conventions used and organizational structure. The few styles provided are common to many projects, and perhaps the bare minimum necessary for this book.
 
-I can't stress enough how important it is to start a project with some kind of organizational structure in place. Even if you don't know what shape the application is going to take, it will serve you well to have a basic structure in mind. As you move along you will fill in all of the empty placeholders.
+I can't stress enough how important it is to start a project with some kind of organizational structure in place. Even if you don't know what shape the application is going to take it will serve you well to have a basic structure in mind. As you move along you will fill in all of the empty placeholders.
 
 > Be consistent, keep code well organized, readable and DRY.
 
 \- [Manifesto][]
 
-### Heart and Soul
+### Sass Heart and Soul
 
-The heart of our organizational structure is [application.css.scss][]. This file reminds me of a table of contents for partials. In addition to indexing your partials, it layers in styles based on precedents. Styles in the last partial listed override styles in partials listed above it – so long as the styles preceding it have the same class or ID and specificity (and/or tag).
+The heart and soul of your Sass organizational structure in a Rails application is `application.css.scss`. It's kind of like a table of contents for partials which also layers in styles based on precedent, i.e. styles in the last listed partial override the same styles in partials listed above it.
 
 Our hierarchy looks like this:
 
@@ -48,14 +48,16 @@ Our hierarchy looks like this:
   - [h5bp_helpers.scss][]
   - [h5bp_print.scss][]
 
-Detailed Explanation
+Easy peasy.
+
+So Let Me Explain...
 --------------------
 
-What follows is a snippet of each section of *application.css.scss* followed by a description of what the section should be used for:
+I'll break it down by section:
 
 #### Definitions
 
-Use the "Definitions" section to set global variables for the entire project such as $base-font or $base-font-size.
+Use the "Definitions" section to set global variables for the entire project such as `$base-font` or `$base-font-size`.
 
     /* DEFINITIONS
     ============================================================================ */
@@ -63,7 +65,7 @@ Use the "Definitions" section to set global variables for the entire project suc
 
 #### Mixins
 
-Major mixins such as Compass and homebrewed mixins. Included in our starter CSS is a base set of media queries (to be discussed in [Chapter 5 - Media Queries][Media Queries]) and a blank file to place mixins into.
+Major mixins such as Compass and your own custom mixins. Included in our starter CSS is a base set of media queries (to be discussed in [Chapter 5 - Media Queries][Media Queries]) and a blank file to place mixins into.
 
     /* MIXINS
     ============================================================================ */
@@ -87,8 +89,6 @@ The following article briefly outlines the changes in resets moving into HTML 5:
 
 - [HTML5 Reset Stylesheet][HTML5 Resets]
 
-NOTE: Notice the ad hoc code following the import above? Feel free to add code anywhere throughout *application.css.scss*. Rules of CSS precedence apply here.
-
     /* RESETS
     ============================================================================ */
     @import "boilerplate/h5bp_normalize_v112";
@@ -97,6 +97,8 @@ NOTE: Notice the ad hoc code following the import above? Feel free to add code a
     ol, ul {
       padding-left: 0;
     }
+
+NOTE: Notice the ad hoc code following the import above? Feel free to add code anywhere throughout `application.css.scss`. Rules of CSS precedence apply here.
 
 #### Basic Structure
 
@@ -126,7 +128,7 @@ Use the "Typography" section to style major typographical elements such as parag
 
 #### Navigation
 
-"Navigation" could be part of another section, or even contained within another partial, however, experiences has proven that a lot of things can happen in navigation. Navigation styles can become quite large, and there can be more than one navigation design or user driven type.
+"Navigation" could be part of another section, or even contained within another partial, however, experiences has proven that a lot of things can happen in navigation. Navigation styles can become quite large, and there can be more than one navigation design or user driven navigation type.
 
     /* NAVIGATION
     ============================================================================ */
@@ -136,7 +138,7 @@ Use the "Typography" section to style major typographical elements such as parag
 
 Add all your form styles here.
 
-TIP: I dislike any form generator that do not easily allow you to change its underlying HTML, or not that obvious where the underlying HTML lives. I have consulted for numerous companies who started with these kinds of plug-ins only to realize how boxed in they were later on. Just a word of caution.
+TIP: Don't use any form generator that does not easily allow you to change its underlying HTML. I have consulted for numerous companies who started with these kinds of plug-ins only to realize how boxed in they were later on. Just a word of caution.
 
     /* FORMS
     ============================================================================ */
@@ -144,7 +146,7 @@ TIP: I dislike any form generator that do not easily allow you to change its und
 
 #### Pages
 
-"Pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, separate them into their own partials, or a combination of this. I tend to add common functionality between pages in the root _pages.sass partial, then import more specific page partials into _pages.sass.
+"Pages" will hold the bulk of your code, i.e. each page or functional area of your application. You can organize them all within one partial, separate them into their own partials, or a combination of this. I tend to add common functionality between pages in the root `_pages.sass` partial, then import more specific page partials into `_pages.sass`.
 
     /* PAGES
     ============================================================================ */
@@ -266,8 +268,6 @@ I like the above sequence, but some other examples include:
 
     Something, something, something
 
-    Source: http://www.justinaguilar.com
-
     More something, something, and something.
     ==============================================
     */
@@ -334,7 +334,7 @@ Try not ... no ... DON'T Repeat Yourself! In CSS this means consolidating where 
 
 ### Consolidate
 
-Suppose for example in this no duh! contrived example I have two major sections to my layout. One holds my main content, and the other is an aside:
+In this no duh! contrived example I have two major sections to my layout. One holds my main content, and the other is an aside:
 
     .container
       .row
@@ -411,6 +411,9 @@ To see some great examples checkout:
 
 - [Useful SASS Mixins][]
 - [Custom User @mixins][]
+
+Stylesheet Tips
+---------------
 
 Over the years I reviewed or worked on a lot of other front end developers work, and have found a lot of recurring issues that I would like to address here as stylesheet tips:
 

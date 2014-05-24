@@ -38,8 +38,8 @@ Table of Contents
 
 ### Chapter 4 - [Stylesheet Review][Chapter 4]
   - [Organization][]
-      - [Heart and Soul][]
-  - [Detailed Explanation][]
+      - [Sass Heart and Soul][]
+  - [So Let Me Explain...][]
   - [Moving Forward with Stylesheets][]
       - [Modularize Styles][]
       - [Use a Labeling System][]
@@ -148,8 +148,8 @@ Table of Contents
 [Foundation Styles Conclusion]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp3-foundation-styles.md#foundation-styles-conclusion
 
 [Organization]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#organization
-[Heart and Soul]:       https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#heart-and-soul
-[Detailed Explanation]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#detailed-explanation
+[Sass Heart and Soul]:  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#heart-and-soul
+[So Let Me Explain...]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#So-Let-Me-Explain...
 [Moving Forward with Stylesheets]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#moving-forward-with-stylesheets
 [Modularize Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#modularize-styles
 [Use a Labeling System]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#use-a-labeling-system
