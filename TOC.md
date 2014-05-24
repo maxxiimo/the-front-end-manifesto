@@ -149,7 +149,7 @@ Table of Contents
 
 [Organization]:         https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#organization
 [Sass Heart and Soul]:  https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#heart-and-soul
-[So Let Me Explain...]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#So-Let-Me-Explain...
+[So Let Me Explain...]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#so-let-me-explain
 [Moving Forward with Stylesheets]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#moving-forward-with-stylesheets
 [Modularize Styles]:    https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#modularize-styles
 [Use a Labeling System]: https://github.com/maxxiimo/the-front-end-manifesto/blob/master/chp4-stylesheet-review.md#use-a-labeling-system
