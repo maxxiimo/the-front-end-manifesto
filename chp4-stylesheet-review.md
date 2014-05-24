@@ -138,7 +138,7 @@ Use the "Typography" section to style major typographical elements such as parag
 
 Add all your form styles here.
 
-TIP: Don't use any form generator that does not easily allow you to change its underlying HTML. I have consulted for numerous companies who started with these kinds of plug-ins only to realize how boxed in they were later on. Just a word of caution.
+TIP: Don't use a form generator that doesn't easily allow you to change its underlying HTML. I have consulted for numerous companies who started with these kinds of plug-ins only to realize how boxed in they were later on. Just a word of caution.
 
     /* FORMS
     ============================================================================ */
