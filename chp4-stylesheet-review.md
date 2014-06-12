@@ -308,6 +308,7 @@ The following articles may also give you some ideas:
 
 Try to keep it under 10 characters! I've seen some pretty long class names out there in the wild, and I'm not too crazy about them. They take up too much room. On the flip side, use caution when choosing something super super short.
 
+
 #### CamelCase, Underscores, Hyphens, Concatenated?
 
 Here are your choices:
@@ -392,9 +393,10 @@ When I name variables I typically namespace them by a common function:
     $bg-quote:          $white
     $bg-footer:         $gray
 
-Doing so keeps my code organized and easy to search and auto complete in my text editor. The following article gives a great write up on namespacing variables:
+Doing so keeps my code organized and easy to search and auto complete in my text editor. The following articles give further ideas on naming and namespacing variables:
 
-[Quick Tip: Name Your SASS Variables Modularly][Namespace]
+- [Choosing great variable names][Choosing]
+- [Quick Tip: Name Your SASS Variables Modularly][Namespace]
 
 ### Mixins
 
@@ -572,6 +574,7 @@ The following reference will give you some great ideas:
 [Identifiers]:          http://stackoverflow.com/questions/1686337/hyphens-or-underscores-in-css-and-html-identifiers
 [Sucks]:                http://csswizardry.com/2010/12/css-camel-case-seriously-sucks/
 
+[Choosing]:             http://thesassway.com/beginner/variable-naming
 [Namespace]:            http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-name-your-sass-variables-modularly/
 
 [Mixins in SASS]:       http://thecodingdesigner.com/tutorials/mixins-sass
