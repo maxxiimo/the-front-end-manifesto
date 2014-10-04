@@ -11,7 +11,7 @@ NOTE: [Chapter 1][Chapter 1 - Coding Design] of the sequel to this book, *Coding
 Views
 -----
 
-The templating system and associated files and folders used in Rails are known as Views, the V in an MVC. View code is primarily found in two high-level folders within a Rails 3.0 or greater application: the `helpers` and the `views` folders...
+The templating system and associated files and folders used in Rails are known as Views, the V in MVC. View code is primarily found in two high-level folders within a Rails 3.0 or greater application: the `helpers` and the `views` folders...
 
 app<br>
 ├─ assets<br>
@@ -26,7 +26,7 @@ app<br>
 
 Most of the action takes place in the `views` folder which can be further subdivided into of the `layout` and `shared` folders – home to the majority of your foundation front end code.
 
-The heart of The Rails templating system is `application.html.haml`. View code from other parts of an application pass through and become framed by `application.html.haml` before being served to browsers.
+The heart of the Rails templating system by default is `application.html.haml`. View code from other parts of an application pass through and become framed by `application.html.haml` before being served to browsers.
 
 ### The Code
 
@@ -65,9 +65,9 @@ app<br>
 ├─ [Gemfile][]<br>
 └─ [README.md][]
 
-The default Rails file and starter code structures are pretty much identical by design. In the next section we will start our own implementation of a rails front-end by creating a new Rails application and replacing out-of-the-box Rails files with our starter code. Folders we add are depicted above in bold. New or replacement files include links to their respective github source for your inspection.
+The default Rails file structure and starter code file structure are pretty much identical by design; so that you can cut and paste it into your project in one action. In the next section we will start our own implementation of a rails front-end by creating a new Rails application and replacing out-of-the-box Rails files with our starter code. Folders we add are depicted above in bold. New or replacement files include links to their respective github source for your inspection.
 
-NOTE: Our starter code is an implementation of [HTML5 Boilerplate][] code (v 4.2.0) in haml arranged for a Rails project. In my experience the best place to reference when building front-end view templates is HTML5 Boilerplate. This resource is an ongoing collaboration between expert front-end developers and the community. Although slightly dated, the following article provides a decent overview of HTML5 Boilerplate as it applies to Rails:
+NOTE: Our starter code is predominantly an implementation of [HTML5 Boilerplate][] (v 4.3.0) in haml arranged for a Rails project. In my experience the best place to reference when building front-end view templates is HTML5 Boilerplate. This resource is an ongoing collaboration between expert front-end developers and the community. Although slightly dated, the following article provides a decent overview of HTML5 Boilerplate as it applies to Rails:
 
 - [Guide to HTML5 Boilerplate for Rails Developers][H5BP for Rails]
 
@@ -182,11 +182,11 @@ For faster asset precompiles check out:
     $ git push heroku master
     $ heroku rename <new name>
 
-IMPORTANT: You will have problems precompiling `modernizr-2.7.1.min.js`. It's not part of your manifest, therefore you will need to tell Heroku to precompile this file:
+IMPORTANT: You will have problems precompiling `modernizr-2.8.3.min.js`. It's not part of your manifest, therefore you will need to tell Heroku to precompile this file:
 
 Add the following to `production.rb`:
 
-    config.assets.precompile += %w( modernizr-2.7.1.min.js )
+    config.assets.precompile += %w( modernizr-2.8.3.min.js )
 
 And that's it! Now it's time to Prep and Launch your application.
 
