@@ -35,7 +35,7 @@ TIP: When using Sass or Haml the following resources are absolutely indispensabl
 CSS Frameworks and Grid Systems
 -------------------------------
 
-CSS frameworks and grid systems can be extremely helpful when starting a new project. They give you a whole boatload of base styles that are instantly accessible through HTML tags and/or IDs and class names. They include well-thought-out typographic elements, default formats for almost every kind of HTML tag, and by simply following the frameworks parameters – or dropping in a special framework class names – you can add some great looking styles to your project; that are built to work, with very few hitches, and across all browsers. On top of that most CSS frameworks come with prebuilt scripts for commonly used functions like pop-ups, modals, and menu systems.
+CSS frameworks and grid systems can be extremely helpful when starting a new project. They give you a whole boatload of base styles that are instantly accessible through HTML tags and/or IDs and class names. They include well-thought-out typographic elements, default formats for almost every kind of HTML tag, and by simply following the frameworks parameters – or dropping in special framework class names – you can add some great looking styles to your project; that are built to work, with very few hitches, and across all browsers. On top of that most CSS frameworks come with prebuilt scripts for commonly used functions like pop-ups, modals, and menu systems.
 
 You'll find a roundup of the most well-known [frameworks][Appendix 1] in the Appendices.
 
@@ -174,7 +174,7 @@ vendor<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ stylesheets<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ boilerplate<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_h5bp_helpers.scss][]<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_h5bp_normalize_v112.scss][]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [_h5bp_normalize_v301.scss][]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [_h5bp_print.scss][]<br>
 
 One thing you may have noticed In the structure above is  that the base application file uses the `.scss` extension, and other other partials use the `.sass` extension. This is perfectly fine. Rails needs this file to end in `.scss`. For the boilerplate files it easier to use this extension to keep abreast of their changes – the source files are compatible with this extension. For everything else I use the `.sass` extension because of my own personal preference for it's syntax.
@@ -236,7 +236,7 @@ In the [next chapter][Chapter 4] we will dissect and explain in detail our style
 [Asset Pipeline]:       http://www.engineyard.com/blog/2011/sass-compass-and-the-rails-3-1-asset-pipeline/
 
 [_h5bp_helpers.scss]:   https://github.com/maxxiimo/base-css/blob/master/vendor/assets/stylesheets/boilerplate/_h5bp_helpers.scss
-[_h5bp_normalize_v112.scss]: https://github.com/maxxiimo/base-css/blob/master/vendor/assets/stylesheets/boilerplate/_h5bp_normalize_v112.scss
+[_h5bp_normalize_v301.scss]: https://github.com/maxxiimo/base-css/blob/master/vendor/assets/stylesheets/boilerplate/_h5bp_normalize_v301.scss
 [_h5bp_print.scss]:     https://github.com/maxxiimo/base-css/blob/master/vendor/assets/stylesheets/boilerplate/_h5bp_print.scss
 [_forms.sass]:          https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_forms.sass
 [_grids.sass]:          https://github.com/maxxiimo/base-css/blob/master/app/assets/stylesheets/desktop/_grids.sass
